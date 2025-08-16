@@ -1,0 +1,24 @@
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX fx:    <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:   <http://sparql.xyz/facade-x/data/>
+PREFIX led: <http://led.kmi.open.ac.uk/term/>
+### <http://led.kmi.open.ac.uk/term/ListeningExperience>
+
+DESCRIBE ?_uri_iri ?o ?o2 ?o3 ?o4
+WHERE {
+    ?_uri_iri a led:ListeningExperience ;
+        ?p ?o .
+    OPTIONAL {
+        ?o ?p2 ?o2
+        OPTIONAL {
+            ?o2 ?p3 ?o3
+            OPTIONAL {
+                ?o3 ?p4 ?o4
+            }
+        }
+    }
+    
+    BIND(?_uri_iri AS ?le)
+}
