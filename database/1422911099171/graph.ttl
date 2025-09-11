@@ -1,0 +1,361 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/lexp/1422911099171>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "You can imagine what an ordeal my first lesson was to me. I brought him [Carl Tausig] a long and difficult Scherzo, by Chopin, that I had practiced carefully for a month, and knew well. Fancy how easy it was for me to play, when he stood over me and kept calling out all through it in German, \"Terrible! Shocking! Dreadful! O Gott! O Gott!\" I was really playing it well, too, and I kept on in spite of him, but my nerves were all rasped and excited to the highest point, and when I got through and he gave me my music, and said, \"Not at all bad\" (very complimentary for him), I rushed out of the room and burst out crying. He followed me immediately, and coolly said, \"What are you crying for, child? Your playing was not at all bad.\" I told him that it was \"impossible for me to help it when he talked in such a way,\" but he did not seem to be aware that he had said anything."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Music-Study+in+Germany:+The+Classic+Memoir+of+the+Romantic+Era/1417364489064>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Meg+Barclay/claims>;
+        led:pages              "82-83";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Carl_Tausig> , <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1870-08-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-02T21:04:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Scherzo/1422911074514/1422911074526> .
+
+<http://dbpedia.org/resource/Carl_Tausig>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Carl Tausig"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1841-11-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Warsaw>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1871-07-17>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Poland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tausig";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Carl";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Carl Tausig"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Scherzo/1422911074514/1422911074526>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Scherzo'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Carl_Tausig> , <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Scherzo/1422911074514>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053> .
+
+<http://reference.data.gov.uk/id/day/1841-11-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 November, 1841"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1841;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/time/edtf/1870-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://dbpedia.org/resource/Poland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Poland"@en .
+
+<http://reference.data.gov.uk/id/day/1871-07-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 July, 1871"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1871;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/Dover_Publications>
+        rdfs:label  "Dover Publications"@en .
+
+<http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Amy Fay"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1844-05-21>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1928-02-28>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Fay";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Amy" .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1810-03-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "March, 1810"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1810;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Warsaw>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Warsaw"@en .
+
+<http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Fryderyck Chopin"@en , "Frédéric Chopin"@en , "Chopin" , "Chopin, Frédéric, 1810-1849"@en , "Fryderyk Chopin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1810-03-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Warsaw>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1849-10-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Poland>;
+        owl:sameAs                      <http://musicbrainz.org/artist/09ff1fe8-d61c-4b98-bb82-18487c74d7b7#_> , <http://bnb.data.bl.uk/id/person/ChopinFr%C3%A9d%C3%A9ric1810-1849>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Chopin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Fryderyk Franciszek" .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/music/Scherzo/1422911074514>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Scherzo"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>;
+        <http://purl.org/dc/terms/title>
+                "Scherzo";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/day/1928-02-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 February, 1928"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1928;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.41>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  41 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.44>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  44 .
+
+<http://data.open.ac.uk/time/edtf/1849-10-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "October, 1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://data.open.ac.uk/time/edtf/2011-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2011"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2011;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2011>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://reference.data.gov.uk/id/year/2011>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .
+
+<http://data.open.ac.uk/led/source/Music-Study+in+Germany:+The+Classic+Memoir+of+the+Romantic+Era/1417364489064>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Originally published in Chicago 1880"@en;
+        rdfs:label                  "Music-Study in Germany: The Classic Memoir of the Romantic Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2011-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Dover_Publications>;
+        <http://purl.org/dc/terms/title>
+                "Music-Study in Germany: The Classic Memoir of the Romantic Era";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053> .
+
+<http://reference.data.gov.uk/id/day/1844-05-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 May, 1844"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1844;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.44> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .

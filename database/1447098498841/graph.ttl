@@ -1,0 +1,138 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/Lexington,_Kentucky>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lexington, Kentucky"@en .
+
+<http://data.open.ac.uk/led/performance/accaa8b17aecf0f2404038cbd1ba2100/1447098432865>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'plantation songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lexington,_Kentucky>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/plantation+songs/1447098432851>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Southern+Smart+Set/1447098432869> .
+
+<http://bnb.data.bl.uk/id/resource/013674909>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Ragged but right / Lynn Abbott"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2007-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>;
+        <http://purl.org/dc/terms/title>
+                "Ragged but right / Lynn Abbott";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SeroffDoug> , <http://bnb.data.bl.uk/id/person/AbbottLynn1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1578069017"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Jackson>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> , <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/led/music/plantation+songs/1447098432851>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "plantation songs"@en;
+        <http://purl.org/dc/terms/title>
+                "plantation songs" .
+
+<http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/72f69e214c46be4c418b602f9692fb4e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The jubilee scene in the second act, introducing a medley of plantation songs and dances, was a real treat. It not only pleased the Negroes in the balcony and gallery, but was exceedingly entertaining as well to the white people in the audience.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Ragged but right / Lynn Abbott' pp. 116 (43 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013674909>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "116" .
+
+<http://bnb.data.bl.uk/id/person/SeroffDoug>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Doug Seroff"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Southern+Smart+Set/1447098432869>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Southern Smart Set"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://bnb.data.bl.uk/id/place/Jackson>
+        rdfs:label  "Jackson"@en .
+
+<http://data.open.ac.uk/time/edtf/2007-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2007"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2007> .
+
+<http://data.open.ac.uk/led/lexp/1447098498841>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Reviewer describes the effect of the songs on the audience.  "@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/72f69e214c46be4c418b602f9692fb4e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "116";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lexington,_Kentucky>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1912-09-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-11-20T16:14:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-09T19:48:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/accaa8b17aecf0f2404038cbd1ba2100/1447098432865>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/72f69e214c46be4c418b602f9692fb4e> .
+
+<http://bnb.data.bl.uk/id/person/AbbottLynn1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lynn Abbott"@en .
+
+<http://reference.data.gov.uk/id/year/2007>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1912-09-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "September, 1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .

@@ -1,0 +1,279 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anthony Phillips"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/place/e0c0234508f0250664f14d0b4d124bd3>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Metropolitan Opera House"@en;
+        <http://purl.org/dc/terms/description>
+                "Metropolitan Opera House"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/20th-century_classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "20th-century classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/sergey+prokofiev+diaries+1907-1914>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Sergey Prokofiev diaries 1907-1914"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/540-541/1446408006592>;
+        <http://purl.org/dc/terms/title>
+                "Sergey Prokofiev diaries 1907-1914";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0-571-22629-9"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/IthacaNY> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Sergei_Prokofiev>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Prokofiev"@en , "Sergey Prokofiev"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1891-04-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Donetsk_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Moscow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prokofiev";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Prokofiev"@en .
+
+<http://dbpedia.org/resource/Russian_Orthodox_Church>
+        rdf:type    led:Belief;
+        rdfs:label  "Russian Orthodox Church"@en .
+
+<http://data.open.ac.uk/led/lexp/1483399281752>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/31170e92d549763e739f05c936ff0c55/excerpt/e47aa4318cb98d2aa3d448537851a0ee>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/isobel.1111/claims>;
+        led:pages            "270-271";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/e0c0234508f0250664f14d0b4d124bd3>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1926-02-18TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-05-15T10:55:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2017-01-02T23:21:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/d383a264a77e17406a32554d7065ddf8/1483399223332>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/31170e92d549763e739f05c936ff0c55/excerpt/e47aa4318cb98d2aa3d448537851a0ee> .
+
+<http://reference.data.gov.uk/id/day/1953-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://reference.data.gov.uk/id/day/1891-04-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 April, 1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://bnb.data.bl.uk/id/place/IthacaNY>
+        rdfs:label  "Ithaca N.Y."@en , "Ithaca N.Y"@en .
+
+<http://data.open.ac.uk/led/music/Skyscrapers/1452431957843>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Skyscrapers"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/a9f5516f-bc8b-4564-8d35-c1cd38ed27ad#_>;
+        <http://purl.org/dc/terms/title>
+                "Skyscrapers";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/a9f5516f-bc8b-4564-8d35-c1cd38ed27ad#_> .
+
+<http://data.open.ac.uk/led/organization/540-541/1446408006592>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "540-541"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Donetsk_Oblast>
+        rdfs:label  "Donetsk Oblast"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Ballet_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ballet (music)"@en .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+18+February+1926/1483399130240>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Translated from the Russian."@en;
+        rdfs:label                  "Sergey Prokofiev diaries: 18 February 1926"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/sergey+prokofiev+diaries+1907-1914>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:rus>;
+        <http://purl.org/dc/terms/title>
+                "Sergey Prokofiev diaries: 18 February 1926";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Sergei_Prokofiev> .
+
+<http://data.open.ac.uk/led/source/31170e92d549763e739f05c936ff0c55/excerpt/e47aa4318cb98d2aa3d448537851a0ee>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In the afternoon I attended the general rehearsal of Carpenter's&nbsp;<em>Skyscrapers</em>. The history of this ballet is as follows: Diaghilev, dining with Carpenter, had once said to him, 'Why is it that you Americans have never written a genuinely American ballet?' and started improvising, dreaming up skyscrapers, machines and so on. Carpenter took the bait and, his imagination fired, composed a ballet along these lines, and a year later presented himself to Diaghilev in Paris with these words: 'I have composed the ballet you were speaking about, and have come specially from Chicago to play it to you. I shall be going back to America in a few days.' Diaghilev was sufficiently discombobulated at someone having come over from Chicago in order to play a ballet through to him to make some encouraging noises during the performance. Carpenter thus went away confident that his ballet was accepted, but Diaghilev stuffed the score into a trunk and forgot all about it. A year went by, or longer, at which point an emissary from Carpenter presented himself to Diaghilev and enquired whether or not he was going to stage the ballet, and if not please to return the score, as in that case it would be presented in America. Diaghilev retrieved the score and commissioned Dukelsky to look through it. Dukelsky's verdict was that as a ballet, notwithstanding the Carpenters had been very kind to him, and not to mention that he, Dukelsky, had made a pass at their daughter when he was living in New York,&nbsp;<em>Skyscrapers&nbsp;</em>was a lemon. Diaghilev therefore gave back the score. &nbsp;In this way it had beached at the Metropolitan and was now about to experience the glare of the footlights.</p>\r\n<p>Dukelsky, as it happens, was quite right. The scenery looked nice but the dancing was feeble, more running about than dancing. The music was Modernistic and admirably orchestrated, but empty, with snatches of&nbsp;<em>Petrushka</em> and of the French composers.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Sergey Prokofiev diaries: 18 February 1926' pp. 270-271 (326 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+18+February+1926/1483399130240>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "270-271" .
+
+<http://dbpedia.org/resource/Symphony_orchestra>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Symphony orchestra"@en , "Symphonic orchestra"@en .
+
+<http://dbpedia.org/resource/Metropolitan_Opera_House_(Lincoln_Center)>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Metropolitan Opera House (Lincoln Center)"@en .
+
+<http://musicbrainz.org/artist/a9f5516f-bc8b-4564-8d35-c1cd38ed27ad#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "John Alden Carpenter"@en .
+
+<http://dbpedia.org/resource/Moscow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Moscow"@en .
+
+<http://data.open.ac.uk/time/edtf/1926-02-18TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 February, 1926, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1926;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<http://musicbrainz.org/artist/72c161f8-b5d5-474a-93e7-937d73c5a3a8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Metropolitan Dance Orchestra"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://data.open.ac.uk/led/performance/d383a264a77e17406a32554d7065ddf8/1483399223332>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Skyscrapers'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Metropolitan_Opera_House_(Lincoln_Center)>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Ballet_(music)> , <http://dbpedia.org/resource/20th-century_classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Symphony_orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Skyscrapers/1452431957843>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/72c161f8-b5d5-474a-93e7-937d73c5a3a8#_> .

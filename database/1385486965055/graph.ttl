@@ -1,0 +1,116 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1385486965055>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "From the letters (1833-37) of Lieut. J. K. Mackenzie, stationed with his regiment (probably  the King’s Royal Rifles) in Ireland, to his mother in Edinburgh"@en;
+        led:has_environment    led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_evidence_text  "My dear Mother,\r\n…While I am writing our band is playing quite close to my window, they are very much improved, and are now a very good band, they play the Edinburgh waltz quite beautifully, but I think are too fond of Italian music.\r\n\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Lieut.+J.+K.+Mackenzie+to+his+mother,+22+August+1834/1385486795243>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/J.+K.+Mackenzie/1385486856275>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1834-08-22>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-11-26T17:29:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Edinburgh+waltz+(,+performance+of)/1385486919729> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Lieut.+J.+K.+Mackenzie+to+his+mother,+22+August+1834/1385486795243>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Lieut. J. K. Mackenzie to his mother, 22 August 1834"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "National Library of Ireland";
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Lieut. J. K. Mackenzie to his mother, 22 August 1834";
+        <http://purl.org/ontology/bibo/number>
+                "MS 13,527";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/J.+K.+Mackenzie/1385486856275> .
+
+<http://dbpedia.org/resource/Officer_(armed_forces)>
+        rdfs:label  "Officer (armed forces)"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Dance_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Dance music"@en .
+
+<http://data.open.ac.uk/led/person/J.+K.+Mackenzie/1385486856275>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Lieut. J. K. Mackenzie"@en , "J. K. Mackenzie"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Officer_(armed_forces)>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Scotland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mackenzie";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "J. K." .
+
+<http://data.open.ac.uk/led/performance/Edinburgh+waltz+(,+performance+of)/1385486919729>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Edinburgh waltz'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/J.+K.+Mackenzie/1385486856275>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Edinburgh+waltz/1385486919721>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/military+band/1385486919734> .
+
+<http://data.open.ac.uk/led/music/Edinburgh+waltz/1385486919721>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Edinburgh waltz"@en;
+        <http://purl.org/dc/terms/title>
+                "Edinburgh waltz" .
+
+<http://reference.data.gov.uk/id/day/1834-08-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 August, 1834"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1834;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/led/agent/military+band/1385486919734>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "military band"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

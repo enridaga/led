@@ -1,0 +1,157 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/191u-uu-uuTMm:mm:mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1910's, in the afternoon"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.1u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu> .
+
+<https://bura.brunel.ac.uk/handle/2438/9357>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Burnett Archive of Working Class Autobiographies"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://bura.brunel.ac.uk/handle/2438/9357"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/place/6701b9007fc0578cfca941e58cd9117a>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Public Hall, Slough"@en;
+        <http://purl.org/dc/terms/description>
+                "Public Hall, Slough"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Slough> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1532694449982>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/d30040e7a1224f7e3b062d97dfbf40e0>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "6";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/6701b9007fc0578cfca941e58cd9117a>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/191u-uu-uuTMm:mm:mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-04T15:57:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-27T12:27:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/522bb4bec20422db4d18335dd877c7d4/1532694381070>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/d30040e7a1224f7e3b062d97dfbf40e0> .
+
+<http://data.open.ac.uk/led/office+worker>
+        rdfs:label  "office worker"@en .
+
+<http://data.open.ac.uk/led/performance/522bb4bec20422db4d18335dd877c7d4/1532694381070>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'piano music to accompany silent film'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Slough>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/piano+music+to+accompany+silent+film/1532694381064> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.1u>
+        rdf:value   "1u";
+        rdfs:label  "10s"@en .
+
+<http://dbpedia.org/resource/Slough>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Slough"@en .
+
+<http://data.open.ac.uk/led/music/piano+music+to+accompany+silent+film/1532694381064>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "piano music to accompany silent film"@en;
+        <http://purl.org/dc/terms/title>
+                "piano music to accompany silent film" .
+
+<http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/d30040e7a1224f7e3b062d97dfbf40e0>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">Saturday was the best day of the week [....] [We played outside on summer Saturdays and had picnics]. On winter Saturdays we were allowed to go to the &ldquo;pictures&rdquo; in the afternoon.</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">Slough had no real Cinema then, so films were shown in the Public Hall, a building used for every kind of function.</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">There was a pianist who watched the screen, and thumped out the appropriate music for each film. It could hardly be heard, as we all booed and hissed the villains.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Untitled: Mrs. Violet Austin memoir' pp. 6 (83 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "6" .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Violet Austin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/office+worker>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Slough>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Austin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Violet" .
+
+<http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Untitled: Mrs. Violet Austin memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://bura.brunel.ac.uk/handle/2438/9357>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Untitled: Mrs. Violet Austin memoir";
+        <http://purl.org/ontology/bibo/number>
+                "2:22";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612> .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Violet Austin"@en .

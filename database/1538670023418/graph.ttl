@@ -1,0 +1,197 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1895-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1895"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1895;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.95> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/led/music/unspecified+'Bristol+Tune+Book'+hymns/1538669959744>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified 'Bristol Tune Book' hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified 'Bristol Tune Book' hymns" .
+
+<http://data.open.ac.uk/led/lexp/1538670023418>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/3d3f98fc00e16bd205cde866e8f6ea8e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "34";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497> , <http://data.open.ac.uk/led/agent/Stanton+Drew+Methodist+congregation/1538669808999>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/89ff94d8d07db521087461d78e37af12>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1895-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-29T12:22:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-04T16:20:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/db99eb764691693c896fd635eb579151/1538669959770>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/3d3f98fc00e16bd205cde866e8f6ea8e> .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Organ_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Organ (music)"@en .
+
+<http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/3d3f98fc00e16bd205cde866e8f6ea8e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Harry West details his love of organ music and learning to play, largely self-taught, in pages 28; 32 &ndash; 35 of his memoir. His father helped him to learn to play hymns at home on the harmonium, from the age of ten. Related listening experiences are included in the Listening Experience Database as separate items].&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p><span style=\"font-size: 11pt; font-family: Cambria;\">When I was about fifteen years of age we were at Stanton Drew on our annual holiday at my grandmother&rsquo;s cottage [&hellip;] On a Sunday morning we attended service at the old Methodist Chapel on the Causeway. The preacher announced that the organist was away, and asked if anyone present could volunteer to play. My father whispered, &ldquo;There&rsquo;s your chance, Harry&rdquo;. I demurred, saying that although I could play all the tunes in the Bristol Tune Book, which they used, I did not know which to select; there were several to every metre. Father said &ldquo;I do. I will select, you play&rdquo;.&nbsp;Between the two of us we got through the morning and evening services successfully and I was a hero in the sight of my country relations as it was the first time they had found anybody to play in the absence of the organist. I was an even greater hero in my own sight, it was the first time I had ever played in public.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Autobiography of Harry Alfred West' pp. 34 (219 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "34" .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Harry Alfred West"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/porter> , <http://data.open.ac.uk/led/managerial+roles>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1880-10-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "West";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Harry Alfred" .
+
+<http://data.open.ac.uk/led/place/89ff94d8d07db521087461d78e37af12>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Stanton Drew, Somerset"@en;
+        <http://purl.org/dc/terms/description>
+                "Stanton Drew, Somerset"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Somerset> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Harry Alfred West (b. 1880) sketches his early life in and near Bristol, England. His memoir details his love of playing and listening to the church organ. The unpublished memoir is held in the Burnett Archive of Working Class Autobiography, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "The Autobiography of Harry Alfred West"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Burnett Archive of Working Class Autobiography, University of Brunel Library Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By Permission of University of Brunel Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Autobiography of Harry Alfred West";
+        <http://purl.org/ontology/bibo/number>
+                "1.745";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.95>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  95 .
+
+<http://data.open.ac.uk/led/agent/Stanton+Drew+Methodist+congregation/1538669808999>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Stanton Drew Methodist congregation"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "congregation";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Stanton Drew Methodist" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harry Alfred West"@en .
+
+<http://data.open.ac.uk/led/managerial+roles>
+        rdfs:label  "managerial roles"@en .
+
+<http://data.open.ac.uk/led/porter>
+        rdfs:label  "Porter"@en , "porter"@en .
+
+<http://data.open.ac.uk/led/performance/db99eb764691693c896fd635eb579151/1538669959770>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified 'Bristol Tune Book' hymns'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Somerset>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Organ_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Stanton+Drew+Methodist+congregation/1538669808999> , <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+'Bristol+Tune+Book'+hymns/1538669959744>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538669959788> .
+
+<http://reference.data.gov.uk/id/day/1880-10-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 October, 1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538669959788>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Harry Alfred West"@en .
+
+<http://dbpedia.org/resource/Somerset>
+        rdfs:label  "Somerset"@en .

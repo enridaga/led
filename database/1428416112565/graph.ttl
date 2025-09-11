@@ -1,0 +1,320 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/trumpeter>
+        rdfs:label  "trumpeter"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://reference.data.gov.uk/id/day/1971-07-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 July, 1971"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1971;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/led/performance/jazz+(,+performance+of)/1401011471933>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz (, performance of)"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Richard_Rodgers> , <http://dbpedia.org/resource/Miles_Davis>;
+        <http://purl.org/dc/terms/title>
+                "jazz (, performance of)";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Richard_Rodgers> , <http://dbpedia.org/resource/Miles_Davis> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.69>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  69 .
+
+<http://data.open.ac.uk/led/photojournalist>
+        rdfs:label  "photojournalist"@en .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://data.open.ac.uk/time/edtf/1969-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1969"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1969;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1969>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.69> .
+
+<http://data.open.ac.uk/led/person/Herb+Snitzer/1428139614224>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label             "Herb Snitzer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/photojournalist> , <http://data.open.ac.uk/led/photographer> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Snitzer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Herb" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/New_Orleans>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New Orleans"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/performance/jazz+(,+performance+of)/1401011471933/1428416054090>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz (, performance of)'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lewisohn_Stadium>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Herb+Snitzer/1428139614224>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/performance/jazz+(,+performance+of)/1401011471933>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32#_> , <http://dbpedia.org/resource/Louis_Armstrong> .
+
+<http://dbpedia.org/resource/Miles_Davis>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Miles Davis"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/DavisMiles> , <http://musicbrainz.org/artist/8e51f2f4-4541-4526-8a2d-c65ecc9c0ee4#_> , <http://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a#_> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/1960-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1960"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1960;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1960>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/photographer>
+        rdfs:label  "photographer"@en .
+
+<http://data.open.ac.uk/led/source/f51fe7223ba863a180672ea4065488da/excerpt/bc6c6f08f8396f89469ad02808fe6daa>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I saw Stan [Getz] at Lewisohn Stadium, the crowd in a festive mood. He was on the same bill as Louis Armstrong, who went on first. It was classic Pops. Stan played beautifully in the spirit of Lester Young, and backstage, lending their support, were Armstrong's manager, Joe Glaser, saxophonist Gerry Mulligan, trumpeter Dizzy Gillespie, and many others.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Glorious Days and Nights: A Jazz Memoir' pp. 33-34 (58 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Glorious+Days+and+Nights:+A+Jazz+Memoir/1428139614218>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "33-34" .
+
+<http://reference.data.gov.uk/id/day/1901-08-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 August, 1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1901;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.01>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/led/entertainer>
+        rdfs:label  "entertainer"@en .
+
+<http://dbpedia.org/resource/University_Press_of_Mississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Songwriter>
+        rdfs:label  "Songwriter"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Bandleader>
+        rdfs:label  "Bandleader"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Louis_Armstrong>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Louis Armstrong"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Bandleader> , <http://data.open.ac.uk/led/trumpeter> , <http://data.open.ac.uk/led/entertainer> , <http://dbpedia.org/resource/Singing>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1901-08-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_Orleans>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1971-07-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/lexp/1428416112565>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/f51fe7223ba863a180672ea4065488da/excerpt/bc6c6f08f8396f89469ad02808fe6daa>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "33-34";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Herb+Snitzer/1428139614224>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lewisohn_Stadium>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/196u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-08-28T12:55:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-07T14:15:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/performance/jazz+(,+performance+of)/1401011471933/1428416054090>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f51fe7223ba863a180672ea4065488da/excerpt/bc6c6f08f8396f89469ad02808fe6daa> .
+
+<http://dbpedia.org/resource/Jackson,_Mississippi>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Jackson, Mississippi"@en .
+
+<http://reference.data.gov.uk/id/year/1969>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.6u>
+        rdf:value   "6u";
+        rdfs:label  "60s"@en .
+
+<http://dbpedia.org/resource/Lewisohn_Stadium>
+        rdfs:label  "Lewisohn Stadium"@en .
+
+<http://data.open.ac.uk/time/edtf/196u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1960's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.6u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1960-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1969-uu-uu> .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/time/edtf/2011-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2011"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2011;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2011>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Stan Getz"@en .
+
+<http://reference.data.gov.uk/id/year/2011>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Richard_Rodgers>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label             "Richard Rodgers"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Songwriter>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rodgers";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard " .
+
+<http://reference.data.gov.uk/id/year/1960>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Glorious+Days+and+Nights:+A+Jazz+Memoir/1428139614218>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Glorious Days and Nights: A Jazz Memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2011-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/University_Press_of_Mississippi>;
+        <http://purl.org/dc/terms/title>
+                "Glorious Days and Nights: A Jazz Memoir";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Jackson,_Mississippi>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Herb+Snitzer/1428139614224> .

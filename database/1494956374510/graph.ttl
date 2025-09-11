@@ -1,0 +1,460 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Sonata>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Sonata"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1991-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1991"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1991> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/California>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "California"@en .
+
+<http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/b010d78f8320b26f843b39c0ad456177>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Szigeti gave a recital with a new Sonata by Prokofiev (originally written for flute and transcribed by Prokofiev himself specially for Szigeti). It is an enchanting &nbsp;work.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Selected correspondence 1915-1963 / Francis Poulenc' pp. 152 (27 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/009536537>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "152" .
+
+<http://data.open.ac.uk/time/edtf/1945-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://dbpedia.org/resource/Lucerne>
+        rdfs:label  "Lucerne"@en .
+
+<http://bnb.data.bl.uk/id/agent/Gollancz>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Gollancz"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Geneva>
+        rdfs:label  "Geneva"@en .
+
+<http://reference.data.gov.uk/id/year/1991>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Sergei_Prokofiev>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Prokofiev"@en , "Sergey Prokofiev"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1891-04-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Donetsk_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Moscow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prokofiev";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Prokofiev"@en .
+
+<http://dbpedia.org/resource/Russian_Orthodox_Church>
+        rdf:type    led:Belief;
+        rdfs:label  "Russian Orthodox Church"@en .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://reference.data.gov.uk/id/day/1953-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://reference.data.gov.uk/id/day/1891-04-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 April, 1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://reference.data.gov.uk/id/day/1892-09-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 September, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://reference.data.gov.uk/id/day/1892-09-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 September, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Aix-en-Provence>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Aix-en-Provence"@en , "Aix en Provence"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Provence> .
+
+<http://dbpedia.org/resource/Provence>
+        rdfs:label  "Provence"@en .
+
+<http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://dbpedia.org/resource/Oakland,_California>
+        rdfs:label  "Oakland, California"@en .
+
+<http://dbpedia.org/resource/Francis_Poulenc>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Francis Poulenc"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/pianist> , <http://data.open.ac.uk/led/composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1899-01-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1963-01-30>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963> .
+
+<http://dbpedia.org/resource/Budapest>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Budapest"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Francis Poulenc"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/day/1973-02-19>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "19 February, 1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://dbpedia.org/resource/Donetsk_Oblast>
+        rdfs:label  "Donetsk Oblast"@en .
+
+<http://data.open.ac.uk/led/performance/12c39c9ac9918a322640a4747c9a8b00/1494956277520>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Prokofiev's violin sonata'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Oakland,_California>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Sonata>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Darius_Milhaud>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Prokofiev's+violin+sonata/1494956017374>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/music/Prokofiev's+violin+sonata/1494956017374>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Prokofiev's violin sonata"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/dc/terms/title>
+                "Prokofiev's violin sonata";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Sergei_Prokofiev> .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Jospeh Szigeti"@en , "Joseph Szigeti"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Violinist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-09-05>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Budapest>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1973-02-19>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Lucerne>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Szigeti";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Joseph" .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/day/1899-01-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 January, 1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/Violinist>
+        rdfs:label  "Violinist"@en .
+
+<http://dbpedia.org/resource/Darius_Milhaud>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Darius Milhaud"@en , "Milhaud"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-09-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Aix-en-Provence>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1974-06-22>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Geneva>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974> , <http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Milhaud";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Darius" .
+
+<http://bnb.data.bl.uk/id/person/BucklandSidney>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sidney Buckland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://bnb.data.bl.uk/id/resource/009536537>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Book>;
+        rdfs:comment                "Includes index."@en;
+        rdfs:label                  "Selected correspondence 1915-1963 / Francis Poulenc"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1991-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:fre>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Gollancz>;
+        <http://purl.org/dc/terms/title>
+                "Selected correspondence 1915-1963 / Francis Poulenc";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/BucklandSidney>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0575050934"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> , <http://bnb.data.bl.uk/id/place/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://bnb.data.bl.uk/id/person/BucklandSidney>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963> , <http://dbpedia.org/resource/Francis_Poulenc> .
+
+<http://data.open.ac.uk/led/pianist>
+        rdfs:label  "pianist"@en , "Pianist"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1974-06-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 June, 1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://dbpedia.org/resource/Moscow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Moscow"@en .
+
+<http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://reference.data.gov.uk/id/day/1963-01-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 January, 1963"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1963;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.63> .
+
+<http://data.open.ac.uk/led/lexp/1494956374510>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Letter from Darius Milhaud to Francis Poulenc, Mills College, 17 February 1945. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/b010d78f8320b26f843b39c0ad456177>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/verafonte/claims>;
+        led:pages            "152";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Darius_Milhaud>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/California>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1945-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2025-07-15T11:46:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2017-05-16T17:39:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/12c39c9ac9918a322640a4747c9a8b00/1494956277520>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/b010d78f8320b26f843b39c0ad456177> .

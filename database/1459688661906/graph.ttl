@@ -1,0 +1,339 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anthony Phillips"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/performance/d3dd86e3062fe24c4d13e1333227fe37/1459688614796>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Second Piano Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_concerto> , <http://dbpedia.org/resource/20th-century_classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Sergei_Prokofiev> , <http://data.open.ac.uk/led/agent/Sergei+Prokofiev/1437217957364>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Second+Piano+Concerto/1445181643950>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Alexander_Borovsky> , <http://dbpedia.org/resource/Sergei_Prokofiev> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/20th-century_classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "20th-century classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1943-03-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 March, 1943"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1943;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.43> .
+
+<http://dbpedia.org/resource/Beverly_Hills,_California>
+        rdfs:label  "Beverly Hills, California"@en .
+
+<http://bnb.data.bl.uk/id/resource/013517200>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Document>;
+        rdfs:comment                "Translated from the Russian."@en;
+        rdfs:label                  "Sergey Prokofiev diaries"@en , "Sergey Prokofiev diaries 11 January 291"@en , "Sergey Prokofiev diaries 11 January 2914"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Sergey Prokofiev diaries" , "Sergey Prokofiev diaries 11 January 2914";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0571226299"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/IthacaNY>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "3";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/ProkofievSergey1891-1953> .
+
+<http://dbpedia.org/resource/Alexander_Borovsky>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Alexander Borovsky"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/lexp/1459688661906>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/81946d9c22d232e9abac973c6c7c1a40/excerpt/cd0e930ccde14c09da569a6083e132be>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/isobel.1111/claims>;
+        led:pages            "47-48";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/df19a426a97474431063930aa55dc778>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1924-04-29>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-06-18T13:47:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2016-04-03T13:04:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/d3dd86e3062fe24c4d13e1333227fe37/1459688614796>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/81946d9c22d232e9abac973c6c7c1a40/excerpt/cd0e930ccde14c09da569a6083e132be> .
+
+<http://dbpedia.org/resource/Sergei_Prokofiev>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Prokofiev"@en , "Sergey Prokofiev"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1891-04-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Donetsk_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Moscow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prokofiev";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Prokofiev"@en .
+
+<http://dbpedia.org/resource/Russian_Orthodox_Church>
+        rdf:type    led:Belief;
+        rdfs:label  "Russian Orthodox Church"@en .
+
+<http://data.open.ac.uk/led/place/df19a426a97474431063930aa55dc778>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Pianos Pleyel, 93-95 Avenue Daumesnil, Paris"@en;
+        <http://purl.org/dc/terms/description>
+                "Pianos Pleyel, 93-95 Avenue Daumesnil, Paris"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Paris> .
+
+<http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+29+April+1924/1459688472009>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Sergey Prokofiev diaries: 29 April 1924"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013517200>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:rus>;
+        <http://purl.org/dc/terms/title>
+                "Sergey Prokofiev diaries: 29 April 1924";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Sergey+Prokofiev/1450307447086> .
+
+<http://dbpedia.org/resource/Veliky_Novgorod>
+        rdfs:label  "Veliky Novgorod"@en .
+
+<http://reference.data.gov.uk/id/day/1953-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://reference.data.gov.uk/id/day/1891-04-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 April, 1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/id/day/1924-04-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 April, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://bnb.data.bl.uk/id/place/IthacaNY>
+        rdfs:label  "Ithaca N.Y."@en , "Ithaca N.Y"@en .
+
+<http://data.open.ac.uk/led/source/81946d9c22d232e9abac973c6c7c1a40/excerpt/cd0e930ccde14c09da569a6083e132be>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Borovsky has scrupulously learnt the second piano part of the Second Concerto and today we went together to Pleyel's shop to rehearse it. In places it was comic, because the second piano threw me off course and I could not manage my part, especially in the Intermezzo and the beginning of the Finale.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Sergey Prokofiev diaries: 29 April 1924' pp. 47-48 (53 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+29+April+1924/1459688472009>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "47-48" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://dbpedia.org/resource/Donetsk_Oblast>
+        rdfs:label  "Donetsk Oblast"@en .
+
+<http://dbpedia.org/resource/Piano_concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano concerto"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://dbpedia.org/resource/Sergei_Rachmaninoff>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Rachmaninoff"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        led:has_social_status           <urn:x-nrsuk:social:A>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1873-04-01>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Veliky_Novgorod>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1943-03-28>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Beverly_Hills,_California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rachmaninoff";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Rachmaninoff"@en .
+
+<http://dbpedia.org/resource/Moscow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Moscow"@en .
+
+<http://reference.data.gov.uk/id/day/1873-04-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 April, 1873"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1873;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://bnb.data.bl.uk/id/person/ProkofievSergey1891-1953>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sergey Prokofiev"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .
+
+<http://data.open.ac.uk/led/music/Second+Piano+Concerto/1445181643950>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Second Piano Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Sergei_Rachmaninoff> , <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/dc/terms/title>
+                "Second Piano Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Sergei_Rachmaninoff> , <http://dbpedia.org/resource/Sergei_Prokofiev> .

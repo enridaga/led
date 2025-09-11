@@ -1,0 +1,654 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/led/music/a+flute+concerto/1448275767447>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "a flute concerto"@en;
+        <http://purl.org/dc/terms/title>
+                "a flute concerto" .
+
+<http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical letters from Abroad"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/musical+letters+from+abroad>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/musicallettersf00unkngoog>;
+        <http://purl.org/dc/terms/title>
+                "Musical letters from Abroad";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/source/musical+letters+from+abroad>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Musical Letters from Abroad"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>;
+        <http://purl.org/dc/terms/title>
+                "Musical Letters from Abroad";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://reference.data.gov.uk/id/day/1792-01-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 January, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/led/music/aria+from+Don+Giovanni/1448276216481>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "aria from Don Giovanni"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "aria from Don Giovanni";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://data.open.ac.uk/led/performance/1d29cc2972a9f11ee0f48891321c327b/1448276216495>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'aria from Don Giovanni'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Aria>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/aria+from+Don+Giovanni/1448276216481>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448276216499> .
+
+<https://archive.org/details/musicallettersf00unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive Digital Copy"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/musicallettersf00unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Medfield,_Massachusetts>
+        rdfs:label  "Medfield, Massachusetts"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/led/performance/232b9f2746e3c37079438e75d7deec0a/1448275767463>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'a flute concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Flute>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/a+flute+concerto/1448275767447>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/W.+Haake/1448275767468> .
+
+<http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Lowell Mason"@en , "Dr. Lowell Mason";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-01-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Medfield,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-08-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Orange,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/time/edtf/1852-01-Mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid January, 1852"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1852;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/led/music/Concerto+for+pianoforte+in+d+minor/1448276120366>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Concerto for pianoforte in d minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://purl.org/dc/terms/title>
+                "Concerto for pianoforte in d minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_> .
+
+<http://data.open.ac.uk/led/performance/94d6c5f70b00df145a061d4d4ca1d48e/1448275637249>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Aria from Aerio'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Aria>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Aria+from+Aerio/1448275637234>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448275637253> .
+
+<http://data.open.ac.uk/led/performance/dda4f3322cd2fdbee8549113951c0f6b/1448275898177>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Echoes of Ossian'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Overture>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Echoes+of+Ossian/1448275898159>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448275898181> .
+
+<http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/6f6d2ceab2bd270920ca94e29fa41f04>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I have this evening had an opportunity of attending one of the famous subscription concerts in this city, known as the Gewandhaus Concerts.</p>\r\n<p>The concert room is not large, but convenient, and good for musical effect. The centre of the room is occupied by ladies, and the outer seats mostly by gentlemen. A narrow gallery, in which are a number of private boxes, runs round the room. The first object of attraction, after entering the room, is a fine large medallion of Mendelssohn, back of the orchestra; there is no other bust or picture in the room. It makes one feel sod when looking at this fine representation of the great modem composer, in the very room where he has been, and still is, so highly appreciated, and where he has so often triumphed gloriously, to think that he was cut off in his youth, and that the musical world, after so short a time of enjoyment, was deprived of the talents and learning of one who promised to do for music, perhaps, more than any man living. At almost every concert, more or less of his music is performed; his memory is cherished, not only here, where he was so well known, but by all the musical world, and his name shall be held in everlasting remembrance.</p>\r\n<p>A crowd of people were waiting round the door, when we arrived; and, although it was an hour before the time for the performance to commence, the room was filled, (save the reserved seats in the gallery,) in a few minutes after the door was opened. One must be on hand at an early hour to get a good seat. In about half an hour the members of the orchestra began to make their appearance, and as all the people in the house were talking loud, so the musicians, as they came in, one after another, began to tune, to try their instruments, and to amuse themselves by running over the scales; so that by the time they were all there, thus employed, the room was filled with sound; the more so because, as the musicians began to exercise themselves upon their instruments, the talking and laughing grew louder and louder, and at a quarter of an hour before the commencement of the music, it was a perfect Babel in the concert room, and as difficult to hear one speak as it is in a railroad car, with all the windows open, in summer. But a few minutes before the hour, the room began to grow quiet, musical expectation began to awaken, and when, as the precise moment arrived, the conductor&rsquo;s signal was heard, everything was still, and perfect silence took the place of noise and confusion. Another signal, and the whole band, as one man, were heard interpreting and presenting to a most attentive audience, one of the great works of the immortal Beethoven.</p>\r\n<p>It was the Sinfonie No. 8, F major. This is not regarded as one of Beethoven&rsquo;s greatest triumphs; but, although it is light and playful, it abounds in each of its four movements, with the most fanciful and imaginative melodic figures, contrapuntal points, and instrumental contrasts. Ever lively and ever new, it never tires, but holds one in a kind of musical ecstasy from beginning to end; there seems to be no place where one can relax attention, or cease to be filled with musical delight; so that at the close of each part, a good long breath naturally comes in as a relief; and one becomes conscious of the intensity of the application he has been giving to the discourse.</p>\r\n<p>The very first thing which strikes one, on hearing such an orchestra as this, is the perfect oneness of the violins. They do, indeed, constitute a perfect chorus &mdash; ten or more persons are playing the first violin, and as many more the second; but they are all artists, and, therefore, each one loses himself; no one is heard above the others; but all so beautifully blend as to constitute one perfect whole. This is the perfection of a chorus, be it vocal or instrumental; and this effect is produced by the Gewandhaus Orchestra.</p>\r\n<p>Another point, immediately noticed, is the proper proportion of wind and stringed instruments; but perhaps the most striking point, as contrasted with our American orchestras, is the perfection of the wind instruments. It is too often the case in our orchestras that some wind instrument is wanting; thus the oboe or the faggotto is often missing; and again, it is not unfrequently the case that, although there may be some one to hold these or other instruments in the hand, or up to the sight of the audience, a tone is seldom permitted to escape from them; they are seen but not heard, Not so here; every instrument is not only represented to the eye, but is in the hands of a master who makes it speak to the ear. The consequence is, that such combinations fall upon the ear as are not heard with us. The brass instruments too are made to tell their story without any impediment of speech; whereas, with us, they stutter, or falter, or hem, or cough, to the no small disturbance of the equilibrium of one&rsquo;s temper. We do not know that in this concert every instrument is played in all respects right; we do not know but some notes may have been omitted, or wrong tones produced, but certain are we that we did not discover any such imperfections. There are four things, (technical points,) that we have seldom heard well exhibited elsewhere, which were exceedingly well brought out here, viz.: Piano, Crescendo, Diminuendo and Fortzando. These, with the other technicals of playing were so well observed, that added to the pure tone peculiar to each particular instrument, and connected with a most perfect amalgamation or blending of all the different elements of the orchestra, they seemed to produce, not a mere musical performance to be listened to, but a living being, or moral, spiritual existence, capable of expressing the deepest feeling, and of calling forth the strongest sympathies of humanity.</p>\r\n<p>The Sinfonie being over, and a few moments for rest having been given, old Handel visited us in an Arie from his Opera &ldquo;Aerio&rdquo; &mdash; &ldquo;Folle e colui che al tuo favor si fida.&rdquo; It was sung by Herrn Salvatore Marchesi, who was the only vocalist for the evening. The song was well sung; but we sometimes hear quite as good singing across the Atlantic. Belletti is decidedly his superior. The third piece was a Flute Concerto; it was a tiresome affair. A Flute Concerto is a Flute Concerto, whether in the Gewandhaus, Hanover Square rooms, Tripler Hall or the Melodeon; and although it may not be always played by Herrn W. Haake, (who certainly did his duty well,) it is always the most dry and uninteresting of musical performances.</p>\r\n<p>In part 2d was given, 1st, the beautiful overture Echoes of Ossian, (often played in New York and Boston,) by N. W. Gade. 2d. Arie from Zauberflote, by Mozart, &ldquo;Qui sdegno non s' accende.\" 3d. Mendelssohn&rsquo;s concerto for the piano forte, in D. Minor. 4th. Arie from Don Giovanni, by Mozart, &ldquo;Madamina, il catalogo e questo,\" and 5th. The very fine overture to the opera, &ldquo;Der Wassertrager,&rdquo; by Cherubini.</p>\r\n<p>Gade&rsquo;s overture may be regarded as a sacred piece. It speaks of greatness, and calls forth emotions of the sublime. Something like an Old Chorale pervades the whole, which seems to tell of worship, and to call forth humble adoration. With what grandeur this subject was given out, and oft in the course of the piece alluded to by the brass instruments, or exemplified and illustrated by the others, cannot be told. The overture is known with us, but it requires and deserves dose study.</p>\r\n<p>The Piano Forte Concerto, D (not G) Minor, failed for want of a performer; a highly promising young lad of the conservatory attempted it, but he had neither grasp of mind nor of hand enough for Mendelssohn. Herr Marchesi sang both airs well, gaining for himself decided applause.</p>\r\n<p>On the whole, here is a highly-talented and well-regulated orchestra. The conductor for the evening was Julius Rietz, well known to the musical world.</p>\r\n<p>I will mention one or two things about the audience:</p>\r\n<p>1st. Gentlemen took off their hats before passing the door of the hall, all of them, without a single exception; and this, although they were there an hour before the performance commenced. There was not a single man standing under the galleries or near the doors, uncovered. The ungentlemanly act of standing or sitting in a concert room with hats on, could not be seen in the Gewandhaus.</p>\r\n<p>2d. Ladies were all in full dress.</p>\r\n<p>3d. There was silence during the performance of music. The moment the music ceased, then indeed there was a perfect buzzing of voices, and very loud talking all over the room; but at the signal for the commencement of the music, all was still; and we were not prevented from hearing the music by those whisperings, so annoying in some places.</p>\r\n<p>On the whole, this was a very fine concert; the orchestra playing was as near to perfection, I doubt not, as can often be found; and that constitutes the great attraction of the Gewandhaus. Every man seems to be able to play on his own instrument well; every man seems to give undivided attention to the music, and to endeavor to observe carefully, not only the time, as given by the conductor, but all those little gesticulations by which expression is indicated.</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Musical letters from abroad' pp. 21-7 (1627 words)"@en , "excerpt from 'Musical letters from Abroad' pp. 21-27 (1627 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "21-7" , "21-27" .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/agent/W.+Haake/1448275767468>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "W. Haake"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://dbpedia.org/resource/Halle>
+        rdfs:label  "Halle"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://dbpedia.org/resource/Gewandhaus>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Gewandhaus"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448276216499>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Salvatore Marchesi"@en .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://data.open.ac.uk/led/person/N.+W.+Gade/1448275898173>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "N. W. Gade" .
+
+<http://data.open.ac.uk/led/performance/0db7064b462e607f150289d05a7559b5/1448275700546>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Symphony No. 8'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Symphony>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony+No.+8/1396006321886>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448275700551> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/id/day/1872-08-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 August, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/led/lexp/1448276340407>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/6f6d2ceab2bd270920ca94e29fa41f04>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "21-27";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/5760580fa404c80b782c9b59980a2287>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1852-01-Mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-14T13:43:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-23T10:59:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1d29cc2972a9f11ee0f48891321c327b/1448276216495> , <http://data.open.ac.uk/led/performance/0db7064b462e607f150289d05a7559b5/1448275700546> , <http://data.open.ac.uk/led/performance/dda4f3322cd2fdbee8549113951c0f6b/1448275898177> , <http://data.open.ac.uk/led/performance/d60190fb58c2d4d9c2bbe2524715c8dc/1448276296799> , <http://data.open.ac.uk/led/performance/d21fe6566593a1ad46335f6b73cab2a7/1448276120385> , <http://data.open.ac.uk/led/performance/94d6c5f70b00df145a061d4d4ca1d48e/1448275637249> , <http://data.open.ac.uk/led/performance/63a229f70e99a22888a141e04d217b89/1448276010709> , <http://data.open.ac.uk/led/performance/232b9f2746e3c37079438e75d7deec0a/1448275767463>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/6f6d2ceab2bd270920ca94e29fa41f04> .
+
+<http://reference.data.gov.uk/id/day/1759-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1759"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1759;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn"@en .
+
+<http://dbpedia.org/resource/Symphony>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Symphony"@en .
+
+<http://dbpedia.org/resource/George_Frideric_Handel>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Handel" , "George Frideric Handel"@en , "Handel"@en , "George Friderich Handel"@en , "Georg Friedrich Haendel"@en , "George Frideric Handel";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1685-02-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Halle>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1759-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Handel";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George Frideric";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Georg Friedrich Haendel"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/Aria+from+Aerio/1448275637234>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Aria from Aerio"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/George_Frideric_Handel>;
+        <http://purl.org/dc/terms/title>
+                "Aria from Aerio";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/George_Frideric_Handel> .
+
+<http://reference.data.gov.uk/id/day/1685-02-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 February, 1685"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1685;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448276120403>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gewandhaus Orchestra"@en .
+
+<http://dbpedia.org/resource/Flute>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Flute"@en .
+
+<http://data.open.ac.uk/led/performance/d21fe6566593a1ad46335f6b73cab2a7/1448276120385>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Concerto for pianoforte in d minor'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Concerto+for+pianoforte+in+d+minor/1448276120366>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448276120403> .
+
+<http://data.open.ac.uk/led/music/Symphony+No.+8/1396006321886>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony No. 8"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Symphony No. 8";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+<http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Mason Brothers"@en .
+
+<http://data.open.ac.uk/led/place/5760580fa404c80b782c9b59980a2287>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig Gewandhaus"@en;
+        <http://purl.org/dc/terms/description>
+                "Leipzig Gewandhaus"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Gewandhaus> , <http://dbpedia.org/resource/Leipzig> .
+
+<http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448276010713>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Salvatore Marchesi"@en .
+
+<http://data.open.ac.uk/led/person/Cherubini/1448276296795>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Cherubini" .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/performance/d60190fb58c2d4d9c2bbe2524715c8dc/1448276296799>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Der Wassertrager Overture'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Overture>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Der+Wassertrager+Overture/1448276296780>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448276296803> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Orange,_New_Jersey>
+        rdfs:label  "Orange, New Jersey"@en .
+
+<http://data.open.ac.uk/led/music/Echoes+of+Ossian/1448275898159>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Echoes of Ossian"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/N.+W.+Gade/1448275898173>;
+        <http://purl.org/dc/terms/title>
+                "Echoes of Ossian";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/N.+W.+Gade/1448275898173> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Aria>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Aria"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448275898181>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gewandhaus Orchestra"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/led/music/an+aria+from+the+Magic+Flute/1448276010693>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "an aria from the Magic Flute"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "an aria from the Magic Flute";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://dbpedia.org/resource/Overture>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Overture"@en .
+
+<http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448276296803>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gewandhaus Orchestra"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/music/Der+Wassertrager+Overture/1448276296780>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Der Wassertrager Overture"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Cherubini/1448276296795>;
+        <http://purl.org/dc/terms/title>
+                "Der Wassertrager Overture";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Cherubini/1448276296795> .
+
+<http://data.open.ac.uk/led/agent/Gewandhaus+Orchestra/1448275700551>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gewandhaus Orchestra"@en .
+
+<http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448275637253>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Salvatore Marchesi"@en .
+
+<http://data.open.ac.uk/led/performance/63a229f70e99a22888a141e04d217b89/1448276010709>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'an aria from the Magic Flute'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Aria>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/an+aria+from+the+Magic+Flute/1448276010693>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Salvatore+Marchesi/1448276010713> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .

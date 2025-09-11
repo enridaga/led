@@ -1,0 +1,220 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Kent>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Kent"@en .
+
+<http://bnb.data.bl.uk/id/person/DickensCharles1812-1870>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Charles Dickens "@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1812-02-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Portsmouth>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1870-06-09>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Kent>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Dickens";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charles";
+        <http://xmlns.com/foaf/0.1/name>
+                "Charles Dickens" .
+
+<http://bnb.data.bl.uk/id/person/InghamPatricia>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Patricia Ingham"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://bnb.data.bl.uk/id/agent/PenguinBooks>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Penguin Books"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Penguin_Books> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/2000-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2000"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Portsmouth>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Portsmouth"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fhymn%2F1382446347518/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRichmond%2C_Virginia1382446347528>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'hymn'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Richmond,_Virginia>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/DickensCharles1812-1870>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/hymn/1382446347518>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/slaves/1382446347532> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/lexp/1382446449>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Dickens is describing 'a visit to a tobacco manufactory, where the workmen were all slaves'."@en;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Many of the workmen appeared to be strong men, and it is hardly necessary to add that they were all labouring quietly, then. After two o' clock in the day, they are allowed to sing, a certain number at a time. The hour striking while I was there, some twenty sang a hymn in parts, and sang it by no means ill."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FAmerican%2BNotes%2F1382369320680/pages152>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "152";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/DickensCharles1812-1870>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Richmond,_Virginia>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1842-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-10-22T12:54:09.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fhymn%2F1382446347518/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRichmond%2C_Virginia1382446347528> .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FAmerican%2BNotes%2F1382369320680/pages152>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "American Notes, pages 152"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/American+Notes/1382369320680> .
+
+<http://reference.data.gov.uk/id/day/1870-06-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 June, 1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/agent/slaves/1382446347532>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "slaves"@en .
+
+<http://data.open.ac.uk/time/edtf/1842-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1842"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1842;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1842>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://dbpedia.org/resource/Richmond,_Virginia>
+        rdfs:label  "Richmond, Virginia"@en .
+
+<http://data.open.ac.uk/led/source/American+Notes/1382369320680>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "American Notes"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2000-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/PenguinBooks>;
+        <http://purl.org/dc/terms/title>
+                "American Notes";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/InghamPatricia>;
+        <http://purl.org/ontology/bibo/isbn>
+                "9780140436495";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/DickensCharles1812-1870> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.42>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  42 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Penguin_Books>
+        rdfs:label  "Penguin Books"@en .
+
+<http://data.open.ac.uk/led/music/hymn/1382446347518>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymn"@en;
+        <http://purl.org/dc/terms/title>
+                "hymn" .
+
+<http://reference.data.gov.uk/id/year/1842>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1842"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/day/1812-02-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 February, 1812"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1812;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .

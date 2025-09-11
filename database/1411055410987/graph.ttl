@@ -1,0 +1,119 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/performance/1267d391f0240e6cd263f189af4c388a/1453811001480>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Ballet Music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Ballet_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/anonymous/1401463313771>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Ballet+Music/1453811001466> .
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://data.open.ac.uk/led/music/Ballet+Music/1453811001466>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Ballet Music"@en;
+        <http://purl.org/dc/terms/title>
+                "Ballet Music" .
+
+<http://bnb.data.bl.uk/id/organization/SouthbankCentre>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Southbank Centre"@en .
+
+<http://data.open.ac.uk/led/lexp/1411055410987>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/ee04151043d57106ee7b4b395a82997a/excerpt/d6c50444e4193261c7901923c452e4c5>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/anonymous/1401463313771>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1951-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-01-26T12:23:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-09-18T15:50:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1267d391f0240e6cd263f189af4c388a/1453811001480>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/ee04151043d57106ee7b4b395a82997a/excerpt/d6c50444e4193261c7901923c452e4c5> .
+
+<http://dbpedia.org/resource/Ballet_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ballet (music)"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1951-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1951>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://data.open.ac.uk/led/source/ee04151043d57106ee7b4b395a82997a/excerpt/d6c50444e4193261c7901923c452e4c5>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Was taken to the Festival Hall by my elder sister to see the Bolshoi do Pas de Deux and was absolutely amazed when the mail [sic] dancer caught the female and he was standing almost in the orchestra pit and I just exploded with cheers until everyone joined in as it was a matinee and the audience was so cold up until then. My sister was very embarrassed but I was so excited. The next time I remember the Festival Hall was when dear Joan Sutherland was singing their [sic] and I had a seat two rows in front of her and she was laughing at me while she was singing, because I was sliding down the seat. She has a gorgeous voice and it is so powerful. She said to me afterwards like You won't do that again.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Southbank Centre Archive' (139 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/person/anonymous/1401463313771>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Colin and partner"@en , "anonymous"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "anonymous";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Colin and partner"@en .
+
+<http://reference.data.gov.uk/id/year/1951>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Manuscript>;
+        rdfs:comment       "Memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "From an oral archive of memories of long-standing visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room, gathered during 2006-07"@en , "The archive contains recorded interviews made with visitors to the Royal Festival Hall and Queen Elizabeth Halls, London SE1 8XX made during 2006/07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room during 2006-07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en , " "@en , "Additional Information on Source sub-form: Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en;
+        rdfs:label         "Southbank Centre Archive "@en , "Southbank Centre Archive"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        led:in_collection  "Southbank Centre Archive";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Southbank Centre Archive, http://www.southbankcentre.co.uk/about-us/history-and-archive/southbank-centre-archive"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Southbank Centre Archive";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/SouthbankCentre>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .

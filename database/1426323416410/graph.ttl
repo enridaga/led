@@ -1,0 +1,164 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Los_Angeles>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Los Angeles"@en .
+
+<http://data.open.ac.uk/time/edtf/1976-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1976>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://reference.data.gov.uk/id/year/1976>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://reference.data.gov.uk/id/year/1903>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Cello player"@en , "Cellist"@en;
+        <http://purl.org/dc/terms/subject>
+                <http://dbpedia.org/resource/Cello> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Gregor+Piatigorsky-+Cellist/1425336406176>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Cellist- Gregor Piatigorsky"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1976-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "Cellist- Gregor Piatigorsky";
+        <http://purl.org/ontology/bibo/isbn>
+                "0-306-70822-1"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_> .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Grigor Piatigorsky"@en , "Gregor Piatigorsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1903-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Yekaterinoslav_Governorate>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-08-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Los_Angeles>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Piatigorsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gregor" .
+
+<http://data.open.ac.uk/time/edtf/1903-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1903"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1903;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1903>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://reference.data.gov.uk/id/day/1976-08-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 August, 1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/lexp/1426323416410>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "One of the concerts was the guitar recital of Andrés Segovia, whom I had not heard before. The exquisite artist transformed his intimate guitar into a miniature orchestra with many shades of color and timbre. Even the slides, which because of the frets made unwanted notes audible, did not mar my enjoyment. Astonished with his mastery, I stayed as long as he played for the enthusiastic audience. Just before he finished the last piece, which ended in a pianissimo, there was a loud cracking noise. Startled, Segovia looked at his guitar and hurried off. / I went to see him backstage. He looked heavier than from the stage, and his meaty hands felt too massive to have produced such delicate sounds. “My guitar, guitar,” he repeated, as if was the only word he knew. / Later Segovia told me that his friend, the maker of the guitar, had died in Madrid the very minute his guitar had split at the concert in Berlin."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Gregor+Piatigorsky-+Cellist/1425336406176>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/temp>;
+        led:pages              "174-175";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1929-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-02T15:58:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-03-14T08:56:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://dbpedia.org/resource/Yekaterinoslav_Governorate>
+        rdfs:label  "Yekaterinoslav Governorate"@en .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

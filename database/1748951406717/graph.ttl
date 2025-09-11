@@ -1,0 +1,151 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/performance/6e4b9aa1897e501eb5625be2a2c006e3/1748951347934>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'French and English songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Madrid>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/A+companion/employee+of+the+Earl+of+Sandwich/1748950698682>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/French+and+English+songs/1748951347909>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Don+Gaspar+de+Bracamonte+y+Guzm%C3%A1n+Conde+and+Grande+de+Pe%C3%B1aranda/1748951347957> .
+
+<http://dbpedia.org/resource/Madrid>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Madrid"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.66>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  66 .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/agent/Don+Gaspar+de+Bracamonte+y+Guzm%C3%A1n+Conde+and+Grande+de+Pe%C3%B1aranda/1748951347957>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Don Gaspar de Bracamonte y Guzmán Conde and Grande de Peñaranda"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/music/French+and+English+songs/1748951347909>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "French and English songs"@en;
+        <http://purl.org/dc/terms/title>
+                "French and English songs" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+someone+who+accompanied+the+Earl+of+Sandwich+on+his+extraordinary+embassy+to+Spain+in+1666/1748950532550>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of someone who accompanied the Earl of Sandwich on his extraordinary embassy to Spain in 1666"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "Chetham's Library, Manchester";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Published with the kind permission of Chetham's Library, Manchester"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of someone who accompanied the Earl of Sandwich on his extraordinary embassy to Spain in 1666";
+        <http://purl.org/ontology/bibo/number>
+                "A.2.122 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/anonymous/1748950532579> .
+
+<http://data.open.ac.uk/led/lexp/1748951406717>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/31dd745070499e7bd65aa1d75589ff23/excerpt/46a81f74e86fb94aedad539e0511e105>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/A+companion/employee+of+the+Earl+of+Sandwich/1748950698682>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/a58dab6244fabdb91b9815f5f3a5e9ab>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1666-12-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2025-06-12T09:59:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2025-06-03T11:50:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/6e4b9aa1897e501eb5625be2a2c006e3/1748951347934>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/31dd745070499e7bd65aa1d75589ff23/excerpt/46a81f74e86fb94aedad539e0511e105> .
+
+<http://data.open.ac.uk/led/agent/anonymous/1748950532579>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "anonymous"@en .
+
+<http://data.open.ac.uk/time/edtf/1666-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 1666"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.66> .
+
+<http://data.open.ac.uk/led/source/31dd745070499e7bd65aa1d75589ff23/excerpt/46a81f74e86fb94aedad539e0511e105>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><a name=\"_Hlk124267448\"></a><strong style=\"mso-bidi-font-weight: normal;\"><span style=\"font-size: 14.0pt; line-height: 150%; mso-ansi-language: EN-GB;\">Diary entry &ldquo;Wednesday 19&rdquo; from 19<sup>th</sup> December 1666</span></strong></p>\n<p style=\"margin: 0cm; background: white; vertical-align: baseline;\">in y<sup>e</sup> morning My Lord went to visite y<sup>e</sup> Kings nurse in y<sup>e</sup> afternoon to y<sup>e</sup> pallace to a junto where he was very long a man of y<sup>e</sup> conde de Penaranda who acts a fiole very well and sings very well and did sing like a nun and a priest and all french and English tunes and did make the best sport y<sup>t</sup> ever I saw in my life.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diary of someone who accompanied the Earl of Sandwich on his extraordinary embassy to Spain in 1666' (76 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+someone+who+accompanied+the+Earl+of+Sandwich+on+his+extraordinary+embassy+to+Spain+in+1666/1748950532550>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/agent/A+companion/employee+of+the+Earl+of+Sandwich/1748950698682>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A companion/employee of the Earl of Sandwich"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Sandwich";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "A companion/employee of the Earl of" .
+
+<http://data.open.ac.uk/led/place/a58dab6244fabdb91b9815f5f3a5e9ab>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "a palace in Madrid"@en;
+        <http://purl.org/dc/terms/description>
+                "a palace in Madrid"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Madrid> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

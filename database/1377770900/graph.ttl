@@ -1,0 +1,344 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/15JO4>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/15JO4"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1377770900>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I look forward to playing duets with you as one of my future pleasures, and if I am able to go on working, I hope we shall afford to have a fine grand piano. I have none of Mozart's Symphonies, so that you can be guided in your choice of them entirely by your own tastes. I know Beethoven's Sonata in E flat well. It is a very charming one, and I shall like to hear you play it. That is one of my luxuries -- to sit still and hear some one playing my favourite music; so that you may be sure you will find willing ears to listen to the fruits of your industrious practising. \r\n\r\nThere are ladies in the world, not a few, who play the violin, and I wish I were one of them, for then we could play together sonatas for the piano and violin which make a charming combination. The violin gives that keen edge of tone which the piano wants. \r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+George+Eliot+to+Charles+Lee+Lewes,+30+July+1859/1386344007653>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "125";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1859-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-06T15:33:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FMozart%2Bsymphonies%2F13777708044151377770804421> , <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FBeethoven%2BSonata%2Bin%2BE%2Bflat%2F13777708651931377770865198> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FMozart%2Bsymphonies%2F13777708044151377770804421>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mozart symphonies'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano_duet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Mozart+symphonies/1377770804415> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.59>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  59 .
+
+<http://reference.data.gov.uk/id/day/1819-11-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 November, 1819"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1819;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Mary Ann [Marian] Evans"@en , "George Eliot"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism> , <http://dbpedia.org/resource/Humanism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1819-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Warwickshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1880-12-22>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Eliot";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mary Ann [Marian] Evans"@en .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FBeethoven%2BSonata%2Bin%2BE%2Bflat%2F13777708651931377770865198>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Beethoven Sonata in E flat'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano_duet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Beethoven+Sonata+in+E+flat/1377770865193> .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Warwickshire>
+        rdfs:label  "Warwickshire"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://dbpedia.org/resource/New_Haven,_Connecticut>
+        rdfs:label  "New Haven, Connecticut"@en .
+
+<http://data.open.ac.uk/led/music/Beethoven+Sonata+in+E+flat/1377770865193>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Beethoven Sonata in E flat"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Beethoven Sonata in E flat" .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/led/music/Mozart+symphonies/1377770804415>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Mozart symphonies"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "Mozart symphonies" .
+
+<http://reference.data.gov.uk/id/year/1859>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1859"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Gordon+S.+Haight/1386344007668>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gordon S. Haight"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://dbpedia.org/resource/Category:Philosophical_movements>
+        rdfs:label  "Philosophical movements"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+George+Eliot+to+Charles+Lee+Lewes,+30+July+1859/1386344007653>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from George Eliot to Charles Lee Lewes, 30 July 1859"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+George+Eliot+Letters,+vol.+3:+1859-1861>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/15JO4>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from George Eliot to Charles Lee Lewes, 30 July 1859";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/id/day/1880-12-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 December, 1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://data.open.ac.uk/time/edtf/1954-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1954"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1954;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://dbpedia.org/resource/Humanism>
+        rdf:type    <http://dbpedia.org/resource/Category:Philosophical_movements>;
+        rdfs:label  "Humanism"@en .
+
+<http://data.open.ac.uk/time/edtf/1859-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1859"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1859;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1859>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://dbpedia.org/resource/Piano_duet>
+        rdfs:label  "Piano duet"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://bnb.data.bl.uk/id/agent/YaleUP>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Yale University Press"@en .
+
+<http://data.open.ac.uk/led/source/The+George+Eliot+Letters,+vol.+3:+1859-1861>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The George Eliot Letters, vol. 3: 1859-1861"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1954-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/YaleUP>;
+        <http://purl.org/dc/terms/title>
+                "The George Eliot Letters, vol. 3: 1859-1861";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Gordon+S.+Haight/1386344007668>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Haven,_Connecticut>;
+        <http://purl.org/ontology/bibo/volume>
+                "3" .

@@ -1,0 +1,194 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/time/edtf/2005-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 2005"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.05> .
+
+<http://bnb.data.bl.uk/id/person/DoveJonathan1959->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Jonathan Dove"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.06> .
+
+<http://dbpedia.org/resource/Musical_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Musical instrument"@en .
+
+<http://dbpedia.org/resource/Contemporary_classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Contemporary classical music"@en .
+
+<http://data.open.ac.uk/time/interval/2005-12-uu/to/2006-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between December, 2005 and June, 2006"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/2005-12-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/2006-06-uu> .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+2005+%E2%80%93+2006+Education+and+Community+Project/1635851238927>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. It devises education projects with schools and community groups that reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists, and the Spitalfields Festival, with East End of London children, adults and elderly people. "@en;
+        rdfs:label                  "Spitalfields Festival 2005 – 2006 Education and Community Project"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival 2005 – 2006 Education and Community Project";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Phillip+Flood/1635851238948> , <http://bnb.data.bl.uk/id/person/DoveJonathan1959-> .
+
+<http://data.open.ac.uk/led/lexp/1635851626631>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Venues for listening experiences could include Christ Church Spitalfields, Spitalfields Market and the Royal London Hospital waiting area; local schools such as The Cherry Trees Special Primary made and performed works at their school as part of the year-round education and community programme. "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/a1bde3c97f996007c6d3b0a9c6eabbc1/excerpt/82e6cd033ce796cb3f6131e83383aa8e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "7; 10; 16";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/anonymous+listeners/1635849881008> , <http://data.open.ac.uk/led/agent/Jack/1644755823242>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/East_End_of_London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/2005-12-uu/to/2006-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-13T12:42:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-02T11:13:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/2fc900e209cce2a2262310b53fc7ce92/1635851492911>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a1bde3c97f996007c6d3b0a9c6eabbc1/excerpt/82e6cd033ce796cb3f6131e83383aa8e> .
+
+<http://data.open.ac.uk/led/agent/Phillip+Flood/1635851238948>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Phillip Flood"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/musicgenre/Concert+music>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Concert music"@en .
+
+<http://data.open.ac.uk/led/source/a1bde3c97f996007c6d3b0a9c6eabbc1/excerpt/82e6cd033ce796cb3f6131e83383aa8e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">[a compilation of audience comments about Spitalfields Festival concerts and other events]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">I liked doing my performance and listening to the singing lady. (Jack, pupil, The Cherry Trees Special Primary School)</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">Wonderful to hear young people [Manson Ensemble] perform with such a high degree of competence and obvious enjoyment. (audience member, June 2006)</span><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">What a wonderful opportunity to hear early music live in lovely settings at a reasonable price. (audience member, June 2006)</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival 2005 – 2006 Education and Community Project' pp. 7; 10; 16 (71 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+2005+%E2%80%93+2006+Education+and+Community+Project/1635851238927>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "7; 10; 16" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Manson+Ensemble/1635851492953>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Manson Ensemble"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.05>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/agent/female+singer/1644756078550>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "female singer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.06>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/school+pupil>
+        rdfs:label  "school pupil"@en .
+
+<http://data.open.ac.uk/led/music/performances+at+Spitalfields+Festivals+and+community+projects/1635851492895>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "performances at Spitalfields Festivals and community projects"@en;
+        <http://purl.org/dc/terms/title>
+                "performances at Spitalfields Festivals and community projects" .
+
+<http://data.open.ac.uk/led/agent/Jack/1644755823242>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Jack"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/school+pupil>;
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jack" .
+
+<http://data.open.ac.uk/led/agent/anonymous+listeners/1635849881008>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "anonymous listeners"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "listeners";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "anonymous" .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://musicbrainz.org/artist/dde58a78-70c2-4efc-9380-17d57b6032cc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Schoolboy"@en .
+
+<http://data.open.ac.uk/led/performance/2fc900e209cce2a2262310b53fc7ce92/1635851492911>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'performances at Spitalfields Festivals and community projects'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/East_End_of_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/Concert+music> , <http://dbpedia.org/resource/Contemporary_classical_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Musical_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Jack/1644755823242> , <http://data.open.ac.uk/led/agent/anonymous+listeners/1635849881008>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/performances+at+Spitalfields+Festivals+and+community+projects/1635851492895>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Manson+Ensemble/1635851492953> , <http://musicbrainz.org/artist/dde58a78-70c2-4efc-9380-17d57b6032cc#_> , <http://data.open.ac.uk/led/agent/female+singer/1644756078550> .

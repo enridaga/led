@@ -1,0 +1,224 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1935>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1935"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://bnb.data.bl.uk/id/agent/PenguinBooks>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Penguin Books"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Penguin_Books> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://reference.data.gov.uk/id/day/1914-06-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 June, 1914"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1914;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/led/music/waltzes/1404495379563>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "waltzes"@en;
+        <http://purl.org/dc/terms/title>
+                "waltzes" .
+
+<http://data.open.ac.uk/led/music/pasodobles/1404495337993>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "pasodobles"@en;
+        <http://purl.org/dc/terms/title>
+                "pasodobles" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://dbpedia.org/resource/Dance_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Dance music"@en .
+
+<http://data.open.ac.uk/led/source/As+I+Walked+Out+One+Midsummer+Morning/1404225637441>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "As I Walked Out One Midsummer Morning"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/PenguinBooks>;
+        <http://purl.org/dc/terms/title>
+                "As I Walked Out One Midsummer Morning";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Harmondsworth>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/LeeLaurie> .
+
+<http://bnb.data.bl.uk/id/person/LeeLaurie>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Laurie Lee"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1914-06-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Slad>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1997-05-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Slad>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Lee";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Laurie" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.97>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  97 .
+
+<http://data.open.ac.uk/time/edtf/1935-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1935"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1935;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1935>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<http://dbpedia.org/resource/Harmondsworth>
+        rdfs:label  "Harmondsworth"@en .
+
+<http://data.open.ac.uk/led/lexp/1404495404105>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "[O]ne night, as I was having my supper in the square, three young men invited me to a brothel. They addressed me as ‘Maestro’, and introduced themselves formally: Antonio, Amistad, and Julio…\r\n     Somewhere out in the suburbs we came to an old dark house, windowless, with a heavy door. The boys kicked it delicately with their pointed shoes and made low-pitched animal cries…\r\n     ‘We've brought music,’ said Julio. ‘Let us in, Consuelito.’…\r\n     When we were comfortably settled, the old man took the violin from my hands and returned it with a little bow. ‘Enchant us,’ he said, and slipped me some money. The girls rose slowly to their feet and joined us.\r\n     I remember the whoosh of the wine going through my limbs, the throbbing and familiar fires, as I sat with my feet across the table scraping out waltzes and pasodobles. Julio beat time with a couple of spoons, Antonio tapped his teeth with a knife, while Amistad, already as pink as a prawn, sang away in a sickly tenor.\r\n     …Grandpa found an accordion, which he gave to Antonio, and together we kept up our wheezy concert. Meanwhile the beaming old man half-drowned us with wine and said we were an honour to the house.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/As+I+Walked+Out+One+Midsummer+Morning/1404225637441>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "120-121";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Valdepe%C3%B1as>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1935-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-07-04T17:36:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/waltzes+(,+performance+of)/1404495379577> , <http://data.open.ac.uk/led/performance/pasodobles+(,+performance+of)/1404495338007> .
+
+<http://data.open.ac.uk/led/performance/waltzes+(,+performance+of)/1404495379577>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'waltzes'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Valdepe%C3%B1as>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/waltzes/1404495379563>;
+        <http://purl.org/ontology/mo/performer>
+                <http://bnb.data.bl.uk/id/person/LeeLaurie> .
+
+<http://data.open.ac.uk/led/performance/pasodobles+(,+performance+of)/1404495338007>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'pasodobles'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Valdepe%C3%B1as>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/pasodobles/1404495337993>;
+        <http://purl.org/ontology/mo/performer>
+                <http://bnb.data.bl.uk/id/person/LeeLaurie> .
+
+<http://reference.data.gov.uk/id/day/1997-05-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 May, 1997"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1997;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.97> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Valdepe%C3%B1as>
+        rdfs:label  "Valdepeñas"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Penguin_Books>
+        rdfs:label  "Penguin Books"@en .
+
+<http://dbpedia.org/resource/Slad>
+        rdfs:label  "Slad"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .

@@ -1,0 +1,396 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical letters from Abroad"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/musical+letters+from+abroad>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/musicallettersf00unkngoog>;
+        <http://purl.org/dc/terms/title>
+                "Musical letters from Abroad";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_> .
+
+<http://data.open.ac.uk/time/edtf/1852-03-Mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid March, 1852"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1852;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/led/performance/99dd1e08552b63fa2af5218c86e65605/1448286360001>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Variations for pianoforte'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Variations+for+pianoforte/1448286359982>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Speidl/1448286142537> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/music/String+Quartet/1448286271426>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "String Quartet"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/cbb7acb4-b1a5-485c-b14f-10667ebcc3b3#_>;
+        <http://purl.org/dc/terms/title>
+                "String Quartet";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/cbb7acb4-b1a5-485c-b14f-10667ebcc3b3#_> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/source/musical+letters+from+abroad>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Musical Letters from Abroad"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>;
+        <http://purl.org/dc/terms/title>
+                "Musical Letters from Abroad";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn"@en .
+
+<http://data.open.ac.uk/led/performance/71c948658e5a32f5092ca178af263a1e/1448286271440>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'String Quartet'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/String_quartet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/String+Quartet/1448286271426>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81625669-51ef-49a8-938d-5ea2040fa12c#_> , <http://musicbrainz.org/artist/b2ab5626-bcd9-4a54-98ba-3ac1340f2753#_> , <http://musicbrainz.org/artist/9389d107-8178-427b-b9b1-f2cff3702ed6#_> , <http://musicbrainz.org/artist/81d88460-9470-41a7-af2c-0a6ff9a52121#_> .
+
+<http://reference.data.gov.uk/id/day/1792-01-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 January, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/led/performance/cf4333ba503880a95e6068167a9795f9/1448286424167>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'String Quartet Op. 59'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/String_quartet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/String+Quartet+Op.+59/1448286424160>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81625669-51ef-49a8-938d-5ea2040fa12c#_> .
+
+<http://data.open.ac.uk/led/agent/Speidl/1448286142537>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Speidl"@en .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<https://archive.org/details/musicallettersf00unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive Digital Copy"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/musicallettersf00unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/9389d107-8178-427b-b9b1-f2cff3702ed6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Julius Rietz"@en .
+
+<http://dbpedia.org/resource/Medfield,_Massachusetts>
+        rdfs:label  "Medfield, Massachusetts"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Lowell Mason"@en , "Dr. Lowell Mason";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-01-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Medfield,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-08-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Orange,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/led/agent/Rietz/1432022083471>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Rietz"@en .
+
+<http://data.open.ac.uk/led/place/0a19459865ed69275723d6efb76048c9>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Gewandhaus, Leipzig"@en;
+        <http://purl.org/dc/terms/description>
+                "Gewandhaus, Leipzig"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Gewandhaus> , <http://dbpedia.org/resource/Leipzig> .
+
+<http://data.open.ac.uk/led/lexp/1448286451685>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/ba3815dea8a14788b5541ee9d8880dc2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "64-5";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0a19459865ed69275723d6efb76048c9>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1852-03-Mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-16T07:27:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-23T13:47:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/0ef32a0cb8560ce2249a9cab875e4502/1448286142525> , <http://data.open.ac.uk/led/performance/71c948658e5a32f5092ca178af263a1e/1448286271440> , <http://data.open.ac.uk/led/performance/99dd1e08552b63fa2af5218c86e65605/1448286360001> , <http://data.open.ac.uk/led/performance/cf4333ba503880a95e6068167a9795f9/1448286424167>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/ba3815dea8a14788b5541ee9d8880dc2> .
+
+<http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Mason Brothers"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/performance/0ef32a0cb8560ce2249a9cab875e4502/1448286142525>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano Trio Op. 7'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gewandhaus>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cello> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+Trio/1448286142510>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Rietz/1432022083471> , <http://musicbrainz.org/artist/81d88460-9470-41a7-af2c-0a6ff9a52121#_> , <http://musicbrainz.org/artist/b2ab5626-bcd9-4a54-98ba-3ac1340f2753#_> , <http://data.open.ac.uk/led/agent/Speidl/1448286142537> , <http://musicbrainz.org/artist/81625669-51ef-49a8-938d-5ea2040fa12c#_> .
+
+<http://dbpedia.org/resource/String_quartet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "String quartet"@en .
+
+<http://data.open.ac.uk/led/music/Variations+for+pianoforte/1448286359982>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Variations for pianoforte"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://purl.org/dc/terms/title>
+                "Variations for pianoforte";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_> .
+
+<http://musicbrainz.org/artist/81625669-51ef-49a8-938d-5ea2040fa12c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gewandhaus-Quartett"@en .
+
+<http://musicbrainz.org/artist/b2ab5626-bcd9-4a54-98ba-3ac1340f2753#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Alexander Dreyschock"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Gewandhaus>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Gewandhaus"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Orange,_New_Jersey>
+        rdfs:label  "Orange, New Jersey"@en .
+
+<http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/ba3815dea8a14788b5541ee9d8880dc2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>A charming Quartette performance was recently given by a few of the very best artists here, as David, Dreyschock, (violinist,) Rietz, and others whose names are less known. They were assisted by a pianist from Munich, Herr Speidl. The following pieces were played. 1st. Trio for pianoforte, violin and violoncello, by Beethoven, (op. 70,) by Speidl, David, and Rietz. 2d. Quartette for strings, composed by David. 3d. Variations for pianoforte, by Mendelssohn. 4th. Quartette by Beethoven, (op. 59,) performed by Dreyschock, Rongen, Hermann, and Rietz.</p>\r\n<p>There are only four of these concerts in the annual series, so that they are much more rare here than in Boston. They seem not to be so popular as the concerts by full orchestra, yet they draw out a musical audience of great intelligence, and on this occasion the learned ones were there. It is indeed a great luxury to hear these choice works of Beethoven and others, so perfectly given. The Quartette above mentioned (op. 59) is well known, is always a favorite, and was on this occasion the crowning piece.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Musical letters from abroad' pp. 64-5 (175 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "64-5" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/music/String+Quartet+Op.+59/1448286424160>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "String Quartet Op. 59"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "String Quartet Op. 59";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+<http://musicbrainz.org/artist/cbb7acb4-b1a5-485c-b14f-10667ebcc3b3#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ferdinand David"@en .
+
+<http://dbpedia.org/resource/Chamber_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chamber music"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://reference.data.gov.uk/id/day/1872-08-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 August, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/led/music/Piano+Trio/1448286142510>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano Trio Op. 70"@en , "Piano Trio Op. 7"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Piano Trio Op. 70";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://musicbrainz.org/artist/81d88460-9470-41a7-af2c-0a6ff9a52121#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ferdinand David"@en .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .

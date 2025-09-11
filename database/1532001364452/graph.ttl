@@ -1,0 +1,191 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1939>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1939"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/8bc16f7115e606e0f729d5a903951264/excerpt/d39bb5981c58efc8626b13e9e83fd7f3>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>It is difficult to decide the real standard of merit of these divisonal entertainers. The best of them reached a high level, thanks to the talent available. They had unbounded popularity; the houses were invariably packed to overflow, the applause was vociferous, the laughter deafening. If it was medicine, as I believed it to be, then it was swallowed in great gulps. But perhaps the standard of the shows and their popularity could be counted as a measure of our mentality under strain; they might have bored us in the piping times of peace. If so then I'm glad that for a period at least I was childlike and overwhelmingly amused. Hay Plumb, I fancy, would have raised a smile from even the most hardened playgoer in London, his face was so expressive, his humour so bubbling, his enjoyment so huge, his dancing so good. But should we have counted Marsh's West Country songs as being about the best we'd ever heard?: and could we have stood Isablle de Hotstuff in any other environment?</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Behind the Lines' pp. 256 (174 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Behind+the+Lines/1491833440018>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "256" .
+
+<http://data.open.ac.uk/led/agent/W.+N.+Nicholson/1491833808333>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. N. Nicholson"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/soldier> , <http://data.open.ac.uk/led/military+officer> , <http://data.open.ac.uk/led/colonel>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Nicholson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "W. N." .
+
+<http://data.open.ac.uk/time/interval/1915-uu-uu/to/1918-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1915 and 1918"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1915-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1918-uu-uu> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1939-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1939>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/led/lexp/1532001364452>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/8bc16f7115e606e0f729d5a903951264/excerpt/d39bb5981c58efc8626b13e9e83fd7f3>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages            "256";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/W.+N.+Nicholson/1491833808333>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/France>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1915-uu-uu/to/1918-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-07-19T11:56:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-19T11:56:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/bf2849c1944c527fc43c0a10b640891d/1532001280998>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8bc16f7115e606e0f729d5a903951264/excerpt/d39bb5981c58efc8626b13e9e83fd7f3> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/military+officer>
+        rdfs:label  "Military officer"@en , "Military Officer"@en , "military officer"@en .
+
+<http://reference.data.gov.uk/id/year/1915>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1915"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1915-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1915>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/led/agent/Colonel+W.+N.+Nicholson/1491833440082>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Colonel W. N. Nicholson"@en .
+
+<http://data.open.ac.uk/time/edtf/1918-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://data.open.ac.uk/led/source/Behind+the+Lines/1491833440018>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Behind the Lines"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1939-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/JonathanCape%28Firm%29>;
+        <http://purl.org/dc/terms/title>
+                "Behind the Lines";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Colonel+W.+N.+Nicholson/1491833440082> .
+
+<http://data.open.ac.uk/led/music/divisional+concert+party/1396458350287>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "divisional concert party"@en;
+        <http://purl.org/dc/terms/title>
+                "divisional concert party" .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://bnb.data.bl.uk/id/organization/JonathanCape%28Firm%29>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Jonathan Cape"@en .
+
+<http://data.open.ac.uk/led/colonel>
+        rdfs:label  "colonel"@en .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/led/performance/bf2849c1944c527fc43c0a10b640891d/1532001280998>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'divisional concert party'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/W.+N.+Nicholson/1491833808333>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/divisional+concert+party/1396458350287> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

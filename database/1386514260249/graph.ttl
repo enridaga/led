@@ -1,0 +1,169 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://bnb.data.bl.uk/id/agent/SouthWalesRecordSocietyandGlamorganArchiveService>
+        rdfs:label  "South Wales Record Society and Glamorgan Archive Service"@en .
+
+<http://bnb.data.bl.uk/id/person/ThomasHilaryM%28HilaryMargaret%29>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Hilary M. Thomas"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+John+Bird+of+Cardiff,+27+July+1800/1386514119306>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of John Bird of Cardiff, 27 July 1800"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/008817712>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of John Bird of Cardiff, 27 July 1800";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/BirdJohn1954-> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/military+band+in+front+of+Cardiff+Castle/1386514229344>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "military band in front of Cardiff Castle"@en;
+        <http://purl.org/dc/terms/title>
+                "military band in front of Cardiff Castle" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/military+band+in+front+of+Cardiff+Castle+(,+performance+of)/1386514229352>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'military band in front of Cardiff Castle'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cardiff>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/BirdJohn1954->;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/military+band+in+front+of+Cardiff+Castle/1386514229344>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Glamorgan+Militia+Band/1386514229357> .
+
+<http://bnb.data.bl.uk/id/resource/008817712>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The diaries of John Bird of Cardiff : clerk to the first Marquess of Bute 1790-1803"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1987-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/SouthWalesRecordSocietyandGlamorganArchiveService>;
+        <http://purl.org/dc/terms/title>
+                "The diaries of John Bird of Cardiff : clerk to the first Marquess of Bute 1790-1803";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/ThomasHilaryM%28HilaryMargaret%29>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0950867632"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Cardiff> .
+
+<http://reference.data.gov.uk/id/year/1987>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/place/Cardiff>
+        rdfs:label  "Cardiff"@en .
+
+<http://data.open.ac.uk/led/lexp/1386514260249>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "The Militia went to Church and in the Evening Paraded in the Castle. A great number of Ladies and Gentlemen and others were highly gratified by the Officers causing the Glamorgan Band to play for near 2 Hours in Front of the Castle."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+John+Bird+of+Cardiff,+27+July+1800/1386514119306>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/th4/claims>;
+        led:pages              "124";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/BirdJohn1954->;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cardiff>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1800-07-27>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-08T14:51:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/military+band+in+front+of+Cardiff+Castle+(,+performance+of)/1386514229352> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://reference.data.gov.uk/id/day/1800-07-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 July, 1800"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1800;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Cardiff>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Cardiff"@en .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://data.open.ac.uk/time/edtf/1987-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1987>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/led/agent/Glamorgan+Militia+Band/1386514229357>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Glamorgan Militia Band"@en .
+
+<http://data.open.ac.uk/led/thing/clerk+to+the+First+Marquess+of+Bute>
+        rdfs:label  "clerk to the First Marquess of Bute"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://bnb.data.bl.uk/id/person/BirdJohn1954->
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "John Bird"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/clerk+to+the+First+Marquess+of+Bute>;
+        led:has_social_status  <urn:x-isco08:4>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bird";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .

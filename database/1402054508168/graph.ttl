@@ -1,0 +1,157 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://bnb.data.bl.uk/id/person/ArthurMax1939->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Max Arthur"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/music/The+Old+Bull+and+Bush/1402054480746>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Old Bull and Bush"@en;
+        <http://purl.org/dc/terms/title>
+                "The Old Bull and Bush" .
+
+<http://data.open.ac.uk/led/person/Ernest+Todd/1402054417890>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Ernest Todd"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Soldier>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Todd";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ernest" .
+
+<http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Forgotten Voices of the Great War"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>;
+        <http://purl.org/dc/terms/title>
+                "Forgotten Voices of the Great War";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/ArthurMax1939->;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/1915>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1915"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1915-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1915>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/led/lexp/1402054508168>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "The day would start about half an hour before daybreak. We would stand right up to the parapet looking over, waiting for Jerry to come if he was going to come, then when it was light enough we’d stand down. The sentries detailed would stand at their posts while the rest of us would get down to sandbags or trench work, whatever work there was to be done. The sentries would be relieved about every two hours.\r\n     On a nice summer’s day you could think there wasn’t a war on really... \r\n     Towards the evening they would get sentimental talking about their homes. We had one chap who was a very good singer, and he used to indulge in his singing and lead us in the chorus. But he was always inclined to get a bit sentimental, so we had to shut him up for obvious reasons - we couldn’t stand too much of that.\r\n     Then there was the man we used to call Cornet Joe over in the German front line. He used to blow his cornet and play British songs to us. When he played we would shout out, ‘Damn good, Jerry!’ and, ‘Give us another one, Joe!’ As the lines weren’t too far away he would ask us what we wanted to hear and we would say, ‘Give us the old Bull and Bush.’ So he would play that and we would sing it, and sometimes that session would last half an hour. We would have mouth organs, of course, and well, there was nothing else to do but talk, reminisce and sing.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "92-3";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Ernest+Todd/1402054417890>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/France>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1915-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-06T11:35:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/The+Old+Bull+and+Bush+(,+performance+of)/1402054480755> .
+
+<http://dbpedia.org/resource/Soldier>
+        rdfs:label  "Soldier"@en .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/The+Old+Bull+and+Bush+(,+performance+of)/1402054480755>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Old Bull and Bush'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/France>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cornet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Ernest+Todd/1402054417890>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Old+Bull+and+Bush/1402054480746> .
+
+<http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Ebury Press"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Cornet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cornet"@en .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .

@@ -1,0 +1,300 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anthony Phillips"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/20th-century_classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "20th-century classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://data.open.ac.uk/led/performance/8d89b6397672d9f0cf78ae9a0304e2b7/1450971490798>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Overture to 'La Princesse Maleine''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/20th-century_classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Symphony_orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Overture+to+'La+Princesse+Maleine'/1450971490776>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Alexander_Siloti> .
+
+<http://data.open.ac.uk/time/edtf/1916-01-30TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 January, 1916, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1916;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://dbpedia.org/resource/Sergei_Prokofiev>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Prokofiev"@en , "Sergey Prokofiev"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1891-04-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Donetsk_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Moscow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prokofiev";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Prokofiev"@en .
+
+<http://dbpedia.org/resource/Russian_Orthodox_Church>
+        rdf:type    led:Belief;
+        rdfs:label  "Russian Orthodox Church"@en .
+
+<http://reference.data.gov.uk/id/day/1953-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://dbpedia.org/resource/Saint_Petersburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Saint petersburg"@en , "Saint Petersburg"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://reference.data.gov.uk/id/day/1891-04-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 April, 1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/music/Valisneria/1450971416645>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Valisneria"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Gubenko/1450971416658>;
+        <http://purl.org/dc/terms/title>
+                "Valisneria";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Gubenko/1450971416658> .
+
+<http://data.open.ac.uk/led/source/eb62c255d20cc00a64685ea00c56b77f/excerpt/fc5c03fc846d2f5c177dd8778ad7cbbb>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In the evening BNB* was making his debut as a performer, but I defected and went to Ziloti's concert, not only because of the interesting programme, but because I also simply wanted to see people and show myself after the&nbsp;<em>Ala&nbsp;</em>scandal.**</p>\r\n<p>[...] The programme included: a drab but not totally uninteresting piece by Gubenko,&nbsp;<em>Valisneria</em>, Steinberg's untalented&nbsp;<em>La Princesse Maleine</em>, and Ravel's delicious&nbsp;<em>Rapsodie espagnole</em>. I am definitely beginning to like French composers, whereas as recently as last spring, even after Diaghilev's most importunate attempts to persuade me otherwise, I still could not accept what appeared to me their shallowness, their surface glitter without substance or refinement.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Sergey Prokofiev diaries: 30 January 1916' pp. 79-80 (107 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+30+January+1916/1450971309976>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "79-80" .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Alexander_Siloti>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Alexander Siloti"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Donetsk_Oblast>
+        rdfs:label  "Donetsk Oblast"@en .
+
+<http://data.open.ac.uk/led/source/Sergey+Prokofiev+diaries:+30+January+1916/1450971309976>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Sergey Prokofiev diaries: 30 January 1916"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/sergey+prokofiev+diaries/vol/2>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:rus>;
+        <http://purl.org/dc/terms/title>
+                "Sergey Prokofiev diaries: 30 January 1916";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://data.open.ac.uk/led/agent/Anthony+Phillips/1450307447088>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Sergey+Prokofiev/1450307447086> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Maximilian_Steinberg>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Maximilian Steinberg"@en .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/led/person/Gubenko/1450971416658>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gubenko" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/performance/d430160440dd9ce802d5d45dadc9f077/1450971555637>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Rapsodie espagnole'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/20th-century_classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Symphony_orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Rapsodie+espagnole/1450971555623>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Alexander_Siloti> .
+
+<http://data.open.ac.uk/led/music/Overture+to+'La+Princesse+Maleine'/1450971490776>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Overture to 'La Princesse Maleine'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Maximilian_Steinberg>;
+        <http://purl.org/dc/terms/title>
+                "Overture to 'La Princesse Maleine'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Maximilian_Steinberg> .
+
+<http://dbpedia.org/resource/Symphony_orchestra>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Symphony orchestra"@en , "Symphonic orchestra"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/led/performance/a61e2c5e0635fbc10ce5b6269d00d14f/1450971416671>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Valisneria'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/20th-century_classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Symphony_orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Valisneria/1450971416645>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Alexander_Siloti> .
+
+<http://data.open.ac.uk/led/lexp/1450971590662>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "*S.P.'s friend, Boris Bashkirov, was making his public debut as a poetry reciter.\r\n** The premiere performance of S.P.'s 'Ala i Lolli' (Scythian Suite), which had been something of a succès de scandale."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/eb62c255d20cc00a64685ea00c56b77f/excerpt/fc5c03fc846d2f5c177dd8778ad7cbbb>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/isobel.1111/claims>;
+        led:pages            "79-80";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/5dd5ee4f5f189d148362ee21c6821968>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1916-01-30TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-06-15T16:31:42.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-12-24T15:39:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8d89b6397672d9f0cf78ae9a0304e2b7/1450971490798> , <http://data.open.ac.uk/led/performance/a61e2c5e0635fbc10ce5b6269d00d14f/1450971416671> , <http://data.open.ac.uk/led/performance/d430160440dd9ce802d5d45dadc9f077/1450971555637>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/eb62c255d20cc00a64685ea00c56b77f/excerpt/fc5c03fc846d2f5c177dd8778ad7cbbb> .
+
+<http://data.open.ac.uk/led/music/Rapsodie+espagnole/1450971555623>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Rapsodie espagnole"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/RavelMaurice1875-1937>;
+        <http://purl.org/dc/terms/title>
+                "Rapsodie espagnole";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/RavelMaurice1875-1937> .
+
+<http://dbpedia.org/resource/Moscow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Moscow"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

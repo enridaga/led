@@ -1,0 +1,213 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Kingdom_of_England>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of England"@en .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/performance/cc0ea2f1a7645042360aa8f698911bf8/1547032292800>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'forced unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Wentworth+Greenhalgh/1547032161293>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/forced+unspecified+singing/1547032292775>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/18d8de86-1feb-4d9c-86b8-118f605e49e7#_> .
+
+<http://data.open.ac.uk/led/lexp/1547032413005>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "British History Online, a digital library created by the Institute of Historical Research and the History of Parliament Trust, includes calendars of state papers in which the listening experience was identified. Calendars are very detailed summaries of documents arranged chronologically, intended as a finding aid. Original documents are often held at the National Archives at Kew. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d5a0087db99a9a29a5d621e22bf20752/excerpt/8ba7645b97ceaa4249fa1933502be2dd>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "88-99";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Wentworth+Greenhalgh/1547032161293>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/a57fd4f9d202aac0a76364dce72cce7a>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1677-06-18>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-06-27T14:10:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-09T11:13:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/cc0ea2f1a7645042360aa8f698911bf8/1547032292800>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d5a0087db99a9a29a5d621e22bf20752/excerpt/8ba7645b97ceaa4249fa1933502be2dd> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol10/pp88-99>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2019-01-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British History Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol10/pp88-99"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1677-06-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 June, 1677"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1677;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://reference.data.gov.uk/id/year/1896>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1896-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1896>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://dbpedia.org/resource/New_England>
+        rdfs:label  "New England"@en .
+
+<http://data.open.ac.uk/led/agent/J.W.+Fortescue/1547032095726>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "J.W. Fortescue"@en .
+
+<http://data.open.ac.uk/led/agent/Wentworth+Greenhalgh/1547032161293>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wentworth Greenhalgh"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/english+colonial+government+official>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Greenhalgh";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Wentworth" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/led/music/forced+unspecified+singing/1547032292775>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "forced unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "forced unspecified singing" .
+
+<http://data.open.ac.uk/led/source/'America+and+West+Indies:+May+16-31,+1677'+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+10,+1677-1680/1547032095630>
+        rdf:type           <http://purl.org/ontology/bibo/ReferenceSource> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "'America and West Indies: May 16-31, 1677' in Calendar of State Papers Colonial, America and West Indies: Volume 10, 1677-1680"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/reference_work>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol10/pp88-99>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1896-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/HMSO>;
+        <http://purl.org/dc/terms/title>
+                "'America and West Indies: May 16-31, 1677' in Calendar of State Papers Colonial, America and West Indies: Volume 10, 1677-1680";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/W.+Noel+Sainsbury/1547032095677> , <http://data.open.ac.uk/led/agent/J.W.+Fortescue/1547032095726>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "10" .
+
+<http://musicbrainz.org/artist/18d8de86-1feb-4d9c-86b8-118f605e49e7#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Native American Indians"@en .
+
+<http://bnb.data.bl.uk/id/organization/HMSO>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "H.M.S.O"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/english+colonial+government+official>
+        rdfs:label  "English colonial government official"@en .
+
+<http://data.open.ac.uk/led/place/a57fd4f9d202aac0a76364dce72cce7a>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Colonial New York"@en;
+        <http://purl.org/dc/terms/description>
+                "Colonial New York"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://data.open.ac.uk/led/source/d5a0087db99a9a29a5d621e22bf20752/excerpt/8ba7645b97ceaa4249fa1933502be2dd>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">[Ganondagon, referred to by Greenhalgh as Canagaroh, was a Native American settlement of the Seneca people in western colonial New York.&nbsp;&nbsp;Greenhalgh travelled to the area to secure the Seneca as allies for the British]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><strong><span style=\"font-size: 11pt;\">&nbsp;</span></strong></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">Observations of Wentworth Greenhalgh in a journey from Albany to the Indians westward begun 28th May and ended 14th July 1677 [&hellip;] Being at this place [Tiotehatton] 17th June, there came 50 [Native American] prisoners from the south, of two nations, some whereof have few guns, the other none at all; one nation is about 10 day's journey from any Christians and trade only with one great house not far from the sea, the other trade only, as they say, with a black people; two women and a man were burnt on that day and a child killed with a stone; at night there was a great noise as if the houses had fallen, but it was only the inhabitants driving away the ghosts of the murdered. On the 18th, going to Canagaroh, overtook the prisoners; when the soldiers saw us they stopped each his prisoner and made him</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;sing</span><span style=\"font-size: 11pt; color: #333333;\">, and cut off their fingers and slashed their bodies with a knife, and when they had sung each man confessed how many in his time he had killed[.]</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from ''America and West Indies: May 16-31, 1677' in Calendar of State Papers Colonial, America and West Indies: Volume 10, 1677-1680' pp. 88-99 (209 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/'America+and+West+Indies:+May+16-31,+1677'+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+10,+1677-1680/1547032095630>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "88-99" .
+
+<http://data.open.ac.uk/led/agent/W.+Noel+Sainsbury/1547032095677>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. Noel Sainsbury"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .

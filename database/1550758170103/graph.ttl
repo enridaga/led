@@ -1,0 +1,210 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://data.open.ac.uk/led/music/a+concert/1550758109410>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "a concert"@en;
+        <http://purl.org/dc/terms/title>
+                "a concert" .
+
+<http://reference.data.gov.uk/id/day/1879-11-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 November, 1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://dbpedia.org/resource/Glasgow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Glasgow"@en .
+
+<http://data.open.ac.uk/led/lexp/1550758170103>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/cbce15c29bceaa88f12b04a89674a739/excerpt/11f43fac191ebd17b1503f64961740e8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Agnes+Smart+Livingston/1592820923860>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glasgow>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1933-01-16TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-06-23T11:42:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-21T14:09:30.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/0fb0942aec0c1d847c7203e3fc08b78b/1550758109439>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/cbce15c29bceaa88f12b04a89674a739/excerpt/11f43fac191ebd17b1503f64961740e8> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Church_of_Scotland>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of Scotland"@en .
+
+<http://data.open.ac.uk/led/agent/Agnes+Smart+Livingston/1592820923860>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Agnes Smart Livingston"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/home+maker> , <http://data.open.ac.uk/led/cardboard+cutter>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_Scotland>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1879-11-10>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Glasgow>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1950-uu-uu> , <http://reference.data.gov.uk/id/day/1950-02-27>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Glasgow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Scotland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Livingston";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Agnes Smart" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://data.open.ac.uk/time/edtf/1933-01-16TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 January, 1933, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://reference.data.gov.uk/id/day/1950-02-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 February, 1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston/1550750199371>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Cairns Livingston"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/cardboard+cutter>
+        rdfs:label  "Cardboard cutter"@en .
+
+<http://data.open.ac.uk/led/musicgenre/Concert+music>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Concert music"@en .
+
+<http://data.open.ac.uk/led/performance/0fb0942aec0c1d847c7203e3fc08b78b/1550758109439>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'a concert'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glasgow>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/Concert+music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Agnes+Smart+Livingston/1592820923860>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/a+concert/1550758109410> .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/source/cbce15c29bceaa88f12b04a89674a739/excerpt/11f43fac191ebd17b1503f64961740e8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Monday 16 January, Fog and frost. Agnes at a Concert at night.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diaries of Thomas Cairns Livingston vol. 19' (11 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diaries+of+Thomas+Cairns+Livingston+vol.+19/1550750199328>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/source/Diaries+of+Thomas+Cairns+Livingston+vol.+19/1550750199328>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diaries of Thomas Cairns Livingston vol. 19"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection           "Glasgow City Archives";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Glasgow City Archives"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diaries of Thomas Cairns Livingston vol. 19";
+        <http://purl.org/ontology/bibo/number>
+                "TD1969/19";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston/1550750199371> .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/led/home+maker>
+        rdfs:label  "Home maker"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .

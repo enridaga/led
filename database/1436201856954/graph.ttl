@@ -1,0 +1,412 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/music/Piano+Concerto+in+D+minor/1436201725046>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano Concerto in D minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Anton_Rubinstein>;
+        <http://purl.org/dc/terms/title>
+                "Piano Concerto in D minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Anton_Rubinstein> .
+
+<https://archive.org/details/memoriesofmusici00ganzuoft>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Arcgive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/memoriesofmusici00ganzuoft"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Anton_Rubinstein>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Anton Rubinstein"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/RubinsteinAnton1829-1894> .
+
+<http://bnb.data.bl.uk/id/person/LisztFranz1811-1886>
+        rdfs:label  "Franz Liszt"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Franz_Schubert>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Schubert"@en , "Schubert" , "Franz Schubert" , "Franz Schubert"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Hungarian+Fantasia/1436201805276/1436201805289>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Hungarian Fantasia'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Hungarian+Fantasia/1436201805276>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/eef6905e-0b83-4e9d-90be-4b50308cc832#_> , <http://data.open.ac.uk/led/agent/Annette+Essipoff/1436201193133> .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/led/agent/Madame+Regan-Schimon/1436201637609>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Madame Regan-Schimon"@en .
+
+<http://reference.data.gov.uk/id/year/1913>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1913"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/2cd475bb-1abd-40c4-9904-6d4b691c752c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Franz Liszt"@en .
+
+<http://dbpedia.org/resource/Bayreuth>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Bayreuth"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/music/Lieder/1436201637593>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Lieder"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Schubert>;
+        <http://purl.org/dc/terms/title>
+                "Lieder";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Schubert> .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://reference.data.gov.uk/id/year/1874>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1874"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/day/1886-07-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 July, 1886"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1886;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://data.open.ac.uk/led/source/bad34d441983fdd318dee9449b69ebfa/excerpt/378d338a726ac09e208069fbb368a163>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>At the sixth concert Madame Regan-Schimon was the vocalist and sang \"Lieder\" by Schubert in beautiful style. Madame Essipoff made her second appearance and played Rubinstein's Concerto in D minor, achieving another triumph. Since Rubinstein played this concerto at one of these concerts no one has ever had such a success in it as she had. She also played Liszt's \"Hungarian Fantasia,\" then little known here, with great fire and brilliance. After Madame Essipoff had left England she wrote me a letter in German, in which she said: \"Last night, at half-past twelve at night, I knocked and rang for a long, long time at your door, but it would not open to me any more. I am very sorry not to have seen you again before going away. ... A thousand heartfelt thanks for your friendship for me; I know how to ap-preciate it.\"</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Memories of a Musician: Reminiscences of Seventy years of Musical Life' pp. 129-30 (144 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Memories+of+a+Musician:+Reminiscences+of+Seventy+years+of+Musical+Life/1435838529918>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "129-30" .
+
+<http://reference.data.gov.uk/id/day/1833-11-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 November, 1833"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1833;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+Concerto+in+D+minor/1436201725046/1436201725062>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Piano Concerto in D minor'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+Concerto+in+D+minor/1436201725046>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/eef6905e-0b83-4e9d-90be-4b50308cc832#_> , <http://data.open.ac.uk/led/agent/Annette+Essipoff/1436201193133> .
+
+<http://data.open.ac.uk/led/lexp/1436201856954>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "6th concert in 1874 New Philharmonic season"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/bad34d441983fdd318dee9449b69ebfa/excerpt/378d338a726ac09e208069fbb368a163>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "129-30";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St_James's_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1874-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-18T13:50:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-06T16:57:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Hungarian+Fantasia/1436201805276/1436201805289> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Lieder/1436201637593/1436201637605> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+Concerto+in+D+minor/1436201725046/1436201725062>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/bad34d441983fdd318dee9449b69ebfa/excerpt/378d338a726ac09e208069fbb368a163> .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://dbpedia.org/resource/Raiding,_Austria>
+        rdfs:label  "Raiding, Austria"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/1913-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1913"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1913>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://reference.data.gov.uk/id/day/1811-10-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 October, 1811"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1811;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/Franciscan+Tertiary>
+        rdfs:label  "Franciscan Tertiary"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/John_Murray_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Murray"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Lieder/1436201637593/1436201637605>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Lieder'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Lied>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Lieder/1436201637593>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Madame+Regan-Schimon/1436201637609> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://dbpedia.org/resource/Lied>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Lieder"@en , "Lied"@en .
+
+<http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Wilhelm Ganz"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Accompanyist> , <http://dbpedia.org/resource/Teacher> , <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1833-11-06>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1914-09-12>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ganz";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Wilhelm" .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/agent/Annette+Essipoff/1436201193133>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Annette Essipoff"@en .
+
+<http://dbpedia.org/resource/St_James's_Hall>
+        rdfs:label  "St James's Hall"@en .
+
+<http://musicbrainz.org/artist/eef6905e-0b83-4e9d-90be-4b50308cc832#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "New Philharmonic Orchestra London"@en .
+
+<http://dbpedia.org/resource/Franz_Liszt>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Franz Liszt"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/Franciscan+Tertiary> , <http://dbpedia.org/resource/Teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1811-10-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Raiding,_Austria>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1886-07-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Bayreuth>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        owl:sameAs                      <http://musicbrainz.org/artist/2cd475bb-1abd-40c4-9904-6d4b691c752c#_> , <http://bnb.data.bl.uk/id/person/LisztFranz1811-1886>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Liszt";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Franz" .
+
+<http://data.open.ac.uk/led/music/Hungarian+Fantasia/1436201805276>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Hungarian Fantasia"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Liszt>;
+        <http://purl.org/dc/terms/title>
+                "Hungarian Fantasia";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Liszt> .
+
+<http://data.open.ac.uk/time/edtf/1874-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1874"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1874;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1874>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://data.open.ac.uk/led/source/Memories+of+a+Musician:+Reminiscences+of+Seventy+years+of+Musical+Life/1435838529918>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Memories of a Musician: Reminiscences of Seventy years of Musical Life"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        led:in_collection           "Internet Archive";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/memoriesofmusici00ganzuoft>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1913-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/John_Murray_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Memories of a Musician: Reminiscences of Seventy years of Musical Life";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Wilhelm+Ganz/1435839150390> .
+
+<http://reference.data.gov.uk/id/day/1914-09-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 September, 1914"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1914;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Franz Schubert"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/led/Accompanyist>
+        rdfs:label  "Accompanyist"@en .

@@ -1,0 +1,251 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/The+Dream+of+Gerontius/1438257889237>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Dream of Gerontius"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Edward_Elgar>;
+        <http://purl.org/dc/terms/title>
+                "The Dream of Gerontius";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Edward_Elgar> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://musicbrainz.org/artist/1a2cd154-b616-4b8f-b7ca-fb0cb66a83e2#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Heddle Nash"@en .
+
+<http://reference.data.gov.uk/id/day/1857-06-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 June, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://data.open.ac.uk/led/person/Ted+Gadsby/1437989497583>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ted Gadsby"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gadsby";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ted" .
+
+<http://dbpedia.org/resource/Malcolm_Sargent>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Sir Malcolm Sargent"@en , "Malcolm Sargent"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/4275ddc1-8062-43ef-aa2f-b5242ecac017#_> .
+
+<http://dbpedia.org/resource/Edward_Elgar>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Edward Elgar"@en , "Sir Edward Elgar"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1857-06-02>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Broadheath,_Worcestershire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1934-01-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Little_Malvern>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934> , <http://musicbrainz.org/artist/4e60a56a-514a-4a19-a3cc-49927c96b3cb#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Elgar";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://data.open.ac.uk/led/source/%22The+Dream+of+Gerontius%22,+Elgar's+opus+38:+Vivid+memories+from+April+1945/1438258937123>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Unpublished article submitted to the Elgar Society and the Huddersfield Choral Society for possible publication."@en;
+        rdfs:label                  "\"The Dream of Gerontius\", Elgar's opus 38: Vivid memories from April 1945"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/title>
+                "\"The Dream of Gerontius\", Elgar's opus 38: Vivid memories from April 1945";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Ted+Gadsby/1437989497583> .
+
+<http://data.open.ac.uk/led/raf>
+        rdfs:label  "RAF"@en .
+
+<http://data.open.ac.uk/led/agent/Gladys+Ripley/1422987297932>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gladys Ripley"@en .
+
+<http://dbpedia.org/resource/Little_Malvern>
+        rdfs:label  "Little Malvern"@en .
+
+<http://dbpedia.org/resource/Chorale>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chorale"@en .
+
+<http://data.open.ac.uk/led/source/c1dfff85965ccbb402567fc293f06c4f/excerpt/a50e1b161c64ed8623ea58131dca365f>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"text-align: left;\" align=\"center\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">April this year [2015] marked the 70<sup>th</sup> anniversary of the recording in Huddersfield Town Hall of the &lsquo;Dream&rsquo;, an occasion I witnessed at first hand. Could an 8-year old claim to have appreciated what was going on, and how much is it a genuine memory or later study? I confirm how I was deeply moved - this guaranteeing for me what I genuinely recall. I experienced a spiritual wakening at the choir&rsquo;s affirmation of &ldquo;Praise to the Holiest&rdquo; and the lingering of Heddle Nash&rsquo;s frightened, dying and weak voice shook this child on that day. I was hooked.</span><span lang=\"EN-US\" style=\"font-size: 8.0pt; font-family: 'Trebuchet MS','sans-serif';\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"text-align: left;\" align=\"center\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">From the Mayor&rsquo;s box (there were, maybe, 14 or 16 Huddersfield Choral Society (HCS) committee members, friends and civic dignitaries) we looked down into the auditorium; no other non-participants were present, just performers and recording engineers. I had been taken there by my father, Hugh Frederic Gadsby (on leave from the RAF) and his own father, Frederic Walter Gadsby, a long-serving member of the HCS Committee (and its President: 1947-1949). I remember acute embarrassment as my elders in the mayor&rsquo;s box stood up in unison &ndash; and I demurely followed - on two occasions to demand a re-start.</span><span style=\"font-family: 'Trebuchet MS', sans-serif; font-size: 11pt;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"text-align: left;\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">In those days of direct shellac recording re-starts were discouraged &ndash; get it right first time! I remember the repetitive stops &amp; starts as successive maximum 4.5&nbsp;minute sections were put down for each of the 78-rpm&rsquo;s 24 sides onto which the master (HMV recording C.3435-3446) was directly archived. Only those two sides (nos. 4 &amp; 9 out of 24) were re-started, a remarkable contrast to today&rsquo;s &lsquo;perfecting-technology&rsquo;. Cleverly, the sound technicians, I learned since, over-lapped many of the sides <em>&ldquo;as if anticipating how this could help bring together the recording as a whole at sometime in the future.&rdquo;</em></span><span lang=\"EN-US\" style=\"font-size: 8.0pt; font-family: 'Trebuchet MS','sans-serif';\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"text-align: left;\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">This had been the first recording of the full 1900 work (those in 1927 under Elgar himself had been of extracts only). So, how did this performance compare with later ones? Bill Rosen has posed five short questions: <em>Was <strong>Elgar</strong> England&rsquo;s finest composer? Is <strong>The Dream of Gerontius</strong> his finest work (&ldquo;the best of me&rdquo;)? Was this <strong>Sargent&rsquo;s</strong> finest hour and his 1945 recording of this work the greatest ever made? Was <strong>Heddle Nash</strong> the finest Gerontius ever?</em> Whilst I am ill-qualified to compare this with a dozen post-war recordings, Rosen believes that others played the drama too early, Sargent (1945) sustaining it to the end. Perhaps his 1941 performance in London&rsquo;s Queen&rsquo;s Hall, hours before its destruction, moved and motivated him.</span></p>\r\n<p class=\"MsoNormal\" style=\"text-align: left;\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">For years I had to make do with a poor cassette recording of an 8<sup>th</sup> December 1978 Radio 3 broadcast taped from the original discs, until I obtained, with great joy, the 2006 Direct Audio Transfer made by Pristine Audio (PACO.009). Despite bringing me a beautifully continuous performance, it will never cloud my personal reminiscences of that day...</span></p>\r\n<p class=\"MsoNormal\" style=\"text-align: left;\"><span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">Perhaps my visits to Birmingham Oratory, passing Cardinal Newman&rsquo;s own office also adds a touch of sentiment! Being an early music buff, I don&rsquo;t relish Gladys Ripley&rsquo;s style, but my heart savours the whole. Heddle Nash&rsquo;s &ldquo;Take me away&rdquo; will never be surpassed.</span></p>\r\n<p style=\"text-align: left;\">&nbsp;<span lang=\"EN-US\" style=\"font-size: 11.0pt; font-family: 'Trebuchet MS','sans-serif';\">I was indeed so privileged to have witnessed the occasion, and after this arduous day was done, I proudly remembered being introduced to Mr. Herbert Bardgett, chorus master since 1932, and being patted on the head by Dr. Malcolm himself (two years before his knighthood)!&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from '\"The Dream of Gerontius\", Elgar's opus 38: Vivid memories from April 1945' (585 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/%22The+Dream+of+Gerontius%22,+Elgar's+opus+38:+Vivid+memories+from+April+1945/1438258937123>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://musicbrainz.org/artist/f4eb87e1-813e-4563-95c6-a945bc087eaa#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Dennis Noble"@en .
+
+<http://dbpedia.org/resource/Royal_Liverpool_Philharmonic>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Royal Liverpool Philharmonic Orchestra"@en , "Royal Liverpool Philharmonic"@en .
+
+<http://reference.data.gov.uk/id/day/1934-01-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 January, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://musicbrainz.org/artist/20bfe444-0cc4-400e-a986-7a28c300a38e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "The Huddersfield Choral Society"@en .
+
+<http://data.open.ac.uk/time/edtf/1945-04-09TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 April, 1945, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Huddersfield>
+        rdfs:label  "Huddersfield"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://musicbrainz.org/artist/e3dd0d5a-bfc6-4f93-8d8e-5e8961a22d4c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Norman Walker"@en .
+
+<http://data.open.ac.uk/led/lexp/1437989869709>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The recording took place between 8th and 13th April 1945, with the mornings devoted to the principals & orchestra and the evenings also with the choir present. There were some 130 members of the Huddersfield Choral Society and 75 players of the Liverpool Philharmonic Orchestra.\r\nFrom the recording schedule and subsequent reports, Ted has ascertained that he was present on the Monday evening (9th April, 1835-2135h), witnessing “Praise to the Holiest” (side 19), “Be merciful, O Lord” (22) and Gerontius’s cry “Take Me Away” (23).\r\nBoth the Huddersfield Choral Society and The Elgar Society kindly opened their archives. Some principal references are:\r\n•\tAlec Robertson review, The Gramophone, June 1945.\r\n•\tJerrold Northrop Moore (of 1975 LP) review and Alan Blyth (of 1993 CD) review (both drawing out the late-wartime juxtaposition of many real-life exhausted souls, comparing to that of Gerontius), Testamant CD booklet 1994. \r\n•\t“The Nightmare of Gerontius” by Carl Newton, Elgar Society Journal, July 1997, vol.10 no.2 pp.74-89.\r\n"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c1dfff85965ccbb402567fc293f06c4f/excerpt/a50e1b161c64ed8623ea58131dca365f>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/temp>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Frederic+Walter+Gadsby/1438258779781> , <http://data.open.ac.uk/led/agent/Hugh+Frederic+Gadsby/1438258719645> , <http://data.open.ac.uk/led/person/Ted+Gadsby/1437989497583>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Huddersfield>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1945-04-09TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-27T09:37:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/bc92189bebc9a67e4b7116fae8f7e766/1438257889251>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c1dfff85965ccbb402567fc293f06c4f/excerpt/a50e1b161c64ed8623ea58131dca365f> .
+
+<http://data.open.ac.uk/led/performance/bc92189bebc9a67e4b7116fae8f7e766/1438257889251>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Dream of Gerontius'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Huddersfield>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chorale>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Frederic+Walter+Gadsby/1438258779781> , <http://data.open.ac.uk/led/person/Ted+Gadsby/1437989497583> , <http://data.open.ac.uk/led/agent/Hugh+Frederic+Gadsby/1438258719645>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Dream+of+Gerontius/1438257889237>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Malcolm_Sargent> , <http://dbpedia.org/resource/Royal_Liverpool_Philharmonic> , <http://data.open.ac.uk/led/agent/Gladys+Ripley/1422987297932> , <http://musicbrainz.org/artist/1a2cd154-b616-4b8f-b7ca-fb0cb66a83e2#_> , <http://musicbrainz.org/artist/f4eb87e1-813e-4563-95c6-a945bc087eaa#_> , <http://musicbrainz.org/artist/20bfe444-0cc4-400e-a986-7a28c300a38e#_> , <http://musicbrainz.org/artist/e3dd0d5a-bfc6-4f93-8d8e-5e8961a22d4c#_> .
+
+<http://dbpedia.org/resource/Broadheath,_Worcestershire>
+        rdfs:label  "Broadheath, Worcestershire"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Edward Elgar"@en .
+
+<http://data.open.ac.uk/led/agent/Frederic+Walter+Gadsby/1438258779781>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Frederic Walter Gadsby"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gadsby";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frederic Walter" .
+
+<http://data.open.ac.uk/led/agent/Hugh+Frederic+Gadsby/1438258719645>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Hugh Frederic Gadsby"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/raf>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gadsby";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hugh Frederic" .

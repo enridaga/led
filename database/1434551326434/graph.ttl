@@ -1,0 +1,433 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://reference.data.gov.uk/id/day/1896-01-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 January, 1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.61>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  61 .
+
+<http://data.open.ac.uk/led/lexp/1434551326434>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Letter from Mrs. Delany to Mrs. Dewes, Delville, 10 Dec. 1750 -\r\nOn Tuesday morning next, the rehearsal of the Messiah is to be for the benefit of debtors—on Thursday evening it will be performed. I hope to go to both ; our new, and therefore favourite performer Morella is to play the first fiddle, and conduct the whole. I am afraid his French taste will prevail ; I shall not be able to endure his introducing froth and nonsense in that sublime and awful piece of music. What makes me fear this will be the case, is, that in the closing of the eighth concerto of Corelli, instead of playing it clear and distinct, he filled\r\nit up with frippery and graces which quite destroyed the effect of the sweet notes, and solemn pauses that conclude it."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Autobiography+and+Correspondance+of+Mary+Granville,+Mrs.+Delany,+Volume+II/1434458449577>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "626";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Mary_Delany>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1750-Ll-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-15T15:04:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-17T14:28:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Messiah/1434551245628/1434551245640> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Corelli's+8th+Concerto/1434550184445/1434551308636> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Mary_Delany>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Female , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Mrs Delany"@en , "Mary Granville"@en , "Mary Delany"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking> , <http://dbpedia.org/resource/Artist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1700-05-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Wiltshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1788-04-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Granville";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mary";
+        <http://xmlns.com/foaf/0.1/name>
+                "Mary Delany";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mary Delany; Mary Granville"@en , "Mrs Delany"@en;
+        <http://xmlns.com/foaf/0.1/title>
+                "Mrs."@en .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mary Delany"@en .
+
+<http://dbpedia.org/resource/Richard_Bentley_and_Son>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Richard Bentley and Son"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1750-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of 1750"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1750;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Corelli's+8th+Concerto/1434550184445/1434551308636>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Corelli's 8th Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto_grosso> , <http://dbpedia.org/resource/Instrumental>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Mary_Delany>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Corelli's+8th+Concerto/1434550184445>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/9436ff7b-6f71-465c-a85d-86882323b47b#_> .
+
+<http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en .
+
+<http://dbpedia.org/resource/Artist>
+        rdfs:label  "Artist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://dbpedia.org/resource/Instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Instrumental"@en .
+
+<http://data.open.ac.uk/led/thing/hostess>
+        rdfs:label  "hostess"@en .
+
+<http://data.open.ac.uk/led/thing/patron+of+Welsh+culture>
+        rdfs:label  "patron of Welsh culture"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/person/Lady+Augusta+Hall/1375780943371>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Augusta Hall"@en , "Lady Llanover"@en , "The Right Honourable Lady Llanover"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/editor> , <http://data.open.ac.uk/led/thing/hostess> , <http://data.open.ac.uk/led/thing/illustrator> , <http://data.open.ac.uk/led/thing/patron+of+Welsh+culture>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1802-03-21>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Llanover>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1896-01-17>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Llanover>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hall";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Augusta";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Lady Llanover"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.88>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  88 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Chorale>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chorale"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Concerto_grosso>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto grosso"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/thing/illustrator>
+        rdfs:label  "illustrator"@en .
+
+<http://dbpedia.org/resource/Wiltshire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Wiltshire"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Llanover>
+        rdfs:label  "Llanover"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/thing/editor>
+        rdfs:label  "editor"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Messiah_(Handel)>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Messiah"@en , "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://reference.data.gov.uk/id/day/1802-03-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 March, 1802"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1802;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking>
+        rdfs:label  "Botanical decoupage artist letter-writer, blue-stocking"@en .
+
+<http://reference.data.gov.uk/id/day/1788-04-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 April, 1788"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1788;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Messiah/1434551245628/1434551245640>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio> , <http://dbpedia.org/resource/Chorale> , <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Vocal_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Mary_Delany>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Messiah_(Handel)>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/9436ff7b-6f71-465c-a85d-86882323b47b#_> .
+
+<http://data.open.ac.uk/led/music/Corelli's+8th+Concerto/1434550184445>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Corelli's 8th Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Arcangelo_Corelli>;
+        <http://purl.org/dc/terms/title>
+                "Corelli's 8th Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Arcangelo_Corelli> .
+
+<http://reference.data.gov.uk/id/day/1700-05-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 May, 1700"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1700;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://reference.data.gov.uk/id/year/1861>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1861"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/9436ff7b-6f71-465c-a85d-86882323b47b#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Morella"@en .
+
+<http://data.open.ac.uk/led/source/The+Autobiography+and+Correspondance+of+Mary+Granville,+Mrs.+Delany,+Volume+II/1434458449577>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Autobiography and Correspondence of Mary Granville, Mrs. Delany,  Series 1, Volume 2"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/autobiographyan05unkngoog>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Richard_Bentley_and_Son>;
+        <http://purl.org/dc/terms/title>
+                "The Autobiography and Correspondence of Mary Granville, Mrs. Delany,  Series 1, Volume 2";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/person/Lady+Augusta+Hall/1375780943371>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "1/2";
+        <http://schema.org/author>  <http://dbpedia.org/resource/Mary_Delany> .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<https://archive.org/details/autobiographyan05unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-18"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-17"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-16"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/autobiographyan05unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://dbpedia.org/resource/Arcangelo_Corelli>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_> , <http://bnb.data.bl.uk/id/person/CorelliArcangelo1653-1713> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .

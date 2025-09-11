@@ -1,0 +1,288 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Albert,_Somme>
+        rdfs:label  "Albert, Somme"@en .
+
+<http://data.open.ac.uk/time/edtf/1918-11-Mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid November, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://data.open.ac.uk/led/lexp/1538660838512>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Eugene Augustus Ruhlmann (Stratton was a stage name) was an American music hall performer who made his career in Britain and influenced the career of G.H Elliott. Both men performed in the black-face minstrel tradition and were extremely popular. "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/9a6daf3506cb808c8a65138e53e3b972/excerpt/4911f498510d99f8cd9a280264accd2c>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "46-48";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/World+War+I+British+soldiers+and+officers/1538660078112> , <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538658044185>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d674c9f93cf57c35c6a0cd11e44b67cd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1918-11-Mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-27T16:04:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-04T13:47:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/3777e3fcd840ecb4ef6317a0a7364db6/1538660356187> , <http://data.open.ac.uk/led/performance/91e5d319d01df07e07feda7cb85c8ecc/1538660502890> , <http://data.open.ac.uk/led/performance/d3e031474bcd24676eb9fad8a7647201/1538660604504>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/9a6daf3506cb808c8a65138e53e3b972/excerpt/4911f498510d99f8cd9a280264accd2c> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/agent/Jack+Lanigan/1538660604530>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jack Lanigan"@en .
+
+<http://data.open.ac.uk/led/performance/d3e031474bcd24676eb9fad8a7647201/1538660604504>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''My Little Octoroon''"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Albert,_Somme>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Coon_song> , <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538658044185> , <http://data.open.ac.uk/led/agent/World+War+I+British+soldiers+and+officers/1538660078112>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'My+Little+Octoroon'/1538660604468>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538660604530> , <http://data.open.ac.uk/led/agent/Soldier/1538660604558> .
+
+<http://data.open.ac.uk/led/agent/Soldier/1538660604558>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Soldier"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/unspecified+song+and+piano+performance--+a+musical/1538660356151>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified song and piano performance-- a musical"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified song and piano performance-- a musical" .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/music/'My+Little+Octoroon'/1538660604468>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'My Little Octoroon'"@en;
+        <http://purl.org/dc/terms/title>
+                "'My Little Octoroon'" .
+
+<http://data.open.ac.uk/led/district+sanitary+inspector>
+        rdfs:label  "District Sanitary Inspector"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/public+health+inspector>
+        rdfs:label  "Public Health Inspector"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/performance/3777e3fcd840ecb4ef6317a0a7364db6/1538660356187>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified song and piano performance-- a musical'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Albert,_Somme>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/World+War+I+British+soldiers+and+officers/1538660078112> , <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538658044185>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+song+and+piano+performance--+a+musical/1538660356151>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Soldiers/1538660356214> .
+
+<http://musicbrainz.org/artist/53f08873-d73f-4b90-bde8-bdc7432eae82#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Soldier"@en .
+
+<http://data.open.ac.uk/led/agent/Jack+Lanigan/1538660502919>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jack Lanigan"@en .
+
+<http://data.open.ac.uk/led/source/Thy+Kingdom+DID+Come/1538657749831>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Jack Lanigan (1890-1976) recounts the severe poverty of his youth and how he improved his circumstances. His memoir includes his experiences as a sanitation engineer with the army on the Western Front and reflections on the state of Britain in the 1960s. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "Thy Kingdom DID Come"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Library, Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Brunel University Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Thy Kingdom DID Come";
+        <http://purl.org/ontology/bibo/number>
+                "1:421";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538657749916> .
+
+<http://dbpedia.org/resource/Coon_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Coon song"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://data.open.ac.uk/led/agent/Jack+Lanigan/1538657749916>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Jack Lanigan"@en .
+
+<http://data.open.ac.uk/led/agent/World+War+I+British+soldiers+and+officers/1538660078112>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "World War I British soldiers and officers"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/the+army>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "officers";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "World War I British soldiers and" .
+
+<http://data.open.ac.uk/led/the+army>
+        rdfs:label  "The Army"@en .
+
+<http://data.open.ac.uk/time/edtf/1976-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1976>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://reference.data.gov.uk/id/year/1976>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Soldiers/1538660356214>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Soldiers"@en .
+
+<http://data.open.ac.uk/led/agent/Jack+Lanigan/1538658044185>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Jack Lanigan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/district+sanitary+inspector> , <http://data.open.ac.uk/led/drain+inspector> , <http://data.open.ac.uk/led/errand+boy> , <http://data.open.ac.uk/led/public+health+inspector>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian> , <http://dbpedia.org/resource/Agnostic_atheism>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1890-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salford,_Greater_Manchester>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1976-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Lanigan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jack" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Music_hall>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music hall"@en .
+
+<http://data.open.ac.uk/led/performance/91e5d319d01df07e07feda7cb85c8ecc/1538660502890>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'song and dance routine-- minstrel tradition'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Albert,_Somme>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Coon_song> , <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538658044185> , <http://data.open.ac.uk/led/agent/World+War+I+British+soldiers+and+officers/1538660078112>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/song+and+dance+routine--+minstrel+tradition/1538660502851>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/53f08873-d73f-4b90-bde8-bdc7432eae82#_> , <http://data.open.ac.uk/led/agent/Jack+Lanigan/1538660502919> .
+
+<http://data.open.ac.uk/led/drain+inspector>
+        rdfs:label  "drain inspector"@en .
+
+<http://data.open.ac.uk/led/music/song+and+dance+routine--+minstrel+tradition/1538660502851>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "song and dance routine-- minstrel tradition"@en;
+        <http://purl.org/dc/terms/title>
+                "song and dance routine-- minstrel tradition" .
+
+<http://dbpedia.org/resource/Agnostic_atheism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnostic atheism"@en .
+
+<http://data.open.ac.uk/led/source/9a6daf3506cb808c8a65138e53e3b972/excerpt/4911f498510d99f8cd9a280264accd2c>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Jack Lanigan was an army corporal in the newly formed &lsquo;Royal Engineers, Roads&rsquo;, posted near Albert, Somme, by the end of the First World War. Lanigan was a self-taught entertainer who imitated G.H. Elliott and Eugene Stratton, both famous for blackface song and dance routines].&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">We were in this camp on November 11<sup>th</sup>1918. What a day. Nothing of any Armistice Day that followed in after years could ever be like that one. There were no Big Ben chimes, no flags flying, no massed bands, no laying of wreaths on a cenotaph. The silence that morning lasted much longer than two minutes [&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[A few days later] I wanted to do something to mark the occasion of November 11<sup>th</sup>. Also knowing that hostilities had ceased we may soon be broken up as a company and never see one another again. I suggested to the O.C. we had a concert. He gave full authority to go ahead. Knowing that one or two men of our company could entertain&mdash;also one or two from a neighbouring labour company&mdash;we got cracking. We were helped by the drivers of our lorry convoy, who acted as electricians, and some of our own men rigged up a stage in a nearby barn. The lamps from the lorries made useful spotlights; footlights were also fitted.&nbsp;&nbsp;A piano was found in an evacuated house, also a pianist from the labour company. He was also producer, stage manager, the lot [&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">The evening arrived and was opened by our pianist with a shortened version of one of the musicals of that era, then a few rousing choruses, which moulded the audience to that type of mood necessary for the time and place. The artists who appeared got rousing receptions. It was then my turn to do an impersonation of G.H.Elliott. It would happen to me, while singing the footlights went out, so I calmly stepped into the spotlight, continued singing and finished off with a mixture of sand and tap dancing, having a supply of sand in my trousers pocket. I was made up, the usual chocolate make up, cane, cady, etc. There was a lovely encore. I thanked the audience and said I would like to impersonate Eugene Stratton, in one of his numbers, &ldquo;My Little Octoroon&rdquo;. This number had not been rehearsed, and I was just a little afraid of the pianist, because at the end there is a portion of music for a soft shoe dance, but he was marvellous, he watched me like a cat watching a mouse. When I had finished those footlights came on again and the audience knew no difference, to them it was all part of the act.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">After the show it was left to me to thank the O.C. for giving us the opportunity of getting the show together, the artists, the back stage boys, and our pianist, but when I told them he did not know a note of music, he played by ear only, they would not believe me, but it was true.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Thy Kingdom DID Come' pp. 46-48 (508 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Thy+Kingdom+DID+Come/1538657749831>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "46-48" .
+
+<http://data.open.ac.uk/led/place/d674c9f93cf57c35c6a0cd11e44b67cd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Albert, France"@en;
+        <http://purl.org/dc/terms/description>
+                "Albert, France"@en .
+
+<http://data.open.ac.uk/led/errand+boy>
+        rdfs:label  "errand boy"@en .

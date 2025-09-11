@@ -1,0 +1,92 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://bnb.data.bl.uk/id/organization/SouthbankCentre>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Southbank Centre"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1449346686777>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/5adb36c59077472f2df77c79bef1cef4/excerpt/870e7bf98bc3a5a142393080b786ec8c>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Liz+Ford/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/195u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-02-24T13:37:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-12-05T20:18:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Grieg's+Piano+Concerto/1449346661770> , <http://data.open.ac.uk/led/music/Sheherazade/1434399064222>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5adb36c59077472f2df77c79bef1cef4/excerpt/870e7bf98bc3a5a142393080b786ec8c> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.5u>
+        rdf:value   "5u";
+        rdfs:label  "50s"@en .
+
+<http://data.open.ac.uk/led/music/Sheherazade/1434399064222>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sheherazade"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Maurice_Ravel>;
+        <http://purl.org/dc/terms/title>
+                "Sheherazade";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Maurice_Ravel> .
+
+<http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Manuscript>;
+        rdfs:comment       "Memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "From an oral archive of memories of long-standing visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room, gathered during 2006-07"@en , "The archive contains recorded interviews made with visitors to the Royal Festival Hall and Queen Elizabeth Halls, London SE1 8XX made during 2006/07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room during 2006-07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en , " "@en , "Additional Information on Source sub-form: Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en;
+        rdfs:label         "Southbank Centre Archive "@en , "Southbank Centre Archive"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        led:in_collection  "Southbank Centre Archive";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Southbank Centre Archive, http://www.southbankcentre.co.uk/about-us/history-and-archive/southbank-centre-archive"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Southbank Centre Archive";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/SouthbankCentre>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/time/edtf/195u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1950's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.5u> .
+
+<http://data.open.ac.uk/led/music/Grieg's+Piano+Concerto/1449346661770>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Grieg's Piano Concerto"@en;
+        <http://purl.org/dc/terms/title>
+                "Grieg's Piano Concerto" .
+
+<http://data.open.ac.uk/led/source/5adb36c59077472f2df77c79bef1cef4/excerpt/870e7bf98bc3a5a142393080b786ec8c>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p style=\"margin: 0px; font-size: 9.1px; font-family: Arial;\">I will always be grateful to my parents who took me, at the age of six to my first concert. I remember every detail to this day (some 50 years later). The thrill of walking into the Festival Hall, the beautiful colour of the wood, the carpets; I had never seen such a grand, sytlish building. I remember listening to the music which was perfect for a little girl: Sherezade [Sheherazade] and Grieg's A minor piano concerto. Many happy times were spent subsequent to that first concert sitting in our favourite choir seats. It has also given me a love of music for the rest of my life.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Southbank Centre Archive' (107 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .

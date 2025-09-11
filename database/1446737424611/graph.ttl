@@ -1,0 +1,191 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.01:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "01:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/led/agent/David+Morgan/1446737217968>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "David Morgan"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Morgan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "David" .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/performance/9cb227931d2a271eecdeb374505af928/1446737263767>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Aberystwyth>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/David+Morgan/1446737217968>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/singing/1446737263753> .
+
+<http://data.open.ac.uk/led/source/the+welshman/vol/28+iss.+1516>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Welshman"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://reference.data.gov.uk/id/day/1859-05-06>;
+        <http://purl.org/dc/terms/title>
+                "The Welshman";
+        <http://purl.org/ontology/bibo/volume>
+                "28 iss. 1516" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/interval/1859-04-uuT00:00:00/to/uuuu-uu-uuT01:00:00>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between April, 1859, 12:00 AM and some day 01:00 AM"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1859-04-uuT00:00:00>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/uuuu-uu-uuT01:00:00> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.59>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  59 .
+
+<http://data.open.ac.uk/led/music/singing/1446737263753>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "singing"@en;
+        <http://purl.org/dc/terms/title>
+                "singing" .
+
+<http://reference.data.gov.uk/id/day/1859-05-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 May, 1859"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1859;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1859>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://data.open.ac.uk/led/lexp/1446737424611>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Testimony of complainant at Carmarthen Police Court, May 1859."@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c8aea771b14112173e61cb4813c834a7/excerpt/c8ee9199b8792b74d003151a49835b3c>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "4";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/David+Morgan/1446737217968>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/30d42585a62768e94d2e39141d79d5b2>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1859-04-uuT00:00:00/to/uuuu-uu-uuT01:00:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-04-07T13:04:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-05T15:30:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/9cb227931d2a271eecdeb374505af928/1446737263767>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c8aea771b14112173e61cb4813c834a7/excerpt/c8ee9199b8792b74d003151a49835b3c> .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.00:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "00:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/place/30d42585a62768e94d2e39141d79d5b2>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Outside the Horse and Jockey, Bridge Street, Aberystwyth"@en;
+        <http://purl.org/dc/terms/description>
+                "Outside the Horse and Jockey, Bridge Street, Aberystwyth"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Aberystwyth> .
+
+<http://data.open.ac.uk/time/edtf/1859-04-uuT00:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1859, 12:00 AM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.00:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1859;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://newspapers.library.wales/view/4350344/4350348/30/>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Welsh Newspapers Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://newspapers.library.wales/view/4350344/4350348/30/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Aberystwyth>
+        rdfs:label  "Aberystwyth"@en .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://data.open.ac.uk/led/source/Carmarthen+Police+Court/1446737200324>
+        rdf:type           <http://purl.org/ontology/bibo/Article> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Carmarthen Police Court"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/journalism>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+welshman/vol/28+iss.+1516>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://newspapers.library.wales/view/4350344/4350348/30/>;
+        <http://purl.org/dc/terms/title>
+                "Carmarthen Police Court";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/led/source/c8aea771b14112173e61cb4813c834a7/excerpt/c8ee9199b8792b74d003151a49835b3c>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><em>John Phillips, David Griffiths, William White</em>, and<em> William Owen</em> were charged with assaulting David Morgan on the previous Monday night. The complainant, on being sworn, said On Monday night last, between twelve and one o'clock, I was going past the Horse and Jockey public house, in Bridge- street, when I heard singing there. I knocked at the window, and heard some persons mention my name. I then knocked a little louder, and my fingers went through the pane of glass. The four defendants and two other persons came out. John Phillips seized me by the throat, Griffiths and White seized me by my hair, and Owen kicked me while I was falling. I was kicked on the head while on the ground, till I was senseless. Mrs. Mason picked me up. She saw the defendants ill-using me. I had been drinking, but was not drunk.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Carmarthen Police Court' pp. 4 (145 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Carmarthen+Police+Court/1446737200324>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "4" .
+
+<http://data.open.ac.uk/time/edtf/uuuu-uu-uuT01:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "some day 01:00 AM"@en;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.01:00:00> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

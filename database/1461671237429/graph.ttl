@@ -1,0 +1,237 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical letters from Abroad"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/musical+letters+from+abroad>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/musicallettersf00unkngoog>;
+        <http://purl.org/dc/terms/title>
+                "Musical letters from Abroad";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/source/musical+letters+from+abroad>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Musical Letters from Abroad"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>;
+        <http://purl.org/dc/terms/title>
+                "Musical Letters from Abroad";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://reference.data.gov.uk/id/day/1792-01-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 January, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/performance/7a2a7764a46aaa918bbb0e180be7a664/1461671179750>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unknown church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/congregation>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unknown+church+music/1448323051950> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<https://archive.org/details/musicallettersf00unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive Digital Copy"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/musicallettersf00unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Medfield,_Massachusetts>
+        rdfs:label  "Medfield, Massachusetts"@en .
+
+<http://data.open.ac.uk/led/lexp/1461671237429>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/c070a3e82153a7b07ca96686707d1c44>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "293-4";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1852-Ll-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-19T13:58:36.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2016-04-26T11:47:17.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/7a2a7764a46aaa918bbb0e180be7a664/1461671179750>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/c070a3e82153a7b07ca96686707d1c44> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Lowell Mason"@en , "Dr. Lowell Mason";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-01-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Medfield,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-08-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Orange,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/time/edtf/1852-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of 1852"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1852;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Mason Brothers"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/led/music/unknown+church+music/1448323051950>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unknown church music"@en;
+        <http://purl.org/dc/terms/title>
+                "unknown church music" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Orange,_New_Jersey>
+        rdfs:label  "Orange, New Jersey"@en .
+
+<http://dbpedia.org/resource/Church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Church music"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://reference.data.gov.uk/id/day/1872-08-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 August, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/c070a3e82153a7b07ca96686707d1c44>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The Wesleyan Chapel, Great Queen street, is a large building with double galleries. The Episcopal Church service is used, as it is in most of the Wesleyan congregations. The psalms were read by the minister, and intoned by the Precentor and others of the congregation, making a disagreeable mixture of&nbsp;speech and song. It was so likewise with other parts of the service, as the Lord's Prayer and the Creed. Four metrical hymns were sung, mostly to wretched tunes, and in a wretched manner. A small choir of boys surrounded the Precentor, but there was no organ. Next to me sat a young man who seemed to try and do his best, and the poor fellow would have done pretty well had the tunes been adapted to the circumstances;&nbsp;but when they went up as high as F or G, alas for him! He made the attempt indeed, which is better than not to try at all, but he fell; the leap was beyond his power. He tried to take the high parts of the tune an octave lower than the proper pitch, but in these attempts he often turned somersets, though he did&nbsp;not always come down upon his feet. It was really pitiable to stand by him and witness his efforts; but yet the easier parts of the tune he would get right. From this example, we obtained sufficient proof of what Congregational tunes ought to be: simple and easy, so that they may be within the reach of all. St. Ann, Phuvah, Tallis, are good examples, (Cantica Laudis, p. 307.) Yet they need not all be of this rhythmic character; Olmutz, Hamburg, Marlow, are always good. Had one of these tunes been sung at the Wesleyan Chapel, the young man would have been saved from many falls and bruises.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Musical letters from abroad' pp. 293-4 (301 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "293-4" .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/led/thing/congregation>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "congregation"@en .

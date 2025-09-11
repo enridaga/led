@@ -1,0 +1,72 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1699-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1699"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1699;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/person/Rochmaninoff/1430049155534>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Rochmaninoff" .
+
+<http://data.open.ac.uk/led/lexp/1370434535>
+        rdf:type               led:ListeningExperience;
+        led:has_evidence_text  "Dear Sir\r\nI was very Sorry to hear in your Last Letter that you were so terribly afflicted with the gout tho For your comfort I believe you are the first English poet that has been complemented with the Distemper: I was myself at that time sick of a Feaver which I believe proceeded From the same Cause....\r\n\r\nI cou'd have wisht for your company last night at ye Opera where you would have seen paint enough on ye actors Faces to have Dawbed a whole street of sign-posts. Every man that comes upon the Stage is a Beau: the Shepherds are all Embroiderd, Pluto has his Valet de chambre, and a couple of Riders appears in Red Stockins. Alpheus throws aside his Sedge and makes Love in a Fair periwig and a plume of Feathers but with such a horrid voice that [one] woud think the murmurs of a Country-Brook much better music. It is as ridiculous to criticise an opera as a puppet-show or I cd send you over a Long Catalogue of the like Indecencys: but since I have mention'd Musick I can't forbear telling you that Corelli has a very mean opinion of Harry Purcell's works as a gentleman told me that presented 'em to him, which I suppose Will be no Small Mortification to You Tramontane composers. I am etc..."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Joseph+Addison+to+William+Congreve/1370434230673>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1699-08-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-06-05T12:15:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/an+operatic+performance/1370434371139> .
+
+<http://data.open.ac.uk/led/music/an+operatic+performance/1370434371139>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "an operatic performance"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Rochmaninoff/1430049155534> , <http://data.open.ac.uk/led/person/Dryden/1440768389213>;
+        <http://purl.org/dc/terms/title>
+                "an operatic performance";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Rochmaninoff/1430049155534> , <http://data.open.ac.uk/led/person/Dryden/1440768389213> .
+
+<http://data.open.ac.uk/led/source/letter+from+Joseph+Addison+to+William+Congreve/1370434230673>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "letter from Joseph Addison to William Congreve"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Joseph_Addison> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://dbpedia.org/resource/Joseph_Addison>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Joseph Addison"@en .
+
+<http://data.open.ac.uk/led/person/Dryden/1440768389213>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Dryden" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

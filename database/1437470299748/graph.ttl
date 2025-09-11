@@ -1,0 +1,247 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/time/edtf/1880-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.61>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  61 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://musicbrainz.org/artist/2f935fb1-f679-440f-b87f-0ac3cfbe8173#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Francesco Paolo Tosti"@en .
+
+<https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/c8dd7833-9f29-4aee-895b-89c67eb6f5b6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Dan Leno"@en .
+
+<http://data.open.ac.uk/led/music/Unspecified+songs/1435250752585>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified songs"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/2f935fb1-f679-440f-b87f-0ac3cfbe8173#_>;
+        <http://purl.org/dc/terms/title>
+                "Unspecified songs";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/2f935fb1-f679-440f-b87f-0ac3cfbe8173#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Jimmy Glover, His Book"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        led:in_collection           "Internet Archive";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1912-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Methuen> , <http://bnb.data.bl.uk/id/agent/MethuenLondon>;
+        <http://purl.org/dc/terms/title>
+                "Jimmy Glover, His Book";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764> .
+
+<http://data.open.ac.uk/led/performance/23e0fe1380b363c1b606ed929b3de1f3/1437470280342>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Unspecified songs'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+songs/1435250752585>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/c8dd7833-9f29-4aee-895b-89c67eb6f5b6#_> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://reference.data.gov.uk/id/year/1912>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1912"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://reference.data.gov.uk/id/year/1889>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/188u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1880's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1880-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1889-uu-uu> .
+
+<http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Jimmy Glover"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1931-uu-uu>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Glover";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jimmy" .
+
+<http://dbpedia.org/resource/Methuen>
+        rdfs:label  "Methuen"@en .
+
+<http://data.open.ac.uk/time/edtf/1931-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1931"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1931;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.31> .
+
+<http://data.open.ac.uk/time/edtf/1912-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1912>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://data.open.ac.uk/led/lexp/1437470299748>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/dbeeb0d7d52a268b353ef073aa9fbaf6>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/temp>;
+        led:pages            "85-6";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/188u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-27T11:20:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-21T09:18:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/23e0fe1380b363c1b606ed929b3de1f3/1437470280342>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/dbeeb0d7d52a268b353ef073aa9fbaf6> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/id/year/1861>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1861"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/agent/MethuenLondon>
+        rdfs:label  "Methuen London"@en .
+
+<http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/dbeeb0d7d52a268b353ef073aa9fbaf6>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Courier New'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA;\">Dan Leno and his wife first came to Drury Lane on a joint weekly salary of &pound;28; on his death, his own salary was &pound;240. Now, as a matter of fact, this is not so extravagant. It really only works out at &pound;20 a performance, and there are many artistes who will only sing two songs at a concert for &pound;80. Leno's golden asset was the domesticity of his humour. He took the ordinary things of daily life and wrote, or gagged, round them. He never knew his part on a first night, and never learnt his songs. Once he sang a song on Boxing Night entirely at variance with every note of the melody in the band parts. How the house yelled and screamed with delight! \"How like Dan!\" they shouted.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Jimmy Glover, His Book' pp. 85-6 (128 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "85-6" .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://data.open.ac.uk/time/edtf/1889-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1889"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1889;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1889>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .

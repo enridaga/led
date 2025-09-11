@@ -1,0 +1,169 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://data.open.ac.uk/time/edtf/1968-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1968"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1968;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1968>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://data.open.ac.uk/led/musicgenre/negro+songs>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "negro songs"@en .
+
+<http://data.open.ac.uk/led/person/passengers+on+emigrant+ships/1410452307271>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "passengers on emigrant ships"@en;
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "passengers on emigrant ships" .
+
+<http://data.open.ac.uk/led/lexp/1408720171994>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "[Concerts] were generally pretty numerous during a passage.  As a rule each class had its own; then, to end up, a 'Grand Monster Concert' was organised, in which the talents of saloon, house on deck, and steerage were pitted against one another ... Looking back over the old concert programmes, I find that negro melodies ... were even then very popular, amongst which figured 'Nelly Bligh', 'Poor Old Joe', 'Stop dat Knocking', 'Oh, Carry Me back and others.  The rest of the programmes were generally filled up with the old familiar Scots and Irish folk songs, some well-known English choruses, the usual sentimental ditty, and amongst the sailor songs I find 'A Life on the Ocean Wave', 'Cheer, Boys, Cheer', 'I'm Afloat', 'the Pride of the Ocean' and 'The Death of Nelson'."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Lubbock,+B.+(1968)+The+Colonial+Clippers,+Brown,+Son+and+Ferguson,+Glasgow,+p.84/1408720051155>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Clare+Spencer/claims>;
+        led:pages              "84";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/passengers+on+emigrant+ships/1410452307271>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-08-22T15:09:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/popular+songs/1408720139048/1408720139053> .
+
+<http://data.open.ac.uk/led/source/Lubbock,+B.+(1968)+The+Colonial+Clippers,+Brown,+Son+and+Ferguson,+Glasgow,+p.84/1408720051155>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Colonial Clippers"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1968-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Brown+Son+and+Ferguson/1408720051161>;
+        <http://purl.org/dc/terms/title>
+                "The Colonial Clippers";
+        <http://purl.org/ontology/bibo/isbn>
+                "0713914289"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/LubbockBasil1876-1944> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.68>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  68 .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/popular+songs/1408720139048/1408720139053>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'popular songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/sailor+songs> , <http://data.open.ac.uk/led/musicgenre/negro+songs> , <http://dbpedia.org/resource/Folk_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/passengers+on+emigrant+ships/1410452307271>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/popular+songs/1408720139048> .
+
+<http://bnb.data.bl.uk/id/person/LubbockBasil1876-1944>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Basil Lubbock"@en .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/organization/Brown+Son+and+Ferguson/1408720051161>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Brown Son and Ferguson"@en .
+
+<http://dbpedia.org/resource/Folk_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Folk music"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://reference.data.gov.uk/id/year/1968>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/popular+songs/1408720139048>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "popular songs"@en;
+        <http://purl.org/dc/terms/title>
+                "popular songs" .
+
+<http://data.open.ac.uk/led/musicgenre/sailor+songs>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "sailor songs"@en .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

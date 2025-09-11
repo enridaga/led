@@ -1,0 +1,201 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/Oxford_University_Press>
+        rdfs:label  "Oxford University Press"@en .
+
+<http://reference.data.gov.uk/id/day/1795-09-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 September, 1795"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1795;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.95> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://musicbrainz.org/artist/7c08bc24-bcd9-47d5-819e-bbbf6e87fa9f#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Daniel-François-Esprit Auber"@en .
+
+<http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Oxford University Press"@en , "American Mathematical Society"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Oxford_University_Press> .
+
+<http://data.open.ac.uk/led/source/Musical+Life+in+Paris+(1817-1848):+A+Chapter+from+the+Memoirs+of+Sophie+Augustine+Leo--Part+II/1425287068192>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical Life in Paris (1817-1848): A Chapter from the Memoirs of Sophie Augustine Leo--Part II"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Musical+Quarterly>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.jstor.org/stable/739043>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/title>
+                "Musical Life in Paris (1817-1848): A Chapter from the Memoirs of Sophie Augustine Leo--Part II";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://bnb.data.bl.uk/id/person/StrunkOliver>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081> , <http://bnb.data.bl.uk/id/person/StrunkWOliver%28WilliamOliver%291901-1980> .
+
+<http://reference.data.gov.uk/id/year/1946>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1946"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Muette+de+Portici/1425291177074/1425291177098>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Muette de Portici'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Muette+de+Portici/1425291177074> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/lexp/1425291213865>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "With no prima donna at his disposal, but with a dancer of Noblet's ability at hand, the ingenious Scribe, for whom no diffi­culty had yet been insurmountable,  determined to offer a libretto in which pantomime should count for more than song, and in 1828, some time after performances had been resumed, the Opera celebrated its real return to favor with the Muette de Portici. With­out exaggeration it may be said that the absence of a prima donna and the presence of a dancer like Noblet were the essential elements in the creation of  the new work.\r\n\r\nThe weekly meeting of a group of music lovers who regularly rehearsed church music with us prevented my hearing the premiere, but a few members of our company who had been unable to resist the temptation to attend joined us after the opera. I still remem­ber distinctly that there was no one who did not hesitate to express his opinion and that  the unusual features of the performance, the dancer's appearance in the title role and the official recognition of  romanticism, caused endless astonishment.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Musical+Life+in+Paris+(1817-1848):+A+Chapter+from+the+Memoirs+of+Sophie+Augustine+Leo--Part+II/1425287068192>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/temp>;
+        led:pages              "394-395";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1828-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-03-02T10:13:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Muette+de+Portici/1425291177074/1425291177098> .
+
+<http://bnb.data.bl.uk/id/person/StrunkWOliver%28WilliamOliver%291901-1980>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. Oliver Strunk"@en .
+
+<http://data.open.ac.uk/led/source/The+Musical+Quarterly>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Musical Quarterly"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1946-04-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>;
+        <http://purl.org/dc/terms/title>
+                "The Musical Quarterly";
+        <http://purl.org/ontology/bibo/volume>
+                "Vol. 32, No. 2" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.95>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  95 .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://bnb.data.bl.uk/id/person/StrunkOliver>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Oliver Strunk"@en .
+
+<http://data.open.ac.uk/time/edtf/1828-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1828"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1828;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://data.open.ac.uk/led/music/Muette+de+Portici/1425291177074>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Muette de Portici"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/7c08bc24-bcd9-47d5-819e-bbbf6e87fa9f#_>;
+        <http://purl.org/dc/terms/title>
+                "Muette de Portici";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/7c08bc24-bcd9-47d5-819e-bbbf6e87fa9f#_> .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/time/edtf/1946-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1946"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1946> .
+
+<http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Sophie Augustine Leo"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1795-09-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Leo";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sophie Augustine" .
+
+<http://www.jstor.org/stable/739043>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-02-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Musical Quarterly, Vol. 17, No. 3 (Jul., 1931), "@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.jstor.org/stable/739043"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

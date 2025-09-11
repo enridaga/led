@@ -1,0 +1,282 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/Sonata+No.+7/1400690843526>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sonata No. 7"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Sonata No. 7" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Letter+from+Vera+Brittain+to+Edward+Brittain,+12+April+1916/1400690757651>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter from Vera Brittain to Edward Brittain, 12 April 1916"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/010975280>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Vera Brittain to Edward Brittain, 12 April 1916";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/led/lexp/1400690980294>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_evidence_text  "This afternoon I have been playing over the slow movement from Beethoven’s No. 7 Sonata, & some of the Macdowell Sea Songs which you used to play. Whenever I sit down to the piano now I can always see you playing away, absolutely unconcerned by other people’s requests to you to come out, or listen a moment! If you were to die I think I should have to give up music altogether, for there would be so many things I could never bear to hear or play - just as now I cannot bear to play L’Envoi, or the 'Liber scriptus proferitur' part of Verdi's Requiem, which for some reason I always connected with Roland's going to the front..."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Vera+Brittain+to+Edward+Brittain,+12+April+1916/1400690757651>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "247-248";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/BrittainVera1893-1970>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Purley,_London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1916-04-12>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-05-21T16:49:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Sonata+No.+7+(,+performance+of)/1400690843530> , <http://data.open.ac.uk/led/performance/Sea+Songs+(,+performance+of)/1400690935392> .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/id/day/1970-03-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 March, 1970"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1970;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/id/year/1999>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Vera_Brittain>
+        rdfs:label  "Vera Brittain"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/led/performance/Sonata+No.+7+(,+performance+of)/1400690843530>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Sonata No. 7'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Purley,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/BrittainVera1893-1970>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Sonata+No.+7/1400690843526>;
+        <http://purl.org/ontology/mo/performer>
+                <http://bnb.data.bl.uk/id/person/BrittainVera1893-1970> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://bnb.data.bl.uk/id/person/BishopAG%28AlanGordon%291937->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A. G. Bishop"@en .
+
+<http://bnb.data.bl.uk/id/resource/010975280>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Letters from a lost generation : First World War letters of Vera Brittain and four friends - Roland Leighton, Edward Brittain, Victor Richardson, Geoffrey Thurlow"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1999-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Abacus>;
+        <http://purl.org/dc/terms/title>
+                "Letters from a lost generation : First World War letters of Vera Brittain and four friends - Roland Leighton, Edward Brittain, Victor Richardson, Geoffrey Thurlow";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/BostridgeMark> , <http://bnb.data.bl.uk/id/person/BishopAG%28AlanGordon%291937->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0349111529"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Newcastle-under-Lyme>
+        rdfs:label  "Newcastle-under-Lyme"@en .
+
+<http://data.open.ac.uk/time/edtf/1999-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1999"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1999;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1999>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://bnb.data.bl.uk/id/person/MacDowellEdward1860-1908>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Edward MacDowell"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://bnb.data.bl.uk/id/person/BrittainVera1893-1970>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Vera Brittain"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-12-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Newcastle-under-Lyme>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1970-03-29>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://dbpedia.org/resource/Vera_Brittain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brittain";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Vera" .
+
+<http://data.open.ac.uk/led/music/Sea+Songs/1400690935388>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sea Songs"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/MacDowellEdward1860-1908>;
+        <http://purl.org/dc/terms/title>
+                "Sea Songs" .
+
+<http://data.open.ac.uk/led/performance/Sea+Songs+(,+performance+of)/1400690935392>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Sea Songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Purley,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/BrittainVera1893-1970>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Sea+Songs/1400690935388>;
+        <http://purl.org/ontology/mo/performer>
+                <http://bnb.data.bl.uk/id/person/BrittainVera1893-1970> .
+
+<http://dbpedia.org/resource/Purley,_London>
+        rdfs:label  "Purley, London"@en .
+
+<http://bnb.data.bl.uk/id/person/BostridgeMark>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mark Bostridge"@en .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://bnb.data.bl.uk/id/agent/Abacus>
+        rdfs:label  "Abacus"@en .
+
+<http://reference.data.gov.uk/id/day/1893-12-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 December, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://reference.data.gov.uk/id/day/1916-04-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 April, 1916"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1916;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

@@ -1,0 +1,251 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/university+lecturer>
+        rdfs:label  "university lecturer"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/198u-Ee-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of the 1980's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/archaeologist>
+        rdfs:label  "archaeologist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/London_North>
+        rdfs:label  "London North"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.1u>
+        rdf:value   "1u";
+        rdfs:label  "10s"@en .
+
+<http://data.open.ac.uk/time/edtf/201u-uu-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 2010's, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.1u> .
+
+<http://reference.data.gov.uk/id/day/1976-08-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 August, 1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/led/agent/Robert+Macfarlane/1660857870086>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Robert Macfarlane"@en .
+
+<http://data.open.ac.uk/led/lexp/1660908369912>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Playback;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/2b1e888555f3eb7e37eff1756ed665b7/excerpt/17b361beaa03c4641a26ca635e15aff2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "164";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927> , <http://data.open.ac.uk/led/agent/Bradley+Garrett/1660908078118>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/69575affaf859cbb9f8d464699060811>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/201u-uu-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-09-01T11:29:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2022-08-19T11:26:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/49624318f43ad337bf4cf5514ed7c4dc/1660908233837>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/2b1e888555f3eb7e37eff1756ed665b7/excerpt/17b361beaa03c4641a26ca635e15aff2> .
+
+<http://data.open.ac.uk/led/agent/Bradley+Garrett/1660908078118>
+        rdf:type                        <http://dbpedia.org/class/yago/LivingPeople> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Bradley Garrett"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/university+lecturer> , <http://data.open.ac.uk/led/archaeologist> , <http://data.open.ac.uk/led/academic+researcher> , <http://data.open.ac.uk/led/cultural+geographer> , <http://data.open.ac.uk/led/urban+explorer>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/198u-Ee-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Los_Angeles>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Garrett";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Bradley" .
+
+<http://data.open.ac.uk/led/source/2b1e888555f3eb7e37eff1756ed665b7/excerpt/17b361beaa03c4641a26ca635e15aff2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">[I]n a north London park, we crawled under fencing, pulled away a heavy iron lid to reveal a shaft in the grass, and descended a rusted black ladder into darkness.</p>\n<p class=\"MsoNormal\">Twenty feet down we flicked on our head-torches &ndash; and whistled at what we saw.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Dozens of brick archways extended in series away from us, the dips between them holding wide rungs of still water.<span style=\"mso-spacerun: yes;\">&nbsp; </span>The iterated forms of the archways and the reflections of the water created the illusion of infinite regress.<span style=\"mso-spacerun: yes;\">&nbsp; </span>The echoes of our whispers bounced back to us.<span style=\"mso-spacerun: yes;\">&nbsp; </span>We had entered a mid nineteenth-century reservoir, built to serve as a water depot for London and now drained almost dry.<span style=\"mso-spacerun: yes;\">&nbsp; </span>The once-drowned structures were still intact, the brick as clean as if it had been built yesterday.<span style=\"mso-spacerun: yes;\">&nbsp; </span>It possessed the functional elegance of major Victorian infrastructure, and was as beautiful in its way as the Roman cisterns at Misenum and the Basilica Cistern in Istanbul.</p>\n<p class=\"MsoNormal\">We walked the reservoir end to end and side to side, our voices booming.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Above us in the shadows hung the ceiling vaults, made of tens of thousands of yellow-brown bricks.<span style=\"mso-spacerun: yes;\">&nbsp; </span>At the far end of the reservoir we sat for a while.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Bradley smoked and set music going: a drum-and-bass track called &lsquo;Stresstest&rsquo; that boomed off the bricks.<span style=\"mso-spacerun: yes;\">&nbsp; </span>We got out just before midnight.<span style=\"mso-spacerun: yes;\">&nbsp; </span>There were scattered clouds, underlit pink and orange by the city&rsquo;s light, with stars visible between them.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Underland: A Deep Time Journey' pp. 164 (241 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Underland:+A+Deep+Time+Journey/1660857870068>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "164" .
+
+<http://data.open.ac.uk/led/University+lecturer+and+writer>
+        rdfs:label  "University lecturer and writer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Los_Angeles>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Los Angeles"@en .
+
+<http://data.open.ac.uk/led/source/Underland:+A+Deep+Time+Journey/1660857870068>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Underland: A Deep Time Journey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2019-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Hamish+Hamilton/1521116026050>;
+        <http://purl.org/dc/terms/title>
+                "Underland: A Deep Time Journey";
+        <http://purl.org/ontology/bibo/isbn>
+                "9780241143803"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Robert+Macfarlane/1660857870086> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/performance/49624318f43ad337bf4cf5514ed7c4dc/1660908233837>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Stresstest''"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Drum_and_bass>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Electronic_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Bradley+Garrett/1660908078118> , <http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Stresstest'/1660908233823> .
+
+<http://data.open.ac.uk/led/organization/Hamish+Hamilton/1521116026050>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Hamish Hamilton"@en .
+
+<http://data.open.ac.uk/led/urban+explorer>
+        rdfs:label  "urban explorer"@en .
+
+<http://data.open.ac.uk/led/cultural+geographer>
+        rdfs:label  "cultural geographer"@en .
+
+<http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Robert Macfarlane"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/University+lecturer+and+writer>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1976-08-15>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Macfarlane";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Robert" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/'Stresstest'/1660908233823>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Stresstest'"@en;
+        <http://purl.org/dc/terms/title>
+                "'Stresstest'" .
+
+<http://dbpedia.org/resource/Electronic_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Musique électronique"@en , "Electronic music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/place/69575affaf859cbb9f8d464699060811>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "a drained underground reservoir beneath North London"@en;
+        <http://purl.org/dc/terms/description>
+                "a drained underground reservoir beneath North London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London_North> .
+
+<http://data.open.ac.uk/time/edtf/2019-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2019"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2019;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2019>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://data.open.ac.uk/led/academic+researcher>
+        rdfs:label  "academic researcher"@en .
+
+<http://dbpedia.org/resource/Drum_and_bass>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Drum and bass"@en .
+
+<http://reference.data.gov.uk/id/year/2019>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2019"^^<http://www.w3.org/2001/XMLSchema#gYear> .

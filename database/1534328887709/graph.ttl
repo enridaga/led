@@ -1,0 +1,161 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Peter+Hawker/1534328629586>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Peter Hawker"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hawker";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Peter" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/Unspecified+music+in+a+concert/1534328833389>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified music in a concert"@en;
+        <http://purl.org/dc/terms/title>
+                "Unspecified music in a concert";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Peter+Hawker/1534328629586> .
+
+<https://archive.org/details/diaryofcolonelpe02hawkiala>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-03-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/diaryofcolonelpe02hawkiala"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/the+diary+of+colonel+peter+hawker+1802%E2%80%931853/vol/2>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Diary of Colonel Peter Hawker 1802–1853"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/LongmansGreenandCo>;
+        <http://purl.org/dc/terms/title>
+                "The Diary of Colonel Peter Hawker 1802–1853";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" .
+
+<http://data.open.ac.uk/led/place/db576b6dcf1afdbf37177df0429aa28e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rownhams House, Rownhams, Hampshire"@en;
+        <http://purl.org/dc/terms/description>
+                "Rownhams House, Rownhams, Hampshire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Hampshire> .
+
+<http://dbpedia.org/resource/Hampshire>
+        rdfs:label  "Hampshire"@en .
+
+<http://data.open.ac.uk/time/edtf/1839-08-20TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 August, 1839, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1839;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://bnb.data.bl.uk/id/organization/LongmansGreenandCo>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Longmans, Green, and Co."@en .
+
+<http://bnb.data.bl.uk/id/person/HawkerPeter>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Peter Hawker"@en .
+
+<http://data.open.ac.uk/led/lexp/1534328887709>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/84cb5edceafae57795d9e9e17601689f/excerpt/c1ae8a8dc4d9f06aa38cd204c16abf33>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "166";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Peter+Hawker/1534328629586>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/db576b6dcf1afdbf37177df0429aa28e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1839-08-20TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-23T08:54:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-08-15T10:28:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Unspecified+music+in+a+concert/1534328833389>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/84cb5edceafae57795d9e9e17601689f/excerpt/c1ae8a8dc4d9f06aa38cd204c16abf33> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/led/source/84cb5edceafae57795d9e9e17601689f/excerpt/c1ae8a8dc4d9f06aa38cd204c16abf33>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">I proceeded to the excellent little inn of Mrs, Osbaldeston at Redbridge, to dress in my best, and join the splendid gala of Captain Colt at Rownam's [<em>sic</em>] house. I then drove on in my carriage, and arrived about half-past five, just as the innumerable host of fashionables were sat down to a banquet similar to that of a lord mayor. The wines flew at an awful pace, and the speeches after dinner were like a meeting in parliament, [&hellip;] We then had a concert till near eleven, fireworks equal to Vauxhall till twelve under the able directions of Captain Rich, dancing till two, then a gorgeous sitting supper, and a finale with dancing till half-past three, when the carriage came again from Redbridge and took us worn out to our beds at the inn.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Journal entry, 20 August 1839' pp. 166 (135 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Journal+entry,+20+August+1839/1534328615526>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "166" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/source/Journal+entry,+20+August+1839/1534328615526>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Journal entry, 20 August 1839"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+diary+of+colonel+peter+hawker+1802%E2%80%931853/vol/2>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/diaryofcolonelpe02hawkiala>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Journal entry, 20 August 1839";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/HawkerPeter> .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

@@ -1,0 +1,153 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/performance/edf339f0557ef5b5f4d1edba03e3ecce/1513263966118>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'seventeenth century song'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/seventeenth+century+song/1513263966110> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://reference.data.gov.uk/id/year/1694>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1694"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1699-uu-uu>
+        rdf:type  <http://www.w3.org/2006/time#TemporalEntity>;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1699;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/time/edtf/16Ll-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late 17th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1675-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1699-uu-uu> .
+
+<http://data.open.ac.uk/led/source/The+Ladies+Dictionary+being+a+General+Entertainment+for+the+Fair+Sex+1694/1513263855156>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "Item located in 'Defining Gender' database, Adam Matthew Digital, 2017  (not open access), where the writer is identified as female but an author's name is not given. "@en;
+        rdfs:label         "The Ladies Dictionary being a General Entertainment for the Fair Sex 1694 "@en , "The Ladies Dictionary being a General Entertainment for the Fair Sex 1694"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1694-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/John+Dunton/1516019969820>;
+        <http://purl.org/dc/terms/title>
+                "The Ladies Dictionary being a General Entertainment for the Fair Sex 1694 ";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/1694-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1694"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1694;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1694>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/led/organization/John+Dunton/1516019969820>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Dunton"@en .
+
+<http://data.open.ac.uk/led/music/seventeenth+century+song/1513263966110>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "seventeenth century song"@en;
+        <http://purl.org/dc/terms/title>
+                "seventeenth century song" .
+
+<http://data.open.ac.uk/led/lexp/1513264193612>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Domestic;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/a61063e99d2016fbe3aea36e36bbe922/excerpt/6d72d4ada10b17c1999d25f3ea6b498c>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "202";
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/16Ll-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-01-15T12:40:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2017-12-14T15:09:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/edf339f0557ef5b5f4d1edba03e3ecce/1513263966118>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a61063e99d2016fbe3aea36e36bbe922/excerpt/6d72d4ada10b17c1999d25f3ea6b498c> .
+
+<http://data.open.ac.uk/time/edtf/1675-uu-uu>
+        rdf:type  <http://www.w3.org/2006/time#TemporalEntity>;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1675;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/source/a61063e99d2016fbe3aea36e36bbe922/excerpt/6d72d4ada10b17c1999d25f3ea6b498c>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p><span style=\"font-family: Arial;\">[<em>The Ladies Dictionary</em> is presented as a Q&amp;A among women on various subjects of interest to women. Original spellings and punctuation retained.]</span></p>\r\n<p class=\"MsoNormal\"><span style=\"font-family: Arial;\"><strong>Quest. 6.</strong> How far may Singing and Musick be proper in making Love? </span></p>\r\n<p class=\"MsoNormal\"><strong><span style=\"font-family: Arial;\">&nbsp;</span></strong><span style=\"font-family: Arial;\"><strong>Ansur:</strong> There&rsquo;s nothing which </span><em style=\"font-family: Arial;\">Charms the Soul</em><span style=\"font-family: Arial;\"> more than </span><em style=\"font-family: Arial;\">fine Musick</em><span style=\"font-family: Arial;\">. </span><em style=\"font-family: Arial;\">Osborn </em><span style=\"font-family: Arial;\">says unluckily, after his manner, of a </span><em style=\"font-family: Arial;\">fine Woman</em><span style=\"font-family: Arial;\"> who </span><em style=\"font-family: Arial;\">Sings</em><span style=\"font-family: Arial;\"> well, that she&rsquo;s a </span><em style=\"font-family: Arial;\">Trap doubly baited</em><span style=\"font-family: Arial;\">; and why is not the same true of a </span><em style=\"font-family: Arial;\">Man?</em><span style=\"font-family: Arial;\"> There being indeed something so </span><em style=\"font-family: Arial;\">ravishing</em><span style=\"font-family: Arial;\"> in </span><em style=\"font-family: Arial;\">Musick</em><span style=\"font-family: Arial;\">, whether in </span><em style=\"font-family: Arial;\">Man</em><span style=\"font-family: Arial;\"> or </span><em style=\"font-family: Arial;\">Woman</em><span style=\"font-family: Arial;\">; that &lsquo;tis almost impossible for any thing that&rsquo;s </span><em style=\"font-family: Arial;\">humane</em><span style=\"font-family: Arial;\"> to resist it; tho&rsquo; in </span><em style=\"font-family: Arial;\">Vocal </em><span style=\"font-family: Arial;\">still more than </span><em style=\"font-family: Arial;\">Instrumental:</em><span style=\"font-family: Arial;\"> It </span><em style=\"font-family: Arial;\">Smoothes</em><span style=\"font-family: Arial;\"> all the </span><em style=\"font-family: Arial;\">rugged Passions of the Soul</em><span style=\"font-family: Arial;\">, and like </span><em style=\"font-family: Arial;\">Beauty bewitches</em><span style=\"font-family: Arial;\"> into <em>Love</em>, almost before Persons know where they are. But even here, as well as in other Cases, </span><em style=\"font-family: Arial;\">Extream</em><span style=\"font-family: Arial;\">s are to be avoided, nothing being more </span><em style=\"font-family: Arial;\">ridiculous</em><span style=\"font-family: Arial;\"> than an </span><em style=\"font-family: Arial;\">eternal Fa-la of a Lover</em><span style=\"font-family: Arial;\">; and a </span><em style=\"font-family: Arial;\">Lady of Sense </em><span style=\"font-family: Arial;\">and <em>worth</em>, wou&rsquo;d as soon make choice of a </span><em style=\"font-family: Arial;\">Singing Master</em><span style=\"font-family: Arial;\"> as one who is always </span><em style=\"font-family: Arial;\">tiring</em><span style=\"font-family: Arial;\"> her with </span><em style=\"font-family: Arial;\">hard Names</em><span style=\"font-family: Arial;\"> and </span><em style=\"font-family: Arial;\">doleful Ditties</em><span style=\"font-family: Arial;\">. He must then Sing very rarely or never, unless the<em> Lady desires him</em>; he must be neither </span><em style=\"font-family: Arial;\">too forward</em><span style=\"font-family: Arial;\"> or </span><em style=\"font-family: Arial;\">averse,</em><span style=\"font-family: Arial;\"> and must not be of the Humour of most </span><em style=\"font-family: Arial;\">Songsters,</em><span style=\"font-family: Arial;\"> who neither know when to begin, nor make an end. His <em>P</em></span><em style=\"font-family: Arial;\">erformances </em><span style=\"font-family: Arial;\">must be natural and easie, and carry something of a free and genteel Air; and he must never himself appear too well pleas&rsquo;d with &lsquo;em, but Order it so, that he may seem to Oblige the Lady, not himself, by his Melody: at least let it appear </span><em style=\"font-family: Arial;\">accidential</em><span style=\"font-family: Arial;\"> only, as if by </span><em style=\"font-family: Arial;\">chance,</em><span style=\"font-family: Arial;\"> not knowing any hears him, and for his </span><em style=\"font-family: Arial;\">own private diversi</em><span style=\"font-family: Arial;\">on.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Ladies Dictionary being a General Entertainment for the Fair Sex 1694' pp. 202 (303 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Ladies+Dictionary+being+a+General+Entertainment+for+the+Fair+Sex+1694/1513263855156>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "202" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .

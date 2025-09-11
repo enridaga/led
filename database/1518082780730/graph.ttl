@@ -1,0 +1,230 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/organization/11+Bolt-Court+Fleet+Street/1518082013916>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "11 Bolt-Court Fleet Street"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/musicgenre/Ceremonial>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Ceremonial"@en .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://data.open.ac.uk/time/edtf/1803-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1803"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1803;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .
+
+<http://data.open.ac.uk/led/agent/James+Paul+Cobbett/1518082175329>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "James Paul Cobbett"@en;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1803-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1881-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Cobbett";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "James Paul" .
+
+<http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/default.aspx>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-02-08"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Grand Tour"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/default.aspx"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Florence>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Florence"@en .
+
+<http://data.open.ac.uk/led/performance/5bfbb7625433c9b342c02cf1eeb86a53/1518082672371>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'A military mass'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Florence>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/Ceremonial>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet> , <http://dbpedia.org/resource/Drum> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Paul+Cobbett/1518082175329>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/A+military+mass/1518082672364> .
+
+<http://data.open.ac.uk/led/source/62e5aef0f06dd6f67a55ddbceb2ee042/excerpt/ac1addaa25c862716f9ca3adad4d618f>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>[25th March 1829] This a great holyday, Lady-day. High mass was performed with great pomp, this morning, at the church of <em>Santa Annunziata</em>. The royal family all went there and returned in full procession. While they were in church, the royal family sat under a canopy, or tent rather, open on the side facing the altar. The four corners of the tent were guarded by four officers in regimentals, with broad-swords drawn and plumed cocked-hats on their heads. There were a good many soldiers in the church, who kept their heads covered all the while. The ceremony was a mixture of the sacred and the military. It was what is called a <em>military mass</em>. There were the priests chanting at the altar; and the soldiers, who bore their arms, grounded them when they knelt, the butts of their muskets making a great rattle against the stone floor of the church. It did not look well to see the soldiers all keeping their heads covered. They could not, in such a place, be said to be <em>on duty</em>; unless, indeed, the church had been besieged. Among the musicians there were several red-coated performers, and these blew trumpets and beat drums, which took the loudest parts in the concert. The blasts of war prevailed over the seraphic sounds of peace; it seemed as if the musical sons of Mars were putting the choir of St. Cecilia to a complete rout.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p class=\"MsoNormal\">&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Journal of a Tour in Italy, and also in part of France and Switzerland' pp. 133-134 (237 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Journal+of+a+Tour+of+Italy,+and+also+in+parts+of+France+and+Switzerland/1518082013901>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "133-134" .
+
+<http://data.open.ac.uk/led/music/A+military+mass/1518082672364>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "A military mass"@en;
+        <http://purl.org/dc/terms/title>
+                "A military mass" .
+
+<http://data.open.ac.uk/time/edtf/1830-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1830"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1830;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1830>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.81>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  81 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/1829-03-25TEe:ee:ee>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 March, 1829, in the morning"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1829;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.29> .
+
+<http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "United Kingdom of Great Britain and Ireland"@en .
+
+<http://reference.data.gov.uk/id/year/1830>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1830"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/James+Paul+Cobbett/1518082013914>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "James Paul Cobbett"@en .
+
+<http://data.open.ac.uk/led/lexp/1518082780730>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/62e5aef0f06dd6f67a55ddbceb2ee042/excerpt/ac1addaa25c862716f9ca3adad4d618f>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "133-134";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/James+Paul+Cobbett/1518082175329>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Florence>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1829-03-25TEe:ee:ee>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-03-19T15:09:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-02-08T09:39:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/5bfbb7625433c9b342c02cf1eeb86a53/1518082672371>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/62e5aef0f06dd6f67a55ddbceb2ee042/excerpt/ac1addaa25c862716f9ca3adad4d618f> .
+
+<http://data.open.ac.uk/time/edtf/1881-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1881"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1881;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1881>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.81> .
+
+<http://reference.data.gov.uk/id/year/1881>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1881"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Journal+of+a+Tour+of+Italy,+and+also+in+parts+of+France+and+Switzerland/1518082013901>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Grand Tour database is not public access. \nThe title page states that the ‘space of time’ for the tour was from October 1828 to September 1829.\n"@en;
+        rdfs:label                  "Journal of a Tour in Italy, and also in part of France and Switzerland"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/default.aspx>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1830-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/11+Bolt-Court+Fleet+Street/1518082013916>;
+        <http://purl.org/dc/terms/title>
+                "Journal of a Tour in Italy, and also in part of France and Switzerland";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/James+Paul+Cobbett/1518082013914> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

@@ -1,0 +1,176 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Walter+Roberts/1550844402664>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Walter Roberts"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Roberts";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Walter" .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1550844496601>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Walter+Roberts/1550844402664> , <http://data.open.ac.uk/led/agent/Osborne+Skinnner/1550844359758> , <http://data.open.ac.uk/led/agent/a+gentleman/1549632683480>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1532695934699>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Thomas+Blackwell/1550844496652> .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+08+February+2019),+May+1746,+trial+of+Walter+Roberts+(t17460515-6)/1550844309636>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 08 February 2019), May 1746, trial of Walter Roberts (t17460515-6)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 08 February 2019), May 1746, trial of Walter Roberts (t17460515-6)";
+        <http://purl.org/ontology/bibo/number>
+                "t17460515-6";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1532695934699>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/a+gentleman/1549632683480>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "a gentleman"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "gentleman";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a" .
+
+<http://data.open.ac.uk/led/agent/Osborne+Skinnner/1550844359758>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Osborne Skinnner"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Skinnner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Osborne" .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.46>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  46 .
+
+<http://reference.data.gov.uk/id/day/1746-04-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 April, 1746"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.46> .
+
+<http://data.open.ac.uk/led/place/13df9c51440f0a3ea1cd40042b3b27eb>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Goat Alehouse, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Goat Alehouse, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/source/03010e8bc1ad4c86ec8f210c67dea70e/excerpt/c8d6d7cf9a00ab1c314a106a688726e6>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[Walter Roberts was found guilty of manslaughter on 15 May 1746 and sentenced to branding]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Osborne Skinner: At the Goat Alehouse the poor Fellow, the Deceas'd [Thomas Blackwell], was singing a merry Song; Mr. Roberts, the Prisoner, came in and call'd for a pennyworth of Beer, and a Gentleman subpoenied by Mr. Roberts, who is now in Court, was there; there were no cross Words pass'd at that Time, the Liquor was brought in and we drank the Duke's Health; Mr. Roberts said they magnify'd their Loss and lessen'd our own: I ask'd him to drink the Duke's Health, and he said no; then I said you are a Rebel.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 08 February 2019), May 1746, trial of Walter Roberts (t17460515-6)' (108 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+08+February+2019),+May+1746,+trial+of+Walter+Roberts+(t17460515-6)/1550844309636>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Thomas+Blackwell/1550844496652>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Thomas Blackwell"@en .
+
+<http://data.open.ac.uk/led/lexp/1550844583243>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/03010e8bc1ad4c86ec8f210c67dea70e/excerpt/c8d6d7cf9a00ab1c314a106a688726e6>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/a+gentleman/1549632683480> , <http://data.open.ac.uk/led/agent/Osborne+Skinnner/1550844359758> , <http://data.open.ac.uk/led/agent/Walter+Roberts/1550844402664>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/13df9c51440f0a3ea1cd40042b3b27eb>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1746-04-24>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-01T13:22:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-22T14:09:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1550844496601>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/03010e8bc1ad4c86ec8f210c67dea70e/excerpt/c8d6d7cf9a00ab1c314a106a688726e6> .

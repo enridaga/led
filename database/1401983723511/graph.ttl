@@ -1,0 +1,131 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://reference.data.gov.uk/id/day/1914-08-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 August, 1914"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1914;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://dbpedia.org/resource/Belgium>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Belgium"@en .
+
+<http://data.open.ac.uk/led/person/Germaine+Soltau/1401983687447>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Germaine Soltau"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/schoolgirl>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Belgium>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Soltau";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Germaine" .
+
+<http://bnb.data.bl.uk/id/person/ArthurMax1939->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Max Arthur"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/led/lexp/1401983723511>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I was in Brussels, and at an age when all events seem to leave a permanent impression on you. Of course we were not expecting the Germans to invade Belgium, we were hoping they would respect our neutrality, so the invasion came as a very great shock to us all…\r\n     Then on Thursday the 20th of August, a date I will never forget, the Germans entered Brussels. It was a glorious day of sunshine but in my mind I still keep a vision of grey, these grey-clad hordes marching in the streets. It was a sinister, greenish grey, even their helmets were covered in grey. They had with them all their heavy guns, field kitchens and officers on horseback, and it all went in long, long, endless streams of grey. And the dust that was raised by all these thousands of feet and all those weapons of war - one had the feeling that the dust was hiding the sun. And their music, the music that we were going to hear for four years and three months - the sound of drum and fife and always the same tune. It made us cry when we heard that and thought about our soldiers and of the Allies on the front line. And then in the evening, on our beautiful Grande Place, they put up their field kitchen and started making their soup.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "26-27";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Germaine+Soltau/1401983687447>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Brussels>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1914-08-20>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-05T15:55:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/led/thing/schoolgirl>
+        rdfs:label  "schoolgirl"@en .
+
+<http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Forgotten Voices of the Great War"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>;
+        <http://purl.org/dc/terms/title>
+                "Forgotten Voices of the Great War";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/ArthurMax1939->;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Ebury Press"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Brussels>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Brussels"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

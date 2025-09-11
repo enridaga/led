@@ -1,0 +1,438 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://bnb.data.bl.uk/id/person/RoremNed1923->
+        rdfs:label  "Ned Rorem"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/music/songs/1394651317787>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "songs"@en;
+        <http://purl.org/dc/terms/title>
+                "songs" .
+
+<http://data.open.ac.uk/led/performance/songs+(,+performance+of)/1397955356535>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'songs (, performance of)'"@en , "performance of 'songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/songs/1394651317787>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Ella_Fitzgerald> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://musicbrainz.org/artist/d2110a4f-20c0-4ae3-ab05-1f195b62ae22#_>
+        rdfs:label  "Ned Rorem"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://bnb.data.bl.uk/id/person/MarshJohn>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Marsh"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Music_criticism> , <http://data.open.ac.uk/led/thing/violinist> , <http://data.open.ac.uk/led/gentleman>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1752-05-31>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Dorking>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1828-10-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Chichester>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> , <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Marsh";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/gentleman>
+        rdfs:label  "Gentleman"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1397955298932>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Mixture of live and recorded music was heard. Experience took place in Hyeres in France."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "Evenings here we play four-hand music, the Epigraphs antiques - or I play the phonograph: my skilful string quartet, or old Ella Fitzgerald records which remind me of Olga and the summer iciness of Lake Michigan where I first learned what an orgasm was."@en;
+        led:has_medium         led:Medium.Live , led:Medium.Broadcast;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Paris+Diary:+Hy%C3%A8res+July,+1951/1398176771588>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "33";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1951-05-uu/to/1951-07-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-04-20T00:54:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/string+quartet+(,+performance+of)/1397955240615> , <http://data.open.ac.uk/led/performance/songs+(,+performance+of)/1394651317796> , <http://data.open.ac.uk/led/performance/Six+epigraphs+antiques+(,+performance+of)/1397955154818> , <http://data.open.ac.uk/led/performance/songs+(,+performance+of)/1397955356535> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/thing/essayist>
+        rdfs:label  "essayist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://reference.data.gov.uk/id/day/1752-05-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 May, 1752"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1752;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/time/edtf/1998-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1998"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1998;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1998>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://dbpedia.org/resource/Diarist>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Diarist"@en .
+
+<http://dbpedia.org/resource/Chichester>
+        rdfs:label  "Chichester"@en .
+
+<http://data.open.ac.uk/led/performance/Six+epigraphs+antiques+(,+performance+of)/1397955154818>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Six epigraphs antiques'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Six+epigraphs+antiques/1397955154810>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Ned_Rorem> .
+
+<http://reference.data.gov.uk/id/year/1998>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/performance/songs+(,+performance+of)/1394651317796>
+        rdf:type             <http://purl.org/ontology/mo/Performance> , <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label           "performance of 'songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/dc/terms/title>
+                "songs";
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem> , <http://bnb.data.bl.uk/id/person/MarshJohn>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/songs/1394651317787>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Miss+Boreille/1394651317801> .
+
+<http://dbpedia.org/resource/String_quartet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "String quartet"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://data.open.ac.uk/led/agent/Miss+Boreille/1394651317801>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Miss Boreille"@en .
+
+<http://dbpedia.org/resource/Claude_Debussy>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Claude Debussy" , "Claude Debussy"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/be50643c-0377-4968-b48c-47e06b2e2a3b#_> , <http://bnb.data.bl.uk/id/person/DebussyClaude1862-1918> .
+
+<http://musicbrainz.org/artist/be50643c-0377-4968-b48c-47e06b2e2a3b#_>
+        rdfs:label  "Claude Debussy"@en .
+
+<http://data.open.ac.uk/time/edtf/1951-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://bnb.data.bl.uk/id/person/DebussyClaude1862-1918>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Claude Debussy"@en .
+
+<http://dbpedia.org/resource/String_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "String instrument"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://data.open.ac.uk/led/music/Six+epigraphs+antiques/1397955154810>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Six epigraphs antiques"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Claude_Debussy>;
+        <http://purl.org/dc/terms/title>
+                "Six epigraphs antiques" .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://dbpedia.org/resource/Ned_Rorem>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ned Rorem"@en , "Ned Rorem";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/critic> , <http://data.open.ac.uk/led/thing/essayist> , <http://dbpedia.org/resource/Diarist> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Teacher>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1923-10-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Richmond,_Indiana>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        owl:sameAs                      <http://musicbrainz.org/artist/d2110a4f-20c0-4ae3-ab05-1f195b62ae22#_> , <http://bnb.data.bl.uk/id/person/RoremNed1923->;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rorem";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ned" .
+
+<http://reference.data.gov.uk/id/day/1828-10-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 October, 1828"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1828;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://dbpedia.org/resource/Dorking>
+        rdfs:label  "Dorking"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://data.open.ac.uk/led/source/The+Paris+Diary:+Hy%C3%A8res+July,+1951/1398176771588>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Paris Diary: Hyères July, 1951"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Paris+Diary+and+The+New+York+Diary+1951-1961>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Paris Diary: Hyères July, 1951";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Ned_Rorem> .
+
+<http://data.open.ac.uk/led/performance/string+quartet+(,+performance+of)/1397955240615>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'string quartet'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/String_quartet> , <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/String_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/string+quartet/1397955240608> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Music_criticism>
+        rdfs:label  "Music criticism"@en .
+
+<http://data.open.ac.uk/time/edtf/1951-05-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "May, 1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://data.open.ac.uk/led/critic>
+        rdfs:label  "Critic"@en , "critic"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/source/The+Paris+Diary+and+The+New+York+Diary+1951-1961>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Paris Diary and The New York Diary 1951-1961"@en , "The Paris Diary and The New York Diary"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1998-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "The Paris Diary and The New York Diary 1951-1961";
+        <http://purl.org/ontology/bibo/isbn>
+                "one given"^^<http://www.w3.org/2001/XMLSchema#ID> , "none given"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://dbpedia.org/resource/Richmond,_Indiana>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Richmond, Indiana"@en .
+
+<http://data.open.ac.uk/time/interval/1951-05-uu/to/1951-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between May, 1951 and July, 1951"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1951-05-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1951-07-uu> .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://reference.data.gov.uk/id/day/1923-10-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 October, 1923"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1923;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.23> .
+
+<http://data.open.ac.uk/led/music/string+quartet/1397955240608>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "string quartet"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/dc/terms/title>
+                "string quartet" .
+
+<http://dbpedia.org/resource/Ella_Fitzgerald>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ella Fitzgerald"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499#_> .
+
+<http://data.open.ac.uk/led/thing/violinist>
+        rdfs:label  "violinist"@en .

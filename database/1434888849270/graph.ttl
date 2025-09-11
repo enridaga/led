@@ -1,0 +1,390 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://reference.data.gov.uk/id/year/1936>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1936"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://data.open.ac.uk/led/agent/R.+Maas/1434888439605>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "R. Maas"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/lexp/1434888849270>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/747428932b673512714a81e9edc4c453/excerpt/01b5e4f4b3d51c2c87032c48d25bfd9c>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/verafonte/claims>;
+        led:pages            "109-110";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Antwerp>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1924-01-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-16T17:10:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-21T12:14:09.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Concertino/1434888373372/1434888373383> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mavra+(1922)/1396427364210/1434888628291> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Octuor/1434888014049/1434888556036> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trois+Petites+Pi%25C3%25A8ces+pour+Quatuor+%25C3%25A0+Cordes%25E2%2580%2599/1434888439580/1434888439591>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/747428932b673512714a81e9edc4c453/excerpt/01b5e4f4b3d51c2c87032c48d25bfd9c> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/MM.+A.+Onnou/1434888373387>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "MM. A. Onnou"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Concertino/1434888373372/1434888373383>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Concertino'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Antwerp>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/String_quartet> , <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/String_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Concertino/1434888373372>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/R.+Maas/1434888373397> , <http://data.open.ac.uk/led/agent/MM.+A.+Onnou/1434888373387> , <http://data.open.ac.uk/led/agent/L.+Halleux/1434888373391> , <http://data.open.ac.uk/led/agent/G.+Pr%C3%A9vost/1434888373394> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<https://archive.org/details/igorstravinskyan011583mbp>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-04-16"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Igor Stravinsky: An Autobiography"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/igorstravinskyan011583mbp"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trois+Petites+Pi%25C3%25A8ces+pour+Quatuor+%25C3%25A0+Cordes%25E2%2580%2599/1434888439580/1434888439591>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Trois Petites Pièces pour Quatuor à Cordes’'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Antwerp>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/String_quartet> , <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/String_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Trois+Petites+Pi%C3%A8ces+pour+Quatuor+%C3%A0+Cordes%E2%80%99/1434888439580>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/R.+Maas/1434888439605> , <http://data.open.ac.uk/led/agent/MM.+A:+Onnou/1434888439595> , <http://data.open.ac.uk/led/agent/L.+Halleux/1434888373391> , <http://data.open.ac.uk/led/agent/G.+Pr%C3%A9vost/1434888373394> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/music/'Mavra'/1420754296181>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Mavra'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "'Mavra'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/led/music/Octuor/1434888014049>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Octuor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "Octuor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://dbpedia.org/resource/String_quartet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "String quartet"@en .
+
+<http://reference.data.gov.uk/id/day/1882-06-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 June, 1882"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1882;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://dbpedia.org/resource/Russia>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Russia"@en .
+
+<http://data.open.ac.uk/led/agent/G.+Pr%C3%A9vost/1434888373394>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "G. Prévost"@en .
+
+<http://data.open.ac.uk/led/agent/L.+Halleux/1434888373391>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "L. Halleux"@en .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://data.open.ac.uk/led/agent/R.+Maas/1434888373397>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "R. Maas"@en .
+
+<http://data.open.ac.uk/time/edtf/1924-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/String_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "String instrument"@en .
+
+<http://dbpedia.org/resource/Wind_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Wind instrument"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/1936-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1936"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1936;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1936>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.36> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/music/Trois+Petites+Pi%C3%A8ces+pour+Quatuor+%C3%A0+Cordes%E2%80%99/1434888439580>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Trois Petites Pièces pour Quatuor à Cordes’"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "Trois Petites Pièces pour Quatuor à Cordes’";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/Lomonosov,_Russia>
+        rdfs:label  "Lomonosov, Russia"@en .
+
+<http://dbpedia.org/resource/Antwerp>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Antwerp"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/source/Igor+Stravinsky:+An+Autobiography/1434532767596>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Igor Stravinsky: An Autobiography"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/igorstravinskyan011583mbp>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1936-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Simon+and+Schuster+Inc./1434532767603>;
+        <http://purl.org/dc/terms/title>
+                "Igor Stravinsky: An Autobiography";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Octuor/1434888014049/1434888556036>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Octuor'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Antwerp>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Wind_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Octuor/1434888014049>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://data.open.ac.uk/led/source/747428932b673512714a81e9edc4c453/excerpt/01b5e4f4b3d51c2c87032c48d25bfd9c>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In January I went to Antwerp, having been invited by La Soci&eacute;t&eacute; des Nouveaux Concerts to conduct a program of my earlier works. From there I went to Brussels, where the Pro Arte Society had organized a concert of my music. The celebrated Quartet- know under that name (MM. A. Onnou, L. Halleux, G. Pr&eacute;vost, and R. Maas) - with its usual masterly seriousness played my Concertino and my &lsquo;Trois Petites Pi&egrave;ces pour Quatuor &agrave; Cordes&rsquo;, while I myself conducted my &lsquo;Octuor&rsquo;, &lsquo;La Suite de Pulcinella&rsquo;, and my opera &lsquo;Mavra&rsquo;, the vocal parts of which had been carefully studied and prepared by the singers before my arrival with the help of that enthusiastic Belgian musicians, Paul Collaer. I give all these details because I retain a grateful memory of the Pro Arte group for this concert, organized in a highly artistic fashion, which enabled me to present my work, especially &lsquo;Mavra&rsquo;, under conditions which I could not have wished better.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Igor Stravinsky: An Autobiography' pp. 109-110 (172 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Igor+Stravinsky:+An+Autobiography/1434532767596>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "109-110" .
+
+<http://data.open.ac.uk/led/music/Concertino/1434888373372>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Concertino"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "Concertino";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mavra+(1922)/1396427364210/1434888628291>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mavra (1922)'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Antwerp>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Mavra'/1420754296181>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1971-04-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 April, 1971"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1971;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/led/agent/MM.+A:+Onnou/1434888439595>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "MM. A: Onnou"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.36>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  36 .
+
+<http://dbpedia.org/resource/Igor_Stravinsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Igor Stravinsky"@en , "Igor Stravinksy" , "Igor Stravinksy"@en , "Igor Stravisnky" , "Igor Stravinsky";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-nrsuk:social:A>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1882-06-17>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lomonosov,_Russia>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1971-04-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France> , <http://dbpedia.org/resource/United_States> , <http://dbpedia.org/resource/Russian_Empire> , <http://dbpedia.org/resource/Russia>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stravinsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Igor Fjodorowitsch";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Igor Stravinsky"@en .
+
+<http://data.open.ac.uk/led/organization/Simon+and+Schuster+Inc./1434532767603>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Simon and Schuster Inc."@en .

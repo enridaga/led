@@ -1,0 +1,373 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Mozart/1432738814716/1432738814727>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano music by Mozart'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+music+by+Mozart/1432738814716>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wenzel+Czerny/1432738993910> .
+
+<http://data.open.ac.uk/time/interval/1791-uu-uu/to/1796-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1791 and 1796"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1791-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1796-uu-uu> .
+
+<http://data.open.ac.uk/led/music/Piano+music+by+Clementi/1432738781257>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano music by Clementi"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Clementi/1432738781269>;
+        <http://purl.org/dc/terms/title>
+                "Piano music by Clementi";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Clementi/1432738781269> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1857-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1857>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .
+
+<http://data.open.ac.uk/time/edtf/1956-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1956"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1956> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/Historian>
+        rdfs:label  "Historian"@en .
+
+<http://www.jstor.org/stable/740427>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.jstor.org/stable/740427"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Carl Czerny"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/Historian> , <http://data.open.ac.uk/led/Theorist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-02-21>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1857-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Czerny";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Carl" .
+
+<http://data.open.ac.uk/led/person/Ernest+Sanders/1432737975662>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ernest Sanders"@en .
+
+<http://data.open.ac.uk/led/Theorist>
+        rdfs:label  "Theorist"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/led/lexp/1432738391131>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "From my earliest days I was surrounded with music, since my father used to practice a great deal (especially work by Clementi, Mozart, Kozeluch, etc.)"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Recollections+from+My+Life/1432737903952>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/temp>;
+        led:pages              "302-303";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1791-uu-uu/to/1796-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-27T14:53:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Mozart/1432738814716/1432738814727> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Kozeluch/1432738870156/1432738870168> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Clementi/1432738781257/1432738781273> .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/led/source/Recollections+from+My+Life/1432737903952>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Recollections from My Life"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Musical+Quarterly,+Vol.42,+No.+3>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.jstor.org/stable/740427>;
+        <http://purl.org/dc/terms/title>
+                "Recollections from My Life";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Ernest+Sanders/1432737975662> , <http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_> .
+
+<http://dbpedia.org/resource/Leopold_Kozeluch>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Leopold Kozeluch"@en .
+
+<http://dbpedia.org/resource/Oxford_University_Press>
+        rdfs:label  "Oxford University Press"@en .
+
+<http://reference.data.gov.uk/id/year/1857>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1857"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Oxford University Press"@en , "American Mathematical Society"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Oxford_University_Press> .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://data.open.ac.uk/time/edtf/1791-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1791>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/source/The+Musical+Quarterly,+Vol.42,+No.+3>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Musical Quarterly, Vol.42, No. 3 "@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1956-07-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>;
+        <http://purl.org/dc/terms/title>
+                "The Musical Quarterly, Vol.42, No. 3 ";
+        <http://purl.org/ontology/bibo/volume>
+                "42" .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/agent/Wenzel+Czerny/1432738993910>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wenzel Czerny"@en .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/led/music/Piano+music+by+Kozeluch/1432738870156>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano music by Kozeluch"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Leopold_Kozeluch>;
+        <http://purl.org/dc/terms/title>
+                "Piano music by Kozeluch";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Leopold_Kozeluch> .
+
+<http://data.open.ac.uk/led/music/Piano+music+by+Mozart/1432738814716>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano music by Mozart"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "Piano music by Mozart";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://data.open.ac.uk/led/person/Clementi/1432738781269>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Clementi" .
+
+<http://reference.data.gov.uk/id/year/1791>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1791"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Kozeluch/1432738870156/1432738870168>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano music by Kozeluch'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+music+by+Kozeluch/1432738870156>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wenzel+Czerny/1432738993910> .
+
+<http://reference.data.gov.uk/id/year/1956>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1956"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/id/year/1796>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1796"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1796-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1796"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1796;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1796>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://reference.data.gov.uk/id/day/1791-02-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 February, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Piano+music+by+Clementi/1432738781257/1432738781273>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano music by Clementi'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/fb1c27b3-a54c-4c23-b554-9e989a955b39#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+music+by+Clementi/1432738781257>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wenzel+Czerny/1432738993910> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .

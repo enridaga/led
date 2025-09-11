@@ -1,0 +1,197 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/Thomas_Arne>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Thomas Arne"@en .
+
+<http://bnb.data.bl.uk/id/resource/010769949>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "John Marriner, mariner, born 1755 in Currie near Edinburgh, recounted his travels over 25 years of seafaring to John Howell of Edinburgh in 1822. "@en;
+        rdfs:label                  "The Life and Adventures of John Nicol, Mariner"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2000-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Canongate>;
+        <http://purl.org/dc/terms/title>
+                "The Life and Adventures of John Nicol, Mariner";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/FlanneryTimF%28TimFridtjof%291956->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1841950912"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Edinburgh>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/NicolJohn1755-1825> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/person/NicolJohn1755-1825>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "John Nicol"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Sailor>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1755-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Nicol";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/time/edtf/1789-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1789"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1789;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1789>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/thing/Sailor>
+        rdfs:label  "Sailor"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/time/edtf/2000-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2000"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://reference.data.gov.uk/id/year/1789>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1789"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1755-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1755"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1755;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.55> .
+
+<http://data.open.ac.uk/led/lexp/1394293673936>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "John Marriner, mariner, born 1755 in Currie near Edinburgh, recounted his travels over 25 years of seafaring to John Howell of Edinburgh in 1822. "@en;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "...Not finding the [Falkland] islands, we bore away for the Sandwich Islands.   The first land we made was Owhyee, the island where Captain Cook was killed....the natives came on board in crowds and were happy to see us...\r\n\r\n...They are the worst people to pronounce the English of any I ever was among.  Captain Portlock that called Potipoti.  The nearest approach they could make to my name was Nittie, yet they would make the greatest efforts, and look so angry at themselves and vexed at their vain efforts.  \r\n\r\nWe had a merry facetious fellow on board called Dickson.  He sung pretty well.  He squinted and the natives mimicked him.  Abenoue, King of Atooi, could cock his eye like Dickson better than any of his subjects.  Abenoue called him Billicany, from his often singing ‘Rule Britannia’.  Abenoue learned the air and the words as near as he could pronounce them.  It was an amusing thing to hear the King and Dickson sing. Abenoue loved him better than any man in the ship, and always embraced him every time they met on shore or in the ship, and began to sing, ‘Tule Billicany, Billicany Tule,’ etc....\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://bnb.data.bl.uk/id/resource/010769949>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        led:pages              "82-83";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/NicolJohn1755-1825>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/178u-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-08T15:47:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Rule+Britannia+(,+performance+of)/1394293598468> .
+
+<http://data.open.ac.uk/led/performance/Rule+Britannia+(,+performance+of)/1394293598468>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Rule Britannia'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/NicolJohn1755-1825>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Rule+Britannia/1394293598457> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.55>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  55 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://bnb.data.bl.uk/id/agent/Canongate>
+        rdfs:label  "Canongate"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/time/edtf/178u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1780's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1780-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1789-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/led/music/Rule+Britannia/1394293598457>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Rule Britannia"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Thomas_Arne>;
+        <http://purl.org/dc/terms/title>
+                "Rule Britannia";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Thomas_Arne> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://bnb.data.bl.uk/id/place/Edinburgh>
+        rdfs:label  "Edinburgh"@en .
+
+<http://data.open.ac.uk/time/edtf/1780-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "sometime in 1780"@en , "1780"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1780;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://bnb.data.bl.uk/id/person/FlanneryTimF%28TimFridtjof%291956->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Tim Flannery"@en .

@@ -1,0 +1,136 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/source/Music+and+Society+in+Eighteenth-Century+Yorkshire/1446632673740>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "PhD Thesis"@en;
+        rdfs:label                  "Music and Society in Eighteenth-Century Yorkshire"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/scholarly>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://etheses.whiterose.ac.uk/9049/1/ROBERTS%20Music%20and%20society%20in%2018th-century%20Yorkshire.pdf>;
+        <http://purl.org/dc/terms/title>
+                "Music and Society in Eighteenth-Century Yorkshire";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Christopher+Simon+Roberts/1446633180279> .
+
+<http://data.open.ac.uk/led/person/Christopher+Simon+Roberts/1446633180279>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Christopher Simon Roberts"@en .
+
+<http://data.open.ac.uk/led/lexp/1447004626176>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Henry Courtney comments on the response of his brothers Thomas and Corry to a concert at the Handel Commemoration Festival in Hull, 1789"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/107a3dba084f700ccd4032280004cc38/excerpt/28cd27920c7a3d0db8877928398fb00d>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "126";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Thomas+Courtney/1446639337710> , <http://data.open.ac.uk/led/agent/Corry+Courtney/1447004490008>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/1d314093c54825ac26ccc1ee4a8c6314>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1789-09-18>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-09T13:58:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-08T17:43:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/107a3dba084f700ccd4032280004cc38/excerpt/28cd27920c7a3d0db8877928398fb00d> .
+
+<http://dbpedia.org/resource/Kingston_upon_Hull>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Kingston Upon Hull"@en , "Kingston upon Hull"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://etheses.whiterose.ac.uk/9049/1/ROBERTS%20Music%20and%20society%20in%2018th-century%20Yorkshire.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "E-Thesis"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://etheses.whiterose.ac.uk/9049/1/ROBERTS%20Music%20and%20society%20in%2018th-century%20Yorkshire.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/place/1d314093c54825ac26ccc1ee4a8c6314>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "The High Church, Kingston upon Hull"@en;
+        <http://purl.org/dc/terms/description>
+                "The High Church, Kingston upon Hull"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Kingston_upon_Hull> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/agent/Corry+Courtney/1447004490008>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Corry Courtney"@en;
+        led:has_social_status  led:SocioEconomicStatus.Officer;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Courtney";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Corry" .
+
+<http://data.open.ac.uk/led/agent/Thomas+Courtney/1446639337710>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Thomas Courtney"@en;
+        led:has_social_status  led:SocioEconomicStatus.Officer;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Courtney";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://reference.data.gov.uk/id/day/1789-09-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 September, 1789"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1789;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/led/source/107a3dba084f700ccd4032280004cc38/excerpt/28cd27920c7a3d0db8877928398fb00d>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<div class=\"page\" title=\"Page 142\">\r\n<div class=\"layoutArea\">\r\n<div class=\"column\">\r\n<p><span style=\"font-size: 11.000000pt; font-family: 'Perpetua';\">Y[ou]r Bro[the]rs </span><span style=\"font-size: 11.000000pt; font-family: 'Perpetua';\">Corry &amp; Tom were at the Church the last morning but they were not so much surprised &amp; entertained as I had expected.&nbsp;</span></p>\r\n</div>\r\n</div>\r\n</div>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Music and Society in Eighteenth-Century Yorkshire' pp. 126 (27 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Music+and+Society+in+Eighteenth-Century+Yorkshire/1446632673740>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "126" .

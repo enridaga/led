@@ -1,0 +1,361 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn"@en .
+
+<http://reference.data.gov.uk/id/year/1891>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1891"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1375702673>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Yesterday evening I had a great pleasure. I went to Exeter Hall with my friend Miss Thackeray, to hear Mendelssohn's Oratorio of St. Paul; all the fine music was given very finely, and that of Paul himself was admirably sung by my nephew-in-law, Charles Santley, who has a noble voice and is a first-rate artist. \r\nAt the same time that I have extreme pleasure in hearing these beautiful sacred compositions, I never can become reconciled to listening to the most solemn thoughts and holy words and awful incidents of the New Testament history set to music and sung. Thus our Saviour's call to Saul, \"Saul, Saul, why persecutest thou me?\" and His awful answer to Saul's question; \"Who are Thou, Lord?\" and Paul's own most solemn words, \"Know ye not that ye are the temple of the living God?\" shock me with a feeling of absolute desecration, when I hear them sung instead of spoken; and of course this interferes greatly with my pleasure in listening to such a performance as that of St. Paul.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Frances+Kemble/1386329926657>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "248";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Miss+Thackeray/1375702085547> , <http://data.open.ac.uk/led/person/Frances+Anne+Kemble/1375702009869>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-06T11:42:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/St+Paul+(,+performance+of)/1386330060564> .
+
+<http://data.open.ac.uk/led/source/Further+Records+1848-1883:+A+Series+of+Letters>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Further Records 1848-1883: A Series of Letters"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1891-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/HenryHoltandCo>;
+        <http://purl.org/dc/terms/title>
+                "Further Records 1848-1883: A Series of Letters";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Charles_Santley>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Sir Charles Santley"@en , "Charles Santley"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/performance/St+Paul+(,+performance+of)/1386330060564>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'St Paul'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Miss+Thackeray/1375702085547> , <http://data.open.ac.uk/led/person/Frances+Anne+Kemble/1375702009869>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FSt%2BPaul%2F13757022038521375702203861>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Charles_Santley> .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://bnb.data.bl.uk/id/person/Mendelssohn-BartholdyFelix1809-1847>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn-Bartholdy"@en .
+
+<http://bnb.data.bl.uk/id/agent/HenryHoltandCo>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Henry Holt & Co."@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/15JML%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/15JML%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Felix_Mendelssohn>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Felix Mendelssohn"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/role/organist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1809-02-03>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1847-11-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/Mendelssohn-BartholdyFelix1809-1847> , <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mendelssohn Bartholdy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Felix Mendelssohn"@en .
+
+<http://data.open.ac.uk/led/person/Frances+Anne+Kemble/1375702009869>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Frances Anne Kemble"@en , "Frances Kemble"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Actor>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1809-11-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Kemble";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances Anne" .
+
+<http://reference.data.gov.uk/id/day/1809-02-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 February, 1809"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1809;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Actor>
+        rdfs:label  "Actor"@en .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+Frances+Kemble/1386329926657>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Frances Kemble"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Further+Records+1848-1883:+A+Series+of+Letters>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/15JML%20>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Frances Kemble";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Frances+Anne+Kemble/1375702009869> .
+
+<http://data.open.ac.uk/led/person/Miss+Thackeray/1375702085547>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Female;
+        rdfs:label  "Miss Thackeray"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Thackeray";
+        <http://xmlns.com/foaf/0.1/name>
+                "Miss Thackeray";
+        <http://xmlns.com/foaf/0.1/title>
+                "Miss"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FSt%2BPaul%2F13757022038521375702203861>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "St Paul"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Felix_Mendelssohn>;
+        <http://purl.org/dc/terms/title>
+                "St Paul";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Felix_Mendelssohn> .
+
+<http://reference.data.gov.uk/id/day/1809-11-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 November, 1809"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1809;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://reference.data.gov.uk/id/day/1847-11-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 November, 1847"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1847;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.47> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/time/edtf/1891-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1891>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

@@ -1,0 +1,189 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/source/letter+from+Thomas+Gray+to+Philiip+Gray+10+July+1740/1388181829806>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Thomas Gray to Philip Gray, 10 July 1740"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Bodleian Library Oxford"@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.e-enlightenment.com>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Thomas Gray to Philip Gray, 10 July 1740";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/GrayThomas1716-1771> .
+
+<http://data.open.ac.uk/led/occupation/scholar>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "scholar"@en .
+
+<http://data.open.ac.uk/time/edtf/1740-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1740"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1740;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/performance/sacred+choral+music+(,+performance+of)/1388182048188>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "sacred choral music (, performance of)"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Santa_Chiara_(Naples)>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Chorale>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/GrayThomas1716-1771>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/sacred+choral+music/1388177964468> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/music/sacred+choral+music/1388177964468>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sacred choral music"@en .
+
+<http://www.e-enlightenment.com>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2013-04-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Electronic Enlightenment "@en , "Electronic Enlightenment"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.e-enlightenment.com"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://bnb.data.bl.uk/id/person/GrayThomas1716-1771>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Gray"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/occupation/scholar> , <http://dbpedia.org/resource/Poet>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1716-12-26>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1771-07-30>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Cambridge>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gray";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://data.open.ac.uk/led/lexp/1388182275310>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The music was performed on the feast of Corpus Christi 1740 "@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "BEGINNING OF LETTER\r\nAt my return to this city, the day before yesterday, I had the pleasure of finding yours dated June the 9th. The period of our voyages, at least towards the south, is come, as you wish. We have been at Naples, spent nine or ten days there, and returned to Rome, where finding no likelihood of a Pope yet these three months, and quite wearied with the formal aſsemblies, and little society of that great city, Mr. Walpole determined to return hither to spend the summer, where he imagines he shall paſs his time more agreeably than in the tedious expectation of what, when it happens, will only be a great show.\r\nRELEVANT SECTION:\r\nWe happened to be at Naples on Corpus Christi Day, the greatest feast in the year, so had an opportunity of seeing their Sicilian Majesties to advantage. The King walked in the grand procession, and the Queen (being big with child) sat in a balcony. He followed the Host to the church of St. Clara, where high mass was celebrated to a glorious concert of music.  They are as ugly a little pair as one can see: She a pale girl, marked with the small-pox; and he a brown boy with a thin face, a huge nose, and as ungain as possible.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Thomas+Gray+to+Philiip+Gray+10+July+1740/1388181829806>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/GrayThomas1716-1771>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Naples>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1740-07-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-27T22:11:15.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/sacred+choral+music+(,+performance+of)/1388182048188> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://dbpedia.org/resource/Santa_Chiara_(Naples)>
+        rdfs:label  "Santa Chiara (Naples)"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/id/day/1716-12-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 December, 1716"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1716;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://dbpedia.org/resource/Chorale>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chorale"@en .
+
+<http://dbpedia.org/resource/Naples>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Naples"@en .
+
+<http://dbpedia.org/resource/Cambridge>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Cambridge"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://reference.data.gov.uk/id/day/1771-07-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 July, 1771"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1771;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .

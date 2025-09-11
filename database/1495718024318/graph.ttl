@@ -1,0 +1,272 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1947-Mm-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the middle of 1947"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1947;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.47> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.63>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  63 .
+
+<http://data.open.ac.uk/time/edtf/1991-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1991"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1991> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/place/bc180dbc583491c00f8a1cd134f7517b>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London"@en;
+        <http://purl.org/dc/terms/description>
+                "London"@en .
+
+<http://data.open.ac.uk/led/performance/f920b42c7cff690cbbfd261534904f33/1495717940891>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Variations for piano and strings'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Francis+Poulenc/1481732494738>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Variations+for+piano+and+strings/1495717940884> .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://bnb.data.bl.uk/id/agent/Gollancz>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Gollancz"@en .
+
+<http://reference.data.gov.uk/id/year/1991>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1495718024318>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Letter from Francis Poulenc to Darius Milhaud, London, 11 June 1947."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/bbf423696079eed9040c6d48e1dc9aa2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/verafonte/claims>;
+        led:pages            "170";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Francis+Poulenc/1481732494738>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/bc180dbc583491c00f8a1cd134f7517b>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1947-Mm-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2025-07-15T11:19:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2017-05-25T13:13:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/79672c3ed3df627a97be3bcfb081923c/1495717962565> , <http://data.open.ac.uk/led/performance/f920b42c7cff690cbbfd261534904f33/1495717940891>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/bbf423696079eed9040c6d48e1dc9aa2> .
+
+<http://data.open.ac.uk/led/source/88cd1a7e906d771fb7899eeafd249a7b/excerpt/bbf423696079eed9040c6d48e1dc9aa2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I have come to London for a week. Saw and heard Hindemith yesterday - both he and his wife are very nice to me. Of course we spoke a lot about you. I like his&nbsp;<em>Variations for piano and strings</em> very much but his&nbsp;<em>H&eacute;rodiade&nbsp;</em>does not appeal to me at all. It seems to be 'always against Mallarm&eacute;'.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Selected correspondence 1915-1963 / Francis Poulenc' pp. 170 (61 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/009536537>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "170" .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Paul_Hindemith>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Paul Hindemith"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/4068eaba-ca03-4c34-9172-2b709b8050e6#_> .
+
+<http://bnb.data.bl.uk/id/person/HindemithPaul1895-1963>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Paul Hindemith"@en .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://data.open.ac.uk/led/music/Variations+for+piano+and+strings/1495717940884>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Variations for piano and strings"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/HindemithPaul1895-1963>;
+        <http://purl.org/dc/terms/title>
+                "Variations for piano and strings";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/HindemithPaul1895-1963> .
+
+<http://dbpedia.org/resource/Francis_Poulenc>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Francis Poulenc"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/pianist> , <http://data.open.ac.uk/led/composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1899-01-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1963-01-30>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963> .
+
+<http://data.open.ac.uk/led/music/H%C3%A9rodiade/1450354579591>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Hérodiade"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Paul_Hindemith> , <http://bnb.data.bl.uk/id/person/HindemithPaul1895-1963>;
+        <http://purl.org/dc/terms/title>
+                "Hérodiade";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Paul_Hindemith> , <http://bnb.data.bl.uk/id/person/HindemithPaul1895-1963> .
+
+<http://data.open.ac.uk/led/performance/79672c3ed3df627a97be3bcfb081923c/1495717962565>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Hérodiade'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Francis+Poulenc/1481732494738>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/H%C3%A9rodiade/1450354579591> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Francis Poulenc"@en .
+
+<http://musicbrainz.org/artist/4068eaba-ca03-4c34-9172-2b709b8050e6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Paul Hindemith"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://reference.data.gov.uk/id/day/1899-01-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 January, 1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.47>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  47 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/led/agent/Francis+Poulenc/1481732494738>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Francis Poulenc"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/pianist> , <http://data.open.ac.uk/led/composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1899-01-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1963-01-30>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Poulenc";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Francis" .
+
+<http://bnb.data.bl.uk/id/person/BucklandSidney>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sidney Buckland"@en .
+
+<http://bnb.data.bl.uk/id/resource/009536537>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Book>;
+        rdfs:comment                "Includes index."@en;
+        rdfs:label                  "Selected correspondence 1915-1963 / Francis Poulenc"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1991-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:fre>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Gollancz>;
+        <http://purl.org/dc/terms/title>
+                "Selected correspondence 1915-1963 / Francis Poulenc";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/BucklandSidney>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0575050934"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> , <http://bnb.data.bl.uk/id/place/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://bnb.data.bl.uk/id/person/BucklandSidney>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/PoulencFrancis1899-1963> , <http://dbpedia.org/resource/Francis_Poulenc> .
+
+<http://data.open.ac.uk/led/pianist>
+        rdfs:label  "pianist"@en , "Pianist"@en .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://reference.data.gov.uk/id/day/1963-01-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 January, 1963"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1963;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.63> .

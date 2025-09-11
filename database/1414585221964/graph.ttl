@@ -1,0 +1,386 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Amadeus Mozart"@en .
+
+<http://reference.data.gov.uk/id/year/1934>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1934"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1857-06-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 June, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/led/music/'Falstaff'+-+symphonic+study+in+C+minor+op.+68/1419693768238>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Falstaff' - symphonic study in C minor op. 68"@en , "Falstaff"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Edward_Elgar>;
+        <http://purl.org/dc/terms/title>
+                "'Falstaff' - symphonic study in C minor op. 68";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Edward_Elgar> .
+
+<http://dbpedia.org/resource/Edward_Elgar>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Edward Elgar"@en , "Sir Edward Elgar"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1857-06-02>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Broadheath,_Worcestershire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1934-01-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Little_Malvern>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934> , <http://musicbrainz.org/artist/4e60a56a-514a-4a19-a3cc-49927c96b3cb#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Elgar";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://dbpedia.org/resource/Little_Malvern>
+        rdfs:label  "Little Malvern"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/performance/Die+Zauberfl%25C3%25B6te+(,+performance+of)/1393498367794/1414585133637>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Die Zauberflöte'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Basel>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Die+Zauberfl%C3%B6te'+K620/1423077156061> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/led/source/From+Parry+to+Britten:+British+Music+in+Letters,+1900+-+1945>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "From Parry to Britten: British Music in Letters, 1900 - 1945"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1987-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/B.+T.+Batsford+Ltd./1413301245159>;
+        <http://purl.org/dc/terms/title>
+                "From Parry to Britten: British Music in Letters, 1900 - 1945";
+        <http://purl.org/ontology/bibo/isbn>
+                "0 7134 5520 9"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://reference.data.gov.uk/id/day/1934-01-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 January, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://reference.data.gov.uk/id/day/1976-12-04>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976 .
+
+<http://dbpedia.org/resource/Lowestoft>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lowestoft"@en .
+
+<http://data.open.ac.uk/led/lexp/1414585221964>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/7ad6b75c9a932795e3a8f1a2956591a2/excerpt/5e2a6fc79bb4932502adb4724b5740d2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/kerriedinburgh/claims>;
+        led:pages            "177-178";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1934-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-22T14:44:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-10-29T12:20:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352/1414585147020> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Falstaff/1413302291109/1414585165389> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/performance/Die+Zauberfl%25C3%25B6te+(,+performance+of)/1393498367794/1414585133637>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/7ad6b75c9a932795e3a8f1a2956591a2/excerpt/5e2a6fc79bb4932502adb4724b5740d2> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+Benjamin+Britten+to+Grace+Williams,+Nov+8th+1934/1414584700497>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Benjamin Britten to Grace Williams, Nov 8th 1934"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/From+Parry+to+Britten:+British+Music+in+Letters,+1900+-+1945>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Benjamin Britten to Grace Williams, Nov 8th 1934";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/ForemanLewis1941-> .
+
+<http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Die Fledermaus"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johann_Strauss_II>;
+        <http://purl.org/dc/terms/title>
+                "Die Fledermaus";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Johann_Strauss_II> .
+
+<http://data.open.ac.uk/led/source/7ad6b75c9a932795e3a8f1a2956591a2/excerpt/5e2a6fc79bb4932502adb4724b5740d2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Vienna</p>\r\n<p>Meine liebe Grace, ...</p>\r\n<p>... The friends we stayed with in Basel were such dears &amp; treated us so well - I've never had such a time - everyone seems to be wealthy there - wonderful houses, marvellous food, &amp; they took us everywhere in glorious cars. Musically too - very good. There is an excellent opera - I heard four operas very well done, a simply lovely show of Zauberfl&ouml;te. One of the people I stayed with knew Weingartner (who lives there) &amp; I had a very long talk with him &amp; found him nice &amp; helpful, tho' not interested in modern music at all - in fact I went tp a rehearsal &amp; show of a concert of Strauss he conducted and it was VERY BAD - but the orchestra was first-rate, and oh - Elizabeth [sic] Schumann was a dream. But I am all E.S. mad now - I heard her here on Sunday - but more of that later. - We stayed in Basel - (talking plenty of German as they speak very little English) - just a fortnight, &amp; them spent 3 days in lovely Salzburg on the way here. Of course, after Zauberfl&ouml;te I was thrilled with Mozart relics, &amp; there are many of those there.</p>\r\n<p>... Music: - 3 times to the opera so far - Fledermaus on Saturday, 'Cav. &amp; Pag' (this was substituted for something else at the last moment), &amp; Falstaff last night, Vienna went mad over this last - it was a new production &amp; the applause lasted for nearly a quarter of an hour - [baritone, Jaro] Prohaska (from Berlin) &amp; [conductor, Clemens] Krauss coming back time after time. Grace - you must admit that this is great stuff - I don't expect you to accept early Verdi - but the Requiem, Otello, &amp; this, you must like - especially when done as it was last night - it was <span style=\"text-decoration: underline;\">thrilling</span>. Of course the orchestra - it was full number last night - is unsurpassable. I went to a show at the Konzerthaus on Sunday, &amp; sat next to an awfully nice young Viennese, who told me lots about everything. Mengelberg, who wasn't too good - his Pastoral was BAD - conducted. Oh - but the orchestra, it nearly drove me potty!! Never such tone, &amp; precision, &amp; spirit - the first horn - well, all the horns - the orchestra played as if it <span style=\"text-decoration: underline;\">wanted</span> to play - I felt sorry for you with those London orchestras! Much as I want to like them, &amp; do admire a lot of their playing, it's <span style=\"text-decoration: underline;\">nothing</span> like this. However you know it already.</p>\r\n<p>... Herzliche Gr&uuml;sse</p>\r\n<p>BENJAMIN</p>\r\n<p>P.S. [written at the head of the letter] I didn't sat the concert on Sunday included Mahler 4th of which I bought the score. It really is a most lovely work - &amp; was played beautifully - Elizabeth [sic] Schumann singing the last lovely solo like a dream. I am longing for more chances to hear more Mahler</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Benjamin Britten to Grace Williams, Nov 8th 1934' pp. 177-178 (488 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Benjamin+Britten+to+Grace+Williams,+Nov+8th+1934/1414584700497>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "177-178" .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/organization/B.+T.+Batsford+Ltd./1413301245159>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "B. T. Batsford Ltd."@en .
+
+<http://reference.data.gov.uk/id/day/1913-11-22>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913 .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://dbpedia.org/resource/Basel>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Basel"@en .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://musicbrainz.org/artist/8255db36-4902-4cf6-8612-0f2b4288bc9a#_>
+        rdfs:label  "Johann Strauss II"@en .
+
+<http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976> , <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://bnb.data.bl.uk/id/person/ForemanLewis1941->
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lewis Foreman"@en .
+
+<http://dbpedia.org/resource/Broadheath,_Worcestershire>
+        rdfs:label  "Broadheath, Worcestershire"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352/1414585147020>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Die Fledermaus'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Vienna>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352> .
+
+<http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976>
+        rdfs:label  "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/led/music/'Die+Zauberfl%C3%B6te'+K620/1423077156061>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Magic Flute"@en , "Die Zauberflöte"@en , "'Die Zauberflöte' K620"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "'Die Zauberflöte' K620";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://data.open.ac.uk/time/edtf/1934-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1934>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://dbpedia.org/resource/Benjamin_Britten>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Edward Elgar"@en .
+
+<http://data.open.ac.uk/time/edtf/1987-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1987>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Falstaff/1413302291109/1414585165389>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Falstaff'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Vienna>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Falstaff'+-+symphonic+study+in+C+minor+op.+68/1419693768238> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .
+
+<http://dbpedia.org/resource/Johann_Strauss_II>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Strauss II"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/8255db36-4902-4cf6-8612-0f2b4288bc9a#_> .

@@ -1,0 +1,180 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1393667840402>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "This is a response to the first German-language performance of Messiah, which was conducted by C P E Bach"@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Already the first accompanied recitative, \"Tröstet, tröstet mein Volk\" moved me to tears, and Fr. Winthem also sang it like an angel.  But nothing could compare with the choruses.  My heart beat almost as if in your embrace, and I would have liked to have flown through the clouds... But now, [it was] as if thunder and lightning came simultaneously, with the highest expression that is possible on earth: \"Almighty God!\" so that one starts, and wants to sink to the ground in the presence of the Most Sublime one."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+fron+Johann+Heinrich+Voss+to+Ernestine+Boie+5+January+1776/1393667524421>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        led:pages              "157";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Johann+Heinrich+Voss/1393667524459>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1775-12-31>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-08T09:31:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Handel+Messiah+(,+performance+of)/1393667700553> .
+
+<http://data.open.ac.uk/led/source/letter+fron+Johann+Heinrich+Voss+to+Ernestine+Boie+5+January+1776/1393667524421>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "this letter is partially cited in Suchalla, ed, Briefe und Dokumente, I: 554; given in full in Lohmeier, ed., Musik und literatur in Norddeutschland, 68-9"@en;
+        rdfs:label                  "Letter fron Johann Heinrich Voss to Ernestine Boie 5 January 1776"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/C+P+E+Bach+Studies>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/title>
+                "Letter fron Johann Heinrich Voss to Ernestine Boie 5 January 1776";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Johann+Heinrich+Voss/1393667524459> .
+
+<http://dbpedia.org/resource/Cambridge_University_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Cambridge University Press"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Messiah_(Handel)>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Messiah"@en , "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Carl Philipp Emanuel Bach"@en , "C. P. E. Bach" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/person/Johann+Heinrich+Voss/1393667524459>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Johann Heinrich Voss"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Poet>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Voss";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johann Heinrich" .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://reference.data.gov.uk/id/year/2006>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/C+P+E+Bach+Studies>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "C P E Bach Studies"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Cambridge_University_Press>;
+        <http://purl.org/dc/terms/title>
+                "C P E Bach Studies";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/RichardsAnnette>;
+        <http://purl.org/ontology/bibo/isbn>
+                "978-0-521-83629-6"^^<http://www.w3.org/2001/XMLSchema#ID> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://dbpedia.org/resource/Chorale>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chorale"@en .
+
+<http://data.open.ac.uk/led/performance/Handel+Messiah+(,+performance+of)/1393667700553>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Chorale>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Singing> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Johann+Heinrich+Voss/1393667524459>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Messiah_(Handel)>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach> .
+
+<http://reference.data.gov.uk/id/day/1775-12-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 December, 1775"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1775;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://bnb.data.bl.uk/id/person/RichardsAnnette>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Annette Richards"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

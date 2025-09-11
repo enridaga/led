@@ -1,0 +1,197 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Fanfare>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Flourish"@en , "Fanfare"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/musicgenre/Ceremonial>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Ceremonial"@en .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/music/Trumpets+sounded+at+the+wedding+of+Queen+Victoria+and+Prince+Albert/1535555025011>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Trumpets sounded at the wedding of Queen Victoria and Prince Albert"@en;
+        <http://purl.org/dc/terms/title>
+                "Trumpets sounded at the wedding of Queen Victoria and Prince Albert" .
+
+<http://reference.data.gov.uk/id/day/1840-02-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 February, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/place/4c46289d6bb1ea7a08b6b23759ba037c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St James's Palace, London"@en;
+        <http://purl.org/dc/terms/description>
+                "St James's Palace, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Charlotte+Neave+to+her+aunt,+the+Countess+Dowager+of+Ilchester+%5BMaria+Fox-Strangways%5D,+11+February+1840/1535554934131>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Charlotte Neave to her aunt, the Countess Dowager of Ilchester [Maria Fox-Strangways], 11 February 1840"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+journal+of+mary+frampton,+from+the+year+1779,+until+the+year+1846>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/cu31924028034852>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Charlotte Neave to her aunt, the Countess Dowager of Ilchester [Maria Fox-Strangways], 11 February 1840";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Charlotte+Neave/1535554934138> .
+
+<http://data.open.ac.uk/led/agent/Charlotte+Neave/1536245387603>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Charlotte Neave"@en;
+        led:has_social_status  led:SocioEconomicStatus.Officer;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Neave";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charlotte" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/2b8bd1e5191f12c1a56651de96b846e6/1535555025018>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Trumpets sounded at the wedding of Queen Victoria and Prince Albert'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St_James's_Palace>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Fanfare> , <http://data.open.ac.uk/led/musicgenre/Ceremonial>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Charlotte+Neave/1536245387603>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Trumpets+sounded+at+the+wedding+of+Queen+Victoria+and+Prince+Albert/1535555025011> .
+
+<http://data.open.ac.uk/led/source/33b160910a7c107a3562dd5382b2e246/excerpt/2e454ef57bd74d4307ddf5ec99f53a74>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">When the trumpets sounded, though really in discord, we were all eagerness, and felt both for Prince Albert and the Queen, for I know not which looked the most uncomfortable when going to the Chapel; but on their return together they each had a colour, and with countenances much brightened. And just before the guns fired to announce that the ring was on the finger, a nice gleam of sunshine appeared, which my dear naval uncle will, I know, join with me in being sure is a happy omen.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Charlotte Neave to her aunt, the Countess Dowager of Ilchester [Maria Fox-Strangways], 11 February 1840' pp. 410–411 (89 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Charlotte+Neave+to+her+aunt,+the+Countess+Dowager+of+Ilchester+%5BMaria+Fox-Strangways%5D,+11+February+1840/1535554934131>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "410–411" .
+
+<http://dbpedia.org/resource/St_James's_Palace>
+        rdfs:label  "Palacio de St. James"@en .
+
+<http://data.open.ac.uk/time/edtf/1885-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1885"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1885;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1885>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/led/lexp/1535555334108>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/33b160910a7c107a3562dd5382b2e246/excerpt/2e454ef57bd74d4307ddf5ec99f53a74>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "410–411";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Charlotte+Neave/1536245387603>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/4c46289d6bb1ea7a08b6b23759ba037c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1840-02-10>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-09-06T14:50:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-08-29T15:08:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/2b8bd1e5191f12c1a56651de96b846e6/1535555025018>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/33b160910a7c107a3562dd5382b2e246/excerpt/2e454ef57bd74d4307ddf5ec99f53a74> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<https://archive.org/details/cu31924028034852>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-05-17"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/cu31924028034852"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "United Kingdom of Great Britain and Ireland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/source/the+journal+of+mary+frampton,+from+the+year+1779,+until+the+year+1846>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Journal of Mary Frampton, from the Year 1779, until the year 1846"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1885-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Sampson+Low+Marston,+Searle,+and+Rivington/1535464526077>;
+        <http://purl.org/dc/terms/title>
+                "The Journal of Mary Frampton, from the Year 1779, until the year 1846";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Harriet+Georgiana+Mundy/1535464526074>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/agent/Charlotte+Neave/1535554934138>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charlotte Neave"@en .
+
+<http://data.open.ac.uk/led/agent/Harriet+Georgiana+Mundy/1535464526074>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harriet Georgiana Mundy"@en .
+
+<http://data.open.ac.uk/led/organization/Sampson+Low+Marston,+Searle,+and+Rivington/1535464526077>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Sampson Low Marston, Searle, and Rivington"@en .

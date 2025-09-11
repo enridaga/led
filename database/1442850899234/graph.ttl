@@ -1,0 +1,195 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://bnb.data.bl.uk/id/organization/SouthbankCentre>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Southbank Centre"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/Various/1442850845011>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Various"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Haydn/1442850845029> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "Various";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Haydn/1442850845029> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://data.open.ac.uk/led/source/5b0b15f09b3d28f9df97a5e925ff7b88/excerpt/0db95aa2b03d18b02279c1340af85669>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>23rd April 1953&nbsp; London Mozart Players conductor Harry Blech&nbsp; Soloist Irmgard Seefried in concert of Mozart and Haydn.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Southbank Centre Archive' (17 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://musicbrainz.org/artist/fe83bfd2-468e-446e-ad16-2f996296d7fc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harry Blech"@en .
+
+<http://data.open.ac.uk/led/person/Haydn/1442850845029>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Haydn" .
+
+<http://musicbrainz.org/artist/ec0b896e-0fe5-47b2-b2f0-bc826641cb96#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Irmgard Seefried"@en .
+
+<http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Manuscript>;
+        rdfs:comment       "Memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "From an oral archive of memories of long-standing visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room, gathered during 2006-07"@en , "The archive contains recorded interviews made with visitors to the Royal Festival Hall and Queen Elizabeth Halls, London SE1 8XX made during 2006/07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room during 2006-07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en , " "@en , "Additional Information on Source sub-form: Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en;
+        rdfs:label         "Southbank Centre Archive "@en , "Southbank Centre Archive"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        led:in_collection  "Southbank Centre Archive";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Southbank Centre Archive, http://www.southbankcentre.co.uk/about-us/history-and-archive/southbank-centre-archive"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Southbank Centre Archive";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/SouthbankCentre>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/performance/3ed7c4e01567bea44519da33111f3e2a/1442850845033>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Various'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Various/1442850845011>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ec0b896e-0fe5-47b2-b2f0-bc826641cb96#_> , <http://musicbrainz.org/artist/fe83bfd2-468e-446e-ad16-2f996296d7fc#_> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://reference.data.gov.uk/id/day/1953-04-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 April, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://data.open.ac.uk/led/lexp/1442850899234>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/5b0b15f09b3d28f9df97a5e925ff7b88/excerpt/0db95aa2b03d18b02279c1340af85669>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Liz+Ford/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1953-04-23>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-02-20T15:55:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-09-21T15:55:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/3ed7c4e01567bea44519da33111f3e2a/1442850845033>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5b0b15f09b3d28f9df97a5e925ff7b88/excerpt/0db95aa2b03d18b02279c1340af85669> .

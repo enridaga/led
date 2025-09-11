@@ -1,0 +1,288 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://bnb.data.bl.uk/id/agent/AlfredAKnopf>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Alfred A Knopf"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.67>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  67 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1857-06-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 June, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://data.open.ac.uk/led/source/With+strings+attached,+reminiscences+and+reflections/1432302460502>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "With strings attached- Reminiscences and reflections, 2nd edition, enlarged"@en , "With strings attached- Reminiscences and reflections, 2nd edition, enlarge"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1967-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/AlfredAKnopf>;
+        <http://purl.org/dc/terms/title>
+                "With strings attached- Reminiscences and reflections, 2nd edition, enlarged";
+        <http://purl.org/ontology/bibo/isbn>
+                "003567125"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_> .
+
+<http://data.open.ac.uk/led/music/Elgar's+violin+concerto/1434461822266>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Elgar's violin concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Edward_Elgar>;
+        <http://purl.org/dc/terms/title>
+                "Elgar's violin concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Edward_Elgar> .
+
+<http://dbpedia.org/resource/Lucerne>
+        rdfs:label  "Lucerne"@en .
+
+<http://dbpedia.org/resource/Edward_Elgar>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Edward Elgar"@en , "Sir Edward Elgar"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1857-06-02>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Broadheath,_Worcestershire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1934-01-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Little_Malvern>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934> , <http://musicbrainz.org/artist/4e60a56a-514a-4a19-a3cc-49927c96b3cb#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Elgar";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Little_Malvern>
+        rdfs:label  "Little Malvern"@en .
+
+<http://data.open.ac.uk/led/lexp/1434461847574>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "During the stir created by Kreisler’s first performance of Elgar’s Violin Concerto in London, in November 1910 (a furore comparable to a Shostakovich première in our days though minus plane-transported microfilm and five-figure broadcast fees!), I was impressed chiefly by the fact that it was a Viennese who transmitted the Englishness of Elgar to England and to the rest of the world; this angle seemed to me to enhance the achievement. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/With+strings+attached,+reminiscences+and+reflections/1432302460502>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/claims>;
+        led:pages              "332";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1910-11-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-01-11T17:02:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-16T13:37:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Elgar's+violin+concerto/1434461822266/1434461822278> .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://reference.data.gov.uk/id/day/1892-09-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 September, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Elgar's+violin+concerto/1434461822266/1434461822278>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Elgar's violin concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Elgar's+violin+concerto/1434461822266>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Fritz_Kreisler> .
+
+<http://reference.data.gov.uk/id/day/1934-01-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 January, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Budapest>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Budapest"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://reference.data.gov.uk/id/day/1973-02-19>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "19 February, 1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://musicbrainz.org/artist/d8328ef7-c811-4e44-a56d-81a25da29ff0#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Jospeh Szigeti"@en , "Joseph Szigeti"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Violinist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-09-05>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Budapest>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1973-02-19>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Lucerne>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Szigeti";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Joseph" .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Fritz_Kreisler>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Fritz Kreisler"@en .
+
+<http://data.open.ac.uk/led/Violinist>
+        rdfs:label  "Violinist"@en .
+
+<http://dbpedia.org/resource/Broadheath,_Worcestershire>
+        rdfs:label  "Broadheath, Worcestershire"@en .
+
+<http://data.open.ac.uk/time/edtf/1910-11-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "November, 1910"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1910;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://bnb.data.bl.uk/id/person/ElgarEdward1857-1934>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Edward Elgar"@en .
+
+<http://data.open.ac.uk/time/edtf/1967-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1967"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1967;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1967>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.67> .
+
+<http://reference.data.gov.uk/id/year/1967>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .

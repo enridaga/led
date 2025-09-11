@@ -1,0 +1,326 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.67>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  67 .
+
+<http://musicbrainz.org/artist/3c4b619e-29ec-4f07-adaf-403a01b15f2d#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Muggsy Spanier"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+cornetist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1901-11-09>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chicago>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1967-02-12>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Sausalito,_California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Souvenir Press"@en .
+
+<http://dbpedia.org/resource/Chicago>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Chicago"@en .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+clarinet+performances/1434813754897/1434813754908>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz clarinet performances'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Clarinet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Joe+Marsala/1434813488698>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz+clarinet+performances/1434813754897>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ef624cb4-f3c7-4adb-b2f1-5854dd64f741#_> , <http://data.open.ac.uk/led/agent/Teschemacher/1434813754912> , <http://musicbrainz.org/artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a#_> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1434813824946>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live , led:Medium.Playback;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/23db5401c54ff725fb025390efeec4cf>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "126-127";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Joe+Marsala/1434813488698>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-08-25T12:54:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-20T15:23:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863/1434813627736> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+clarinet+performances/1434813754897/1434813754908>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/23db5401c54ff725fb025390efeec4cf> .
+
+<http://dbpedia.org/resource/Santa_Barbara,_California>
+        rdfs:label  "Santa Barbara, California"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863/1434813627736>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Jazz band music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Clarinet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Joe+Marsala/1434813488698>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Johnny+Lane+Band/1434813627741> , <http://musicbrainz.org/artist/3c4b619e-29ec-4f07-adaf-403a01b15f2d#_> .
+
+<http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Jazz band music"@en;
+        <http://purl.org/dc/terms/title>
+                "Jazz band music" .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.07>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/agent/Johnny+Lane+Band/1434813627741>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Johnny Lane Band"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.01>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://reference.data.gov.uk/id/day/1901-11-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 November, 1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1901;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/agent/Teschemacher/1434813754912>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Teschemacher"@en .
+
+<http://bnb.data.bl.uk/id/person/HentoffNat>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Hentoff"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.78>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  78 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://reference.data.gov.uk/id/day/1967-02-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 February, 1967"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1967;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.67> .
+
+<http://musicbrainz.org/artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jimmie Noone"@en .
+
+<http://data.open.ac.uk/led/music/jazz+clarinet+performances/1434813754897>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz clarinet performances"@en;
+        <http://purl.org/dc/terms/title>
+                "jazz clarinet performances" .
+
+<http://data.open.ac.uk/led/jazz+cornetist>
+        rdfs:label  "jazz cornetist"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/id/day/1907-01-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 January, 1907"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1907;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.07> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/day/1978-03-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 March, 1978"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1978;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://dbpedia.org/resource/Bandleader>
+        rdfs:label  "Bandleader"@en .
+
+<http://data.open.ac.uk/led/person/Joe+Marsala/1434813488698>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Joe Marsala"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Clarinetist> , <http://dbpedia.org/resource/Bandleader>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1907-01-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chicago>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1978-03-03>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Santa_Barbara,_California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Marsala";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Joe" .
+
+<http://dbpedia.org/resource/Sausalito,_California>
+        rdfs:label  "Sausalito, California"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/23db5401c54ff725fb025390efeec4cf>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I started playing around 1924. Never could afford to go in, but would listen outside the Friar's Inn [Chicago]. Then at Columbia Hall, where Muggsy [Spanier] played, Johnny Lane was clarinetist and had an orchestra there. I liked that kind of music. The others would go to dance, but my brother, Marty, and I used to listen to the band, and hear them jam.</p>\r\n<p>[...]</p>\r\n<p>Most of the playing I did in those days was for nothing--I just stayed up all night and did so much sitting in, they didn't have to pay me. I got to know about the different styles--Rappolo was finest clarinetist I heard on records; never heard him in person, he was working in some high-class joint that I couldn't afford. Teschemacher I was just crazy about, but he never made any records that did him justice. He had a good tone and terrific technique. But Noone was the man who gave me the biggest kicks--holding the horn over that great belly of his and playing just like it was nothing.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It' pp. 126-127 (173 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "126-127" .
+
+<http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "First published in USA, 1955, by Holt, Rinehart & Winston, Inc."@en;
+        rdfs:label                  "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/historical>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>;
+        <http://purl.org/dc/terms/title>
+                "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It";
+        <http://purl.org/ontology/bibo/isbn>
+                "0285630903"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759> , <http://bnb.data.bl.uk/id/person/HentoffNat> .
+
+<http://dbpedia.org/resource/Clarinet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Clarinet"@en .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://musicbrainz.org/artist/ef624cb4-f3c7-4adb-b2f1-5854dd64f741#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Leon Rappolo"@en .
+
+<http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Shapiro"@en .

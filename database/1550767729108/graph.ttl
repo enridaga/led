@@ -1,0 +1,175 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1737-06-20TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 June, 1737, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1549636048556>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/John+Bailey/1550767516549>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Bailey"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/soldier>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1737-07-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bailey";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/agent/William+Burton/1550767628330>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "William Burton"@en .
+
+<http://data.open.ac.uk/led/place/cb8ef3e527aa576ea0f214d69f318ed7>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Tower of London, barracks"@en;
+        <http://purl.org/dc/terms/description>
+                "Tower of London, barracks"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Tower_of_London> .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520version%25208.0%2520February%25202019>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520version%25208.0%2520February%25202019"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+01+February+2019),+July+1737,+trial+of+John+Bailey+(t17370706-10)/1550767399857>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 01 February 2019), July 1737, trial of John Bailey (t17370706-10)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520version%25208.0%2520February%25202019>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 01 February 2019), July 1737, trial of John Bailey (t17370706-10)";
+        <http://purl.org/ontology/bibo/number>
+                "t17370706-10";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/performance/c992565f6ce4a51c9e7f5fa07c05381f/1550767628301>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Tower_of_London>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Bailey/1550767516549>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1549636048556>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/William+Burton/1550767628330> .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://data.open.ac.uk/led/lexp/1550767729108>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/fd93486d0b7fdd3742296f14730c7632/excerpt/7961b40ab058a333a56f07edb3169382>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/temp>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Bailey/1550767516549>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/cb8ef3e527aa576ea0f214d69f318ed7>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1737-06-20TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-01T09:51:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-21T16:48:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c992565f6ce4a51c9e7f5fa07c05381f/1550767628301>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/fd93486d0b7fdd3742296f14730c7632/excerpt/7961b40ab058a333a56f07edb3169382> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/1737-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1737"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.37>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  37 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Tower_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Tower of London"@en .
+
+<http://data.open.ac.uk/led/source/fd93486d0b7fdd3742296f14730c7632/excerpt/7961b40ab058a333a56f07edb3169382>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[The prisoner John Bailey was found guilty of murder on 6 July 1737 and sentenced to death]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">John Bailey, of the&nbsp;Tower of London, was indicted for assaulting&nbsp;&nbsp;William Burton , with a drawn Sword made of Iron and Steel[&hellip;] by Reason of which, he languished, and languishingly lived, from the said 20th to the 21st of the said Month and then died.</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[&hellip;]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">John Waterman: The Night this happen'd I was in Bed in the Barracks, and after the Tattoo was gone by, the Deceased [Burton] as Serjeant of the Night, came in his Office, to call over the Rolls, in order to see who was absent [&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Richard Toombes . The Deceased and I had been out that Afternoon, drinking at a Friend's House: We came in about 10 o'Clock, and he did his Business and call'd over the Roll One Darby was absent, and the Prisoner said, he had leave to be absent. The Deceased said, he would return him, and the Quarrel began, as the first Witness has mention'd. After many Words, the Deceased put the Candle out, and went to call over the Roll in the other Barrack: When he had done, he returned to his own Barrack, and undrest himself and went to Bed. The Prisoner in his Room, still abused him, and the Deceased said, he would get up and lick him for abusing him: And accordingly, our Candle being out, he got up and fetch'd one from the next Barrack, and coming to the Prisoner's Door, he took hold of it and shook it; the Door was open'd, I know not how, nor by who; but when 'twas about a Foot and a half open, the Prisoner thrust out his Hand, with his drawn Sword, and stabb'd him immediately.[...]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Prisoner. When I was taken, that Man [Toombes] went dancing and singing&nbsp;all the Way before me, and said, he had an Opportunity now to be revenged: And he would swear his Soul to the Devil but I should be hanged.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 01 February 2019), July 1737, trial of John Bailey (t17370706-10)' (331 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+01+February+2019),+July+1737,+trial+of+John+Bailey+(t17370706-10)/1550767399857>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .

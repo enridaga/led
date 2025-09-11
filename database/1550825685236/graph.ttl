@@ -1,0 +1,265 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1741-06-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 June, 1741"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/led/constable>
+        rdfs:label  "constable"@en , "Constable"@en .
+
+<http://data.open.ac.uk/led/agent/Edward+Harvey/1550825159251>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Edward Harvey"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/constable>;
+        led:has_social_status  <urn:x-nrsuk:social:C1>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Harvey";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/Henry+Corner/1550825234676>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Henry Corner"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Corner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online version 8.0 February 20019"@en , "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "www.oldbaileyonline.org%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/watchman>
+        rdfs:label  "Watchman"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/lexp/1550825685236>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/a08b20d63d46c719453fe5cd62556ff6/excerpt/52f344da943279ca97d0adaf063eeab8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Johnson/1550825412208> , <http://data.open.ac.uk/led/agent/Justice+Poulson/1550825292167> , <http://data.open.ac.uk/led/agent/Henry+Corner/1550825234676> , <http://data.open.ac.uk/led/agent/Edward+Harvey/1550825159251> , <http://data.open.ac.uk/led/agent/a+Watchman/1550825196555>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1741-04-25>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-01T10:23:09.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-22T08:54:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/cd25e81d4f7f8ccf217b9c83c4101644/1550825511147>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a08b20d63d46c719453fe5cd62556ff6/excerpt/52f344da943279ca97d0adaf063eeab8> .
+
+<http://data.open.ac.uk/led/performance/cd25e81d4f7f8ccf217b9c83c4101644/1550825511147>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''At the tree I shall suffer with pleasure''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Edward+Harvey/1550825159251> , <http://data.open.ac.uk/led/agent/a+Watchman/1550825196555> , <http://data.open.ac.uk/led/agent/Henry+Corner/1550825234676> , <http://data.open.ac.uk/led/agent/Justice+Poulson/1550825292167> , <http://data.open.ac.uk/led/agent/John+Johnson/1550825412208>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'At+the+tree+I+shall+suffer+with+pleasure'/1550825511125>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Francis+Piggot+%5BHorton%5D/1550825511174> .
+
+<http://data.open.ac.uk/time/edtf/1724-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1724"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/music/'At+the+tree+I+shall+suffer+with+pleasure'/1550825511125>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'At the tree I shall suffer with pleasure'"@en;
+        <http://purl.org/dc/terms/title>
+                "'At the tree I shall suffer with pleasure'" .
+
+<http://data.open.ac.uk/led/agent/Francis+Piggot+%5BHorton%5D/1550825511174>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Francis Piggot [Horton]"@en .
+
+<http://data.open.ac.uk/led/source/a08b20d63d46c719453fe5cd62556ff6/excerpt/52f344da943279ca97d0adaf063eeab8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[Francis Piggot [Horton], 29 years old and John Johnson, 17, were found guilty of assault and robbery and executed at Tyburn on 12 June 1741, an account of which, including biographical details, was recorded by the Newgate Ordinary, ref. no. OA17410612]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[Constable] Edward Harvey: The last Witness came to me on the 25th of April, and told me, that a Man had been robbed of his Watch and Buckle, and he had told him where he lived, and that he knew one of the persons. We set out about 7 o'Clock in the Morning, and got Information, that a Milkwoman in Gray's-Inn Lane used to come to Piggot; [&hellip;]&nbsp;&nbsp;at last I came to the right, and on my enquiring for Piggot, the Woman said , he and another were just gone out together, but would be within in a short time. [&hellip;]&nbsp;&nbsp;So I sent the Watchman and the Prosecutor [Henry Corner] into Bow-street [&hellip;] the two Prisoners came in. I catch'd up a poker, and told them what my Business was, and then one of the Women lock'd them up in her Room; but after some Time, they surrendered, and we carried them before Justice Poulson, who examined them separate. They both confessed the Fact; Johnson in particular said, he held Corner down, and stopped his Mouth, while Piggot took his Watch and Buckle, and then both ran away. Horton owned the same, and behaved with great Boldness at the Justice's, and went out snapping his Fingers, singing., At the Tree I shall suffer with Pleasure; and said, he should have a short Life and a merry one.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), May 1741, trial of Francis Piggot , alias Norton John Johnson (t17410514-16)' (261 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+07+February+2019),+May+1741,+trial+of+Francis+Piggot+,+alias+Norton+John+Johnson+(t17410514-16)/1550825098451>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/agent/a+Watchman/1550825196555>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "a Watchman"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/watchman>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Watchman";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a" .
+
+<http://data.open.ac.uk/led/agent/Justice+Poulson/1550825292167>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Justice Poulson"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/judge>;
+        led:has_social_status  <urn:x-nrsuk:social:A>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Poulson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Justice" .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://reference.data.gov.uk/id/day/1741-04-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 April, 1741"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+07+February+2019),+May+1741,+trial+of+Francis+Piggot+,+alias+Norton+John+Johnson+(t17410514-16)/1550825098451>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), May 1741, trial of Francis Piggot , alias Norton John Johnson (t17410514-16)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org%20>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), May 1741, trial of Francis Piggot , alias Norton John Johnson (t17410514-16)";
+        <http://purl.org/ontology/bibo/number>
+                "t17410514-16";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/agent/John+Johnson/1550825412208>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Johnson"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/apprentice+sawyer>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1724-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1741-06-12>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Johnson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.41>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  41 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/led/judge>
+        rdfs:label  "judge"@en , "Judge"@en .
+
+<http://data.open.ac.uk/led/apprentice+sawyer>
+        rdfs:label  "apprentice sawyer"@en .

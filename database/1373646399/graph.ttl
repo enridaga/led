@@ -1,0 +1,54 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/song/1373645848045/1373645848057>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'song'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Betsy+Sheridan/1373645685012>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/song/1373645848045> .
+
+<http://data.open.ac.uk/led/person/Betsy+Sheridan/1373645685012>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Female;
+        rdfs:label  "Betsy Sheridan"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Sheridan";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Betsy";
+        <http://xmlns.com/foaf/0.1/name>
+                "Betsy Sheridan" .
+
+<http://data.open.ac.uk/led/source/Letter+from+Betsy+Sheridan+to+Alicia+LeFanu,+August+22+1788/1385653523221>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter from Betsy Sheridan to Alicia LeFanu, August 22 1788"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Betsy Sheridan to Alicia LeFanu, August 22 1788" .
+
+<http://data.open.ac.uk/led/lexp/1373646399>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Song performed after dinner to a group including the author and children. Julian calendar date 11 August 1788"@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "My brother left us Wednesday morning, and we do not expect him to return for some days. He meant only to stay at Margate long enough to attend the last melancholy office, which it was my poor Father's express desire should be performed in whatever parish he died.\r\nSunday — Dick is still in town, and we do not expect him for some time. Mrs Sheridan seems now quite reconciled to these little absences, which she knows are unavoidable. I never saw anyone so constant in employing every moment of her time, and to that I attribute in a great measure the recovery of her health and spirits. The education of her niece, her music, books, and work, occupy every minute of the day. After dinner the children, who call her 'Mamma-aunt', spend some time with us, and her manner to them is truly delightful. The girl you know is the eldest. The eldest boy is about five years old, very like his father, but extremely gentle in his manners. The youngest is past three. The whole set then retire to the music room. As yet I cannot enjoy their parties; — a song from Mrs Sheridan affected me last night in a most painful manner. I shall not try the experiment soon again. Mrs S blamed herself for putting me to the trial, and after tea got a book, which she read to us till supper. This I find is the general way of passing the evening.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Betsy+Sheridan+to+Alicia+LeFanu,+August+22+1788/1385653523221>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Simon+Brown/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Betsy+Sheridan/1373645685012>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-11-28T15:45:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/song/1373645848045/1373645848057> .
+
+<http://data.open.ac.uk/led/music/song/1373645848045>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "song"@en .

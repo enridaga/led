@@ -1,0 +1,156 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Tolliver's+Smart+Set/1447159160125>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Tolliver's Smart Set"@en .
+
+<http://data.open.ac.uk/led/music/Tolliver's+Smart+Set+Show/1447159160098>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Tolliver's Smart Set Show"@en;
+        <http://purl.org/dc/terms/title>
+                "Tolliver's Smart Set Show" .
+
+<http://bnb.data.bl.uk/id/resource/013674909>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Ragged but right / Lynn Abbott"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2007-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>;
+        <http://purl.org/dc/terms/title>
+                "Ragged but right / Lynn Abbott";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SeroffDoug> , <http://bnb.data.bl.uk/id/person/AbbottLynn1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1578069017"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Jackson>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> , <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/led/lexp/1447159196922>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/34053fee9e81ba61ff7afcfd3ff3774a>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "123";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Salem+Tutt+Whitney/1447159078695>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/15beb9639f24fcb27aaf5b477062598f>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1915-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-11-15T17:41:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-10T12:39:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/857138a09fe84694803722c60c13f879/1447159160121>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/34053fee9e81ba61ff7afcfd3ff3774a> .
+
+<http://bnb.data.bl.uk/id/person/SeroffDoug>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Doug Seroff"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/857138a09fe84694803722c60c13f879/1447159160121>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Tolliver's Smart Set Show'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Montgomery,_Alabama>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Minstrel_show>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Salem+Tutt+Whitney/1447159078695>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Tolliver's+Smart+Set+Show/1447159160098>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Tolliver's+Smart+Set/1447159160125> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://dbpedia.org/resource/Minstrel_show>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Minstrel show"@en .
+
+<http://reference.data.gov.uk/id/year/1915>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1915"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1915-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1915>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://bnb.data.bl.uk/id/place/Jackson>
+        rdfs:label  "Jackson"@en .
+
+<http://data.open.ac.uk/time/edtf/2007-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2007"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2007> .
+
+<http://data.open.ac.uk/led/agent/Salem+Tutt+Whitney/1447159078695>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Salem Tutt Whitney"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Whitney";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Salem Tutt" .
+
+<http://bnb.data.bl.uk/id/person/AbbottLynn1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lynn Abbott"@en .
+
+<http://reference.data.gov.uk/id/year/2007>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/34053fee9e81ba61ff7afcfd3ff3774a>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>A night's lay-off in Montgomery, Ala., gave many members of our company an opportunity to see Mr. Tolliver's show, which was closing a week's engagement in that city. All agreed that they had been enjoyably entertained. My brother, J. Homer Tutt, stated that ... the performance was full of \"pep\" and \"ginger\" from start to finish.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Ragged but right / Lynn Abbott' pp. 123 (55 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013674909>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "123" .
+
+<http://dbpedia.org/resource/Montgomery,_Alabama>
+        rdfs:label  "Montgomery, Alabama"@en .
+
+<http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .
+
+<http://data.open.ac.uk/led/place/15beb9639f24fcb27aaf5b477062598f>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Montgomery Alabama"@en;
+        <http://purl.org/dc/terms/description>
+                "Montgomery Alabama"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Montgomery,_Alabama> .

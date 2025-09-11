@@ -1,0 +1,172 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/time/edtf/1774-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "sometime in 1774"@en , "1774"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1774;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/johann+Friedrich+Reichardt/1395765649579>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Johann Friedrich Reichardt"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Reichardt";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johann Friedrich" .
+
+<http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Carl Philipp Emanuel Bach"@en , "C. P. E. Bach" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/Die+Israelisten+in+der+W%C3%BCste/1395765860038>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Die Israelisten in der Wüste"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach>;
+        <http://purl.org/dc/terms/title>
+                "Die Israelisten in der Wüste" .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/performance/Die+Israelisten+in+der+W%C3%BCste+(,+performance+of)/1395765860053>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Die Israelisten in der Wüste'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/johann+Friedrich+Reichardt/1395765649579>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Die+Israelisten+in+der+W%C3%BCste/1395765860038> .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/led/organization/Hildesheim/1395765649584>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Hildesheim"@en .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://data.open.ac.uk/time/edtf/1776-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1776"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1776;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://data.open.ac.uk/time/interval/1774-uu-uu/to/1776-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1774 and 1776"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1774-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1776-uu-uu> .
+
+<http://data.open.ac.uk/led/source/letter+from+Johann+Friedrich+Reichardt+to+Carl+Gottlied+Richter/1395765649570>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "from Briefe eines aufmerksamen Reisenden die Musik Betreffend 1774-1776 reprinted 1977"@en;
+        rdfs:label                  "Letter from Johann Friedrich Reichardt to Carl Gottlied Richter"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Hildesheim/1395765649584>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Johann Friedrich Reichardt to Carl Gottlied Richter ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "1";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/johann+Friedrich+Reichardt/1395765649579> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/led/lexp/1395765988298>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I cannot describe to you in words the searing fire that blazes through the work...I was at times excited into a frenzy…Of the excellence with respect to the harmony I am not in a position to tell you anything; you know this great master already too well, to require an analysis of the individual beauties of this work, in order to deem him a perfect master of harmony.  Only this much must I say to you: you would find there a wealth of new, grand, and sublime features and modulations that are perhaps to be encountered in no other musical work."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Johann+Friedrich+Reichardt+to+Carl+Gottlied+Richter/1395765649570>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        led:pages              "124";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/johann+Friedrich+Reichardt/1395765649579>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1774-uu-uu/to/1776-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-25T16:46:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Die+Israelisten+in+der+W%C3%BCste+(,+performance+of)/1395765860053> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

@@ -1,0 +1,324 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1965-07-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 July, 1965"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1965;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.65> .
+
+<http://data.open.ac.uk/led/mechanical+piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "mechanical piano"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/18Ll-10-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 October, late 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/ragtime+tunes/1433338361373/1433338361385>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'ragtime tunes'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Ragtime>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/mechanical+piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Spencer+Williams/1388229571677>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/ragtime+tunes/1433338361373> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.65>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  65 .
+
+<http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Souvenir Press"@en .
+
+<http://data.open.ac.uk/led/person/Spencer+Williams/1388229571677>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Spencer Williams"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/18Ll-10-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_Orleans>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1965-07-14>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Flushing,_Queens>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Williams";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Spencer" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/honky-tonk+music/1433338239952/1433338239964>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'honky-tonk music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Honky-tonk>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Cornet> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Spencer+Williams/1388229571677>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/honky-tonk+music/1433338239952>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/5d108f72-7a28-4020-a8d0-a25c3341868a#_> , <http://data.open.ac.uk/led/agent/Antonia+Gonzales/1433338239968> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/New_Orleans>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New Orleans"@en .
+
+<http://data.open.ac.uk/led/agent/Antonia+Gonzales/1433338239968>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Antonia Gonzales"@en .
+
+<http://dbpedia.org/resource/Ragtime>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ragtime"@en .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Flushing,_Queens>
+        rdfs:label  "Flushing, Queens"@en .
+
+<http://dbpedia.org/resource/Honky-tonk>
+        rdfs:label  "Honky-Tonk (Bar)"@en .
+
+<http://data.open.ac.uk/time/edtf/1900-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/honky-tonk+music/1433338239952>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "honky-tonk music"@en;
+        <http://purl.org/dc/terms/title>
+                "honky-tonk music" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://dbpedia.org/resource/Cornet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cornet"@en .
+
+<http://data.open.ac.uk/led/music/ragtime+tunes/1433338361373>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "ragtime tunes"@en;
+        <http://purl.org/dc/terms/title>
+                "ragtime tunes" .
+
+<http://dbpedia.org/resource/Music_of_New_Orleans>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music of New Orleans"@en .
+
+<http://bnb.data.bl.uk/id/person/HentoffNat>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Hentoff"@en .
+
+<http://data.open.ac.uk/led/lexp/1433338596733>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live , led:Medium.Playback;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/5449c1d93785016293642a96ee2fe031>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "7";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Spencer+Williams/1388229571677>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/19Ee-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-08-20T14:39:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-03T13:36:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/honky-tonk+music/1433338239952/1433338239964> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/ragtime+tunes/1433338361373/1433338361385> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+tunes/1433338453809/1433338453820>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/5449c1d93785016293642a96ee2fe031> .
+
+<http://data.open.ac.uk/time/edtf/1925-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1925"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1925;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "First published in USA, 1955, by Holt, Rinehart & Winston, Inc."@en;
+        rdfs:label                  "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/historical>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>;
+        <http://purl.org/dc/terms/title>
+                "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It";
+        <http://purl.org/ontology/bibo/isbn>
+                "0285630903"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759> , <http://bnb.data.bl.uk/id/person/HentoffNat> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://musicbrainz.org/artist/5d108f72-7a28-4020-a8d0-a25c3341868a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Tony Jackson"@en .
+
+<http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/5449c1d93785016293642a96ee2fe031>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>All along this street of pleasure there were dance halls, honky-tonks, and cabarets, and each one had its music. My old friend, Tony Jackson, who composed 'Pretty Baby' and 'Some Sweet Day', used to play piano at a house run by Miss Antonia Gonzales, who sang and played cornet. The largest of the cabarets on Basin Street [New Orleans] was the Mahogany Hall, owned by my aunt, Miss Lulu White, and when my mother died, I went to live with her and became her adopted son. I'd go to sleep to the sound of the mechanical piano ragtime tunes, and when I woke up in the morning it would still be playing. The saloons in those days never had the doors closed, the hinges were all rusty and dusty. Little boys and grownups would walk along the avenues, swaying and whistling jazz tunes.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It' pp. 7 (143 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "7" .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/music/jazz+tunes/1433338453809>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz tunes"@en;
+        <http://purl.org/dc/terms/title>
+                "jazz tunes" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+tunes/1433338453809/1433338453820>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz tunes'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_of_New_Orleans>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Whistling>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Spencer+Williams/1388229571677>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz+tunes/1433338453809> .
+
+<http://data.open.ac.uk/time/edtf/19Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 20th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1900-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1925-uu-uu> .
+
+<http://dbpedia.org/resource/Whistling>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Whistling"@en .
+
+<http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Shapiro"@en .

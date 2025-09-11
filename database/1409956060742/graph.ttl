@@ -1,0 +1,223 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Yehudi_Menuhin>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Yehudi Menuhin"@en , "Baron, OM, KBE"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Violinist> , <http://dbpedia.org/resource/Conducting>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1916-04-20>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1999-03-12>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Berlin>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> , <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/Switzerland>;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baron, OM, KBE"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/lexp/1409956060742>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I have always adored the music of the Strausses, father and sons, of Vienna. I recall a 1929 production of Die Fledermaus by Max Reinhardt in Berlin which left me walking on air for three days afterward. Like Kreisler’s, the lilting memories of the Strausses had ideal shapes in my mind; I knew exactly how I wanted to hear them played, with a zest that whirled people off their feet."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Unfinished+Journey/1409691880120>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/claims>;
+        led:pages              "345";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Yehudi_Menuhin>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1929-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-24T14:18:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-09-05T22:27:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352/1409956031120> .
+
+<http://dbpedia.org/resource/Switzerland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Switzerland"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Die Fledermaus"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johann_Strauss_II>;
+        <http://purl.org/dc/terms/title>
+                "Die Fledermaus";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Johann_Strauss_II> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/source/Unfinished+Journey/1409691880120>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Unfinished Journey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1977-04-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Chaucer+Press/1409691880124>;
+        <http://purl.org/dc/terms/title>
+                "Unfinished Journey";
+        <http://purl.org/ontology/bibo/isbn>
+                "0345041460"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Yehudi_Menuhin> .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/day/1916-04-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 April, 1916"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1916;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://reference.data.gov.uk/id/day/1999-03-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 March, 1999"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1999;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://musicbrainz.org/artist/8255db36-4902-4cf6-8612-0f2b4288bc9a#_>
+        rdfs:label  "Johann Strauss II"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/1977-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/Violinist>
+        rdfs:label  "Violinist"@en .
+
+<http://data.open.ac.uk/led/organization/Chaucer+Press/1409691880124>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Chaucer Press"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352/1409956031120>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Die Fledermaus'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Yehudi_Menuhin>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Die+Fledermaus/1396616140352> .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Johann_Strauss_II>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Strauss II"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/8255db36-4902-4cf6-8612-0f2b4288bc9a#_> .

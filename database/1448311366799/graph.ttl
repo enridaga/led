@@ -1,0 +1,424 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical letters from Abroad"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/musical+letters+from+abroad>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/musicallettersf00unkngoog>;
+        <http://purl.org/dc/terms/title>
+                "Musical letters from Abroad";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/lexp/1448311366799>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/9dbe5f72b1c9d35d60616b5836d024fa>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "81-3";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/24a8480ab8557a2855ec181a2893b758>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1852-03-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-16T07:36:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-23T20:42:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/3f1da0699d2cf984c9ffd8ff62fb41f5/1448311241166> , <http://data.open.ac.uk/led/performance/b8be3d7359dfa2f43720b17dbb760432/1448311135958> , <http://data.open.ac.uk/led/performance/aa724b327306bd7be13d65618c7b7f41/1448311086420> , <http://data.open.ac.uk/led/performance/974cd856629c3f507825ebf49bd61eb4/1448310907709> , <http://data.open.ac.uk/led/performance/6290e187cd5e396140f807eea28c5adf/1448310860975> , <http://data.open.ac.uk/led/performance/4b1a355b7636b9e756d3254599275305/1448311020796> , <http://data.open.ac.uk/led/performance/3f634e939689ac03792f6bdbb174109d/1448311185188>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/9dbe5f72b1c9d35d60616b5836d024fa> .
+
+<http://data.open.ac.uk/led/source/musical+letters+from+abroad>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Musical Letters from Abroad"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>;
+        <http://purl.org/dc/terms/title>
+                "Musical Letters from Abroad";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn"@en .
+
+<http://reference.data.gov.uk/id/day/1792-01-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 January, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/performance/b8be3d7359dfa2f43720b17dbb760432/1448311135958>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Waldeinsamkeit'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Waldeinsamkeit/1448311135943> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/led/music/Der+Geist+hilft+unserer+Schwachheit/1448310907694>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Der Geist hilft unserer Schwachheit"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/BachJohannSebastian1685-1750>;
+        <http://purl.org/dc/terms/title>
+                "Der Geist hilft unserer Schwachheit";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/BachJohannSebastian1685-1750> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<https://archive.org/details/musicallettersf00unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive Digital Copy"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/musicallettersf00unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Medfield,_Massachusetts>
+        rdfs:label  "Medfield, Massachusetts"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Lowell Mason"@en , "Dr. Lowell Mason";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-01-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Medfield,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-08-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Orange,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/led/performance/4b1a355b7636b9e756d3254599275305/1448311020796>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'O Thaeler weit, o Hoehen'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/O+Thaeler+weit,+o+Hoehen/1448311020763> .
+
+<http://data.open.ac.uk/led/music/Waldeinsamkeit/1448311135943>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Waldeinsamkeit"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_>;
+        <http://purl.org/dc/terms/title>
+                "Waldeinsamkeit";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_> .
+
+<http://data.open.ac.uk/led/performance/3f1da0699d2cf984c9ffd8ff62fb41f5/1448311241166>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Jauchzet dem Herrn'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Jauchzet+dem+Herrn/1448311241158> .
+
+<http://data.open.ac.uk/led/performance/6290e187cd5e396140f807eea28c5adf/1448310860975>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Kommet Lasset uns anbeten'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Kommet+Lasset+uns+anbeten/1448310860961> .
+
+<http://data.open.ac.uk/led/music/O+sanfter,+suesser+Hauch/1448311086405>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "O sanfter, suesser Hauch"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://purl.org/dc/terms/title>
+                "O sanfter, suesser Hauch";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_> .
+
+<http://data.open.ac.uk/led/person/Schicht/1448311241164>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Schicht" .
+
+<http://data.open.ac.uk/led/place/24a8480ab8557a2855ec181a2893b758>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Thomas' School, Leipzig"@en;
+        <http://purl.org/dc/terms/description>
+                "St Thomas' School, Leipzig"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Leipzig> .
+
+<http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Mason Brothers"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Orange,_New_Jersey>
+        rdfs:label  "Orange, New Jersey"@en .
+
+<http://dbpedia.org/resource/Church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Church music"@en .
+
+<http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Moritz Hauptmann"@en .
+
+<http://data.open.ac.uk/led/music/Kommet+Lasset+uns+anbeten/1448310860961>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Kommet Lasset uns anbeten"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_>;
+        <http://purl.org/dc/terms/title>
+                "Kommet Lasset uns anbeten";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_> .
+
+<http://data.open.ac.uk/led/performance/aa724b327306bd7be13d65618c7b7f41/1448311086420>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'O sanfter, suesser Hauch'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/O+sanfter,+suesser+Hauch/1448311086405> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://reference.data.gov.uk/id/day/1872-08-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 August, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/led/music/O+Thaeler+weit,+o+Hoehen/1448311020763>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "O Thaeler weit, o Hoehen"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://purl.org/dc/terms/title>
+                "O Thaeler weit, o Hoehen";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_> .
+
+<http://data.open.ac.uk/led/music/Ich+stand+auf,+Berges+Hoehen/1448311185173>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Ich stand auf, Berges Hoehen"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_>;
+        <http://purl.org/dc/terms/title>
+                "Ich stand auf, Berges Hoehen";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c99c9928-c9b0-4ea8-9475-5c63d001df5b#_> .
+
+<http://data.open.ac.uk/led/performance/974cd856629c3f507825ebf49bd61eb4/1448310907709>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Der Geist hilft unserer Schwachheit'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Der+Geist+hilft+unserer+Schwachheit/1448310907694> .
+
+<http://data.open.ac.uk/led/performance/3f634e939689ac03792f6bdbb174109d/1448311185188>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Ich stand auf, Berges Hoehen'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Ich+stand+auf,+Berges+Hoehen/1448311185173> .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/9dbe5f72b1c9d35d60616b5836d024fa>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>[Hauptmann] called yesterday, bringing tickets to a musical performance, on the occasion of the dedication of the Music Hall of the School. It is not indeed a new hall, but an old one repaired, painted, and ornamented; it is in the same house where Bach lived, and is the very room where Bach, Hiller and others labored and conducted musical performances. Hauptmann now occupies the same apartments which were formerly occupied by the great Fuguist. The exercises, with the exception of a short address by one of the pupils, were exclusively musical, as follows:</p>\r\n<p>I. Prayer. \"Kommet Lasset uns anbeten\", Hauptmann</p>\r\n<p>II. Motette. \"Der Geist hilft unserer Schwachheit, J.S. Bach</p>\r\n<p>III. Four part-songs:-</p>\r\n<p>1. \"O Thaeler weit, o Hoehen\", Mendelssohn</p>\r\n<p>2. \"O sanfter, suesser Hauch\", Mendelssohn</p>\r\n<p>(The above may be found in the \"Social Glee Book,\" and have been sung in the Boston Musical Conventions.)</p>\r\n<p>3. \"Waldeinsamkeit\", Hauptmann</p>\r\n<p>4. \"Ich stand auf, Berges Hoehen\", Hauptmann</p>\r\n<p>IV. Motette. \"Jauchzet dem Herrn\", Schicht.</p>\r\n<p>The singing was by the choir of the school and church, which consisted of about fifty voices; Soprano and Alto by boys. It was entirely without accompaniment. A grand Pianoforte in the room was only used to announce the pitch before each piece.</p>\r\n<p>[... H]ere is a chorus who stand up and sing Bach&rsquo;s and other most difficult motets, the most difficult vocal music perhaps ever written, by voices alone, with as much certainty as the sure aim of an experienced marksman.</p>\r\n<p>I think I have never before witnessed such devotion to the work as in these singers. Here is indeed entire self-committal. Every one throws all the powers he has, physical and spiritual, into the performance of the music. Every tone is attacked with a conscious certainty of success; no matter how complicated the rhythm, it is given with an energy and truthfulness that a first-rate violinist can hardly excel. The singers seem to have a perfect command of their vocal organs, and are no less certain of results than is the accomplished pianist when he strikes the keys, or the violinist when he draws the bow. There is an entire absence of that sleepiness, drowsiness, inattention, and foolish levity too often witnessed in our choirs. No looking about, or whispering, or laughing, or silliness; but close attention is ever manifested. I wish I had words to point out that consecration to the work, that deep, heartfelt interest which these choir members seem to possess; so that it might be sought for by our American singers. [...] I have never before heard a vocal chorus so prompt, so energetic, and perfect in time and tune, as on this occasion. The place, too, was holy ground, for all the great musicians have visited that saloon; Bach lived there as his home, and Handel, and Haydn, and Mozart, and Beethoven have been there. A new portrait of Bach (or rather an old one put in perfect order) has been placed at the head of the hall, and opposite to it is a fine bust of Schicht, who, though less known, was a very profound musician, as his works testify. On the whole, I have not attended a more interesting musical performance in Germany.</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Musical letters from abroad' pp. 81-3 (532 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "81-3" .
+
+<http://data.open.ac.uk/time/edtf/1852-03-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "March, 1852"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1852;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://bnb.data.bl.uk/id/person/BachJohannSebastian1685-1750>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach"@en .
+
+<http://data.open.ac.uk/led/music/Jauchzet+dem+Herrn/1448311241158>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Jauchzet dem Herrn"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Schicht/1448311241164>;
+        <http://purl.org/dc/terms/title>
+                "Jauchzet dem Herrn";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Schicht/1448311241164> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .

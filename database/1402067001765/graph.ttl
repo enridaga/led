@@ -1,0 +1,132 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/led/person/Cyril+Dennys/1402066534943>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Cyril Dennys"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/lieutenant>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Dennys";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Cyril" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/person/ArthurMax1939->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Max Arthur"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Forgotten Voices of the Great War"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>;
+        <http://purl.org/dc/terms/title>
+                "Forgotten Voices of the Great War";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/ArthurMax1939->;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/lexp/1402067001765>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Lieut. Dennys (Royal Garrison Artillery) is referring to the German 'Operation Michael' which began on 21 March 1918, launching the Spring Offensive and the 'First Battle of the Somme 1918'. "@en;
+        led:has_environment    led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_evidence_text  "Apart from a bit of gratified conceit, I did realise that it was going to be not like, but much worse than, the battles of Ypres, because the odds were much greater against us. I felt sure that the Germans would make a strong effort when the time came.\r\n     Well, on the evening of the 20th of March I went to the billets to spend the night there and wait for the orders to go forward. We knew the attack was coming the next day. I felt awful. There were no other officers of the battery in the billet. I was entirely by myself, and was trying to face up to what I knew was going to be a very unpleasant morning and probably my last.\r\n     At first I played the gramophone. In those days I had a young man’s taste for rather lush music, and played Puccini. Then I went to bed. At 4.45 the telephone went, and a voice said, ‘Orders to man battle stations.’ "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Forgotten+Voices+of+the+Great+War/1401957587178>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "265";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Cyril+Dennys/1402066534943>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Somme>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1918-03-20>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-06T15:03:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/organization/Ebury+Press/1401957587303>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Ebury Press"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/id/day/1918-03-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 March, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://dbpedia.org/resource/Somme>
+        rdfs:label  "Somme"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/thing/lieutenant>
+        rdfs:label  "lieutenant"@en .

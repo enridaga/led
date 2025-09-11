@@ -1,0 +1,457 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/year/1771>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1771"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/thing/magistrate>
+        rdfs:label  "magistrate"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/George_Frideric_Handel>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Handel" , "George Frideric Handel"@en , "Handel"@en , "George Friderich Handel"@en , "Georg Friedrich Haendel"@en , "George Frideric Handel";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1685-02-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Halle>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1759-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Handel";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George Frideric";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Georg Friedrich Haendel"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1771-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1771"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1771;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1771>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://reference.data.gov.uk/id/day/1685-02-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 February, 1685"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1685;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/led/performance/Samson+(,+performance+of)/1386008179546>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Samson'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hereford_Cathedral>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Georgina+Waddington/1373899061400> , <http://data.open.ac.uk/led/person/Benjamin+Waddington/1373898805688> , <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Samson/1386008179538>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Elizabeth+Billington/1386008179551> , <http://dbpedia.org/resource/Samuel_Harrison> , <http://dbpedia.org/resource/James_Bartleman> .
+
+<http://data.open.ac.uk/time/edtf/1960-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1960"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1960;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1960>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/time/edtf/1805-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1805"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1805;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.05> .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.05>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Samuel_Harrison>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Samuel Harrison"@en .
+
+<http://data.open.ac.uk/time/edtf/1828-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1828"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1828;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://data.open.ac.uk/led/source/Reminiscences+written+by+Baroness+de+Bunsen+(nee+Frances+Waddington)+in+September+1874/1386006927451>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Reminiscences written by Baroness de Bunsen (nee Frances Waddington) in September 1874"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/National+Library+of+Wales+Journal>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://welshjournals.llgc.org.uk/browse/viewpage/llgc-id:1277425/llgc-id:1281449/llgc-id:1281452/get650>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Reminiscences written by Baroness de Bunsen (nee Frances Waddington) in September 1874";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Frances_Bunsen> .
+
+<http://data.open.ac.uk/led/music/Samson/1386008179538>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Samson"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/George_Frideric_Handel>;
+        <http://purl.org/dc/terms/title>
+                "Samson";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/George_Frideric_Handel> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Frances_Bunsen>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Frances von Bunsen"@en , "Frances Bunsen"@en , "Frances Baroness Bunsen"@en , "Baroness von Bunsen"@en , "Frances, Baroness Bunsen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Painting>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-03-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Berkshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1876-04-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Karlsruhe>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bunsen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances, Baroness";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baroness von Bunsen"@en .
+
+<http://dbpedia.org/resource/Halle>
+        rdfs:label  "Halle"@en .
+
+<http://data.open.ac.uk/led/person/Georgina+Waddington/1373899061400>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Georgina Mary Ann Waddington (nee Port)"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism> , <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1771-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1850-01-19>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Llanover>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Waddington (nee Port)";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Georgina Mary Ann" .
+
+<http://data.open.ac.uk/led/thing/country+gentleman>
+        rdfs:label  "country gentleman"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/person/Benjamin+Waddington/1373898805688>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Benjamin Waddington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/magistrate> , <http://data.open.ac.uk/led/thing/country+gentleman>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism> , <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1828-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Waddington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/id/day/1791-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://dbpedia.org/resource/James_Bartleman>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "James Bartleman"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://dbpedia.org/resource/Llanover>
+        rdfs:label  "Llanover"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Messiah_(Handel)>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Messiah"@en , "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Painting>
+        rdfs:label  "Painting"@en .
+
+<http://reference.data.gov.uk/id/day/1876-04-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 April, 1876"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1876;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/led/source/National+Library+of+Wales+Journal>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "National Library of Wales Journal"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1960-uu-uu>;
+        <http://purl.org/dc/terms/title>
+                "National Library of Wales Journal";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/FraserMaxwell>;
+        <http://purl.org/ontology/bibo/volume>
+                "11/4" .
+
+<http://data.open.ac.uk/led/performance/Messiah+(,+performance+of)/1386008055145>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hereford_Cathedral>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Georgina+Waddington/1373899061400> , <http://data.open.ac.uk/led/person/Benjamin+Waddington/1373898805688> , <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Messiah_(Handel)>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Elizabeth+Billington/1386008179551> , <http://dbpedia.org/resource/Samuel_Harrison> , <http://dbpedia.org/resource/James_Bartleman> .
+
+<http://dbpedia.org/resource/Hereford_Cathedral>
+        rdfs:label  "Hereford Cathedral"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/lexp/1373899870>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "[A]n event very material to myself had taken place [c. 1805], in my being taken by my Parents to the triennial musical festival at Hereford: the first occasion of my becoming acquainted with any performance of music beyond a single song, or a wandering band or barrel-organ: which explains perhaps the tender feeling I retain towards the latter - out of gratitude for the rare pleasure they gave me, when at Clifton they were accidentally called upon to stop before the windows: I never could comprehend the customary fury expressed against them, as 'disturbers of the peace of the neighbourhood' - when I felt, without finding words to express, that they thrilled through the emptiness of the common atmosphere, with a memento of thought or of passion, of absent & distant joy or woe. The Oratorio of Sampson, on the first evening [at Hereford], & the Messiah on the last morning, are fixed in grateful remembrance. - Mrs. Billington was the Soprano singer, & Harrison & Bartleman were the Tenor & Bass: & did I but possess the musical power, coveted in vain all my life, I could now pour forth from the treasure of song then laid in faithful memory, the strains of the first named, in 'Let the bright Seraphim,' & in 'I know that my Redeemer liveth': & the deep and mellow tones of Bartleman in the Bass songs of the Messiah seem to be still reproduced when I think of them."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Reminiscences+written+by+Baroness+de+Bunsen+(nee+Frances+Waddington)+in+September+1874/1386006927451>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "327-328";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Frances_Bunsen> , <http://data.open.ac.uk/led/person/Benjamin+Waddington/1373898805688> , <http://data.open.ac.uk/led/person/Georgina+Waddington/1373899061400>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hereford_Cathedral>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1805-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-03T11:55:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Messiah+(,+performance+of)/1386008055145> , <http://data.open.ac.uk/led/performance/Samson+(,+performance+of)/1386008179546> .
+
+<http://reference.data.gov.uk/id/day/1759-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1759"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1759;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://dbpedia.org/resource/Karlsruhe>
+        rdfs:label  "Karlsruhe"@en .
+
+<http://bnb.data.bl.uk/id/person/FraserMaxwell>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Maxwell Fraser"@en .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://dbpedia.org/resource/Berkshire>
+        rdfs:label  "Berkshire"@en .
+
+<http://data.open.ac.uk/led/agent/Elizabeth+Billington/1386008179551>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Elizabeth Billington"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://welshjournals.llgc.org.uk/browse/viewpage/llgc-id:1277425/llgc-id:1281449/llgc-id:1281452/get650>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Welsh Journals Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://welshjournals.llgc.org.uk/browse/viewpage/llgc-id:1277425/llgc-id:1281449/llgc-id:1281452/get650"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1850-01-19>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "19 January, 1850"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1850;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://reference.data.gov.uk/id/year/1960>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> .

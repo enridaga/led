@@ -1,0 +1,251 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/music/Les+Cloches+de+Correville/1436606389503>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Les Cloches de Correville"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Operetta/1436606389525>;
+        <http://purl.org/dc/terms/title>
+                "Les Cloches de Correville";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Operetta/1436606389525> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.61>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  61 .
+
+<http://data.open.ac.uk/led/agent/H.B.Farnie/1436866916493>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "H.B.Farnie"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "H.B.Farnie";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/performance/dc73a394d810ae7a12af3b7a2c336473/1436866978087>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Les Cloches de Correville'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Operetta>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/H.B.Farnie/1436866916493>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Les+Cloches+de+Correville/1436606389503>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764> .
+
+<http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Jimmy Glover, His Book"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        led:in_collection           "Internet Archive";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1912-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Methuen> , <http://bnb.data.bl.uk/id/agent/MethuenLondon>;
+        <http://purl.org/dc/terms/title>
+                "Jimmy Glover, His Book";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764> .
+
+<http://reference.data.gov.uk/id/year/1912>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1912"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Operetta>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operetta"@en .
+
+<http://data.open.ac.uk/led/source/4eb70b043c0869cd71930f6778f778c3/excerpt/b63be5ce11c276225d8d41b22b768112>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p align=\"LEFT\"><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">The manner </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">in </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">which </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">illegitimate </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">version </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">of&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">\"</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Les </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Cloches \" </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">came </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">be </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">done was </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">curious. F.&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">C. Fairlie </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">was </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">associated </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">with </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">late </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Alexander&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Henderson </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">in </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">its </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">original </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">production, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">and </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">when&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">some </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">disagreement </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">arose </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">at </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Globe </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Theatre, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">and&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Henderson </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">threatened </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">withdraw </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">opera, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">it </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">was&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">used </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">as </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">a </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">lever </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">by </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Fairlie that </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">there </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">was </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">some </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">flaw&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">in </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">registration, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">and </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">that </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">music was </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">\"</span></span>free,\"&nbsp;<span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">leaving </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">it </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">open </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">any </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">person </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">produce&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">\"</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">another&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">version.\" </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Fairlie </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">then </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">commissioned </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">\"</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">another&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">version,\" </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">by </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">both </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Moores, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">which </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">ultimately&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">only </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">ran </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">six nights. </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">The </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">strange part </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">of </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">it </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">all </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">was&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">that </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">H. </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">B. </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Farnie, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">who </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">did the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">original translation,&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">occupied </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">rooms </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">underneath </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Moores and Mansel&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">in </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Danes </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Inn, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">and </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">for </span></span><span style=\"font-family: Courier; font-size: small;\"><span style=\"font-family: Courier; font-size: small;\">many </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">weeks </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">preceding </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">illegitimate </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">production </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">he </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">had </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">be </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">tortured </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">with&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">hearing </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the opera tunes </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">distorted </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">and </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">disfigured&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">by </span></span><span style=\"font-family: Courier; font-size: small;\"><span style=\"font-family: Courier; font-size: small;\">me </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">on </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">piano </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">to </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">make </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">them </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">fit </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">English&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">lyrics of </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">the </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">Moores, </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">which </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">if </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">successful </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">would have&nbsp;</span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">more </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">or </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">less </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">cheapened </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">his </span></span><span style=\"font-family: Courier; font-size: xx-small;\"><span style=\"font-family: Courier; font-size: xx-small;\">property.&nbsp;</span></span></p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Jimmy Glover, His Book' pp. 62 (166 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "62" .
+
+<http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Jimmy Glover"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1931-uu-uu>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Glover";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jimmy" .
+
+<http://dbpedia.org/resource/Methuen>
+        rdfs:label  "Methuen"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/time/edtf/1931-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1931"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1931;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.31> .
+
+<http://data.open.ac.uk/time/edtf/184u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1840's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1849-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/1912-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1912>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/id/year/1861>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1861"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/agent/MethuenLondon>
+        rdfs:label  "Methuen London"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://data.open.ac.uk/led/lexp/1436867017136>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Domestic;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/4eb70b043c0869cd71930f6778f778c3/excerpt/b63be5ce11c276225d8d41b22b768112>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "62";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/H.B.Farnie/1436866916493>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/184u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-27T11:26:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-14T09:43:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/dc73a394d810ae7a12af3b7a2c336473/1436866978087>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/4eb70b043c0869cd71930f6778f778c3/excerpt/b63be5ce11c276225d8d41b22b768112> .
+
+<http://data.open.ac.uk/time/edtf/1849-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/led/person/Operetta/1436606389525>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Operetta" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

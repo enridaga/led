@@ -1,0 +1,203 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1962-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1962"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1962;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.62> .
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/music/The+Meaning+of+Christmas/1423590904943>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Meaning of Christmas"@en;
+        <http://purl.org/dc/terms/title>
+                "The Meaning of Christmas" .
+
+<http://bnb.data.bl.uk/id/agent/Xlibris>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Xlibris"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.62>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  62 .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Felix Mayerhofer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/trombonist> , <http://dbpedia.org/resource/Bandmaster> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Port_Chester,_New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mayerhofer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix" .
+
+<http://dbpedia.org/resource/Reno,_Nevada>
+        rdfs:label  "Reno, Nevada"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Meaning+of+Christmas/1423590904943/1423590904955>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'The Meaning of Christmas'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trombone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Shirley+Wagner/1423590367305> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Meaning+of+Christmas/1423590904943>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/4a903390-4381-4c32-90d0-803bd4f9ce34#_> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://data.open.ac.uk/led/trombonist>
+        rdfs:label  "trombonist"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Twas+the+Night+before+Christmas/1423590956151/1423590956163>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Twas the Night before Christmas'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trombone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Shirley+Wagner/1423590367305> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Twas+the+Night+before+Christmas/1423590956151>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/4a903390-4381-4c32-90d0-803bd4f9ce34#_> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://dbpedia.org/resource/Port_Chester,_New_York>
+        rdfs:label  "Port Chester, New York"@en .
+
+<http://dbpedia.org/resource/Bandmaster>
+        rdfs:label  "Bandmaster"@en .
+
+<http://data.open.ac.uk/led/lexp/1423591006265>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "     When Shirley and I stopped off at a photography shop for film during one of our walks, a song was playing over the sound system. “That music seems familiar to me” I told Shirley, as I started singing the trombone part. It suddenly dawned on me that I was on the recording. “That’s the Christmas album I made with Fred Waring!” I blurted out. We immediately went to a record shop where the album, “The Meaning Of Christmas” had just come in. I couldn’t wait to get it home to try it on my new stereo, which I’d recently bought from the lead trumpet player in our band. He needed money after he’d lost his entire salary at the crap table. The recording was fantastic! It was one of the best Christmas albums I’d ever heard. One of the selections was a remake of “Twas The Night Before Christmas” in stereo. I was proud to have been a part of this sensational album."@en;
+        led:has_medium         led:Medium.Playback;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "428-429";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Shirley+Wagner/1423590367305>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Reno,_Nevada>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1962-06-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-10T17:56:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Twas+the+Night+before+Christmas/1423590956151/1423590956163> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Meaning+of+Christmas/1423590904943/1423590904955> .
+
+<http://data.open.ac.uk/led/person/Shirley+Wagner/1423590367305>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Shirley Wagner"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/dancer>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wagner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Shirley" .
+
+<http://data.open.ac.uk/led/dancer>
+        rdfs:label  "dancer"@en .
+
+<http://reference.data.gov.uk/id/year/2006>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Trombone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trombone"@en .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/led/music/'Twas+the+Night+before+Christmas/1423590956151>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Twas the Night before Christmas"@en;
+        <http://purl.org/dc/terms/title>
+                "'Twas the Night before Christmas" .
+
+<http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of a Young Musician: Final Days of the Big Band Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Xlibris>;
+        <http://purl.org/dc/terms/title>
+                "Diary of a Young Musician: Final Days of the Big Band Era";
+        <http://purl.org/ontology/bibo/isbn>
+                "1413477291"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://musicbrainz.org/artist/4a903390-4381-4c32-90d0-803bd4f9ce34#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Fred Waring & His Pennsylvanians"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .

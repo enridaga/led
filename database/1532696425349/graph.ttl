@@ -1,0 +1,183 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/unspecified+opera+records/1532696230122>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified opera records"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified opera records" .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<https://bura.brunel.ac.uk/handle/2438/9357>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Burnett Archive of Working Class Autobiographies"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://bura.brunel.ac.uk/handle/2438/9357"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/performance/4d7f6d3cb39801d45d8f262b46b63e59/1532696230130>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified opera records'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Musical_instrument> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+opera+records/1532696230122> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Musical_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Musical instrument"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1532695934699>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+Military+band+records/1532696285793>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified Military band records"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified Military band records" .
+
+<http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1532696332402>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Slough>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1532695934699> .
+
+<http://data.open.ac.uk/led/office+worker>
+        rdfs:label  "office worker"@en .
+
+<http://dbpedia.org/resource/Military_band>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Military band"@en .
+
+<http://dbpedia.org/resource/Slough>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Slough"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Violet Austin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/office+worker>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Slough>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Austin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Violet" .
+
+<http://data.open.ac.uk/led/lexp/1532696425349>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium        led:Medium.Live , led:Medium.Playback;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/f33eed8acdc31747d72c24b4a6175ffe>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "18";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Slough>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/191u-uu-uu/to/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-04T16:31:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2018-11-07T10:33:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-27T13:00:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1532696332402> , <http://data.open.ac.uk/led/performance/4d7f6d3cb39801d45d8f262b46b63e59/1532696230130> , <http://data.open.ac.uk/led/performance/5da3544e44619c6a0adaec34eef2d228/1532696285799>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/f33eed8acdc31747d72c24b4a6175ffe> .
+
+<http://dbpedia.org/resource/Martial_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Martial music"@en .
+
+<http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Untitled: Mrs. Violet Austin memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://bura.brunel.ac.uk/handle/2438/9357>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Untitled: Mrs. Violet Austin memoir";
+        <http://purl.org/ontology/bibo/number>
+                "2:22";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612> .
+
+<http://data.open.ac.uk/led/performance/5da3544e44619c6a0adaec34eef2d228/1532696285799>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified Military band records'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Martial_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Military_band>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+Military+band+records/1532696285793> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/f33eed8acdc31747d72c24b4a6175ffe>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Violet Austin remembers her father, George Allen, as a fine singer who also played mandolin. She recalls he lost an eye through an accident at work, that he worked long hours for little pay and few holidays, and that he loved to read]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">We had so little, yet were happy.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">On Sunday, Dad was more rested, and on winter evenings would sing to us, and imitate well-known entertainers. He could dance a wonderful soft-shoe shuffle.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">We also had a gramophone, one of the box types, with a large red horn. Dad loved Opera and Military Bands, and we sat listening to the records. He occasionally bought a popular record at Christmas.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Untitled: Mrs. Violet Austin memoir' pp. 18 (111 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "18" .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Violet Austin"@en .

@@ -1,0 +1,395 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Charlie_Parker>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Charlie Parker"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+saxophonist> , <http://data.open.ac.uk/led/jazz+composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1920-08-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Kansas_City,_Kansas>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1955-03-12>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdfs:label  "Washington D. C."@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/jazz+composer>
+        rdfs:label  "jazz composer"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Englewood,_New_Jersey>
+        rdfs:label  "Englewood, New Jersey"@en .
+
+<http://dbpedia.org/resource/Kansas_City,_Kansas>
+        rdfs:label  "Kansas City, Kansas"@en .
+
+<http://data.open.ac.uk/led/lexp/1430228463714>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "Bop was regarded by many people as a revolution against the values of the previous [Jazz] era. At first hearing, it sounded very difficult and complicated. Parker and Dizzy Gillespie, the trumpet player, seemed to be playing many notes very fast, and the drummer and pianist accompanying them were no longer content with providing a steady, regular beat. Because of the speed of execution, the old tonal values were sacrificed (it was no longer possible to play with the former expressive vibrato), and the new music had a shrill, cooler sound. Soon it was fashionable to play \"cool\" rather than \"hot.\""@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages              "440";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/194u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-01T12:10:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-28T13:41:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bebop/1428141242093/1430228441353> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://reference.data.gov.uk/id/day/1955-03-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 March, 1955"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1955;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.55> .
+
+<http://reference.data.gov.uk/id/year/1940>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Cool_jazz>
+        rdfs:label  "Cool jazz"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.55>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  55 .
+
+<http://data.open.ac.uk/time/edtf/1940-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1940>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bebop/1428141242093/1430228441353>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Bebop'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Cool_jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet> , <http://dbpedia.org/resource/Saxophone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Bebop/1428141242093>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Dizzy_Gillespie> , <http://dbpedia.org/resource/Charlie_Parker> .
+
+<http://dbpedia.org/resource/Cheraw,_South_Carolina>
+        rdfs:label  "Cheraw, South Carolina"@en .
+
+<http://data.open.ac.uk/led/piantist>
+        rdfs:label  "piantist"@en .
+
+<http://dbpedia.org/resource/New_Jersey>
+        rdfs:label  "New Jersey"@en .
+
+<http://reference.data.gov.uk/id/day/1917-10-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 October, 1917"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1917;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.17> .
+
+<http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Duke Ellington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piantist> , <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/lyricist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ellington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke" .
+
+<http://data.open.ac.uk/led/music/Bebop/1428141242093>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Bebop"@en;
+        <http://purl.org/dc/terms/title>
+                "Bebop" .
+
+<http://data.open.ac.uk/led/jazz+saxophonist>
+        rdfs:label  "jazz saxophonist"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/1973-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1973>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://reference.data.gov.uk/id/day/1920-08-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 August, 1920"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1920;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.20> .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Dizzy_Gillespie>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Dizzy Gillespie"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/1973>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Dizzy Gillespie"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1917-10-21>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Cheraw,_South_Carolina>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1993-uu-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Englewood,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gillespie";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John Birks";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Dizzy Gillespie"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Duke Ellington: Music is my Mistress"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1973-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Doubleday_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Duke Ellington: Music is my Mistress";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Jersey>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://data.open.ac.uk/led/lyricist>
+        rdfs:label  "lyricist"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/time/edtf/1993-uu-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 , month unknown, 1993"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1993;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/time/edtf/194u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1940's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1940-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .
+
+<http://dbpedia.org/resource/Doubleday_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Doubleday (publisher)"@en .
+
+<http://dbpedia.org/resource/Saxophone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Saxophone"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

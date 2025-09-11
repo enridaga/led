@@ -1,0 +1,158 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/lexp/1549632995180>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/473e3e8d2b5253249aa56c32d962859f/excerpt/528cf9b363753998dcb5f51949059cb3>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Swift/1549632653384> , <http://data.open.ac.uk/led/agent/Charles+Jones/1549632673105> , <http://data.open.ac.uk/led/agent/a+gentleman/1549632683480>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/8faf0e2ac3e56222e63259adb216b067>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1681-uu-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-03-28T14:57:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-08T13:36:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/128323af871522081c84e1040f190aca/1549632862861>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/473e3e8d2b5253249aa56c32d962859f/excerpt/528cf9b363753998dcb5f51949059cb3> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/473e3e8d2b5253249aa56c32d962859f/excerpt/528cf9b363753998dcb5f51949059cb3>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[John Swift was found not guilty on 17 January 1681]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">John Swift , was Indicted for the Murther of&nbsp;&nbsp;Charles Jones , in the&nbsp;Savoy ; the manner of the Fact was thus, The Prisoner, the Deceased and another Gentleman being at Supper together, there arose a Quarrel betwixt the Prisoner and the Deceased, caused by the Deceased's Singing&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">a Baudy Song under a Ladies Window which the Deceased did aggravate with many base words, so that the Prisoner desiring to avoid farther mischif,<em> [sic]</em> took his leave to go home to his Lodging, when as the Deceased geting from the Gentleman that held him, followed the Prisoner, who standing upon his defence had the ill hap to wound him under the right Pap, of which wound in a short time he dyed. So that upon the Evidence the Jury found that what was done, was for self Preservation[.]</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), January 1681, trial of John Swift (t16810117a-4)' (144 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+January+1681,+trial+of+John+Swift+(t16810117a-4)/1549632616183>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/place/8faf0e2ac3e56222e63259adb216b067>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, The Savoy"@en;
+        <http://purl.org/dc/terms/description>
+                "London, The Savoy"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/music/unspecified+bawdy+song/1549632862833>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified bawdy song"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified bawdy song" .
+
+<http://data.open.ac.uk/led/agent/Charles+Jones/1549632673105>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charles Jones"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jones";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charles" .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/1681-uu-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1681, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.81> .
+
+<http://data.open.ac.uk/led/agent/a+gentleman/1549632683480>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "a gentleman"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "gentleman";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a" .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+January+1681,+trial+of+John+Swift+(t16810117a-4)/1549632616183>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), January 1681, trial of John Swift (t16810117a-4) "@en , "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), January 1681, trial of John Swift (t16810117a-4)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), January 1681, trial of John Swift (t16810117a-4) ";
+        <http://purl.org/ontology/bibo/number>
+                "t168101117a-4";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/agent/John+Swift/1549632653384>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Swift"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Swift";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.81>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  81 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Charles+Jones/1549632862889>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Charles Jones"@en .
+
+<http://data.open.ac.uk/led/performance/128323af871522081c84e1040f190aca/1549632862861>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified bawdy song'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/a+gentleman/1549632683480> , <http://data.open.ac.uk/led/agent/Charles+Jones/1549632673105> , <http://data.open.ac.uk/led/agent/John+Swift/1549632653384>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+bawdy+song/1549632862833>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Charles+Jones/1549632862889> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

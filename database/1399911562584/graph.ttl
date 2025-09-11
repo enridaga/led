@@ -1,0 +1,211 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Oxford_University_Press>
+        rdfs:label  "Oxford University Press"@en .
+
+<http://bnb.data.bl.uk/id/person/OwenWilfred>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Wilfred Owen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Soldier> , <http://dbpedia.org/resource/Poet>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-03-18>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Oswestry>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1918-11-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Ors>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Owen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Wilfred" .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Oxford University Press"@en , "American Mathematical Society"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Oxford_University_Press> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.67>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  67 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Ors>
+        rdfs:label  "Ors"@en .
+
+<http://dbpedia.org/resource/Oswestry>
+        rdfs:label  "Oswestry"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Letter+from+Wilfred+Owen+to+his+sister+Mary,+7+Dec.+1911/1399910894220>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Wilfred Owen to his sister Mary, 7 Dec. 1911"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Collected+Letters>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Wilfred Owen to his sister Mary, 7 Dec. 1911";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/OwenWilfred> .
+
+<http://data.open.ac.uk/led/lexp/1399911562584>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "At this time, Owen was lay assistant and pupil to Rev. Herbert Wigan, Vicar of Dunsden near Reading."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "[A]t the present moment my heart is filled with music. ’Tis thus: After the Scrip. Union Meeting which I took alone, and thoroughly enjoyed, I took upon myself... to teach a Carol to the ‘Sowers’ and others; which they are to sing at the Sunday School Treat to my accompaniment. There were about a dozen, from ten to fourteen years old, and some have really exceptional voices, and all seem most intelligent; so it [is] with real pleasure that I ‘doh-ray-me’ before them; harp on first piano, then organ; insist on pauses, slurs and crescendo’s, and beg the rosy mouths to ope a trifle widah!\r\n\r\nTwo choir boys came Carol singing here on Tues. and I enjoyed that, also. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Wilfred+Owen+to+his+sister+Mary,+7+Dec.+1911/1399910894220>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "101";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/OwenWilfred>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dunsden_Green>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1911-12-07>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-05-12T16:19:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://bnb.data.bl.uk/id/person/OwenHarold>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harold Owen"@en .
+
+<http://data.open.ac.uk/led/source/Collected+Letters>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Collected Letters"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1967-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>;
+        <http://purl.org/dc/terms/title>
+                "Collected Letters";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/OwenHarold> , <http://bnb.data.bl.uk/id/person/BellJohn> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/id/day/1911-12-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 December, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://reference.data.gov.uk/id/day/1893-03-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 March, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://dbpedia.org/resource/Soldier>
+        rdfs:label  "Soldier"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Dunsden_Green>
+        rdfs:label  "Dunsden Green"@en .
+
+<http://data.open.ac.uk/time/edtf/1967-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1967"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1967;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1967>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.67> .
+
+<http://bnb.data.bl.uk/id/person/BellJohn>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Bell"@en .
+
+<http://reference.data.gov.uk/id/day/1918-11-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 November, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/id/year/1967>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .

@@ -1,0 +1,289 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.7u>
+        rdf:value   "7u";
+        rdfs:label  "70s"@en .
+
+<http://data.open.ac.uk/time/edtf/197u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1970's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.7u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1970-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1979-uu-uu> .
+
+<http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Thunder's Mouth Press"@en .
+
+<http://data.open.ac.uk/time/edtf/1979-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1979"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1979;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1979>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Miles_Davis>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Miles Davis"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/DavisMiles> , <http://musicbrainz.org/artist/8e51f2f4-4541-4526-8a2d-c65ecc9c0ee4#_> , <http://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a#_> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://reference.data.gov.uk/id/year/1940>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1940-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1940>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/lexp/1430385136697>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live , led:Medium.Playback;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/8c40339057aeb4362509ec5d94571669>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "42";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Miles_Davis> , <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/197u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-10-19T13:32:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2016-10-19T13:31:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-30T09:12:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'The+Wind+Cries+Mary'/1430385081026/1430385081038>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/8c40339057aeb4362509ec5d94571669> .
+
+<http://dbpedia.org/resource/Guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Guitar"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://musicbrainz.org/artist/06fb1c8b-566e-4cb2-985b-b467c90781d4#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jimi Hendrix"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>;
+        <http://purl.org/dc/terms/title>
+                "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://data.open.ac.uk/time/edtf/1970-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1970"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1970;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1970>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/id/year/1979>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music+technician>
+        rdfs:label  "music technician"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/8c40339057aeb4362509ec5d94571669>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>When I was hanging out with Miles in his New York brownstone the conversation would inevitably come around to Hendrix, and he often said that the only regret in his life was not playing with Jimi.</p>\r\n<p>While on one level Miles viewed Jimi as a rival--since Jimi was wildly successful with the rock and roll audience that Miles craved--he also flipped over Jimi's music. It became a running joke that if you played a Hendrix tape for Miles, that would be the last you'd see of it. When I found to my astonishment that he'd never heard 'Electric Ladyland', I made a copy of it for him, and stuck on \"1983, A Merman I Shall Be.\" Miles loved it--the deep spatial groove, the underwater sound, the guitar so evocative, the death wish so apparent. He played that tape for weeks.</p>\r\n<p>We got to the point where I started demonstrating to Miles on the guitar some of the things Jimi had done, such as the little two-note country licks featured on \"The Wind Cries Mary.\"</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis' pp. 62 (173 words)"@en , "excerpt from 'Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis' pp. 42 (173 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "62" , "42" .
+
+<http://reference.data.gov.uk/id/year/1970>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/personal+assisstant>
+        rdfs:label  "personal assisstant"@en .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/road+manager>
+        rdfs:label  "road manager"@en .
+
+<http://dbpedia.org/resource/Guitarist>
+        rdfs:label  "Guitarist"@en .
+
+<http://data.open.ac.uk/led/music/'The+Wind+Cries+Mary'/1430385081026>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'The Wind Cries Mary'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/06fb1c8b-566e-4cb2-985b-b467c90781d4#_>;
+        <http://purl.org/dc/terms/title>
+                "'The Wind Cries Mary'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/06fb1c8b-566e-4cb2-985b-b467c90781d4#_> .
+
+<http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Chris Murphy"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'The+Wind+Cries+Mary'/1430385081026/1430385081038>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''The Wind Cries Mary''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Rock_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Guitar>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000> , <http://dbpedia.org/resource/Miles_Davis>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'The+Wind+Cries+Mary'/1430385081026>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Chris Murphy"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/road+manager> , <http://data.open.ac.uk/led/personal+assisstant> , <http://data.open.ac.uk/led/music+technician> , <http://dbpedia.org/resource/Guitarist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/194u-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Murphy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Chris" .
+
+<http://dbpedia.org/resource/Rock_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Rock music"@en .
+
+<http://data.open.ac.uk/time/edtf/194u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1940's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1940-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .

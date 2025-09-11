@@ -1,0 +1,357 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Gioachino_Rossini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Rossini"@en , "Rossini" , "Gioachino Rossini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-02-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Pesaro>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1868-11-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Passy>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rossini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gioachino" .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/agent/anonymous+theatre+orchestra/1443209438176>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "anonymous theatre orchestra"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://reference.data.gov.uk/id/year/1896>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ethel Waters"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/dancer> , <http://dbpedia.org/resource/Singing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1896-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chester_County,_Pennsylvania>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Waters";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ethel" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/California>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "California"@en .
+
+<http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1400256519408>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "William Tell Overture"@en , "Overture to 'William Tell'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/dc/terms/title>
+                "Overture to 'William Tell'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gioachino_Rossini> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://data.open.ac.uk/time/edtf/1900-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Passy>
+        rdfs:label  "Passy"@en .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Poet+and+Peasant/1429790219449/1429790219460>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Poet and Peasant'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Louisville,_Kentucky>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum_kit> , <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Poet+and+Peasant/1429790219449>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/anonymous+theatre+orchestra/1443209438176> .
+
+<http://dbpedia.org/resource/Chester_County,_Pennsylvania>
+        rdfs:label  "Chester County, Pennsylvania"@en .
+
+<http://data.open.ac.uk/led/performance/eee78d173f3dd513895c68b2687c99c2/1443209659523>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'william tell overture'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Louisville,_Kentucky>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum_kit> , <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1400256519408>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/anonymous+theatre+orchestra/1443209659526> .
+
+<http://dbpedia.org/resource/Drum_kit>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum kit"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://data.open.ac.uk/time/edtf/1925-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1925"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1925;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://data.open.ac.uk/led/lexp/1429790274398>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/f8d41a618bd4ed93bbb9fb0dc882fe96/excerpt/29158cfda024559779b9a433be9f13a9>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages            "171,172";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Louisville,_Kentucky>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/19Ee-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-25T19:35:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-23T11:57:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/eee78d173f3dd513895c68b2687c99c2/1443209659523> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Poet+and+Peasant/1429790219449/1429790219460>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8d41a618bd4ed93bbb9fb0dc882fe96/excerpt/29158cfda024559779b9a433be9f13a9> .
+
+<http://data.open.ac.uk/led/music/Poet+and+Peasant/1429790219449>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Poet and Peasant"@en;
+        <http://purl.org/dc/terms/title>
+                "Poet and Peasant" .
+
+<http://reference.data.gov.uk/id/day/1792-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charles Samuels"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/agent/anonymous+theatre+orchestra/1443209659526>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "anonymous theatre orchestra"@en .
+
+<http://data.open.ac.uk/time/edtf/1896-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1896>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://reference.data.gov.uk/id/day/1868-11-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 November, 1868"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1868;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://data.open.ac.uk/led/source/f8d41a618bd4ed93bbb9fb0dc882fe96/excerpt/29158cfda024559779b9a433be9f13a9>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>As almost always happens after some ordeal I've been through, I soon got a little belly-laugh relief. For example, the Louisville theater we played in on the way home had a three-piece orchestra that had delusions of grandeur at every performance. They opened the show by playing such high-brow pieces as \"Poet and Peasant\" and the \"Overture\" to William Tell. But they had one bad handicap besides their lack of talent. It was very drafty in their pit, and their sheet music was always blowing off the piano stand. When that happened the drummer would carry on with William Tell all by himself, while the piano player and the other musican leaped and scrambled around after their fugitive sheet music.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'His Eye Is On the Sparrow' pp. 171,172 (120 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "171,172" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Louisville,_Kentucky>
+        rdfs:label  "Louisville, Kentucky"@en .
+
+<http://data.open.ac.uk/led/dancer>
+        rdfs:label  "dancer"@en .
+
+<http://data.open.ac.uk/time/edtf/19Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 20th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1900-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1925-uu-uu> .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://dbpedia.org/resource/Pesaro>
+        rdfs:label  "Pesaro"@en .
+
+<http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "His Eye Is On the Sparrow"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1950-uu-uu> , <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "His Eye Is On the Sparrow";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141> , <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-26"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-28"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-31"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-05"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-06"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-15"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-16"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-23"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-29"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "African American Music Reference"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851"^^<http://www.w3.org/2001/XMLSchema#anyURI> .

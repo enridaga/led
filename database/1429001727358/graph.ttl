@@ -1,0 +1,204 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdfs:label  "Washington D. C."@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Saxophone+music/1429001650543/1429001650554>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Saxophone music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/C_melody_saxophone> , <http://dbpedia.org/resource/Baritone_saxophone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Saxophone+music/1429001650543>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/4fd648b7-e5a7-4d4e-b3c8-6c3c7f3b4da8#_> .
+
+<http://data.open.ac.uk/led/piantist>
+        rdfs:label  "piantist"@en .
+
+<http://dbpedia.org/resource/New_Jersey>
+        rdfs:label  "New Jersey"@en .
+
+<http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Duke Ellington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piantist> , <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/lyricist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ellington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/1973-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1973>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://dbpedia.org/resource/C_melody_saxophone>
+        rdfs:label  "C melody saxophone"@en .
+
+<http://data.open.ac.uk/led/lexp/1429001727358>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Otto Hardwick was known as the little brother of John Hardwick in Washington, D.C., during the '20s. I think John played banjo, and he always felt responsible for watching over him. Otto was considered to be a nice kid, and to have music potential. I forget exactly when, but on one of those occasions when the more mature saxophone players were all engaged, we turned to him…  He read very well and played even better, so he was no longer looked on as too young to be called for a job… [H]e gradually became like my first chair saxophone around Washington…\r\n\r\nOtto, or \"Toby\" as he liked to be called, was Mr. C Melody himself, and nobody ever quite captured the overall illusion of his sound. His tone was one of my first outstanding sound identities. The C melody saxophone was his instrument, but later he added the baritone saxophone to his accessories. He was one of the first, if not the first, to do so, and he was an inspiration to other baritone players, notably Harry Carney, who was soon to be acknowledged as the symbol of the baritone saxophone. \r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages              "69";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-01T09:18:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-14T08:55:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Saxophone+music/1429001650543/1429001650554> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/id/year/1973>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Baritone_saxophone>
+        rdfs:label  "Baritone saxophone"@en .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://musicbrainz.org/artist/4fd648b7-e5a7-4d4e-b3c8-6c3c7f3b4da8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Otto Hardwick"@en .
+
+<http://data.open.ac.uk/led/music/Saxophone+music/1429001650543>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Saxophone music"@en;
+        <http://purl.org/dc/terms/title>
+                "Saxophone music" .
+
+<http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Duke Ellington: Music is my Mistress"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1973-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Doubleday_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Duke Ellington: Music is my Mistress";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Jersey>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://data.open.ac.uk/led/lyricist>
+        rdfs:label  "lyricist"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Doubleday_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Doubleday (publisher)"@en .

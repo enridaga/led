@@ -1,0 +1,381 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1990-12-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 December, 1990"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1990;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/led/performance/Lincoln+Portrait+(,+performance+of)/1388234108873>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Lincoln Portrait'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Leonard_Bernstein>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Lincoln+Portrait/1388234108865>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Serge_Koussevitzky> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/led/source/letter+from+Leonard+Bernstein+to+Aaron+Copland+3+April+1943/1388233793158>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Leonard Bernstein to Aaron Copland, 3 April 1943"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Leonard+Bernstein+Letters>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Leonard Bernstein to Aaron Copland, 3 April 1943";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Leonard_Bernstein> .
+
+<http://data.open.ac.uk/led/double-bassist>
+        rdfs:label  "Double-bassist"@en .
+
+<http://dbpedia.org/resource/Lawrence,_Massachusetts>
+        rdfs:label  "Lawrence, Massachusetts"@en .
+
+<http://dbpedia.org/resource/Leonard_Bernstein>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Leonard Bernstein"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Conducting>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1918-08-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lawrence,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1990-10-14>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BernsteinLeonard> , <http://musicbrainz.org/artist/fa39bc82-9b27-4bbb-9425-d719a72e09ac#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bernstein";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Leonard" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1951-06-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 June, 1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://reference.data.gov.uk/id/day/1900-11-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 November, 1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Aaron_Copland>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Aaron Copland"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1900-11-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1990-12-02>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/CoplandAaron1900-1990> , <http://musicbrainz.org/artist/aad3af83-5b59-4b86-a569-1a8409149b09#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Copland";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Aaron" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/1943-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1943"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1943;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.43> .
+
+<http://data.open.ac.uk/led/music/Lincoln+Portrait/1388234108865>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Lincoln Portrait"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Aaron_Copland>;
+        <http://purl.org/dc/terms/title>
+                "Lincoln Portrait" .
+
+<http://reference.data.gov.uk/id/day/1918-08-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 August, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://dbpedia.org/resource/New_Haven,_Connecticut>
+        rdfs:label  "New Haven, Connecticut"@en .
+
+<http://dbpedia.org/resource/Serge_Koussevitzky>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Koussevitzky"@en , "Serge Koussevitzky"@en , "Sergey Kusevitsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/double-bassist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1874-07-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Tver_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1951-06-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Massachusetts>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Koussevitzky";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Serge";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergey Kusevitsky"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://dbpedia.org/resource/Tver_Oblast>
+        rdfs:label  "Tver Oblast"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Massachusetts>
+        rdfs:label  "Massachusetts"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/lexp/1388234202885>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Will Geer (1902-78) American actor and left-wing activist, blacklisted in the 1950s for refusing to testify before the House Un-American Activities Committee, achieved fame late in life as Grandpa Zebulon Walton in The Waltons. Serge Koussevitzky, conductor of the Boston Symphony Orchestra from 1924-1949 "@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Dear A\r\n\tJust a few words a propos of the Lincoln Portrait performance... I suppose everyone has written you all about it.  How Will Geer completely disregarded your forward in the score, and drawled away in a pseuso-Lincolnesque performance that was truly embarrassing.  (He made up to look a little like Abe, and sat on this chair like the Lincoln Memorial in Washington.  I’m told the whole thing was Koussie’s idea, which is certainly plausible.)\r\n \tKouss didn’t do as well by it as I had expected.  The opening was too agitated because he divided his beats – there was no feeling of tranquillity and space.  He missed a few cues (or passed them up), like disenthrall ourselves”; and usually simply waited for the end of a speech, & then played music.  But the sum total was good – the impression was very exciting, & the audience was charmed.  Why must you be in Hollywood?  Although after the parade of bowing composers (Billy and Barber) it was very distinguished of you not to be present – sort of specialness, you know.\r\n\tIt’s a fine piece, my love, despite all the repetition, and Vernon Duke’s verdict that it’s “Just 20th Century Fox”.  He’s insufferable anyway.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Leonard+Bernstein+to+Aaron+Copland+3+April+1943/1388233793158>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        led:pages              "120";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Leonard_Bernstein>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1943-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-28T12:36:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Lincoln+Portrait+(,+performance+of)/1388234108873> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/2013-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2013"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2013;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2013>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://reference.data.gov.uk/id/day/1990-10-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 October, 1990"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1990;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .
+
+<http://bnb.data.bl.uk/id/person/BernsteinLeonard>
+        rdfs:label  "Leonard Bernstein"@en .
+
+<http://reference.data.gov.uk/id/day/1874-07-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 July, 1874"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1874;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/source/The+Leonard+Bernstein+Letters>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Leonard Bernstein Letters"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2013-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/YaleUP>;
+        <http://purl.org/dc/terms/title>
+                "The Leonard Bernstein Letters";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SimeoneNigel1956->;
+        <http://purl.org/ontology/bibo/isbn>
+                "9780300179095"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Haven,_Connecticut> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.43>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  43 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://bnb.data.bl.uk/id/agent/YaleUP>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Yale University Press"@en .
+
+<http://reference.data.gov.uk/id/year/2013>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://bnb.data.bl.uk/id/person/SimeoneNigel1956->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nigel Simeone"@en .

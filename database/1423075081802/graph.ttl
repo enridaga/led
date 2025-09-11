@@ -1,0 +1,402 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/source/From+Where+I+Sit>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "From Where I Sit"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1979-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Cassell_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "From Where I Sit";
+        <http://purl.org/ontology/bibo/isbn>
+                "0304303135"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/1979-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1979"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1979;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1979>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/led/musicologist>
+        rdfs:label  "Musicologist"@en , "musicologist"@en .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://reference.data.gov.uk/id/day/1915-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://dbpedia.org/resource/Coventry>
+        rdfs:label  "Coventry"@en .
+
+<http://dbpedia.org/resource/Glyndebourne>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Glyndebourne"@en .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/led/schoolteacher>
+        rdfs:label  "Schoolteacher"@en , "schoolteacher"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://reference.data.gov.uk/id/day/1919-02-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 February, 1919"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1919;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/time/edtf/1958-uu-Mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid , month unknown, 1958"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1958;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://dbpedia.org/resource/South_Shields>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "South Shields"@en .
+
+<http://reference.data.gov.uk/id/day/1988-12-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 December, 1988"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1988;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Jack Brymer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Clarinetist> , <http://data.open.ac.uk/led/schoolteacher> , <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1915-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/South_Shields>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/2003-09-16>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Redhill,_Surrey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brymer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jack" .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/led/agent/Hans+Schmidt-Isserstedt/1423075045761>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Hans Schmidt-Isserstedt"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://reference.data.gov.uk/id/year/1979>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Royal_Philharmonic_Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Royal Philharmonic Orchestra"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Denis Matthews"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/broadcaster> , <http://data.open.ac.uk/led/musicologist> , <http://data.open.ac.uk/led/pianist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1919-02-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Coventry>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1988-12-24>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Birmingham>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> .
+
+<http://dbpedia.org/resource/Cassell_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Cassell (publisher)"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://musicbrainz.org/artist/4c3ba826-57f9-4a33-8eb4-dcae21abb24a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mozart"@en .
+
+<http://data.open.ac.uk/led/music/Nozze+di+Figaro/1431604271341>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Marriage of Figaro"@en , "Nozze di Figaro"@en , "Figaro"@en , "'Le nozze di Figaro'"@en , "'Le nozze di Figaro' K492"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/4c3ba826-57f9-4a33-8eb4-dcae21abb24a#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "The Marriage of Figaro" , "Nozze di Figaro";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/4c3ba826-57f9-4a33-8eb4-dcae21abb24a#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dr+Heinz+Breitkreuz/1477689615491> , <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_> .
+
+<http://data.open.ac.uk/led/broadcaster>
+        rdfs:label  "Broadcaster"@en , "broadcaster"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/led/source/The+Beecham+Years/1422396466458>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Beecham Years"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/From+Where+I+Sit>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Beecham Years";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_> .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/agent/Dr+Heinz+Breitkreuz/1477689615491>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Dr Heinz Breitkreuz"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Breitkreuz";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dr Heinz" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Le+nozze+di+Figaro'+K492/1423075045752/1423075045759>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Le nozze di Figaro' K492'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glyndebourne>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera> , <http://dbpedia.org/resource/Solo_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Nozze+di+Figaro/1431604271341>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Royal_Philharmonic_Orchestra> , <http://data.open.ac.uk/led/agent/Hans+Schmidt-Isserstedt/1423075045761> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Birmingham>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Birmingham"@en .
+
+<http://dbpedia.org/resource/Redhill,_Surrey>
+        rdfs:label  "Redhill, Surrey"@en .
+
+<http://data.open.ac.uk/led/lexp/1423075081802>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "... Hans Schmidt-Isserstedt... Somehow I found it surprising that he should be an excellent Mozartian - but his Figaro in 1958 was certainly one of the finest we ever played, with comfort and brilliance perfectly mastered."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Beecham+Years/1422396466458>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "107";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glyndebourne>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1958-uu-Mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-02T13:47:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-04T18:38:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Le+nozze+di+Figaro'+K492/1423075045752/1423075045759> .
+
+<http://dbpedia.org/resource/Solo_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Solo (music)"@en , "Solo"@en .
+
+<http://data.open.ac.uk/led/pianist>
+        rdfs:label  "pianist"@en , "Pianist"@en .
+
+<http://reference.data.gov.uk/id/day/2003-09-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 September, 2003"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2003;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

@@ -1,0 +1,255 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/jazz/1423582673813>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz"@en;
+        <http://purl.org/dc/terms/title>
+                "jazz" .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz/1423582673813/1423582673825>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Potsdam>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Tenor_saxophone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz/1423582673813>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0#_> , <http://data.open.ac.uk/led/agent/Sal+Nistico/1423582673830> .
+
+<http://reference.data.gov.uk/id/day/1987-10-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 October, 1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://dbpedia.org/resource/Potsdam>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Potsdam"@en .
+
+<http://bnb.data.bl.uk/id/agent/Xlibris>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Xlibris"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Felix Mayerhofer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/trombonist> , <http://dbpedia.org/resource/Bandmaster> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Port_Chester,_New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mayerhofer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix" .
+
+<http://data.open.ac.uk/led/agent/Sal+Nistico/1423582673830>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sal Nistico"@en .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.59>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  59 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://musicbrainz.org/artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Woody Herman"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+soprano+saxophone> , <http://data.open.ac.uk/led/jazz+alto+saxophone> , <http://dbpedia.org/resource/Clarinetist> , <http://dbpedia.org/resource/Bandleader>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-05-16>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Milwaukee>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1987-10-29>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/West_Hollywood,_California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/led/jazz+alto+saxophone>
+        rdfs:label  "jazz alto saxophone"@en .
+
+<http://reference.data.gov.uk/id/day/1913-05-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 May, 1913"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://dbpedia.org/resource/Bandmaster>
+        rdfs:label  "Bandmaster"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/jazz+soprano+saxophone>
+        rdfs:label  "jazz soprano saxophone"@en .
+
+<http://dbpedia.org/resource/West_Hollywood,_California>
+        rdfs:label  "West Hollywood, California"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of a Young Musician: Final Days of the Big Band Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Xlibris>;
+        <http://purl.org/dc/terms/title>
+                "Diary of a Young Musician: Final Days of the Big Band Era";
+        <http://purl.org/ontology/bibo/isbn>
+                "1413477291"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://dbpedia.org/resource/Tenor_saxophone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Tenor saxophone"@en .
+
+<http://dbpedia.org/resource/Milwaukee>
+        rdfs:label  "Milwaukee"@en .
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/time/edtf/1959-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1959"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1959;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://dbpedia.org/resource/Bandleader>
+        rdfs:label  "Bandleader"@en .
+
+<http://data.open.ac.uk/led/trombonist>
+        rdfs:label  "trombonist"@en .
+
+<http://dbpedia.org/resource/Port_Chester,_New_York>
+        rdfs:label  "Port Chester, New York"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/led/lexp/1423582796976>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The venue is the State University of New York at Potsdam."@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "     On the way back to New York City, I took a detour and stopped at Potsdam for just the night.... Woody Herman and his band were playing in the gym.... I saw many of my friends and a teacher or two... \r\n     Sal Nistico, from Woody’s band, was playing a tremendous tenor solo with an admiring crowd urging him on. One of my former erstwhile professors made a profound statement as Sal blew some great sounds with his cheeks puffed out. “He plays beautifully,” said the professor, “but all wrong with his cheeks puffed out.” This particular professor had no idea that most jazz musicians had classical backgrounds and spent years learning to play correctly. Physiological changes in the cheeks or bulging necks happened by themselves. When extreme volume or force is needed to play, there is nothing the musician can do to prevent this alteration from happening. Internally they’re still playing correctly and applying all the knowledge they’d acquired from their professional teachers. I’d like to have a dime for every fine musician in this country who puffs out their cheeks or whose neck bulges out.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "311-312";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Potsdam,_New_York>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1959-01-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-10T15:39:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz/1423582673813/1423582673825> .
+
+<http://dbpedia.org/resource/Potsdam,_New_York>
+        rdfs:label  "Potsdam, New York"@en .
+
+<http://reference.data.gov.uk/id/year/2006>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

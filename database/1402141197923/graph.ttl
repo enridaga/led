@@ -1,0 +1,194 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://reference.data.gov.uk/id/day/1954-05-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 May, 1954"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1954;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/led/agent/S%C3%A1ndor+V%C3%A9gh/1402140955063>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sándor Végh"@en .
+
+<http://data.open.ac.uk/led/performance/Partita+in+D+minor+(,+performance+of)/1402140955058>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Partita in D minor'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Italy>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Partita+in+D+minor/1402140955049>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/S%C3%A1ndor+V%C3%A9gh/1402140955063> .
+
+<http://bnb.data.bl.uk/id/place/Woodbridge>
+        rdfs:label  "Woodbridge"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://bnb.data.bl.uk/id/agent/BoydellPress>
+        rdfs:label  "Boydell Press"@en .
+
+<http://dbpedia.org/resource/Woodbridge,_Suffolk>
+        rdfs:label  "Woodbridge, Suffolk"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Chamber_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chamber music"@en .
+
+<http://data.open.ac.uk/led/music/Partita+in+D+minor/1402140955049>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Partita in D minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johann_Sebastian_Bach>;
+        <http://purl.org/dc/terms/title>
+                "Partita in D minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Johann_Sebastian_Bach> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/source/Domus+Diary:+Preparing+for+the+Cheltenham+Festival,+1981/1398352961250>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Domus Diary: Preparing for the Cheltenham Festival, 1981"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Beyond+the+notes+:+journeys+with+chamber+music>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Domus Diary: Preparing for the Cheltenham Festival, 1981";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TomesSusan> .
+
+<http://data.open.ac.uk/led/lexp/1402141197923>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Date not specified, nor exact location."@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "... I remembered the curious sensation I once had during an Italian church concert in which Végh played the Bach D minor partita. It was partly an illusion caused by his 'speaking' tone on the violin, and party it was the very real contours of his sound, like contours on a map, but I felt that instead of listening to music I was listening to information, and that I could not afford to miss a single link in the sense of it. I had no urge to drift in and out of the music as I so often do, It was like being lost in a maze and hearing someone explain, just once, the way out of it. Lots of good performers give me the sensation of knowing how to get lost in the music, but not many make me feel certain they can find their way out."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Domus+Diary:+Preparing+for+the+Cheltenham+Festival,+1981/1398352961250>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "36";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Italy>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-07T11:39:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Partita+in+D+minor+(,+performance+of)/1402140955058> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Edinburgh>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Edinburgh"@en .
+
+<http://data.open.ac.uk/time/edtf/2004-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2004"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2004;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2004>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://bnb.data.bl.uk/id/person/TomesSusan>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Susan Tomes"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Pianist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1954-05-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Edinburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Scotland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tomes";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Susan" .
+
+<http://reference.data.gov.uk/id/year/2004>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/source/Beyond+the+notes+:+journeys+with+chamber+music>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Beyond the notes : journeys with chamber music"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2004-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Boydell+Press/1402321009894> , <http://bnb.data.bl.uk/id/agent/BoydellPress>;
+        <http://purl.org/dc/terms/title>
+                "Beyond the notes : journeys with chamber music";
+        <http://purl.org/ontology/bibo/isbn>
+                "1843830450"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Woodbridge,_Suffolk> , <http://bnb.data.bl.uk/id/place/Woodbridge> .
+
+<http://data.open.ac.uk/led/organization/Boydell+Press/1402321009894>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Boydell Press"@en .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .

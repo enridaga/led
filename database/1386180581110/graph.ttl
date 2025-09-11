@@ -1,0 +1,90 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1762-03-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 March, 1762"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1762;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.62> .
+
+<http://data.open.ac.uk/led/person/Baron+de+Bagg/1395850352372>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Baron de Bagg"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bagg";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Baron de" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.62>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  62 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://www.e-enlightenment.com>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2013-04-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Electronic Enlightenment "@en , "Electronic Enlightenment"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.e-enlightenment.com"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Laurence+Sterne+to+Elizabeth+Sterne+17+March+1762/1386180402579>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Laurence Sterne to Elizabeth Sterne 17 March 1762"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Bodleian Library Oxford"@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.e-enlightenment.com>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Laurence Sterne to Elizabeth Sterne 17 March 1762";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/SterneLaurence1713-1768> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://bnb.data.bl.uk/id/person/SterneLaurence1713-1768>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Laurence Sterne"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Sterne";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Laurence" .
+
+<http://data.open.ac.uk/led/lexp/1386180581110>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "My Dear,\r\n\r\n— Having an opportunity of writing by a physician, who is posting off for London to-day, I would not omit doing it, though you will possibly receive a letter (which is gone from hence last post) at the very same time. I send to Mr. Foley's every mail-day, to inquire for a letter from you; and if I do not get one in a post or two, I shall be greatly surprised and disappointed. A terrible fire happened here last night, the whole fair of St. Germain's burned to the ground in a few hours;...\r\n\r\nRELEVANT PORTION:\r\n\r\nI have been three mornings together to hear a celebrated pulpit orator near me, one Père Clement, who delights me much; the parish pays him 600 livres for a dozen sermons this Lent; he is K. Stanislas's preacher — most excellent indeed! his matter solid, and to the purpose; his manner, more than theatrical, and greater, both in his action and delivery, than Madame Clairon, who, you must know, is the Garrick of the stage here; he has infinite variety, and keeps up the attention by it wonderfully; his pulpit, oblong, with three seats in it, into which he occasionally casts himself; goes on, then rises, by a gradation of four steps, each of which he profits by, as his discourse inclines him: in short, 'tis a stage, and the variety of his tones would make you imagine there were no less than five or six actors on it together.\r\n\r\nI was last night at Baron de Bagg's concert; it was very fine, both music and company; and to-night I go to the Prince of Conti's. There is Monsieur Popelinière, who lives here like a sovereign prince; keeps a company of musicians always in his house, and a full set of players; and gives concerts and plays alternately to the grandees of this metropolis; he is the richest of all the farmer[s general]; he did me the honour last night to send me an invitation to his house, while I stayed here — that is, to his music and table.\r\n\r\nI suppose you had terrible snows in Yorkshire, from the accounts I read in the London papers...\r\n\r\nEND\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Laurence+Sterne+to+Elizabeth+Sterne+17+March+1762/1386180402579>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Baron+de+Bagg/1395850352372> , <http://bnb.data.bl.uk/id/person/SterneLaurence1713-1768>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1762-03-16>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-08T09:51:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

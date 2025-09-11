@@ -1,0 +1,217 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Gordon+S.+Haight/1386344007668>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gordon S. Haight"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/source/The+George+Eliot+Letters,+vol.+4:+1862-1868>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The George Eliot Letters, vol. 4: 1862-1868"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1954-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/YaleUP>;
+        <http://purl.org/dc/terms/title>
+                "The George Eliot Letters, vol. 4: 1862-1868";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Gordon+S.+Haight/1386344007668>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Haven,_Connecticut>;
+        <http://purl.org/ontology/bibo/volume>
+                "4" .
+
+<http://dbpedia.org/resource/Category:Philosophical_movements>
+        rdfs:label  "Philosophical movements"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+George+Eliot+to+Maria+Bury+Congreve,+25+June+1866/1386342909560>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from George Eliot to Maria Bury Congreve, 25 June 1866"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+George+Eliot+Letters,+vol.+4:+1862-1868>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/15JO0%20>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from George Eliot to Maria Bury Congreve, 25 June 1866";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.66>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  66 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1377770084>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I wish you could know how idle I feel -- how utterly disinclined to anything but mere self-indulgence -- because that knowledge would enable you to estimate the affection and anxiety which prompt me to write in spite of disinclination.... Paradise is in the fields and woods of beech and fir, where we walk in uninterrupted solitude in spite of the excellent roads and delightful resting-places, which seem to have been prepared for visitors in general. The promenade, where the ladies -- chiefly Russian and German, with only a small sprinkling of English and Americans -- display their ornamental petticoats and various hats, is only the outskirt of Paradise; but we amuse ourselves there for an hour or so in the early morning and evening, listening to the music and learning the faces of our neighbours. There is a deficiency of men, children, and dogs: otherwise the winding walks, the luxuriant trees and grass, and the abundant seats of the promenade, have every charm one can expect at a German bath."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+George+Eliot+to+Maria+Bury+Congreve,+25+June+1866/1386342909560>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "278";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Bad_Schwalbach>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1866-06-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-06T15:29:14.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://reference.data.gov.uk/id/day/1819-11-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 November, 1819"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1819;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://bnb.data.bl.uk/id/person/EliotGeorge1819-1880>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Mary Ann [Marian] Evans"@en , "George Eliot"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism> , <http://dbpedia.org/resource/Humanism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1819-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Warwickshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1880-12-22>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Eliot";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mary Ann [Marian] Evans"@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/15JO0%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/15JO0%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://reference.data.gov.uk/id/day/1880-12-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 December, 1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Warwickshire>
+        rdfs:label  "Warwickshire"@en .
+
+<http://data.open.ac.uk/time/edtf/1866-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1866"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1866;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.66> .
+
+<http://data.open.ac.uk/time/edtf/1954-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1954"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1954;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Humanism>
+        rdf:type    <http://dbpedia.org/resource/Category:Philosophical_movements>;
+        rdfs:label  "Humanism"@en .
+
+<http://dbpedia.org/resource/New_Haven,_Connecticut>
+        rdfs:label  "New Haven, Connecticut"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://bnb.data.bl.uk/id/agent/YaleUP>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Yale University Press"@en .
+
+<http://dbpedia.org/resource/Bad_Schwalbach>
+        rdfs:label  "Bad Schwalbach"@en .

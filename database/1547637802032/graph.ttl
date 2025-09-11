@@ -1,0 +1,280 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/duration/PT1H30M>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT1H30M"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "1 hours 30 minutes"@en;
+        <http://www.w3.org/2006/time#hours>
+                "1"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        <http://www.w3.org/2006/time#minutes>
+                "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://data.open.ac.uk/led/agent/a+Welsh+congregation/1547637694158>
+        rdf:type               <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "a Welsh congregation"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglican_Communion>;
+        led:has_social_status  <urn:x-nrsuk:social:C1>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "congregation";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a Welsh" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "It is not known who transcribed Croswell’s diaries, or when.  The British Library record was created in 1960.  The pages are unnumbered, but most records are individually numbered.  Record numbers have therefore been used in place of page numbers, where available.  A further transcript of the diaries is held at the Bodleian Library."@en;
+        rdfs:label                  "Transcript of the diaries of Henry Croswell"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "British Library";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the British Library."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Transcript of the diaries of Henry Croswell";
+        <http://purl.org/ontology/bibo/number>
+                "000826807, C.194.c.113 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.18:30:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "18:30:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2a96ca707d42cfdfb623d9194fc9e7a8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">Many came in late, doubtless, from the train as they arrived in batches.</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">O[rgan]. &ndash;&nbsp;Good, old, playing simple tunes to the evening hymn etc.</p>\n<p class=\"MsoNormal\">C[hoir]. &ndash;&nbsp;A few young men and women in the West gallery.</p>\n<p class=\"MsoNormal\">[The congregation numbered] 170 &ndash; There were Welch [<em>sic</em>] from all parts of London, mostly men of the lower middle class - a fine sight.</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p><span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">M[iscellaneous]. &ndash; Expecting the usual service we found ourselves among the Welch! - the only Church of England service for them in London only in the evening and allowed by the Rector. Mr. Jones.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Transcript of the diaries of Henry Croswell' pp. 139 (94 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "139" .
+
+<http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry Croswell"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/assurance+clerk> , <http://data.open.ac.uk/led/sunday+school+teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1840-10-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/West_Drayton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Croswell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://data.open.ac.uk/led/performance/e99422a79c4317c19ac1c02875101c48/1547637574426>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Anglican church music with hymns'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/City_of_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn> , <http://dbpedia.org/resource/Anglican_church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Church_organ> , <http://data.open.ac.uk/led/thing/church+choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> , <http://data.open.ac.uk/led/agent/a+Welsh+congregation/1547637694158>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Anglican+church+music+with+hymns/1547637574390>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Nicholas+Cole+Abbey+City+of+London/1547637574444> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.78>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  78 .
+
+<http://data.open.ac.uk/led/place/09705cf115a1937a6ad98858457b4977>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Nicholas Cole Abbey, City of London"@en;
+        <http://purl.org/dc/terms/description>
+                "St Nicholas Cole Abbey, City of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/City_of_London> , <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Anglican_church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anglican church music"@en .
+
+<http://dbpedia.org/resource/Church_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Church organ"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/sunday+school+teacher>
+        rdfs:label  "sunday school teacher"@en , "Sunday School teacher"@en .
+
+<http://data.open.ac.uk/led/lexp/1547637802032>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Henry Croswell (1840–93) kept a record of his visits to churches in London over a period of more than twelve years (1872–85).  He made methodical notes about the number of clergy, the churchmanship, the congregation, the sermon and the church architecture, as well as commenting on the music that he heard (the organ, the hymns and the choir).  The above listening experience has been extracted from one of these records."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2a96ca707d42cfdfb623d9194fc9e7a8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "139";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> , <http://data.open.ac.uk/led/agent/a+Welsh+congregation/1547637694158>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/09705cf115a1937a6ad98858457b4977>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/1878-12-22T18:30:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-02T07:25:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-16T11:23:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/e99422a79c4317c19ac1c02875101c48/1547637574426>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT1H30M>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2a96ca707d42cfdfb623d9194fc9e7a8> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Nicholas+Cole+Abbey+City+of+London/1547637574444>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Nicholas Cole Abbey City of London"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/City_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "City of London"@en .
+
+<http://data.open.ac.uk/led/assurance+clerk>
+        rdfs:label  "assurance clerk"@en .
+
+<http://data.open.ac.uk/led/music/Anglican+church+music+with+hymns/1547637574390>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Anglican church music with hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "Anglican church music with hymns" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://dbpedia.org/resource/Anglican_Communion>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglican Communion"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1878-12-22T18:30:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 December, 1878, 06:30 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.18:30:00>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1878;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://reference.data.gov.uk/id/day/1840-10-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 October, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .

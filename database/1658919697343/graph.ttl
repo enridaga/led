@@ -1,0 +1,281 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Incidental_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Incidental music"@en .
+
+<http://data.open.ac.uk/led/clerk>
+        rdfs:label  "clerk"@en , "Clerk"@en .
+
+<https://archive.org/details/autobiographyjo02jonegoog/page/n11/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2022-07-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/autobiographyjo02jonegoog/page/n11/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1658919697343>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/a4b4c4ca25c41b5fd9f9930a0d8930de/excerpt/50eabf41062aaf79eefb77747570a627>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "90–91";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Britton/1658919538957>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1790-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-08-18T12:27:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2022-07-27T11:01:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/2f9171cc598d27251a5bb76ca00a1e19/1658919621028>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a4b4c4ca25c41b5fd9f9930a0d8930de/excerpt/50eabf41062aaf79eefb77747570a627> .
+
+<http://reference.data.gov.uk/id/day/1857-01-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 January, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/writer>
+        rdfs:label  "writer"@en , "Writer"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .
+
+<http://data.open.ac.uk/led/performance/2f9171cc598d27251a5bb76ca00a1e19/1658919621028>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'a vocal duet from 'Eccentricity, a Farce Rehearsed''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Duet> , <http://dbpedia.org/resource/Vocal_music> , <http://dbpedia.org/resource/Incidental_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Britton/1658919538957>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/a+vocal+duet+from+'Eccentricity,+a+Farce+Rehearsed'/1658919620997> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/John+Britton/1658919273053>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Britton"@en .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/topographer>
+        rdfs:label  "topographer"@en .
+
+<http://data.open.ac.uk/led/source/a4b4c4ca25c41b5fd9f9930a0d8930de/excerpt/50eabf41062aaf79eefb77747570a627>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"line-height: 115%;\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">[My friend John Hughes] was in the habit of attending, and occasionally performing in, [a] private theatre [&hellip;]<span style=\"mso-spacerun: yes;\">&nbsp; </span>Here he personated three or four different dramatic characters; and also wrote addresses, and a farce of two acts [which] was performed, according to play-bill language, &ldquo;with unbounded and unmingled applause.&rdquo; The title was, &ldquo;Eccentricity, a Farce Rehearsed;&rdquo; and it contained much wit and broad humour. Amongst the scenes was one in which two characters were seated on the floor of the stage as tailors, making a coat and a waistcoat, and a short dialogue and a duet ensued; in the midst of which the leader of the band, from the orchestra, interrupted them, by saying, they must go home, practice their parts, and have lessons in singing, before they can dare to appear before a critical audience. They insist that the leader's fiddle is a mere fid., and out of tune; that he is ignorant of music, and that they are perfect in their parts, as well as in the tune and time of the duet; and, moreover, that they can produce, by manner, action, and expression, effects of which music is incapable; adding, that they have no bowels for cats&rsquo;-guts, nor sympathy with fiddle-sticks. Here a person, from among the audience, starts up and interposes; the prompter sallies from the side wing, a warm altercation ensues, and ultimately a watchman, with rattle, blunderbuss, and lantern, enters to arrest the whole party for a riot; and here the curtain falls.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Auto-Biography of John Britton, F.S.A., Honorary Member of Numerous English and Foreign Societies' pp. 90–91 (249 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Auto-Biography+of+John+Britton,+F.S.A.,+Honorary+Member+of+Numerous+English+and+Foreign+Societies/1658919273026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "90–91" .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/apprentice+to+a+wine+merchant>
+        rdfs:label  "apprentice to a wine merchant"@en .
+
+<http://data.open.ac.uk/led/farmworker>
+        rdfs:label  "farmworker"@en .
+
+<http://reference.data.gov.uk/id/day/1771-07-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 July, 1771"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/led/source/The+Auto-Biography+of+John+Britton,+F.S.A.,+Honorary+Member+of+Numerous+English+and+Foreign+Societies/1658919273026>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Auto-Biography of John Britton, F.S.A., Honorary Member of Numerous English and Foreign Societies"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/autobiographyjo02jonegoog/page/n11/mode/2up>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1850-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/The+Britton+Testimonial/1658919273078>;
+        <http://purl.org/dc/terms/title>
+                "The Auto-Biography of John Britton, F.S.A., Honorary Member of Numerous English and Foreign Societies";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/John+Britton/1658919273053> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/theatrical+performer>
+        rdfs:label  "theatrical performer"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://dbpedia.org/resource/Chippenham>
+        rdfs:label  "Chippenham"@en .
+
+<http://reference.data.gov.uk/id/year/1850>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1850"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Duet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Duet"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<http://data.open.ac.uk/led/cellarman>
+        rdfs:label  "cellarman"@en .
+
+<http://data.open.ac.uk/time/edtf/1850-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1850"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1850;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1850>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/music/a+vocal+duet+from+'Eccentricity,+a+Farce+Rehearsed'/1658919620997>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "a vocal duet from 'Eccentricity, a Farce Rehearsed'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/John+Thomas+Hughes/1658919621012>;
+        <http://purl.org/dc/terms/title>
+                "a vocal duet from 'Eccentricity, a Farce Rehearsed'";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/John+Thomas+Hughes/1658919621012> .
+
+<http://data.open.ac.uk/led/agent/John+Britton/1658919538957>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Britton"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/writer> , <http://data.open.ac.uk/led/antiquary> , <http://data.open.ac.uk/led/clerk> , <http://data.open.ac.uk/led/apprentice+to+a+wine+merchant> , <http://data.open.ac.uk/led/cellarman> , <http://data.open.ac.uk/led/farmworker> , <http://data.open.ac.uk/led/theatrical+performer> , <http://data.open.ac.uk/led/topographer>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1771-07-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chippenham>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1857-01-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britton";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/agent/John+Thomas+Hughes/1658919621012>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "John Thomas Hughes"@en .
+
+<http://data.open.ac.uk/led/antiquary>
+        rdfs:label  "Antiquary"@en , "antiquary"@en .
+
+<http://data.open.ac.uk/led/organization/The+Britton+Testimonial/1658919273078>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "The Britton Testimonial"@en .
+
+<http://data.open.ac.uk/time/edtf/1790-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1790"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1790;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .

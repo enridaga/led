@@ -1,0 +1,359 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Gioachino_Rossini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Rossini"@en , "Rossini" , "Gioachino Rossini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-02-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Pesaro>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1868-11-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Passy>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rossini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gioachino" .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Overture+to+'Rosamunde'/1426197330764/1426197330777>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Overture to 'Rosamunde''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wimbledon,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Overture+to+'Rosamunde'/1426197330764>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wimbledon+Symphony+Orchestra/1426197330781> , <http://data.open.ac.uk/led/agent/Theodore+Otcharkoff/1426197330785> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/agent/Wimbledon+Symphony+Orchestra/1426197330781>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wimbledon Symphony Orchestra"@en .
+
+<http://data.open.ac.uk/led/music/'Valse+des+fleurs'+from+'The+Nutcracker'+op.+71/1426197406482>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Valse des fleurs' from 'The Nutcracker' op. 71"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>;
+        <http://purl.org/dc/terms/title>
+                "'Valse des fleurs' from 'The Nutcracker' op. 71";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky> .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1400256519408>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "William Tell Overture"@en , "Overture to 'William Tell'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/dc/terms/title>
+                "Overture to 'William Tell'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gioachino_Rossini> .
+
+<http://dbpedia.org/resource/Franz_Schubert>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Schubert"@en , "Schubert" , "Franz Schubert" , "Franz Schubert"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828> .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/St._Petersburg,_Florida>
+        rdfs:label  "St. Petersburg"@en .
+
+<http://data.open.ac.uk/led/clarinettist+music+librarian,+writer>
+        rdfs:label  "clarinettist music librarian, writer"@en .
+
+<http://dbpedia.org/resource/Passy>
+        rdfs:label  "Passy"@en .
+
+<http://dbpedia.org/resource/F&W_Media_International>
+        rdfs:label  "F&W Media International"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1426197253275/1426197253288>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Overture to 'William Tell''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wimbledon,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1400256519408>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wimbledon+Symphony+Orchestra/1426197330781> , <http://data.open.ac.uk/led/agent/Theodore+Otcharkoff/1426197330785> , <http://data.open.ac.uk/led/agent/Alvar+Liddell/1426197253298> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.88>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  88 .
+
+<http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Richard Temple Savage"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/music+librarian> , <http://data.open.ac.uk/led/clarinettist+music+librarian,+writer> , <http://dbpedia.org/resource/Clarinetist> , <http://dbpedia.org/resource/Writer>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1909-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1996-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Savage";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard Temple" .
+
+<http://dbpedia.org/resource/Russia>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Russia"@en .
+
+<http://data.open.ac.uk/led/lexp/1426196833147>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The writer does not specify which of the two 'Rosamunde' overtures was performed."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "We were not very good and never could manage more than one piece at a concert: \"Rosamunde\" overture or the \"Valse des Fleurs\" from \"Casse-Noisette\". I seem to remember the great BBC announcer, Alvar Liddell who was also a pupil there [at King's College Wimbledon], playing the cello solo in \"William Tell\" overture - perhaps our only claim to fame."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://bnb.data.bl.uk/id/resource/008090550>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "13";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wimbledon,_London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-12-20T15:11:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-03-12T21:47:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Overture+to+'William+Tell'/1426197253275/1426197253288> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Overture+to+'Rosamunde'/1426197330764/1426197330777> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Valse+des+fleurs'+from+'The+Nutcracker'+op.+71/1426197406482/1426197406494> .
+
+<http://bnb.data.bl.uk/id/place/NewtonAbbot>
+        rdfs:label  "Newton Abbot"@en .
+
+<http://data.open.ac.uk/led/agent/Theodore+Otcharkoff/1426197330785>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Theodore Otcharkoff"@en .
+
+<http://data.open.ac.uk/time/edtf/1988-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1988"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1988;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1988>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://reference.data.gov.uk/id/day/1792-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Valse+des+fleurs'+from+'The+Nutcracker'+op.+71/1426197406482/1426197406494>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Valse des fleurs' from 'The Nutcracker' op. 71'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wimbledon,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Valse+des+fleurs'+from+'The+Nutcracker'+op.+71/1426197406482>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wimbledon+Symphony+Orchestra/1426197330781> , <http://data.open.ac.uk/led/agent/Theodore+Otcharkoff/1426197330785> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Votkinsk>
+        rdfs:label  "Votkinsk"@en .
+
+<http://data.open.ac.uk/time/edtf/1909-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1909"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1909;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1909>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/id/year/1909>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1909"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Wimbledon,_London>
+        rdfs:label  "Wimbledon, London"@en .
+
+<http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Piotr Ilyich Tchaikovsky"@en , "Peter Ilich Tchaikovsky"@en , "Pyotr Tchaikovsky"@en , "Pyotr Ilyich Tchaikovsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Votkinsk>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/St._Petersburg,_Florida>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russia> , <http://dbpedia.org/resource/Russian_Empire>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/TchaikovskyPeterIlich1840-1893>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tchaikovsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Piotr Ilyich" .
+
+<http://reference.data.gov.uk/id/day/1868-11-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 November, 1868"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1868;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://reference.data.gov.uk/id/year/1988>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Alvar+Liddell/1426197253298>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Alvar Liddell"@en .
+
+<http://bnb.data.bl.uk/id/resource/008090550>
+        rdf:type                    <http://purl.org/ontology/bibo/Document>;
+        rdfs:label                  "A voice from the Pit: Reminiscences of an Orchestral Musician"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1988-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/F&W_Media_International>;
+        <http://purl.org/dc/terms/title>
+                "A voice from the Pit: Reminiscences of an Orchestral Musician";
+        <http://purl.org/ontology/bibo/isbn>
+                "0715391208"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/NewtonAbbot>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/SavageRichardTemple1909-1996> .
+
+<http://data.open.ac.uk/led/music+librarian>
+        rdfs:label  "music librarian"@en .
+
+<http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Franz Schubert"@en .
+
+<http://dbpedia.org/resource/Pesaro>
+        rdfs:label  "Pesaro"@en .
+
+<http://data.open.ac.uk/led/music/Overture+to+'Rosamunde'/1426197330764>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Overture to 'Rosamunde'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Schubert>;
+        <http://purl.org/dc/terms/title>
+                "Overture to 'Rosamunde'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Schubert> .

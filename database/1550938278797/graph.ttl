@@ -1,0 +1,206 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/place/0fe5c674e2e641c44c3537e37ec2a181>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England, St Giles"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England, St Giles"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Fiddle>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fiddle"@en .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1771-10-02T20:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 October, 1771, 08:00 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.20:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.21:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "21:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/agent/Catherine+Delaney/1550938146066>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Catherine Delaney"@en;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Delaney";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Catherine" .
+
+<http://data.open.ac.uk/led/agent/John+Ferquharson/1550937954277>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "John Ferquharson"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/victualler>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ferquharson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/agent/Mrs+Freel/1550938174853>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Mrs Freel"@en;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Freel";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+14+February+2019),+October+1771,+trial+of+John+Freel+Rose+Keefe+Michael+Murray+Mary+Freel+(t17711023-13)/1550937902789>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 14 February 2019), October 1771, trial of John Freel Rose Keefe Michael Murray Mary Freel (t17711023-13)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 14 February 2019), October 1771, trial of John Freel Rose Keefe Michael Murray Mary Freel (t17711023-13)";
+        <http://purl.org/ontology/bibo/number>
+                "t17711023-13";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/lexp/1550938278797>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/657637910878766a0450b1261cc60af8/excerpt/a4f2846afefc17ada23c052f2cd7841e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Ferquharson/1550937954277> , <http://data.open.ac.uk/led/agent/Catherine+Delaney/1550938146066> , <http://data.open.ac.uk/led/agent/Mrs+Freel/1550938174853>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0fe5c674e2e641c44c3537e37ec2a181>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1771-10-02T20:00:00/to/1771-10-02T21:00:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-01T15:45:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-23T16:11:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/645e340474c7c99d713a04756ccf8df3/1550938063752>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/657637910878766a0450b1261cc60af8/excerpt/a4f2846afefc17ada23c052f2cd7841e> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1771-10-02T21:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 October, 1771, 09:00 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.21:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/led/music/Fiddle+Music/1434549587719>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Fiddle Music"@en;
+        <http://purl.org/dc/terms/title>
+                "Fiddle Music" .
+
+<http://data.open.ac.uk/led/victualler>
+        rdfs:label  "victualler"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/performance/645e340474c7c99d713a04756ccf8df3/1550938063752>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Fiddle Music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Fiddle>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mrs+Freel/1550938174853> , <http://data.open.ac.uk/led/agent/Catherine+Delaney/1550938146066> , <http://data.open.ac.uk/led/agent/John+Ferquharson/1550937954277>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Fiddle+Music/1434549587719> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/time/interval/1771-10-02T20:00:00/to/1771-10-02T21:00:00>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 2 October, 1771, 08:00 PM and 2 October, 1771, 09:00 PM"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://reference.data.gov.uk/id/gregorian-instant/1771-10-02T20:00:00>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://reference.data.gov.uk/id/gregorian-instant/1771-10-02T21:00:00> .
+
+<http://data.open.ac.uk/led/source/657637910878766a0450b1261cc60af8/excerpt/a4f2846afefc17ada23c052f2cd7841e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[John Freel, Rose Keefe, Michael Murray and Mary Freele were indicted for theft at the home of one of the listeners, John Ferquharson. At trial on 23 October 1771 Mary Freel was acquitted, the others all found guilty and sentenced to death]&nbsp;&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">John Ferquharson: I am a victualler, and live in a yard&nbsp;near St. Giles's. Mary Freel, Michael Murray and Mary Delaney came into my house on the 2d of October, between eight and nine at night, along with two fiddles; Murray pretended to be very drunk; they came with the fiddle playing down the court where I live. They danced in the house, and rapped all their hands on the table together to make a noise; they called for liquor to the amount of two shillings and three pence as fast as I could serve them. Rose Keefe came in a little after the music began[.]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[&hellip;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Catherine Delaney: [&hellip;] Mrs. Freel wanted to speak with me; I went to her; she asked me to go and drink with her at Ferquharson's, I went with her, I think the music was there before I came in; Keefe was there only part of the time; Mrs. Freel came down at last and bid them go home, upon which they all went away. I knew nothing at that time of what was doing above stairs.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 14 February 2019), October 1771, trial of John Freel Rose Keefe Michael Murray Mary Freel (t17711023-13)' (221 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+14+February+2019),+October+1771,+trial+of+John+Freel+Rose+Keefe+Michael+Murray+Mary+Freel+(t17711023-13)/1550937902789>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.20:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "20:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .

@@ -1,0 +1,205 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/179u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1790's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1790-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1799-uu-uu> .
+
+<http://data.open.ac.uk/led/source/935aea63ac7549d2cdc8b791b9502a5b/excerpt/7820e037709ffb5094ff1b7ebc678b93>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">Not less contemptible is the twin-degeneracy you mention in the public taste for music. Shakespeare and Handel no longer excite the transports of a London audience. But your sensibility is too poignant, and too natural, to sink, palsied, beneath the touch of that torpedo to real excellence, fashion.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Anna Seward to Mrs Gell, 29 June 1796' pp. 222 (48 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Anna+Seward+to+Mrs+Gell,+29+June+1796/1535794427673>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "222" .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/agent/Anna+Seward/1535744517624>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anna Seward"@en .
+
+<http://data.open.ac.uk/led/lexp/1535794549928>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/935aea63ac7549d2cdc8b791b9502a5b/excerpt/7820e037709ffb5094ff1b7ebc678b93>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "222";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/London+audiences/1535794449644>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/179u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-09-07T11:34:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-09-01T09:35:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1f2198fc97f19505332cb8dc0fa303e5/1535794499873>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/935aea63ac7549d2cdc8b791b9502a5b/excerpt/7820e037709ffb5094ff1b7ebc678b93> .
+
+<http://data.open.ac.uk/led/agent/London+audiences/1535794449644>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "London audiences"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "audiences";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "London" .
+
+<http://data.open.ac.uk/time/edtf/1811-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1811"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1811;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1811>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/music/Music+by+Handel/1535794499866>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Music by Handel"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>;
+        <http://purl.org/dc/terms/title>
+                "Music by Handel";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759> .
+
+<http://data.open.ac.uk/led/organization/Archibald+Constable+and+Company/1535642018229>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Archibald Constable and Company"@en .
+
+<http://dbpedia.org/resource/Archibald_Constable>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Archibald Constable"@en .
+
+<http://data.open.ac.uk/led/performance/1f2198fc97f19505332cb8dc0fa303e5/1535794499873>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Music by Handel'"@en;
+        led:has_environment  led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/London+audiences/1535794449644>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Music+by+Handel/1535794499866> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Anna+Seward+to+Mrs+Gell,+29+June+1796/1535794427673>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Anna Seward to Mrs Gell, 29 June 1796"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/letters+of+anna+seward:+written+between+the+years+1784+and+1807/vol/4>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://books.google.co.uk/books%253Fid%253D0UsJAAAAQAAJ%2526printsec%253Dfrontcover%2526source%253Dgbs_ge_summary_r%2526cad%253D0%2523v%253Donepage%2526q%2526f%253Dfalse>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Anna Seward to Mrs Gell, 29 June 1796";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Anna+Seward/1535744517624> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/source/letters+of+anna+seward:+written+between+the+years+1784+and+1807/vol/4>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Letters of Anna Seward: Written Between the Years 1784 and 1807"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1811-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Archibald+Constable+and+Company/1535642018229>;
+        <http://purl.org/dc/terms/title>
+                "Letters of Anna Seward: Written Between the Years 1784 and 1807";
+        <http://purl.org/ontology/bibo/editor>
+                <http://dbpedia.org/resource/Archibald_Constable>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Edinburgh>;
+        <http://purl.org/ontology/bibo/volume>
+                "4" .
+
+<https://books.google.co.uk/books%253Fid%253D0UsJAAAAQAAJ%2526printsec%253Dfrontcover%2526source%253Dgbs_ge_summary_r%2526cad%253D0%2523v%253Donepage%2526q%2526f%253Dfalse>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Google Books"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://books.google.co.uk/books%253Fid%253D0UsJAAAAQAAJ%2526printsec%253Dfrontcover%2526source%253Dgbs_ge_summary_r%2526cad%253D0%2523v%253Donepage%2526q%2526f%253Dfalse"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://data.open.ac.uk/time/edtf/1799-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1799"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1799;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Edinburgh>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Edinburgh"@en .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/time/edtf/1790-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1790"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1790;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .

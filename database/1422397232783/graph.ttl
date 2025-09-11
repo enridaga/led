@@ -1,0 +1,314 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Gerrards_Cross>
+        rdfs:label  "Gerrards Cross"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1986-02-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 February, 1986"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1986;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/time/edtf/1870-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Giuseppe_Verdi>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_> , <http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Il+Trovatore/1422636130796/1422636130810>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Il Trovatore'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Il+Trovatore/1422636130796> .
+
+<http://dbpedia.org/resource/Dover_Publications>
+        rdfs:label  "Dover Publications"@en .
+
+<http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Amy Fay"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1844-05-21>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1928-02-28>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Fay";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Amy" .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://data.open.ac.uk/led/lexp/1422397232783>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I have been to the opera twice – once to “Fantaska,” a grand ballet, and the second time to “Trovatore”…The scenery and dresses are superb, and I never imagined anything to equal to them. The orchestra too plays divinely.\r\n     The singing is the only thing which could be improved. The Lucca, who is the grand attraction, is a pretty little creature, but I did not find her voice remarkable. The Berlinese worship her, and whenever Lucca sings there is s great rush for the tickets. Wachtel and Niemann are the star singers among the men. Niemann I have not heard, but Wachtel we would not rave over in America. I am in doubt whether indeed the Germans know what the best choral singing is.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Music-Study+in+Germany:+The+Classic+Memoir+of+the+Romantic+Era/1417364489064>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Meg+Barclay/claims>;
+        led:pages              "33-34";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1870-01-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-01-27T22:20:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Il+Trovatore/1422636130796/1422636130810> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Fantaska/1422636057308/1422636057321> .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/thing/Composer+pianist+and+university+lecturer>
+        rdfs:label  "Composer pianist and university lecturer"@en .
+
+<http://dbpedia.org/resource/Ballet_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ballet (music)"@en .
+
+<http://data.open.ac.uk/led/music/Il+Trovatore/1422636130796>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Il Trovatore"@en , "'Il Trovatore'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi>;
+        <http://purl.org/dc/terms/title>
+                "Il Trovatore";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Edmund_Rubbra> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://reference.data.gov.uk/id/day/1901-05-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 May, 1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1901;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/day/1928-02-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 February, 1928"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1928;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://dbpedia.org/resource/Northampton>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Northampton"@en .
+
+<http://data.open.ac.uk/led/music/Fantaska/1422636057308>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Fantaska"@en;
+        <http://purl.org/dc/terms/title>
+                "Fantaska" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Fantaska/1422636057308/1422636057321>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Fantaska'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Ballet_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Fantaska/1422636057308> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.44>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  44 .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://dbpedia.org/resource/Edmund_Rubbra>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Edmund Rubbra"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist> , <http://data.open.ac.uk/led/composer> , <http://data.open.ac.uk/led/lecturer> , <http://data.open.ac.uk/led/thing/Composer+pianist+and+university+lecturer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1901-05-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Northampton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1986-02-14>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Gerrards_Cross>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rubbra";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edmund" .
+
+<http://data.open.ac.uk/time/edtf/2011-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2011"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2011;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2011>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://reference.data.gov.uk/id/year/2011>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .
+
+<http://data.open.ac.uk/led/source/Music-Study+in+Germany:+The+Classic+Memoir+of+the+Romantic+Era/1417364489064>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Originally published in Chicago 1880"@en;
+        rdfs:label                  "Music-Study in Germany: The Classic Memoir of the Romantic Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2011-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Dover_Publications>;
+        <http://purl.org/dc/terms/title>
+                "Music-Study in Germany: The Classic Memoir of the Romantic Era";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Amy+Fay/1413213259053> .
+
+<http://reference.data.gov.uk/id/day/1844-05-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 May, 1844"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1844;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.44> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .

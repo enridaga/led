@@ -1,0 +1,151 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Islington>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Islington"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Choir+of+King's+College/1635846185553>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Choir of King's College"@en .
+
+<http://data.open.ac.uk/led/headteacher>
+        rdfs:label  "Headteacher"@en , "headteacher"@en .
+
+<http://data.open.ac.uk/led/performance/96e6b414085c3f849c2e9f288ff27f40/1635846185539>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unidentified choral music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Islington>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/anonymous+female/1597832115255>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/performance+by+the+Choir+of+King's+College/1635846185511>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Choir+of+King's+College/1635846185553> .
+
+<http://musicbrainz.org/artist/09be51dd-a2ff-4f62-8e66-d5f64b3b75b6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jonathan Dove"@en .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/led/place/a7fc3f857af60f8d0eff9aed23bff07c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Wesley's Chapel, Islington, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Wesley's Chapel, Islington, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Islington> , <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/music/performance+by+the+Choir+of+King's+College/1635846185511>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unidentified choral music"@en;
+        <http://purl.org/dc/terms/title>
+                "unidentified choral music" .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+2002-2003+Education+and+Community+Project/1635845923172>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. It devises education projects with schools and community groups that reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists, and the Spitalfields Festival, with East End of London children, adults and elderly people."@en;
+        rdfs:label                  "Spitalfields Festival 2002-2003 Education and Community Project"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival 2002-2003 Education and Community Project";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Phillip+Flood/1635845923206> , <http://musicbrainz.org/artist/09be51dd-a2ff-4f62-8e66-d5f64b3b75b6#_> .
+
+<http://data.open.ac.uk/led/source/edfcb65787d4336b604c75e938a098fe/excerpt/216c1f4c702aacda8512921e396c01d7>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">I&rsquo;ve just returned from the concert performed by the Choir of King&rsquo;s College. I just had to say how stunning both the programme and performances were. What a wonderful way to begin the festival and in such a lovely setting. You must be extremely pleased, and rightly so&mdash;congratulations to all involved.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival 2002-2003 Education and Community Project' pp. 3 (54 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+2002-2003+Education+and+Community+Project/1635845923172>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "3" .
+
+<http://data.open.ac.uk/led/agent/anonymous+female/1597832115255>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "anonymous female"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/headteacher>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "female";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "anonymous" .
+
+<http://data.open.ac.uk/time/edtf/2003-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 2003"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/lexp/1635846293483>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "The listening experience relates to the opening concert of the June Festival. Christ Church, the home of the Spitalfields Festival, was closed for renovations 2002-2003. Wesley’s Chapel, Wilton’s Music Hall and Shoreditch Church were among the venues the Festival used during what Artistic Director and composer Jonathan Dove described as ‘going on the move’ and ‘our adventurous trail around the East End’ (p. 2). "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/edfcb65787d4336b604c75e938a098fe/excerpt/216c1f4c702aacda8512921e396c01d7>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "3";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/anonymous+female/1597832115255>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/a7fc3f857af60f8d0eff9aed23bff07c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/2003-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-13T12:10:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-02T09:44:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/96e6b414085c3f849c2e9f288ff27f40/1635846185539>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/edfcb65787d4336b604c75e938a098fe/excerpt/216c1f4c702aacda8512921e396c01d7> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Phillip+Flood/1635845923206>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Phillip Flood"@en .

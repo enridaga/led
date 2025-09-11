@@ -1,0 +1,292 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Daldy Isbister & Co."@en .
+
+<http://dbpedia.org/resource/Rome>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rome"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/Lutheran+hymns/1373900808864>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Lutheran hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "Lutheran hymns" .
+
+<http://data.open.ac.uk/time/edtf/1819-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1819"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1819;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+28+June+1819/1386075733454>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Baroness Bunsen to her mother Mrs Waddington, 28 June 1819"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Baroness Bunsen to her mother Mrs Waddington, 28 June 1819";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Frances_Bunsen> .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://data.open.ac.uk/led/thing/diplomat>
+        rdfs:label  "diplomat"@en .
+
+<http://data.open.ac.uk/led/thing/historian>
+        rdfs:label  "historian"@en .
+
+<http://reference.data.gov.uk/id/year/1879>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FLutheran%2Bhymns%2F1373900808864/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373900808880>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Lutheran hymns'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Frances_Bunsen> , <http://dbpedia.org/resource/Barthold_Georg_Niebuhr>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Lutheran+hymns/1373900808864> .
+
+<http://dbpedia.org/resource/Frances_Bunsen>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Frances von Bunsen"@en , "Frances Bunsen"@en , "Frances Baroness Bunsen"@en , "Baroness von Bunsen"@en , "Frances, Baroness Bunsen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Painting>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-03-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Berkshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1876-04-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Karlsruhe>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bunsen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances, Baroness";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baroness von Bunsen"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://reference.data.gov.uk/id/day/1791-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Augustus J. C. Hare"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Barthold_Georg_Niebuhr>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Barthold Georg Niebuhr"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/historian> , <http://data.open.ac.uk/led/thing/diplomat>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1776-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1831-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Niebuhr";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Barthold Georg" .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Painting>
+        rdfs:label  "Painting"@en .
+
+<http://reference.data.gov.uk/id/day/1876-04-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 April, 1876"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1876;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Life and Letters of Frances Baroness Bunsen, vol 1"@en , "The Life and Letters of Frances Baroness Bunsen"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1879-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>;
+        <http://purl.org/dc/terms/title>
+                "The Life and Letters of Frances Baroness Bunsen";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" , "1" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Karlsruhe>
+        rdfs:label  "Karlsruhe"@en .
+
+<http://reference.data.gov.uk/id/year/1831>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1831"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Berkshire>
+        rdfs:label  "Berkshire"@en .
+
+<http://data.open.ac.uk/time/edtf/1831-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1831"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1831;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1831>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.31> .
+
+<http://data.open.ac.uk/time/edtf/1776-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1776"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1776;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/time/edtf/1879-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1879>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/led/lexp/1373900953>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "28 June, 1819. - In the course of the last week, a Lutheran clergyman arrived, as chaplain to the Prussian Embassy, in consequence of Mr. Niebuhr's representations to the King of Prussia of the great need in which the numerous colony of German Protestants at Rome stood of having a person among them whose office should be to keep alive a sense of religion, and counteract the influence of Catholic priests, by which so many conversions have been effected: and service was for the first time performed yesterday, at Mr. Niebuhr's, to a congregation of seventy persons.... The service consisted of prayers and hymns, and two chapters from the New Testament.... The prayers were those of Luther.... The hymns were all belonging to the period of the Reformation, both words and music, and one was composed by Luther himself."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+28+June+1819/1386075733454>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "142-143";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Frances_Bunsen> , <http://dbpedia.org/resource/Barthold_Georg_Niebuhr>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1819-06-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-03T13:06:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FLutheran%2Bhymns%2F1373900808864/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373900808880> .

@@ -1,0 +1,82 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/76317898ebf8d93aefc23e4da19a3480>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In 1983 I had the priviledge of watching Frank Sinatra in concert, today I am back in London. Stage name frank Sinatra Jnr. Website frankisback.com 0191 4888228. Hopefully when the festival Hall reopens I will have my own orchestra and doing it my way!</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Southbank Centre Archive' (42 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://bnb.data.bl.uk/id/organization/SouthbankCentre>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Southbank Centre"@en .
+
+<http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Manuscript>;
+        rdfs:comment       "Memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "From an oral archive of memories of long-standing visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room, gathered during 2006-07"@en , "The archive contains recorded interviews made with visitors to the Royal Festival Hall and Queen Elizabeth Halls, London SE1 8XX made during 2006/07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room during 2006-07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en , " "@en , "Additional Information on Source sub-form: Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en;
+        rdfs:label         "Southbank Centre Archive "@en , "Southbank Centre Archive"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        led:in_collection  "Southbank Centre Archive";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Southbank Centre Archive, http://www.southbankcentre.co.uk/about-us/history-and-archive/southbank-centre-archive"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Southbank Centre Archive";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/SouthbankCentre>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/lexp/1444652891640>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/76317898ebf8d93aefc23e4da19a3480>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Liz+Ford/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1983-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-12-09T16:11:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-10-12T12:28:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/72685ff15ca66e72fafef5d6e5811e03/1444652867426>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/76317898ebf8d93aefc23e4da19a3480> .
+
+<http://data.open.ac.uk/led/performance/72685ff15ca66e72fafef5d6e5811e03/1444652867426>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Frank Sinatra'"@en;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Frank+Sinatra/1444652867413>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Frank_Sinatra> .
+
+<http://dbpedia.org/resource/Frank_Sinatra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Frank Sinatra"@en .
+
+<http://data.open.ac.uk/led/music/Frank+Sinatra/1444652867413>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Frank Sinatra"@en;
+        <http://purl.org/dc/terms/title>
+                "Frank Sinatra" .
+
+<http://data.open.ac.uk/time/edtf/1983-uu-uu>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1983 .

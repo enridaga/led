@@ -1,0 +1,304 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/unspecified+violin+and+flute+music/1538666274447>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified violin and flute music"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified violin and flute music" .
+
+<http://data.open.ac.uk/led/place/d9738bd58ac9a7787db13e1d6b62ea4e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Sutton Court, Lower Stanton"@en;
+        <http://purl.org/dc/terms/description>
+                "Sutton Court, Lower Stanton"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West's+grandfather+Henry+King/1538666274563>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Harry Alfred West's grandfather Henry King"@en .
+
+<http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Harry Alfred West (b. 1880) sketches his early life in and near Bristol, England. His memoir details his love of playing and listening to the church organ. The unpublished memoir is held in the Burnett Archive of Working Class Autobiography, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "The Autobiography of Harry Alfred West"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Burnett Archive of Working Class Autobiography, University of Brunel Library Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By Permission of University of Brunel Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Autobiography of Harry Alfred West";
+        <http://purl.org/ontology/bibo/number>
+                "1.745";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107> .
+
+<http://data.open.ac.uk/led/performance/0ff6068854fbc3d5d2a0abaac097b016/1538666274517>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified violin and flute music'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Somerset>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Flute>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Sir+Henry+Strachey/1540812529216> , <http://data.open.ac.uk/led/agent/Sir+Henry+Strachey/1538665894396> , <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+violin+and+flute+music/1538666274447>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Harry+Alfred+West's+grandfather+Henry+King/1538666274563> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/managerial+roles>
+        rdfs:label  "managerial roles"@en .
+
+<http://dbpedia.org/resource/Flute>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Flute"@en .
+
+<http://data.open.ac.uk/led/porter>
+        rdfs:label  "Porter"@en , "porter"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/26cf3b99d4f9534159d3b6d5ec966add>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Sutton Court became the seat of the Strachey family in the 1670s; West probably refers to Sir Henry Strachey, 2<sup>nd</sup>Baronet, 1772 &ndash; 1858]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[My mother&rsquo;s father] Henry King, was by trade a sawyer. This involved at that time, the sawing up of trees into planks, over a sawpit [&hellip;] The work was illpaid&nbsp;&nbsp;[<em>sic</em>]<em>&nbsp;</em>but, somehow, he had obtained a better education than was usual to his class. This included music. He was a competent player of violin, flute and piccolo, and did occasional teaching. He played in an orchestra attached to the Parish Church, and sometimes sang in the choir. His voice was unusual&mdash;a male alto, or counter tenor. He made periodical visits to Sutton Court to play violin and flute privately to the owner, who was then Sir Henry Strachey. On these occasions Sir Henry sat on a couch and interposed a screen between the player and himself while the music was in progress. Later he would remove the screen and ask grandfather to sit beside him and converse. There these two men would talk&mdash;the cultured owner and the sawyer.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Autobiography of Harry Alfred West' pp. 7 (181 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "7" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1772-12-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 December, 1772"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1772;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Harry Alfred West"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/porter> , <http://data.open.ac.uk/led/managerial+roles>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1880-10-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "West";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Harry Alfred" .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harry Alfred West"@en .
+
+<http://data.open.ac.uk/led/lexp/1538666770786>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Solitary;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/26cf3b99d4f9534159d3b6d5ec966add>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "7";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Sir+Henry+Strachey/1540812529216>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d9738bd58ac9a7787db13e1d6b62ea4e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-29T11:31:30.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2018-10-29T11:48:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-04T15:26:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/0ff6068854fbc3d5d2a0abaac097b016/1538666274517>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/26cf3b99d4f9534159d3b6d5ec966add> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/agent/Sir+Henry+Strachey/1540812529216>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "2nd Baronet Strachey of Sutton Court"@en , "Sir Henry Strachey"@en;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1772-12-06>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1858-04-11>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Strachey";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sir Henry";
+        <http://xmlns.com/foaf/0.1/nick>
+                "2nd Baronet Strachey of Sutton Court"@en .
+
+<http://reference.data.gov.uk/id/day/1858-04-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 April, 1858"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1858;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://reference.data.gov.uk/id/day/1880-10-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 October, 1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://dbpedia.org/resource/Somerset>
+        rdfs:label  "Somerset"@en .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Sir+Henry+Strachey/1538665894396>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sir Henry Strachey"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Strachey";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sir Henry" .

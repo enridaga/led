@@ -1,0 +1,152 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://bnb.data.bl.uk/id/resource/013674909>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Ragged but right / Lynn Abbott"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2007-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>;
+        <http://purl.org/dc/terms/title>
+                "Ragged but right / Lynn Abbott";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SeroffDoug> , <http://bnb.data.bl.uk/id/person/AbbottLynn1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1578069017"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Jackson>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> , <http://purl.org/ontology/bibo/status/published> .
+
+<http://reference.data.gov.uk/id/year/1904>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1904"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/person/SeroffDoug>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Doug Seroff"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://musicbrainz.org/artist/0e578f5c-bdfc-43fa-bd9a-9d5b67ef353b#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Bert Williams"@en .
+
+<http://data.open.ac.uk/led/performance/96a24c499da23392111b6507de0278e2/1447093277411>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'I may be crazy, but I'm no fool'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Coon_song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Sylvester+Russell/1447092972491>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/I+may+be+crazy,+but+I'm+no+fool/1447093277397>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/0e578f5c-bdfc-43fa-bd9a-9d5b67ef353b#_> .
+
+<http://bnb.data.bl.uk/id/place/Jackson>
+        rdfs:label  "Jackson"@en .
+
+<http://data.open.ac.uk/time/edtf/2007-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2007"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2007> .
+
+<http://data.open.ac.uk/led/lexp/1447093306562>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Sylvester Russell on the response of the audience."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/8acc6d3261f30b222c0248de7d4d05a1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "62";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Sylvester+Russell/1447092972491>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/United_States>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1904-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-11-20T15:36:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-09T18:21:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/96a24c499da23392111b6507de0278e2/1447093277411>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/8acc6d3261f30b222c0248de7d4d05a1> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://bnb.data.bl.uk/id/person/AbbottLynn1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lynn Abbott"@en .
+
+<http://reference.data.gov.uk/id/year/2007>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Sylvester+Russell/1447092972491>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sylvester Russell"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Russell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sylvester" .
+
+<http://dbpedia.org/resource/Coon_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Coon song"@en .
+
+<http://data.open.ac.uk/time/edtf/1904-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1904"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1904;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1904>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/led/music/I+may+be+crazy,+but+I'm+no+fool/1447093277397>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "I may be crazy, but I'm no fool"@en;
+        <http://purl.org/dc/terms/title>
+                "I may be crazy, but I'm no fool" .
+
+<http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/8acc6d3261f30b222c0248de7d4d05a1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>His rendition of \"I May Be Crazy, but I'm No Fool\" made the house resound with screams ...</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Ragged but right / Lynn Abbott' pp. 62 (17 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013674909>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "62" .
+
+<http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .

@@ -1,0 +1,172 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://musicbrainz.org/artist/5fae9c18-a94f-424e-99e0-2b4cc7be991e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Warren \"Baby\" Dodds"@en , "Baby Dodds"@en .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Souvenir Press"@en .
+
+<http://dbpedia.org/resource/Chicago>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Chicago"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "First published in USA, 1955, by Holt, Rinehart & Winston, Inc."@en;
+        rdfs:label                  "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/historical>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>;
+        <http://purl.org/dc/terms/title>
+                "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It";
+        <http://purl.org/ontology/bibo/isbn>
+                "0285630903"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759> , <http://bnb.data.bl.uk/id/person/HentoffNat> .
+
+<http://musicbrainz.org/artist/66fc5e06-25be-4070-8812-aac282a347eb#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johnny Dodds"@en .
+
+<http://data.open.ac.uk/led/person/Tommy+Brookins/1433873088903>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Tommy Brookins"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Singing>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brookins";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Tommy" .
+
+<http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Jazz band music"@en;
+        <http://purl.org/dc/terms/title>
+                "Jazz band music" .
+
+<http://dbpedia.org/resource/Clarinet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Clarinet"@en .
+
+<http://data.open.ac.uk/led/lexp/1434554475323>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/2bd8b535b0dc28b04c5b3903e79e46e8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "99";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Tommy+Brookins/1433873088903>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-08-24T13:29:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-17T15:21:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863/1434554437360>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/2bd8b535b0dc28b04c5b3903e79e46e8> .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "King Oliver and His Creole Jazz Band"@en .
+
+<http://data.open.ac.uk/led/source/cf3667706c4371bbd999d5afe34dfed3/excerpt/2bd8b535b0dc28b04c5b3903e79e46e8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>One of the things that struck me most at the Royal Gardens was the smile of Baby Dodds. When he played drums he had the most patched-up material for a drum set that I'd ever seen in my life, but he had a rhythm entirely his own, and I feel that as a drummer he has more personality than any other specialist on any other instrument. He was a man of natural playfulness, possessed by rhythm. Just to see him smile and to hear his beat would make you happy.</p>\r\n<p>As for Johnny Dodds, his brother, I sincerely believe that he was the greatest clarinetist that ever lived and I've never heard any clarinetist play like he did in the lower register of his instrument.</p>\r\n<p>There was no other orchestra during that time the could play like Joe Oliver and his Creole Jazz Band.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It' pp. 99 (144 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "99" .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863/1434554437360>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Jazz band music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum_kit> , <http://dbpedia.org/resource/Clarinet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Tommy+Brookins/1433873088903>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Jazz+band+music/1434553862863>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/5fae9c18-a94f-424e-99e0-2b4cc7be991e#_> , <http://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0#_> , <http://musicbrainz.org/artist/66fc5e06-25be-4070-8812-aac282a347eb#_> .
+
+<http://bnb.data.bl.uk/id/person/HentoffNat>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Hentoff"@en .
+
+<http://dbpedia.org/resource/Drum_kit>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum kit"@en .
+
+<http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Shapiro"@en .

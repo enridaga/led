@@ -1,0 +1,221 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/9d016314e0c7eee032755d1c0f0f0fb6/1628426041807>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'An Irish melody'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Meudon>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/traditional+song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/An+Irish+melody/1628426041768> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .
+
+<http://reference.data.gov.uk/id/year/1853>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1853"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Lord+John+Russell/1594975444772>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lord John Russell"@en .
+
+<https://archive.org/details/memoirsjournala17moorgoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-05-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/memoirsjournala17moorgoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1853-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1853"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1853;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1853>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://dbpedia.org/resource/Dance_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Dance music"@en .
+
+<http://data.open.ac.uk/led/lexp/1628426332696>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c8d8eb422153898367847e1166c6469c/excerpt/d1b9e5c6f93c402b5faaa97b2bfed3ae>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "245";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/77e5affc9102122febc27d95405c412e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1821-06-25TMm:mm:mm>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-05-17T11:19:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-08-08T12:38:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/9d016314e0c7eee032755d1c0f0f0fb6/1628426041807> , <http://data.open.ac.uk/led/performance/e7b763aef5287cef1c5358eb077a1460/1628426271865>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c8d8eb422153898367847e1166c6469c/excerpt/d1b9e5c6f93c402b5faaa97b2bfed3ae> .
+
+<http://bnb.data.bl.uk/id/organization/LongmanBrownGreenandLongmans>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Longman, Brown, Green, and Longmans"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://data.open.ac.uk/led/agent/arr.+Thomas+Moore/1628426041783>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "arr. Thomas Moore"@en .
+
+<http://data.open.ac.uk/led/place/77e5affc9102122febc27d95405c412e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "The park of Bellevue Château, Meudon, Paris and Sèvres, nr. Paris"@en;
+        <http://purl.org/dc/terms/description>
+                "The park of Bellevue Château, Meudon, Paris and Sèvres, nr. Paris"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Meudon> , <http://dbpedia.org/resource/Paris> .
+
+<http://dbpedia.org/resource/Sèvres>
+        rdfs:label  "Sèvres"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/music/Piano+music+to+accompany+dancing/1529673130964>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano music to accompany dancing"@en;
+        <http://purl.org/dc/terms/title>
+                "Piano music to accompany dancing" .
+
+<http://data.open.ac.uk/led/source/memoirs,+journal+and+correspondence+of+thomas+moore/vol/3>
+        rdf:type                    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Memoirs, Journal and Correspondence of Thomas Moore"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/memoirsjournala17moorgoog>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1853-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/LongmanBrownGreenandLongmans>;
+        <http://purl.org/dc/terms/title>
+                "Memoirs, Journal and Correspondence of Thomas Moore";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Lord+John+Russell/1594975444772>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "3";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Thomas+Moore/1626427119347> .
+
+<http://data.open.ac.uk/led/source/c8d8eb422153898367847e1166c6469c/excerpt/d1b9e5c6f93c402b5faaa97b2bfed3ae>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">A large <em>diner champ</em></span><em><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">&ecirc;</span><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">tre</span></em><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\"> given by the Villamils, in the park of Bellevue: the Storys, Kennys [<em>sic</em>], Williams, Irving, Poole (author of &ldquo;Hamlet Travesti&rdquo;), &amp;c. &amp;c.; pleasant enough. After Williams and I had sung one of the &ldquo;Irish Melodies,&rdquo; somebody said, &ldquo;Everything that&rsquo;s national is delightful.&rdquo; &ldquo;Except the National Debt, ma&rsquo;am,&rdquo; says Poole. Took tea at Villamil&rsquo;s, and danced to the pianoforte.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Memoirs, Journal and Correspondence of Thomas Moore' pp. 245 (66 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/memoirs,+journal+and+correspondence+of+thomas+moore/vol/3>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "245" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Thomas+Moore/1626427119347>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Moore"@en .
+
+<http://data.open.ac.uk/led/performance/e7b763aef5287cef1c5358eb077a1460/1628426271865>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano music to accompany dancing'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Sèvres>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+music+to+accompany+dancing/1529673130964> .
+
+<http://data.open.ac.uk/led/music/An+Irish+melody/1628426041768>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "An Irish melody"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/arr.+Thomas+Moore/1628426041783>;
+        <http://purl.org/dc/terms/title>
+                "An Irish melody";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/arr.+Thomas+Moore/1628426041783> .
+
+<http://data.open.ac.uk/time/edtf/1821-06-25TMm:mm:mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 June, 1821, in the afternoon"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.21> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Meudon>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Meudon"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/led/musicgenre/traditional+song>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "traditional song"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

@@ -1,0 +1,434 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://dbpedia.org/resource/Gioachino_Rossini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Rossini"@en , "Rossini" , "Gioachino Rossini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-02-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Pesaro>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1868-11-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Passy>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rossini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gioachino" .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Mary_Delany>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Female , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Mrs Delany"@en , "Mary Granville"@en , "Mary Delany"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking> , <http://dbpedia.org/resource/Artist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1700-05-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Wiltshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1788-04-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Granville";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mary";
+        <http://xmlns.com/foaf/0.1/name>
+                "Mary Delany";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mary Delany; Mary Granville"@en , "Mrs Delany"@en;
+        <http://xmlns.com/foaf/0.1/title>
+                "Mrs."@en .
+
+<http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mary Delany"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+Mrs+Delany+to+Mrs+Dewes,+Delville+26+January+1752/1439573092353>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter from Mrs Delany to Mrs Dewes, Delville 26 January 1752"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+autobiography+and+correspondence+of+mary+granville/vol/III>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Mrs Delany to Mrs Dewes, Delville 26 January 1752";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://dbpedia.org/resource/Richard_Bentley_and_Son>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Richard Bentley and Son"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/musicologist>
+        rdfs:label  "Musicologist"@en , "musicologist"@en .
+
+<http://dbpedia.org/resource/Artist>
+        rdfs:label  "Artist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://data.open.ac.uk/led/agent/Dubourg/1439573333554>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Dubourg"@en .
+
+<http://data.open.ac.uk/led/source/the+autobiography+and+correspondence+of+mary+granville/vol/III>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Autobiography and correspondence of Mary Granville, Mrs Delany with the interesting reminiscences of King George the Third and Queen Charlotte"@en , "The autobiography and Correspondence of Mary Granville, Mrs Delaney; with interesting reminiscences of King George III and Queen Charlotte "@en , "The Autobiography and correspondence of Mary Granville"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Richard_Bentley_and_Son>;
+        <http://purl.org/dc/terms/title>
+                "The Autobiography and correspondence of Mary Granville";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/person/Lady+Augusta+Hall/1375780943371>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/volume>
+                "Series,1 Vol. III" .
+
+<http://data.open.ac.uk/led/lexp/1439573342618>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/ace02cdcca550743f102e97d196fa288/excerpt/bd2996215844d037fa0dc5502eb9e708>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Liz+Ford/temp>;
+        led:pages            "81";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Mrs+Donnellan/1439392702746> , <http://dbpedia.org/resource/Mary_Delany> , <http://data.open.ac.uk/led/agent/Duke+of+Dorset/1439573193479> , <http://data.open.ac.uk/led/agent/Mrs+Clayton/1439573200271>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1752-01-22>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-14T11:19:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-08-14T17:29:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/fcdfc5d91a19aa22fd01509309aa71ba/1439573333542>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/ace02cdcca550743f102e97d196fa288/excerpt/bd2996215844d037fa0dc5502eb9e708> .
+
+<http://dbpedia.org/resource/Passy>
+        rdfs:label  "Passy"@en .
+
+<http://data.open.ac.uk/led/source/ace02cdcca550743f102e97d196fa288/excerpt/bd2996215844d037fa0dc5502eb9e708>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Last Saturday we were invited to the Primate's to hear music. &nbsp;D. D., Donnellan, and I went a little before 7; it was the Duke of Dorset's birthday, and the entertainment given in honour of it....Our music was chiefly Italian - the&nbsp;<em>Stabat Mater</em>, sung by Guadagni (whom you heard sing in Mr. Handel's oratorios) and Mrs. Oldmixon; Dubourg the principal violin: it was well performed and some of the duet parts are very pretty. &nbsp;They had more music after we left them, but we staid till&nbsp;<em>nearly</em> ten, which was a late hour for us.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Mrs Delany to Mrs Dewes, Delville 26 January 1752' pp. 81 (96 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Mrs+Delany+to+Mrs+Dewes,+Delville+26+January+1752/1439573092353>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "81" .
+
+<http://data.open.ac.uk/led/person/Lady+Augusta+Hall/1375780943371>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Augusta Hall"@en , "Lady Llanover"@en , "The Right Honourable Lady Llanover"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/editor> , <http://data.open.ac.uk/led/thing/hostess> , <http://data.open.ac.uk/led/thing/illustrator> , <http://data.open.ac.uk/led/thing/patron+of+Welsh+culture>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1802-03-21>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Llanover>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1896-01-17>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Llanover>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hall";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Augusta";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Lady Llanover"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.88>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  88 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/agent/Mrs+Donnellan/1439392702746>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Donnellan"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Donnellan";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://dbpedia.org/resource/Wiltshire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Wiltshire"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://reference.data.gov.uk/id/day/1792-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/led/agent/Mrs.+Oldmixon/1439573333550>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mrs. Oldmixon"@en .
+
+<http://dbpedia.org/resource/Maiden_Newton>
+        rdfs:label  "Maiden Newton"@en .
+
+<http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking>
+        rdfs:label  "Botanical decoupage artist letter-writer, blue-stocking"@en .
+
+<http://reference.data.gov.uk/id/day/1788-04-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 April, 1788"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1788;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://reference.data.gov.uk/id/day/1700-05-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 May, 1700"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1700;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://reference.data.gov.uk/id/day/1893-12-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 December, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://reference.data.gov.uk/id/day/1868-11-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 November, 1868"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1868;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://data.open.ac.uk/led/agent/Mrs+Clayton/1439573200271>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Clayton"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Clayton";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Stabat Mater"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Pergolesi/1386341643147> , <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/dc/terms/title>
+                "Stabat Mater";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Pergolesi/1386341643147> , <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_> .
+
+<http://dbpedia.org/resource/Harrow_on_the_Hill>
+        rdfs:label  "Harrow on the Hill"@en .
+
+<http://data.open.ac.uk/led/performance/fcdfc5d91a19aa22fd01509309aa71ba/1439573333542>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Stabat Mater'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mrs+Donnellan/1439392702746> , <http://data.open.ac.uk/led/agent/Mrs+Clayton/1439573200271> , <http://data.open.ac.uk/led/agent/Duke+of+Dorset/1439573193479> , <http://dbpedia.org/resource/Mary_Delany>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mrs.+Oldmixon/1439573333550> , <http://data.open.ac.uk/led/agent/Gaetano+Guadagni/1439573333546> , <http://data.open.ac.uk/led/agent/Dubourg/1439573333554> .
+
+<http://data.open.ac.uk/led/agent/Duke+of+Dorset/1439573193479>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Duke of Dorset"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Dorset";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke of" .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://reference.data.gov.uk/id/day/1978-05-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 May, 1978"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1978;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Sylvia Townsend Warner"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musicologist> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-12-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Harrow_on_the_Hill>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1978-05-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Maiden_Newton>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Warner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sylvia Townsend" .
+
+<http://data.open.ac.uk/led/person/Pergolesi/1386341643147>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Pergolesi"@en .
+
+<http://dbpedia.org/resource/Pesaro>
+        rdfs:label  "Pesaro"@en .
+
+<http://reference.data.gov.uk/id/day/1752-01-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 January, 1752"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1752;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://data.open.ac.uk/led/agent/Gaetano+Guadagni/1439573333546>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gaetano Guadagni"@en .

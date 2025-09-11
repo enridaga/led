@@ -1,0 +1,167 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://data.open.ac.uk/led/performance/Gustave+(,+performance+of)/1386350483297>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Gustave'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Frances+Williams+Wynn/1382971253619>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Gustave/1382972014989> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/year/1857>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1857"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/day/1833-04-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 April, 1833"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1833;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://data.open.ac.uk/led/person/Frances+Williams+Wynn/1382971253619>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Frances Williams Wynn"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1773-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1857-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales> , <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Williams Wynn";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances";
+        <http://xmlns.com/foaf/0.1/name>
+                "Frances Williams Wynn" .
+
+<http://data.open.ac.uk/time/edtf/1857-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1857>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/source/Journal+of+Frances+Williams+Wynn's+continental+tour+of+1833,+18+April/1386350402140>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Journal of Frances Williams Wynn's continental tour of 1833, 18 April"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "National Library of Wales, Canon Trevor Owen Manuscripts";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the National Library of Wales."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Journal of Frances Williams Wynn's continental tour of 1833, 18 April";
+        <http://purl.org/ontology/bibo/number>
+                "NLW MS 2779C";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Frances+Williams+Wynn/1382971253619> .
+
+<http://data.open.ac.uk/led/lexp/1386350555199>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "In the Evening, we went to the Opera to see Gustave, which in point of music, of acting, of splendid decoration exceeded any expectations, but I own I looked for better dancing…. In the midst of the Ball, upon the Stage, to the Tune of the Galoppe, Gustavus is murdered, he is borne to the proscenium, his black stock is removed, its red stains are exhibited, and he expires surrounded by masks of the most grotesque description…. The Newspapers tell us that the representation of this Opera has been prohibited at Stockholm. I cannot wonder at this and hope it will not be tried in London."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Journal+of+Frances+Williams+Wynn's+continental+tour+of+1833,+18+April/1386350402140>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages_manuscript   "33-35";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Frances+Williams+Wynn/1382971253619>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1833-04-18>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-06T17:23:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Gustave+(,+performance+of)/1386350483297> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://data.open.ac.uk/time/edtf/1773-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1773"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1773;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://data.open.ac.uk/led/music/Gustave/1382972014989>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Gustave"@en;
+        <http://purl.org/dc/terms/title>
+                "Gustave" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .

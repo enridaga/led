@@ -1,0 +1,255 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/retired>
+        rdfs:label  "retired"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/interval/1996-10-28/to/1996-12-16>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 28 October, 1996 and 16 December, 1996"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://reference.data.gov.uk/id/day/1996-10-28>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://reference.data.gov.uk/id/day/1996-12-16> .
+
+<http://reference.data.gov.uk/id/day/1996-12-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 December, 1996"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/led/music/song,+poetry+readings,+song+accompanied+by+guitar/1635786722223>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "song, poetry readings, song accompanied by guitar"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/seven+older+woman/1635786722271> , <http://data.open.ac.uk/led/agent/Jo+de+Waal/1635786722247> , <http://bnb.data.bl.uk/id/person/ClanchyKate1965->;
+        <http://purl.org/dc/terms/title>
+                "song, poetry readings, song accompanied by guitar";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/seven+older+woman/1635786722271> , <http://data.open.ac.uk/led/agent/Jo+de+Waal/1635786722247> , <http://bnb.data.bl.uk/id/person/ClanchyKate1965-> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/lexp/1635786993170>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "The Spitalfields Festival Education and Community Programme report describes a project involving seven women over the age of 65 who participated in four sessions 30 September – 21 October guided by poet Kate Clanchy, singer Jo de Waal and guitarist Julian Masters. Performances were given on 28 October and 16 December."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/db37e90fdf68711f9e989a3c29e78ae5/excerpt/1c1f854c997e9e68d408eb6cd3002efd>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "2";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/audience/1635786889853> , <http://data.open.ac.uk/led/agent/seven+older+women/1635786355246> , <http://data.open.ac.uk/led/agent/David+Burles/1635784662517> , <http://data.open.ac.uk/led/agent/Charles+Ledsam/1635786325265>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/13b96d265fce6e7a163072525e84db5e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1996-10-28/to/1996-12-16>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-07T21:02:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-01T17:16:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/91cee788d9d56c31a151efd531b792e4/1635786722297>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/db37e90fdf68711f9e989a3c29e78ae5/excerpt/1c1f854c997e9e68d408eb6cd3002efd> .
+
+<http://data.open.ac.uk/led/company+secretary>
+        rdfs:label  "Company Secretary"@en .
+
+<http://dbpedia.org/resource/Instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Instrumental"@en .
+
+<http://data.open.ac.uk/led/agent/seven+older+women/1635786355246>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "seven older women"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/retired>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "women";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "seven older" .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/agent/audience/1635786889853>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "audience"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "audience" .
+
+<http://data.open.ac.uk/led/education+and+community+officer+spitalfields+festival>
+        rdfs:label  "Education and Community Officer Spitalfields Festival"@en .
+
+<http://data.open.ac.uk/led/agent/David+Burles/1635784487781>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "David Burles"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Charles+Ledsam/1635786325265>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Charles Ledsam"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/company+secretary>;
+        led:has_social_status  <urn:x-nrsuk:social:A>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ledsam";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charles" .
+
+<http://dbpedia.org/resource/Guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Guitar"@en .
+
+<http://data.open.ac.uk/led/agent/seven+older+woman/1635786722271>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "seven older woman"@en .
+
+<http://data.open.ac.uk/led/agent/David+Burles/1635784662517>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "David Burles"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/education+and+community+officer+spitalfields+festival>;
+        led:has_social_status  <urn:x-nrsuk:social:B>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Burles";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "David" .
+
+<http://data.open.ac.uk/led/agent/Jo+de+Waal/1635786722325>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jo de Waal"@en .
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://reference.data.gov.uk/id/day/1996-10-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 October, 1996"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/seven+older+women/1635786722341>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "seven older women"@en .
+
+<http://data.open.ac.uk/led/source/db37e90fdf68711f9e989a3c29e78ae5/excerpt/1c1f854c997e9e68d408eb6cd3002efd>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">The performance consisted of songs and readings of poems layered and juxtaposed in a variety of ways. It was the first time some of the participants had ever performed in public. There was an audience of about 30 [&hellip;]&nbsp;&nbsp;Charles Ledsam, Company Secretary of HSBC Gibbs wrote: &ldquo; Thank you for inviting me to the event&hellip; it was at times funny, moving and thought provoking. It was wonderful to see the teamwork, love and support that the group had for one another and indeed gave to one another&rdquo;.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">[&hellip;] The participants had requested a performance by [visiting artists Kate Clanchy and Jo de Waal] of their own material [&hellip;] Kate read [poems] from her collection Slattern (for which she won the Forward Prize) interspersed with some of the participants&rsquo; poems. Jo performed a varied programme, including some of her own songs, accompanied by the guitarist Julian Masters.&nbsp;</span></p>"^^rdf:HTML , "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">The performance consisted of songs and readings of poems layered and juxtaposed in a variety of ways. It was the first time some of the participants had ever performed in public. There was an audience of about 30 [&hellip;]&nbsp;&nbsp;Charles Ledsam, Company Secretary of HSBC Gibbs wrote: &ldquo; Thank you for inviting me to the event&hellip; it was at times funny, moving and thought provoking. It was wonderful to see the teamwork, love and support that the group had for one another and indeed gave to one another&rdquo;.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">[&hellip;] The participants had requested a performance by [visiting artists Kate Clanchy and Jo de Waal] of their own material [&hellip;] Kate read [poems] from her collection <em>Slattern</em> (for which she won the Forward Prize) interspersed with some of the participants&rsquo; poems. Jo performed a varied programme, including some of her own songs, accompanied by the guitarist Julian Masters.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival Project Reports: July-December 1996 Education and Community Programme' pp. 2 (142 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+Project+Reports:+July-December+1996+Education+and+Community+Programme/1635784487750>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "2" .
+
+<http://data.open.ac.uk/led/agent/Kate+Clanchy/1635786722311>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Kate Clanchy"@en .
+
+<http://data.open.ac.uk/led/performance/91cee788d9d56c31a151efd531b792e4/1635786722297>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'song, poetry readings, song accompanied by guitar'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Instrumental> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Guitar>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Charles+Ledsam/1635786325265> , <http://data.open.ac.uk/led/agent/David+Burles/1635784662517> , <http://data.open.ac.uk/led/agent/audience/1635786889853> , <http://data.open.ac.uk/led/agent/seven+older+women/1635786355246>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/song,+poetry+readings,+song+accompanied+by+guitar/1635786722223>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/seven+older+women/1635786722341> , <http://data.open.ac.uk/led/agent/Kate+Clanchy/1635786722311> , <http://data.open.ac.uk/led/agent/Julian+Masters/1635786722365> , <http://data.open.ac.uk/led/agent/Jo+de+Waal/1635786722325> .
+
+<http://bnb.data.bl.uk/id/person/ClanchyKate1965->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Kate Clanchy"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/place/13b96d265fce6e7a163072525e84db5e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Toynbee Hall Senior Care and Leisure Centre, East End of London"@en;
+        <http://purl.org/dc/terms/description>
+                "Toynbee Hall Senior Care and Leisure Centre, East End of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/East_End_of_London> .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+Project+Reports:+July-December+1996+Education+and+Community+Programme/1635784487750>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. Education projects with schools and local community reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists and the Spitalfields Festival with East End of London children, adults and elderly people. "@en;
+        rdfs:label                  "Spitalfields Festival Project Reports: July-December 1996 Education and Community Programme"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival Project Reports: July-December 1996 Education and Community Programme";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/David+Burles/1635784487781> .
+
+<http://data.open.ac.uk/led/agent/Julian+Masters/1635786722365>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Julian Masters"@en .
+
+<http://data.open.ac.uk/led/agent/Jo+de+Waal/1635786722247>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Jo de Waal"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .

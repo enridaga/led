@@ -1,0 +1,239 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://musicbrainz.org/artist/af019f75-a87a-456c-9d00-218760282f5e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ivan Caryll"@en .
+
+<http://dbpedia.org/resource/Franz_Lehár>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Franz Lehár"@en .
+
+<http://data.open.ac.uk/led/agent/Benjamin+Hapgood+Burt/1564754489724>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Benjamin Hapgood Burt"@en .
+
+<http://data.open.ac.uk/led/performance/ec676f4ca134d992ac8340c844319abc/1564754413584>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Musical comedies'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Southampton>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/musical+comedy>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Alfred+Deahl/1564746019875>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Musical+comedies/1564754413549> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/engineering+draughtsman>
+        rdfs:label  "engineering draughtsman"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://dbpedia.org/resource/Southampton>
+        rdfs:label  "Southampton"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.01>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/violinist>
+        rdfs:label  "Violinist"@en , "violinist"@en .
+
+<http://data.open.ac.uk/led/music/Musical+comedies/1564754413549>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Musical comedies"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Lehár>;
+        <http://purl.org/dc/terms/title>
+                "Musical comedies";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Lehár> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/agent/Alfred+Deahl/1564746019875>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Alfred Deahl"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/shipbuilding+draughtsman> , <http://data.open.ac.uk/led/engineering+draughtsman> , <http://data.open.ac.uk/led/violinist>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1901-12-19>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Southampton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1996-07-09>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Southampton>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Deahl";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Alfred" .
+
+<http://data.open.ac.uk/led/music/The+Girl+in+the+Taxi/1564754489699>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Girl in the Taxi"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/Benjamin+Hapgood+Burt/1564754489724>;
+        <http://purl.org/dc/terms/title>
+                "The Girl in the Taxi";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/Benjamin+Hapgood+Burt/1564754489724> .
+
+<http://data.open.ac.uk/led/performance/df50dc3b7e5918262d5c28a163367779/1564754489742>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Girl in the Taxi'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Southampton>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/musical+comedy>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Alfred+Deahl/1564746019875>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Girl+in+the+Taxi/1564754489699> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/led/source/98e5a3ad6e7cf1a9b5dc7f31363a6198/excerpt/96377e1652459c34bed59bc4177106c4>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><span style=\"color: black; mso-themecolor: text1;\">And of course, we used to get all the musical comedies.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Franz Leh&aacute;r comedies.<span style=\"mso-spacerun: yes;\">&nbsp; </span>And one, there was a good one, <em>The Girl in a Taxi</em>, it was called.<span style=\"mso-spacerun: yes;\">&nbsp; </span>That was a good one.<span style=\"mso-spacerun: yes;\">&nbsp; </span>And <em>Oh!</em> <em>Oh! Delphine</em>, that was another one, where the old parrot used to say &lsquo;Oh! Oh! Delphine&rsquo; on the stage.<span style=\"mso-spacerun: yes;\">&nbsp; </span>They were damn funny.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Interview with Alfred Deahl' (60 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Interview+with+Alfred+Deahl/1564745858180>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/lexp/1564754621165>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Paula James interviewed her father, Alfred Deahl, on 3 July 1994.  She encouraged him to reminisce about his childhood visits to Southampton music halls and theatres, and his work as a young man playing the violin for Southampton theatres and silent cinema, and on board cruise ships.  The above listening experience has been transcribed from the audio recording."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/98e5a3ad6e7cf1a9b5dc7f31363a6198/excerpt/96377e1652459c34bed59bc4177106c4>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Alfred+Deahl/1564746019875>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Southampton>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/191u-uu-uu/to/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-24T14:17:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-08-02T14:03:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/ec676f4ca134d992ac8340c844319abc/1564754413584> , <http://data.open.ac.uk/led/performance/df50dc3b7e5918262d5c28a163367779/1564754489742> , <http://data.open.ac.uk/led/performance/517048827e3c1a6cd3c75d0385728f9b/1564754556587>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/98e5a3ad6e7cf1a9b5dc7f31363a6198/excerpt/96377e1652459c34bed59bc4177106c4> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/source/Interview+with+Alfred+Deahl/1564745858180>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "Paula James interviewed her father, Alfred Deahl, on 3 July 1994."@en;
+        rdfs:label         "Interview with Alfred Deahl"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/oral>;
+        led:in_collection  "Private family collection";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Original audio cassette in private family collection, used by permission of Alfred Deahl's daughter, Dr Paula James."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Interview with Alfred Deahl";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/shipbuilding+draughtsman>
+        rdfs:label  "shipbuilding draughtsman"@en .
+
+<http://data.open.ac.uk/led/music/Oh!+Oh!+Delphine/1564754556559>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Oh! Oh! Delphine"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/af019f75-a87a-456c-9d00-218760282f5e#_>;
+        <http://purl.org/dc/terms/title>
+                "Oh! Oh! Delphine";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/af019f75-a87a-456c-9d00-218760282f5e#_> .
+
+<http://reference.data.gov.uk/id/day/1901-12-19>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "19 December, 1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://reference.data.gov.uk/id/day/1996-07-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 July, 1996"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/led/musicgenre/musical+comedy>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "musical comedy"@en .
+
+<http://data.open.ac.uk/led/performance/517048827e3c1a6cd3c75d0385728f9b/1564754556587>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Oh! Oh! Delphine'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Southampton>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/musical+comedy>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Alfred+Deahl/1564746019875>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Oh!+Oh!+Delphine/1564754556559> .

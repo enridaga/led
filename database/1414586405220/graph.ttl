@@ -1,0 +1,384 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1935>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1935"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Wireless+Chorus/1414586272952>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wireless Chorus"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Ralph_Vaughan_Williams>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Ralph Vaughan Williams"@en , "Vaughan Williams" , "Vaughan Williams"@en , "Ralph Vaughan Williams";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1872-10-12>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Down_Ampney>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1958-08-26>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> , <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/4f3b96ed-f1f1-4a68-be73-0e0657837096#_> .
+
+<http://dbpedia.org/resource/BBC_Symphony_Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "BBC Symphony Orchestra"@en , "BBC Symphony orchestra"@en , "BBC Symphony Orcehstra"@en , "BBC Symphonic Orchestra"@en , "B.B.C. Symphony Orchestra"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/5b13c665-88eb-4e80-9a06-218a660fcf6b#_> .
+
+<http://data.open.ac.uk/led/music/Five+Mystical+Songs/1414586326508>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Five Mystical Songs"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ralph_Vaughan_Williams>;
+        <http://purl.org/dc/terms/title>
+                "Five Mystical Songs";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ralph_Vaughan_Williams> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/lexp/1414586405220>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The broadcast on 28th Dec also included orchestral works by Elizabeth Maeonchy, R.O.Morris and Robin Milford."@en;
+        led:has_environment  led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Solitary;
+        led:has_medium       led:Medium.Broadcast;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/61b6ec5b840f558614279c9f1befa8bc/excerpt/4fe357f99ec1b6c68d901acbefdfbebc>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/kerriedinburgh/claims>;
+        led:pages            "179-180";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lowestoft>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1935-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-22T14:47:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-10-29T12:40:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Five+Mystical+Songs/1414586326508/1414586326521> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Suite+for+Chamber+Orchestra/1414586100698/1414586100712> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Two+Psalms/1414586272925/1414586272943>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/61b6ec5b840f558614279c9f1befa8bc/excerpt/4fe357f99ec1b6c68d901acbefdfbebc> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1872-10-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 October, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://musicbrainz.org/artist/4f3b96ed-f1f1-4a68-be73-0e0657837096#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ralph Vaughan Williams"@en .
+
+<http://data.open.ac.uk/led/music/Suite+for+Chamber+Orchestra/1414586100698>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Suite for Chamber Orchestra"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0c0c45c3-695c-4618-a18d-c4bd5f0dc2f4#_>;
+        <http://purl.org/dc/terms/title>
+                "Suite for Chamber Orchestra";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0c0c45c3-695c-4618-a18d-c4bd5f0dc2f4#_> .
+
+<http://reference.data.gov.uk/id/day/1958-08-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 August, 1958"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1958;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://data.open.ac.uk/time/edtf/1906-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1906"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1906;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1906>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.06> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Five+Mystical+Songs/1414586326508/1414586326521>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Five Mystical Songs'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Five+Mystical+Songs/1414586326508>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wireless+Chorus/1414586326530> , <http://dbpedia.org/resource/BBC_Symphony_Orchestra> .
+
+<http://data.open.ac.uk/led/source/From+Parry+to+Britten:+British+Music+in+Letters,+1900+-+1945>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "From Parry to Britten: British Music in Letters, 1900 - 1945"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1987-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/B.+T.+Batsford+Ltd./1413301245159>;
+        <http://purl.org/dc/terms/title>
+                "From Parry to Britten: British Music in Letters, 1900 - 1945";
+        <http://purl.org/ontology/bibo/isbn>
+                "0 7134 5520 9"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/id/day/1976-12-04>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976 .
+
+<http://dbpedia.org/resource/Lowestoft>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lowestoft"@en .
+
+<http://data.open.ac.uk/led/agent/Western+Studio+Orchestra/1414586100725>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Western Studio Orchestra"@en .
+
+<http://data.open.ac.uk/led/Schoolmistress>
+        rdfs:label  "Schoolmistress"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Suite+for+Chamber+Orchestra/1414586100698/1414586100712>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Suite for Chamber Orchestra'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Suite+for+Chamber+Orchestra/1414586100698>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Western+Studio+Orchestra/1414586100725> , <http://data.open.ac.uk/led/agent/Reginald+Redman/1414586100730> .
+
+<http://dbpedia.org/resource/Down_Ampney>
+        rdfs:label  "Down Ampney"@en .
+
+<http://data.open.ac.uk/led/organization/B.+T.+Batsford+Ltd./1413301245159>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "B. T. Batsford Ltd."@en .
+
+<http://reference.data.gov.uk/id/day/1913-11-22>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913 .
+
+<http://data.open.ac.uk/led/source/Letter+from+Benjamin+Britten+to+Grace+Williams,+Jan+16th+1935/1414585981462>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Benjamin Britten to Grace Williams, Jan 16th 1935"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/From+Parry+to+Britten:+British+Music+in+Letters,+1900+-+1945>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Benjamin Britten to Grace Williams, Jan 16th 1935";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/ForemanLewis1941-> .
+
+<http://data.open.ac.uk/led/agent/Reginald+Redman/1414586100730>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Reginald Redman"@en .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://dbpedia.org/resource/Chamber_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chamber music"@en .
+
+<http://musicbrainz.org/artist/0c0c45c3-695c-4618-a18d-c4bd5f0dc2f4#_>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                     "Grace Williams"@en , "Grace Williams";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Schoolmistress> , <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1906-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales> .
+
+<http://data.open.ac.uk/time/edtf/1935-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1935"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1935;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1935>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976> , <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://bnb.data.bl.uk/id/person/ForemanLewis1941->
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lewis Foreman"@en .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://data.open.ac.uk/led/agent/Wireless+Chorus/1414586326530>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wireless Chorus"@en .
+
+<http://musicbrainz.org/artist/5b13c665-88eb-4e80-9a06-218a660fcf6b#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "BBC Symphony Orchestra"@en .
+
+<http://data.open.ac.uk/led/music/Two+Psalms/1414586272925>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Two Psalms"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0c0c45c3-695c-4618-a18d-c4bd5f0dc2f4#_>;
+        <http://purl.org/dc/terms/title>
+                "Two Psalms";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0c0c45c3-695c-4618-a18d-c4bd5f0dc2f4#_> .
+
+<http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976>
+        rdfs:label  "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/led/source/61b6ec5b840f558614279c9f1befa8bc/excerpt/4fe357f99ec1b6c68d901acbefdfbebc>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Meine liebe Grace,</p>\r\n<p>[...] I heard your first show - stayed in especially to hear it - and also the Suite from the W. Regional, in sections; but really the thing came over so badly that I can't attempt to judge it - all I seem to remember, between grunts and whistles and shrieks is the diminished fifth B-F - But I remember some exciting wind passages in the last movement. [Grace William's Suite for Chamber Orchestra, broadcast 14th Jan 1935]</p>\r\n<p>Re- the first concern R.V.W. [Ralph Vaughan Williams] I know is a very nice man, but he shouldn't conduct. It was <span style=\"text-decoration: underline;\">hopeless</span>. The concert came over quite well; it wasn't the wireless' fault [Broadcast Dec 28th 1934; BBC Orchestra and Wireless Chorus, conducted by Ralph Vaughan Willaims]. But, oh, the ragged entries, the half-hearted &amp; doubtful playing - and the beastly tone. I know I have heard the Vienna Phil; but I was also listening to the Basel Symphony to-night - under some quite unknown man - and it was <span style=\"text-decoration: underline;\">streets</span> ahead of that show [...] your two Psalms were a great relief. I know they aren't your best work, but they (no I. especially) contain some good stuff. I must borrow the orch. score when I come to town. There are things I want to know, After you of course the music in the programme was finished. I struggled for about three or four minutes with R. O. Morris and then switched off. I tried to be politely interested in Robin Milford, but failed entirely. The fifteen biblical songs of R.V.W. finished me entirely; that 'pi' and artificial mysticism combined with, what seems to me, technical incompetence, sends me crazy. I have never felt more depressed for English music than after that programme - putting your effort aside - especially when I felt that that is what the public - no, <span style=\"text-decoration: underline;\">not</span> the public, the critics love and praise.</p>\r\n<p>[...] BENJAMIN B</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Benjamin Britten to Grace Williams, Jan 16th 1935' pp. 179-180 (322 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Benjamin+Britten+to+Grace+Williams,+Jan+16th+1935/1414585981462>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "179-180" .
+
+<http://dbpedia.org/resource/Benjamin_Britten>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/time/edtf/1987-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1987>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Two+Psalms/1414586272925/1414586272943>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Two Psalms'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Two+Psalms/1414586272925>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wireless+Chorus/1414586272952> , <http://dbpedia.org/resource/BBC_Symphony_Orchestra> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .

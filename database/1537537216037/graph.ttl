@@ -1,0 +1,211 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1880-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://data.open.ac.uk/led/invoice+clerk>
+        rdfs:label  "Invoice Clerk"@en .
+
+<http://dbpedia.org/resource/March_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "March (music)"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+band+music--+village+feast/1537536861057>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified band music-- village feast"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified band music-- village feast" .
+
+<http://data.open.ac.uk/time/edtf/188u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1880's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1880-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1889-uu-uu> .
+
+<http://dbpedia.org/resource/Musical_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Musical instrument"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/led/agent/Henry+George+Lock/1537536261386>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Henry George Lock"@en .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/source/An+Old+Man+Tries+to+Remember/1537536260956>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Henry George Lock’s (b. 1876) short memoir of his childhood in Oxfordshire recounts experiences of village life to 1890, when the author went to London. It was written in the 1950s. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections, 1.449. "@en;
+        rdfs:label                  "An Old Man Tries to Remember"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Burnett Archive of Working Class Autobiographies, Brunel University Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Brunel University Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "An Old Man Tries to Remember";
+        <http://purl.org/ontology/bibo/number>
+                "1:449";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+George+Lock/1537536261386> .
+
+<http://data.open.ac.uk/led/agent/Henry+George+Lock/1537536656575>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry George Lock"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/invoice+clerk>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1876-10-30>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Abingdon-on-Thames>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Lock";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry George" .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/agent/villagers--+male/1537537198504>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "villagers-- male"@en .
+
+<http://data.open.ac.uk/led/lexp/1537537216037>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/eeb2b038fd8963e117b7290b1595dac4/excerpt/2d19e30ace0d12589b114df48dd4f8ba>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/temp>;
+        led:pages_manuscript  "5-6";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Henry+George+Lock/1537536656575>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Sutton_Courtenay>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/188u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-27T16:42:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-09-21T13:40:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/80fc08390306dc0264ae50009af8d921/1537537198449>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/eeb2b038fd8963e117b7290b1595dac4/excerpt/2d19e30ace0d12589b114df48dd4f8ba> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://reference.data.gov.uk/id/day/1876-10-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 October, 1876"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1876;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://dbpedia.org/resource/Sutton_Courtenay>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Sutton Courtenay"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/led/source/eeb2b038fd8963e117b7290b1595dac4/excerpt/2d19e30ace0d12589b114df48dd4f8ba>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">The Village feast, which took place on Corpus Christi Day was an important event in its life. Girls in service, and any native who could manage it, would come home for the Feast. The day started by a band coming to the village, which was met by the members of the Village Sick Benefit Society headed by a man carrying a banner. It was looked on as a great honour to carry the banner, and it required a strong man, especially if it was a windy day. Then with flag flying and band playing, we all marched to the church for a special service. [&hellip;] After the service, they marched up the village playing at the big houses, where refreshment was handed out until they came to the school.&nbsp;&nbsp;At the school, a good hot dinner was provided [&hellip;] After dinner, the band struck up again and they marched up the village, stopping to play at the big houses again, not forgetting the pubs. Dancing would take place on the lawns, and at each place, drink would be handed out.&nbsp; This continued till about 6pm, by which time&nbsp;[...] the band had got past playing and the man with the banner was staggering about. So it was time for the band to get in their horsebrake and depart to their own village.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\">&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'An Old Man Tries to Remember' pp. 5-6 (219 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/An+Old+Man+Tries+to+Remember/1537536260956>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "5-6" .
+
+<http://data.open.ac.uk/time/edtf/1889-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1889"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1889;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1889>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/led/performance/80fc08390306dc0264ae50009af8d921/1537537198449>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified band music-- village feast'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Sutton_Courtenay>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/March_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Musical_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henry+George+Lock/1537536656575>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+band+music--+village+feast/1537536861057>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/villagers--+male/1537537198504> .
+
+<http://reference.data.gov.uk/id/year/1889>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .

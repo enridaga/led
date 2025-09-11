@@ -1,0 +1,290 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://musicbrainz.org/artist/d89e0eeb-97f9-476b-96d5-0318f0c1c298#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Danny Barker"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/banjoist> , <http://dbpedia.org/resource/Guitarist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Singing> , <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1909-01-13>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_Orleans>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1994-03-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_Orleans>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Souvenir Press"@en .
+
+<http://dbpedia.org/resource/Snare_drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Snare drum"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/New_Orleans>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New Orleans"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/New+Orleans+Brass+Band+music/1433341126928/1433412914254>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'New Orleans Brass Band music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_of_New_Orleans>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Bass_drum> , <http://dbpedia.org/resource/Snare_drum>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/d89e0eeb-97f9-476b-96d5-0318f0c1c298#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/New+Orleans+Brass+Band+music/1433341126928> .
+
+<http://data.open.ac.uk/time/edtf/1900-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Onward_Brass_Band>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Onward Brass Band"@en .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Bass_drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Bass drum"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Music_of_New_Orleans>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music of New Orleans"@en .
+
+<http://dbpedia.org/resource/Swing_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Swing music"@en .
+
+<http://bnb.data.bl.uk/id/person/HentoffNat>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Hentoff"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/brass+band+dance+music/1433412801663/1433412801675>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'brass band dance music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Swing_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/d89e0eeb-97f9-476b-96d5-0318f0c1c298#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/brass+band+dance+music/1433412801663>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Onward_Brass_Band> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/1925-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1925"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1925;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/brass+band+military+music/1433412713540/1433412713552>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'brass band military music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_of_New_Orleans>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/d89e0eeb-97f9-476b-96d5-0318f0c1c298#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/brass+band+military+music/1433412713540>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Onward_Brass_Band> .
+
+<http://reference.data.gov.uk/id/day/1994-03-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 March, 1994"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1994;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/led/lexp/1433412945050>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "I remember the Onward Brass Band had to play the marches for the Masonics or the Odd Fellows. They hired one band during the day--a big military band--that would play all the marches and that would introduce each dignitary of the organisation with military music. But the band was sitting. And between those introductions and the marching and the drilling, they would play some dance music, so they would swing. \r\n\r\nThey played the shuffle beat on the snare drum and mostly two beats on the bass drums. At first, in the bands, the snare drums and the bass drums were played by different men like in the marching bands. But there was one particular guy in New Orleans who put the two drums together and played both himself, and that's where the foot pedal was invented. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages              "21";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/d89e0eeb-97f9-476b-96d5-0318f0c1c298#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_Orleans>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/19Ee-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-08-20T14:01:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-04T10:15:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/brass+band+dance+music/1433412801663/1433412801675> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/brass+band+military+music/1433412713540/1433412713552> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/New+Orleans+Brass+Band+music/1433341126928/1433412914254> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/Guitarist>
+        rdfs:label  "Guitarist"@en .
+
+<http://data.open.ac.uk/led/source/Hear+Me+Talkin'+To+Ya:+The+Classic+Story+of+Jazz+as+Told+by+the+Men+Who+Made+It/1433263159756>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "First published in USA, 1955, by Holt, Rinehart & Winston, Inc."@en;
+        rdfs:label                  "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/historical>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Souvenir+Press/1433263159767>;
+        <http://purl.org/dc/terms/title>
+                "Hear Me Talkin' To Ya: The Classic Story of Jazz as Told by the Men Who Made It";
+        <http://purl.org/ontology/bibo/isbn>
+                "0285630903"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759> , <http://bnb.data.bl.uk/id/person/HentoffNat> .
+
+<http://data.open.ac.uk/led/music/New+Orleans+Brass+Band+music/1433341126928>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "New Orleans Brass Band music"@en;
+        <http://purl.org/dc/terms/title>
+                "New Orleans Brass Band music" .
+
+<http://data.open.ac.uk/led/music/brass+band+dance+music/1433412801663>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "brass band dance music"@en;
+        <http://purl.org/dc/terms/title>
+                "brass band dance music" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/led/banjoist>
+        rdfs:label  "banjoist"@en .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/time/edtf/19Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 20th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1900-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1925-uu-uu> .
+
+<http://reference.data.gov.uk/id/day/1909-01-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 January, 1909"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1909;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://data.open.ac.uk/led/music/brass+band+military+music/1433412713540>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "brass band military music"@en;
+        <http://purl.org/dc/terms/title>
+                "brass band military music" .
+
+<http://data.open.ac.uk/led/person/Nat+Shapiro/1433263159759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat Shapiro"@en .

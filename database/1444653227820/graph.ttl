@@ -1,0 +1,119 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/fea8fe72a56198f39231c614358399f3>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>1984? John McLaughlin plays electric guitar again! The reformed Mahavishnu Orchestra: now with sax instead of violin, plays the RFH. Two buddies and I drive up from Bristol and arrive seconds before the gig starts: racing into the hall just in time to catch JM's funky strumming opening to \"Radio Activity\" the intense opening of one of the best gigs I have ever attended. Rapture!</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Southbank Centre Archive' (64 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://bnb.data.bl.uk/id/organization/SouthbankCentre>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Southbank Centre"@en .
+
+<http://data.open.ac.uk/led/music/Radio+Activity/1444653204037>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Radio Activity"@en;
+        <http://purl.org/dc/terms/title>
+                "Radio Activity" .
+
+<http://data.open.ac.uk/led/lexp/1444653227820>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/fea8fe72a56198f39231c614358399f3>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Liz+Ford/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1984-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-01-11T18:17:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-10-12T12:33:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/aafb824da66e3d4ec333ff191b587c01/1444653204050>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/589ba48544cb4a70cf79cca1689d4dd5/excerpt/fea8fe72a56198f39231c614358399f3> .
+
+<http://data.open.ac.uk/time/edtf/1984-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1984"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1984;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1984>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.84> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/year/1984>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/aafb824da66e3d4ec333ff191b587c01/1444653204050>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Radio Activity'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Electric_guitar> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Radio+Activity/1444653204037>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/a2be74f5-0735-46f7-a295-7e41aab30029#_> , <http://musicbrainz.org/artist/e0ee1455-5fa8-46fd-9f2e-b837315c2aae#_> .
+
+<http://dbpedia.org/resource/Electric_guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Electric guitar"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.84>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  84 .
+
+<http://musicbrainz.org/artist/e0ee1455-5fa8-46fd-9f2e-b837315c2aae#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John McLaughlin"@en .
+
+<http://data.open.ac.uk/led/source/Southbank+Centre+Archive/1411153320865>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork> , <http://purl.org/ontology/bibo/Manuscript>;
+        rdfs:comment       "Memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "memories taken from recorded interviews conducted with visitors to the Royal Festival Hall and Queen Elizabeth Halls London SE1 8XX UK during 2006-2007"@en , "From an oral archive of memories of long-standing visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room, gathered during 2006-07"@en , "The archive contains recorded interviews made with visitors to the Royal Festival Hall and Queen Elizabeth Halls, London SE1 8XX made during 2006/07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabeth Hall and Purcell Room during 2006-07"@en , "Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en , " "@en , "Additional Information on Source sub-form: Reminiscences of musical events at the Southbank Centre, London SE1 8XX collected through interviews with visitors to the Royal Festival Hall, Queen Elizabet Hall and Purcell Room during 2006-07"@en;
+        rdfs:label         "Southbank Centre Archive "@en , "Southbank Centre Archive"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        led:in_collection  "Southbank Centre Archive";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Southbank Centre Archive, http://www.southbankcentre.co.uk/about-us/history-and-archive/southbank-centre-archive"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Southbank Centre Archive";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/SouthbankCentre>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://musicbrainz.org/artist/a2be74f5-0735-46f7-a295-7e41aab30029#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mahavishnu Orchestra"@en .

@@ -1,0 +1,316 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Dancehall+Hostess/1430405926090/1430405926113>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Dancehall Hostess'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Dancehall+Hostess/1430405926090>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://reference.data.gov.uk/id/year/1896>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ethel Waters"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/dancer> , <http://dbpedia.org/resource/Singing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1896-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chester_County,_Pennsylvania>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Waters";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ethel" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/California>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "California"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/9e0921b0-f858-4694-988a-e1689001d8c8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Pearl"@en .
+
+<http://data.open.ac.uk/led/music/Washtub+Rhapsody/1430405812799>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Washtub Rhapsody"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_>;
+        <http://purl.org/dc/terms/title>
+                "Washtub Rhapsody";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> .
+
+<http://dbpedia.org/resource/Chester_County,_Pennsylvania>
+        rdfs:label  "Chester County, Pennsylvania"@en .
+
+<http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label             "Alberta Nichols"@en , "Alberta Nicols";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Songwriter>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Nichols";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Alberta" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/What's+Keeping+My+Prince+Charming/1430406014722/1430406014743>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'What's Keeping My Prince Charming'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/What's+Keeping+My+Prince+Charming/1430406014722>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/music/You+Can't+Stop+Me+from+Lovin'+You/1430406183932>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "You Can't Stop Me from Lovin' You"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>;
+        <http://purl.org/dc/terms/title>
+                "You Can't Stop Me from Lovin' You";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129> .
+
+<http://dbpedia.org/resource/Songwriter>
+        rdfs:label  "Songwriter"@en .
+
+<http://data.open.ac.uk/led/music/What's+Keeping+My+Prince+Charming/1430406014722>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "What's Keeping My Prince Charming"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_>;
+        <http://purl.org/dc/terms/title>
+                "What's Keeping My Prince Charming";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charles Samuels"@en .
+
+<http://data.open.ac.uk/led/music/Dancehall+Hostess/1430405926090>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Dancehall Hostess"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_>;
+        <http://purl.org/dc/terms/title>
+                "Dancehall Hostess";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/time/edtf/1896-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1896>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Washtub+Rhapsody/1430405812799/1430405812815>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Washtub Rhapsody'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Washtub+Rhapsody/1430405812799>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/9e0921b0-f858-4694-988a-e1689001d8c8#_> , <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/You+Can't+Stop+Me+from+Lovin'+You/1430406183932/1430406183959>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'You Can't Stop Me from Lovin' You'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_> , <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/You+Can't+Stop+Me+from+Lovin'+You/1430406183932>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/led/lexp/1430406247792>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Ethel Waters worked on these songs with the song writers on a train bound for Washington."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "Mr. Gumm was not only a smart lawyer who was proving a good investment for me, he knew just where to look in the many cubbyholes and walk-up apartments of New York for song writers. The ones he came up with were a gifted husband-and-wife team, Mann Holiner and Alberta Nichols. They worked with Pearl and me night and day and they wrote, socko songs for me. Even on the train going into Washington they worked with us on the four numbers they had created for me. The numbers were \"Washtub Rhapsody,\" \"Dancehall Hostess,\" \"What's Keeping My Prince Charming,\" and \"You Can't Stop Me from Lovin' You.\" "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "216";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129> , <http://musicbrainz.org/artist/b1759297-2e30-4f87-a0fb-da1a57f5335a#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-26T10:52:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-30T15:04:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/You+Can't+Stop+Me+from+Lovin'+You/1430406183932/1430406183959> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/What's+Keeping+My+Prince+Charming/1430406014722/1430406014743> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Dancehall+Hostess/1430405926090/1430405926113> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Washtub+Rhapsody/1430405812799/1430405812815> .
+
+<http://data.open.ac.uk/led/person/Mann+Holiner/1430405705129>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label             "Mann Holiner"@en , "Mann Holiner";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Songwriter>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Holiner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mann" .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://musicbrainz.org/artist/f62aeae9-2d2b-408c-bb07-90aa60b907be#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mann Holiner"@en .
+
+<http://data.open.ac.uk/led/dancer>
+        rdfs:label  "dancer"@en .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "His Eye Is On the Sparrow"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1950-uu-uu> , <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "His Eye Is On the Sparrow";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141> , <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-26"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-28"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-31"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-05"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-06"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-15"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-16"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-23"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-29"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "African American Music Reference"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851"^^<http://www.w3.org/2001/XMLSchema#anyURI> .

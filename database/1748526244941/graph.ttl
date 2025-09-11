@@ -1,0 +1,208 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/2a96d346697f8f474d14ed7f37dac380/1748526004138>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Alexander's Feast'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Ode> , <http://data.open.ac.uk/led/musicgenre/Choral+and+instrumental> , <http://dbpedia.org/resource/Vocal_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/William+Trumbull/1748525869037>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442> .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/music/Organ+Concerto/1748526166668>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Organ Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Organ Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/398116eba4f4d94811308680a84fe349/excerpt/8a4986211745053a02c43938bc921143>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><strong><span style=\"font-size: 12.0pt; mso-bidi-font-size: 11.0pt; line-height: 150%; font-family: 'Times New Roman',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">Letter from William Trumbull to his mother, 18<sup>th</sup> March 1737</span></strong></p>\n<p><span style=\"font-size: 12.0pt; mso-bidi-font-size: 11.0pt; line-height: 150%; font-family: 'Times New Roman',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\"><span lang=\"EN-US\" style=\"font-size: 12pt; line-height: 150%;\">Hendal [<em>sic</em>] is going to have a Benefit, Now if You was here woud you not go to it. [&hellip;] I am just come from y<sup>e</sup> Opera, I think tis full time they shoud be laid down now they have no voices to support their but Indifferent Musick</span></span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letters from William Trumbull to his mother' (56 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letters+from+William+Trumbull+to+his+mother/1748525784708>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/lexp/1748526244941>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/398116eba4f4d94811308680a84fe349/excerpt/8a4986211745053a02c43938bc921143>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/William+Trumbull/1748525869037>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/f2ed2851bdacea5025ec9c794e7219da>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1737-03-18>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2025-06-12T09:34:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2025-05-29T13:44:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8ac8ad4239352a745a89ccf6b2c43720/1748526166692> , <http://data.open.ac.uk/led/performance/2a96d346697f8f474d14ed7f37dac380/1748526004138>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/398116eba4f4d94811308680a84fe349/excerpt/8a4986211745053a02c43938bc921143> .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/place/f2ed2851bdacea5025ec9c794e7219da>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Covent Garden Theatre, Covent Garden, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Covent Garden Theatre, Covent Garden, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Baroque_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Baroque"@en , "Baroque music"@en .
+
+<http://data.open.ac.uk/led/performance/8ac8ad4239352a745a89ccf6b2c43720/1748526166692>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Organ Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto> , <http://dbpedia.org/resource/Baroque_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Pipe_organ> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/William+Trumbull/1748525869037>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Organ+Concerto/1748526166668> .
+
+<http://data.open.ac.uk/led/musicgenre/Choral+and+instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Choral and instrumental"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://dbpedia.org/resource/Pipe_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Pipe organ"@en .
+
+<http://data.open.ac.uk/led/source/Letters+from+William+Trumbull+to+his+mother/1748525784708>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letters from William Trumbull to his mother"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "Royal Berkshire Archives";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Published with the kind permission of Royal Berkshire Archives"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letters from William Trumbull to his mother";
+        <http://purl.org/ontology/bibo/number>
+                "D/ED/C9";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/William+Trumbull/1748525784784> .
+
+<http://dbpedia.org/resource/Ode>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ode"@en .
+
+<http://data.open.ac.uk/led/agent/William+Trumbull/1748525869037>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "William Trumbull"@en;
+        led:has_social_status  led:SocioEconomicStatus.Officer;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Trumbull";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "William" .
+
+<http://data.open.ac.uk/led/agent/William+Trumbull/1748525784784>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "William Trumbull"@en .
+
+<http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Alexander's Feast"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Alexander's Feast";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.37>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  37 .
+
+<http://reference.data.gov.uk/id/day/1737-03-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 March, 1737"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .

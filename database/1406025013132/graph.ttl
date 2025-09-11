@@ -1,0 +1,338 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/lexp/1406025013132>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Shortly after Jackie began playing the cello, Mum entered her for her first music festival in London. As soon as we arrived, Jackie raced down the corridor. The doorman stopped her.\r\n\r\n‘I can tell that you have just finished playing!’\r\n\r\n‘Oh, no,’ she replied. ‘I’m just about to play!’\r\n\r\nShe could hardly contain herself and was not in the least bit nervous. She was going to play her favourite new piece, the one that Mum had left on the end of her bed three days before.\r\n\r\nAt last it was her turn. She passed her teddy to me.\r\n\r\n‘Rock him to sleep while I’m playing, Hil, and look after him.’\r\n\r\nMum carried the cello as Jackie ran up on to the platform. The stool adjusted and cello tuned, Mum handed her the instrument and she immediately started to play from memory:\r\n\r\nSleep, sleep, Teddy Bear . . .\r\n\r\nMum, who had not even reached the piano, returned to Jackie and said quietly: ‘Hang on, Jackie, wait for me!’\r\n\r\nJackie looked up.\r\n\r\n‘Wait for me to sit down, and then I’ll accompany you.’\r\n\r\nJackie waited. Mum announced the title and they began together. From the first open G of the music, Jackie was totally absorbed. At the end of the little piece, Mum was just about to get up when Jackie started again. Mum sat down immediately and accompanied her again. One repeat was not enough for Jackie, but Mum was ready as Jackie went back to the beginning for a third time. Jackie obviously felt that three performances were just right, and looked up to a burst of applause and laughter from the audience. She handed her cello to Mum and skipped back to me and her teddy.\r\n\r\n‘Is he asleep, Hil? Give him to me gently.’\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://bnb.data.bl.uk/id/resource/010661416>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/claims>;
+        led:pages              "41";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942->;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1950-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-24T17:10:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-07-22T10:30:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Composition+for+cello+and+piano+by+Iris+Greep/1406024967746/1406024967756> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/Composition+for+cello+and+piano+by+Iris+Greep/1406024967746>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Composition for cello and piano by Iris Greep"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Iris+Greep/1406023828647>;
+        <http://purl.org/dc/terms/title>
+                "Composition for cello and piano by Iris Greep";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Iris+Greep/1406023828647> .
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Composition+for+cello+and+piano+by+Iris+Greep/1406024967746/1406024967756>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Composition for cello and piano by Iris Greep'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942->;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Composition+for+cello+and+piano+by+Iris+Greep/1406024967746>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/person/Iris+Greep/1406023828647> , <http://dbpedia.org/resource/Jacqueline_du_Pr%C3%A9> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/resource/010661416>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Originally published: London : Chatto & Windus, 1997."@en;
+        rdfs:label                  "A genius in the family / Hilary Du Pré"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1998-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Vintage>;
+        <http://purl.org/dc/terms/title>
+                "A genius in the family / Hilary Du Pré";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0099274787"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942-> .
+
+<http://data.open.ac.uk/time/edtf/1984-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1984"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1984;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1984>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.84> .
+
+<http://reference.data.gov.uk/id/year/1948>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1948"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://bnb.data.bl.uk/id/agent/Vintage>
+        rdfs:label  "Vintage"@en .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://reference.data.gov.uk/id/day/1987-10-19>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "19 October, 1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/1998-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1998"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1998;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1998>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.84>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  84 .
+
+<http://reference.data.gov.uk/id/year/1998>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Piers du Pré"@en , "Piers  du Pré"@en , "Du Pré, Piers, 1948-"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Company+Director+du+Pr%C3%A9+plc>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1948-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> .
+
+<http://data.open.ac.uk/led/thing/Company+Director+du+Pr%C3%A9+plc>
+        rdfs:label  "Company Director du Pré plc"@en .
+
+<http://data.open.ac.uk/led/thing/Music+teacher>
+        rdfs:label  "Music teacher"@en .
+
+<http://data.open.ac.uk/led/person/Iris+Greep/1406023828647>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Iris Greep"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Music+teacher> , <http://dbpedia.org/resource/Musician>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1914-06-03>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1984-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Greep";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Iris" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://data.open.ac.uk/time/edtf/1948-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1948"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1948;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1948>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.48> .
+
+<http://data.open.ac.uk/time/edtf/1942-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1942"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1942;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/id/day/1945-01-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 January, 1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Jacqueline_du_Pr%C3%A9>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Jacqueline du Pré"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1945-01-26>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1987-10-19>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://reference.data.gov.uk/id/year/1984>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942->
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Hilary du Pré"@en , "Hilary  du Pré"@en , "Du Pré, Hilary, 1942-"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1942-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "du Pré";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hilary" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.48>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  48 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.42>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  42 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1914-06-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 June, 1914"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1914;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .

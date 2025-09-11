@@ -1,0 +1,254 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Psalms>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Psalms"@en .
+
+<http://data.open.ac.uk/led/agent/choir+of+Swanbourne+Preparatory+School/1546771178013>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "choir of Swanbourne Preparatory School"@en .
+
+<http://data.open.ac.uk/led/lexp/1546771212382>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Kevin Crossley-Holland describes his years as a boarder at Swanbourne Preparatory School, which he attended from September 1951 until July 1954."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/161d6cba94b5a36c6f5b4ee70588b65a/excerpt/d0809a4641373ea5e5968d3b38f290c1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "119";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621390760>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/4160160b64ebe3a7a22a821c0b6fa37c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/195u-Ee-uuTEe:ee:ee>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-24T13:38:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-06T10:40:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/e17bfbed0e7aa693e8d9cbfe44108306/1546771023027> , <http://data.open.ac.uk/led/performance/e436a6d26bec2478760eaa6943cca197/1546771087315>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/161d6cba94b5a36c6f5b4ee70588b65a/excerpt/d0809a4641373ea5e5968d3b38f290c1> .
+
+<http://reference.data.gov.uk/id/day/1941-02-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 February, 1941"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1941;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/led/translator>
+        rdfs:label  "translator"@en .
+
+<http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621390760>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Kevin Crossley-Holland"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/children's+author> , <http://data.open.ac.uk/led/translator> , <http://data.open.ac.uk/led/poet> , <http://data.open.ac.uk/led/novelist>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1941-02-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Buckinghamshire>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Crossley-Holland";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Kevin" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/novelist>
+        rdfs:label  "Novelist"@en , "novelist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/195u-Ee-uuTEe:ee:ee>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of the 1950's, in the morning"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.5u> .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/led/music/Hymns+sung+in+the+school+chapel/1546771023001>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Hymns sung in the school chapel"@en;
+        <http://purl.org/dc/terms/title>
+                "Hymns sung in the school chapel" .
+
+<http://data.open.ac.uk/led/performance/e17bfbed0e7aa693e8d9cbfe44108306/1546771023027>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Hymns sung in the school chapel'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Buckinghamshire>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621390760>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Hymns+sung+in+the+school+chapel/1546771023001>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/choir+of+Swanbourne+Preparatory+School/1546771148043> .
+
+<http://data.open.ac.uk/led/place/4160160b64ebe3a7a22a821c0b6fa37c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Swanbourne Preparatory School, Swanbourne, Buckinghamshire"@en;
+        <http://purl.org/dc/terms/description>
+                "Swanbourne Preparatory School, Swanbourne, Buckinghamshire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Buckinghamshire> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://bnb.data.bl.uk/id/organization/Quercus%28ResearchcenterNorthernIreland%29>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Quercus"@en .
+
+<http://data.open.ac.uk/led/children's+author>
+        rdfs:label  "children's author"@en .
+
+<http://data.open.ac.uk/led/source/161d6cba94b5a36c6f5b4ee70588b65a/excerpt/d0809a4641373ea5e5968d3b38f290c1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">Breakfast was immediately followed by a short service in the glassy chapel.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Despite my father&rsquo;s best efforts, I was still unable to read music but, all the same, I was immediately given a stall in the choir.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Day after day we belted out the manful and melancholy hymns that have been the staple diet of Church of England services for the last century, but what I liked most was the sense of teamwork and the slow-motion, antiphonal singing of psalms.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Hidden Roads: A Memoir of Childhood' pp. 119 (81 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Hidden+Roads:+A+Memoir+of+Childhood/1546621270279>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "119" .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/antiphonal+psalm+singing/1546771087276>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "antiphonal psalm singing"@en;
+        <http://purl.org/dc/terms/title>
+                "antiphonal psalm singing" .
+
+<http://data.open.ac.uk/led/performance/e436a6d26bec2478760eaa6943cca197/1546771087315>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'antiphonal psalm singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Buckinghamshire>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Psalms>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621390760>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/antiphonal+psalm+singing/1546771087276>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/choir+of+Swanbourne+Preparatory+School/1546771178013> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/source/The+Hidden+Roads:+A+Memoir+of+Childhood/1546621270279>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Hidden Roads: A Memoir of Childhood"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2009-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/Quercus%28ResearchcenterNorthernIreland%29>;
+        <http://purl.org/dc/terms/title>
+                "The Hidden Roads: A Memoir of Childhood";
+        <http://purl.org/ontology/bibo/isbn>
+                "978-1-84916-211-1"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621270339> .
+
+<http://data.open.ac.uk/led/agent/choir+of+Swanbourne+Preparatory+School/1546771148043>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "choir of Swanbourne Preparatory School"@en .
+
+<http://data.open.ac.uk/led/agent/Kevin+Crossley-Holland/1546621270339>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Kevin Crossley-Holland"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.5u>
+        rdf:value   "5u";
+        rdfs:label  "50s"@en .
+
+<http://data.open.ac.uk/led/poet>
+        rdfs:label  "poet"@en , "Poet"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.41>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  41 .
+
+<http://reference.data.gov.uk/id/year/2009>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/2009-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2009"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2009>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://dbpedia.org/resource/Buckinghamshire>
+        rdfs:label  "Buckinghamshire"@en .

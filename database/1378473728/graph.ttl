@@ -1,0 +1,114 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1378473728>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "We had a farewell dinner to the Rivers Thompsons, and a concert after it. D. proposed the Lieutenant-Governor's health in `suitable' terms. Mr. and Mrs. Cunningham also dined here for the last time before they return to England. Colonel Chatterton arranged the concert for me, and we had very nice music and a pleasant party. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FOur%2BViceregal%2BLife%2Bin%2BIndia%253A%2BSelections%2Bfrom%2BMy%2BJournal%2F1378373288810/vol2/pages129>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "129";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Harriot+Georgina+Rowan-Hamilton+Blackwood+Lady+Dufferin/1378373288817>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Kolkata>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-09-06T13:22:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FConcert%2F1378473675495/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FKolkata1378473675502> .
+
+<http://data.open.ac.uk/led/music/Concert/1378473675495>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Concert"@en;
+        <http://purl.org/dc/terms/title>
+                "Concert" .
+
+<http://data.open.ac.uk/led/source/Our+Viceregal+Life+in+India%3A+Selections+from+My+Journal/1378373288810>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Our Viceregal Life in India: Selections from My Journal"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/13TGJ> , <http://solomon.tinyurl.alexanderstreet.com/13TFF> , <http://solomon.tinyurl.alexanderstreet.com/13TFE> , <http://solomon.tinyurl.alexanderstreet.com/13T0Y%20>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/John_Murray_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Our Viceregal Life in India: Selections from My Journal";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Harriot+Georgina+Rowan-Hamilton+Blackwood+Lady+Dufferin/1378373288817> .
+
+<http://solomon.tinyurl.alexanderstreet.com/13TFF>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13TFF"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://solomon.tinyurl.alexanderstreet.com/13TFE>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13TFE"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FConcert%2F1378473675495/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FKolkata1378473675502>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Concert'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Kolkata>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Harriot+Georgina+Rowan-Hamilton+Blackwood+Lady+Dufferin/1378373288817>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Concert/1378473675495> .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FOur%2BViceregal%2BLife%2Bin%2BIndia%253A%2BSelections%2Bfrom%2BMy%2BJournal%2F1378373288810/vol2/pages129>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Our Viceregal Life in India: Selections from My Journal, Vol 2, pages 129"@en;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Our+Viceregal+Life+in+India%3A+Selections+from+My+Journal/1378373288810>;
+        <http://purl.org/dc/terms/title>
+                "Diary of Harriot Georgina Rowan-Hamiilton Blackwood, Lady Dufferin, March 1887";
+        <http://purl.org/ontology/bibo/volume>
+                "2" .
+
+<http://solomon.tinyurl.alexanderstreet.com/13T0Y%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13T0Y%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Kolkata>
+        rdfs:label  "Kolkata"@en .
+
+<http://dbpedia.org/resource/John_Murray_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Murray"@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/13TGJ>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13TGJ"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/person/Harriot+Georgina+Rowan-Hamilton+Blackwood+Lady+Dufferin/1378373288817>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harriot Georgina Rowan-Hamilton Blackwood Lady Dufferin"@en .

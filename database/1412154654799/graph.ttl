@@ -1,0 +1,205 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/pop+music/1412091800884/1412154587381>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'pop music'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Theresa+O.+Littlestone/1412154435723>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/pop+music/1412091800884>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Neil_Young> , <http://dbpedia.org/resource/James_Taylor> .
+
+<http://dbpedia.org/resource/Stroud>
+        rdfs:label  "Stroud"@en .
+
+<http://data.open.ac.uk/led/music/pop+music/1412091800884>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "pop music"@en;
+        <http://purl.org/dc/terms/title>
+                "pop music" .
+
+<http://data.open.ac.uk/led/person/Theresa+O.+Littlestone/1412154435723>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Theresa O. Littlestone"@en;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/195u-Ll-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Littlestone";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Theresa O." .
+
+<http://dbpedia.org/resource/The_History_Press>
+        rdfs:label  "The History Press"@en .
+
+<http://reference.data.gov.uk/id/year/1975>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1971>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1971-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1971"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1971;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1971>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1412154654799>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I was a great fan of James Taylor and used to listen to him in my room all the time when I was sixteen. My father would sometimes come in and listen for a minute or two and then ask why he always sounded so gloomy. He made the same comment about some of my other favourites, Neil Young for instance. He used to reminisce about some of the bands of his youth in the thirties and tell me that they always sounded a lot more cheerful. I have listened lately to an awful lot of the music that I enjoyed from say nineteen seventy-one to seventy-five and in fact I see now that my father had a point; it does sound a little gloomy. The singers always sound as though things aren’t going right for them. I suppose since that’s how teenagers feel a lot of the time anyway, music like that is calculated to appeal to them."@en;
+        led:has_medium         led:Medium.Playback;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/1970s+Teenager:+From+Bell-Bottoms+to+Disco+Dancing/1412008260626>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "22";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Theresa+O.+Littlestone/1412154435723>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1971-uu-uu/to/1975-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-10-01T09:10:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/pop+music/1412091800884/1412154587381> .
+
+<http://data.open.ac.uk/time/edtf/195u-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of the 1950's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.5u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1950-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1959-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/2013-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2013"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2013;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2013>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://data.open.ac.uk/led/person/Simon+Webb/1412008260630>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Simon Webb"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/1975-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1975"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1975;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1975>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.5u>
+        rdf:value   "5u";
+        rdfs:label  "50s"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/led/source/1970s+Teenager:+From+Bell-Bottoms+to+Disco+Dancing/1412008260626>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "1970s Teenager: From Bell-Bottoms to Disco Dancing"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2013-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/The_History_Press>;
+        <http://purl.org/dc/terms/title>
+                "1970s Teenager: From Bell-Bottoms to Disco Dancing";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Stroud>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Simon+Webb/1412008260630> .
+
+<http://reference.data.gov.uk/id/year/2013>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Neil_Young>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Neil Young"@en .
+
+<http://data.open.ac.uk/time/interval/1971-uu-uu/to/1975-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1971 and 1975"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1971-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1975-uu-uu> .
+
+<http://dbpedia.org/resource/James_Taylor>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "James Taylor"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .

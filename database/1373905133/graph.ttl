@@ -1,0 +1,442 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Daldy Isbister & Co."@en .
+
+<http://dbpedia.org/resource/Rome>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rome"@en .
+
+<http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>
+        rdfs:label  "La Côte-Saint-André"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fmilitary%2Bband%2Bmusic%2F13739050323471373905032358>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'military band music'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/military+band+music/1373905032347> .
+
+<http://reference.data.gov.uk/id/day/1823-09-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 September, 1823"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1823;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.23> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FRequiem%2F1373904917758/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373904917768>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Requiem'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Requiem/1373904917758> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/led/person/Pittoni/1433773403456>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Pittoni" .
+
+<http://data.open.ac.uk/led/lexp/1373905133>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "20 Sept., 1823.... On Monday, the 1st September, I attended in St. Peter's the last and most solemn requiem-service for the deceased Pope [Pius VII]....  I sat in the gallery appointed for the chiefs of the mission and their wives; all other persons, strangers or not... might take their chance as they could in the body of the church, which was on this occasion literally full, and filled with all that variety of costume which gives such a peculiar effect to a Roman crowd. Into the chapel nobody was allowed to enter, except the cardinals and prelates; the service was therefore undisturbed, the buzz of the multitude seeming more distant than it was. After the conclusion of the mass, in which the exquisite requiem of Pittoni was sung in even greater perfection than usual, the demons of absolution was performed five times, by five several cardinals; for Pius the Seventh as Pope, as Cardinal, as Archbishop, as Priest, and as Deacon; the five cardinals went in procession into the body of the church, followed by the papal singers, who performed a passage of a psalm or an anthem, after each absolution. These exquisite pieces of music were heard in perfection where we sate, but were nearly lost to persons who, though near, stood in the confusion of the crowd. The next day, we went to the apartments of Cardinal Consalvi at the Palace of the Consulta, opposite the palace of Monte Cavallo, to see the cardinals walk in procession into conclave.... The cardinals walked two and two, from a little church at the other extremity of the summit of the Quirinal, with one of the Guardia Nobile on each side, and preceded by all the attendants who were to be shut up with them during the conclave, also by the singers of the papal chapel, who performed the Veni Creator Spiritus; the effect of this might have been as fine as possible, but a noisy and dissonant military band at the close of the procession disturbed all."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+20+Sept.+1823/1386179768185>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "212-214";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1823-09-01>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-04T17:56:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fmilitary%2Bband%2Bmusic%2F13739050323471373905032358> , <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FRequiem%2F1373904917758/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373904917768> , <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FVeni%2BCreator%2BSpiritus%2F1373904976471/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373904976479> .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://reference.data.gov.uk/id/year/1879>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Giuseppe_Verdi>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_> , <http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://dbpedia.org/resource/Frances_Bunsen>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Frances von Bunsen"@en , "Frances Bunsen"@en , "Frances Baroness Bunsen"@en , "Baroness von Bunsen"@en , "Frances, Baroness Bunsen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Painting>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-03-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Berkshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1876-04-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Karlsruhe>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bunsen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances, Baroness";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baroness von Bunsen"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://reference.data.gov.uk/id/day/1791-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Augustus J. C. Hare"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "J. Lloyd Evans"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Evans";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "J. Lloyd" .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Painting>
+        rdfs:label  "Painting"@en .
+
+<http://reference.data.gov.uk/id/day/1876-04-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 April, 1876"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1876;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://dbpedia.org/resource/Hector_Berlioz>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Hector Berlioz" , "Berlioz" , "HectorBerlioz" , "Hector Berlioz"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1803-12-11>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1869-03-08>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Berlioz";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hector" .
+
+<http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Life and Letters of Frances Baroness Bunsen, vol 1"@en , "The Life and Letters of Frances Baroness Bunsen"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1879-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>;
+        <http://purl.org/dc/terms/title>
+                "The Life and Letters of Frances Baroness Bunsen";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" , "1" .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FVeni%2BCreator%2BSpiritus%2F1373904976471/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FRome1373904976479>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Veni Creator Spiritus'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Veni+Creator+Spiritus/1373904976471> .
+
+<http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://data.open.ac.uk/led/music/Veni+Creator+Spiritus/1373904976471>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Veni Creator Spiritus"@en;
+        <http://purl.org/dc/terms/title>
+                "Veni Creator Spiritus" .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://reference.data.gov.uk/id/day/1869-03-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 March, 1869"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1869;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.69> .
+
+<http://dbpedia.org/resource/Karlsruhe>
+        rdfs:label  "Karlsruhe"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+20+Sept.+1823/1386179768185>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Baroness Bunsen to her mother Mrs Waddington, 20 Sept. 1823"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Baroness Bunsen to her mother Mrs Waddington, 20 Sept. 1823";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Frances_Bunsen> .
+
+<http://reference.data.gov.uk/id/day/1803-12-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 December, 1803"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1803;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://dbpedia.org/resource/Berkshire>
+        rdfs:label  "Berkshire"@en .
+
+<http://data.open.ac.uk/led/music/military+band+music/1373905032347>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "military band music"@en;
+        <http://purl.org/dc/terms/title>
+                "military band music";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345> .
+
+<http://data.open.ac.uk/time/edtf/1879-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1879>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/led/music/Requiem/1373904917758>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Requiem"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Pittoni/1433773403456> , <http://dbpedia.org/resource/Hector_Berlioz> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> , <http://dbpedia.org/resource/Giuseppe_Verdi>;
+        <http://purl.org/dc/terms/title>
+                "Requiem";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Pittoni/1433773403456> , <http://dbpedia.org/resource/Hector_Berlioz> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> , <http://dbpedia.org/resource/Giuseppe_Verdi> .

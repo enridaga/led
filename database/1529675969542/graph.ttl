@@ -1,0 +1,282 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/private+secretary>
+        rdfs:label  "Private secretary"@en .
+
+<http://data.open.ac.uk/led/agent/Henry+Reeve/1529659311217>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Henry Reeve"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/led/agent/Lazaroni+and+other+Neapolitans/1529675896451>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lazaroni and other Neapolitans"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.65>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  65 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/performance/705e560652f016a10848c9697edaced6/1529675896448>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Outdoor music-making'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Naples>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Harp> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Charles+C.F.++Greville/1529659703174>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Outdoor+music-making/1529675896442>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Lazaroni+and+other+Neapolitans/1529675896451> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://reference.data.gov.uk/id/day/1794-04-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 April, 1794"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1794;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/source/the+greville+memoirs:+a+journal+of+the+reigns+of+king+george+iv+and+king+william+iv/vol/1>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Greville Memoirs: A Journal of the Reigns of King George IV and King William IV"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1874-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/LongmansGreen%26Co>;
+        <http://purl.org/dc/terms/title>
+                "The Greville Memoirs: A Journal of the Reigns of King George IV and King William IV";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Henry+Reeve/1529659311217>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/volume>
+                "1" .
+
+<https://books.google.co.uk/books%252525252525253Fid%252525252525253DsJqZws3-Qy0C%2525252525252526printsec%252525252525253Dfrontcover%2525252525252526source%252525252525253Dgbs_ge_summary_r%2525252525252526cad%252525252525253D0%2525252525252523v%252525252525253Donepage%2525252525252526q%2525252525252526f%252525252525253Dfalse>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-04-26"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Google Books"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://books.google.co.uk/books%252525252525253Fid%252525252525253DsJqZws3-Qy0C%2525252525252526printsec%252525252525253Dfrontcover%2525252525252526source%252525252525253Dgbs_ge_summary_r%2525252525252526cad%252525252525253D0%2525252525252523v%252525252525253Donepage%2525252525252526q%2525252525252526f%252525252525253Dfalse"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/led/clerk-in-ordinary+to+the+privy+council>
+        rdfs:label  "Clerk-in-ordinary to the Privy Council"@en .
+
+<http://data.open.ac.uk/led/lexp/1529675969542>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/6fa9182f6d579c4666a1385a715a7cc5/excerpt/da2e3ebafd6b36c1a7cd5f24f7bf23d0>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "358";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Charles+C.F.++Greville/1529659703174>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/79993c99c75fbdd085c52fa2c08d4cd9>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1830-05-08TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-06-30T17:37:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-22T13:59:30.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/705e560652f016a10848c9697edaced6/1529675896448>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/6fa9182f6d579c4666a1385a715a7cc5/excerpt/da2e3ebafd6b36c1a7cd5f24f7bf23d0> .
+
+<http://data.open.ac.uk/led/source/Journal+entry,+8+May+1830/1529675787471>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Journal entry, 8 May 1830"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+greville+memoirs:+a+journal+of+the+reigns+of+king+george+iv+and+king+william+iv/vol/1>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://books.google.co.uk/books%252525252525253Fid%252525252525253DsJqZws3-Qy0C%2525252525252526printsec%252525252525253Dfrontcover%2525252525252526source%252525252525253Dgbs_ge_summary_r%2525252525252526cad%252525252525253D0%2525252525252523v%252525252525253Donepage%2525252525252526q%2525252525252526f%252525252525253Dfalse>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Journal entry, 8 May 1830";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Charles+C.F.+Greville/1529660323876> .
+
+<http://data.open.ac.uk/led/political+and+social+diarist>
+        rdfs:label  "Political and social diarist"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/Outdoor+music-making/1529675896442>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Outdoor music-making"@en;
+        <http://purl.org/dc/terms/title>
+                "Outdoor music-making" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/agent/Charles+C.F.++Greville/1529659703174>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Charles C.F.  Greville"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/private+secretary> , <http://data.open.ac.uk/led/political+and+social+diarist> , <http://data.open.ac.uk/led/clerk-in-ordinary+to+the+privy+council>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1794-04-02>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1865-01-18>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Greville";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charles C.F." .
+
+<http://dbpedia.org/resource/Harp>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Harp"@en .
+
+<http://reference.data.gov.uk/id/day/1865-01-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 January, 1865"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1865;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.65> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/led/place/79993c99c75fbdd085c52fa2c08d4cd9>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "The seashore at Naples"@en;
+        <http://purl.org/dc/terms/description>
+                "The seashore at Naples"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Naples> .
+
+<http://data.open.ac.uk/led/agent/Charles+C.F.+Greville/1529660323876>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charles C.F. Greville"@en .
+
+<http://data.open.ac.uk/time/edtf/1874-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1874"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1874;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1874>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/Naples>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Naples"@en .
+
+<http://data.open.ac.uk/led/source/6fa9182f6d579c4666a1385a715a7cc5/excerpt/da2e3ebafd6b36c1a7cd5f24f7bf23d0>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">Naples, they told me, does very well for a short time, but you will soon grow tired of it. To be sure, I have been here only three weeks, but I liked it better every day, and I am wretched at leaving it. What could I ever mean by thinking it was not gay, and less lively than Genoa? To-night, as I came home from riding, the shore was covered with lazaroni and throngs of people, dancing, singing, harping, fiddling&mdash;all so merry, and as if the open air and their own elastic spirits were happiness enough. I suppose I shall never come again, for when I have measured back the distance to my own foggy country, there I shall settle for ever, and Naples and her sunny shores and balmy winds will only be as a short and delightful dream, from which I have waked too soon.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Journal entry, 8 May 1830' pp. 358 (149 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Journal+entry,+8+May+1830/1529675787471>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "358" .
+
+<http://data.open.ac.uk/time/edtf/1830-05-08TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 May, 1830, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1830;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://bnb.data.bl.uk/id/organization/LongmansGreen%26Co>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Longmans, Green & Co."@en .

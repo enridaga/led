@@ -1,0 +1,174 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/Gioachino_Rossini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Rossini"@en , "Rossini" , "Gioachino Rossini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-02-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Pesaro>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1868-11-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Passy>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rossini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gioachino" .
+
+<http://reference.data.gov.uk/id/day/1792-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FDiary%2Bof%2Ban%2BIdle%2BWoman%2Bin%2BSpain%2F1378303322861/vol2/pages258>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Diary of an Idle Woman in Spain, Vol 2, pages 258"@en;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+an+Idle+Woman+in+Spain/1378303322861>;
+        <http://purl.org/dc/terms/title>
+                "Memoir of Frances Minto Dickinson Elliot, Chapter 14";
+        <http://purl.org/ontology/bibo/volume>
+                "2" .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Frances Minto Dickinson Elliot"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Minto Dickinson Elliot";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances";
+        <http://xmlns.com/foaf/0.1/name>
+                "Frances Minto Dickinson Elliot" .
+
+<http://reference.data.gov.uk/id/day/1868-11-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 November, 1868"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1868;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://dbpedia.org/resource/Granada>
+        rdfs:label  "Granada"@en .
+
+<http://dbpedia.org/resource/Passy>
+        rdfs:label  "Passy"@en .
+
+<http://data.open.ac.uk/led/organization/F.+V.+White/1378303322879>
+        rdf:type    <http://schema.org/Organization>;
+        rdfs:label  "F. V. White"@en .
+
+<http://data.open.ac.uk/led/music/The+Barber+of+Seville/1378303593021>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Barber of Seville"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/dc/terms/title>
+                "The Barber of Seville";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gioachino_Rossini> .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FThe%2BBarber%2Bof%2BSeville%2F1378303593021/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FGranada1378303593027>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Barber of Seville'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Granada>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Barber+of+Seville/1378303593021> .
+
+<http://data.open.ac.uk/led/lexp/1378303657>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "As to the Zarzuela (opera comique) ... music generally imported, becomes, by an easy process, Spanish at the frontier. I was informed the other night, that `La prova di un opera seria,' called here `Campanone' was Spanish, and (oh shade of Rossini!) that the `Barber of Seville' was Spanish music arranged by an Italian! And (en parenthèse) what a treat to listen to these thrilling Italian notes, and that true voice of melody in which they speak, after the inanities to which I have been accustomed by national composers, ignorant of what true music means. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FDiary%2Bof%2Ban%2BIdle%2BWoman%2Bin%2BSpain%2F1378303322861/vol2/pages258>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "258";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Granada>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-09-04T14:07:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FThe%2BBarber%2Bof%2BSeville%2F1378303593021/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FGranada1378303593027> .
+
+<http://dbpedia.org/resource/Pesaro>
+        rdfs:label  "Pesaro"@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/13SIT>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13SIT"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/Diary+of+an+Idle+Woman+in+Spain/1378303322861>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of an Idle Woman in Spain"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/13SIT>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/F.+V.+White/1378303322879>;
+        <http://purl.org/dc/terms/title>
+                "Diary of an Idle Woman in Spain";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869> .

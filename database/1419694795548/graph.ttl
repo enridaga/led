@@ -1,0 +1,295 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://musicbrainz.org/artist/77d09862-c297-40a6-aea5-251a6fc34604#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Carlo Maria Giulini"@en .
+
+<http://data.open.ac.uk/time/interval/1955-07-uu/to/1955-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between July, 1955 and August, 1955"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1955-07-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1955-08-uu> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/1955-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1955"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1955;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.55> .
+
+<http://data.open.ac.uk/led/music/Falstaff/1438196990256>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Falstaff"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi>;
+        <http://purl.org/dc/terms/title>
+                "Falstaff";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi> .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1915-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://dbpedia.org/resource/Glyndebourne>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Glyndebourne"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.55>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  55 .
+
+<http://data.open.ac.uk/led/organization/Hutchinson/1385572347748>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Hutchinson"@en .
+
+<http://data.open.ac.uk/led/schoolteacher>
+        rdfs:label  "Schoolteacher"@en , "schoolteacher"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Carlo_Maria_Giulini>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Carlo Maria Giulini"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/77d09862-c297-40a6-aea5-251a6fc34604#_> .
+
+<http://data.open.ac.uk/led/lexp/1419694795548>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "There are actually two locations: Glyndebourne (as indicated) but also Edinburgh."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "Carlo Maria Giulini... his first impact upon the Royal Philharmonic Orchestra was quite unexpected. It was a great moment. We were rehearsing in the (deserted) canteen of Glyndebourne Opera one morning in 1955 without benefit of soloists or chorus, and the work was Verdi's Falstaff. Many of us knew the music, and were on the lookout for the very opening bar, which starts with what can only be described as a fortissimo empty beat - in real terms, a solo for conductor. If he is good, it is secure. If not, the whole attack of the orchestra sounds like a pack of cards being dropped by a rather unsteady hand. Giulini strolled in, young, handsome and friendly, a delight to the ladies present but oddly enough not revolting to the (very) male members of the RPO. After saying a polite 'Good morning' he simply picked up the baton, looked suddenly stern and concentrated, and made his solo down beat. Before it had reached bottom, everyone present knew that we were in the presence of a great conductor, one who really knew this work in detail. So he proved in every rehearsal and at the many performances which followed both at Glyndebourne and the Edinburgh Festival a couple of weeks later. The whole series was of a tension and vitality which is so essential to this music. It was possible to play it with freedom from worrying about balance - loudly when necessary, without ever drowning the singers, and as light as thistledown at other times, as in the accompaniment to the gossip of the Merry Wives of Windsor, who are part of the story. All this made us look forward very much to our first concert appearance a month later with Giulini, in London."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Senza+Malizia,+Ma+Non+Sempre+Con+Ardore+('Not+Intentionally+Rude,+But+Sometimes+Slightly+Critical')/1419610503519>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "204";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glyndebourne>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1955-07-uu/to/1955-08-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-02T11:56:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-12-27T15:39:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Falstaff'/1419694792599/1419694792605> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://dbpedia.org/resource/Giuseppe_Verdi>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_> , <http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/South_Shields>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "South Shields"@en .
+
+<http://data.open.ac.uk/led/source/In+the+Orchestra>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "In the Orchestra"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1987-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Hutchinson/1385572347748>;
+        <http://purl.org/dc/terms/title>
+                "In the Orchestra";
+        <http://purl.org/ontology/bibo/isbn>
+                "0091684501"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_> .
+
+<http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Jack Brymer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Clarinetist> , <http://data.open.ac.uk/led/schoolteacher> , <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1915-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/South_Shields>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/2003-09-16>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Redhill,_Surrey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brymer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jack" .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Royal_Philharmonic_Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Royal Philharmonic Orchestra"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Falstaff'/1419694792599/1419694792605>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Falstaff''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glyndebourne>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Falstaff/1438196990256>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Carlo_Maria_Giulini> , <http://dbpedia.org/resource/Royal_Philharmonic_Orchestra> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://reference.data.gov.uk/id/year/1987>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1955-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1955"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1955;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.55> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Redhill,_Surrey>
+        rdfs:label  "Redhill, Surrey"@en .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/source/Senza+Malizia,+Ma+Non+Sempre+Con+Ardore+('Not+Intentionally+Rude,+But+Sometimes+Slightly+Critical')/1419610503519>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Senza Malizia, Ma Non Sempre Con Ardore ('Not Intentionally Rude, But Sometimes Slightly Critical')"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/In+the+Orchestra>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Senza Malizia, Ma Non Sempre Con Ardore ('Not Intentionally Rude, But Sometimes Slightly Critical')";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_> .
+
+<http://data.open.ac.uk/time/edtf/1987-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1987>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://reference.data.gov.uk/id/day/2003-09-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 September, 2003"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2003;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

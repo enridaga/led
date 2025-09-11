@@ -1,0 +1,160 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+07+February+2019),+February+1743,+trial+of+James+Roberts+(t17430223-3)/1550839506547>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), February 1743, trial of James Roberts (t17430223-3)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), February 1743, trial of James Roberts (t17430223-3)";
+        <http://purl.org/ontology/bibo/number>
+                "t17430223-3";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1532695934699>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/Ann+Jackson/1550839545445>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Ann Jackson"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/servant>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jackson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ann" .
+
+<http://data.open.ac.uk/led/agent/James+Roberts/1550839611917>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "James Roberts"@en .
+
+<http://data.open.ac.uk/led/place/ce259a1aa58ad15c647b398228ca7b3e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Anne, Westminster, London"@en;
+        <http://purl.org/dc/terms/description>
+                "St Anne, Westminster, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Westminster> , <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/source/07286130f24f51c8a663081c358187a3/excerpt/4adb1f10e28c51c2f8faa27f465c6835>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[James Roberts (1703-1743) was found guilty of violent theft and highway robbery and executed at Tyburn 13 April 1743]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">James Roberts, of<span class=\"apple-converted-space\">&nbsp;</span>St Anne Westminster, was indicted for assaulting<span class=\"apple-converted-space\">&nbsp;</span>Thomas Dell, on the King's Highway; putting him in Fear, &amp;c. and taking from him [money, leather and silver items on 28 January 1743]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;[...]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Ann Jackson (the Prisoner's Servant): My Mistress went to Bed about eight o'Clock, and I went to Bed about Ten. My Master was not at Home then; he came Home that Night, and waked me with his laughing and singing, and said he had got a great Find.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 07 February 2019), February 1743, trial of James Roberts (t17430223-3)' (97 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+07+February+2019),+February+1743,+trial+of+James+Roberts+(t17430223-3)/1550839506547>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.43>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  43 .
+
+<http://data.open.ac.uk/led/lexp/1550839775205>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/07286130f24f51c8a663081c358187a3/excerpt/4adb1f10e28c51c2f8faa27f465c6835>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Ann+Jackson/1550839545445>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/ce259a1aa58ad15c647b398228ca7b3e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1743-01-28TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-01T10:32:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-22T12:49:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1550839611896>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/07286130f24f51c8a663081c358187a3/excerpt/4adb1f10e28c51c2f8faa27f465c6835> .
+
+<http://dbpedia.org/resource/Westminster>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Westminster"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/performance/b60bd1cf7983ada22999d2373d4c56fe/1550839611896>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Ann+Jackson/1550839545445>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1532695934699>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/James+Roberts/1550839611917> .
+
+<http://data.open.ac.uk/led/servant>
+        rdfs:label  "Servant"@en , "servant"@en .
+
+<http://data.open.ac.uk/time/edtf/1743-01-28TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 January, 1743, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.43> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .

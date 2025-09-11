@@ -1,0 +1,394 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/Sonata>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Sonata"@en .
+
+<http://data.open.ac.uk/led/head+of+leigzig+conservertoir>
+        rdfs:label  "Head of Leigzig Conservertoir"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+B+flat+minor/1430823860006/1430823860017>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Sonata in B flat minor'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Sonata>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Sonata+in+B+flat+minor/1430823860006>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://bnb.data.bl.uk/id/agent/HenryHoltandCo>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Henry Holt & Co."@en .
+
+<http://data.open.ac.uk/led/source/Amateur+Series+-+Recent+Music+and+Musicians/1425987987426>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Recent Music and Musicians"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1879-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/HenryHoltandCo>;
+        <http://purl.org/dc/terms/title>
+                "Recent Music and Musicians";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/person/Charlotte+Moscheles/1429540740575>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://data.open.ac.uk/led/agent/A.+D.+Coleridge/1425987987446>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_> .
+
+<http://reference.data.gov.uk/id/day/1794-05-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 May, 1794"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1794;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/led/agent/A.+D.+Coleridge/1425987987446>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A. D. Coleridge"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://reference.data.gov.uk/id/day/1870-03-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 March, 1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://dbpedia.org/resource/Kingdom_of_Bohemia>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Bohemia"@en .
+
+<http://reference.data.gov.uk/id/year/1879>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://dbpedia.org/resource/Poland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Poland"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-10"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Prague>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Prague"@en .
+
+<http://data.open.ac.uk/time/edtf/1810-03-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "March, 1810"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1810;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://dbpedia.org/resource/Warsaw>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Warsaw"@en .
+
+<http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Fryderyck Chopin"@en , "Frédéric Chopin"@en , "Chopin" , "Chopin, Frédéric, 1810-1849"@en , "Fryderyk Chopin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1810-03-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Warsaw>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1849-10-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Poland>;
+        owl:sameAs                      <http://musicbrainz.org/artist/09ff1fe8-d61c-4b98-bb82-18487c74d7b7#_> , <http://bnb.data.bl.uk/id/person/ChopinFr%C3%A9d%C3%A9ric1810-1849>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Chopin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Fryderyk Franciszek" .
+
+<http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ignatz Moscheles" , "Ignaz Moscheles"@en , "Ignatz Moscheles"@en , "Ignace Moscheles"@en , "Moscheles";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/head+of+leigzig+conservertoir> , <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1794-05-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Prague>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1870-03-10>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Bohemia>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moscheles";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ignatz" .
+
+<http://data.open.ac.uk/led/music/Sonata+in+B+flat+minor/1430823860006>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sonata in B flat minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>;
+        <http://purl.org/dc/terms/title>
+                "Sonata in B flat minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://dbpedia.org/resource/Prelude_(music)>
+        rdfs:label  "Prelude (music)"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://dbpedia.org/resource/Scherzo>
+        rdfs:label  "Scherzo"@en .
+
+<http://data.open.ac.uk/led/music/Chopin's++Prelude+in+A+flat+major/1430823702770>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Chopin's  Prelude in A flat major"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>;
+        <http://purl.org/dc/terms/title>
+                "Chopin's  Prelude in A flat major";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Scherzo+in+C+sharp+minor/1430823801502/1430823801513>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Scherzo in C sharp minor'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Scherzo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Scherzo+in+C+sharp+minor/1430823801502>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Gutmann/1430823801517> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Chopin's++Prelude+in+A+flat+major/1430823702770/1430823702781>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Chopin's  Prelude in A flat major'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Prelude_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Chopin's++Prelude+in+A+flat+major/1430823702770>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://data.open.ac.uk/led/person/Charlotte+Moscheles/1429540740575>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charlotte Moscheles"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moscheles";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charlotte" .
+
+<http://data.open.ac.uk/led/music/Scherzo+in+C+sharp+minor/1430823801502>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Scherzo in C sharp minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin>;
+        <http://purl.org/dc/terms/title>
+                "Scherzo in C sharp minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Fr%C3%A9d%C3%A9ric_Chopin> .
+
+<http://data.open.ac.uk/time/edtf/1849-10-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "October, 1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/1879-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1879>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/time/edtf/1839-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1839"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1839;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/led/agent/Gutmann/1430823801517>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gutmann"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/led/lexp/1430823884656>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Today he was quite a different Chopin from the Chopin last week. I visited him by appointment with Charlotte and Emily, who are his enthusiastic admirers: they were profoundly impressed with the Prelude in A flat major in 6-8 time, with the perpetually recurring A flat resembling the pedal bass of an organ. Chopin's excellent pupil Gutmann played his manuscript Scherzo in C sharp minor, Chopin himself his manuscript Sonata in B flat minor, with the Funeral March."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Amateur+Series+-+Recent+Music+and+Musicians/1425987987426>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/temp>;
+        led:pages              "257";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1839-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-05T11:04:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+B+flat+minor/1430823860006/1430823860017> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Scherzo+in+C+sharp+minor/1430823801502/1430823801513> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Chopin's++Prelude+in+A+flat+major/1430823702770/1430823702781> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .

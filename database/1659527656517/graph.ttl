@@ -1,0 +1,637 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/agent/Charles+Ashton/1659527380319>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Charles Ashton"@en .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/itinerant+preacher>
+        rdfs:label  "itinerant preacher"@en .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://reference.data.gov.uk/id/day/1805-03-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 March, 1805"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.05> .
+
+<http://data.open.ac.uk/led/performance/8df3e3c6e79ba1f6472724f5f2fa110b/1659527611627>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified choral works'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+choral+works/1659527611603>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/George+Brooke/1659527611663> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527611641> .
+
+<http://data.open.ac.uk/led/music/Dettingen+Te+Deum/1657881502263>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Dettingen Te Deum"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Dettingen Te Deum";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519284292>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Cooper"@en .
+
+<http://data.open.ac.uk/led/music/The+Creation/1535812761249>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Creation"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_>;
+        <http://purl.org/dc/terms/title>
+                "The Creation";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_> .
+
+<http://dbpedia.org/resource/Soprano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Soprano"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/orchestra/1659527272183>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "orchestra"@en .
+
+<http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Cooper"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/ran+a+radical+news+agency> , <http://data.open.ac.uk/led/itinerant+preacher> , <http://data.open.ac.uk/led/shoemaker> , <http://data.open.ac.uk/led/author> , <http://data.open.ac.uk/led/schoolmaster> , <http://data.open.ac.uk/led/poet> , <http://data.open.ac.uk/led/journalist> , <http://data.open.ac.uk/led/lecturer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian> , <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain> , <http://dbpedia.org/resource/Baptist_beliefs>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1805-03-20>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Leicester>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1892-07-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Cooper";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://reference.data.gov.uk/id/year/1873>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1873"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Baptist_beliefs>
+        rdf:type    led:Belief;
+        rdfs:label  "Baptist beliefs"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/led/agent/Mr+Knowles/1659527054188>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mr Knowles"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527272120>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://dbpedia.org/resource/Lincoln,_England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lincoln, England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.3u>
+        rdf:value   "3u";
+        rdfs:label  "30s"@en .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://data.open.ac.uk/time/edtf/183u-Mm-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the middle of the 1830's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.3u> .
+
+<http://reference.data.gov.uk/id/day/1892-07-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 July, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/agent/Mr+Knowles/1659527380344>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mr Knowles"@en .
+
+<http://dbpedia.org/resource/Leicester>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leicester"@en .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527483705>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527611663>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://data.open.ac.uk/led/musicgenre/sacred+vocal>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "sacred vocal"@en .
+
+<http://data.open.ac.uk/led/performance/fc9ff66a60a00b40462de7a87abaedfc/1659527272082>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Judas Maccabaeus'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Tenor> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Alto>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Judas+Maccabaeus/1659527272056>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr+Knowles/1659527272159> , <http://data.open.ac.uk/led/agent/George+Brooke/1659527272120> , <http://data.open.ac.uk/led/agent/Charles+Ashton/1659527272133> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527272097> , <http://data.open.ac.uk/led/agent/orchestra/1659527272183> .
+
+<http://data.open.ac.uk/time/edtf/1873-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1873"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1873;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1873>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/agent/an+orchestra/1659527380268>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "an orchestra"@en .
+
+<http://dbpedia.org/resource/Alto>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Alto"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Mr+Knowles/1659527139441>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mr Knowles"@en .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527380294>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527272097>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://data.open.ac.uk/led/lexp/1659527656517>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/0c654de30c6689f568016163fe430cd5/excerpt/192e536c005f1ca13ae412ab1a961a32>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "107–110";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/183u-Mm-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-08-18T10:52:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2022-08-03T11:54:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/fc9ff66a60a00b40462de7a87abaedfc/1659527272082> , <http://data.open.ac.uk/led/performance/9d667f607705fab3a851a2210e5b33e3/1659527054111> , <http://data.open.ac.uk/led/performance/9e38e51306dc0b96613c061eef6ea707/1659526841235> , <http://data.open.ac.uk/led/performance/8df3e3c6e79ba1f6472724f5f2fa110b/1659527611627> , <http://data.open.ac.uk/led/performance/a7bb5bc261baf47d3316538153122c68/1659527483642> , <http://data.open.ac.uk/led/performance/0337167dc99017c24f371d25f4204107/1659527380226>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/0c654de30c6689f568016163fe430cd5/excerpt/192e536c005f1ca13ae412ab1a961a32> .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/led/schoolmaster>
+        rdfs:label  "schoolmaster"@en , "Schoolmaster"@en .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/led/performance/0337167dc99017c24f371d25f4204107/1659527380226>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Israel in Egypt'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Tenor> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Alto>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Israel+in+Egypt/1516720443129>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/George+Brooke/1659527380294> , <http://data.open.ac.uk/led/agent/Charles+Ashton/1659527380319> , <http://data.open.ac.uk/led/agent/an+orchestra/1659527380268> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527380252> , <http://data.open.ac.uk/led/agent/Mr+Knowles/1659527380344> .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527483666>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://data.open.ac.uk/led/agent/Mr+Knowles/1659527272159>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mr Knowles"@en .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527054163>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://data.open.ac.uk/led/ran+a+radical+news+agency>
+        rdfs:label  "ran a radical news agency"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/Charles+Ashton/1659527139463>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Charles Ashton"@en .
+
+<http://data.open.ac.uk/led/music/Judas+Maccabaeus/1659527272056>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Judas Maccabaeus"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Judas Maccabaeus";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/source/0c654de30c6689f568016163fe430cd5/excerpt/192e536c005f1ca13ae412ab1a961a32>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">[Thomas Cooper had become a member of a new Choral Society in Lincoln]</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">They made me their secretary; and my head went to work to make the music of the Choral Society worth hearing in old cathedralled Lincoln.</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">I planned, I visited, I wooed, I entreated, till I obtained the aid and co-operation of the best musicians and the best singers in the ancient city.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Like every true reformer, I had to put down the authority of the imperfect, and put the authoritative perfect in its place.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Over the company of raw amateurs</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">despite some grumbling</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">I succeeded in placing the most perfect &ldquo;singer at sight,&rdquo; and most thoroughly experienced person in the music of Handle, to be found in the whole city, as conductor; the best violinist in the city, as leader; the best alto and tenor singers in the city, as leaders of their parts in the choruses, and as principal solo singers; the best violoncello player in Lincoln, as leader on his instrument; while I also secured the aid of an experienced trumpeter.<span style=\"mso-spacerun: yes;\">&nbsp; </span>We already had the aid of a good double-bass player, who was also a sound timist.<span style=\"mso-spacerun: yes;\">&nbsp; </span>[&hellip;]</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">[Cooper successfully sought patronage for the society&rsquo;s concerts] and the incumbent of the most central church in the city granted us the use of it for our public concerts of sacred music.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Mr. Whall, the most thoroughly competent organist in Lincoln, presided at the organ; and, before a crowded audience, the transcendent &ldquo;Messiah,&rdquo; the noble &ldquo;Dettingen Te Deum,&rdquo; the brilliant and warlike &ldquo;Judas Maccabaeus,&rdquo; the gorgeous &ldquo;Solomon,&rdquo; the sublime &ldquo;Israel in Egypt,&rdquo; and other oratorios of Handel were performed with an enthusiasm that had never before been witnessed in Lincoln.<span style=\"mso-spacerun: yes;\">&nbsp; </span>The &ldquo;Creation&rdquo; of Haydn, and scattered choral pieces of Mozart and Beethoven, were also given.</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">Nor was the solo singing of a mean character.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Our conductor, George Brooke, of the cathedral choir, would have attracted admiration, as a bass singer of great original powers of expression, and great capability of execution, with the most critical audience in the kingdom.<span style=\"mso-spacerun: yes;\">&nbsp; </span>The tenor singing of dear departed Charles Ashton</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">a universal favourite in Lincoln</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">was the sweetest I ever heard, except Braham&rsquo;s.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Mr. Knowles, our alto solo singer, was not only a very pleasing vocalist, but a competent musician; and is, at the moment I write, a member of the choir in St. George&rsquo;s Chapel, Windsor.</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">[&hellip;]</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">&nbsp;</span></p>\n<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">What mad enthusiasm I felt for music!<span style=\"mso-spacerun: yes;\">&nbsp; </span>I often sat up the greater part of a night to transact the writing necessary for the furtherance of the prosperity of that Choral Society.<span style=\"mso-spacerun: yes;\">&nbsp; </span>[&hellip;]<span style=\"mso-spacerun: yes;\">&nbsp; </span>The enjoyment</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">the rapture</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri;\">―</span><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">I had in listening to the music, was more than a reward for whatever time I gave to the society, or interest I sacrificed for it.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Life of Thomas Cooper, Written by Himself' pp. 107–110 (461 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Life+of+Thomas+Cooper,+Written+by+Himself/1659519284262>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "107–110" .
+
+<http://data.open.ac.uk/led/music/unspecified+choral+works/1659527611603>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified choral works"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "unspecified choral works";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://data.open.ac.uk/led/performance/a7bb5bc261baf47d3316538153122c68/1659527483642>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Creation'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Tenor>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Creation/1535812761249>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Charles+Ashton/1659527483729> , <http://data.open.ac.uk/led/agent/an+orchestra/1659527483681> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527483666> , <http://data.open.ac.uk/led/agent/George+Brooke/1659527483705> .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527611641>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://data.open.ac.uk/led/shoemaker>
+        rdfs:label  "shoemaker"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.05>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/journalist>
+        rdfs:label  "journalist"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/performance/9e38e51306dc0b96613c061eef6ea707/1659526841235>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Alto> , <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Tenor> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437> , <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Messiah/1529917194867>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Charles+Ashton/1659527139463> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659526841249> , <http://data.open.ac.uk/led/agent/Mr+Knowles/1659527139441> , <http://data.open.ac.uk/led/agent/George+Brooke/1659527139417> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659526841249>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://data.open.ac.uk/led/agent/Charles+Ashton/1659527272133>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Charles Ashton"@en .
+
+<http://data.open.ac.uk/led/music/Messiah/1529917194867>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527380252>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "concert audiences in Lincoln"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Lincoln";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "concert audiences in" .
+
+<http://data.open.ac.uk/led/organization/Hodder+and+Stoughton/1659519284306>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Hodder and Stoughton"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Joseph Haydn"@en .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527054137>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a choral society in Lincoln"@en .
+
+<http://dbpedia.org/resource/Tenor>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Tenor"@en .
+
+<http://data.open.ac.uk/led/author>
+        rdfs:label  "Author"@en , "author"@en .
+
+<http://data.open.ac.uk/led/performance/9d667f607705fab3a851a2210e5b33e3/1659527054111>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Dettingen Te Deum'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lincoln,_England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/sacred+vocal> , <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Alto>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519571802> , <http://data.open.ac.uk/led/agent/concert+audiences+in+Lincoln/1659526784437>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Dettingen+Te+Deum/1657881502263>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr+Knowles/1659527054188> , <http://data.open.ac.uk/led/agent/George+Brooke/1659527054163> , <http://data.open.ac.uk/led/agent/a+choral+society+in+Lincoln/1659527054137> .
+
+<http://data.open.ac.uk/led/agent/Charles+Ashton/1659527483729>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Charles Ashton"@en .
+
+<http://data.open.ac.uk/led/source/The+Life+of+Thomas+Cooper,+Written+by+Himself/1659519284262>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Life of Thomas Cooper, Written by Himself"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/lifethomascoope00coopgoog/%2520>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1873-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Hodder+and+Stoughton/1659519284306>;
+        <http://purl.org/dc/terms/title>
+                "The Life of Thomas Cooper, Written by Himself";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Thomas+Cooper/1659519284292> .
+
+<http://data.open.ac.uk/led/music/Israel+in+Egypt/1516720443129>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Israel in Egypt"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>;
+        <http://purl.org/dc/terms/title>
+                "Israel in Egypt";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759> .
+
+<http://dbpedia.org/resource/Bass_(voice_type)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Bass (voice type)"@en .
+
+<http://data.open.ac.uk/led/poet>
+        rdfs:label  "poet"@en , "Poet"@en .
+
+<http://data.open.ac.uk/led/agent/George+Brooke/1659527139417>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Brooke"@en .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<https://archive.org/details/lifethomascoope00coopgoog/%2520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2022-08-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/lifethomascoope00coopgoog/%2520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .
+
+<http://data.open.ac.uk/led/agent/an+orchestra/1659527483681>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "an orchestra"@en .

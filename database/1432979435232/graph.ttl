@@ -1,0 +1,246 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1432979435232>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/3b47ccb94e7170b3455fd80c651d9065>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "206";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/King+Edward+VII/1432979290794>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Westminster_Abbey>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1904-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-16T11:52:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-30T09:50:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Onward+Christian+Soldiers/1399975297811/1432979385807>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/3b47ccb94e7170b3455fd80c651d9065> .
+
+<http://data.open.ac.uk/led/person/King+Edward+VII/1432979290794>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "King Edward VII"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "VII";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "King Edward" .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1842-05-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 May, 1842"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1842;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "NOVELLO AND COMPANY Limited"@en .
+
+<http://data.open.ac.uk/led/music/Onward+Christian+Soldiers/1399975297811>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Onward, Christian Soldiers"@en , "Onward Christian Soldiers"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c2f0fcdf-dfb9-4f94-88c9-963f0e1da438#_> , <http://dbpedia.org/resource/Arthur_Sullivan>;
+        <http://purl.org/dc/terms/title>
+                "Onward Christian Soldiers";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c2f0fcdf-dfb9-4f94-88c9-963f0e1da438#_> , <http://dbpedia.org/resource/Arthur_Sullivan> .
+
+<http://musicbrainz.org/artist/c2f0fcdf-dfb9-4f94-88c9-963f0e1da438#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sabine Baring-Gould"@en .
+
+<http://dbpedia.org/resource/Arthur_Sullivan>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                     "Arthur Sullivan"@en , "Sir Arthur Sullivan" , "Arthur Sullivan" , "Sir Arthur Sullivan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1842-05-13>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1900-11-22>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                     <http://musicbrainz.org/artist/4b466f5e-4620-4084-8841-3fe4ea38e689#_> .
+
+<http://reference.data.gov.uk/id/year/1904>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1904"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/westminsterpilgr00briduoft>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>;
+        <http://purl.org/dc/terms/title>
+                "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://musicbrainz.org/artist/6a38b159-e3e0-4c4f-bdb5-105eedf458e5#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Choir of Westminster Abbey"@en .
+
+<http://musicbrainz.org/artist/4b466f5e-4620-4084-8841-3fe4ea38e689#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Sir Arthur Sullivan"@en .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<https://archive.org/details/westminsterpilgr00briduoft>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/westminsterpilgr00briduoft"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Onward+Christian+Soldiers/1399975297811/1432979385807>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Onward Christian Soldiers'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/King+Edward+VII/1432979290794>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Onward+Christian+Soldiers/1399975297811>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/6a38b159-e3e0-4c4f-bdb5-105eedf458e5#_> .
+
+<http://reference.data.gov.uk/id/day/1900-11-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 November, 1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Frederick Bridge"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/role/organist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1844-12-05>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1924-03-18>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bridge";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frederick" .
+
+<http://reference.data.gov.uk/id/day/1844-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1844"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1844;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.44> .
+
+<http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/3b47ccb94e7170b3455fd80c651d9065>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In 1904 the funeral service for H.R.H. the Duke of Cambridge was held, attended by King Edward and Queen Alexandra. We had Sullivan's setting of \"Onward, Christian Soldiers,\" and I remember seeing the King singing in the manly, hearty fashion that was so characteristic of him, as he stood forth prominently in his place near the bier. My mind went back to my boyhood days; again I heard the stirring tale of that grim fight on Guy Fawkes' day, sixty-five years ago, when . . . all day long the noise of battle roll'd Among the mountains by the winter sea, and every man in the thin British ranks bore himself as a paladin, not least him who now brought into the Abbey on his way to his last resting place had so gallantly maintained himself amid the carnage near the two-gun battery. The Dean afterwards told me that His Majesty had expressed his great satisfaction with the conduct of the service, and the manner in which it was rendered.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport' pp. 206 (168 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "206" .
+
+<http://data.open.ac.uk/time/edtf/1904-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1904"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1904;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1904>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://reference.data.gov.uk/id/day/1924-03-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 March, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://dbpedia.org/resource/Westminster_Abbey>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Westminster Abbey"@en .

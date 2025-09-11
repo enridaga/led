@@ -1,0 +1,479 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://data.open.ac.uk/led/lexp/1430583686018>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live , led:Medium.Playback , led:Medium.Broadcast;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/ee983474bef4eff61b19cbcb6217dff8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "137-138";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/46a6fac0-2e14-4214-b08e-3bdb1cffa5aa#_> , <http://data.open.ac.uk/led/agent/Mike+Stern/1476957858052> , <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gramercy_Park_Hotel>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/197u-uu-uu/to/198u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-10-20T10:07:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-02T16:21:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bass+music/1429446032825/1430583586429>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/ee983474bef4eff61b19cbcb6217dff8> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.7u>
+        rdf:value   "7u";
+        rdfs:label  "70s"@en .
+
+<http://data.open.ac.uk/time/edtf/197u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1970's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.7u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1970-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1979-uu-uu> .
+
+<http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Thunder's Mouth Press"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/interval/197u-uu-uu/to/198u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between the 1970's and the 1980's"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/197u-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/198u-uu-uu> .
+
+<http://dbpedia.org/resource/Boston>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Boston"@en .
+
+<http://data.open.ac.uk/time/edtf/1979-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1979"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1979;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1979>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/ee983474bef4eff61b19cbcb6217dff8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Everything about this tour [with the band &lsquo;Weather Report&rsquo;] was more controlled than when Miles toured. The music, though leaving plenty of room for improvisation, was highly structured, as was the show. There were lighting cues and a regular song list. I don't mean to imply that there wasn't any spontaneity going on, but I was used to something considerably more wild and uncontrolled.</p>\r\n<p>All the buzz on tour was about Jaco [Pastorius, the bass player]. He'd just released his first solo album on Epic, and a lot of the young crowd that turned out to hear the band was made up of bass players coming to hear the <em>wunderkind</em>. He didn't disappoint them. His arpeggios and his rich, gliding tone on the fretless bass were a new thing back then. Nowadays, I can listen to the bass part on a TV ad and hear Jaco's influence. He was rewriting the book on what a bass could produce, the same way Jimi did for the guitar.</p>\r\n<p>[...]</p>\r\n<p>I read about his death in a newspaper in San Francisco, where I was living at the time, and I wept. Jaco used to call himself, \"the world's greatest bass player,\"--in fact, those were the first words out of his mouth whenever he answered the phone--and I truly think he was. I've worked with and heard some of the best--guys like Jack Bruce, Marcus Miller, Tom Barney and Darryl Jones--but Jaco was better. He was more creative, more inventive, and took greater risks than any of them. He'd also play with anyone, anywhere. I remember sitting in a room at the Gramercy Park Hotel one day with Jaco and Mike Stern, when we heard live music coming from next room. In a flash, Jaco was up and knocking on the door in his bare feet, his bass in hand. The door opened and we saw the Clancy Brothers, an Irish folk group, rehearsing. Jaco barged right in, leaned his battered bass against a chest of drawers and started playing along, the chest resonating so that we could hear the bass line. To their credit, the Clancys didn't miss a beat; they just smiled and carried on. Mike and I stood and watched, amazed at Jaco's nerve. When they finished, everyone clapped and introductions were made.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis' pp. 137-138 (384 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "137-138" .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Mike+Stern/1476957858052>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Mike Stern"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1953-01-10>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Boston>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stern";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mike" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://reference.data.gov.uk/id/day/1951-12-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 December, 1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://reference.data.gov.uk/id/year/1940>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/530846f0-4098-4d33-bd8a-8611f823bf51#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "The Clancy Brothers"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/1940-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1940>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/time/edtf/1980-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1980"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1980;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1980>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://dbpedia.org/resource/Gramercy_Park>
+        rdfs:label  "Gramercy Park"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://dbpedia.org/resource/Norristown,_Pennsylvania>
+        rdfs:label  "Norristown, Pennsylvania"@en .
+
+<http://data.open.ac.uk/led/music/Bass+music/1429446032825>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Bass music"@en;
+        <http://purl.org/dc/terms/title>
+                "Bass music" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bass+music/1429446032825/1430583586429>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Bass music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gramercy_Park_Hotel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Bass_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://bnb.data.bl.uk/id/agent/Bass>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/46a6fac0-2e14-4214-b08e-3bdb1cffa5aa#_> , <http://data.open.ac.uk/led/agent/Mike+Stern/1476957858052> , <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Bass+music/1429446032825>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/530846f0-4098-4d33-bd8a-8611f823bf51#_> , <http://musicbrainz.org/artist/46a6fac0-2e14-4214-b08e-3bdb1cffa5aa#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://bnb.data.bl.uk/id/agent/Bass>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Bass"@en .
+
+<http://dbpedia.org/resource/Gramercy_Park_Hotel>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Gramercy Park Hotel, 2 Lexington Ave, New York"@en , "Gramercy Park Hotel"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Gramercy_Park> , <http://dbpedia.org/resource/New_York> .
+
+<http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>;
+        <http://purl.org/dc/terms/title>
+                "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://data.open.ac.uk/time/edtf/1970-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1970"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1970;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1970>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/id/year/1979>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Fort_Lauderdale,_Florida>
+        rdfs:label  "Fort Lauderdale, Florida"@en .
+
+<http://data.open.ac.uk/led/music+technician>
+        rdfs:label  "music technician"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://reference.data.gov.uk/id/year/1970>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/personal+assisstant>
+        rdfs:label  "personal assisstant"@en .
+
+<http://data.open.ac.uk/time/edtf/1989-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1989"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1989;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1989>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/road+manager>
+        rdfs:label  "road manager"@en .
+
+<http://dbpedia.org/resource/Guitarist>
+        rdfs:label  "Guitarist"@en .
+
+<http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Chris Murphy"@en .
+
+<http://reference.data.gov.uk/id/year/1980>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/day/1987-09-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 September, 1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://reference.data.gov.uk/id/day/1953-01-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 January, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://reference.data.gov.uk/id/year/1989>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/time/edtf/198u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1980's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1980-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1989-uu-uu> .
+
+<http://musicbrainz.org/artist/46a6fac0-2e14-4214-b08e-3bdb1cffa5aa#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Jaco Pastorius"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1951-12-01>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Norristown,_Pennsylvania>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1987-09-21>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Fort_Lauderdale,_Florida>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pastorius";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jaco";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Jaco Pastorius"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Chris Murphy"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/road+manager> , <http://data.open.ac.uk/led/personal+assisstant> , <http://data.open.ac.uk/led/music+technician> , <http://dbpedia.org/resource/Guitarist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/194u-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Murphy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Chris" .
+
+<http://data.open.ac.uk/time/edtf/194u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1940's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1940-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .
+
+<http://dbpedia.org/resource/Bass_music>
+        rdfs:label  "Bass music"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .

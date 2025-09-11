@@ -1,0 +1,137 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1447098201690>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/77a0f077dfce27c16516cdfb23792586>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "116";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Texas>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1911-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-11-15T17:33:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-09T19:43:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/261eebaa70edae4d7fd30c991ef6e5a1/1447098179540>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/77a0f077dfce27c16516cdfb23792586> .
+
+<http://bnb.data.bl.uk/id/resource/013674909>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Ragged but right / Lynn Abbott"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2007-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>;
+        <http://purl.org/dc/terms/title>
+                "Ragged but right / Lynn Abbott";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SeroffDoug> , <http://bnb.data.bl.uk/id/person/AbbottLynn1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1578069017"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Jackson>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> , <http://purl.org/ontology/bibo/status/published> .
+
+<http://dbpedia.org/resource/Texas>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Texas"@en .
+
+<http://data.open.ac.uk/led/performance/261eebaa70edae4d7fd30c991ef6e5a1/1447098179540>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Texas>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/songs/1447098179525>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Cotton+pickers/1510767117804> .
+
+<http://bnb.data.bl.uk/id/person/SeroffDoug>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Doug Seroff"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/songs/1447098179525>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "songs"@en;
+        <http://purl.org/dc/terms/title>
+                "songs" .
+
+<http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/77a0f077dfce27c16516cdfb23792586>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Everywhere is heard the songs of the cotton pickers and the whir of the gin mills.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Ragged but right / Lynn Abbott' pp. 116 (16 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013674909>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "116" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://bnb.data.bl.uk/id/place/Jackson>
+        rdfs:label  "Jackson"@en .
+
+<http://data.open.ac.uk/time/edtf/2007-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2007"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2007> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Cotton+pickers/1510767117804>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Cotton pickers"@en .
+
+<http://reference.data.gov.uk/id/year/1911>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1911"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1911-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1911>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://bnb.data.bl.uk/id/person/AbbottLynn1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lynn Abbott"@en .
+
+<http://reference.data.gov.uk/id/year/2007>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .

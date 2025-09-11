@@ -1,0 +1,257 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1951-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1951>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/person/John+Wesley/1430492441398>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Wesley"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Theologian> , <http://data.open.ac.uk/led/cleric>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Anglicanism> , <http://dbpedia.org/resource/Methodism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1703-06-17>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Epworth,_Lincolnshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-03-02>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wesley";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://www.ccel.org/ccel/wesley/journal.html>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Journal of John Wesley"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.ccel.org/ccel/wesley/journal.html"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/music/A+ditty/1432378661075>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "A ditty"@en;
+        <http://purl.org/dc/terms/title>
+                "A ditty" .
+
+<http://data.open.ac.uk/led/source/At+an+Irish+funeral/1430492441374>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Journal of John Wesley"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.ccel.org/ccel/wesley/journal.html>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1951-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Moody+Press/1430492441408>;
+        <http://purl.org/dc/terms/title>
+                "The Journal of John Wesley";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Percy+Livingstone+Parker/1430492441405>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Wesley/1430492441398> .
+
+<http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/32c92224cf66691eb92b20d4afe7ae8f>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">I spoke severally with those of the society, who were about one hundred and twenty. Nearly a hundred of these had found peace with God: such is the blessing of being persecuted for righteousness&rsquo; sake! As we were going to church at eleven, a large company at the market place welcomed us with a loud huzza: wit as harmless as the ditty sung under my window (composed, one assured me, by a gentlewoman of their own town),</p>\r\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">Charles Wesley is come to town,</p>\r\n<p>&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">To try if he can pull the churches down.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Journal of John Wesley' pp. 116 (93 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/At+an+Irish+funeral/1430492441374>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "116" .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/A+ditty/1432378661075/1432378661087>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'A ditty'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St_Ives,_Cornwall>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/John+Wesley/1430492441398>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/A+ditty/1432378661075> .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://reference.data.gov.uk/id/day/1791-03-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://dbpedia.org/resource/Category:Christian_movements>
+        rdfs:label  "Christian movements"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/lexp/1432378713402>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Song sung outside window."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/32c92224cf66691eb92b20d4afe7ae8f>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "116";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/John+Wesley/1430492441398>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St_Ives,_Cornwall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1743-08-31>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-10-16T12:25:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-11-13T21:55:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-16T14:15:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-23T10:58:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/A+ditty/1432378661075/1432378661087>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/32c92224cf66691eb92b20d4afe7ae8f> .
+
+<http://dbpedia.org/resource/St_Ives,_Cornwall>
+        rdfs:label  "St Ives, Cornwall"@en .
+
+<http://dbpedia.org/resource/Epworth,_Lincolnshire>
+        rdfs:label  "Epworth, Lincolnshire"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://data.open.ac.uk/led/cleric>
+        rdfs:label  "Cleric"@en , "cleric"@en .
+
+<http://reference.data.gov.uk/id/day/1703-06-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 June, 1703"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1703;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/led/organization/Moody+Press/1430492441408>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Moody Press"@en .
+
+<http://data.open.ac.uk/led/agent/Percy+Livingstone+Parker/1430492441405>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Percy Livingstone Parker"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://reference.data.gov.uk/id/day/1743-08-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 August, 1743"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1743;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.43> .
+
+<http://reference.data.gov.uk/id/year/1951>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.43>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  43 .
+
+<http://dbpedia.org/resource/Theologian>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Theologian"@en .
+
+<http://dbpedia.org/resource/Methodism>
+        rdf:type    <http://dbpedia.org/resource/Category:Christian_movements> , led:Belief;
+        rdfs:label  "Methodists"@en , "Methodism"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .

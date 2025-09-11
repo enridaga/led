@@ -1,0 +1,122 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lady Mary Elvey"@en .
+
+<http://data.open.ac.uk/led/lexp/1433240542425>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "The second item, 'The Lord will comfort Zion' was only a selection from a large work composed for the Worcester Festival of 1857; but the portions selected were sufficient to show the scholarship of the composer in the most advantageous light. The contralto solo, sung by Miss Marion Severn, and the three choruses are admirable specimens of Sir George Elvey's style of treatment, and were enthusiastically received. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "211";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Windsor,_Berkshire>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1872-07-05>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-22T11:15:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-02T10:22:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Windsor,_Berkshire>
+        rdfs:label  "Windsor, Berkshire"@en .
+
+<http://reference.data.gov.uk/id/year/1894>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1894"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-03"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-02"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/day/1872-07-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 July, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/time/edtf/1894-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1894"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1894;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1894>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Life and Reminiscences of Sir George J. Elvey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/biographical>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520> , <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1894-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>;
+        <http://purl.org/dc/terms/title>
+                "Life and Reminiscences of Sir George J. Elvey";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Sampson Low Marston & Company, Limited"@en .

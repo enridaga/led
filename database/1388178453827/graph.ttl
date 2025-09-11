@@ -1,0 +1,70 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/source/letter+from+John+Wallis+to+Robert+Boyle+27+July+1669/1388178300094>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter from John Wallis to Robert Boyle, 27 July 1669"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from John Wallis to Robert Boyle, 27 July 1669" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.69>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  69 .
+
+<http://data.open.ac.uk/led/lexp/1388178453827>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "the music was performed at the dedication of the Sheldonian Theatre in Oxford"@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Sir,\r\nAfter my humble thanks for the honour of Yours of July. 3.1 I thought it not unfit to give you some account of our late proceedings here. Friday July 9. was the Dedication of our New Theater. In the morning, was held a Convocation in it, for entering upon the possession of it.2 Wherein was read, first the Arch Bishops Instrument of Donation (sealed with his Archiepiscopal Seal) of the Theater. with all its furniture, to the end that St Maries Church may not be further profaned by holding the Act in it: Next, a Letter of his, declaring his intention to lay out £2000 for a purchase to endow it:\r\nRELEVANT SECTION\r\nThe Afternoon was spent in Panegyrick Orations, & reciting of Poems, in several sorts of verse, composed in praise of the Archbishop, the Theater &c; & crying down Fanaticks. The whole Action, begun & ended with a Noyse of Trumpets: and twice was interposed variety of Musick, Vocal & Instrumentall; purposely composed for this occasion. [f. 174v] On Saturday & Munday, those Exercises appertaining to the Act & Vespers, which were wont to be performed in St Maries church, were had in the Theater. In which, beside the number of proceeding Doctors (9 in Divinity, 4 in Law, 5 in Physick, & 1 in Musick) there was little extraordinary; but onely that the Terræ Filius, for both days, were abhominably scurrilous; & so suffered to proceed without the lest check or interruption, from Vice-chancellor, Pro-vicechancellors, Proctors, Curators, or any of those who were to govern the Exercises: which gave so general offense to all honest Spectators; that, I believe the University hath thereby lost more reputation, than they have gained by all the rest.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+John+Wallis+to+Robert+Boyle+27+July+1669/1388178300094>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/John+Wallis/1388178360472>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Sheldonian_Theatre>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1669-07-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-27T21:07:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/1669-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1669"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1669;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.69> .
+
+<http://data.open.ac.uk/led/person/John+Wallis/1388178360472>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Wallis"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wallis";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://dbpedia.org/resource/Sheldonian_Theatre>
+        rdfs:label  "Sheldonian Theatre"@en .

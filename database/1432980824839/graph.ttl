@@ -1,0 +1,231 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1816>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1816"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Black+Sir+Harry/1432980364124/1432980364135>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Black Sir Harry'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Llangefni>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/traditional+songs> , <http://dbpedia.org/resource/Music_of_Wales> , <http://dbpedia.org/resource/Air_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Edward+Pugh/1432980260660>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Black+Sir+Harry/1432980364124>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Miss+Grindley/1432980364138> .
+
+<http://data.open.ac.uk/led/source/Cambria+Depicta,+a+tour+through+North+Wales/1432980125505>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Cambria Depicta: a tour through North Wales"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://babel.hathitrust.org/cgi/pt%3Fid%3Dchi.73278545%26view%3D1up%26seq%3D1>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1816-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/E.++Williams/1603713875612>;
+        <http://purl.org/dc/terms/title>
+                "Cambria Depicta: a tour through North Wales";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Edward+Pugh/1432980125511> .
+
+<http://data.open.ac.uk/led/music/Black+Sir+Harry/1432980364124>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Black Sir Harry"@en;
+        <http://purl.org/dc/terms/title>
+                "Black Sir Harry" .
+
+<http://data.open.ac.uk/time/interval/1803-uu-uu/to/1813-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1803 and 1813"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1803-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1813-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.61>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  61 .
+
+<https://babel.hathitrust.org/cgi/pt%3Fid%3Dchi.73278545%26view%3D1up%26seq%3D1>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2020-10-26"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Hathi Trust"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://babel.hathitrust.org/cgi/pt%3Fid%3Dchi.73278545%26view%3D1up%26seq%3D1"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Music_of_Wales>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music of Wales"@en .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Anglesey>
+        rdfs:label  "Anglesey"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/1803-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1803"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1803;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/led/person/Edward+Pugh/1432980125511>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Edward Pugh"@en .
+
+<http://data.open.ac.uk/time/edtf/1761-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1761"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1761;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/musicgenre/traditional+songs>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Traditional songs"@en .
+
+<http://dbpedia.org/resource/Llangefni>
+        rdfs:label  "Llangefni"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/led/place/d61adf7c8c515422fa86a035289bc61f>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Llangefni, Anglesey, Wales"@en;
+        <http://purl.org/dc/terms/description>
+                "Llangefni, Anglesey, Wales"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Anglesey> , <http://dbpedia.org/resource/Llangefni> , <http://dbpedia.org/resource/Wales> .
+
+<http://data.open.ac.uk/time/edtf/1813-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1813"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1813;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/led/agent/Miss+Grindley/1432980364138>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Miss Grindley"@en .
+
+<http://data.open.ac.uk/led/lexp/1432980824839>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/f2fb55148de6e48eb362436e75519925/excerpt/e1ac99df101e664260574a2d2add635e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/claims>;
+        led:pages            "84";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Edward+Pugh/1432980260660>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d61adf7c8c515422fa86a035289bc61f>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1803-uu-uu/to/1813-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-10-26T12:16:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-30T10:13:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Black+Sir+Harry/1432980364124/1432980364135>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f2fb55148de6e48eb362436e75519925/excerpt/e1ac99df101e664260574a2d2add635e> .
+
+<http://data.open.ac.uk/led/person/Edward+Pugh/1432980260660>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Edward Pugh"@en;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1761-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1813-uu-uu>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pugh";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://data.open.ac.uk/time/edtf/1816-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1816"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1816;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1816>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://dbpedia.org/resource/Air_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Air (music)"@en .
+
+<http://data.open.ac.uk/led/organization/E.++Williams/1603713875612>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "E.  Williams"@en .
+
+<http://data.open.ac.uk/led/source/f2fb55148de6e48eb362436e75519925/excerpt/e1ac99df101e664260574a2d2add635e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Early in the morning I was most agreeably awakened by the sounds of that feminine instrument, the piano-forte, on which Mr. Grindley's amiable daughter was playing the sprightly national air of Sir Harry Ddu, or Black Sir Harry, which she touched with so much certainty, feeling, and unassuming ornament, that it produced a most rapturous effect upon my nerves.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Cambria Depicta: a tour through North Wales' pp. 84 (59 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Cambria+Depicta,+a+tour+through+North+Wales/1432980125505>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "84" .

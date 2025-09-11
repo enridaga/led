@@ -1,0 +1,158 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://bnb.data.bl.uk/id/agent/LivingHistoryUnit>
+        rdfs:label  "Living History Unit"@en .
+
+<http://dbpedia.org/resource/Leicester>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leicester"@en .
+
+<http://bnb.data.bl.uk/id/resource/012026955>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The diary of Ada Jackson 1883"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1993-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/LivingHistoryUnit>;
+        <http://purl.org/dc/terms/title>
+                "The diary of Ada Jackson 1883";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/organization/Leicester%28England%29LivingHistoryUnit>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0901675059"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Leicester> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/day/1883-01-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 January, 1883"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1883;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.83> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/person/George+Beecroft/1421150509244>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "George Beecroft"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Carpenter>;
+        led:has_social_status          <urn:x-isco08:7>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1934-02-01>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Beecroft";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George" .
+
+<http://bnb.data.bl.uk/id/organization/Leicester%28England%29LivingHistoryUnit>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Leicester (England). Living History Unit"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.83>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  83 .
+
+<http://data.open.ac.uk/led/source/The+Diary+of+Ada+Jackson,+29+Jan.+1883/1422448075441>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Diary of Ada Jackson, 29 Jan. 1883"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/012026955>;
+        <http://purl.org/dc/terms/title>
+                "The Diary of Ada Jackson, 29 Jan. 1883";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://reference.data.gov.uk/id/year/1993>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://bnb.data.bl.uk/id/place/Leicester>
+        rdfs:label  "Leicester"@en .
+
+<http://data.open.ac.uk/led/lexp/1422448179718>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "G. made it convenient to come in tonight for about two hours. He brought some more music for me to practise, he keeps me going with new songs. He let me fall over singing, asked me to sing again, I said I could not. He heard Elly and me singing on that Saturday night, he knew I was helping her, because he said Elly had not two voices."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Diary+of+Ada+Jackson,+29+Jan.+1883/1422448075441>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "19-20";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/George+Beecroft/1421150509244>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leicester>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1883-01-29>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-01-28T12:29:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://reference.data.gov.uk/id/day/1934-02-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 February, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://data.open.ac.uk/led/Carpenter>
+        rdfs:label  "Carpenter"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .
+
+<http://data.open.ac.uk/time/edtf/1993-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1993"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1993> .

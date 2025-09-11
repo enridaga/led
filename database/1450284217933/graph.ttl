@@ -1,0 +1,540 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1813-05-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 May, 1813"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1813;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://reference.data.gov.uk/id/day/1883-02-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 February, 1883"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1883;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.83> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Symphony>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Symphony"@en .
+
+<http://reference.data.gov.uk/id/day/1911-05-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 May, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.0u>
+        rdf:value   "0u";
+        rdfs:label  "00s"@en .
+
+<http://musicbrainz.org/artist/c43727bf-0b6f-4642-bb1a-9673bc2000e4#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Craft"@en .
+
+<http://dbpedia.org/resource/Gustav_Mahler>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Gustav Mahler"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1860-07-07>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1911-05-18>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mahler";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gustav" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/Manfred+Symphony,+Op.58/1450283904051>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Manfred Symphony, Op.58"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>;
+        <http://purl.org/dc/terms/title>
+                "Manfred Symphony, Op.58";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky> .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://dbpedia.org/resource/Queen_Square,_London>
+        rdfs:label  "Queen Square, London"@en .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/time/edtf/1900-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/St._Petersburg,_Florida>
+        rdfs:label  "St. Petersburg"@en .
+
+<http://bnb.data.bl.uk/id/person/WagnerRichard1813-1883>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Richard Wagner"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://data.open.ac.uk/led/performance/f61cc4e29310e1007a0dc95176bbd087/1450283904067>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Manfred Symphony, Op.58'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Symphony> , <http://dbpedia.org/resource/Romantic_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Manfred+Symphony,+Op.58/1450283904051>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Saint_Petersburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Saint petersburg"@en , "Saint Petersburg"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://reference.data.gov.uk/id/day/1882-06-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 June, 1882"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1882;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://dbpedia.org/resource/Russia>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Russia"@en .
+
+<http://data.open.ac.uk/time/edtf/190u-Ee-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of the 1900's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.0u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1900-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1909-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/theatre+director>
+        rdfs:label  "Theatre director"@en , "theatre director"@en .
+
+<http://dbpedia.org/resource/Votkinsk>
+        rdfs:label  "Votkinsk"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/1909-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1909"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1909;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1909>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/id/year/1909>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1909"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Richard_Wagner>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Richard Wagner" , "Richard Wagner"@en , "Wagner"@en , "Wagner";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/theatre+director>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1813-05-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1883-02-13>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/WagnerRichard1813-1883>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wagner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard" .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Piotr Ilyich Tchaikovsky"@en , "Peter Ilich Tchaikovsky"@en , "Pyotr Tchaikovsky"@en , "Pyotr Ilyich Tchaikovsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Votkinsk>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/St._Petersburg,_Florida>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russia> , <http://dbpedia.org/resource/Russian_Empire>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/TchaikovskyPeterIlich1840-1893>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tchaikovsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Piotr Ilyich" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Lomonosov,_Russia>
+        rdfs:label  "Lomonosov, Russia"@en .
+
+<http://dbpedia.org/resource/Romantic_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Romantic music"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/source/Memories+and+Commentaries/1450209878518>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Memories and Commentaries"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/title>
+                "Memories and Commentaries";
+        <http://purl.org/ontology/bibo/isbn>
+                "0-571-21242-5"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Queen_Square,_London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/c43727bf-0b6f-4642-bb1a-9673bc2000e4#_> , <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://data.open.ac.uk/led/lexp/1450284217933>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/96c6c22cf29d498271c954d88eb1a3eb/excerpt/b1195bdc4619c5ee225438114fa445e4>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/verafonte/temp>;
+        led:pages            "57-58";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/190u-Ee-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-23T20:12:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-12-16T16:43:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1ee0c8cac3a141a393f3ca1c0000a75a/1450284045831> , <http://data.open.ac.uk/led/performance/e22640fa04646b137611c1a53cfdc172/1450284175833> , <http://data.open.ac.uk/led/performance/f61cc4e29310e1007a0dc95176bbd087/1450283904067>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/96c6c22cf29d498271c954d88eb1a3eb/excerpt/b1195bdc4619c5ee225438114fa445e4> .
+
+<http://data.open.ac.uk/led/music/Symphony+by+Mahler/1450284175818>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony by Mahler"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gustav_Mahler>;
+        <http://purl.org/dc/terms/title>
+                "Symphony by Mahler";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1860-07-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 July, 1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/performance/e22640fa04646b137611c1a53cfdc172/1450284175833>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Symphony by Mahler'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Symphony>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony+by+Mahler/1450284175818>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://data.open.ac.uk/led/music/Fragments+by+Wagner/1450284045759>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Fragments by Wagner"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Richard_Wagner>;
+        <http://purl.org/dc/terms/title>
+                "Fragments by Wagner";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Richard_Wagner> .
+
+<http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gustav Mahler"@en .
+
+<http://reference.data.gov.uk/id/day/1971-04-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 April, 1971"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1971;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/led/performance/1ee0c8cac3a141a393f3ca1c0000a75a/1450284045831>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Fragments by Wagner'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Petersburg>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Fragments+by+Wagner/1450284045759>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://dbpedia.org/resource/Igor_Stravinsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Igor Stravinsky"@en , "Igor Stravinksy" , "Igor Stravinksy"@en , "Igor Stravisnky" , "Igor Stravinsky";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-nrsuk:social:A>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1882-06-17>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lomonosov,_Russia>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1971-04-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France> , <http://dbpedia.org/resource/United_States> , <http://dbpedia.org/resource/Russian_Empire> , <http://dbpedia.org/resource/Russia>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stravinsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Igor Fjodorowitsch";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Igor Stravinsky"@en .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/led/source/96c6c22cf29d498271c954d88eb1a3eb/excerpt/b1195bdc4619c5ee225438114fa445e4>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span lang=\"EN-GB\" style=\"mso-ansi-language: EN-GB;\">I remember seeing Mahler in St Petersburg, too. His concert there was a triumph. Rimsky was still alive, I believe, but he wouldn&rsquo;t have attended because a work by Tchaikovsky was on the programme, <em style=\"mso-bidi-font-style: normal;\">Manfred</em>, I think, the dullest piece possible. Mahler also played some Wagner fragments and, if I remember correctly, a symphony of his own. Mahler impressed me greatly, himself and his conducting. I attribute the latter to his training as a composer. The most interesting (though, of course, not necessarily the prettiest on the most rousing) conductors <em style=\"mso-bidi-font-style: normal;\">are </em>composers, for the reason that they are the only ones who can have new insights into music itself. The conductors of my period who have most advanced the art of conducting are Mahler, Strauss, Zemlisnky, Klemperer, all of them composers. </span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Memories and Commentaries' pp. 57-58 (133 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Memories+and+Commentaries/1450209878518>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "57-58" .

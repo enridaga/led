@@ -1,0 +1,216 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/The+Bing+Boys+%5BAre+Here%5D/1395327140047>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Bing Boys [Are Here]"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Nat+D.+Ayer/1395327140056>;
+        <http://purl.org/dc/terms/title>
+                "The Bing Boys [Are Here]" .
+
+<http://bnb.data.bl.uk/id/person/BlundenEdmund1896-1974>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Edmund Blunden"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/university+teacher> , <http://dbpedia.org/resource/Poet>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1896-11-01>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1974-01-20>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Long_Melford>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Blunden";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edmund" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/1982-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1982"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1982;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1982>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://data.open.ac.uk/led/source/Undertones+of+War/1395310138420>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Undertones of War"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1982-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/PenguinBooks>;
+        <http://purl.org/dc/terms/title>
+                "Undertones of War";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Harmondsworth>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/BlundenEdmund1896-1974> .
+
+<http://bnb.data.bl.uk/id/agent/PenguinBooks>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Penguin Books"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Penguin_Books> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/lexp/1395327633442>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "'The Bing Boys Are Here' was the first of a series of 'Bing' music revues at London's Alhambra Theatre. It opened in April 1916 and starred George Robey and Violet Loraine, who performed the song 'If you were the only girl in the world'. Blunden doesn't make clear whether tunes from the show were being sung and whistled by the troops, or whether one of the officers had a gramophone - an original 1916 cast recording was made."@en;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Then we went into the trenches round about Thiepval Wood, which not long before had been so horrible and mad; but now they had assumed a tenderer aspect, were voted \"a rest-cure sector,\" and we were envied for them....\r\n\r\nIn spite of the sylvan intricacies of Thiepval Wood, and a bedroom in the corridored chalk bank, and the tunes of the \"Bing Boys\" endlessly revolved, one was not yet quite clear of Stuff Trench [where the battalion had recently endured heavy shelling]; my own unwelcome but persistent retrospect was the shell-hole there used by us as a latrine, with those two flattened German bodies in it,...and others had much worse to remember."@en;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Undertones+of+War/1395310138420>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "127-128";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/BlundenEdmund1896-1974>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Thiepval>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1916-10-Ll>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-20T15:00:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/The+Bing+Boys+%5BAre+Here%5D+(,+performance+of)/1395327140061> .
+
+<http://dbpedia.org/resource/Thiepval>
+        rdfs:label  "Thiepval"@en .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://dbpedia.org/resource/Harmondsworth>
+        rdfs:label  "Harmondsworth"@en .
+
+<http://reference.data.gov.uk/id/day/1974-01-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 January, 1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://reference.data.gov.uk/id/year/1982>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/The+Bing+Boys+%5BAre+Here%5D+(,+performance+of)/1395327140061>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'The Bing Boys [Are Here]'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/BlundenEdmund1896-1974>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Bing+Boys+%5BAre+Here%5D/1395327140047> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/person/Nat+D.+Ayer/1395327140056>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nat D. Ayer"@en .
+
+<http://data.open.ac.uk/time/edtf/1916-10-Ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late October, 1916"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1916;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.16> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://reference.data.gov.uk/id/day/1896-11-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 November, 1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://dbpedia.org/resource/Penguin_Books>
+        rdfs:label  "Penguin Books"@en .
+
+<http://data.open.ac.uk/led/thing/university+teacher>
+        rdfs:label  "university teacher"@en .
+
+<http://dbpedia.org/resource/Long_Melford>
+        rdfs:label  "Long Melford"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .

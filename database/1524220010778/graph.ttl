@@ -1,0 +1,341 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Psalms>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Psalms"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/St._Paul's_tube_station>
+        rdfs:label  "St. Paul's (metropolitana di Londra)"@en .
+
+<http://www.jimandhelen.com/James_Douglas.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-04-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "http://www.jimandhelen.com"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.jimandhelen.com/James_Douglas.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/led/performance/dc1dc5e47e16dc1b9396672eb99ba1d1/1524219598749>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''God Save the Queen''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St._Paul's_tube_station>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/sacred+vocal>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'God+Save+the+Queen'/1459204524611>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/a+Children's+Choir/1524219598752> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "James Douglas"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/chemist> , <http://data.open.ac.uk/led/clerk+and+manager+railways> , <http://data.open.ac.uk/led/tobacco+importer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1837-12-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/England>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1920-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/England>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Douglas";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "James" .
+
+<http://data.open.ac.uk/led/lexp/1524220010778>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "The Festival of the Sons of the Clergy at St Paul’s is still celebrated annually, in May (as of 2018). Since it began in 1655 the service has included music and pageantry in aid of clergy and their families in times of need. \r\n\r\nJames Douglas recalls a number of musical outings, usually annual events, as a chorister (pp. 7-9), given here as individual listening experiences.\r\n"@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/c05f638ed26b018559b594d3f8a5f178>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "7-8";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/586b013b523154272e105abb7135a5f8>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-06-01T14:25:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-04-20T10:26:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1585c2615b89c19b0f4f2ab6e0c190fe/1527863090460> , <http://data.open.ac.uk/led/performance/3380d0912141fde1f22a52dbbf5163a1/1524219725831> , <http://data.open.ac.uk/led/performance/dc1dc5e47e16dc1b9396672eb99ba1d1/1524219598749>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/c05f638ed26b018559b594d3f8a5f178> .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://musicbrainz.org/artist/01b01ee8-bfc9-4b26-aa20-40fff899c30f#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arne"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/1920-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1920"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1920> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/St_Paul's_Cathedral>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Paul's Cathedral"@en , "Cathédrale Saint-Paul de Londres"@en .
+
+<http://data.open.ac.uk/led/tobacco+importer>
+        rdfs:label  "tobacco importer"@en .
+
+<http://reference.data.gov.uk/id/day/1837-12-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 December, 1837"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1837;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://data.open.ac.uk/led/agent/a+Children's+Choir/1524219598752>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "a Children's Choir"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://reference.data.gov.uk/id/year/1920>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1920"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/%E2%80%9CZadok+the+Priest+%26+Nathan+the+Prophet%E2%80%9D/1524219725826>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "“Zadok the Priest & Nathan the Prophet”"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>;
+        <http://purl.org/dc/terms/title>
+                "“Zadok the Priest & Nathan the Prophet”";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759> .
+
+<http://data.open.ac.uk/led/source/Account+of+life+as+a+chorister+in+the+nineteenth+century/1524211623264>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The hand-written memoir of James Douglas's early life as a chorister at St George's  Chapel was transcribed by his great granddaughter Jean Harding in 2006. "@en;
+        rdfs:label                  "Account of life as a chorister in the nineteenth century"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Choir Archives, St George's Chapel, Windsor, England";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "All extracts from the memoir are by kind permission of the writer's descendant Prof. James Wilkinson. "@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.jimandhelen.com/James_Douglas.pdf>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Account of life as a chorister in the nineteenth century";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242> .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/place/586b013b523154272e105abb7135a5f8>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Paul's cathedral, London"@en , "St Paul's Cathedral, London"@en;
+        <http://purl.org/dc/terms/description>
+                "St Paul's cathedral, London"@en , "St Paul's Cathedral, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/clerk+and+manager+railways>
+        rdfs:label  "Clerk and manager railways"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/c05f638ed26b018559b594d3f8a5f178>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"mso-para-margin-top: .01gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0cm; margin: .1pt 0cm .1pt 0cm;\"><span style=\"font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;\">We had several musical outings. Once a year a selected number of us sang at the festival of the Sons of the Clergy at St Pauls &amp; also at the Charity Childrens anniversary at the same place. The latter was a very imposing sight. All the Charity children of London came in marshalled by their respective Beadles [minor Church of England parish officer], in showy costumes &amp; cocked hats, &amp; were arranged tier after tier in the dome. They sang the old 100<sup>th</sup></span><span style=\"font-size: 8.0pt; font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; position: relative; top: -6.0pt; mso-text-raise: 6.0pt;\"><span style=\"mso-spacerun: yes;\">&nbsp;</span></span><span style=\"font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;\">God Save the Queen, the Coronation Anthem &ldquo;Zadok the Priest &amp; Nathan the Prophet&rdquo; in which they sang the Chorus &ldquo;God save the King, Long live the King&rdquo; with thrilling &amp; marvellous effect. Several of the girls dressed in high muslin caps used to be carried down fainting. </span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Account of life as a chorister in the nineteenth century' pp. 7-8 (130 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Account+of+life+as+a+chorister+in+the+nineteenth+century/1524211623264>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "7-8" .
+
+<http://data.open.ac.uk/led/musicgenre/sacred+vocal>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "sacred vocal"@en .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/A+Children's+Choir/1524219725833>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "A Children's Choir"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/agent/A+children's+choir/1527863090463>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "A children's choir"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/music/'God+Save+the+Queen'/1459204524611>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'God Save the Queen'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/01b01ee8-bfc9-4b26-aa20-40fff899c30f#_>;
+        <http://purl.org/dc/terms/title>
+                "'God Save the Queen'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/01b01ee8-bfc9-4b26-aa20-40fff899c30f#_> .
+
+<http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/led/music/Old+Hundredth/1527863090448>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Old Hundredth"@en;
+        <http://purl.org/dc/terms/title>
+                "Old Hundredth" .
+
+<http://data.open.ac.uk/led/performance/1585c2615b89c19b0f4f2ab6e0c190fe/1527863090460>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Old Hundredth'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St_Paul's_Cathedral>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Psalms>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Old+Hundredth/1527863090448>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/A+children's+choir/1527863090463> .
+
+<http://data.open.ac.uk/led/musicgenre/Coronation+anthem>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Coronation anthem"@en .
+
+<http://data.open.ac.uk/led/chemist>
+        rdfs:label  "chemist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.37>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  37 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/led/performance/3380d0912141fde1f22a52dbbf5163a1/1524219725831>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of '“Zadok the Priest & Nathan the Prophet”'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St._Paul's_tube_station>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/Coronation+anthem>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/%E2%80%9CZadok+the+Priest+%26+Nathan+the+Prophet%E2%80%9D/1524219725826>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/A+Children's+Choir/1524219725833> .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

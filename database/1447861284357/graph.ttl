@@ -1,0 +1,236 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/university+lecturer>
+        rdfs:label  "university lecturer"@en .
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/Bath,_Somerset>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Bath, Somerset"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/led/botanist>
+        rdfs:label  "botanist"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries+1882-1883/1447860744955>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "J. Lloyd Williams Diaries 1882-1883"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "J. Lloyd Williams Diaries 1882-1883";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW MB1/3";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945> .
+
+<http://data.open.ac.uk/led/lexp/1447861284357>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "This may refer to a performance of 'Wie lieblich sind deine Wohnungen' from Brahms' 'Ein Deutsches Requiem' translated into Welsh."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/84149aefe837bdf484fe0ca21b7cf158/excerpt/ff57584c11917fdf206db243fc38a601>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wales>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1882-12-24>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-18T12:39:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2016-11-18T12:52:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2016-11-18T12:53:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2016-11-18T12:55:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-18T15:41:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/ed9ba79e35be11094336425ee95f6b55/1447861259171>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/84149aefe837bdf484fe0ca21b7cf158/excerpt/ff57584c11917fdf206db243fc38a601> .
+
+<http://data.open.ac.uk/led/Botanist>
+        rdfs:label  "Botanist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/time/edtf/1945-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Llanrwst>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Llanrwst"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://data.open.ac.uk/led/examiner>
+        rdfs:label  "examiner"@en .
+
+<http://data.open.ac.uk/led/music/unknown+choral+music/1447861259153>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unknown choral music"@en;
+        <http://purl.org/dc/terms/title>
+                "unknown choral music" .
+
+<http://data.open.ac.uk/led/professor>
+        rdfs:label  "professor"@en .
+
+<http://data.open.ac.uk/led/agent/Llanfrothen+%26+Croesor+Choir/1447861259199>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Llanfrothen & Croesor Choir"@en .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Porthmadog>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Porthmadog"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://data.open.ac.uk/led/performance/ed9ba79e35be11094336425ee95f6b55/1447861259171>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unknown choral music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Porthmadog>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unknown+choral+music/1447861259153>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Porthmadog+Choir/1447861259175> , <http://data.open.ac.uk/led/agent/Llanfrothen+%26+Croesor+Choir/1447861259199> , <http://musicbrainz.org/artist/0a87f8c9-a133-457f-8a6a-3a7769602aa2#_> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/id/year/1854>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1854"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/day/1882-12-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 December, 1882"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1882;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "John Lloyd Williams"@en , "J. Lloyd Williams"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/lecturer> , <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/editor> , <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer> , <http://data.open.ac.uk/led/university+lecturer> , <http://data.open.ac.uk/led/professor> , <http://data.open.ac.uk/led/examiner> , <http://data.open.ac.uk/led/Botanist> , <http://data.open.ac.uk/led/botanist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian> , <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Llanrwst>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1945-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Bath,_Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Williams";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John Lloyd";
+        <http://xmlns.com/foaf/0.1/nick>
+                "J. Lloyd Williams"@en .
+
+<http://data.open.ac.uk/led/agent/Porthmadog+Choir/1447861259175>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Porthmadog Choir"@en .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/editor>
+        rdfs:label  "editor"@en .
+
+<http://musicbrainz.org/artist/0a87f8c9-a133-457f-8a6a-3a7769602aa2#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://data.open.ac.uk/led/source/84149aefe837bdf484fe0ca21b7cf158/excerpt/ff57584c11917fdf206db243fc38a601>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p style=\"margin: 0px;\"><span style=\"text-decoration: underline;\">Evening meeting</span> - Room cramfull. [...] Port[hmadog] Choir sing. - Principal comp[etitio]n - Llanfrothen &amp; Croesor choirs on &lsquo;Mor Hawd[d]gar&rsquo; - 1st best.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'J. Lloyd Williams Diaries 1882-1883' (28 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries+1882-1883/1447860744955>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .

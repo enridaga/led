@@ -1,0 +1,200 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1527948907057>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Additional biographical information taken from the Writing Lives project website: http://www.writinglives.org/researchinglives/dora-r-hannan-1909-2001-researching-writing-lives"@en;
+        led:has_environment   led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8e78d9c44d2e0cc35a8969cb4c61cca2/excerpt/751615c1aa928762134776f9018356c0>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "31";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Mrs+Breen/1527948719689> , <http://data.open.ac.uk/led/agent/Mr.+King+(Dora's+father)/1533637518004>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Portsmouth>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-07T10:28:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-02T14:15:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/9292884e0a2fd0935e84ad4e5aa4fb45/1527948829025>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8e78d9c44d2e0cc35a8969cb4c61cca2/excerpt/751615c1aa928762134776f9018356c0> .
+
+<http://dbpedia.org/resource/Piano_solo>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano solo"@en .
+
+<http://dbpedia.org/resource/Category:Christian_movements>
+        rdfs:label  "Christian movements"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://bura.brunel.ac.uk/handle/2438/10929>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-06-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Burnett Archive of Working Class Autobiographies"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/10929"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/agent/Mrs+Breen/1527948719689>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Breen"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Breen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://data.open.ac.uk/led/performance/9292884e0a2fd0935e84ad4e5aa4fb45/1527948829025>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano music and scales'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Portsmouth>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_solo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mr.+King+(Dora's+father)/1533637518004> , <http://data.open.ac.uk/led/agent/Mrs+Breen/1527948719689>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+music+and+scales/1533637603444>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Dora+Hannan/1527940436164> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1909-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1909"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1909;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1909>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/id/year/1909>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1909"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Portsmouth>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Portsmouth"@en .
+
+<http://data.open.ac.uk/led/agent/Dora+Hannan/1527940436164>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Dora Hannan"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodism>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1909-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Portsmouth>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/2001-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hannan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dora" .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/2001>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/source/8e78d9c44d2e0cc35a8969cb4c61cca2/excerpt/751615c1aa928762134776f9018356c0>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\">As a reward for passing the entrance exam to the Secondary School [age 11], my parents had bought me a piano, second hand, of course, but nevertheless quite a nice one, and which I have to this day. I was very keen to be able to play, and had a lesson once a week from a quiet ladylike teacher who lived nearby. This went on for two years and&nbsp;I practiced regularly, but then my father [who had been pensioned out of the navy and worked a regular job] began grumbling&nbsp;at the practice, especially scales, which he said sounded as if I was treading on the piano,&nbsp;and so I had to stop. [&hellip;] To be fair to my father, I can understand that after a hard noisy day&rsquo;s work, he wanted some peace and quiet in the evening, and in that small house, one could not get away from the sound, [&hellip;] I did play when, and what little, I could, and sometimes<strong>&nbsp;</strong>I went across the road to visit an elderly lady who lived there and who had a small organ. Mrs Breen liked me to have tea with her occasionally, &ldquo;give her a little tune&rdquo;&nbsp;<span style=\"font-family: Cambria; font-size: 12pt;\">as she put it, and have a chat, and I usually went home with some small delicacy. [...]&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\">&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\">I would dearly have liked to have had singing lessons, as I had been told that I had a very good voice, but the budget wouldn&rsquo;t stretch to this<strong style=\"font-family: Cambria; font-size: 12pt;\">.&nbsp;</strong><span style=\"font-family: Cambria; font-size: 12pt;\">Since reaching maturity, I marvel at all my parents achieved on their small income, they must have denied themselves in many ways to pay for everything, nothing was ever owed for, and to them, getting into debt was a cardinal sin.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Those Happy Highways: an autobiography' pp. 31 (291 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Those+Happy+Highways:+an+autobiography/1527940162158>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "31" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.01>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/2001-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2001"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2001;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2001>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://dbpedia.org/resource/Methodism>
+        rdf:type    <http://dbpedia.org/resource/Category:Christian_movements> , led:Belief;
+        rdfs:label  "Methodists"@en , "Methodism"@en .
+
+<http://data.open.ac.uk/led/source/Those+Happy+Highways:+an+autobiography/1527940162158>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Dora Hannan's autobiography focuses on memories of her childhood to the age of 16 (early 20th c. to the 1920s). There is no indication of when she wrote the account. The Burnett Archive of Working Class Autobiographies was gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three volume annotated bibliography, \"The Autobiography of the Working Class\" (Harvester Press, 1984-1989)."@en;
+        rdfs:label                  "Those Happy Highways: an autobiography"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University, The Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/10929>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Those Happy Highways: an autobiography";
+        <http://purl.org/ontology/bibo/number>
+                "2:357";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Dora+Hannan/1527940436164> .
+
+<http://data.open.ac.uk/led/music/Piano+music+and+scales/1533637603444>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano music and scales"@en;
+        <http://purl.org/dc/terms/title>
+                "Piano music and scales" .
+
+<http://data.open.ac.uk/led/agent/Mr.+King+(Dora's+father)/1533637518004>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. King (Dora's father)"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "father)";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr. King (Dora's" .

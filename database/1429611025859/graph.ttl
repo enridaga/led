@@ -1,0 +1,222 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdfs:label  "Washington D. C."@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/drum+music/1429610988235>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "drum music"@en;
+        <http://purl.org/dc/terms/title>
+                "drum music" .
+
+<http://musicbrainz.org/artist/90f9db31-0d48-43d2-8112-04850fbe5bbd#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Sam Woodyard"@en .
+
+<http://data.open.ac.uk/led/piantist>
+        rdfs:label  "piantist"@en .
+
+<http://dbpedia.org/resource/New_Jersey>
+        rdfs:label  "New Jersey"@en .
+
+<http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/119c3e0a85400e16abcfc80b56cc6151>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Sam Woodyard, who came into the band in 1955, was born in Elizabeth, New Jersey. He is a real easy-to-get-along-with type of cat. He doesn't want to outdo or do anybody out of anything. He just wants to be in there, giving with his body, his soul, his mind, his pulse, his instrument, his drums. No crash bang, never overpoweringly loud, volume just where it should <em>be-in there</em>.</p>\r\n<p>When he is playing, he just about has an affair with his drums, an observation that was the inspiration of <em>A Drum Is a Woman</em>. He lives \"It Don't Mean a Thing If It Ain't Got That Swing,\" and if it ain't swinging he'll tag along with respect and sympathy, but without simpatico.</p>\r\n<p>Sometimes we would write something that seemed or was expected to be below bland, but when Sam added his thing to it, immediately it took on a new dimension, exotic, zesty, or maybe lecherous soul. Sam the Man, who began with his hand on the plan for the stand of his drums--exotic as the tabla, lecherous as the cuica, his elbow on the snare drum.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Duke Ellington: Music is my Mistress' pp. 227 (185 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "227" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/drum+music/1429610988235/1429610988247>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'drum music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum_kit>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/drum+music/1429610988235>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/90f9db31-0d48-43d2-8112-04850fbe5bbd#_> .
+
+<http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Duke Ellington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piantist> , <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/lyricist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ellington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/time/edtf/1973-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1973>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://dbpedia.org/resource/Drum_kit>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum kit"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/id/year/1973>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1429611025859>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/119c3e0a85400e16abcfc80b56cc6151>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "227";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/195u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-05-17T09:45:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-21T10:10:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/drum+music/1429610988235/1429610988247>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/119c3e0a85400e16abcfc80b56cc6151> .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.5u>
+        rdf:value   "5u";
+        rdfs:label  "50s"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Duke Ellington: Music is my Mistress"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1973-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Doubleday_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Duke Ellington: Music is my Mistress";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Jersey>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://data.open.ac.uk/led/lyricist>
+        rdfs:label  "lyricist"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/time/edtf/195u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1950's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.5u> .
+
+<http://dbpedia.org/resource/Doubleday_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Doubleday (publisher)"@en .

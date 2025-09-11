@@ -1,0 +1,259 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical letters from Abroad"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/musical+letters+from+abroad>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/musicallettersf00unkngoog>;
+        <http://purl.org/dc/terms/title>
+                "Musical letters from Abroad";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/place/04985deff8bfec567ab17a8ddab03dd4>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Thomas' Church, Leipzig"@en;
+        <http://purl.org/dc/terms/description>
+                "St Thomas' Church, Leipzig"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Leipzig> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/source/musical+letters+from+abroad>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Musical Letters from Abroad"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>;
+        <http://purl.org/dc/terms/title>
+                "Musical Letters from Abroad";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York> .
+
+<http://reference.data.gov.uk/id/day/1792-01-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 January, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/lexp/1448281320115>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/737e682ea9efc9037390859ae4dd3ea5>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "53-54";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/04985deff8bfec567ab17a8ddab03dd4>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1852-02-29>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-03-14T14:14:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-23T12:22:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/23a88d1d3bf2e061b042c51ee518bc2a/1448281291295>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/737e682ea9efc9037390859ae4dd3ea5> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<https://archive.org/details/musicallettersf00unkngoog>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive Digital Copy"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/musicallettersf00unkngoog"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1852-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1852"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1852;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/led/music/unknown+church+music/1448281291283>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unknown church music"@en;
+        <http://purl.org/dc/terms/title>
+                "unknown church music" .
+
+<http://data.open.ac.uk/led/source/d056a211aabb93931825903e00af4612/excerpt/737e682ea9efc9037390859ae4dd3ea5>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Yesterday, Sunday, 29th Feb., I was at St. Thomas. There was no motette with orchestra, on account of Lent. The services were as follows; the order is so different from ours, that I have thought it would be interesting to many to have it given in detail. I timed each piece, and give the time which each occupied.</p>\r\n<p>&nbsp;</p>\r\n<p>1. Organ........................................... 2 minutes</p>\r\n<p>2. Motette, without accompaniment ..... 9 &nbsp; &nbsp;\"</p>\r\n<p>3. Organ........................................... 1 &nbsp; &nbsp;\"</p>\r\n<p>4. Chorale......................................... 4 &nbsp; &nbsp;\"</p>\r\n<p>5. Liturgical service............................ 2 &nbsp; &nbsp;\"</p>\r\n<p>6. Reading........................................ 2 &nbsp; &nbsp;\"</p>\r\n<p>7. Organ.......................................... 1/2 &nbsp;\"</p>\r\n<p>8. Chorale......................................... 6 &nbsp; &nbsp;\"</p>\r\n<p>9. Reading......................................... 2 &nbsp; &nbsp;\"</p>\r\n<p>10. Organ......................................... 1/2 &nbsp;\"</p>\r\n<p>11. Chorale....................................... 14 &nbsp; \"</p>\r\n<p>12. Sermon (about)............................ 35 &nbsp; \"</p>\r\n<p>13. Chorale........................................ 2 &nbsp; &nbsp;\"</p>\r\n<p>The motette (2) may be found, with a free translation of the words, at p. 290, Cantica Laudis, &ldquo;Though all earthly joys should perish&rdquo;; and this will give some idea of what kind of music is done by the choir without accompaniment. The liturgical service (5) was chanted by the minister at the altar, with responses by the choir. The reading (6) was also at the altar, but the minister turned and faced the people. The reading (9) was from the reading desk. Sermon (12) from the pulpit. The ministers all wear a black robe, with a white surplice over it, as well in preaching as in prayer; also a large ruff, say two and a half or three inches wide, round the neck, as is seen in portraits of the Reformers and clergymen of 300 years ago. No fires in the churches, however cold. The service begins punctually at 1/2 past 8 o&rsquo;clock in the morning, and it requires, something of an effort to be up and ready on the morning of a short and cold winter&rsquo;s day.</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Musical letters from Abroad' pp. 53-54 (252 words)"@en , "excerpt from 'Musical letters from abroad' (252 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Musical+letters+from+abroad/1448037132026>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "53-54" .
+
+<http://dbpedia.org/resource/Medfield,_Massachusetts>
+        rdfs:label  "Medfield, Massachusetts"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Lowell Mason"@en , "Dr. Lowell Mason";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-01-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Medfield,_Massachusetts>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-08-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Orange,_New_Jersey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/performance/23a88d1d3bf2e061b042c51ee518bc2a/1448281291295>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unknown church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St._Thomas_Church,_Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/f422b99a-b48c-4bee-bc0c-f2e8cad82b6c#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unknown+church+music/1448281291283> .
+
+<http://data.open.ac.uk/led/organization/Mason+Brothers/1448037132035>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Mason Brothers"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Orange,_New_Jersey>
+        rdfs:label  "Orange, New Jersey"@en .
+
+<http://dbpedia.org/resource/Church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Church music"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://reference.data.gov.uk/id/day/1872-08-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 August, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://dbpedia.org/resource/St._Thomas_Church,_Leipzig>
+        rdfs:label  "Iglesia de Santo Tomás (Leipzig)"@en .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

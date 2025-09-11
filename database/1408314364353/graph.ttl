@@ -1,0 +1,208 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1656-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1656"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1656;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://dbpedia.org/resource/John_Evelyn>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Evelyn"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Diarist> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1620-10-31>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Wotton,_Surrey>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1706-02-27>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/EvelynJohn1620-1706>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Evelyn";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/violin+music/1405946919479/1408314596197>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'violin music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/John_Evelyn>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/violin+music/1405946919479>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Thomas_Baltzar> .
+
+<http://dbpedia.org/resource/Thomas_Baltzar>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Baltzar"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/music/violin+music/1405946919479>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "violin music"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Giovanni+Giornovichi/1405946919485>;
+        <http://purl.org/dc/terms/title>
+                "violin music";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Giovanni+Giornovichi/1405946919485> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Wotton,_Surrey>
+        rdfs:label  "Wotton, Surrey"@en .
+
+<http://reference.data.gov.uk/id/day/1620-10-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 October, 1620"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1620;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.20> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/source/Diary+of+John+Evelyn,+4+March+1656/1408314499790>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of John Evelyn, 4 March 1656"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.oxforddnb.com/index/1/101001253/>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of John Evelyn, 4 March 1656";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/John_Evelyn> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/person/Giovanni+Giornovichi/1405946919485>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giovanni Giornovichi" .
+
+<http://bnb.data.bl.uk/id/person/EvelynJohn1620-1706>
+        rdfs:label  "John Evelyn"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.56>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  56 .
+
+<http://dbpedia.org/resource/Diarist>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Diarist"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.06>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://www.oxforddnb.com/index/1/101001253/>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2014-08-17"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Thomas Baltzar - Oxford Dictionary of National Biography"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.oxforddnb.com/index/1/101001253/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1706-02-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 February, 1706"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1706;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.06> .
+
+<http://data.open.ac.uk/led/lexp/1408314364353>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "This night I was invited by Mr. Rog: L'Estrange to heare the incomperable Lubicer on the Violin, his variety upon a few notes & plaine ground with that wonderfull dexterity, as was admirable, & though a very young man, yet so perfect & skillful as there was nothing so crosse & perplext, which being by our Artists, brought to him, which he did not at first sight, with ravishing sweetenesse & improvements, play off, to the astonishment of our best Masters: In Summ, he plaid on that single Instrument a full Consort, so as the rest, flung-downe their Instruments, as acknowledging a victory."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+John+Evelyn,+4+March+1656/1408314499790>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/isobel.1111/temp>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/John_Evelyn>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1656-03-04>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-08-17T22:26:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/violin+music/1405946919479/1408314596197> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

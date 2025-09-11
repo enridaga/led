@@ -1,0 +1,191 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/reformer>
+        rdfs:label  "Reformer"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Jeremy_Bentham>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Jeremy Bentham"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/reformer> , <http://data.open.ac.uk/led/philosopher> , <http://data.open.ac.uk/led/jurist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1748-02-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1832-06-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Westminster>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://reference.data.gov.uk/id/day/1748-02-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 February, 1748"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1748;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.48> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.68>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  68 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en .
+
+<http://www.e-enlightenment.com>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2013-04-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Electronic Enlightenment "@en , "Electronic Enlightenment"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.e-enlightenment.com"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1388176737469>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The listener was also a performer "@en;
+        led:has_environment    led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "BEGINNING OF LETTER:\r\nI must not quit this station wherein you imagined me fixed, without acquainting you how Fortune has disposed of me. my Uncle has made me an offer (which I could not well refuse, neither indeed should be disposed to do it, since tho' the company is rather insipid, there will not be wanting I imagine, ‘agreable circumstances,’ to make the Scheme palatable) to take me with him and my Aunt upon an expedition to Buxton-Wells in Derbyshire, whither he is sent by his Physician for the benefit of his health. I shall thereby not only have the opportunity of satisfying the passion I have in some degree in common with Mr. Calcot, of fathoming altitudes in the two opposite senses of the word, by climbing the mountains and penetrating the mines of that romantic Country, but the wish likewise that I have entertained of seeing that uncommon collection of natural curiosities assembled at the Peak, in which I must be countenanced by all those to whom admiration is a source of entertainment...\r\n\r\nRELEVANT SECTION\r\n\r\nI had the pleasure a few days ago of making one in a very agreable little musical party with a Nephew of Mr. Hills who is Minister of a parish about 7 or 8 miles from the 8 mile Stone from Reading across the Country beyond Englefield House,  and a neighbouring Clergyman, at the house of the former. the one played thorough Bass on the Harpsichord extremely well, and the other the fiddle, who had just such a superiority over myself as not to be a painfull one, and as I would wish for the sake of the musick — We played some fine Musick, and of sterling orthodoxy — Corelli was not forgotten. I am in hopes of a repetition of the entertainment at Mr. Hill's before I go on my Journey. this has put me in mind to request of you to send me by a conveyance that has offer'd itself if this letter comes time enough to give you the opportunity and you can do it without inconvenience a double suit of Strings for a fiddle (except the 3d. and of that only one) and if you can spare me in order to enrich our Stock either Bononcini or Handel's Sonata's till my return about the latter end of Septr., I shall be obliged to you;..\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Jeremy+Bentham+to+Richard+Clark+26+July+1768/1388176433055>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Simon+Brown/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Jeremy_Bentham> , <http://data.open.ac.uk/led/person/Mr+Hills/1391765100314>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berkshire>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1768-07-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-07T09:25:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Corelli/1391764982266> .
+
+<http://data.open.ac.uk/led/philosopher>
+        rdfs:label  "Philosopher"@en , "philosopher"@en .
+
+<http://data.open.ac.uk/led/source/Jeremy+Bentham+to+Richard+Clark+26+July+1768/1388176433055>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Jeremy Bentham to Richard Clark, 26 July 1768"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Bodleian Library Oxford"@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.e-enlightenment.com>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Jeremy Bentham to Richard Clark, 26 July 1768";
+        <http://schema.org/author>  <http://dbpedia.org/resource/Jeremy_Bentham> .
+
+<http://data.open.ac.uk/led/music/Corelli/1391764982266>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Corelli"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Arcangelo_Corelli>;
+        <http://purl.org/dc/terms/title>
+                "Corelli" .
+
+<http://data.open.ac.uk/time/edtf/1768-07-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "July, 1768"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1768;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.48>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  48 .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://dbpedia.org/resource/Berkshire>
+        rdfs:label  "Berkshire"@en .
+
+<http://dbpedia.org/resource/Westminster>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Westminster"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/person/Mr+Hills/1391765100314>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr Hills"@en , "A clergyman of a parish near Reading"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hills";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr";
+        <http://xmlns.com/foaf/0.1/nick>
+                "A clergyman of a parish near Reading"@en .
+
+<http://reference.data.gov.uk/id/day/1832-06-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 June, 1832"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1832;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.32> .
+
+<http://dbpedia.org/resource/Arcangelo_Corelli>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_> , <http://bnb.data.bl.uk/id/person/CorelliArcangelo1653-1713> .
+
+<http://data.open.ac.uk/led/jurist>
+        rdfs:label  "Jurist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.32>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  32 .

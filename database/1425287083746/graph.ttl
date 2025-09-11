@@ -1,0 +1,550 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://musicbrainz.org/artist/ddbea2a2-9424-4ee3-b14c-351f22f2c4d3#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Niccolò Jommelli"@en .
+
+<http://data.open.ac.uk/time/edtf/1800-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1800"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1800;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Gioachino_Rossini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Rossini"@en , "Rossini" , "Gioachino Rossini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1792-02-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Pesaro>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1868-11-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Passy>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rossini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gioachino" .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/source/Musical+Life+in+Paris+(1817-1848):+A+Chapter+from+the+Memoirs+of+Sophie+Augustine+Leo--Part+II/1425287068192>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical Life in Paris (1817-1848): A Chapter from the Memoirs of Sophie Augustine Leo--Part II"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Musical+Quarterly>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.jstor.org/stable/739043>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/title>
+                "Musical Life in Paris (1817-1848): A Chapter from the Memoirs of Sophie Augustine Leo--Part II";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://bnb.data.bl.uk/id/person/StrunkOliver>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081> , <http://bnb.data.bl.uk/id/person/StrunkWOliver%28WilliamOliver%291901-1980> .
+
+<http://reference.data.gov.uk/id/year/1946>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1946"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/musicologist>
+        rdfs:label  "Musicologist"@en , "musicologist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mozart's+Requiem/1425287625247/1425287625259>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mozart's Requiem'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Requiem> , <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Mozart's+Requiem/1425287625247>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443> .
+
+<http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Institution royale de musique classique et religieuse"@en .
+
+<http://bnb.data.bl.uk/id/person/StrunkWOliver%28WilliamOliver%291901-1980>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. Oliver Strunk"@en .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Baroque_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Baroque"@en , "Baroque music"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/time/edtf/1825-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1825"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1825;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://dbpedia.org/resource/Passy>
+        rdfs:label  "Passy"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166/1425287771405>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Stabat Mater'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Baroque_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443> .
+
+<http://data.open.ac.uk/time/edtf/1946-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1946"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1946> .
+
+<http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Sophie Augustine Leo"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1795-09-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Leo";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sophie Augustine" .
+
+<http://data.open.ac.uk/time/edtf/18Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1800-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1825-uu-uu> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Alexander's Feast"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Alexander's Feast";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://www.jstor.org/stable/739043>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-02-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Musical Quarterly, Vol. 17, No. 3 (Jul., 1931), "@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.jstor.org/stable/739043"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://dbpedia.org/resource/Oxford_University_Press>
+        rdfs:label  "Oxford University Press"@en .
+
+<http://reference.data.gov.uk/id/day/1795-09-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 September, 1795"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1795;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.95> .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://reference.data.gov.uk/id/day/1792-02-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 February, 1792"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1792;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/music/Benedictus+Dominus/1425287892728>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Benedictus Dominus"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/ddbea2a2-9424-4ee3-b14c-351f22f2c4d3#_>;
+        <http://purl.org/dc/terms/title>
+                "Benedictus Dominus";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/ddbea2a2-9424-4ee3-b14c-351f22f2c4d3#_> .
+
+<http://dbpedia.org/resource/Messiah_(Handel)>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Messiah"@en , "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Oxford University Press"@en , "American Mathematical Society"@en;
+        owl:sameAs  <http://dbpedia.org/resource/Oxford_University_Press> .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://dbpedia.org/resource/Maiden_Newton>
+        rdfs:label  "Maiden Newton"@en .
+
+<http://dbpedia.org/resource/Requiem>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Requiem"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Messiah/1425287358074/1425287437324>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Messiah_(Handel)>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443> .
+
+<http://data.open.ac.uk/led/source/The+Musical+Quarterly>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Musical Quarterly"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1946-04-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/OxfordUniversityPress>;
+        <http://purl.org/dc/terms/title>
+                "The Musical Quarterly";
+        <http://purl.org/ontology/bibo/volume>
+                "Vol. 32, No. 2" .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://reference.data.gov.uk/id/day/1893-12-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 December, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://reference.data.gov.uk/id/day/1868-11-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 November, 1868"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1868;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.95>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  95 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442/1425287541460>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Alexander's Feast'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Baroque_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443> .
+
+<http://data.open.ac.uk/led/lexp/1425287083746>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "...[T]hanks to the generosity of the Duchesse de Berry, a training school for poor children who wished to devote themselves to the study of singing was founded... [the] Institution royale de musique classique et religieuse.... Here children and young people of both sexes were taught; from them I later heard splendid performances of the best church music. I recall with delight the mastery they showed in their singing of Handel - the Messiah, Alexander's Feast, and the Utrecht Te Deum - of Mozart's Requiem, Pergolesi's Stabat Mater, Scarlatti, Durante with all his magnificent school, Jom­melli's Benedictus Dominus making a particularly vivid impression. In that remote corner of an old and seldom visited quarter of the great and brilliant city the swan-song, as it were, of the best of the sacred musical art of Germany and Italy was heard."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Musical+Life+in+Paris+(1817-1848):+A+Chapter+from+the+Memoirs+of+Sophie+Augustine+Leo--Part+II/1425287068192>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/temp>;
+        led:pages              "389";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Ee-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-03-02T09:04:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Messiah/1425287358074/1425287437324> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Alexander's+Feast/1425287541442/1425287541460> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Benedictus+Dominus/1425287892728/1425287892742> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mozart's+Requiem/1425287625247/1425287625259> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166/1425287771405> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/music/Stabat+Mater/1386673323166>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Stabat Mater"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Pergolesi/1386341643147> , <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/dc/terms/title>
+                "Stabat Mater";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Pergolesi/1386341643147> , <http://dbpedia.org/resource/Gioachino_Rossini>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_> .
+
+<http://dbpedia.org/resource/Harrow_on_the_Hill>
+        rdfs:label  "Harrow on the Hill"@en .
+
+<http://bnb.data.bl.uk/id/person/StrunkOliver>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Oliver Strunk"@en .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://reference.data.gov.uk/id/day/1978-05-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 May, 1978"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1978;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Sylvia Townsend Warner"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musicologist> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-12-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Harrow_on_the_Hill>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1978-05-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Maiden_Newton>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Warner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sylvia Townsend" .
+
+<http://data.open.ac.uk/led/person/Pergolesi/1386341643147>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Pergolesi"@en .
+
+<http://dbpedia.org/resource/Pesaro>
+        rdfs:label  "Pesaro"@en .
+
+<http://data.open.ac.uk/led/music/Mozart's+Requiem/1425287625247>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Mozart's Requiem"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "Mozart's Requiem";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Benedictus+Dominus/1425287892728/1425287892742>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Benedictus Dominus'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Baroque_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Sophie+Augustine+Leo/1424688904081>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Benedictus+Dominus/1425287892728>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Institution+royale+de+musique+classique+et+religieuse/1425660204443> .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

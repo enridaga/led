@@ -1,0 +1,447 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1939>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1939"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1897-04-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 April, 1897"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1897;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.97> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/1939-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1939>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Brahms'+E-Minor+Sonata+/+Beethoven%25E2%2580%2599s+Sonata+in+C+Major/+Bach's+D-+Major+Cello+Suite+/+Debussy's+Cello+Sonata+/+Bart%25C3%25B3k's+Rhapsody/1426638069580/1426638069594>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Brahms' E-Minor Sonata / Beethoven’s Sonata in C Major/ Bach's D- Major Cello Suite / Debussy's Cello Sonata / Bartók's Rhapsody"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_> , <http://dbpedia.org/resource/Johannes_Brahms> , <http://dbpedia.org/resource/Claude_Debussy> , <http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k> , <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Brahms' E-Minor Sonata / Beethoven’s Sonata in C Major/ Bach's D- Major Cello Suite / Debussy's Cello Sonata / Bartók's Rhapsody";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_> , <http://dbpedia.org/resource/Johannes_Brahms> , <http://dbpedia.org/resource/Claude_Debussy> , <http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k> , <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_> .
+
+<http://dbpedia.org/resource/Johannes_Brahms>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Johannes Brahms" , "Brahms" , "Johannes Brahms"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1833-05-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1897-04-03>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrahmsJohannes1833-1897>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brahms";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Cello player"@en , "Cellist"@en;
+        <http://purl.org/dc/terms/subject>
+                <http://dbpedia.org/resource/Cello> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Grigor Piatigorsky"@en , "Gregor Piatigorsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1903-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Yekaterinoslav_Governorate>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-08-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Los_Angeles>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Piatigorsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gregor" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.81>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  81 .
+
+<http://data.open.ac.uk/time/edtf/1903-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1903"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1903;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1903>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/id/day/1976-08-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 August, 1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://reference.data.gov.uk/id/day/1945-09-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 September, 1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://data.open.ac.uk/led/lexp/1426638107937>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/5b09daf2674e6ab583cd48914363cab8/excerpt/cbe934dfb15f187e22c6d713b6b1e9bb>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/temp>;
+        led:pages            "224-225";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Budapest>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/193u-Mm-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-02T14:53:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-03-18T00:21:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Brahms'+E-Minor+Sonata+/+Beethoven%25E2%2580%2599s+Sonata+in+C+Major/+Bach's+D-+Major+Cello+Suite+/+Debussy's+Cello+Sonata+/+Bart%25C3%25B3k's+Rhapsody/1426638069580/1426638069594>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5b09daf2674e6ab583cd48914363cab8/excerpt/cbe934dfb15f187e22c6d713b6b1e9bb> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://reference.data.gov.uk/id/day/1833-05-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 May, 1833"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1833;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://dbpedia.org/resource/Claude_Debussy>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Claude Debussy" , "Claude Debussy"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/be50643c-0377-4968-b48c-47e06b2e2a3b#_> , <http://bnb.data.bl.uk/id/person/DebussyClaude1862-1918> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://musicbrainz.org/artist/be50643c-0377-4968-b48c-47e06b2e2a3b#_>
+        rdfs:label  "Claude Debussy"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.3u>
+        rdf:value   "3u";
+        rdfs:label  "30s"@en .
+
+<http://bnb.data.bl.uk/id/person/BrahmsJohannes1833-1897>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johannes Brahms"@en .
+
+<http://dbpedia.org/resource/Los_Angeles>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Los Angeles"@en .
+
+<http://bnb.data.bl.uk/id/person/DebussyClaude1862-1918>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Claude Debussy"@en .
+
+<http://data.open.ac.uk/time/edtf/1976-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1976>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://dbpedia.org/resource/Budapest>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Budapest"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/id/year/1976>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/year/1903>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Gregor+Piatigorsky-+Cellist/1425336406176>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Cellist- Gregor Piatigorsky"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1976-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "Cellist- Gregor Piatigorsky";
+        <http://purl.org/ontology/bibo/isbn>
+                "0-306-70822-1"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/98af165c-cdf5-4033-8c72-c0189d46cdd1#_> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://data.open.ac.uk/led/source/5b09daf2674e6ab583cd48914363cab8/excerpt/cbe934dfb15f187e22c6d713b6b1e9bb>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>He [B&eacute;la Bart&oacute;k] spoke of Hungarian folk music and of a composition he was working on, and played a few excerpts on the piano from the manuscript. His soft hands made music as strong as his face, as penetrating as his eyes, and yet as delicate as his frail body. We rehearsed, and during lunch we agreed that we had really not rehearsed at all but just played, and when we repeated anything it was merely to give us the pleasure of playing once more. In the afternoon we went through the program, which consisted of the E-Minor Brahms Sonata, Beethoven&rsquo;s Sonata in C Major, the D-Major Cello Suite by Bach, the Sonata by Debussy, and the Rhapsody by Bart&oacute;k. It was wonderful to play and to be with him, and I hated to have to dash to Scandinavia and Italy to fulfill other engagements, which would last until I boarded the ship for the United States.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Cellist- Gregor Piatigorsky' pp. 224-225 (162 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Gregor+Piatigorsky-+Cellist/1425336406176>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "224-225" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.97>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  97 .
+
+<http://data.open.ac.uk/time/edtf/193u-Mm-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the middle of the 1930's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.3u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1939-uu-uu> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/day/1881-03-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 March, 1881"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1881;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.81> .
+
+<http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Bartók, Béla, 1881-1945"@en , "Béla Bartók" , "Béla Bartók"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1881-03-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hungary>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1945-09-26>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/Bart%C3%B3kB%C3%A9la1881-1945> , <http://musicbrainz.org/artist/fd14da1b-3c2d-4cc8-9ca6-fc8c62ce6988#_> .
+
+<http://dbpedia.org/resource/Yekaterinoslav_Governorate>
+        rdfs:label  "Yekaterinoslav Governorate"@en .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .

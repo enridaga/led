@@ -1,0 +1,110 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://solomon.tinyurl.alexanderstreet.com/13SJG>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-09-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/13SJG"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Frances Minto Dickinson Elliot"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Minto Dickinson Elliot";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances";
+        <http://xmlns.com/foaf/0.1/name>
+                "Frances Minto Dickinson Elliot" .
+
+<http://data.open.ac.uk/led/music/Madame+Angot/1378304434910>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Madame Angot"@en;
+        <http://purl.org/dc/terms/title>
+                "Madame Angot" .
+
+<http://dbpedia.org/resource/John_Murray_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Murray"@en .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FMadame%2BAngot%2F1378304434910/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FConstantinople1378304434915>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Madame Angot'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Constantinople>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Madame+Angot/1378304434910> .
+
+<http://data.open.ac.uk/led/lexp/1378304500>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The date 1892 is not certain."@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I am ushered into a pretty drawing room, hung with chintz, from the windows of which, turned towards the road, we are to see the Sultan pass to the mosque....  \r\n\r\nAt a given moment, while a bad orchestra was playing tunes from `Madame Angot,' under a bank opposite the mosque, two broughams full of veiled ladies, after battling with the water-carts which still lingered on the road, and getting much pushed about, drove into the inclosure, and took up their place under the wall of the mosque....\r\n\r\nThe horses were taken from the carriage, and there the ladies sat boxed up in their broughams listening to the bad music; satisfied, no doubt, for the Turks have no ear, and will listen contentedly to any atrocity. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FDiary%2Bof%2Ban%2BIdle%2BWoman%2Bin%2BConstantinople%2F1378304348894/pages424>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "424";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Constantinople>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-09-04T14:21:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2FMadame%2BAngot%2F1378304434910/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FConstantinople1378304434915> .
+
+<http://data.open.ac.uk/led/source/Diary+of+an+Idle+Woman+in+Constantinople/1378304348894>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of an Idle Woman in Constantinople"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/13SJG>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/John_Murray_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Diary of an Idle Woman in Constantinople";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Frances+Minto+Dickinson+Elliot/1378303322869> .
+
+<http://dbpedia.org/resource/Constantinople>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Constantinople"@en .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FDiary%2Bof%2Ban%2BIdle%2BWoman%2Bin%2BConstantinople%2F1378304348894/pages424>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Diary of an Idle Woman in Constantinople, pages 424"@en;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+an+Idle+Woman+in+Constantinople/1378304348894>;
+        <http://purl.org/dc/terms/title>
+                "Memoir of Frances Minto Dickinson Elliot, 1892?" .

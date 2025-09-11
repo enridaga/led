@@ -1,0 +1,282 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Battersea>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Battersea"@en .
+
+<http://dbpedia.org/resource/Publishing>
+        rdfs:label  "Publishing"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/Holland_Park>
+        rdfs:label  "Holland Park"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.64>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  64 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Novelist>
+        rdfs:label  "Novelist"@en .
+
+<http://data.open.ac.uk/led/lexp/1447600308792>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Richard Church hears this music on returning home after his last morning of work for the Civil Service."@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/6f90ec8090a71e73cc904fff910f0afa/excerpt/2300b9ba23f43d5fd7c55e443e2572e2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "188-89";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/ChurchRichard1893-1972>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Holland_Park>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1933-04-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-29T13:13:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-15T15:11:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/586e5ef1386674d6c5cad4118318e22f/1447600042231> , <http://data.open.ac.uk/led/performance/81969456cbe6b0118e815ac7cdf79c24/1447600180406>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/6f90ec8090a71e73cc904fff910f0afa/excerpt/2300b9ba23f43d5fd7c55e443e2572e2> .
+
+<http://data.open.ac.uk/led/performance/81969456cbe6b0118e815ac7cdf79c24/1447600180406>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Vivaldi Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Holland_Park>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_solo> , <http://dbpedia.org/resource/Baroque_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/ChurchRichard1893-1972>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Vivaldi+Concerto/1447600180387>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Not+specified/1447600180410> .
+
+<http://dbpedia.org/resource/Baroque_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Baroque"@en , "Baroque music"@en .
+
+<http://data.open.ac.uk/led/agent/Not+specified/1447600180410>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Not specified"@en .
+
+<http://dbpedia.org/resource/Heinemann_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Heinemann (publisher)"@en .
+
+<http://data.open.ac.uk/time/edtf/1933-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1933"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1933;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://data.open.ac.uk/led/source/6f90ec8090a71e73cc904fff910f0afa/excerpt/2300b9ba23f43d5fd7c55e443e2572e2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I stopped outside the house next door to that where we had our flat. &nbsp;It was the home of the London Music Club. &nbsp;Someone was practising the piano, deft-fingered at the scales. &nbsp;The delicious stream of sound, in its pulses of eight, made me catch my breath as though I had stooped and put my lips to a cold fountain.</p>\r\n<p>The pianist stopped playing, and I returned to earth. &nbsp;I was about to move on, when the music began to flow afresh; but now it was a gay movement from one of the Vivaldi concertos transcribed by Bach for the keyboard. &nbsp;I recognized it at once, and I saw my brother Jack sitting at the instrument, in our rooms, on Denmark Hill twenty years earlier. &nbsp;He turned his head as he was playing, and nodded to me, approving, assenting.</p>\r\n<p>The perfume from the budding trees beyond the railings opposite the house, the music that shared its speed and insinuation, the reappearance of my brother from beyond the grave, all these tangibilities united to celebrate my home-coming, enlarging a minor, private event into an oratorio, universal and loud with praise.</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Voyage Home' pp. 188-89 (189 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Voyage+Home/1447597487343>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "188-89" .
+
+<http://bnb.data.bl.uk/id/person/ChurchRichard1893-1972>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Richard Church"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Poet> , <http://data.open.ac.uk/led/editor> , <http://dbpedia.org/resource/Novelist> , <http://dbpedia.org/resource/Publishing> , <http://dbpedia.org/resource/Civil_service>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-03-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Battersea>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1972-03-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Sissinghurst>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Church";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Piano_solo>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano solo"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/person/Vivaldi+transcribed+by+Bach/1447600180402>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Vivaldi transcribed by Bach" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/music/Vivaldi+Concerto/1447600180387>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Vivaldi Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Vivaldi+transcribed+by+Bach/1447600180402>;
+        <http://purl.org/dc/terms/title>
+                "Vivaldi Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Vivaldi+transcribed+by+Bach/1447600180402> .
+
+<http://dbpedia.org/resource/Sissinghurst>
+        rdfs:label  "Sissinghurst"@en .
+
+<http://data.open.ac.uk/led/performance/586e5ef1386674d6c5cad4118318e22f/1447600042231>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'scales'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Holland_Park>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/ChurchRichard1893-1972>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/scales/1432897283309>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Not+specified/1447600042236> .
+
+<http://data.open.ac.uk/led/editor>
+        rdfs:label  "editor"@en .
+
+<http://data.open.ac.uk/led/music/scales/1432897283309>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "scales"@en;
+        <http://purl.org/dc/terms/title>
+                "scales" .
+
+<http://dbpedia.org/resource/Civil_service>
+        rdfs:label  "Civil service"@en .
+
+<http://data.open.ac.uk/led/agent/Not+specified/1447600042236>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Not specified"@en .
+
+<http://reference.data.gov.uk/id/day/1893-03-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 March, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/time/edtf/1964-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1964"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1964;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1964>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.64> .
+
+<http://data.open.ac.uk/led/source/The+Voyage+Home/1447597487343>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Voyage Home"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1964-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Heinemann_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "The Voyage Home";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/ChurchRichard1893-1972> .
+
+<http://reference.data.gov.uk/id/day/1972-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1972"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1972;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://reference.data.gov.uk/id/year/1964>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1964"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .

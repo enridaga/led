@@ -1,0 +1,207 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Tomintoul>
+        rdfs:label  "Tomintoul"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/source/The+Old+Ways:+A+Journey+on+Foot/1420480444231>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Old Ways: A Journey on Foot"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2012-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Hamish_Hamilton>;
+        <http://purl.org/dc/terms/title>
+                "The Old Ways: A Journey on Foot";
+        <http://purl.org/ontology/bibo/isbn>
+                "978-0-241-14381-0"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://dbpedia.org/resource/Scottish_folk_music>
+        rdfs:label  "Scottish folk music"@en .
+
+<http://data.open.ac.uk/time/interval/2000-uu-uu/to/2009-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 2000 and 2009"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/2000-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/2009-uu-uu> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'The+Road+to+the+Isles'/1420480552445/1420480552451>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''The Road to the Isles''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Tomintoul>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Scottish_folk_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Organ_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'The+Road+to+the+Isles'/1420480552445> .
+
+<http://dbpedia.org/resource/Organ_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Organ (music)"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Hamish_Hamilton>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Hamish Hamilton"@en .
+
+<http://data.open.ac.uk/led/lexp/1420480595507>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Music heard at a funeral"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d37da887cacb182e9b4f12b48900836b/excerpt/ce1db0c986700b7f894d5ddfa8d0ac74>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "203-205";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/aeafe4e079ead9444f468ba5365c932a>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/2000-uu-uu/to/2009-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-04-07T16:27:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2017-11-21T14:35:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2017-11-21T09:50:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-01-05T17:56:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'The+Road+to+the+Isles'/1420480552445/1420480552451>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d37da887cacb182e9b4f12b48900836b/excerpt/ce1db0c986700b7f894d5ddfa8d0ac74> .
+
+<http://data.open.ac.uk/led/person/Robert+Macfarlane/1420480484927>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Robert Macfarlane"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/University+lecturer+and+writer>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1976-08-15>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Macfarlane";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Robert" .
+
+<http://data.open.ac.uk/time/edtf/2000-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2000"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/music/'The+Road+to+the+Isles'/1420480552445>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'The Road to the Isles'"@en;
+        <http://purl.org/dc/terms/title>
+                "'The Road to the Isles'" .
+
+<http://data.open.ac.uk/time/edtf/2012-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2012"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2012> .
+
+<http://reference.data.gov.uk/id/day/1976-08-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 August, 1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/year/2009>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/2009-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2009"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2009>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://data.open.ac.uk/led/place/aeafe4e079ead9444f468ba5365c932a>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Tomintoul, Scotland"@en;
+        <http://purl.org/dc/terms/description>
+                "Tomintoul, Scotland"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Tomintoul> , <http://dbpedia.org/resource/Scotland> .
+
+<http://reference.data.gov.uk/id/year/2012>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/d37da887cacb182e9b4f12b48900836b/excerpt/ce1db0c986700b7f894d5ddfa8d0ac74>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>My grandfather&rsquo;s funeral occurred in the modest church in the village of Tomintoul [&hellip;] As we filed out of the church, the organist struck up with &lsquo;The Road to the Isles&rsquo;. It&rsquo;s a well-known Scottish folk song of nineteenth-century music-hall origin &ndash; rife with pseudo-Gaelicisms and tinged with remembered Jacobitism &ndash; about dreamed-of western landscapes, the open road that leads to them and the foot-travel by which they will be reached. It plays with the walk west to the Hebrides as a walk in the direction of loss, a journey towards the setting sun. My mother&rsquo;s mother had sung it to her, and she in turn had sung it to me as a lullaby and as a walking song, in her high voice.</p>\n<blockquote><em>A far croonin&rsquo; is pullin&rsquo; me away<br /></em><em> As take I wi&rsquo; my cromack to the road</em><em>.</em><em> <br />The far Coolins are puttin&rsquo; love on me</em><em> <br />As step I wi&rsquo; the sunlight for my load.</em></blockquote>\n<p>The organist duffed note after note, but the song was still recognizable, and the old words ran through my head in time to the music [...] People were bustling and talking, louder now, while the organist played boldly on. The hearse gleamed [&hellip;] The bearers emerged, wheeling the coffin on its carriage. A whispered <em>one, two three, heave</em> and the coffin was off the carriage and into the back of the hearse [&hellip;]</p>\n<blockquote><em>Sure by Tummel and Loch Rannoch and Lochaber I will go<br /></em><em> By heather tracks wi&rsquo; heaven in their wiles.<br /></em><em> If it&rsquo;s thinkin&rsquo; in your inner heart the braggart&rsquo;s in my step,<br /></em><em> You&rsquo;ve never smelled the tangle o&rsquo; the Isles.</em></blockquote>\n<p>One of the coffin-bearers stepped into the middle of the road, and raised a flat hand to stop the traffic with all the authority vested in him by death and dark clothes. The cars slowed, stopped, began to back up into a queue. From inside the church the final verse of &lsquo;The Road to the Isles&rsquo; drifted out.</p>\n<blockquote><em>The blue islands are pullin&rsquo; me away<br /></em><em> Their laughter puts the leap upon the lame;<br /></em><em> The blue islands from the Skerries to the Lewis<br /></em><em> Wi&rsquo; heather honey taste upon each name.</em></blockquote>\n<p>[&hellip;] Sun glints on the dark road, the hearse creeps forwards, the undertaker makes my grandfather&rsquo;s final walk for him, his journey marked by the beat of each carefully placed and lifted foot.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Old Ways: A Journey on Foot' pp. 203-205 (390 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Old+Ways:+A+Journey+on+Foot/1420480444231>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "203-205" .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/led/University+lecturer+and+writer>
+        rdfs:label  "University lecturer and writer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

@@ -1,0 +1,463 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Frankfurt>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Frankfurt"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn"@en .
+
+<http://data.open.ac.uk/led/head+of+leigzig+conservertoir>
+        rdfs:label  "Head of Leigzig Conservertoir"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Comic+song/1430219718113/1430219718120>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Comic song'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Comic_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Comic+song/1430219718113>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Hauser/1430219718130> .
+
+<http://data.open.ac.uk/led/lexp/1430218897242>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Felix played me a Concerto by J. S. Bach, out of Hauser's fine collection; Hauser then sang a very funny song by the old composer Hiller, in which the word 'nose' plays a conspicuous part."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Amateur+Series+-+Recent+Music+and+Musicians/1425987987426>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/temp>;
+        led:pages              "214";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1835-Ll-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-28T11:01:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Comic+song/1430219718113/1430219718120> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/a+Concerto+by+Bach/1430219659960/1430219659965> .
+
+<http://dbpedia.org/resource/Cologne>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Cologne"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://bnb.data.bl.uk/id/person/Mendelssohn-BartholdyFelix1809-1847>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix Mendelssohn-Bartholdy"@en .
+
+<http://bnb.data.bl.uk/id/agent/HenryHoltandCo>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Henry Holt & Co."@en .
+
+<http://data.open.ac.uk/led/source/Amateur+Series+-+Recent+Music+and+Musicians/1425987987426>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Recent Music and Musicians"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1879-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:ger>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/HenryHoltandCo>;
+        <http://purl.org/dc/terms/title>
+                "Recent Music and Musicians";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/person/Charlotte+Moscheles/1429540740575>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://data.open.ac.uk/led/agent/A.+D.+Coleridge/1425987987446>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_> .
+
+<http://reference.data.gov.uk/id/day/1794-05-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 May, 1794"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1794;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/led/agent/A.+D.+Coleridge/1425987987446>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A. D. Coleridge"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/id/day/1870-03-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 March, 1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://dbpedia.org/resource/Kingdom_of_Bohemia>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Bohemia"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/year/1879>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Felix_Mendelssohn>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Felix Mendelssohn"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/role/organist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1809-02-03>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1847-11-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/Mendelssohn-BartholdyFelix1809-1847> , <http://musicbrainz.org/artist/0e85eb79-1c05-44ba-827c-7b259a3d941a#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mendelssohn Bartholdy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Felix Mendelssohn"@en .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://reference.data.gov.uk/id/day/1809-02-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 February, 1809"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1809;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-10"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/recentmusicmusic00mosc#page/n13/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1885-05-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 May, 1885"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1885;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://dbpedia.org/resource/Prague>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Prague"@en .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://reference.data.gov.uk/id/day/1811-10-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 October, 1811"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1811;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/music+director>
+        rdfs:label  "music director"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/a+Concerto+by+Bach/1430219659960>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "a Concerto by Bach"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_>;
+        <http://purl.org/dc/terms/title>
+                "a Concerto by Bach";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_> .
+
+<http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ignatz Moscheles" , "Ignaz Moscheles"@en , "Ignatz Moscheles"@en , "Ignace Moscheles"@en , "Moscheles";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/head+of+leigzig+conservertoir> , <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1794-05-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Prague>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1870-03-10>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Bohemia>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moscheles";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ignatz" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/a+Concerto+by+Bach/1430219659960/1430219659965>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'a Concerto by Bach'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Leipzig>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b7350f31-487d-4021-9613-d881a5689bcf#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/a+Concerto+by+Bach/1430219659960>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Felix_Mendelssohn> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/agent/Hauser/1430219718130>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Hauser"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<http://data.open.ac.uk/led/music/Comic+song/1430219718113>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Comic song"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/f666a5e4-89ca-46af-ae17-66d2cb5568c1#_>;
+        <http://purl.org/dc/terms/title>
+                "Comic song";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/f666a5e4-89ca-46af-ae17-66d2cb5568c1#_> .
+
+<http://data.open.ac.uk/time/edtf/1835-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of 1835"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1835;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://reference.data.gov.uk/id/day/1847-11-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 November, 1847"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1847;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.47> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.47>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  47 .
+
+<http://dbpedia.org/resource/Comic_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Comic song"@en .
+
+<http://data.open.ac.uk/led/person/Charlotte+Moscheles/1429540740575>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charlotte Moscheles"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moscheles";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charlotte" .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/time/edtf/1879-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1879>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://musicbrainz.org/artist/f666a5e4-89ca-46af-ae17-66d2cb5568c1#_>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Ferdinand  Hiller"@en , "Hiller" , "F. Hiller" , "Hiller"@en , "Ferdinand Hiller"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/music+director>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1811-10-24>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Frankfurt>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1885-05-11>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Cologne>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hiller";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ferdinand " .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .

@@ -1,0 +1,140 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/thing/Cleric>
+        rdfs:label  "Cleric"@en .
+
+<http://data.open.ac.uk/led/source/Thomas+Twining+to+Charles+Burney,+Colchester,+4+May,+1791/1391798384077>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Thomas Twining to Charles Burney, Colchester, 4 May, 1791"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/008415551>;
+        <http://purl.org/dc/terms/title>
+                "Thomas Twining to Charles Burney, Colchester, 4 May, 1791";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804> .
+
+<http://data.open.ac.uk/led/thing/cleric>
+        rdfs:label  "cleric"@en .
+
+<http://bnb.data.bl.uk/id/agent/EdwinMellen>
+        rdfs:label  "Edwin Mellen"@en .
+
+<http://bnb.data.bl.uk/id/person/WalkerRalphS%28RalphSpence%291904->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ralph S. Walker"@en .
+
+<http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Twining"@en , "Thomas twining"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Cleric> , <http://data.open.ac.uk/led/thing/cleric>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1734-uu-uu>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1804-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Colchester>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Twining";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Colchester>
+        rdfs:label  "Colchester"@en .
+
+<http://bnb.data.bl.uk/id/resource/008415551>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "A selection of Thomas Twining's letters 1734-1804 : the record of a tranquil life"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1991-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/EdwinMellen>;
+        <http://purl.org/dc/terms/title>
+                "A selection of Thomas Twining's letters 1734-1804 : the record of a tranquil life";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/WalkerRalphS%28RalphSpence%291904->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0773497897"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://sws.geonames.org/2634895/> , <http://dbpedia.org/resource/Lewiston,_New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" , "1";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804> .
+
+<http://data.open.ac.uk/time/edtf/1991-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1991"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1991> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/1804-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1804"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1804;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/year/1991>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/1734-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1734"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1734;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://dbpedia.org/resource/Lewiston,_New_York>
+        rdfs:label  "Lewiston, New York"@en .
+
+<http://data.open.ac.uk/led/lexp/1391798443654>
+        rdf:type               led:ListeningExperience;
+        led:has_evidence_text  "I have lately had a sort of fiddle mania upon me, brought on by trying & comparing different Stainers, Cremonas, &c. I believe I have got possession of a sweet Stradivarius, which I play upon with much more pleasure than my Stainer; partly because the stop is longer. My Stainer is undersized; & on that account less valuable, tho’ the tone is as bright, piercing, & full, as of any Stainer I ever heard. Yet when I take it up after the Stradivarius, it sets my teeth on edge. The tone comes out plump, all at once. There is a comfortable reserve of tone in the Stradivarius, & it bears pressure, & you may draw upon it for almost as much tone as you please. I think I shall bring it to town with me, & then you shall hear it. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Thomas+Twining+to+Charles+Burney,+Colchester,+4+May,+1791/1391798384077>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/David+Rowland/claims>;
+        led:pages              "374";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-07T18:40:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .

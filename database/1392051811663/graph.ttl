@@ -1,0 +1,271 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Rome>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rome"@en .
+
+<http://data.open.ac.uk/led/music/sacred+music+in+St+Peter's/1392051710054>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sacred music in St Peter's"@en;
+        <http://purl.org/dc/terms/title>
+                "sacred music in St Peter's" .
+
+<http://data.open.ac.uk/led/person/Mary+Fairfax+Greig+Somerville/1392051139529>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Mary Fairfax Greig Somerville"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/scientist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Protestantism> , <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1780-12-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Jedburgh>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1872-11-29>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Naples>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Scotland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Somerville";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mary Fairfax Greig" .
+
+<http://reference.data.gov.uk/id/day/1780-12-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 December, 1780"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1780;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://data.open.ac.uk/led/music/psalms+of+Marcello/1392051777430>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "psalms of Marcello"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Benedetto_Marcello>;
+        <http://purl.org/dc/terms/title>
+                "psalms of Marcello" .
+
+<http://dbpedia.org/resource/St._Peter's_Basilica>
+        rdfs:label  "Basilique Saint-Pierre"@en .
+
+<http://data.open.ac.uk/led/performance/sacred+music+in+St+Peter's+(,+performance+of)/1392051710063>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'sacred music in St Peter's'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/St._Peter's_Basilica>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mary+Fairfax+Greig+Somerville/1392051139529>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/sacred+music+in+St+Peter's/1392051710054> .
+
+<http://data.open.ac.uk/led/thing/scientist>
+        rdfs:label  "scientist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1817-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1817"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1817;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.17> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/lexp/1392051811663>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I heard more good music during this first visit to Rome than I ever did after; for besides that usual in St. Peter's, there was an Academia every week, where Marcello's Psalms were sung in concert by a number of male voices, besides other concerts, private and public."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Memoir+of+Mary+Somerville,+Winter+1817/1392051139519>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "122";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Mary+Fairfax+Greig+Somerville/1392051139529>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1817-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-10T17:03:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/sacred+music+in+St+Peter's+(,+performance+of)/1392051710063> , <http://data.open.ac.uk/led/performance/psalms+of+Marcello+(,+performance+of)/1392051777439> .
+
+<http://musicbrainz.org/artist/16f1e308-ae3e-4001-baf1-f6877aca7f15#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Benedetto Marcello"@en .
+
+<http://reference.data.gov.uk/id/year/1873>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1873"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://solomon.tinyurl.alexanderstreet.com/169IH>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2014-02-10"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries 1500-1950"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/169IH"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Jedburgh>
+        rdfs:label  "Jedburgh"@en .
+
+<http://data.open.ac.uk/led/agent/Martha+Somerville/1392054949434>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Martha Somerville"@en .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://reference.data.gov.uk/id/day/1872-11-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 November, 1872"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1872;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/source/Personal+Recollections,+from+Early+Life+to+Old+Age,+of+Mary+Somerville:+With+Selections+from+her+Correspondence>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Personal Recollections, from Early Life to Old Age, of Mary Somerville: With Selections from her Correspondence"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1873-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/John_Murray_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Personal Recollections, from Early Life to Old Age, of Mary Somerville: With Selections from her Correspondence";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Martha+Somerville/1392054949434>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/John_Murray_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Murray"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/Benedetto_Marcello>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Benedetto Marcello"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/16f1e308-ae3e-4001-baf1-f6877aca7f15#_> .
+
+<http://data.open.ac.uk/time/edtf/1873-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1873"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1873;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1873>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://data.open.ac.uk/led/source/Memoir+of+Mary+Somerville,+Winter+1817/1392051139519>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Memoir of Mary Somerville, Winter 1817"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Personal+Recollections,+from+Early+Life+to+Old+Age,+of+Mary+Somerville:+With+Selections+from+her+Correspondence>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/169IH>;
+        <http://purl.org/dc/terms/title>
+                "Memoir of Mary Somerville, Winter 1817";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Mary+Fairfax+Greig+Somerville/1392051139529> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://dbpedia.org/resource/Naples>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Naples"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://data.open.ac.uk/led/performance/psalms+of+Marcello+(,+performance+of)/1392051777439>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'psalms of Marcello'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mary+Fairfax+Greig+Somerville/1392051139529>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/psalms+of+Marcello/1392051777430> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

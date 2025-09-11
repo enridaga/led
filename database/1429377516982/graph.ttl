@@ -1,0 +1,268 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/1933-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1933"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1933;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1933>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdfs:label  "Washington D. C."@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/year/1933>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1933"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/3508f3fd-3b18-493c-a362-376736bb6cde#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Harold Arlen" , "Harold Arlen"@en .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/'Stormy+Weather'/1429377484433>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Stormy Weather'"@en , "Stormy Weather"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/5fc368f4-d528-48d7-a8d4-5c657b29beff#_> , <http://musicbrainz.org/artist/3508f3fd-3b18-493c-a362-376736bb6cde#_>;
+        <http://purl.org/dc/terms/title>
+                "'Stormy Weather'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/5fc368f4-d528-48d7-a8d4-5c657b29beff#_> , <http://musicbrainz.org/artist/3508f3fd-3b18-493c-a362-376736bb6cde#_> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Stormy+Weather'/1429377484433/1429377484444>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Stormy Weather''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London_Palladium>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/jazz+singing> , <http://dbpedia.org/resource/Jazz> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Stormy+Weather'/1429377484433>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/727f2759-d8e7-454f-9f9f-8e7cdfb214f2#_> , <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/piantist>
+        rdfs:label  "piantist"@en .
+
+<http://data.open.ac.uk/led/musicgenre/jazz+singing>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "jazz singing"@en .
+
+<http://dbpedia.org/resource/New_Jersey>
+        rdfs:label  "New Jersey"@en .
+
+<http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Duke Ellington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piantist> , <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/lyricist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ellington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke" .
+
+<http://dbpedia.org/resource/London_Palladium>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London Palladium"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/time/edtf/1973-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1973>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/id/year/1973>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/lexp/1429377516982>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/a4b99923dfe61bb5c6a1b4b90ce29037>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "122-123";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London_Palladium>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1933-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-08-23T14:21:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-18T17:18:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Stormy+Weather'/1429377484433/1429377484444>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/a4b99923dfe61bb5c6a1b4b90ce29037> .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://musicbrainz.org/artist/727f2759-d8e7-454f-9f9f-8e7cdfb214f2#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ivie Anderson"@en .
+
+<http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Duke Ellington: Music is my Mistress"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1973-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Doubleday_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Duke Ellington: Music is my Mistress";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Jersey>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://data.open.ac.uk/led/lyricist>
+        rdfs:label  "lyricist"@en .
+
+<http://musicbrainz.org/artist/5fc368f4-d528-48d7-a8d4-5c657b29beff#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ted Koehler"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/a4b99923dfe61bb5c6a1b4b90ce29037>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>In 1931 we were booked to play the Paramount-Publix Circuit's (Balaban &amp; Katz) Oriental Theatre in Chicago for the first time. The producer thought it would enhance our show if we were to add a girl singer. [&hellip; We chose Ivie Anderson ...]</p>\r\n<p>Although Ivie was not well known at that time, I soon found that she was really an extraordinary artist and an extraordinary person as well. She had great dignity, and she was greatly admired by everybody everywhere we went, at home and abroad. She became one of our mainstays and highlights, and she gave some unforgettable performances. She stopped the show cold at the Palladium in London in 1933. Her routine normally consisted of four songs, but while she was singing \"Stormy Weather\" the audience and all the management brass broke down crying and applauding. The brass came backstage to say, \"Don't let her sing anything but 'Stormy Weather'. Even she couldn't follow that!\" Tears streaming down her cheeks, Ivie did the most believable performance ever. This was topping our eight weeks of playing \"Stormy Weather\" at the Cotton Club for Ethel Waters, for whom the song had been written by Harold Arlen and Ted Koehler.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Duke Ellington: Music is my Mistress' pp. 122-123 (195 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "122-123" .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://dbpedia.org/resource/Doubleday_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Doubleday (publisher)"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .

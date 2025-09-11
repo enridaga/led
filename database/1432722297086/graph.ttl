@@ -1,0 +1,363 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Small,_Maynard_&_Company>
+        rdfs:label  "Small, Maynard & Company"@en .
+
+<http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>
+        rdfs:label  "La Côte-Saint-André"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/La+Fuite+en+Egypt/1432722282848>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "La Fuite en Egypt"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Hector_Berlioz>;
+        <http://purl.org/dc/terms/title>
+                "La Fuite en Egypt";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Hector_Berlioz> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://bnb.data.bl.uk/id/person/Saint-Sa%C3%ABnsCamille1835-1921>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Camille Saint-Saëns"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Societe+St.+Cecile/1432722282862>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Societe St. Cecile"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/La+Fuite+en+Egypt/1432722282848/1432722282859>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'La Fuite en Egypt'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/La+Fuite+en+Egypt/1432722282848>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Societe+St.+Cecile/1432722282862> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/lexp/1432722297086>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Among the things we heard at that time and which we never hear now I must note especially Berlioz's Corsaire and King Lear. His name is so much beloved by the present day public that this neglect is both unjust and unjustifiable. The great man himself came to the Societe St. Cecile one day to conduct his L'Enfance du Christ which he had just written or rather La Fuite en Egypt which was the only part of the work that was in existence then. He composed\r\nthe rest of it afterwards. I remember perfectly the performances which the great man directed. They were lively and spirited rather than careful, but somewhat slower than what Edouard Colonne has accustomed us to. The time was faster and the nuances sharper. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Musical+Memories/1432295196698>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "197-198";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-22T17:04:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-27T10:24:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/La+Fuite+en+Egypt/1432722282848/1432722282859> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/L'Enfance+du+Christ/1432722216219/1432722216231> .
+
+<http://reference.data.gov.uk/id/day/1976-12-04>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976 .
+
+<http://dbpedia.org/resource/Lowestoft>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lowestoft"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/L'Enfance+du+Christ/1432722216219/1432722216231>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'L'Enfance du Christ'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/L'enfance+du+Christ/1438267442728>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Societe+St.+Cecile/1432722282862> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://reference.data.gov.uk/id/day/1913-11-22>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .
+
+<http://dbpedia.org/resource/Algiers>
+        rdfs:label  "Algiers"@en .
+
+<http://dbpedia.org/resource/Hector_Berlioz>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Hector Berlioz" , "Berlioz" , "HectorBerlioz" , "Hector Berlioz"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1803-12-11>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1869-03-08>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Berlioz";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hector" .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/music/L'enfance+du+Christ/1438267442728>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "L'enfance du Christ"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Hector_Berlioz>;
+        <http://purl.org/dc/terms/title>
+                "L'enfance du Christ";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Hector_Berlioz>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten> .
+
+<https://ia600408.us.archive.org/25/items/musicalmemories017451mbp/musicalmemories017451mbp.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-28"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-25"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-23"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-22"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia600408.us.archive.org/25/items/musicalmemories017451mbp/musicalmemories017451mbp.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1835-10-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 October, 1835"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1835;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976> , <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Camille Saint-Saens"@en , "Saint-Saens" , "Camille Saint-Saëns"@en , "Camille Saint-Seans"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/role/organist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1835-10-09>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1921-12-16>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Algiers>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://musicbrainz.org/artist/4137c070-15b2-4d00-a9f0-3517d02a9ba8#_> , <http://bnb.data.bl.uk/id/person/Saint-Sa%C3%ABnsCamille1835-1921>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Saint-Saens";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Camille" .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://reference.data.gov.uk/id/day/1869-03-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 March, 1869"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1869;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.69> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://reference.data.gov.uk/id/day/1803-12-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 December, 1803"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1803;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://dbpedia.org/resource/Benjamin_Britten>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://reference.data.gov.uk/id/day/1921-12-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 December, 1921"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1921;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.21> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://musicbrainz.org/artist/4137c070-15b2-4d00-a9f0-3517d02a9ba8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Camille Saint-Saëns"@en .
+
+<http://data.open.ac.uk/led/source/Musical+Memories/1432295196698>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Musical Memories"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia600408.us.archive.org/25/items/musicalmemories017451mbp/musicalmemories017451mbp.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Small,_Maynard_&_Company>;
+        <http://purl.org/dc/terms/title>
+                "Musical Memories";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .

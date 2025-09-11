@@ -1,0 +1,202 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/led/music/Lullaby+of+Birdland/1423580974433>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Lullaby of Birdland"@en;
+        <http://purl.org/dc/terms/title>
+                "Lullaby of Birdland" .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Lullaby+of+Birdland/1423580974433/1423580974446>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Lullaby of Birdland'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Savannah,_Georgia>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cello> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Allen+Keller/1423580836281>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Lullaby+of+Birdland/1423580974433>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Allen+Keller/1423580836281> , <http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115> .
+
+<http://data.open.ac.uk/time/edtf/1958-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of 1958"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1958;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://bnb.data.bl.uk/id/agent/Xlibris>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Xlibris"@en .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Felix Mayerhofer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/trombonist> , <http://dbpedia.org/resource/Bandmaster> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Port_Chester,_New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mayerhofer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix" .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://data.open.ac.uk/led/trombonist>
+        rdfs:label  "trombonist"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://dbpedia.org/resource/Port_Chester,_New_York>
+        rdfs:label  "Port Chester, New York"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Savannah,_Georgia>
+        rdfs:label  "Savannah, Georgia"@en .
+
+<http://data.open.ac.uk/led/jazz+singer>
+        rdfs:label  "jazz singer"@en .
+
+<http://data.open.ac.uk/led/person/Allen+Keller/1423580836281>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Allen Keller"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+pianist>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Keller";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Allen" .
+
+<http://dbpedia.org/resource/Bandmaster>
+        rdfs:label  "Bandmaster"@en .
+
+<http://reference.data.gov.uk/id/year/2006>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1423581060050>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The hotel was the General Oglethorpe Hotel."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "    Allen then commenced to unpack the cello and handed it to me. It felt strange even though I’d played a legitimate cello for a semester at college. He pulled out a large pad filled with chord symbols to standard songs and had me play them. It was easy to do as they were the root of each chord. They were both exuberant that I could do it so easily, but it didn’t take any real musicianship to play something so simple. This wasn’t real bass playing, not with a cello! A real bass player has to get around his instrument with great technique, improvise, play the chord changes by ear and know hundreds of tunes. I didn’t fit into a single one of those categories, but I filled the bill for the group, and that was the most important thing. Taking out my flute, I then played a few Latin tunes with Allen accompanying on piano which delighted them.\r\n     “We’ve been wanting to do something with three part harmony, but the other bass player couldn’t sing,” Allen said. “I’ll play each individual part to ‘Lullaby of Birdland’ until we have it memorized.” We meticulously learned the harmony parts given to us note by note then sang it when we were ready. I thought the singing was passable but Allen and Jeannie were thrilled.\r\nI gathered from their bubbling effervescence that I was the missing link they’d been looking for. We continued on in another room in the hotel and practiced until late at night. My hands felt like they would fall off from playing the cello. I wouldn’t have lasted ten minutes if it had been a real bass.\r\n     The next morning I went into the empty club and practiced my trombone. It felt wonderful and different away from the pressures of school and studies. I was relaxed for the first time in a year and could hear the difference in my playing. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "300-301";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Allen+Keller/1423580836281> , <http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Savannah,_Georgia>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1958-Ll-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-10T15:11:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Lullaby+of+Birdland/1423580974433/1423580974446> .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of a Young Musician: Final Days of the Big Band Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Xlibris>;
+        <http://purl.org/dc/terms/title>
+                "Diary of a Young Musician: Final Days of the Big Band Era";
+        <http://purl.org/ontology/bibo/isbn>
+                "1413477291"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Jeannie Parker"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+singer>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Parker";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jeannie" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .

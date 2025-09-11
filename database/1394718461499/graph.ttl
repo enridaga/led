@@ -1,0 +1,326 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.68>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  68 .
+
+<http://data.open.ac.uk/led/lexp/1394718461499>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "As we were also now & then join'd by some other amateurs we had sometimes very respectable concerts, both at Weovill & at Mr Wafers [sic], which I believe nobody enjoyed more than I did or was more disappointed at any Friday or Saturday evening passing off without a concert, which was sometimes the case, particularly on Saturdays, as I never went to Mr Wafers but on his sending to let me know some one at least of our performers was come, as the Phillips's did not attend his concerts & those from the other side of the water were frequently prevented from coming over by windy weather, of which Mr Clarke in particular was much afraid... As to Mr Phillips's concerts, Mr Wafer & I were sufficient of ourselves with the family (if nobody else came) to play Corelli, Humphry or Boyce's sonatas etc. w'ch we all enjoy'd & were even now & then glad to be thus left to ourselves & so escape Bach & Abel's symphonies."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/John+Marsh/1394112410911>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "48";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/MarshJohn>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Gosport>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1768-Ee-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-13T13:47:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/sonata+by+Corelli+(,+performance+of)/1395159058861> , <http://data.open.ac.uk/led/performance/sonatas+by+Boyce+(,+performance+of)/1395159193027> , <http://data.open.ac.uk/led/performance/sonatas+by+Humphry+(,+performance+of)/1395159147806> .
+
+<http://data.open.ac.uk/led/performance/sonatas+by+Boyce+(,+performance+of)/1395159193027>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'sonatas by Boyce'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/MarshJohn>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/sonatas+by+Boyce/1395159193019>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr+Wafer/1395159193038> , <http://bnb.data.bl.uk/id/person/MarshJohn> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://bnb.data.bl.uk/id/person/MarshJohn>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Marsh"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Music_criticism> , <http://data.open.ac.uk/led/thing/violinist> , <http://data.open.ac.uk/led/gentleman>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1752-05-31>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Dorking>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1828-10-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Chichester>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> , <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Marsh";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/gentleman>
+        rdfs:label  "Gentleman"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.52>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  52 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://reference.data.gov.uk/id/day/1752-05-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 May, 1752"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1752;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.52> .
+
+<http://data.open.ac.uk/time/edtf/1998-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1998"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1998;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1998>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://dbpedia.org/resource/Chichester>
+        rdfs:label  "Chichester"@en .
+
+<http://bnb.data.bl.uk/id/person/RobinsBrian>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Brian Robins"@en .
+
+<http://reference.data.gov.uk/id/year/1998>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1768-Ee-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of 1768"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1768;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.68> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/agent/Mr+Wafer/1395159193038>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr Wafer"@en .
+
+<http://data.open.ac.uk/led/agent/Mr+Wafer/1395159147817>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr Wafer"@en .
+
+<http://data.open.ac.uk/led/source/The+John+Marsh+Journals:+The+Life+and+Times+of+a+Gentleman+Composer+(1752-1828)>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "journal entry"@en , "The John Marsh Journals: The Life and Times of a Gentleman Composer (1752-1828)"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1998-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Pendragon_Press>;
+        <http://purl.org/dc/terms/title>
+                "journal entry" , "The John Marsh Journals: The Life and Times of a Gentleman Composer (1752-1828)";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/RobinsBrian>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0945193947"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Stuyvesant,_New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "131" , "-" , "124-125" , "128-129";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/MarshJohn> .
+
+<http://dbpedia.org/resource/Pendragon_Press>
+        rdfs:label  "Pendragon Press"@en .
+
+<http://dbpedia.org/resource/Stuyvesant,_New_York>
+        rdfs:label  "Stuyvesant, New York"@en .
+
+<http://data.open.ac.uk/led/performance/sonatas+by+Humphry+(,+performance+of)/1395159147806>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'sonatas by Humphry'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/MarshJohn>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/sonatas+by+Humphry/1395159147792>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr+Wafer/1395159147817> , <http://bnb.data.bl.uk/id/person/MarshJohn> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://reference.data.gov.uk/id/day/1828-10-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 October, 1828"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1828;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://dbpedia.org/resource/Gosport>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Gosport"@en .
+
+<http://data.open.ac.uk/led/person/John+Humphries/1395159147801>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Humphries"@en .
+
+<http://dbpedia.org/resource/Dorking>
+        rdfs:label  "Dorking"@en .
+
+<http://data.open.ac.uk/led/source/John+Marsh/1394112410911>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "journal entry"@en , "The John Marsh Journals: The Life and Times of a Gentleman Composer (1752-1828)"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+John+Marsh+Journals:+The+Life+and+Times+of+a+Gentleman+Composer+(1752-1828)>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "journal entry" , "The John Marsh Journals: The Life and Times of a Gentleman Composer (1752-1828)";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/MarshJohn> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://data.open.ac.uk/led/music/sonatas+by+Boyce/1395159193019>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sonatas by Boyce"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/William_Boyce_(composer)>;
+        <http://purl.org/dc/terms/title>
+                "sonatas by Boyce" .
+
+<http://dbpedia.org/resource/Music_criticism>
+        rdfs:label  "Music criticism"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/music/sonatas+by+Humphry/1395159147792>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sonatas by Humphry"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/John+Humphries/1395159147801>;
+        <http://purl.org/dc/terms/title>
+                "sonatas by Humphry" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://data.open.ac.uk/led/music/sonata+by+Corelli/1395159058852>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sonata by Corelli"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Arcangelo_Corelli>;
+        <http://purl.org/dc/terms/title>
+                "sonata by Corelli" .
+
+<http://dbpedia.org/resource/Arcangelo_Corelli>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arcangelo Corelli"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/a3546087-fe59-47d3-a3a8-42d58e2573c7#_> , <http://bnb.data.bl.uk/id/person/CorelliArcangelo1653-1713> .
+
+<http://data.open.ac.uk/led/agent/Mr+Wafer/1395159058872>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr Wafer"@en .
+
+<http://data.open.ac.uk/led/performance/sonata+by+Corelli+(,+performance+of)/1395159058861>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'sonata by Corelli'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/MarshJohn>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/sonata+by+Corelli/1395159058852>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr+Wafer/1395159058872> , <http://bnb.data.bl.uk/id/person/MarshJohn> .
+
+<http://data.open.ac.uk/led/thing/violinist>
+        rdfs:label  "violinist"@en .

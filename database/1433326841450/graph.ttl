@@ -1,0 +1,199 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://dbpedia.org/resource/Oratorio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Oratorio"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Messiah/1382976924336/1433326820561>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Messiah'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wallingford,_Oxfordshire>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music> , <http://dbpedia.org/resource/Chorale> , <http://dbpedia.org/resource/Oratorio>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mr.+J.S.+Liddle/1433249912667>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Messiah_(Handel)>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr.+Harpur/1433326820565> .
+
+<http://dbpedia.org/resource/Messiah_(Handel)>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Messiah"@en , "Messiah"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>;
+        <http://purl.org/dc/terms/title>
+                "Messiah";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_> .
+
+<http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lady Mary Elvey"@en .
+
+<http://data.open.ac.uk/led/agent/Mr.+Harpur/1433326820565>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. Harpur"@en .
+
+<http://reference.data.gov.uk/id/year/1894>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1894"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-03"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-02"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/1885-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1885"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1885;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1885>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/led/person/Mr.+J.S.+Liddle/1433249912667>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Mr. Liddle"@en , "Mr. J.S. Liddle"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Violinist>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Liddle";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr. J.S." .
+
+<http://data.open.ac.uk/led/Violinist>
+        rdfs:label  "Violinist"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://musicbrainz.org/artist/27870d47-bb98-42d1-bf2b-c7e972e6befc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/time/edtf/1894-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1894"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1894;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1894>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.85>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  85 .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://dbpedia.org/resource/Chorale>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chorale"@en .
+
+<http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Life and Reminiscences of Sir George J. Elvey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/biographical>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520> , <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1894-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>;
+        <http://purl.org/dc/terms/title>
+                "Life and Reminiscences of Sir George J. Elvey";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1433326841450>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "From Newbury they drove to Wallingford, and were most kindly entertained by the clergyman and his wife. Here, also, Sir George conducted a concert for Mr. Liddle, when the \" Messiah \" was performed. On this occasion Harpur was engaged as before to play the trumpet, but, for the first time, this splendid performer failed. His death took place not long afterwards."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "291-292";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Mr.+J.S.+Liddle/1433249912667>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wallingford,_Oxfordshire>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1885-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-22T12:25:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-03T10:20:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Messiah/1382976924336/1433326820561> .
+
+<http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Sampson Low Marston & Company, Limited"@en .
+
+<http://reference.data.gov.uk/id/year/1885>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1885"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Wallingford,_Oxfordshire>
+        rdfs:label  "Wallingford, Oxfordshire"@en .

@@ -1,0 +1,137 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/thing/Cleric>
+        rdfs:label  "Cleric"@en .
+
+<http://data.open.ac.uk/led/thing/cleric>
+        rdfs:label  "cleric"@en .
+
+<http://bnb.data.bl.uk/id/agent/EdwinMellen>
+        rdfs:label  "Edwin Mellen"@en .
+
+<http://bnb.data.bl.uk/id/person/WalkerRalphS%28RalphSpence%291904->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ralph S. Walker"@en .
+
+<http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Twining"@en , "Thomas twining"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Cleric> , <http://data.open.ac.uk/led/thing/cleric>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1734-uu-uu>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1804-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Colchester>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Twining";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Colchester>
+        rdfs:label  "Colchester"@en .
+
+<http://bnb.data.bl.uk/id/resource/008415551>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "A selection of Thomas Twining's letters 1734-1804 : the record of a tranquil life"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1991-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/EdwinMellen>;
+        <http://purl.org/dc/terms/title>
+                "A selection of Thomas Twining's letters 1734-1804 : the record of a tranquil life";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/WalkerRalphS%28RalphSpence%291904->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0773497897"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://sws.geonames.org/2634895/> , <http://dbpedia.org/resource/Lewiston,_New_York>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" , "1";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804> .
+
+<http://data.open.ac.uk/time/edtf/1991-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1991"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1991> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/1804-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1804"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1804;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/Thomas+Twining+to+his+Nephew,+Richard,+Colchester,+14+November+1796/1392398647994>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Thomas Twining to his Nephew, Richard, Colchester, 14 November 1796"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/008415551>;
+        <http://purl.org/dc/terms/title>
+                "Thomas Twining to his Nephew, Richard, Colchester, 14 November 1796";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TwiningThomas1734-1804> .
+
+<http://reference.data.gov.uk/id/year/1991>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/lexp/1392399550825>
+        rdf:type               led:ListeningExperience;
+        led:has_evidence_text  "I lost a very high treat by not coming home sooner, that of hearing & playing with Jarnovic [Giovanni Giornovichi], who has been down here on a visit to Mr. Fisin. I must tell you a great stroke of his at Ipswich. Fisin introduced him to a musical friend there, who asked him if he would be so obliging as to play a little in the evening to gratify a few friends. Jarnovic answered very civilly that he should not chuse to play in public or to a large company, but had no objection to entertain a few of his friends. The Dilletante secured a large room & collected a pretty company of ladies, &c. Jarnovic was rather disgusted, but on Fisin’s telling him that there would probably be no more company than he saw in the room, J. consented to play. Presently about 50 more people came pouring in, ladies, officers, General Somebody, &c., &c. Jarnovic instantly put up his fiddle & walked off. "@en;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Thomas+Twining+to+his+Nephew,+Richard,+Colchester,+14+November+1796/1392398647994>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/David+Rowland/claims>;
+        led:pages              "476";
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-14T17:39:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/time/edtf/1734-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1734"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1734;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://dbpedia.org/resource/Lewiston,_New_York>
+        rdfs:label  "Lewiston, New York"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .

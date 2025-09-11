@@ -1,0 +1,353 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Daldy Isbister & Co."@en .
+
+<http://dbpedia.org/resource/Pump_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Pump organ"@en .
+
+<http://dbpedia.org/resource/Rome>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rome"@en .
+
+<http://data.open.ac.uk/led/person/Monsignor+Capaccini/1375873718631>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Male;
+        rdfs:label             "Monsignor Capaccini"@en;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Capaccini";
+        <http://xmlns.com/foaf/0.1/name>
+                "Monsignor Capaccini" .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Sigismund_von_Neukomm>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Neukomm" , "Sigismund Ritter von Neukomm" , "Neukomm"@en , "Sigismund Ritter von Neukomm"@en , "Sigismund von Neukomm"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://data.open.ac.uk/led/occupation/scholar>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1778-07-10>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1858-04-03>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/occupation/scholar>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "scholar"@en .
+
+<http://data.open.ac.uk/time/edtf/1826-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1826"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1826;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/lexp/1375873848>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "16 August, 1826. - I have a long story to relate to my Mother, which I have as yet delayed, from not liking to tell her that Charles [her husband] had committed an act which I considered imprudent and extravagant, but I will now state his sin in all its magnitude, and leave her to find an excuse for him. He has thought proper to order from Paris what is called an orgue expressif, the new invention of M. Grenier, having fallen in love with the description made by Neukomm of this extraordinary instrument.... The effect of this instrument is beyond description, it is capable of unlimited expression, the sound being produced by the gradual pressure of the feet alternately upon two pedals, and the tones are soft and swelling like those of the human voice when in great perfection, or like the most exquisite wind instruments. When hearing Neukomm play, I continually caught myself holding my breath, as when listening to the Miserere in the Sixtine Chapel. As to my own prospect of learning to play upon it, I am happy to say that in these ten days I have already   surmounted some part of the difficulty, which consists in the movement of the feet, and have good hopes of proceeding further; and the delight of touching it is so great, that I shall only be in danger of giving up more time to it than I really have to spare. It has made furore in Rome, the Cardinal Secretary of State was enchanted, and began to sing himself from excess of delight: the Maestro di Cappella Baini said it brought him into a cold sweat and that he could not stand it if he was to hear it every day; Monsignor Capaccini... ordered such another organ full speed for himself: and the Corps Diplomatique was out of its wits for admiration."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+16+Aug.+1826/1386160951808>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "264-266";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Frances_Bunsen> , <http://data.open.ac.uk/led/person/Cardinal+Secretary+of+State/1375873612635> , <http://data.open.ac.uk/led/person/Maestro+di+Cappella+Baini/1375873657354> , <http://data.open.ac.uk/led/person/Monsignor+Capaccini/1375873718631>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1826-08-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-04T12:44:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/organ+music+played+on+the+orgue+expressif+(,+performance+of)/1386161049969> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Baroness+Bunsen+to+her+mother+Mrs+Waddington,+16+Aug.+1826/1386160951808>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Baroness Bunsen to her mother Mrs Waddington, 16 Aug. 1826"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Baroness Bunsen to her mother Mrs Waddington, 16 Aug. 1826";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Frances_Bunsen> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/performance/organ+music+played+on+the+orgue+expressif+(,+performance+of)/1386161049969>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'organ music played on the orgue expressif'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Pump_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Monsignor+Capaccini/1375873718631> , <http://data.open.ac.uk/led/person/Maestro+di+Cappella+Baini/1375873657354> , <http://data.open.ac.uk/led/person/Cardinal+Secretary+of+State/1375873612635> , <http://dbpedia.org/resource/Frances_Bunsen>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/organ+music+played+on+the+orgue+expressif/1386161049960>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Sigismund_von_Neukomm> .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://data.open.ac.uk/led/person/Cardinal+Secretary+of+State/1375873612635>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Male;
+        rdfs:label             "Cardinal Secretary of State"@en;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/name>
+                "Cardinal Secretary of State" .
+
+<http://reference.data.gov.uk/id/year/1879>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Maestro+di+Cappella+Baini/1375873657354>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Male;
+        rdfs:label  "Maestro di Cappella Baini"@en;
+        <http://xmlns.com/foaf/0.1/name>
+                "Maestro di Cappella Baini" .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Frances_Bunsen>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Frances von Bunsen"@en , "Frances Bunsen"@en , "Frances Baroness Bunsen"@en , "Baroness von Bunsen"@en , "Frances, Baroness Bunsen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Painting>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-03-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Berkshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1876-04-23>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Karlsruhe>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bunsen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frances, Baroness";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baroness von Bunsen"@en .
+
+<http://data.open.ac.uk/led/music/organ+music+played+on+the+orgue+expressif/1386161049960>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "organ music played on the orgue expressif"@en;
+        <http://purl.org/dc/terms/title>
+                "organ music played on the orgue expressif" .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.78>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  78 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://reference.data.gov.uk/id/day/1791-03-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Augustus J. C. Hare"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://dbpedia.org/resource/Painting>
+        rdfs:label  "Painting"@en .
+
+<http://reference.data.gov.uk/id/day/1876-04-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 April, 1876"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1876;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/source/The+Life+and+Letters+of+Frances+Baroness+Bunsen>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Life and Letters of Frances Baroness Bunsen, vol 1"@en , "The Life and Letters of Frances Baroness Bunsen"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1879-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/daldy_isbister_&_co./1385997463672>;
+        <http://purl.org/dc/terms/title>
+                "The Life and Letters of Frances Baroness Bunsen";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/HareAugustus1834-1903>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" , "1" .
+
+<http://reference.data.gov.uk/id/day/1778-07-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 July, 1778"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1778;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://reference.data.gov.uk/id/day/1858-04-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 April, 1858"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1858;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://dbpedia.org/resource/Karlsruhe>
+        rdfs:label  "Karlsruhe"@en .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://dbpedia.org/resource/Berkshire>
+        rdfs:label  "Berkshire"@en .
+
+<http://data.open.ac.uk/time/edtf/1879-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1879>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .

@@ -1,0 +1,185 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1895-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1895"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1895;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.95> .
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Asiago>
+        rdfs:label  "Asiago"@en .
+
+<http://data.open.ac.uk/led/lexp/1400743366933>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Edward was serving with the 11th Sherwood Foresters on the Italian Front. He was killed in action on the Asiago Plateau on 15 June 1918."@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_evidence_text  "It is very cold where we are on the top of a hill which you may know, as you know where we are from the papers, and everything freezes up... we have a tiny hovel - the mess and kitchen are one and the floor is of earth. 3 of us sleep in one sort of attic above and the other 3 were sleeping in another one last night but nearly got blown out by the draft. However there is a fire and the gramophone still plays...."@en;
+        led:has_medium         led:Medium.Playback;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Edward+Brittain+to+Vera+Brittain,+4+Jan.+1918/1400743249375>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "388";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Edward+Brittain/1400692791178>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Italy>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1918-01-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-05-22T07:22:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://bnb.data.bl.uk/id/person/BishopAG%28AlanGordon%291937->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A. G. Bishop"@en .
+
+<http://bnb.data.bl.uk/id/resource/010975280>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Letters from a lost generation : First World War letters of Vera Brittain and four friends - Roland Leighton, Edward Brittain, Victor Richardson, Geoffrey Thurlow"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1999-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Abacus>;
+        <http://purl.org/dc/terms/title>
+                "Letters from a lost generation : First World War letters of Vera Brittain and four friends - Roland Leighton, Edward Brittain, Victor Richardson, Geoffrey Thurlow";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/BostridgeMark> , <http://bnb.data.bl.uk/id/person/BishopAG%28AlanGordon%291937->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0349111529"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/source/Letter+from+Edward+Brittain+to+Vera+Brittain,+4+Jan.+1918/1400743249375>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter from Edward Brittain to Vera Brittain, 4 Jan. 1918"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/010975280>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Edward Brittain to Vera Brittain, 4 Jan. 1918";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/1999-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1999"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1999;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1999>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Officer_(armed_forces)>
+        rdfs:label  "Officer (armed forces)"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.95>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  95 .
+
+<http://data.open.ac.uk/time/edtf/1918-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/person/Edward+Brittain/1400692791178>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Edward Brittain"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/captain> , <http://dbpedia.org/resource/Officer_(armed_forces)>;
+        led:has_social_status           <urn:x-isco08:0>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1895-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1918-06-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Asiago>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brittain";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://reference.data.gov.uk/id/year/1999>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/person/BostridgeMark>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mark Bostridge"@en .
+
+<http://reference.data.gov.uk/id/day/1918-06-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 June, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/thing/captain>
+        rdfs:label  "captain"@en .
+
+<http://bnb.data.bl.uk/id/agent/Abacus>
+        rdfs:label  "Abacus"@en .

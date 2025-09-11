@@ -1,0 +1,258 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.63>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  63 .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Boston>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Boston"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1863-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1863"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1863;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.63> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Ireland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Ireland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/agent/Thomas+Ryan/1448997315048>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Ryan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musician>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1827-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Ireland>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1903-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_Bedford,_Massachusetts>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ryan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://data.open.ac.uk/led/performance/db7b9ed920fa086af919fc4502381d8f/1449480749522>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Moses'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Thomas+Ryan/1448997315048>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Moses/1449480749503>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Teresa+Carrefio/1449480749526> .
+
+<http://dbpedia.org/resource/New_Bedford,_Massachusetts>
+        rdfs:label  "New Bedford, Massachusetts"@en .
+
+<http://bnb.data.bl.uk/id/person/RyanThomas>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Ryan"@en .
+
+<http://reference.data.gov.uk/id/day/1903-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1903"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1903;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/source/Recollections+of+an+old+musician/1448996608059>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Recollections of an old musician"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/E+P+Dutton/1448996608090>;
+        <http://purl.org/dc/terms/title>
+                "Recollections of an old musician";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/RyanThomas> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/time/edtf/1827-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1827"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1827;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.27> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/person/Thalberg/1449480749518>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Thalberg" .
+
+<http://data.open.ac.uk/led/performance/210ec4a0f07f02b195c191fcc1e79a26/1449480815492>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Jerusalem'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Thomas+Ryan/1448997315048>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Jerusalem/1449480815474>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Teresa+Carrefio/1449480815495> .
+
+<http://data.open.ac.uk/led/agent/Teresa+Carrefio/1449480749526>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Teresa Carrefio"@en .
+
+<http://data.open.ac.uk/led/lexp/1449480881121>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/872a0e96507f39c7769116cfbf918fc9/excerpt/d11c296e6308a0eda0f453f554b090d2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Jo+Reardon/claims>;
+        led:pages            "239";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Thomas+Ryan/1448997315048>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Boston>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1863-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-05-08T10:22:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-12-07T09:34:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/210ec4a0f07f02b195c191fcc1e79a26/1449480815492> , <http://data.open.ac.uk/led/performance/db7b9ed920fa086af919fc4502381d8f/1449480749522>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/872a0e96507f39c7769116cfbf918fc9/excerpt/d11c296e6308a0eda0f453f554b090d2> .
+
+<http://data.open.ac.uk/led/organization/E+P+Dutton/1448996608090>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "E P Dutton"@en .
+
+<http://data.open.ac.uk/led/music/Jerusalem/1449480815474>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Jerusalem"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Gottschalk/1449480815488>;
+        <http://purl.org/dc/terms/title>
+                "Jerusalem";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Gottschalk/1449480815488> .
+
+<http://data.open.ac.uk/led/music/Moses/1449480749503>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Moses"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Thalberg/1449480749518>;
+        <http://purl.org/dc/terms/title>
+                "Moses";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Thalberg/1449480749518> .
+
+<http://data.open.ac.uk/led/person/Gottschalk/1449480815488>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gottschalk" .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/source/872a0e96507f39c7769116cfbf918fc9/excerpt/d11c296e6308a0eda0f453f554b090d2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p class=\"MsoNormal\">&nbsp;Teresa [Carrefio ]* made her first appearance in Boston, January 4, 1863. She remained here about one month, and was a great attraction at the grand orchestral concerts which were given at that period under the direction of Carl Zerrahn or P. S. Gilmore. She created a furore of enthusiasm every time she played. I doubt if any child pianist of the same age has ever exceeded her in ability. Imagine a child of nine years playing Thalberg&rsquo;s Moses, Gottschalk&rsquo;s Jerusalem, and similar pieces, full of technical difficulties.</p>\r\n<p class=\"MsoNormal\">[* &lsquo;a remarkable child pianist, nine years of age, accompanied by her father and mother, came to the United States from Caracas, Venezuela&rsquo;.]</p>"^^rdf:HTML , "<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p></p>\r\n<p></p>\r\n<p class=\"MsoNormal\">Teresa [Carrefio ]* made her first appearance in Boston, January 4, 1863. She remained here about one month, and was a great attraction at the grand orchestral concerts which were given at that period under the direction of Carl Zerrahn or P. S. Gilmore. She created a furore of enthusiasm every time she played. I doubt if any child pianist of the same age has ever exceeded her in ability. Imagine a child of nine years playing Thalberg&rsquo;s Moses, Gottschalk&rsquo;s Jerusalem, and similar pieces, full of technical difficulties.</p>\r\n<p class=\"MsoNormal\">[* &lsquo;a remarkable child pianist, nine years of age, accompanied by her father and mother, came to the United States from Caracas, Venezuela&rsquo;.]</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Recollections of an old musician' pp. 239 (113 words)"@en , "excerpt from 'Recollections of an old musician' (113 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Recollections+of+an+old+musician/1448996608059>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "239" .
+
+<http://data.open.ac.uk/led/agent/Teresa+Carrefio/1449480815495>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Teresa Carrefio"@en .

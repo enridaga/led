@@ -1,0 +1,195 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdfs:label  "Washington D. C."@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1973>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1974>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1974-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1974>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://data.open.ac.uk/time/edtf/1941-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1941"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1941;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/piantist>
+        rdfs:label  "piantist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.41>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  41 .
+
+<http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Duke Ellington: Music is my Mistress"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1973-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Doubleday_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "Duke Ellington: Music is my Mistress";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Jersey>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_> .
+
+<http://data.open.ac.uk/led/lyricist>
+        rdfs:label  "lyricist"@en .
+
+<http://data.open.ac.uk/led/lexp/1429447688542>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/093a3d249547ba928fcdd868451faf5f>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "216-219";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1941-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-05-17T09:29:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-19T12:48:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/093a3d249547ba928fcdd868451faf5f> .
+
+<http://dbpedia.org/resource/New_Jersey>
+        rdfs:label  "New Jersey"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/source/c2fd763ff7ce7b64ee726aae899ad307/excerpt/093a3d249547ba928fcdd868451faf5f>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I first met Joya Sherrill backstage at the Paradise Theatre in Detroit during 1941. I asked her recently to refresh my memory with some details of our very happy musical association, and she remembers it like this:</p>\r\n<p>\"I had written a set of lyrics to &lsquo;Take the \"A\" Train&rsquo; and had come to the theatre to sing it for you. I had no thought of singing with your band, but only hoped you would like the lyrics I had written.</p>\r\n<p>\"You called Billy Strayhorn to the piano. He played, I sang, and you listened. After I had finished, you asked me to sing something else, and I sang three other songs.</p>\r\n<p>&rsquo;That's Very Good&rsquo; you said&hellip;</p>\r\n<p>\"A few months later, a call came to me one evening in Detroit from Pittsburgh, from Duke Ellington. I shall always remember exactly what you said.</p>\r\n<p>\"I've been thinking about you&rsquo; your first words were. &lsquo;Sing something for me.&rsquo; I was so excited, tears were streaming down my face, and I tried to think of a song to sing.</p>\r\n<p>...</p>\r\n<p>\"I sang a few bars of &lsquo;I've Got a Guy.&rsquo; It was a long-distance call and I thought I should be brief. &lsquo;Sing the rest of it&rdquo; you said. So I finished the song, and I remember word for word what you said then:</p>\r\n<p>&lsquo;I would like to use you to broadcast and record. Your diction is perfect and you articulate so well.&rsquo;</p>\r\n<p>&hellip;</p>\r\n<p>What Joya doesn't say, of course, is that she did such a good job on \"I'm Beginning to See the Light\" that we have been playing it ever since. It is a tribute to her diction and articulation, too, that when I ask them to join in singing it with us, audiences all over the world seem to know the words.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Duke Ellington: Music is my Mistress' pp. 216-219 (313 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Duke+Ellington:+Music+is+my+Mistress/1429000021664>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "216-219" .
+
+<http://dbpedia.org/resource/Doubleday_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Doubleday (publisher)"@en .
+
+<http://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Duke Ellington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piantist> , <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/lyricist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Washington,_D.C.>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1974-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Ellington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Duke" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/time/edtf/1973-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1973"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1973;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1973>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .

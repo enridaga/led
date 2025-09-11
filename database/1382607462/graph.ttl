@@ -1,0 +1,108 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1382607462>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Mrs Germon's diary describes her experience of the siege of Lucknow during the 'Indian Mutiny' (as it was termed by the British)."@en;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "We were cheered by the news that a Sepoy of the 1st Oude Irregulars, who had been sent out by the Brigadier, had returned; he had lost the letter from the relieving force, but had been in their camp…. He said they had four European regiments and one Sikh one; and that one European regiment had a curious baja (music) played in front of them - meaning the bagpipes."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FA%2BDiary%2BKept%2Bby%2BMrs%2BR.%2BC.%2BGermon%252C%2Bat%2BLucknow%252C%2BBetween%2Bthe%2BMonths%2Bof%2BMay%2Band%2BDecember%252C%2B1857%2F1382605067816/pages72>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "72";
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1857-08-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-10-24T09:37:42.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fmilitary%2Bbagpipe%2Bmusic%2F1382605997942/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FIndia1382605997950> .
+
+<http://data.open.ac.uk/time/edtf/1857-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://data.open.ac.uk/time/edtf/1870-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1870>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://data.open.ac.uk/led/performance/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fmusic%2Fmilitary%2Bbagpipe%2Bmusic%2F1382605997942/in-http%3A%2F%2Fdbpedia.org%2Fresource%2FIndia1382605997950>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'military bagpipe music'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/India>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/military+bagpipe+music/1382605997942> .
+
+<http://dbpedia.org/resource/Waterlow_and_Sons>
+        rdfs:label  "Waterlow and Sons"@en .
+
+<http://dbpedia.org/resource/India>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "India"@en .
+
+<http://reference.data.gov.uk/id/year/1870>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1870"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FA%2BDiary%2BKept%2Bby%2BMrs%2BR.%2BC.%2BGermon%252C%2Bat%2BLucknow%252C%2BBetween%2Bthe%2BMonths%2Bof%2BMay%2Band%2BDecember%252C%2B1857%2F1382605067816/pages72>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857, pages 72"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+Diary+Kept+by+Mrs+R.+C.+Germon%2C+at+Lucknow%2C+Between+the+Months+of+May+and+December%2C+1857/1382605067816> .
+
+<http://data.open.ac.uk/led/music/military+bagpipe+music/1382605997942>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "military bagpipe music"@en;
+        <http://purl.org/dc/terms/title>
+                "military bagpipe music" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/led/source/A+Diary+Kept+by+Mrs+R.+C.+Germon%2C+at+Lucknow%2C+Between+the+Months+of+May+and+December%2C+1857/1382605067816>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1870-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Waterlow_and_Sons>;
+        <http://purl.org/dc/terms/title>
+                "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .

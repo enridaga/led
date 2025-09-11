@@ -1,0 +1,416 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/time/interval/1948-uu-Ll/to/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between late , month unknown, 1948 and 1949"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1948-uu-Ll>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'La+boh%25C3%25A8me'/1422913046515/1422913046528>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''La bohème''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cambridge_Theatre>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Solo_(music)> , <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'La+boh%C3%A8me'/1422913046515>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/New+London+Opera+Company/1422912956228> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/source/From+Where+I+Sit>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "From Where I Sit"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1979-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Cassell_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "From Where I Sit";
+        <http://purl.org/ontology/bibo/isbn>
+                "0304303135"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/1979-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1979"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1979;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1979>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://musicbrainz.org/artist/a693df4a-8762-4a45-b7fd-6695b558385e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giacomo Puccini"@en .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/Falstaff/1438196990256>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Falstaff"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi>;
+        <http://purl.org/dc/terms/title>
+                "Falstaff";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giuseppe_Verdi> .
+
+<http://dbpedia.org/resource/Clarinetist>
+        rdfs:label  "Clarinettist"@en , "Clarinetist"@en .
+
+<http://reference.data.gov.uk/id/day/1915-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1422912512071>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "It was at about this time that I had my baptism by fire as first clarinet in a London opera pit. This is well known to be an experience which is essential to the making of any complete orchestra principal; it's often said that unless you've been through a cycle of Wagner's Ring you haven't really arrived.... On this occasion it wasn't Wagner - it was Puccini, Donizetti, Verdi and other mighty Italian operative geniuses; and in my case 'baptism of fire' was no exaggeration, because it was the sort of musical sudden death which could only happen in the London of the late forties. The normal approach to the operas of these most accomplished and professional operatic composers is to rehearse their works for a couple of weeks while you are actually playing and presenting one which you already know backwards, so that by the first night you are secure, confidence and near-blasé.\r\nI dare say this was the original idea of the New London Opera Company at the Cambridge Theatre in those days in 1948-9.... There was in London at that time a new-found demand for Italian opera, a taste developed a few years before by our Service personnel in Italy....\r\nThe operas were all in the original Italian; the standard of singing was superb, with such giants as Margherita Grandi and Mariano Stabile in roles they had already made famous.\r\nThe conducting was of a high order, with Alberto Erede as principal director.... He had a first-class orchestra of keen and hard-working musicians; the difficulty arose because many of the most important principal players had other duties which often took them elsewhere, sometimes in uncontradictable khaki.... I suppose he got used to seeing us read our ways through new opera after new opera as time went on - but it must have been torment for him, never knowing who next would fall into the dramatic empty spaces which litter these tricky scores. My old friend Bernard Walton... was the regular player, but was still in the Irish Guards. he could, as an ex-principal of Sadler's Wells, play all these operas in his sleep. This was no excuse for an incident in Tosca one night, when he chose the dawn scene to wake up the entire audience with an alarm clock he had inadvertently left in his closed clarinet case under his seat. It took quite a time to get it out and stop it.\r\nThe great delight to this type of work, I soon discovered, is that it takes only a couple of performances to make you complete master of all the tricks of the opera, after which you can infuriate the maestro by watching the stage. Erede got quite used to this, and would just occasionally get his own back by pausing just a fraction longer than usual, causing the unwary wind soloist many a missed heartbeat; but he was good to work with. He... is the only conductor who has ever, in my experience, called a singer 'maestro'; but this was Stabile, in Verdi's Falstaff, and as Stabile was the man whose performance had set the standard for almost forty years, there was every reason to do so. Stabile's voice was by that time not the great instrument it had been, but his impersonation of the fat knight was superb in every way."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Beecham+Years/1422396466458>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "79-80";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cambridge_Theatre>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1948-uu-Ll/to/1949-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-02T13:32:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-02T21:28:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Falstaff'/1422913110902/1422913110915> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'La+boh%25C3%25A8me'/1422913046515/1422913046528> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Tosca'/1422912956209/1422912956223> .
+
+<http://dbpedia.org/resource/Cambridge_Theatre>
+        rdfs:label  "Cambridge Theatre"@en .
+
+<http://data.open.ac.uk/led/schoolteacher>
+        rdfs:label  "Schoolteacher"@en , "schoolteacher"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://bnb.data.bl.uk/id/person/PucciniGiacomo1858-1924>
+        rdfs:label  "Giacomo Puccini"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Giuseppe_Verdi>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_> , <http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Brussels>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Brussels"@en .
+
+<http://dbpedia.org/resource/South_Shields>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "South Shields"@en .
+
+<http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Jack Brymer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Clarinetist> , <http://data.open.ac.uk/led/schoolteacher> , <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1915-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/South_Shields>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/2003-09-16>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Redhill,_Surrey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brymer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jack" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://bnb.data.bl.uk/id/person/VerdiGiuseppe1813-1901>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://data.open.ac.uk/led/agent/New+London+Opera+Company/1422912956228>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "New London Opera Company"@en .
+
+<http://reference.data.gov.uk/id/year/1979>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/1948-uu-Ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late , month unknown, 1948"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1948;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.48> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Cassell_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Cassell (publisher)"@en .
+
+<http://dbpedia.org/resource/Giacomo_Puccini>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Giacomo Puccini"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1858-12-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lucca>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1924-11-29>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Brussels>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/PucciniGiacomo1858-1924> , <http://musicbrainz.org/artist/a693df4a-8762-4a45-b7fd-6695b558385e#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Puccini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Giacomo" .
+
+<http://data.open.ac.uk/led/music/'La+boh%C3%A8me'/1422913046515>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'La bohème'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giacomo_Puccini>;
+        <http://purl.org/dc/terms/title>
+                "'La bohème'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giacomo_Puccini> .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Tosca'/1422912956209/1422912956223>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Tosca''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cambridge_Theatre>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Solo_(music)> , <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Tosca/1438599385484>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/New+London+Opera+Company/1422912956228> .
+
+<http://data.open.ac.uk/led/source/The+Beecham+Years/1422396466458>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Beecham Years"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/From+Where+I+Sit>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Beecham Years";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_> .
+
+<http://dbpedia.org/resource/Lucca>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lucca"@en .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Falstaff'/1422913110902/1422913110915>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Falstaff''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cambridge_Theatre>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Solo_(music)> , <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/8cd84cca-b32a-476f-917d-44dd0ec7728d#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Falstaff/1438196990256>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/New+London+Opera+Company/1422912956228> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://reference.data.gov.uk/id/day/1924-11-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 November, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://reference.data.gov.uk/id/day/1858-12-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 December, 1858"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1858;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://musicbrainz.org/artist/f1bedf1f-4445-4651-9c35-f4a3f3860a13#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giuseppe Verdi"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/music/Tosca/1438599385484>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Tosca"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giacomo_Puccini>;
+        <http://purl.org/dc/terms/title>
+                "Tosca";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giacomo_Puccini> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.48>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  48 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://dbpedia.org/resource/Redhill,_Surrey>
+        rdfs:label  "Redhill, Surrey"@en .
+
+<http://dbpedia.org/resource/Solo_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Solo (music)"@en , "Solo"@en .
+
+<http://reference.data.gov.uk/id/day/2003-09-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 September, 2003"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2003;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

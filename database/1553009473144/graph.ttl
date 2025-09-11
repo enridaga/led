@@ -1,0 +1,289 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/lexp/1553009473144>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Henry Croswell (1840–93) kept a record of his visits to churches in London over a period of more than twelve years (1872–85).  He made methodical notes about the number of clergy, the churchmanship, the congregation, the sermon and the church architecture, as well as commenting on the music that he heard (the organ, the hymns and the choir).  The above listening experience has been extracted from one of these records.\nThe transcript includes an unnumbered record which is a near-duplicate of record no. 376.  This is referred to as record no. 376a in the listening experience above, and supplementary information from it has been inserted in editorial square brackets.\n‘Bickers’ refers to ‘The Hymnal Companion to the Book of Common Prayer’ (1870, rev. 1877; and in a revised edition with tunes, 1890) compiled by Edward Henry Bickersteth (1825–1906)."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/9a872c0fe3a7c92bfbed91e6090700ba>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "376/[376a]";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+Brunswick+Chapel,+Upper+Berkeley+Street/1553009095274> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/5bfb7dbf3341dca36ff45b34d9bd2664>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/1884-03-02T19:00:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-16T07:36:15.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-03-19T15:31:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/3610d4f7c67e07e9c729f038917e54d2/1553009207333> , <http://data.open.ac.uk/led/performance/47d978fa98e666c10b9a61c197146d92/1553009328530>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT40M>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/9a872c0fe3a7c92bfbed91e6090700ba> .
+
+<http://data.open.ac.uk/led/performance/3610d4f7c67e07e9c729f038917e54d2/1553009207333>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Anglican church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Anglican_church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+Brunswick+Chapel,+Upper+Berkeley+Street/1553009095274> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Anglican+church+music/1547461122572>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+Brunswick+Chapel+Upper+Berkeley+Street/1553009207361> .
+
+<http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "It is not known who transcribed Croswell’s diaries, or when.  The British Library record was created in 1960.  The pages are unnumbered, but most records are individually numbered.  Record numbers have therefore been used in place of page numbers, where available.  A further transcript of the diaries is held at the Bodleian Library."@en;
+        rdfs:label                  "Transcript of the diaries of Henry Croswell"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "British Library";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the British Library."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Transcript of the diaries of Henry Croswell";
+        <http://purl.org/ontology/bibo/number>
+                "000826807, C.194.c.113 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/led/music/hymns+selected+from+the+'Hymnal+Companion'/1553770817136>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymns selected from the 'Hymnal Companion'"@en;
+        <http://purl.org/dc/terms/title>
+                "hymns selected from the 'Hymnal Companion'" .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+Brunswick+Chapel+Upper+Berkeley+Street/1553009207361>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of Brunswick Chapel Upper Berkeley Street"@en .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1884-03-02T19:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 March, 1884, 07:00 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.84> .
+
+<http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry Croswell"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/assurance+clerk> , <http://data.open.ac.uk/led/sunday+school+teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1840-10-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/West_Drayton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Croswell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.84>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  84 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Anglican_church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anglican church music"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Church_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Church organ"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/sunday+school+teacher>
+        rdfs:label  "sunday school teacher"@en , "Sunday School teacher"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/music/Anglican+church+music/1547461122572>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Anglican church music"@en;
+        <http://purl.org/dc/terms/title>
+                "Anglican church music" .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "19:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/assurance+clerk>
+        rdfs:label  "assurance clerk"@en .
+
+<http://data.open.ac.uk/led/performance/47d978fa98e666c10b9a61c197146d92/1553009328530>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'hymns selected from the 'Hymnal Companion''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+Brunswick+Chapel,+Upper+Berkeley+Street/1553009095274> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/hymns+selected+from+the+'Hymnal+Companion'/1553770817136>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+Brunswick+Chapel+Upper+Berkeley+Street/1553009328559> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://dbpedia.org/resource/Marylebone>
+        rdfs:label  "Marylebone"@en .
+
+<http://data.open.ac.uk/time/duration/PT40M>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT40M"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "40 minutes"@en;
+        <http://www.w3.org/2006/time#minutes>
+                "40"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+Brunswick+Chapel+Upper+Berkeley+Street/1553009328559>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of Brunswick Chapel Upper Berkeley Street"@en .
+
+<http://data.open.ac.uk/led/place/5bfb7dbf3341dca36ff45b34d9bd2664>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Brunswick Chapel, Upper Berkeley Street, Marylebone, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Brunswick Chapel, Upper Berkeley Street, Marylebone, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Marylebone> , <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/id/day/1840-10-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 October, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/agent/the+congregation+of+Brunswick+Chapel,+Upper+Berkeley+Street/1553009095274>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "the congregation of Brunswick Chapel, Upper Berkeley Street"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Street";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "the congregation of Brunswick Chapel, Upper Berkeley" .
+
+<http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/9a872c0fe3a7c92bfbed91e6090700ba>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">[Croswell recorded that the service began at 7pm] [376a: Got there 6.50.&nbsp; Left before Sermon.]</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">O[rgan]. &ndash;&nbsp;Nice at the East end.&nbsp; A harmonium there was unused.</p>\n<p class=\"MsoNormal\">H[ymns]. &ndash;&nbsp;\"Bickers\" Hymns, one before the beginning.&nbsp; Another was about \"droppings on me\".</p>\n<p class=\"MsoNormal\">C[hoir]. &ndash;&nbsp;On one side of the Chancel consisting of young females, a quantity of whom didn't sing much.&nbsp; The Psalms were read.</p>\n<p class=\"MsoNormal\">[The congregation numbered] 400 &ndash;&nbsp;[&hellip;]&nbsp;Doubtless the Chapel is full in the morning.&nbsp; The congregation are almost all females who are devout and a good specimen of very Low Church.</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">M[iscellaneous]. &ndash;&nbsp;[&hellip;] [376a:&nbsp;Edgware Rd. a sight crowded with fast swells of both sexes.]</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Transcript of the diaries of Henry Croswell' pp. 376/[376a] (105 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "376/[376a]" .

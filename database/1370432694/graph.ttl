@@ -1,0 +1,75 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1370432694>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "* 2 LO refers to programmes broadcast from London and Daventry transmitter 5XX  The programme was broadcast on a Sunday, when programming as a whole had a religious focus"@en;
+        led:has_evidence_text  "To; The Chairman, BBC\r\n\r\nDear Sir\r\n\r\nI am trying to listen appreciatively to the symphony concert now being broadcast from 2LO* but find it most difficult to do so.\r\n\r\nThe music is much too light & highbrow in style and the songs doleful & insipid in the extreme, 15 minutes of this sort of thing would be quite sufficient.  I venture to suggest that a long ? (illegible) [of] such music cannot be interesting to the majority of those who, like myself, hope for more enjoyable entertainment from 2LO programmes.  yours faithfully\r\n"@en;
+        led:has_medium         led:Medium.Broadcast;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+a+listener+to+music+broadcast+on+BBC+Home+Service+on+3+November+1929/1370432104345>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/British+army+officer%2C+possibly+retired/1370432317937>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1929-11-03>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-06-05T11:44:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/chamber+music+broadcast/1370432504293> .
+
+<http://data.open.ac.uk/led/person/British+army+officer%2C+possibly+retired/1370432317937>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Male;
+        rdfs:label  "British army officer, possibly retired"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Webb";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Lt-Col. Wallis ";
+        <http://xmlns.com/foaf/0.1/name>
+                "British army officer, possibly retired" .
+
+<http://data.open.ac.uk/led/source/Letter+from+a+listener+to+music+broadcast+on+BBC+Home+Service+on+3+November+1929/1370432104345>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "This programme was broadcast on a Sunday, when programming as a whole had a religious focus.   2 LO refers to programmes broadcast from London and Daventry transmitter 5XX  The programme records tell us the following:\n9.09pm Chamber Music: KUTCHER TRIO; MARGOT HINNENBERG-LEFEBRE (Sop.), acc. STEUERMANN.  (no details about the music itself).\n"@en;
+        rdfs:label         "Letter from a listener to music broadcast on BBC Home Service on 3 November 1929"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/music/chamber+music+broadcast/1370432504293>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "chamber music broadcast"@en;
+        <http://purl.org/dc/terms/title>
+                "not known" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1929-11-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 November, 1929"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1929;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.29> .

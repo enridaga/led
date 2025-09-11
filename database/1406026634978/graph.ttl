@@ -1,0 +1,225 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/time/edtf/1955-01-Ee>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early January, 1955"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1955;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.55> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/resource/010661416>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Originally published: London : Chatto & Windus, 1997."@en;
+        rdfs:label                  "A genius in the family / Hilary Du Pré"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1998-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Vintage>;
+        <http://purl.org/dc/terms/title>
+                "A genius in the family / Hilary Du Pré";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0099274787"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942-> .
+
+<http://reference.data.gov.uk/id/year/1948>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1948"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://bnb.data.bl.uk/id/agent/Vintage>
+        rdfs:label  "Vintage"@en .
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/BBC+Broadcast:+All+Your+Own/1406026517482/1406026517491>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'BBC Broadcast: All Your Own'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/BBC+Broadcast:+All+Your+Own/1406026517482>;
+        <http://purl.org/ontology/mo/performer>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942-> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.55>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  55 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/time/edtf/1998-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1998"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1998;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1998>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://bnb.data.bl.uk/id/person/BantockGranvilleSir1868-1946>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Granville Bantock"@en .
+
+<http://reference.data.gov.uk/id/year/1998>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Piers du Pré"@en , "Piers  du Pré"@en , "Du Pré, Piers, 1948-"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Company+Director+du+Pr%C3%A9+plc>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1948-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .
+
+<http://data.open.ac.uk/led/thing/Company+Director+du+Pr%C3%A9+plc>
+        rdfs:label  "Company Director du Pré plc"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://data.open.ac.uk/time/edtf/1948-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1948"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1948;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1948>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.48> .
+
+<http://data.open.ac.uk/time/edtf/1942-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1942"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1942;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://data.open.ac.uk/led/music/BBC+Broadcast:+All+Your+Own/1406026517482>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "BBC Broadcast: All Your Own"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/BantockGranvilleSir1868-1946> , <http://dbpedia.org/resource/Johann_Sebastian_Bach>;
+        <http://purl.org/dc/terms/title>
+                "BBC Broadcast: All Your Own";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/BantockGranvilleSir1868-1946> , <http://dbpedia.org/resource/Johann_Sebastian_Bach> .
+
+<http://bnb.data.bl.uk/id/person/DuPr%C3%A9Hilary1942->
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Hilary du Pré"@en , "Hilary  du Pré"@en , "Du Pré, Hilary, 1942-"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1942-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "du Pré";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hilary" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.48>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  48 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.42>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  42 .
+
+<http://data.open.ac.uk/led/lexp/1406026634978>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "Hilary only had one rehearsal on the day of the recording, and she was the last to play. As the others finished, they all looked so miserable that Mum began encouraging Hilary to be cheerful and enjoy it. Hil was unaware that the programme was going out live and played her pieces brilliantly: Humoresque by Bantock and Solfeggietto by Bach . "@en;
+        led:has_medium         led:Medium.Live , led:Medium.Broadcast;
+        led:is_reported_in     <http://bnb.data.bl.uk/id/resource/010661416>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/claims>;
+        led:pages              "67";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/DuPr%C3%A9Piers1948->;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1955-01-Ee>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-24T17:08:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-07-22T10:57:15.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/BBC+Broadcast:+All+Your+Own/1406026517482/1406026517491> .

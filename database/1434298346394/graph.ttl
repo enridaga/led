@@ -1,0 +1,605 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Royal_Albert_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Albert Hall"@en .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://bnb.data.bl.uk/id/resource/015341673>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Journeying boy : the diaries of the young Benjamin Britten 1928-1938"@en , "Journeying boy / Benjamin Britten"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2009-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Faber>;
+        <http://purl.org/dc/terms/title>
+                "Journeying boy : the diaries of the young Benjamin Britten 1928-1938";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/EvansJohn1953->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0571238831"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1813-05-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 May, 1813"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1813;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Siegfried-Idyll/1434298215985/1434298215998>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Siegfried-Idyll'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Idyll+from+Siegried/1435697970586>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Berlin_Philharmonic> , <http://dbpedia.org/resource/Wilhelm_Furtw%C3%A4ngler> .
+
+<http://reference.data.gov.uk/id/day/1883-02-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 February, 1883"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1883;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.83> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/agent/Faber>
+        rdfs:label  "Faber"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Wilhelm_Furtw%C3%A4ngler>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wilhelm Furtwängler"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1886-01-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Berlin>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1954-11-30>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Baden-Baden>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://musicbrainz.org/artist/816b8a86-fe42-42c3-ac9e-958654436698#_> , <http://bnb.data.bl.uk/id/person/Furtw%C3%A4nglerWilhelm1886-1954>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Furtwängler";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Wilhelm" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Baden-Baden>
+        rdfs:label  "Baden-Baden"@en .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://dbpedia.org/resource/St._Petersburg,_Florida>
+        rdfs:label  "St. Petersburg"@en .
+
+<http://bnb.data.bl.uk/id/person/WagnerRichard1813-1883>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Richard Wagner"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Haydn+Symphony+No.+104+in+D,+'London',+Hob:I/i04/1397125662367/1434298160845>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Haydn Symphony No. 104 in D, 'London', Hob:I/i04'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Haydn+Symphony+No.+104+in+D,+'London',+Hob:I/i04/1397125662367>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Berlin_Philharmonic> , <http://dbpedia.org/resource/Wilhelm_Furtw%C3%A4ngler> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Flying+Dutchman/1434298250395/1434298250406>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Flying Dutchman'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Flying+Dutchman/1434298250395>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Berlin_Philharmonic> , <http://dbpedia.org/resource/Wilhelm_Furtw%C3%A4ngler> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Geneva>
+        rdfs:label  "Geneva"@en .
+
+<http://dbpedia.org/resource/Joseph_Haydn>
+        rdf:type                       <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                     "Haydn" , "Joseph Haydn" , "Haydn"@en , "Joseph Haydn"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1732-03-31>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1809-05-31>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Haydn";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Joseph" .
+
+<http://bnb.data.bl.uk/id/person/Furtw%C3%A4nglerWilhelm1886-1954>
+        rdfs:label  "Furtwängler, Wilhelm, 1886-1954"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.86>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  86 .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Russia>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Russia"@en .
+
+<http://reference.data.gov.uk/id/day/1892-09-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 September, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Aix-en-Provence>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Aix-en-Provence"@en , "Aix en Provence"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Provence> .
+
+<http://reference.data.gov.uk/id/day/1976-12-04>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976 .
+
+<http://dbpedia.org/resource/Lowestoft>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lowestoft"@en .
+
+<http://reference.data.gov.uk/id/day/1732-03-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 March, 1732"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1732;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.32> .
+
+<http://data.open.ac.uk/led/music/Idyll+from+Siegried/1435697970586>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Siegfried-Idyll"@en , "Idyll from Siegried"@en , "Siegfried Idyll"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Richard_Wagner>;
+        <http://purl.org/dc/terms/title>
+                "Idyll from Siegried";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Richard_Wagner> .
+
+<http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://dbpedia.org/resource/Berlin_Philharmonic>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Berlin Philharmonic Orchestra"@en , "Berlin Philharmonic"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://data.open.ac.uk/led/music/Haydn+Symphony+No.+104+in+D,+'London',+Hob:I/i04/1397125662367>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Haydn Symphony No. 104 in D, 'London', Hob:I/i04"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Joseph_Haydn>;
+        <http://purl.org/dc/terms/title>
+                "Haydn Symphony No. 104 in D, 'London', Hob:I/i04";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Joseph_Haydn> .
+
+<http://data.open.ac.uk/led/theatre+director>
+        rdfs:label  "Theatre director"@en , "theatre director"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Symphony+No.+6/1434298298638/1434298298643>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Symphony No. 6'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony+No.+6/1432115325392>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Wilhelm+F%C3%BCrtw%C3%A4ngler/1434298298661> , <http://dbpedia.org/resource/Berlin_Philharmonic> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/agent/Wilhelm+F%C3%BCrtw%C3%A4ngler/1434298298661>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wilhelm Fürtwängler"@en .
+
+<http://reference.data.gov.uk/id/day/1913-11-22>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913 .
+
+<http://dbpedia.org/resource/Votkinsk>
+        rdfs:label  "Votkinsk"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://dbpedia.org/resource/Richard_Wagner>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Richard Wagner" , "Richard Wagner"@en , "Wagner"@en , "Wagner";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/theatre+director>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1813-05-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Leipzig>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1883-02-13>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/WagnerRichard1813-1883>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wagner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard" .
+
+<http://reference.data.gov.uk/id/day/1954-11-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 November, 1954"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1954;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://bnb.data.bl.uk/id/person/EvansJohn1953->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Evans"@en .
+
+<http://reference.data.gov.uk/id/day/1886-01-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 January, 1886"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1886;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Piotr Ilyich Tchaikovsky"@en , "Peter Ilich Tchaikovsky"@en , "Pyotr Tchaikovsky"@en , "Pyotr Ilyich Tchaikovsky"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Votkinsk>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/St._Petersburg,_Florida>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russia> , <http://dbpedia.org/resource/Russian_Empire>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/TchaikovskyPeterIlich1840-1893>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tchaikovsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Piotr Ilyich" .
+
+<http://reference.data.gov.uk/id/day/1932-02-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 February, 1932"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1932;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.32> .
+
+<http://data.open.ac.uk/led/lexp/1434298346394>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "Mr. & Mrs Bridge take me to Albert Hall to Berlin Phil. Orch. (Fürtwängler). Hackneyed Programme. Haydn London Symp. [No. 104 in D]; Wagner, Siegfried Id. & Flying Dutchman ov.; Tschaikovsky's Pathetic Symp. F's readings were exaggerated & sentimentalised (esp. so in last item - no wonder a member of the audience was sick!! The orch. is a magnificent body, tho' slightly off colour to-day (e.g. wind intonation, 1st Clar & 1st Horn). Strings are marvellous. Timpanist great. Marvellous ensemble & discipline"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://bnb.data.bl.uk/id/resource/015341673>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/gkw/claims>;
+        led:pages              "98";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Albert_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1932-02-07>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-09-27T10:47:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-14T16:12:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Flying+Dutchman/1434298250395/1434298250406> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Haydn+Symphony+No.+104+in+D,+'London',+Hob:I/i04/1397125662367/1434298160845> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Siegfried-Idyll/1434298215985/1434298215998> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Symphony+No.+6/1434298298638/1434298298643> .
+
+<http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976> , <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://dbpedia.org/resource/Darius_Milhaud>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Darius Milhaud"@en , "Milhaud"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-09-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Aix-en-Provence>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1974-06-22>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Geneva>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974> , <http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Milhaud";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Darius" .
+
+<http://data.open.ac.uk/led/music/Symphony+No.+6/1432115325392>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony No. 6 in B minor, op. 74"@en , "Symphony No. 6 in B minor"@en , "Symphony No. 6"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Darius_Milhaud> , <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky>;
+        <http://purl.org/dc/terms/title>
+                "Symphony No. 6";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Darius_Milhaud> , <http://dbpedia.org/resource/Pyotr_Ilyich_Tchaikovsky> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/led/music/Flying+Dutchman/1434298250395>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Flying Dutchman"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/WagnerRichard1952->;
+        <http://purl.org/dc/terms/title>
+                "Flying Dutchman";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/WagnerRichard1952-> .
+
+<http://reference.data.gov.uk/id/year/2009>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976>
+        rdfs:label  "Benjamin Britten"@en .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://reference.data.gov.uk/id/day/1974-06-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 June, 1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://dbpedia.org/resource/Benjamin_Britten>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/time/edtf/2009-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2009"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2009>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://reference.data.gov.uk/id/day/1809-05-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 May, 1809"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1809;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://bnb.data.bl.uk/id/person/WagnerRichard1952->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Richard Wagner"@en .
+
+<http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://dbpedia.org/resource/Leipzig>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leipzig"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.32>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  32 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

@@ -1,0 +1,231 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://musicbrainz.org/artist/d3155550-5e65-453b-8629-bf63c6bb303a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Eugene Stratton"@en .
+
+<http://data.open.ac.uk/led/place/0a4f95eaa07b00f4626e273eb7470288>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Trocadero, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Trocadero, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/f4ba1ffcc56de2c83d647d41875f50ed>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p></p>\r\n<p><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Courier New'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA;\">It was at the Trocadero that Eugene Stratton, who married a daughter of \"Pony\" Moore, of Moore and Burgess' minstrels, first trod the English music-halls, when he left the St. James Hall and Burnt-cork land; it was the old story, with a black face they knew him and loved him, yet when he sang \"The Whistling Coon\" with a white face, well, as the American Lady says, \"there were chilblains in the box-office.\" Frost, large and deep, attended poor Eugene so back he had to go to popularity, fame and fortune with the burnt-cork make-up.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Jimmy Glover, His Book' pp. 188-9 (95 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "188-9" .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Jimmy Glover"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1931-uu-uu>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Glover";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jimmy" .
+
+<http://dbpedia.org/resource/Methuen>
+        rdfs:label  "Methuen"@en .
+
+<http://data.open.ac.uk/time/edtf/1931-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1931"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1931;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.31> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1912-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1912>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://dbpedia.org/resource/Music_hall>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music hall"@en .
+
+<https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/lexp/1437471855423>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/f4ba1ffcc56de2c83d647d41875f50ed>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "188-9";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Music-Hall+audience/1437471771239>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0a4f95eaa07b00f4626e273eb7470288>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/189u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-27T11:14:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-21T09:44:15.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8685f3ed012d937781a0a63548c8fa47/1437471810840>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/b958c8329d087568a33dce007eb04cba/excerpt/f4ba1ffcc56de2c83d647d41875f50ed> .
+
+<http://data.open.ac.uk/led/music/The+Whistling+Coon/1437471810826>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Whistling Coon"@en;
+        <http://purl.org/dc/terms/title>
+                "The Whistling Coon" .
+
+<http://data.open.ac.uk/led/source/Jimmy+Glover,+His+Book/1437470218298>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Jimmy Glover, His Book"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        led:in_collection           "Internet Archive";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia600406.us.archive.org/5/items/jimmygloverhisbo00glovuoft/jimmygloverhisbo00glovuoft.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1912-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Methuen> , <http://bnb.data.bl.uk/id/agent/MethuenLondon>;
+        <http://purl.org/dc/terms/title>
+                "Jimmy Glover, His Book";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Jimmy+Glover/1436605292764> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://bnb.data.bl.uk/id/agent/MethuenLondon>
+        rdfs:label  "Methuen London"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/189u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1890's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1890-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://reference.data.gov.uk/id/year/1912>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1912"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/8685f3ed012d937781a0a63548c8fa47/1437471810840>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'The Whistling Coon'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Music-Hall+audience/1437471771239>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Whistling+Coon/1437471810826>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/d3155550-5e65-453b-8629-bf63c6bb303a#_> .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/agent/Music-Hall+audience/1437471771239>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Music-Hall audience"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "audience";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Music-Hall" .

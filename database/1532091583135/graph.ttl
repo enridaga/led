@@ -1,0 +1,141 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/unspecified+singing--+male+quartet/1532089281672>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing-- male quartet"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing-- male quartet" .
+
+<http://data.open.ac.uk/led/agent/Dinner+guests/1535622333636>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Dinner guests"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "guests";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dinner" .
+
+<http://data.open.ac.uk/led/lexp/1532091583135>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/3997485580628bbc74811593a8cba4a3>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "98";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Dinner+guests/1535622333636>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1919-uu-uu/to/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-30T09:46:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-20T12:59:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8c61fb279fa8d8577d88f3f09f1cd23e/1532091538796>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/3997485580628bbc74811593a8cba4a3> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/3997485580628bbc74811593a8cba4a3>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">The first time I tasted olives was many years ago and my introduction was a complete failure. I found the one I had in my mouth impossible to swallow and when no-one was looking slipped it into the handkerchief I was wearing in my breast pocket and forgot about it. I must explain that I was there with three other members of our [male voice] quartet and we had been engaged professionally, an invitation to dinner thrown in. When the time to perform arrived we all trooped on to the platform and sang a serious quartet, and as an encore chose a humorous one where at one part we had to pull a handkerchief smartly from our breast pockets and pretend to weep. You can guess what happened. The olive I had concealed in my handkerchief went sailing across the room and after hitting a lady on the nose, fell into a wine glass.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Starting from Victoria' pp. 98 (154 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Starting+from+Victoria/1532082629179>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "98" .
+
+<http://data.open.ac.uk/time/interval/1919-uu-uu/to/192u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1919 and the 1920's"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/performance/8c61fb279fa8d8577d88f3f09f1cd23e/1532091538796>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing-- male quartet'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_quartet>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dinner+guests/1535622333636>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing--+male+quartet/1532089281672>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon's+male+voice+quartet/1532091538799> .
+
+<http://dbpedia.org/resource/Vocal_quartet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal quartet"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/source/Starting+from+Victoria/1532082629179>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Leonard W. Ellisdon's (b. 1885) memoir is organised as a series of amusing anecdotes about his working and singing life in London. The unpublished work is held in The Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three volumes annotated bibliography, \"The Autobiography of the Working Class\" (Harvester Press, 1984-1989). "@en;
+        rdfs:label                  "Starting from Victoria"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University The Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9524>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Starting from Victoria";
+        <http://purl.org/ontology/bibo/number>
+                "1:229";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532082629377> .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon's+male+voice+quartet/1532091538799>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Leonard W. Ellisdon's male voice quartet"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532082629377>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Leonard W. Ellisdon"@en .
+
+<http://bura.brunel.ac.uk/handle/2438/9524>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9524"^^<http://www.w3.org/2001/XMLSchema#anyURI> .

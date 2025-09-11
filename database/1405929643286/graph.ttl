@@ -1,0 +1,161 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/person/Albert+Edward+Jones/1406298932135>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Albert Edward Jones"@en , "Albert E. Jones"@en , "Albert E Jones"@en;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1896-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1949-uu-uu>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jones";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Albert Edward" .
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Auld+Lang+Syne/1396279950034/1406210288400>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Auld Lang Syne'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Amesbury_railway_station>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/traditional+song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Military_band>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/30th+Division+Artillery+Band/1406210326448> .
+
+<http://data.open.ac.uk/led/agent/30th+Division+Artillery+Band/1406210326448>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "30th Division Artillery Band"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/id/day/1915-11-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 November, 1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://reference.data.gov.uk/id/year/1896>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Albert+Edward+Jones+1896-1949+WW+I+Liverpool+pal+Memoirs/1405925090860>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Albert Edward Jones 1896-1949 WWI Liverpool Pal Memoirs"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "From the family papers of Leslie Jones-Michail, by kind permission."@en;
+        <http://purl.org/dc/terms/title>
+                "Albert Edward Jones 1896-1949 WWI Liverpool Pal Memoirs";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Albert+Edward+Jones/1406298932135> .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/lexp/1405929643286>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Auld Lang Syne.\r\n\r\n...we marched along to Amesbury Station with mixed feelings of regret and anticipation as to our next adventure. The band played and we were glad. Nothing like a band to buck you up. The whole trouble was more in imagination of results; when the actual departure came, the spirits cleared very rapidly. The small village of Amesbury was the scene of a little demonstration as we passed through. Just a few people gathered on the side-walks of the quaint old place. The station was reached and the entraining soon accomplished under that marvelous army system of handling men en masse. \r\n\r\nThe 30th division artillery band was on the platform. Comrades who would follow later, but just now had come to brighten the soul with music. They did, but better had they never come than to play \"Auld Lang Syne\" as the train responded to the guard's whistling by gently moving out. That scene is indelible in the memory. Not a man in the compartment of #2 section risked his life in the customary cap waving, half out the window. The section just put their packs and equipment on the rack, and tried to conform actuality with contemplation: \r\n\r\nFor Auld Lang Syne, my dear\r\nFor Auld Lang Syne.\r\n \r\nThe strains of the band drifted in through the window. The train with fast gathering speed, rocked over the points, and seemed to settle down in its stride for the run to Folkestone. \r\n\r\nWe'll take' a cup o kindness yet,\r\nFor the days of Auld Lang Syne.\r\n\r\n More faint now, and then the closing bars. Yes, music is wonderful, but very trying in conjunction with sentiment keyed to the highest pitch. Folkestone lay below us as the train drew into the suburbs, and in a few minutes, the docks were reached.... Convenient - well yes, right off the train and in a single file up the gangway. No signs though of the cheering crowds, and the band playing as the steamer casts off and England's shores are separated from our physical being by rapidly widening sheets of water. It must have been a gramophone record once heard of a scene during a troopship's departure to South Africa that suggested the crowds and the band were absent. The peacefulness of Sunday was enhanced by the several peelings of church bells. Yes, people were getting ready for church, no one, only our mothers and sisters in Lancashire knew the Liverpools were on their way.\r\n\r\n \r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Albert+Edward+Jones+1896-1949+WW+I+Liverpool+pal+Memoirs/1405925090860>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Leslie+Jones/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Amesbury_railway_station>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1915-11-07>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-07-21T08:00:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Auld+Lang+Syne/1396279950034/1406210288400> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1896-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1896>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://dbpedia.org/resource/Military_band>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Military band"@en .
+
+<http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Burns"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Auld Lang Syne"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>;
+        <http://purl.org/dc/terms/title>
+                "Auld Lang Syne";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_> .
+
+<http://dbpedia.org/resource/Amesbury_railway_station>
+        rdfs:label  "Amesbury railway station"@en .
+
+<http://data.open.ac.uk/led/musicgenre/traditional+song>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "traditional song"@en .

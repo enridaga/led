@@ -1,0 +1,190 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Fiddle>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fiddle"@en .
+
+<http://data.open.ac.uk/led/agent/Mr.+Sellers/1549637291859>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. Sellers"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Sellers";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr." .
+
+<http://data.open.ac.uk/led/music/unspecified+bawdy+singing+and+fiddle+playing/1549637461969>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified bawdy singing and fiddle playing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified bawdy singing and fiddle playing" .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> , "www.oldbaileyonline.org"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+April+1726,+trial+of+Thomas+Wright+(t17260420-67)/1549637254976>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), April 1726, trial of Thomas Wright (t17260420-67)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), April 1726, trial of Thomas Wright (t17260420-67)";
+        <http://purl.org/ontology/bibo/number>
+                "t17260420-67";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/place/d140b2333893ce2cb020066632cc1b14>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Beech Lane, London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "Beech Lane, London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/agent/Thomas+Wright/1549637320049>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Wright"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wright";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas" .
+
+<http://data.open.ac.uk/led/source/1e69bf731c6f17e62ff4879505b3b84a/excerpt/3f1ac15c479b144205e51a1e674881fc>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[Original spelling retained]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Thomas Wright, was indicted for committing Buggery with<span class=\"apple-converted-space\">&nbsp;</span>Thomas Newton . Jan 10 1724- 5. Thomas Newton thus depos'd. Last January 12 Month, the Prisoner had the Carnal Use of my Body at his own House, in<span class=\"apple-converted-space\">&nbsp;</span>Christophers Alley in Moor-fields : He was a Wooll-Comber by Trade, but he sold a Dram among such Company as came to his House. - He afterwards remov'd to Beech Lane, and there kept Rooms for the entertainment of Sodomites. [&hellip;] William Davison and - Sellars thus depos'd. The discovering of the Molly Houses, was chiefly owing to a Quarrel betwixt Mark Partridge and - Harrington: For upon this Quarrel Partridge to be revenged on Herrington, had blab'd something of the Secret, and afterwards gave a large Information of a great many others. [In this way] we were introduced to the Company, at the Prisoners Lodging's. There were 8 or 9 of them in a large Room, one was playing upon a Fiddle, and others were one while dancing in obscene Postures, and others while Singing&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">baudy Songs, and talking leudly, and Acting a great many Indecencies. - But they look'd a skew upon<span class=\"apple-converted-space\">&nbsp;</span>Mark Partridge , and call'd him a treacherous, blowing-up Mollying Bitch, and threatned that they'd Massacre any body that betray'd them [&hellip;] The Jury found [Thomas Wright] Guilty. Death<span class=\"apple-converted-space\">.&nbsp;</span></span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), April 1726, trial of Thomas Wright (t17260420-67)' (213 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+April+1726,+trial+of+Thomas+Wright+(t17260420-67)/1549637254976>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Instrumental"@en .
+
+<http://data.open.ac.uk/led/lexp/1549637566949>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/1e69bf731c6f17e62ff4879505b3b84a/excerpt/3f1ac15c479b144205e51a1e674881fc>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/a+party+of+men/1549637340669> , <http://data.open.ac.uk/led/agent/Thomas+Wright/1549637320049> , <http://data.open.ac.uk/led/agent/Mark+Partridge/1549637305095> , <http://data.open.ac.uk/led/agent/William+Davidson/1549637278025> , <http://data.open.ac.uk/led/agent/Mr.+Sellers/1549637291859>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d140b2333893ce2cb020066632cc1b14>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1725-01-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-03-28T15:20:39.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-08T14:52:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/62ca95eeea22fcde64b24062966f120e/1549637462003>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/1e69bf731c6f17e62ff4879505b3b84a/excerpt/3f1ac15c479b144205e51a1e674881fc> .
+
+<http://data.open.ac.uk/led/agent/a+party+of+men/1549637340669>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "a party of men"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "men";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a party of" .
+
+<http://data.open.ac.uk/led/agent/William+Davidson/1549637278025>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "William Davidson"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Davidson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "William" .
+
+<http://data.open.ac.uk/led/agent/Mark+Partridge/1549637305095>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mark Partridge"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Partridge";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mark" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/1725-01-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1725, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://data.open.ac.uk/led/performance/62ca95eeea22fcde64b24062966f120e/1549637462003>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified bawdy singing and fiddle playing'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song> , <http://dbpedia.org/resource/Instrumental>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Fiddle>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/a+party+of+men/1549637340669> , <http://data.open.ac.uk/led/agent/William+Davidson/1549637278025> , <http://data.open.ac.uk/led/agent/Mr.+Sellers/1549637291859> , <http://data.open.ac.uk/led/agent/Mark+Partridge/1549637305095> , <http://data.open.ac.uk/led/agent/Thomas+Wright/1549637320049>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+bawdy+singing+and+fiddle+playing/1549637461969> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .

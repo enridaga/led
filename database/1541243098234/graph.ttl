@@ -1,0 +1,221 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://musicbrainz.org/artist/b51f17ae-1405-46e0-95cb-b31252bb4355#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Sir Harry Lauder"@en .
+
+<http://data.open.ac.uk/led/agent/Gertie+Gitana/1544786878617>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gertie Gitana"@en .
+
+<http://data.open.ac.uk/led/pit+boy>
+        rdfs:label  "pit boy"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1892-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544786743006>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Mr. Thomas Jordan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/coal+miner> , <http://data.open.ac.uk/led/pit+boy> , <http://data.open.ac.uk/led/soldier>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian_Science> , <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1892-01-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Birtley,_Tyne_and_Wear>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jordan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr. Thomas" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/70f113ce27efeef61fcb9f4a4d5c9040/1541242975285>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Unspecified Music Hall entertainment'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Newcastle_upon_Tyne>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song> , <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544786743006>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+Music+Hall+entertainment/1541242975248>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/b51f17ae-1405-46e0-95cb-b31252bb4355#_> , <http://musicbrainz.org/artist/e598b334-9de1-4db6-8af5-e3b99808b659#_> , <http://data.open.ac.uk/led/agent/Gertie+Gitana/1544786878617> , <http://data.open.ac.uk/led/agent/Marie+Lloyd+(Matilda+Alice+Victoria+Wood)/1544786878647> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://reference.data.gov.uk/id/year/1912>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1912"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Newcastle_upon_Tyne>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Newcastle upon Tyne"@en .
+
+<http://data.open.ac.uk/led/coal+miner>
+        rdfs:label  "coal miner"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/dcda97b7cf253baabbfe2ffc110d353d>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Thomas Jordan worked at Usworth colliery from the age of fourteen to twenty, leaving after the 1912 National Miners Strike. Earlier he recalled the effect on pit boys&rsquo; leisure time when in 1910 their working day was limited from ten to eight hours]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">Gay and light hearted was the mood of many of my wide circle of friends&mdash;earning up to &pound;2 per week&mdash;sometimes more if you were a track putter lad. My mother gave me half a sovereign for my pocket and she bought me good style suits and shoes. The weekends found us in the city of Newcastle where we found entertainment in its theatres and music halls [&hellip;] Harry Lauder, Wilfie Barr&nbsp;[<em>sic</em>], Gertie Getahner [<em>sic</em>], Marie Lloyd brought us into the music hall; Charlie Chaplain [<em>sic</em>] was just being heard of. Usworth Colliery was a booming place&mdash;it had the best working conditions in all the Durham minefield and its work people were earning good wages [&hellip;] Usworth railway station at the weekend was full of people waiting for the train to Newcastle.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Untitled: Thomas Jordan memoir' pp. 5-6 (173 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Untitled:+Thomas+Jordan+memoir/1541238973348>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "5-6" .
+
+<http://data.open.ac.uk/time/interval/1910-uu-uu/to/1912-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1910 and 1912"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1912-uu-uu> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://musicbrainz.org/artist/e598b334-9de1-4db6-8af5-e3b99808b659#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Wilkie Bard"@en .
+
+<http://data.open.ac.uk/led/source/Untitled:+Thomas+Jordan+memoir/1541238973348>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Thomas Jordan’s (b. 1892) memoir is in the form of a transcribed oral narrative, following an interview with John Burnett in November 1976. Jordan focuses on his childhood, his father’s work as a miner, and on his own working life as a pit boy and then service in the army. He was a committed Christian Scientist. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "Untitled: Thomas Jordan memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University library Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Brunel University Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Untitled: Thomas Jordan memoir";
+        <http://purl.org/ontology/bibo/number>
+                "1:405";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1541238973414> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/lexp/1541243098234>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/dcda97b7cf253baabbfe2ffc110d353d>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "5-6";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544786743006>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Newcastle_upon_Tyne>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1910-uu-uu/to/1912-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-12-14T11:28:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2018-12-14T11:32:30.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-11-03T11:04:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/70f113ce27efeef61fcb9f4a4d5c9040/1541242975285>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/dcda97b7cf253baabbfe2ffc110d353d> .
+
+<http://data.open.ac.uk/led/music/Unspecified+Music+Hall+entertainment/1541242975248>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified Music Hall entertainment"@en;
+        <http://purl.org/dc/terms/title>
+                "Unspecified Music Hall entertainment" .
+
+<http://data.open.ac.uk/led/agent/Marie+Lloyd+(Matilda+Alice+Victoria+Wood)/1544786878647>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Marie Lloyd (Matilda Alice Victoria Wood)"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1541238973414>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. Thomas Jordan"@en .
+
+<http://data.open.ac.uk/time/edtf/1912-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1912>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://dbpedia.org/resource/Music_hall>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music hall"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://dbpedia.org/resource/Christian_Science>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian Science"@en .

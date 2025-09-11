@@ -1,0 +1,152 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/place/57850baee71368b29217020220787541>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Brownhill, Llanllwchaiarn, Synod Inn"@en;
+        <http://purl.org/dc/terms/description>
+                "Brownhill, Llanllwchaiarn, Synod Inn"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Llanllwchaiarn> .
+
+<http://welshnewspapers.llgc.org.uk/en/page/view/3345210/ART67>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Welsh Newspapers Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://welshnewspapers.llgc.org.uk/en/page/view/3345210/ART67"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1888-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 1888"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1888;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://reference.data.gov.uk/id/day/1888-12-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 December, 1888"@en;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1888> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/performance/9afa38e3067b75a030ae9eab4e9ed1ae/1446629544580>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Poor Mary Ann'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Llanllwchaiarn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Poor+Mary+Ann/1446629544566> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/music/Poor+Mary+Ann/1446629544566>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Poor Mary Ann"@en;
+        <http://purl.org/dc/terms/title>
+                "Poor Mary Ann" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.88>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  88 .
+
+<http://data.open.ac.uk/led/lexp/1446629669360>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Music appears on a number of occasions as a form of protest against tithe sales during the tithe wars."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/f405e1082323c69d7d24916d4e3b4fd1/excerpt/cf480741fe28761aa2be89096ea5f330>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "6";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/57850baee71368b29217020220787541>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1888-12-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-04-07T13:38:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-04T09:34:30.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/9afa38e3067b75a030ae9eab4e9ed1ae/1446629544580>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f405e1082323c69d7d24916d4e3b4fd1/excerpt/cf480741fe28761aa2be89096ea5f330> .
+
+<http://bnb.data.bl.uk/id/place/Aberystwyth>
+        rdfs:label  "Aberystwyth"@en .
+
+<http://data.open.ac.uk/led/source/f405e1082323c69d7d24916d4e3b4fd1/excerpt/cf480741fe28761aa2be89096ea5f330>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Proceeding, then, to the rickyard, the way was found to be stopped by tarred wires. This having been broken down by one of the police, Mr Piggott, who accompanied Mr Stevens, valued the rick at&pound;3. Captain Davies protested against its being sold under &pound;5, and remarked that if it was offered for sale someone was prepared to bid, whereupon Mr Stevens knocked the rick down to Mr Jones, Nantpele, for 15s. Mr Stevens, with Mr Supt. Lloyd, went into the house to settle up; and when this had been finished they found that they had been made prisoners, someone having locked all the doors of the house. Meanwhile the crowd outside sang, \"Poor Mary Ann\" an air known in Wales as \"Ar hyd y nos'\" which <em>Punch&nbsp;</em>says should be translated by \"Ah! heed your nose.\"</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'More tithe sales in Cardiganshire' pp. 6 (135 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/More+tithe+sales+in+Cardiganshire/1446629467145>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "6" .
+
+<http://data.open.ac.uk/led/source/More+tithe+sales+in+Cardiganshire/1446629467145>
+        rdf:type           <http://purl.org/ontology/bibo/Article> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "More tithe sales in Cardiganshire"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/journalism>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+cambrian+news/vol/29/issue/1453>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://welshnewspapers.llgc.org.uk/en/page/view/3345210/ART67>;
+        <http://purl.org/dc/terms/title>
+                "More tithe sales in Cardiganshire";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Llanllwchaiarn>
+        rdfs:label  "Llanllwchaiarn"@en .
+
+<http://data.open.ac.uk/led/source/the+cambrian+news/vol/29/issue/1453>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Cambrian News"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://reference.data.gov.uk/id/day/1888-12-28>;
+        <http://purl.org/dc/terms/title>
+                "The Cambrian News";
+        <http://purl.org/ontology/bibo/issue>
+                "1453";
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Aberystwyth>;
+        <http://purl.org/ontology/bibo/volume>
+                "29" .

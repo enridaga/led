@@ -1,0 +1,117 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/179u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1790's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1790-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1799-uu-uu> .
+
+<http://data.open.ac.uk/led/lexp/1388172258070>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "P.S. — O dear! O dear! well, what a lucky thing it was I happened to mention Scotland; it has brought the charmingest thought into my head that ever was. Did your ladyship ever hear of a place called Gretna Green? They have a way of playing duets there, and such duets, it beats all the concerts in the world; Signor Bach's music is nothing to it. There is no such thing as learning them at home: one must absolutely go there first to see the manner of it. There is a gentleman always, and a lady; and then a blacksmith in a black gown plays with his hammer dub-a-dub-dub, and yet it is but a duet after all. Well, now, as your ladyship, I have heard, likes travelling, and Scotland is the delightfulest country in the world, how comical it would be if your ladyship were to take a trip next Saturday to Gretna Green, and I were to attend your ladyship, as, to be sure, you could never think of going such a journey alone, and I would come slyly, just as it was dusk, and meet you just behind the Green-house, and nobody should know anything about the matter, and I would have a chaise-and-four ready, and off we would go with a smack, smack, smack! to Gretna Green"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Jeremy+Bentham+to+Lady+Elizabeth+Greville/1388172064063>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/179u-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-27T19:24:18.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/unknown/1388172095452> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://www.e-enlightenment.com>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-12-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2013-04-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Electronic Enlightenment "@en , "Electronic Enlightenment"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.e-enlightenment.com"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://data.open.ac.uk/time/edtf/1799-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1799"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1799;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://data.open.ac.uk/led/source/letter+from+Jeremy+Bentham+to+Lady+Elizabeth+Greville/1388172064063>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "letter send 27 Nov 1791"@en;
+        rdfs:label         "Letter from Jeremy Bentham to Lady Elizabeth Greville"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Bodleian Library, Oxford"@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.e-enlightenment.com>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Jeremy Bentham to Lady Elizabeth Greville" .
+
+<http://data.open.ac.uk/led/music/unknown/1388172095452>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unknown"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "unknown";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+<http://data.open.ac.uk/time/edtf/1790-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1790"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1790;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .

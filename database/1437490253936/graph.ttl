@@ -1,0 +1,223 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1800-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1800"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1800;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://data.open.ac.uk/led/performance/2f25c66adeb58aa5101d7ed332fbeeed/1437490207857>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Violin Concerto'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Lady+Flint/1437490140689>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Violin+Concerto/1437490207836>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Jarnowickz/1437490207861> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://dbpedia.org/resource/Birdcage_Walk>
+        rdfs:label  "Birdcage Walk"@en .
+
+<http://data.open.ac.uk/led/agent/Lady+Flint/1437490140689>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lady Flint"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Flint";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Lady" .
+
+<http://data.open.ac.uk/led/source/Anecdotes+of+Celebrities+of+London+and+Paris,+to+which+are+added+the+last+recollections+of+Captain+Gronow,+formerly+of+the+1st+Foot+Guards/1437474709772>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Anecdotes of Celebrities of London and Paris, to which are added the last recollections of Captain Gronow, formerly of the 1st Foot Guards"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia801704.us.archive.org/35/items/06793239.2139.emory.edu/06793239_2139.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1870-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Smith,_Elder_&_Co.>;
+        <http://purl.org/dc/terms/title>
+                "Anecdotes of Celebrities of London and Paris, to which are added the last recollections of Captain Gronow, formerly of the 1st Foot Guards";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/GronowRH%28ReesHowell%291794-1865> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.0u>
+        rdf:value   "0u";
+        rdfs:label  "00s"@en .
+
+<http://dbpedia.org/resource/Smith,_Elder_&_Co.>
+        rdfs:label  "Smith, Elder & Co."@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/time/edtf/180u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1800's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.0u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1800-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1809-uu-uu> .
+
+<https://ia801704.us.archive.org/35/items/06793239.2139.emory.edu/06793239_2139.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801704.us.archive.org/35/items/06793239.2139.emory.edu/06793239_2139.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1870-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1870>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/id/year/1870>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1870"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1437490253936>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/05a39dea01815e48321369a1770cfe61/excerpt/4811840ca7325b2c94b1ba105b12bee4>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "267";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Lady+Flint/1437490140689>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0a67f98360d221fd6678b216777ec59e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/180u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-27T11:06:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-21T14:50:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/2f25c66adeb58aa5101d7ed332fbeeed/1437490207857>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/05a39dea01815e48321369a1770cfe61/excerpt/4811840ca7325b2c94b1ba105b12bee4> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://dbpedia.org/resource/Ludwig_van_Beethoven>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Beethoven"@en , "Ludwig von Beethoven" , "Beethoven" , "Ludwig van Beethoven"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "van Beethoven";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ludwig";
+        <http://xmlns.com/foaf/0.1/name>
+                "Ludwig van Beethoven" .
+
+<http://reference.data.gov.uk/id/year/1809>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1809"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/1809-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1809"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1809;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1809>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://data.open.ac.uk/led/place/0a67f98360d221fd6678b216777ec59e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Birdcage Walk, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Birdcage Walk, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Birdcage_Walk> , <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/music/Violin+Concerto/1437490207836>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Violin Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven>;
+        <http://purl.org/dc/terms/title>
+                "Violin Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ludwig_van_Beethoven> .
+
+<http://data.open.ac.uk/led/agent/Jarnowickz/1437490207861>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Jarnowickz"@en .
+
+<http://data.open.ac.uk/led/source/05a39dea01815e48321369a1770cfe61/excerpt/4811840ca7325b2c94b1ba105b12bee4>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"line-height: 115%; font-family: Courier; font-size: 10pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: Courier; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">Among those of the fashionable world in London who patronised music, early after the peace, no one was more conspicuous than Lady Flint; whose charming concerts, given generally on Sunday at her house in Birdcage Walk, delighted all who had musical tastes and enjoyed the honour of an invitation. Among the musicians present there were Dusseck and Cramer, who played on the piano, and were accompanied by Viotti and Jarnowickz, the celebrated violin players. Lady Flint's desire to gratify her friends, however, was often frustrated by the annoying conduct of those who had no taste for music, who disturbed the enjoyment of some of the most beautiful pieces by the rattling of their cups and saucers, and the tone in which their conversation was carried on. Jarnowickz, the violin player, having upon one occasion commenced a concerto by Beethoven, accompanied by his little orchestra, consisting of Cramer, Spagnoletti, Lindley, and Dragonetti, suddenly ceased playing, and apologised for so doing by stating, that the discord caused by the tea-drinkers was such as to mar the effect of the immortal composer's music. He added, that those who thus showed that they did not understand music, would perhaps appreciate better the piece which he was about to play,&mdash;viz., \"God save the King,\" to which they would listen at least with respect. The reproof had a good effect, for always afterwards a complete silence reigned during the performance.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Anecdotes of Celebrities of London and Paris, to which are added the last recollections of Captain Gronow, formerly of the 1st Foot Guards' pp. 267 (236 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Anecdotes+of+Celebrities+of+London+and+Paris,+to+which+are+added+the+last+recollections+of+Captain+Gronow,+formerly+of+the+1st+Foot+Guards/1437474709772>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "267" .
+
+<http://bnb.data.bl.uk/id/person/GronowRH%28ReesHowell%291794-1865>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Gronow, R. H. (Rees Howell), 1794-1865"@en .

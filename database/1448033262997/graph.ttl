@@ -1,0 +1,108 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/Y+Blotyn+Du/1448033225857>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Y Blotyn Du"@en;
+        <http://purl.org/dc/terms/title>
+                "Y Blotyn Du" .
+
+<http://data.open.ac.uk/led/performance/17b8beaa9a89042691daecf87f0c6308/1448033225864>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Y Blotyn Du'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wales>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Folk_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Roberts/1448033133983>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Y+Blotyn+Du/1448033225857>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/sailors/1448033225866> .
+
+<http://data.open.ac.uk/led/agent/sailors/1448033225866>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "sailors"@en .
+
+<http://data.open.ac.uk/led/lexp/1448033262997>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/bbae962a87fca82fdafc96d4a598c983>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages_manuscript  "9";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Roberts/1448033133983>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wales>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-15T12:33:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-20T15:27:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/17b8beaa9a89042691daecf87f0c6308/1448033225864>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/bbae962a87fca82fdafc96d4a598c983> .
+
+<http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/bbae962a87fca82fdafc96d4a598c983>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p style=\"-qt-block-indent: 0; text-indent: 0px; margin: 0px;\"><span style=\"text-decoration: underline;\">Y Blotyn Du</span> John Morris per J Morris Jones Trawsfynydd</p>\r\n<p style=\"-qt-block-indent: 0; text-indent: 0px; margin: 0px;\">[...]</p>\r\n<p>&nbsp;</p>\r\n<p style=\"margin: 0px;\">Capt. Roberts say[s] that this&nbsp;[...]&nbsp;is always sung &ldquo;ar y mor [on the sea]&rdquo; and that it sounds most enchanting - the people always listen on shore while the sailors sing it in going in.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection' pp. 9 (48 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Dr+J.+Lloyd+Williams+Music+MSS+and+Papers:+John+Morris+Collection/1448032589707>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "9" .
+
+<http://data.open.ac.uk/led/agent/Roberts/1448033133983>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Roberts"@en , "Captain Roberts"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Roberts";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Captain Roberts"@en .
+
+<http://dbpedia.org/resource/Folk_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Folk music"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/source/Dr+J.+Lloyd+Williams+Music+MSS+and+Papers:+John+Morris+Collection/1448032589707>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW AH2/2";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Morris/1448032589710> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/person/John+Morris/1448032589710>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Morris"@en .

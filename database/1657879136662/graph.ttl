@@ -1,0 +1,323 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1875-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1875"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1875;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1875>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://data.open.ac.uk/led/millworker>
+        rdfs:label  "millworker"@en .
+
+<http://reference.data.gov.uk/id/day/1913-04-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 April, 1913"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/led/agent/the+choir+of+Lumb+Baptist+Chapel/1657879077696>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir of Lumb Baptist Chapel"@en .
+
+<http://data.open.ac.uk/led/source/My+Life+and+Times,+or+An+Old+Man's+Memories/1656927445099>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The web resource is a typed copy (made in 1961) of the original black bound note book.  The manuscript volume is dated 'Yours faithfully, Moses Heap. 1904'. It had been copied out by a relative - possibly his daughter Mary - some time after the family had moved to Southport in 1909.  All page numbers in this database pertain to the 1961 typed copy."@en;
+        rdfs:label                  "My Life and Times, or An Old Man's Memories"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Rossendale Collection, Rawtenstall Public Libraries, 1961";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "My Life and Times, or An Old Man's Memories";
+        <http://purl.org/ontology/bibo/number>
+                "RC 942 ROS";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Moses+Heap/1656927445136> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/c5d52dc30a8cd3f7db456859623dd48a/1657879077673>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''old tunes''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rossendale>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/sacred+vocal> , <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'old+tunes'/1657879077650>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+of+Lumb+Baptist+Chapel/1657879077696> .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/yeast+dealer>
+        rdfs:label  "yeast dealer"@en .
+
+<http://data.open.ac.uk/led/lexp/1657879136662>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/7336d6d1a6c565d323c56d4c04853f8b>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "52";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/fd9668b590779f258887ad9b4da08e90>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/18Ll-uu-uu/to/19Ee-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-07-21T10:41:15.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2022-07-15T09:58:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c5d52dc30a8cd3f7db456859623dd48a/1657879077673>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/7336d6d1a6c565d323c56d4c04853f8b> .
+
+<http://data.open.ac.uk/led/place/fd9668b590779f258887ad9b4da08e90>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lumb Baptist Chapel, Lumb, Rossendale, Lancashire"@en;
+        <http://purl.org/dc/terms/description>
+                "Lumb Baptist Chapel, Lumb, Rossendale, Lancashire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Rossendale> , <http://dbpedia.org/resource/Lancashire> .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/time/edtf/1900-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/interval/18Ll-uu-uu/to/19Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between late 19th Century and early 20th Century"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/18Ll-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/19Ee-uu-uu> .
+
+<http://reference.data.gov.uk/id/year/1875>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1875"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/7336d6d1a6c565d323c56d4c04853f8b>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">I admire the old singers (the Deighn Layrocks, or Larks of Dean] - with all their faults for we must make great allowances for their doings, learning was at a very low ebb in their day. Had these men had the same chance of education as we now enjoy, no doubt they would have achieved greater things there is still the same blood in the valley, but I am sorry to say, they have not the same spirit of their forefather's. As a speciman [<em>sic</em>] - a few years ago, I went over to Lumb Chapel on purpose to hear the old tunes, but I was greatly disappointed. I said to a friend, How is it that they have sung those tunes so badly - Well, he said, the fact lies just here, the Choir were desired to sing the old tunes - which was against their mind, therefore they were careless about doing them right. My visit to Lumb, contrasts very much with Mr. Newbigging's Visit - when he tells of being so charmed at Lumb Charity Sermons, but I think they must have been at their best just then - for some time after - we hear of him deploring the change at Lumb Baptist Chapel.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'My Life and Times, or An Old Man's Memories' pp. 52 (208 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/My+Life+and+Times,+or+An+Old+Man's+Memories/1656927445099>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "52" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/agent/Moses+Heap/1656927445136>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Moses Heap"@en .
+
+<http://data.open.ac.uk/led/music/'old+tunes'/1657879077650>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'old tunes'"@en;
+        <http://purl.org/dc/terms/title>
+                "'old tunes'" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1925-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1925"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1925;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://dbpedia.org/resource/Bacup>
+        rdfs:label  "Bacup"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2022-07-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Moses Heap"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/yeast+dealer> , <http://data.open.ac.uk/led/millworker>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1824-05-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Bacup>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1913-04-24>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Southport>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Heap";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Moses" .
+
+<http://data.open.ac.uk/led/musicgenre/sacred+vocal>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "sacred vocal"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/time/edtf/18Ll-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1875-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://reference.data.gov.uk/id/day/1824-05-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 May, 1824"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://data.open.ac.uk/time/edtf/19Ee-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 20th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1900-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1925-uu-uu> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://dbpedia.org/resource/Rossendale>
+        rdfs:label  "Rossendale"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://dbpedia.org/resource/Lancashire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lancashire"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .

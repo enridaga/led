@@ -1,0 +1,245 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://reference.data.gov.uk/id/year/1771>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1771"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Sonata>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Sonata"@en .
+
+<http://bnb.data.bl.uk/id/person/RibeiroAlvaro1947->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Alvaro Ribeiro"@en .
+
+<http://data.open.ac.uk/led/source/Letter+from+Charles+Burney+to+Christoph+Daniel+Ebeling,+Nov.+1771/1412176810699>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Charles Burney to Christoph Daniel Ebeling, Nov. 1771"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/005634860>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Charles Burney to Christoph Daniel Ebeling, Nov. 1771";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Charles_Burney> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/harpsichord+music/1412177009734/1412177009751>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'harpsichord music'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Harpsichord>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Charles_Burney>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/harpsichord+music/1412177009734> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1726-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1726"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1726;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<http://data.open.ac.uk/time/edtf/1771-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1771"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1771;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1771>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Carl Philipp Emanuel Bach"@en , "C. P. E. Bach" .
+
+<http://data.open.ac.uk/time/edtf/1991-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1991"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1991> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/led/lexp/1412156184655>
+        rdf:type               led:ListeningExperience;
+        led:has_evidence_text  "I know so much already of the candour of your Mind, & the soundness of your judgement, that I will venture to give you my profession de Foi, relative to the merits of your Countrymen. I have ever regarded them as profound, not only in Music, but in other arts & sciences; & so great is their industry, that they seem more frequently to go to the bottom of the things abt wch they enquire, than any other people of Europe... As to music I should not hesitate to give it as my opinion, that they are the first people in Europe at present both for the Composition & performance of Instrumental Music. There are several of your Countrymen, but not mentioned in your Essay, or letter, whose musical productions & performances have given me great delight. Such as Abel, Schobert, Echard, Eichner, Fischer, Wagenseil, Schwindl, Hayden, &c. Abel has been many years in England, has composed excellent symphonies & Quartets for Violins, &c, with two Books of very pleasing sonatas for the Harpsichord, accompanied by a violin and violincello. & he is, moreover, the most perfect player of the Viol de gamba I have ever heard. Indeed his taste is the most exquisite & refined, & his judgement & learning the most perfect that I have ever met united in one performer; & I can conceive no one able to surpass him on any Instrument, except his fellow student, Mr C. P. E. Bach, who stands so high in my opinion, that I should not scruple to pronounce him the greatest writer for the Harpsichord now alive, or that has ever existed as far as I am able to judge, by a comparison of his works with those of others, & by my own Feelings when I hear them performed. I am very happy in finding that my opinions of almost all the Composers you have named, with whose works I am acquainted, are so like yours, that if you had not seen many of them in my Book before I had the honour of your Letter, it might seem to me an affected complaisance towards your decisions: but you will perceive from my writing that we think alike of Jomelli, Galuppi, Piccini, Sacchini, L'Atilla, &c. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Charles+Burney+to+Christoph+Daniel+Ebeling,+Nov.+1771/1412176810699>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Charlotte/claims>;
+        led:pages              "102-103";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Charles_Burney>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1771-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-10-01T09:36:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/harpsichord+sonatas/1412176898947/1412176898966> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/harpsichord+music/1412177009734/1412177009751> .
+
+<http://reference.data.gov.uk/id/year/1991>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Oxford>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Oxford"@en .
+
+<http://data.open.ac.uk/led/person/Abel/1412176898960>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Abel" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/led/organization/Clarendon+Press/1410345138195>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Clarendon Press"@en .
+
+<http://dbpedia.org/resource/Harpsichord>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Harpsichord"@en .
+
+<http://bnb.data.bl.uk/id/resource/005634860>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The letters of Dr Charles Burney"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1991-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Clarendon+Press/1410345138195>;
+        <http://purl.org/dc/terms/title>
+                "The letters of Dr Charles Burney";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/RibeiroAlvaro1947->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0198126875"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Oxford>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "1";
+        <http://schema.org/author>  <http://dbpedia.org/resource/Charles_Burney> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/harpsichord+sonatas/1412176898947/1412176898966>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'harpsichord sonatas'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Sonata>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Harpsichord>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Charles_Burney>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/harpsichord+sonatas/1412176898947> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://dbpedia.org/resource/Shrewsbury>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Shrewsbury"@en .
+
+<http://data.open.ac.uk/led/music/harpsichord+sonatas/1412176898947>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "harpsichord sonatas"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Abel/1412176898960>;
+        <http://purl.org/dc/terms/title>
+                "harpsichord sonatas";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Abel/1412176898960> .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/time/edtf/1814-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1814"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1814;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/led/music/harpsichord+music/1412177009734>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "harpsichord music"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach>;
+        <http://purl.org/dc/terms/title>
+                "harpsichord music";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Carl_Philipp_Emanuel_Bach> .
+
+<http://dbpedia.org/resource/Charles_Burney>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Dr Charles Burney"@en , "Charles Burney"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Writer> , <http://data.open.ac.uk/led/thing/musicologist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           <urn:x-isco08:2> , <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1726-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Shrewsbury>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1814-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Burney";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Charles";
+        <http://xmlns.com/foaf/0.1/name>
+                "Charles Burney";
+        <http://xmlns.com/foaf/0.1/title>
+                "Dr "@en .
+
+<http://data.open.ac.uk/led/thing/musicologist>
+        rdfs:label  "musicologist"@en .

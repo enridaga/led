@@ -1,0 +1,510 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Calais>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Calais"@en .
+
+<http://data.open.ac.uk/led/thing/QAIMNS+nurse>
+        rdfs:label  "QAIMNS nurse"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+Edith+Appleton,+26+Dec.+1918/1397144939326>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of Edith Appleton, 26 Dec. 1918"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+Nurse+at+the+Front>;
+        <http://purl.org/dc/terms/title>
+                "Diary of Edith Appleton, 26 Dec. 1918";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562> .
+
+<http://dbpedia.org/resource/Deal,_Kent>
+        rdfs:label  "Deal, Kent"@en .
+
+<http://data.open.ac.uk/led/performance/Auld+Lang+Syne+(,+performance+of)/1397145053526>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Auld Lang Syne'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Calais>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034> .
+
+<http://data.open.ac.uk/led/occupation/scholar>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "scholar"@en .
+
+<http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Edith Appleton"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/QAIMNS+nurse> , <http://data.open.ac.uk/led/occupation/nurse>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1877-06-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Deal,_Kent>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1958-02-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Brighstone>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Appleton";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edith" .
+
+<http://dbpedia.org/resource/Christian_Charles_Josias_von_Bunsen>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Baron von Bunsen"@en , "Christian Karl Josias von Bunsen"@en , "Christian Charles Josias, Baron von Bunsen"@en , "Christian Charles Josias von Bunsen"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Diplomat> , <http://data.open.ac.uk/led/thing/diplomat> , <http://dbpedia.org/resource/Theologian> , <http://data.open.ac.uk/led/occupation/scholar>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Protestantism> , <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1791-08-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Korbach>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1860-11-28>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Bonn>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Prussia> , <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bunsen";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Christian Karl Josias von";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Baron von Bunsen"@en .
+
+<http://data.open.ac.uk/led/musicologist>
+        rdfs:label  "Musicologist"@en , "musicologist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/performance/The+Soldier's+Farewell+(,+performance+of)/1397145000728>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Soldier's Farewell'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Calais>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Soldier's+Farewell/1397145000720> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/music/The+Soldier's+Farewell/1397145000720>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Soldier's Farewell"@en;
+        <http://purl.org/dc/terms/title>
+                "The Soldier's Farewell" .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://data.open.ac.uk/led/thing/diplomat>
+        rdfs:label  "diplomat"@en .
+
+<http://data.open.ac.uk/led/person/Gerhard/1433854484092>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Gerhard"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/Art+Historian>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gerhard";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male" .
+
+<http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Auld Lang Syne"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>;
+        <http://purl.org/dc/terms/title>
+                "Auld Lang Syne";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_> .
+
+<http://dbpedia.org/resource/Kingdom_of_Prussia>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Prussia"@en .
+
+<http://data.open.ac.uk/led/agent/John+Courtney/1446632946883>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "John Courtney"@en;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1734-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1806-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Courtney";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://dbpedia.org/resource/Simon_&_Schuster>
+        rdfs:label  "Simon & Schuster"@en .
+
+<http://dbpedia.org/resource/Brighstone>
+        rdfs:label  "Brighstone"@en .
+
+<http://data.open.ac.uk/led/Art+Historian>
+        rdfs:label  "Art Historian"@en .
+
+<http://data.open.ac.uk/time/edtf/1734-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1734"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1734;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://data.open.ac.uk/led/Diplomat>
+        rdfs:label  "Diplomat"@en .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .
+
+<http://reference.data.gov.uk/id/day/1918-12-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 December, 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://data.open.ac.uk/led/occupation/nurse>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "nurse"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://reference.data.gov.uk/id/day/1860-11-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 November, 1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/performance/God+Save+the+King+(,+performance+of)/1396287549214>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "God Save the King"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Gerhard/1433854484092> , <http://dbpedia.org/resource/Christian_Charles_Josias_von_Bunsen>;
+        <http://purl.org/dc/terms/title>
+                "God Save the King";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Gerhard/1433854484092> , <http://dbpedia.org/resource/Christian_Charles_Josias_von_Bunsen>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Courtney/1446632946883> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/performance/God+Save+the+King+(,+performance+of)/1397145097604>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'God Save the King'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Calais>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/National_anthem>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/performance/God+Save+the+King+(,+performance+of)/1396287549214> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1791-08-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 August, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://bnb.data.bl.uk/id/person/CowenRuth>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ruth Cowen"@en .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://dbpedia.org/resource/Maiden_Newton>
+        rdfs:label  "Maiden Newton"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/2013-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2013"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2013;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2013>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://reference.data.gov.uk/id/day/1893-12-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 December, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/time/edtf/1877-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1877"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1877;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/day/1958-02-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 February, 1958"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1958;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://data.open.ac.uk/led/source/A+Nurse+at+the+Front>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "A Nurse at the Front"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2013-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Simon_&_Schuster>;
+        <http://purl.org/dc/terms/title>
+                "A Nurse at the Front";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/CowenRuth>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Harrow_on_the_Hill>
+        rdfs:label  "Harrow on the Hill"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Burns"@en .
+
+<http://data.open.ac.uk/led/performance/Christmas+carols+(,+performance+of)/1397145028364>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Christmas carols'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Calais>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Christmas+carols/1396282831489> .
+
+<http://dbpedia.org/resource/National_anthem>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "National anthem"@en .
+
+<http://dbpedia.org/resource/Bonn>
+        rdfs:label  "Bonn"@en .
+
+<http://dbpedia.org/resource/Korbach>
+        rdfs:label  "Korbach"@en .
+
+<http://dbpedia.org/resource/Theologian>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Theologian"@en .
+
+<http://reference.data.gov.uk/id/day/1978-05-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 May, 1978"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1978;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.78> .
+
+<http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Sylvia Townsend Warner"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/musicologist> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1893-12-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Harrow_on_the_Hill>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1978-05-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Maiden_Newton>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Warner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sylvia Townsend" .
+
+<http://data.open.ac.uk/time/edtf/1806-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1806"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1806;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.06> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/year/2013>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1397145158320>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_evidence_text  "Christmas was a great success with our men.... In the evening they gave a concert to which we were all invited. Really it is wonderful what can be done in a train. All their festivities were held in ‘P’ coach, which is at other times a ward of 36 beds. Some of the beds had been unhinged and made into a long table down the centre, and the other beds were folded up. For the concert a stage had been erected at one end of the coach and curtains borrowed from the ward where they are used to divide the half used for officers from that used for other ranks.\r\nThe rule of the concert was that everyone had to do something. Some sang well - some very badly - and some did card tricks. For me quite the funniest thing was the minstrel troop called ‘Corporal Fox and his Lunies’. They were dressed anyhow, in pyjamas, white drills - and their faces were well blacked. One, our cook, played the big drum - a muffled coal hammer on a large round tea-tray. Another played the cymbals, which were a couple of metal ashtrays which he banged together. The small drum was a large biscuit tin and a couple of pieces of firewood. Another beat a huge hanging poker with the small iron used for lifting the round off the stove, one man beat a gong and Corporal Fox conducted. Behind the scenes the gramophone played some gooey piece and the band played to the tune of it. Corporal Fox was funny and the whole thing had everyone weak with laughter. At the end, someone seized a big bunch of paper roses on prickly stalks which we had made as decorations and presented them to the conductor….\r\n[W]e finished up with ‘The Soldier’s Farewell’, two Christmas carols, ‘Auld Lang Syne’(all holding hands crossways) and ‘God Save the King’. As good luck would have it the train was still during the whole concert and only moved at 11.45, just when we were singing ‘God save the King’.\r\n"@en;
+        led:has_medium         led:Medium.Live , led:Medium.Playback;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+Edith+Appleton,+26+Dec.+1918/1397144939326>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "288-290";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Edith+Appleton/1396287362562>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Calais>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1918-12-26>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-04-10T15:52:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/The+Soldier's+Farewell+(,+performance+of)/1397145000728> , <http://data.open.ac.uk/led/performance/Auld+Lang+Syne+(,+performance+of)/1397145053526> , <http://data.open.ac.uk/led/performance/Christmas+carols+(,+performance+of)/1397145028364> , <http://data.open.ac.uk/led/performance/God+Save+the+King+(,+performance+of)/1397145097604> .
+
+<http://data.open.ac.uk/led/music/Christmas+carols/1396282831489>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Christmas carols"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johann_Sebastian_Bach>;
+        <http://purl.org/dc/terms/title>
+                "Christmas carols";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Johann_Sebastian_Bach>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/20c7afe6-e490-4348-bfa8-8f08376fe009#_> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

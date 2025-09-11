@@ -1,0 +1,336 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.19:10:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "19:10:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/led/agent/the+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564367717>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "the congregation of Holy Trinity Church, Tredegar Square"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Square";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "the congregation of Holy Trinity Church, Tredegar" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/music/Anglican+church+music/1554234722764>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Anglican church music"@en;
+        <http://purl.org/dc/terms/title>
+                "Anglican church music" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "It is not known who transcribed Croswell’s diaries, or when.  The British Library record was created in 1960.  The pages are unnumbered, but most records are individually numbered.  Record numbers have therefore been used in place of page numbers, where available.  A further transcript of the diaries is held at the Bodleian Library."@en;
+        rdfs:label                  "Transcript of the diaries of Henry Croswell"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "British Library";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the British Library."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Transcript of the diaries of Henry Croswell";
+        <http://purl.org/ontology/bibo/number>
+                "000826807, C.194.c.113 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/lexp/1552565390513>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Henry Croswell (1840–93) kept a record of his visits to churches in London over a period of more than twelve years (1872–85).  He made methodical notes about the number of clergy, the churchmanship, the congregation, the sermon and the church architecture, as well as commenting on the music that he heard (the organ, the hymns and the choir).  The above listening experience has been extracted from one of these records.\n‘Church Hymns’ (1871) and ‘Church Hymns with Tunes’ (1874) were publications of the Society for Promoting Christian Knowledge (S.P.C.K.), under the musical editorship of Arthur Sullivan (1842–1900).  This collection was the most successful of the competitors to ‘Hymns Ancient and Modern’ in the late nineteenth century, containing a larger number of hymns overall, and more hymns specifically intended for children and young people."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/25490de4c0993feb07b364f0c16a60be>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "324";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564367717> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d5860508c772bf37544db5daefc48add>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/1883-03-04T19:10:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-15T08:03:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-03-14T12:09:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/5a686247563ee78fb3109a2aacca6cf5/1552564835705> , <http://data.open.ac.uk/led/performance/00ed448ebbb91d58ceebd1c95bbd2b06/1552564742962> , <http://data.open.ac.uk/led/performance/27eb22f0bc28e51dce7c9bcd06571f71/1552564648732>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT40M>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/25490de4c0993feb07b364f0c16a60be> .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://bnb.data.bl.uk/id/person/WesleySamuelSebastian1810-1876>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Samuel Sebastian Wesley"@en .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1883-03-04T19:10:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 March, 1883, 07:10 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.19:10:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.83> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry Croswell"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/assurance+clerk> , <http://data.open.ac.uk/led/sunday+school+teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1840-10-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/West_Drayton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Croswell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.83>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  83 .
+
+<http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564742981>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir organist and congregation of Holy Trinity Church, Tredegar Square"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/music/'The+Church's+one+Foundation'/1554234752681>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'The Church's one Foundation'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/WesleySamuelSebastian1810-1876>;
+        <http://purl.org/dc/terms/title>
+                "'The Church's one Foundation'";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/WesleySamuelSebastian1810-1876> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/00ed448ebbb91d58ceebd1c95bbd2b06/1552564742962>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'hymns selected from 'Church Hymns''"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Mile_End>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Church_organ> , <http://data.open.ac.uk/led/thing/church+choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> , <http://data.open.ac.uk/led/agent/the+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564367717>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/hymns+selected+from+'Church+Hymns'/1547656962072>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564742981> .
+
+<http://dbpedia.org/resource/Anglican_church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anglican church music"@en .
+
+<http://dbpedia.org/resource/Mile_End>
+        rdfs:label  "Mile End"@en .
+
+<http://dbpedia.org/resource/Church_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Church organ"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/sunday+school+teacher>
+        rdfs:label  "sunday school teacher"@en , "Sunday School teacher"@en .
+
+<http://data.open.ac.uk/led/performance/27eb22f0bc28e51dce7c9bcd06571f71/1552564648732>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Anglican church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Mile_End>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Anglican_church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Church_organ> , <http://data.open.ac.uk/led/thing/church+choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> , <http://data.open.ac.uk/led/agent/the+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564367717>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Anglican+church+music/1554234722764>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564648761> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/performance/5a686247563ee78fb3109a2aacca6cf5/1552564835705>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''The Church's one Foundation''"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Mile_End>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Church_organ> , <http://data.open.ac.uk/led/thing/church+choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> , <http://data.open.ac.uk/led/agent/the+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564367717>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'The+Church's+one+Foundation'/1554234752681>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564835723> .
+
+<http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/25490de4c0993feb07b364f0c16a60be>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">We got there at the hymn before the Sermon.</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">O[rgan]. &ndash;&nbsp;Ordinary, in the West Gallery.</p>\n<p class=\"MsoNormal\">H[ymns]. &ndash;&nbsp;Church Hymns including \"The Church's one Foundation &hellip;\"</p>\n<p class=\"MsoNormal\">C[hoir]. &ndash;&nbsp;Rather large, surpliced and well arranged.&nbsp; There was really no means of telling how they sung but most likely it was nice congrgational [<em>sic</em>] singing.</p>\n<p class=\"MsoNormal\">[The congregation numbered] 250 &ndash;&nbsp;[&hellip;]&nbsp;The congregation was singularly scattered.&nbsp; They were unruly in the gallery.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Transcript of the diaries of Henry Croswell' pp. 324 (66 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "324" .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/assurance+clerk>
+        rdfs:label  "assurance clerk"@en .
+
+<http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564835723>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir organist and congregation of Holy Trinity Church, Tredegar Square"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/music/hymns+selected+from+'Church+Hymns'/1547656962072>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymns selected from 'Church Hymns'"@en;
+        <http://purl.org/dc/terms/title>
+                "hymns selected from 'Church Hymns'" .
+
+<http://data.open.ac.uk/time/duration/PT40M>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT40M"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "40 minutes"@en;
+        <http://www.w3.org/2006/time#minutes>
+                "40"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://data.open.ac.uk/led/agent/the+choir+organist+and+congregation+of+Holy+Trinity+Church,+Tredegar+Square/1552564648761>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir organist and congregation of Holy Trinity Church, Tredegar Square"@en .
+
+<http://reference.data.gov.uk/id/day/1840-10-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 October, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/place/d5860508c772bf37544db5daefc48add>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Holy Trinity Church, Tredegar Square, Mile End, East End of London"@en;
+        <http://purl.org/dc/terms/description>
+                "Holy Trinity Church, Tredegar Square, Mile End, East End of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/East_End_of_London> .

@@ -1,0 +1,203 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Kingdom_of_England>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of England"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://reference.data.gov.uk/id/year/1893>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1893"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/place/4cb35c459b2a4e895a64f4318b02f226>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Santo Domingo, Hispanola"@en;
+        <http://purl.org/dc/terms/description>
+                "Santo Domingo, Hispanola"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Santo_Domingo> .
+
+<http://data.open.ac.uk/time/edtf/Century.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/eef9ce4b8d64463d84cc2571c5d0fdbf/1547031559179>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'military drums'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Santo_Domingo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Soldiers/1396530586766>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/military+drums/1518855221720>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/English+soldiers/1547031559209> .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/source/8b64fe71345c03e73c41ae7f029a8496/excerpt/ad236e3476d89f5371f352e9acdeae90>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">[The Battle of Santo Domingo was fought on 1 January 1586 after which the English soldiers occupied and ransacked the city, departing on 1 February. Francis Drake&rsquo;s capture of Santo Domingo, on the Spanish island of Hispaniola, was part of the Anglo-Spanish War]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">[Letter from] Nicholas Clevar to Nicholas Turner, merchant. The captain of a ship of Newhaven come from Sir Fras. Drake, says Drake has taken San Domingo, and that he left there on 22nd January with all the riches of the island, having also taken five great galleons [&hellip;] The Lord Admiral has a letter directed to Roger How, \"delivering the manner of the taking of San Domingo.\" That Sir Francis played with the Spaniards three days, making many false alarms as though he would have landed, and so wearied and tired them, then very secretly landed 800 men in most warlike order a league or two off, and in the meantime his ships \"gave a whole charge,\" whereupon the enemy issued out of the town to defend the landing, when the 800 men cutting between the enemy and the town upon their backs, and striking up their</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;drum</span><span style=\"font-size: 11pt; color: #333333;\">s and displaying ensigns, so amazed them that they were scattered, killed, and spoiled very near 10,000.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from ''America and West Indies: Addenda 1586', in Calendar of State Papers Colonial, America and West Indies: Volume 9, 1675-1676 and Addenda 1574-1674' pp. 28-29 (201 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/'America+and+West+Indies:+Addenda+1586',+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+9,+1675-1676+and+Addenda+1574-1674/1547031367837>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "28-29" .
+
+<http://data.open.ac.uk/led/agent/W.+Noel+Sainsbury/1547031367865>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. Noel Sainsbury"@en .
+
+<http://data.open.ac.uk/led/music/military+drums/1518855221720>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "military drums"@en;
+        <http://purl.org/dc/terms/title>
+                "military drums" .
+
+<http://bnb.data.bl.uk/id/organization/HMSO>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "H.M.S.O"@en .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://data.open.ac.uk/led/lexp/1547031715459>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "British History Online, a digital library created by the Institute of Historical Research and the History of Parliament Trust, includes calendars of state papers in which the listening experience was identified. Calendars are very detailed summaries of documents arranged chronologically, intended as a finding aid. Original documents are often held at the National Archives at Kew. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/8b64fe71345c03e73c41ae7f029a8496/excerpt/ad236e3476d89f5371f352e9acdeae90>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "28-29";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Soldiers/1396530586766>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/4cb35c459b2a4e895a64f4318b02f226>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1586-01-22>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-01-31T15:44:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-09T11:01:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/eef9ce4b8d64463d84cc2571c5d0fdbf/1547031559179>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8b64fe71345c03e73c41ae7f029a8496/excerpt/ad236e3476d89f5371f352e9acdeae90> .
+
+<http://data.open.ac.uk/led/person/Soldiers/1396530586766>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Soldiers"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/soldier>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Soldier";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male" .
+
+<http://data.open.ac.uk/led/agent/English+soldiers/1547031559209>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "English soldiers"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.86>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  86 .
+
+<http://data.open.ac.uk/led/source/'America+and+West+Indies:+Addenda+1586',+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+9,+1675-1676+and+Addenda+1574-1674/1547031367837>
+        rdf:type           <http://purl.org/ontology/bibo/ReferenceSource> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "'America and West Indies: Addenda 1586', in Calendar of State Papers Colonial, America and West Indies: Volume 9, 1675-1676 and Addenda 1574-1674"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/reference_work>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol9/pp28-29.>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/HMSO>;
+        <http://purl.org/dc/terms/title>
+                "'America and West Indies: Addenda 1586', in Calendar of State Papers Colonial, America and West Indies: Volume 9, 1675-1676 and Addenda 1574-1674";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/W.+Noel+Sainsbury/1547031367865>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "9" .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Santo_Domingo>
+        rdfs:label  "Santo Domingo"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol9/pp28-29.>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2019-01-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British History Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol9/pp28-29."^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1586-01-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 January, 1586"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.15>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1586;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

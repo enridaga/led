@@ -1,0 +1,173 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Oklahoma>
+        rdfs:label  "Oklahoma"@en .
+
+<http://data.open.ac.uk/led/music/Memphis+Blues/1447162549429>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Memphis Blues"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/W._C._Handy>;
+        <http://purl.org/dc/terms/title>
+                "Memphis Blues";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/W._C._Handy> .
+
+<http://bnb.data.bl.uk/id/resource/013674909>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Ragged but right / Lynn Abbott"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2007-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>;
+        <http://purl.org/dc/terms/title>
+                "Ragged but right / Lynn Abbott";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SeroffDoug> , <http://bnb.data.bl.uk/id/person/AbbottLynn1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "1578069017"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Jackson>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> , <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/performance/f51c4e3979e57ab7f13734af33fc88ef/1447162549442>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Memphis Blues'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Oklahoma>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Blues>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Prisoners/1432033439255>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Memphis+Blues/1447162549429>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/L.+K.+Baker/1447162549446> , <http://data.open.ac.uk/led/agent/101+Ranch+band/1447162549450> .
+
+<http://bnb.data.bl.uk/id/person/SeroffDoug>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Doug Seroff"@en .
+
+<http://data.open.ac.uk/led/lexp/1447162644469>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Response of prisoners to the Blues in Oklahoma."@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/fc20366bf4c19515408f5e6263cf2078>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "188";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Prisoners/1432033439255>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/8a01e40eee1446023a770bf075dfb6b8>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1915-10-07>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-11-20T17:27:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-10T13:37:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/f51c4e3979e57ab7f13734af33fc88ef/1447162549442>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/fc20366bf4c19515408f5e6263cf2078> .
+
+<http://data.open.ac.uk/led/agent/L.+K.+Baker/1447162549446>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "L. K. Baker"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/source/beac738b2bd135a25d03ae93bb045e8d/excerpt/fc20366bf4c19515408f5e6263cf2078>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Mr. Jos. C. Miller, the lion-hearted joint owner of this aggregation, carried several features of the show to the State prison there to entertain the prisoners and each number was roundly applauded. The music was by Prof. Baker's band. Jess Willard, the big champion, was presented amid cheers. Also cowboys and cow girls came in for great applause.</p>\r\n<p>Our old plantation show was well received and we are well pleased to know we were able to shed a ray of sunshine in the lives of those poor fellows. When our band struck up the \"Memphis Blues\" it was a riot.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Ragged but right / Lynn Abbott' pp. 188 (100 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/013674909>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "188" .
+
+<http://data.open.ac.uk/led/place/8a01e40eee1446023a770bf075dfb6b8>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "McAlister State Prison, Oklahoma"@en;
+        <http://purl.org/dc/terms/description>
+                "McAlister State Prison, Oklahoma"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Oklahoma> .
+
+<http://data.open.ac.uk/led/person/Prisoners/1432033439255>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Prisoners"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prisoners" .
+
+<http://bnb.data.bl.uk/id/place/Jackson>
+        rdfs:label  "Jackson"@en .
+
+<http://data.open.ac.uk/time/edtf/2007-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2007"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2007> .
+
+<http://dbpedia.org/resource/Blues>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Blues"@en .
+
+<http://bnb.data.bl.uk/id/person/AbbottLynn1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lynn Abbott"@en .
+
+<http://reference.data.gov.uk/id/year/2007>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/101+Ranch+band/1447162549450>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "101 Ranch band"@en .
+
+<http://dbpedia.org/resource/W._C._Handy>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "W. C. Handy"@en .
+
+<http://reference.data.gov.uk/id/day/1915-10-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 October, 1915"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1915;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://bnb.data.bl.uk/id/agent/UniversityPressofMississippi>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "University Press of Mississippi"@en .

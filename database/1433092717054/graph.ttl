@@ -1,0 +1,626 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/Gavotte/1413214557041>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Gavotte"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Lulli/1433092335380> , <http://dbpedia.org/resource/Johann_Sebastian_Bach> , <http://dbpedia.org/resource/Sergei_Prokofiev>;
+        <http://purl.org/dc/terms/title>
+                "Gavotte";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Lulli/1433092335380> , <http://dbpedia.org/resource/Johann_Sebastian_Bach> , <http://dbpedia.org/resource/Sergei_Prokofiev> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/0922bb60fe0d8ed8891852749787fbde>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>We were entertained at a grand banquet at the Sorbonne in the evening, which was attended also by the British Ambassador and M. Briand. I had the pleasure of sitting beside Dr. Saint-Saens, who, in spite of his years, bore himself with sparkling vivacity, and was one of the lions of the occasion. There were numerous toasts and speeches. The banquet fittingly concluded with a concert given in the Great Hall of the College, when, under the direction of M. Gabriel Pierne, the fine Colonne Orchestra was heard in a well-chosen selection, and artists from the Opera-Comique sang. A feature of the programme was some dances, charmingly presented by a troupe under the direction of M. Paul Vidal, comprising among other items a Gavotte of Lulli, a Rigaudon of Dardanus, and a Menuet of Handel. Dr. Saint-Saens won much applause by his performance of his Fantasia for Pianoforte, \"Africa,\" accompanied by the orchestra, and concluded the programme by conducting a brilliant interpretation of Berlioz's \"Marche Hongroise.\" The medal of the University of Paris was conferred upon Dr. Saint-Saens amid the prolonged applause of the audience.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport' pp. 270-1 (185 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "270-1" .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://dbpedia.org/resource/Sergei_Prokofiev>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Sergei Prokofiev"@en , "Sergey Prokofiev"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performer> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Musician>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Russian_Orthodox_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1891-04-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Donetsk_Oblast>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Moscow>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Russian_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Prokofiev";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Sergei";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Sergei Prokofiev"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Menuet/1433092442739/1433092442750>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Menuet'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Menuet/1433092442739>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81f8f40f-0cd4-4961-9415-b8d2c982868e#_> .
+
+<http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Frederick Bridge"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/role/organist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1844-12-05>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1924-03-18>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bridge";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frederick" .
+
+<http://data.open.ac.uk/led/music/March+Hongroise/1433092671132>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "March Hongroise"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Hector_Berlioz>;
+        <http://purl.org/dc/terms/title>
+                "March Hongroise";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Hector_Berlioz> .
+
+<http://reference.data.gov.uk/id/day/1953-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/March+Hongroise/1433092671132/1433092671143>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'March Hongroise'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/March_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/March+Hongroise/1433092671132>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns> .
+
+<http://reference.data.gov.uk/id/day/1891-04-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 April, 1891"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1891;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Rigaudon/1433092385484/1433092385500>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Rigaudon'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Rigaudon/1433092385484>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81f8f40f-0cd4-4961-9415-b8d2c982868e#_> .
+
+<http://dbpedia.org/resource/Halle>
+        rdfs:label  "Halle"@en .
+
+<http://musicbrainz.org/artist/81f8f40f-0cd4-4961-9415-b8d2c982868e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "l'Orchestre Colonne"@en .
+
+<http://dbpedia.org/resource/Algiers>
+        rdfs:label  "Algiers"@en .
+
+<http://data.open.ac.uk/led/performer>
+        rdfs:label  "performer"@en .
+
+<http://dbpedia.org/resource/Hector_Berlioz>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Hector Berlioz" , "Berlioz" , "HectorBerlioz" , "Hector Berlioz"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1803-12-11>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1869-03-08>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Berlioz";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hector" .
+
+<http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/westminsterpilgr00briduoft>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>;
+        <http://purl.org/dc/terms/title>
+                "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> .
+
+<http://reference.data.gov.uk/id/day/1835-10-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 October, 1835"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1835;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<https://archive.org/details/westminsterpilgr00briduoft>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/westminsterpilgr00briduoft"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/music/Songs/1433092486828>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Songs"@en;
+        <http://purl.org/dc/terms/title>
+                "Songs" .
+
+<http://reference.data.gov.uk/id/day/1759-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1759"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1759;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://reference.data.gov.uk/id/day/1869-03-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 March, 1869"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1869;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.69> .
+
+<http://data.open.ac.uk/led/music/Menuet/1433092442739>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Menuet"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/George_Frideric_Handel>;
+        <http://purl.org/dc/terms/title>
+                "Menuet";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/George_Frideric_Handel> .
+
+<http://dbpedia.org/resource/Moscow>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Moscow"@en .
+
+<http://data.open.ac.uk/led/music/Fantasia+for+Pianoforte/1433092607544>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Fantasia for Pianoforte"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/dc/terms/title>
+                "Fantasia for Pianoforte";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns> .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/La_C%C3%B4te-Saint-Andr%C3%A9>
+        rdfs:label  "La Côte-Saint-André"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs/1433092486828/1433092486841>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Songs'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Songs/1433092486828>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Singers+of+the+Opera-comique/1433092486853> .
+
+<http://data.open.ac.uk/time/edtf/1907-05-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "May, 1907"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1907;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.07> .
+
+<http://dbpedia.org/resource/George_Frideric_Handel>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Handel" , "George Frideric Handel"@en , "Handel"@en , "George Friderich Handel"@en , "Georg Friedrich Haendel"@en , "George Frideric Handel";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1685-02-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Halle>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1759-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Handel";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George Frideric";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Georg Friedrich Haendel"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Fantasia+for+Pianoforte/1433092607544/1433092607556>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Fantasia for Pianoforte'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Fantasia+for+Pianoforte/1433092607544>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81f8f40f-0cd4-4961-9415-b8d2c982868e#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Dance_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Dance music"@en .
+
+<http://bnb.data.bl.uk/id/person/Saint-Sa%C3%ABnsCamille1835-1921>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Camille Saint-Saëns"@en .
+
+<http://reference.data.gov.uk/id/day/1685-02-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 February, 1685"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1685;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/led/person/Lulli/1433092335380>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lulli" .
+
+<http://dbpedia.org/resource/Russian_Orthodox_Church>
+        rdf:type    led:Belief;
+        rdfs:label  "Russian Orthodox Church"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.07>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/March_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "March (music)"@en .
+
+<http://data.open.ac.uk/led/person/Dardanus/1433092385496>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Dardanus" .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "NOVELLO AND COMPANY Limited"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://dbpedia.org/resource/Donetsk_Oblast>
+        rdfs:label  "Donetsk Oblast"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/lexp/1433092717054>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/0922bb60fe0d8ed8891852749787fbde>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "270-1";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1907-05-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-16T12:04:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-31T17:18:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Rigaudon/1433092385484/1433092385500> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Menuet/1433092442739/1433092442750> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/March+Hongroise/1433092671132/1433092671143> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs/1433092486828/1433092486841> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Fantasia+for+Pianoforte/1433092607544/1433092607556> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Gavotte/1413214557041/1433092335385>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/850422eaed0661f64d0fe9a223b2072a/excerpt/0922bb60fe0d8ed8891852749787fbde> .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Camille Saint-Saens"@en , "Saint-Saens" , "Camille Saint-Saëns"@en , "Camille Saint-Seans"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Conducting> , <http://data.open.ac.uk/led/role/organist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1835-10-09>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1921-12-16>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Algiers>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://musicbrainz.org/artist/4137c070-15b2-4d00-a9f0-3517d02a9ba8#_> , <http://bnb.data.bl.uk/id/person/Saint-Sa%C3%ABnsCamille1835-1921>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Saint-Saens";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Camille" .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://data.open.ac.uk/led/agent/Singers+of+the+Opera-comique/1433092486853>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Singers of the Opera-comique"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/music/Rigaudon/1433092385484>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Rigaudon"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Dardanus/1433092385496>;
+        <http://purl.org/dc/terms/title>
+                "Rigaudon";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Dardanus/1433092385496> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.44>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  44 .
+
+<http://reference.data.gov.uk/id/day/1844-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1844"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1844;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.44> .
+
+<http://reference.data.gov.uk/id/day/1803-12-11>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "11 December, 1803"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.11>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1803;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://reference.data.gov.uk/id/day/1924-03-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 March, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://reference.data.gov.uk/id/day/1921-12-16>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "16 December, 1921"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.16>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1921;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.21> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://musicbrainz.org/artist/4137c070-15b2-4d00-a9f0-3517d02a9ba8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Camille Saint-Saëns"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Gavotte/1413214557041/1433092335385>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Gavotte'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> , <http://dbpedia.org/resource/Camille_Saint-Sa%C3%ABns>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Gavotte/1413214557041>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/81f8f40f-0cd4-4961-9415-b8d2c982868e#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .

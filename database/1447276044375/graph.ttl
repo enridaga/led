@@ -1,0 +1,199 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://reference.data.gov.uk/id/day/1846-07-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 July, 1846"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1846;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.46> .
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://dbpedia.org/resource/Harlech>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Harlech"@en .
+
+<http://dbpedia.org/resource/Songwriter>
+        rdfs:label  "Songwriter"@en .
+
+<http://reference.data.gov.uk/id/day/1931-12-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 December, 1931"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1931;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.31> .
+
+<http://data.open.ac.uk/led/agent/Alfred+Perceval+Graves/1447275883289>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Alfred Perceval Graves"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/folklorist> , <http://dbpedia.org/resource/Songwriter> , <http://dbpedia.org/resource/Poet>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1846-07-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Dublin>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1931-12-27>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Graves";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Alfred Perceval" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/358331fb6822f19eac99a3ffee317192/excerpt/4a76c761d9f90daaf98a0990fe9f72d3>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>There is a gathering of lovers of Folk Song here at Harlech, Granville Bantock &amp; Mrs Kennedy Fraser &amp; her daughter Patuffa who has done so much for Hebridian music[:] the mother by her settings of the airs &amp; lecturing upon + singing them, the daughter by singing them delightfully to the Celtic Harp [-] the small Irish one which all our Folk Singers should have[.]</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter, Alfred Perceval Graves to John Lloyd Williams, 8 August 1917' (62 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter,+Alfred+Percival+Graves+to+John+Lloyd+Williams,+8+August+1917/1447275696417>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/lexp/1447276044375>
+        rdf:type            led:ListeningExperience;
+        rdfs:comment        "Arthur Perceval Graves hopes to entice John Lloyd Williams to a gathering of prominent folk-song experts."@en;
+        led:has_medium      led:Medium.Live;
+        led:is_reported_in  <http://data.open.ac.uk/led/source/358331fb6822f19eac99a3ffee317192/excerpt/4a76c761d9f90daaf98a0990fe9f72d3>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Alfred+Perceval+Graves/1447275883289>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Harlech>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1917-08-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-09T09:57:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2016-11-09T09:55:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-11T21:07:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/a4f14283314ad8d9353ce19ce8fde3b7/1447275977135>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/358331fb6822f19eac99a3ffee317192/excerpt/4a76c761d9f90daaf98a0990fe9f72d3> .
+
+<http://dbpedia.org/resource/Harp>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Harp"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/source/Letter,+Alfred+Percival+Graves+to+John+Lloyd+Williams,+8+August+1917/1447275696417>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter, Alfred Perceval Graves to John Lloyd Williams, 8 August 1917"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "Letter, Alfred Perceval Graves to John Lloyd Williams, 8 August 1917";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW AL1/5/96";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Alfred+Perceval+Graves/1447275883289> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/folklorist>
+        rdfs:label  "Folklorist"@en .
+
+<http://data.open.ac.uk/time/edtf/1917-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1917"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1917;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.17> .
+
+<http://data.open.ac.uk/led/agent/Patuffa+Kennedy-Fraser/1447275977140>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Patuffa Kennedy-Fraser"@en .
+
+<http://data.open.ac.uk/led/performance/a4f14283314ad8d9353ce19ce8fde3b7/1447275977135>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Hebridean Songs'"@en;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Harlech>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Harp> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Alfred+Perceval+Graves/1447275883289>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Hebridean+Songs/1408109432098>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Patuffa+Kennedy-Fraser/1447275977140> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/music/Hebridean+Songs/1408109432098>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Hebridean Songs"@en;
+        <http://purl.org/dc/terms/title>
+                "Hebridean Songs" .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.46>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  46 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.22>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  22 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

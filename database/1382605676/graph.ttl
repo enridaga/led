@@ -1,0 +1,120 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Waterlow_and_Sons>
+        rdfs:label  "Waterlow and Sons"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/lexp/1382605676>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Mrs Germon is describing daily life while barricaded in a house in the grounds of the British Residency during the siege of Lucknow. "@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "The heat was intense; I never experienced anything like it: at night it is fearful, I cannot sleep for it. Our beds are three under one punkah…. In the other rooms they are as crowded, but it is nothing to the Residency. Our party here is a very agreeable one. We meet at chota hazree, and, after dressing, breakfast at 10. We then have working, reading and music - there are some very good performers amongst our party – lunch at 2, dine at half-past 7, and then the Padre reads a chapter and prayers, and we retire."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FA%2BDiary%2BKept%2Bby%2BMrs%2BR.%2BC.%2BGermon%252C%2Bat%2BLucknow%252C%2BBetween%2Bthe%2BMonths%2Bof%2BMay%2Band%2BDecember%252C%2B1857%2F1382605067816/pages17>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "17";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Maria+Vincent+Germon+/1382605133740>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lucknow>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1857-05-25>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-10-24T09:07:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/A+Diary+Kept+by+Mrs+R.+C.+Germon%2C+at+Lucknow%2C+Between+the+Months+of+May+and+December%2C+1857/1382605067816>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1870-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Waterlow_and_Sons>;
+        <http://purl.org/dc/terms/title>
+                "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .
+
+<http://data.open.ac.uk/led/person/Maria+Vincent+Germon+/1382605133740>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Maria Vincent Germon "@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Germon";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Maria Vincent";
+        <http://xmlns.com/foaf/0.1/name>
+                "Maria Vincent Germon";
+        <http://xmlns.com/foaf/0.1/title>
+                "Mrs."@en .
+
+<http://data.open.ac.uk/time/edtf/1870-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1870>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FA%2BDiary%2BKept%2Bby%2BMrs%2BR.%2BC.%2BGermon%252C%2Bat%2BLucknow%252C%2BBetween%2Bthe%2BMonths%2Bof%2BMay%2Band%2BDecember%252C%2B1857%2F1382605067816/pages17>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "A Diary Kept by Mrs R. C. Germon, at Lucknow, Between the Months of May and December, 1857, pages 17"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+Diary+Kept+by+Mrs+R.+C.+Germon%2C+at+Lucknow%2C+Between+the+Months+of+May+and+December%2C+1857/1382605067816> .
+
+<http://reference.data.gov.uk/id/day/1857-05-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 May, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://reference.data.gov.uk/id/year/1870>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1870"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Lucknow>
+        rdfs:label  "Lucknow"@en .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .

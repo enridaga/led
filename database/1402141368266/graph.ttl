@@ -1,0 +1,559 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/led/music/Rumanian+Dances/1402141845320>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Rumanian Dances"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k>;
+        <http://purl.org/dc/terms/title>
+                "Rumanian Dances" .
+
+<http://data.open.ac.uk/led/music/'Miniatures'/1398355546876>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Miniatures'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/9e42300c-959a-4f73-89cd-8003b71eb85a#_>;
+        <http://purl.org/dc/terms/title>
+                "'Miniatures'" .
+
+<http://bnb.data.bl.uk/id/person/Kod%C3%A1lyZolt%C3%A1n1882-1967>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Kodály, Zoltán, 1882-1967"@en .
+
+<http://data.open.ac.uk/led/performance/Rumanian+Dances+(,+performance+of)/1402141845329>
+        rdf:type             <http://purl.org/ontology/mo/Performance> , <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label           "performance of 'Rumanian Dances'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k>;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/dc/terms/title>
+                "Rumanian Dances";
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Rumanian+Dances/1402141845320>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://bnb.data.bl.uk/id/place/Woodbridge>
+        rdfs:label  "Woodbridge"@en .
+
+<http://data.open.ac.uk/led/source/Domus+Diary:+Seedorf,+Schleswig-Holstein,+Germany,+June+1982/1402141324187>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Domus Diary: Seedorf, Schleswig-Holstein, Germany, June 1982"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Beyond+the+notes+:+journeys+with+chamber+music>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Domus Diary: Seedorf, Schleswig-Holstein, Germany, June 1982";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/TomesSusan> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/led/lexp/1402141368266>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Experience took place in Domus tent, erected in a public park in Hamburg, Germany, during the daytime."@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "The concert, an informal one made up of Bartók's Rumaninan Dances, Bridge Miniatures, a song by David, and Fauré's 'Après Un Rêve', the Kodály Intermezzo, a Bach Suite, Mozart Kontretänze and Stockhausen's Tierkreis, produces rather the same effect as we produced in Cheltenham last year; the audience claps and shouts for an encore."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Domus+Diary:+Seedorf,+Schleswig-Holstein,+Germany,+June+1982/1402141324187>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "46";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1982-06-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-07T11:42:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/dfa0523de3604b8b8609630cb0bbcb68/1402141959993> , <http://data.open.ac.uk/led/performance/'Miniatures'+(,+performance+of)/1402141880896> , <http://data.open.ac.uk/led/music/Tierkreis/1402142297378> , <http://data.open.ac.uk/led/performance/Suite+(,+performance+of)/1402142185559> , <http://data.open.ac.uk/led/performance/song+(,+performance+of)/1402142084411> , <http://data.open.ac.uk/led/performance/Rumanian+Dances+(,+performance+of)/1402141845329> , <http://data.open.ac.uk/led/performance/Kontret%C3%A4nze+(,+performance+of)/1402142222802> , <http://data.open.ac.uk/led/performance/Intermezzo+(,+performance+of)/1402142149183> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.81>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  81 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://musicbrainz.org/artist/f0b9f872-502d-4ff4-825e-5b97aee4f0c0#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Zoltán Kodály"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/performance/song+(,+performance+of)/1402142084411>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'song'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/song/1402142084397>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://dbpedia.org/resource/Edinburgh>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Edinburgh"@en .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/performance/Intermezzo+(,+performance+of)/1402142149183>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Intermezzo'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Intermezzo/1402142149174>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://data.open.ac.uk/led/organization/Boydell+Press/1402321009894>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Boydell Press"@en .
+
+<http://reference.data.gov.uk/id/day/1945-09-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 September, 1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://data.open.ac.uk/led/performance/Kontret%C3%A4nze+(,+performance+of)/1402142222802>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Kontretänze'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Kontret%C3%A4nze/1402142222793>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/1982-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1982"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1982;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://reference.data.gov.uk/id/day/1954-05-26>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "26 May, 1954"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.26>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1954;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/led/music/'Apr%C3%A8s+Un+R%C3%AAve'/1402141959984>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Après Un Rêve'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gabriel_Faur%C3%A9>;
+        <http://purl.org/dc/terms/title>
+                "'Après Un Rêve'" .
+
+<http://bnb.data.bl.uk/id/person/StockhausenKarlheinz1928-2007>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Karlheinz Stockhausen"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://bnb.data.bl.uk/id/agent/BoydellPress>
+        rdfs:label  "Boydell Press"@en .
+
+<http://dbpedia.org/resource/Woodbridge,_Suffolk>
+        rdfs:label  "Woodbridge, Suffolk"@en .
+
+<http://data.open.ac.uk/led/person/David+Lockington/1402142084406>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "David Lockington"@en .
+
+<http://data.open.ac.uk/led/performance/'Miniatures'+(,+performance+of)/1402141880896>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Miniatures''"@en , "performance of ''Miniatures' (, performance of)'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Miniatures'/1398355546876>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://data.open.ac.uk/led/music/Suite/1402142185551>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Suite"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johann_Sebastian_Bach>;
+        <http://purl.org/dc/terms/title>
+                "Suite" .
+
+<http://data.open.ac.uk/led/music/Tierkreis/1402142297378>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Tierkreis"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/StockhausenKarlheinz1928-2007>;
+        <http://purl.org/dc/terms/title>
+                "Tierkreis" .
+
+<http://dbpedia.org/resource/Chamber_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chamber music"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/Art_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Art song"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://data.open.ac.uk/led/music/song/1402142084397>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "song"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/David+Lockington/1402142084406>;
+        <http://purl.org/dc/terms/title>
+                "song" .
+
+<http://dbpedia.org/resource/Gabriel_Faur%C3%A9>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gabriel Fauré"@en , "Fauré, Gabriel, 1845-1924"@en , "Fauré";
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/Faur%C3%A9Gabriel1845-1924> .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/dfa0523de3604b8b8609630cb0bbcb68/1402141959993>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Après Un Rêve''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/dc/terms/title>
+                "'Après Un Rêve'";
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Art_song>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Apr%C3%A8s+Un+R%C3%AAve'/1402141959984>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Zolt%C3%A1n_Kod%C3%A1ly>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Zoltán Kodály"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/Kod%C3%A1lyZolt%C3%A1n1882-1967> , <http://musicbrainz.org/artist/f0b9f872-502d-4ff4-825e-5b97aee4f0c0#_> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/day/1881-03-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 March, 1881"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1881;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.81> .
+
+<http://dbpedia.org/resource/B%C3%A9la_Bart%C3%B3k>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Bartók, Béla, 1881-1945"@en , "Béla Bartók" , "Béla Bartók"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1881-03-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hungary>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1945-09-26>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/Bart%C3%B3kB%C3%A9la1881-1945> , <http://musicbrainz.org/artist/fd14da1b-3c2d-4cc8-9ca6-fc8c62ce6988#_> .
+
+<http://data.open.ac.uk/led/music/Intermezzo/1402142149174>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Intermezzo"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Zolt%C3%A1n_Kod%C3%A1ly>;
+        <http://purl.org/dc/terms/title>
+                "Intermezzo" .
+
+<http://data.open.ac.uk/led/music/Kontret%C3%A4nze/1402142222793>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Kontretänze"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "Kontretänze" .
+
+<http://data.open.ac.uk/time/edtf/2004-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2004"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2004;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2004>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://bnb.data.bl.uk/id/person/TomesSusan>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Susan Tomes"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Pianist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1954-05-26>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Edinburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Scotland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Tomes";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Susan" .
+
+<http://reference.data.gov.uk/id/year/2004>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://data.open.ac.uk/led/agent/Domus/1402330929718>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Domus"@en .
+
+<http://data.open.ac.uk/led/performance/Suite+(,+performance+of)/1402142185559>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Suite'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hamburg>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/TomesSusan>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Suite/1402142185551>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Domus/1402330929718> .
+
+<http://data.open.ac.uk/led/source/Beyond+the+notes+:+journeys+with+chamber+music>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Beyond the notes : journeys with chamber music"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2004-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Boydell+Press/1402321009894> , <http://bnb.data.bl.uk/id/agent/BoydellPress>;
+        <http://purl.org/dc/terms/title>
+                "Beyond the notes : journeys with chamber music";
+        <http://purl.org/ontology/bibo/isbn>
+                "1843830450"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Woodbridge,_Suffolk> , <http://bnb.data.bl.uk/id/place/Woodbridge> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://musicbrainz.org/artist/9e42300c-959a-4f73-89cd-8003b71eb85a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Frank Bridge"@en , "Frank Bridge";
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BridgeFrank1879-1941> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .

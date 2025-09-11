@@ -1,0 +1,255 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Psalms>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Psalms"@en .
+
+<http://data.open.ac.uk/led/potter>
+        rdfs:label  "potter"@en .
+
+<http://data.open.ac.uk/led/music/psalm+singing/1543495363896>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "psalm singing"@en;
+        <http://purl.org/dc/terms/title>
+                "psalm singing" .
+
+<http://data.open.ac.uk/time/edtf/1934-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1934> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/the+diary+of+the+visits+of+john+yeoman+to+london+in+the+years+1774+and+1777>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Diary of the Visits of John Yeoman to London in the Years 1774 and 1777"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1934-12-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Watts+%26+Co./1543489685924>;
+        <http://purl.org/dc/terms/title>
+                "The Diary of the Visits of John Yeoman to London in the Years 1774 and 1777";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Macleod+Yearsley/1543489685905>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/lexp/1543495488028>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "It is unclear whether Yeoman's mention of 'chiming' at the start of this extract refers to bell-ringing or singing.\nAll spelling and punctuation copied from the original."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/98b739b693008410799d4e08b485f8ea/excerpt/97fe454ef1231231952fcad8f8bc83c2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "43–44";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Ealing>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1774-05-01>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-11-30T15:25:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-11-29T12:44:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/e4be7d22f75b281c01e886b3f1024ed0/1543495363929>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/98b739b693008410799d4e08b485f8ea/excerpt/97fe454ef1231231952fcad8f8bc83c2> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+John+Yeoman,+1+May+1774/1543495181380>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of John Yeoman, 1 May 1774"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+diary+of+the+visits+of+john+yeoman+to+london+in+the+years+1774+and+1777>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of John Yeoman, 1 May 1774";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/John+Yeoman/1543489685888> .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "John Yeoman"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/leader+of+the+church+choir> , <http://data.open.ac.uk/led/potter> , <http://data.open.ac.uk/led/tenant+farmer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/174u-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1824-10-09>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Yeoman";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/performance/e4be7d22f75b281c01e886b3f1024ed0/1543495363929>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'psalm singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London_Borough_of_Ealing>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Psalms>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/psalm+singing/1543495363896>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543495363986> , <http://data.open.ac.uk/led/agent/choir+of+Ealing+Church/1543495363956> .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/174u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1740's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Macleod+Yearsley/1543489685905>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Macleod Yearsley"@en .
+
+<http://data.open.ac.uk/led/organization/Watts+%26+Co./1543489685924>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Watts & Co."@en .
+
+<http://reference.data.gov.uk/id/day/1824-10-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 October, 1824"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1824;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://dbpedia.org/resource/London_Borough_of_Ealing>
+        rdfs:label  "London Borough of Ealing"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/agent/John+Yeoman/1543495363986>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "John Yeoman"@en .
+
+<http://data.open.ac.uk/led/agent/John+Yeoman/1543489685888>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Yeoman"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/leader+of+the+church+choir>
+        rdfs:label  "leader of the church choir"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/led/agent/choir+of+Ealing+Church/1543495363956>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "choir of Ealing Church"@en .
+
+<http://data.open.ac.uk/led/tenant+farmer>
+        rdfs:label  "tenant farmer"@en .
+
+<http://dbpedia.org/resource/Ealing>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Ealing"@en .
+
+<http://data.open.ac.uk/led/source/98b739b693008410799d4e08b485f8ea/excerpt/97fe454ef1231231952fcad8f8bc83c2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">Master Tommy and I went to Ealing Church, I chimed the Tenor as the(y) Chime an Hour before Sarvice. <span style=\"mso-spacerun: yes;\">&nbsp;</span>We went down to the Green Where it is Very Pleasant. <span style=\"mso-spacerun: yes;\">&nbsp;</span>Back again &amp; went In Staring about the Church. ye Clark was So Kind as to come &amp; Put us into a Pew. <span style=\"mso-spacerun: yes;\">&nbsp;</span>The Singers Sing the Same as we do the(y) sung Our 5 Tune to 4 Words &amp; as there was but two parts, I was wont to Join with, but was ashamed to go up to them as there Was Shuch a Grand Congregation. <span style=\"mso-spacerun: yes;\">&nbsp;</span>the place concis&rsquo;d mostly of Gentlemans Seats, as I have Mentioned in my Journeys before, So Ill leave the Reader to Jud(g)e the Grandness of the Congregation. <span style=\"mso-spacerun: yes;\">&nbsp;</span>but, however, when the Clark named the Psalm the Second I could not forbear going up to Them. <span style=\"mso-spacerun: yes;\">&nbsp;</span>the(y) sung the Eight. <span style=\"mso-spacerun: yes;\">&nbsp;</span>Soon as Service was over I went down into the Pew after my Hatt and Master Tommy, When we made the Best of our way back to our Aunts, as we Was to Dine that day att Mr. Joseph Honnors, Where was Mr. John Polter. <span style=\"mso-spacerun: yes;\">&nbsp;</span>So after Diner We Took a walk up to great Ealing when the Evening Sarvice was Just done, but the Singers was not Gon. <span style=\"mso-spacerun: yes;\">&nbsp;</span>I went up and Join&rsquo;d With them I(n) an Anthem. <span style=\"mso-spacerun: yes;\">&nbsp;</span>After we went to one of him House. <span style=\"mso-spacerun: yes;\">&nbsp;</span>he Kept a Tavern Just by and after Some Talk about Singing we come home again[.]</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diary of John Yeoman, 1 May 1774' pp. 43–44 (252 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+John+Yeoman,+1+May+1774/1543495181380>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "43–44" .
+
+<http://dbpedia.org/resource/Somerset>
+        rdfs:label  "Somerset"@en .
+
+<http://reference.data.gov.uk/id/day/1774-05-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 May, 1774"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1774;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .

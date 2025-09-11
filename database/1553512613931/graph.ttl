@@ -1,0 +1,346 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/performance/46ec08e25977086c680f1e8d6aea6ac9/1553512219734>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Shall we gather''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Shall+we+gather'/1553512219695>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553512219763> .
+
+<http://data.open.ac.uk/time/duration/PT55M>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT55M"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "55 minutes"@en;
+        <http://www.w3.org/2006/time#minutes>
+                "55"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "It is not known who transcribed Croswell’s diaries, or when.  The British Library record was created in 1960.  The pages are unnumbered, but most records are individually numbered.  Record numbers have therefore been used in place of page numbers, where available.  A further transcript of the diaries is held at the Bodleian Library."@en;
+        rdfs:label                  "Transcript of the diaries of Henry Croswell"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "British Library";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the British Library."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Transcript of the diaries of Henry Croswell";
+        <http://purl.org/ontology/bibo/number>
+                "000826807, C.194.c.113 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry Croswell"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/assurance+clerk> , <http://data.open.ac.uk/led/sunday+school+teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1840-10-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/West_Drayton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Croswell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.85>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  85 .
+
+<http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/ccdf0ab9771b13976de18697ca1e9a24>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The Bishop was in the Chancel stalls.&nbsp;</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">O[rgan]. &ndash;&nbsp;Removed to East end in 1875.</p>\n<p class=\"MsoNormal\">H[ymns]. &ndash;&nbsp;Church Hymns and Mission Hymns.&nbsp; \"Shall we gather &hellip;\"&nbsp; \"O happy band &hellip;\" etc.</p>\n<p class=\"MsoNormal\">C[hoir]. &ndash;&nbsp;Large bed-gown surplices.&nbsp; Not very good singing.</p>\n<p class=\"MsoNormal\">[The congregation numbered] 1000 nearly.&nbsp;&nbsp;Did Bishop draw the people?&nbsp; [&hellip;]&nbsp;</p>\n<p class=\"MsoNormal\">A large representative gathering.</p>\n<p class=\"MsoNormal\">S[ermon]. &ndash; [We d]idn't stop and didn't want to know the name of the Bishop.</p>\n<p class=\"MsoNormal\">[&hellip;]</p>\n<p class=\"MsoNormal\">M[iscellaneous]. &ndash;&nbsp;[&hellip;] There were six pew-openers in white caps. One ran after me calling \"Have you taken the book?\"! It was always very Broad Church.&nbsp; The Thanksgiving was repeated.&nbsp; A few oriented.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Transcript of the diaries of Henry Croswell' pp. 427 (98 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "427" .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553512424265>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mary's Church Bryanston Square"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Bryanston_Square>
+        rdfs:label  "Bryanston Square"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553511845106>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mary's Church Bryanston Square"@en .
+
+<http://data.open.ac.uk/led/music/'O+happy+band+of+pilgrims'/1553512424154>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'O happy band of pilgrims'"@en;
+        <http://purl.org/dc/terms/title>
+                "'O happy band of pilgrims'" .
+
+<http://data.open.ac.uk/led/music/Anglican+church+music/1552664090485>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Anglican church music"@en;
+        <http://purl.org/dc/terms/title>
+                "Anglican church music" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Anglican_church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anglican church music"@en .
+
+<http://data.open.ac.uk/led/place/26c1ad9e25d307c5f20ba0da9fb4c3a2>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Mary's Church, Wyndham Place, Bryanston Square, Marylebone, London"@en;
+        <http://purl.org/dc/terms/description>
+                "St Mary's Church, Wyndham Place, Bryanston Square, Marylebone, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Bryanston_Square> , <http://dbpedia.org/resource/Marylebone> , <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Church_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Church organ"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/sunday+school+teacher>
+        rdfs:label  "sunday school teacher"@en , "Sunday School teacher"@en .
+
+<http://data.open.ac.uk/led/performance/78be244822c9413fef5808f248c5a7f5/1553511845088>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'hymns selected from 'Church Hymns' and 'Mission Hymns''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/hymns+selected+from+'Church+Hymns'+and+'Mission+Hymns'/1553511845049>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553511845106> .
+
+<http://musicbrainz.org/artist/a3b8a344-1487-4448-8867-347494b91030#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Lowry"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1885-03-15T19:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 March, 1885, 07:00 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "19:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553512219763>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mary's Church Bryanston Square"@en .
+
+<http://data.open.ac.uk/led/assurance+clerk>
+        rdfs:label  "assurance clerk"@en .
+
+<http://data.open.ac.uk/led/performance/acf122836004b2d3d0ca11fc1f757e09/1553512424204>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''O happy band of pilgrims''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'O+happy+band+of+pilgrims'/1553512424154>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553512424265> .
+
+<http://data.open.ac.uk/led/music/hymns+selected+from+'Church+Hymns'+and+'Mission+Hymns'/1553511845049>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymns selected from 'Church Hymns' and 'Mission Hymns'"@en;
+        <http://purl.org/dc/terms/title>
+                "hymns selected from 'Church Hymns' and 'Mission Hymns'" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://dbpedia.org/resource/Marylebone>
+        rdfs:label  "Marylebone"@en .
+
+<http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "the congregation of St Mary's Church, Bryanston Square"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Square";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "the congregation of St Mary's Church, Bryanston" .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553511565896>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mary's Church Bryanston Square"@en .
+
+<http://reference.data.gov.uk/id/day/1840-10-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 October, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/music/'Shall+we+gather'/1553512219695>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Shall we gather'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/a3b8a344-1487-4448-8867-347494b91030#_>;
+        <http://purl.org/dc/terms/title>
+                "'Shall we gather'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/a3b8a344-1487-4448-8867-347494b91030#_> .
+
+<http://data.open.ac.uk/led/lexp/1553512613931>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Henry Croswell (1840–93) kept a record of his visits to churches in London over a period of more than twelve years (1872–85).  He made methodical notes about the number of clergy, the churchmanship, the congregation, the sermon and the church architecture, as well as commenting on the music that he heard (the organ, the hymns and the choir).  The above listening experience has been extracted from one of these records.\n‘Church Hymns’ (1871) and ‘Church Hymns with Tunes’ (1874) were publications of the Society for Promoting Christian Knowledge (S.P.C.K.), under the musical editorship of Arthur Sullivan (1842–1900).  This collection was the most successful of the competitors to ‘Hymns Ancient and Modern’ in the late nineteenth century, containing a larger number of hymns overall, and more hymns specifically intended for children and young people.  A number of late nineteenth-century hymnals included 'Mission Hymns' within their title, and it is not possible to ascertain which one Croswell was referring to in this record.\n"@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/ccdf0ab9771b13976de18697ca1e9a24>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "427";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/26c1ad9e25d307c5f20ba0da9fb4c3a2>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/1885-03-15T19:00:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-07-22T09:00:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-03-25T11:16:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/acf122836004b2d3d0ca11fc1f757e09/1553512424204> , <http://data.open.ac.uk/led/performance/46ec08e25977086c680f1e8d6aea6ac9/1553512219734> , <http://data.open.ac.uk/led/performance/78be244822c9413fef5808f248c5a7f5/1553511845088> , <http://data.open.ac.uk/led/performance/0f127148ce87ff696ff6fe81dd0bb516/1553511565877>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT55M>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/ccdf0ab9771b13976de18697ca1e9a24> .
+
+<http://data.open.ac.uk/led/performance/0f127148ce87ff696ff6fe81dd0bb516/1553511565877>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Anglican church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Marylebone>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Anglican_church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mary's+Church,+Bryanston+Square/1553511494112> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Anglican+church+music/1552664090485>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mary's+Church+Bryanston+Square/1553511565896> .

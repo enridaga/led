@@ -1,0 +1,525 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://data.open.ac.uk/time/edtf/179u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1790's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1790-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1799-uu-uu> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Caravan/1435314269607/1435348796821>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Caravan'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mrs+Crouch/1435313268907> , <http://bnb.data.bl.uk/id/person/KellyMichael>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Caravan/1435314269607> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Blue+Beard/1435348757284/1435348757307>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Blue Beard'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mrs+Crouch/1435313268907> , <http://bnb.data.bl.uk/id/person/KellyMichael>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Blue+Beard/1435348757284>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mademoiselle+Cretue/1435348757318> , <http://data.open.ac.uk/led/agent/Chenard/1435348757311> , <http://data.open.ac.uk/led/agent/Madame+Dugazzon/1431614538009> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.62>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  62 .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/186/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/186/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/290/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/290/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/music/The+Caravan/1435314269607>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Caravan"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Gretry/1446220189638>;
+        <http://purl.org/dc/terms/title>
+                "The Caravan";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Gretry/1446220189638> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/256/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/256/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/person/Mrs+Crouch/1435313268907>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Mrs Crouch"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Singing>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Crouch";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/source/b4545d14fbf83b75b033914aed187161/excerpt/7878e4f84b25a4ffc0b4265f689d9a98>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The time...was fast approaching, at which we were to quit Paris ; for before I left London, Le Texier, the French reciter, had translated Gretry's opera of La Caravane into English. Mr. Linley had adapted the original French music to English poetry, and it was to be produced at the opening of Drury Lane. As Mrs. Crouch and myself had principal parts in it, I was very anxious to see it performed at the Grand Opera at Paris, and to make observations how they got it up. I mentioned my wish to Monsieur Gardel, and he was so polite (though another piece was announced to be performed) to have \"The Caravan\" performed, for the purpose of gratifying our curiosity. We saw it finely acted, and the decorations and scenery were of the most splendid description ; we saw also the opera of \" Blue Beard.\" \" Racule Barbe Bleue,\" is the French title of it: the fine bass singer, Chenard, was famous in \" Barbe Bleue ;\" and Madame Dugazzon, in Fatima, and Mademoiselle Cretue, in Irene, were both excellent : the music, by Gretry, was very good ; but so different are the tastes of a French and English audience, that when I produced my \" Blue Beard\" at Drury Lane, I did not introduce a single bar from Gretry. Mrs. C. was struck with the subject, and wrote down the programme of the drama, with a view to get it dramatized for Drury Lane ; Johnstone got the music copied to bring to Mr. Harris, at Covent Garden, and it was got up at that theatre as a pantomime, I believe by Delpini ; I never was it in that shape, but have heard that it was not successful.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Reminiscences of Michael Kelly' pp. 347-348 (281 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Reminiscences+of+Michael+Kelly/1426674530118>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "347-348" .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/182/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/182/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Ireland"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/252/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/252/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich/reminiscencesofm01kellrich_djvu.txt>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich/reminiscencesofm01kellrich_djvu.txt"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/196/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/196/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/274/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/274/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://bnb.data.bl.uk/id/person/KellyMichael>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Michael Kelly"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/theatre+manager> , <http://dbpedia.org/resource/Singing> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1762-12-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Dublin>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1826-10-09>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Margate>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Ireland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Kelly";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Michael" .
+
+<http://data.open.ac.uk/led/agent/Mademoiselle+Cretue/1435348757318>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mademoiselle Cretue"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/174/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/174/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1826-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1826"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1826;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1826>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/16/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-26"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-25"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/16/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/216/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/216/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://reference.data.gov.uk/id/day/1762-12-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 December, 1762"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1762;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.62> .
+
+<http://data.open.ac.uk/led/thing/theatre+manager>
+        rdfs:label  "theatre manager"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/282/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/282/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1790-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1790"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1790;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/236/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-06"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/236/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/organization/Henry+Colburn/1426674530131>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Henry Colburn"@en .
+
+<http://data.open.ac.uk/led/lexp/1435314166443>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/b4545d14fbf83b75b033914aed187161/excerpt/7878e4f84b25a4ffc0b4265f689d9a98>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/cathcoyne/temp>;
+        led:pages            "347-348";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/KellyMichael> , <http://data.open.ac.uk/led/person/Mrs+Crouch/1435313268907>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Paris>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/179u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-01-03T23:09:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-26T10:22:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Blue+Beard/1435348757284/1435348757307> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/The+Caravan/1435314269607/1435348796821>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/b4545d14fbf83b75b033914aed187161/excerpt/7878e4f84b25a4ffc0b4265f689d9a98> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/292/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-19"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/292/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/286/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/286/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/6/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-24"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-14"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/6/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/226/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/226/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://reference.data.gov.uk/id/year/1826>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1826"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/232/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/232/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/source/Reminiscences+of+Michael+Kelly/1426674530118>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Reminiscences of Michael Kelly"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/stream/reminiscencesofm01kellrich#page/256/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/274/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/278/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/282/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/286/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/290/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/292/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/296/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/320/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/346/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/6/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/252/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/250/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/236/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/232/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/230/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/226/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/222/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/220/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/216/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/198/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/196/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/190/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/186/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/182/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/178/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/174/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich#page/16/mode/2up> , <https://archive.org/stream/reminiscencesofm01kellrich/reminiscencesofm01kellrich_djvu.txt>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1826-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Henry+Colburn/1426674530131>;
+        <http://purl.org/dc/terms/title>
+                "Reminiscences of Michael Kelly";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "1";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/KellyMichael> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/346/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-26"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/346/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/178/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/178/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/agent/Chenard/1435348757311>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Chenard"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/190/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-02"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/190/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://data.open.ac.uk/led/music/Blue+Beard/1435348757284>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Blue Beard"@en;
+        <http://purl.org/dc/terms/title>
+                "Blue Beard" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/222/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/222/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://dbpedia.org/resource/Margate>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Margate"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/220/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/220/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/198/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/198/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/296/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-19"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/296/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/250/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/250/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/agent/Madame+Dugazzon/1431614538009>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Madame Dugazzon"@en .
+
+<http://reference.data.gov.uk/id/day/1826-10-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 October, 1826"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1826;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/320/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/320/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/1799-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1799"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1799;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/278/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-14"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/278/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/person/Gretry/1446220189638>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gretry" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<https://archive.org/stream/reminiscencesofm01kellrich#page/230/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/stream/reminiscencesofm01kellrich#page/230/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .

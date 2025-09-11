@@ -1,0 +1,174 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Royal_Festival_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Royal Festival Hall"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/gregorian-instant/2011-04-17T19:30:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 April, 2011, 07:30 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.19:30:00>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2011;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://reference.data.gov.uk/id/day/1911-05-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 May, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://data.open.ac.uk/led/performance/symphony+no+1+(,+performance+of)/1399387983282>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Symphony No. 1'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony+No+1/1442406506953>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/5610302e-bfd9-421c-80e2-03d790a0f5e5#_> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/Gustav_Mahler>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Gustav Mahler"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1860-07-07>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1911-05-18>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mahler";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gustav" .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/source/letter+to+Philharmonia+Orchestra+dated+18+April+2011/1399387914528>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Letter to Philharmonia Orchestra dated 18 April 2011"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Philharmonia Orchestra"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter to Philharmonia Orchestra dated 18 April 2011" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/lexp/1399388041021>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Dear Ms Davies\r\n\r\nMonday 18 April 2011\r\n\r\nI was not sure to whom I should write this letter so apologies if it should be going to someone else. But I hope, when you have read it, you will be able to pass it on.\r\n\r\nI do know Camilla Johns through the Friends so I had thought of sending it to\r\nher, but felt your title was more appropriate. I am now also on the Committee of\r\nthe Friends of the Orchestra which is really interesting.\r\n\r\nThe reason I am writing is to say a million thanks to the Orchestra for two\r\noutstanding performances of the first two Mahler Symphonies. As a complete\r\nMahler fanatic I go to all Mahler concerts in London. I am on the Committee of\r\nthe Gustav Mahler Society UK. and have visited his composing huts.\r\nLast night's performance of the Resurrection Symphony no 2 was quite frankly\r\nthe best I have ever been to: tears were streaming down my face towards the\r\nend and I did not want the applause to stop. From the very first note there was\r\nan electrifying atmosphere, and the changes in pace, the sincerity of the playing and the emotions this gave rise to, all this came together to produce a very very intense experience.\r\nI paint pictures of Mahler's music and it means a huge amount to me. After last\r\nnight I wondered if it was possible to capture on canvas the magnificence I heard at the Festival Hall. Please will you pass on, if possible, my very very sincere thanks to every member of the orchestra for giving us such a superlative concert.\r\n\r\nI was totally 'inhabited' by the resonance, the huge breadth of that last\r\nmovement. I still say Mahler is and always will be the 'best' genius at\r\ncomposition. No-one compares for experiences in the concert hall.\r\n\r\nI was sad not to be able to clap and cheer individual players more, especially the flute player, the oboe, and the brass section. Their input was really moving\r\nall the passages they played are so inspirational.   could go on and on piling up words here but just want to underline again what a unique and beautiful evening I had last night and last week.\r\nMahler's First Symphony has a magic beginning and for me conjures up so many images. As I said both performances were THE BEST and the orchestra gave every member of the audience so much.\r\nwith thanks\r\nsincerely\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+to+Philharmonia+Orchestra+dated+18+April+2011/1399387914528>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Royal_Festival_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/2011-04-17T19:30:00>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-05-06T14:54:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/symphony+no+1+(,+performance+of)/1399387983282> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://data.open.ac.uk/led/music/Symphony+No+1/1442406506953>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony No 1"@en , "First Symphony"@en , "Symphony No. 1"@en , "Symphony no. 1"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gustav_Mahler>;
+        <http://purl.org/dc/terms/title>
+                "Symphony No 1";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.19:30:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "19:30:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://reference.data.gov.uk/id/day/1860-07-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 July, 1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://musicbrainz.org/artist/5610302e-bfd9-421c-80e2-03d790a0f5e5#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Philharmonia Orchestra"@en .
+
+<http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gustav Mahler"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

@@ -1,0 +1,356 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1875-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1875"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1875;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1875>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://dbpedia.org/resource/Fiddle>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fiddle"@en .
+
+<http://data.open.ac.uk/led/music/Mouth+organ/1448965221333>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Mouth organ"@en;
+        <http://purl.org/dc/terms/title>
+                "Mouth organ" .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Mary_Delany>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , led:Female , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Mrs Delany"@en , "Mary Granville"@en , "Mary Delany"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking> , <http://dbpedia.org/resource/Artist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1700-05-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Wiltshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1788-04-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Granville";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mary";
+        <http://xmlns.com/foaf/0.1/name>
+                "Mary Delany";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mary Delany; Mary Granville"@en , "Mrs Delany"@en;
+        <http://xmlns.com/foaf/0.1/title>
+                "Mrs."@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/lexp/1530279988490>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "This incident is undated.  The few dates within the memoir suggest that it spans a period covering the very late 19th and early 20th centuries."@en;
+        led:has_environment   led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Solitary;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/2094b9eee1c219f8a362c1bdb6ca8aea/excerpt/ac1718a409511c327d04677705ace455>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "15-16";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278730167>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/8bacd79767a5a6eeabb9bdbba3a20280>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-08T11:55:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-29T13:46:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/6edcc51c58a6aeb62c072586d6eeede2/1530279355486> , <http://data.open.ac.uk/led/performance/b5c7507beb4ce608030b46cb8b1b5513/1530279547087> , <http://data.open.ac.uk/led/performance/bdcf15cab2390e16c5672f401ac01edd/1530279470705>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/2094b9eee1c219f8a362c1bdb6ca8aea/excerpt/ac1718a409511c327d04677705ace455> .
+
+<http://bnb.data.bl.uk/id/person/DelanyMary1700-1788>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mary Delany"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279547090>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Aunt Dinah"@en .
+
+<http://dbpedia.org/resource/Artist>
+        rdfs:label  "Artist"@en .
+
+<http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278730167>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "née Froggatt"@en , "Isobel Mary Bradbury"@en;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/18Ll-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/North_Yorkshire>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bradbury";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Isobel Mary";
+        <http://xmlns.com/foaf/0.1/nick>
+                "née Froggatt"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/source/2094b9eee1c219f8a362c1bdb6ca8aea/excerpt/ac1718a409511c327d04677705ace455>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">Then father said I must see his Aunt Dinah&rsquo;s famous troupe of cats. So one market [day]&nbsp;I was taken and left at the small hamlet of Crayke on the outskirts of Norgarth, whilst father transacted business there [&hellip;] Dinah called six names through the open window and presently six beautiful Persian cats, an uncommon smokey [<em>sic</em>] &nbsp;grey in colour, appeared [&hellip;] Their names, Dinah told me, came from the bible, and they worked in pairs [...]&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">Dinah was very tiny and as dainty as a wren, with bright twinkling eyes, and like the wren, possessed a clear liquid voice of remarkable power. The cats sat in pairs on a long low form and watched Dinah pour out six basins of either milk or porridge.&nbsp;Then she sang a cunning little song of her own composition whilst the cats purred in unison, the while they balanced, stretched, bowed and pirouetted on their form. They came to first breakfast in pairs as their names were called, although Dinah said she never used the same sequence.&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">After breakfast they always did one of their acts of which they had quite a repertoire. &ldquo;How do they know which to do?&rdquo; I asked, &ldquo;They watch and listen&rdquo;, said Dinah, &ldquo;and today they will dance a &lsquo;Meeting Six&rsquo; and a &lsquo;Shepherd&rsquo;s Hay&rsquo; for you&rdquo;, and&nbsp;as she took up her mouth organ<strong>&nbsp;</strong>the cats arranged themselves in a double row of three. After the first note of music, two corner cats tripped up, bowed to each other and retreated, then the second corners, and finally the middle pairs [continuing with the rest of the 'Meeting Six'] [&hellip;] They went through this performance three times until Dinah put down her mouth organ.&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">An interval of what appeared to be a waltz accompanied by loud purring followed, but as&nbsp;Dinah picked up her fiddle<strong>&nbsp;</strong>the cats again formed a double row of three, and as the music struck up they began the intricate weaving in and out of a Shepherd&rsquo;s Hay in a sort of hopping walk, and on the final note they appeared to leap into the air, clap their front paws together and give vent to an ear-piercing waul.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'My end is my beginning' pp. 15-16 (379 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/My+end+is+my+beginning/1530278618831>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "15-16" .
+
+<http://reference.data.gov.uk/id/year/1875>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1875"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279470708>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Aunt Dinah"@en .
+
+<http://dbpedia.org/resource/Mouth_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Mouth organ"@en .
+
+<http://data.open.ac.uk/led/musicgenre/country+dance>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "country dance"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .
+
+<http://dbpedia.org/resource/Wiltshire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Wiltshire"@en .
+
+<http://data.open.ac.uk/led/source/My+end+is+my+beginning/1530278618831>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Mary Bradbury's [née Froggatt] memories of childhood in Cottardale, North Yorkshire focuses on the animals, work and rituals of the family sheep farm and her love of nature. Her given name was Isobel, her nickname was Frogspawn. The few dates in the memoir locate listening experiences around the turn of and early twentieth century. The document is dated 1973. It is held in The Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three-volume annotated bibliography, ‘The Autobiography of the Working Class’ (Harvester Press, 1984-1989). "@en;
+        rdfs:label                  "My end is my beginning"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9421>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "My end is my beginning";
+        <http://purl.org/ontology/bibo/number>
+                "2:871";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278618983> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/North_Yorkshire>
+        rdfs:label  "North Yorkshire"@en .
+
+<http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278618983>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Isobel Mary Bradbury"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/led/music/Fiddle+dance+music/1489488549846>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Fiddle dance music"@en;
+        <http://purl.org/dc/terms/title>
+                "Fiddle dance music";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Mrs+Hamilton/1436171179395> , <http://data.open.ac.uk/led/person/Miss+Bushe/1436194406734> , <http://dbpedia.org/resource/Mary_Delany> .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1476553665161>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://data.open.ac.uk/led/performance/bdcf15cab2390e16c5672f401ac01edd/1530279470705>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mouth organ'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/North_Yorkshire>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/country+dance>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mouth_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278730167>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Mouth+organ/1448965221333>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279470708> .
+
+<http://data.open.ac.uk/led/botanical+decoupage+artist+letter-writer,+blue-stocking>
+        rdfs:label  "Botanical decoupage artist letter-writer, blue-stocking"@en .
+
+<http://reference.data.gov.uk/id/day/1788-04-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 April, 1788"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1788;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://bura.brunel.ac.uk/handle/2438/9421>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-06-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9421"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1700-05-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 May, 1700"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1700;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/place/8bacd79767a5a6eeabb9bdbba3a20280>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Crayke, North Yorkshire"@en;
+        <http://purl.org/dc/terms/description>
+                "Crayke, North Yorkshire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/North_Yorkshire> .
+
+<http://data.open.ac.uk/time/edtf/18Ll-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1875-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://data.open.ac.uk/led/performance/b5c7507beb4ce608030b46cb8b1b5513/1530279547087>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Fiddle dance music'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/North_Yorkshire>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/country+dance>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Fiddle>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278730167>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Fiddle+dance+music/1489488549846>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279547090> .
+
+<http://data.open.ac.uk/led/performance/6edcc51c58a6aeb62c072586d6eeede2/1530279355486>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/North_Yorkshire>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Isobel+Mary+Bradbury/1530278730167>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1476553665161>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279355489> .
+
+<http://data.open.ac.uk/led/agent/Aunt+Dinah/1530279355489>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Aunt Dinah"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/person/Miss+Bushe/1436194406734>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Miss Bushe"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bushe";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Miss" .
+
+<http://data.open.ac.uk/led/person/Mrs+Hamilton/1436171179395>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Hamilton"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hamilton";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .

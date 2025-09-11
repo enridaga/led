@@ -1,0 +1,237 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1950-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1950"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.50> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://dbpedia.org/resource/Singing>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Singing"@en .
+
+<http://reference.data.gov.uk/id/year/1896>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ethel Waters"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/dancer> , <http://dbpedia.org/resource/Singing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1896-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Chester_County,_Pennsylvania>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/California>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Waters";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ethel" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/California>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "California"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.50>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  50 .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.1u>
+        rdf:value   "1u";
+        rdfs:label  "10s"@en .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Chester_County,_Pennsylvania>
+        rdfs:label  "Chester County, Pennsylvania"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/music/Oh,+Daddy/1429105736496>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Oh, Daddy"@en;
+        <http://purl.org/dc/terms/title>
+                "Oh, Daddy" .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Oh,+Daddy/1429105736496/1429105736501>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Oh, Daddy'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Oh,+Daddy/1429105736496>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Charles Samuels"@en .
+
+<http://data.open.ac.uk/led/music/Down+Home+Blues/1429105675351>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Down Home Blues"@en;
+        <http://purl.org/dc/terms/title>
+                "Down Home Blues" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/time/edtf/1896-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1896"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1896;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1896>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/led/lexp/1429105771782>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "The same talent scout who dug me up for Cardinal worked for other record companies. After catching my act at Edmond's a second time, he asked if I would care to make some records for Black Swan, a new company just started by Harry H. Pace and W. C. Handy, the two grand old men of Negro music. \r\n\r\n The Black Swan office was, I think, in the home of one of the owners. The day I went there I found Fletcher Henderson sitting behind a desk and looking very prissy and important. Fletcher had come up from Georgia to study chemistry at one of the big New York colleges. But he was making side money doing arrangements and musical backgrounds for the company. He also made band records for them. \r\n\r\n There was much discussion of whether I should sing popular or \"cultural\" numbers. They finally decided on popular, and I asked one hundred dollars for making the record. I was still getting only thirty-five dollars a week and tips, so one hundred dollars seemed quite a lump sum to me. Mr. Pace paid me the one hundred dollars, and that first Black Swan record I made had \"Down Home Blues\" on one side, \"Oh, Daddy\" on the other. It proved a great success and a best seller among both white and colored, and it got Black Swan out of the red. "@en;
+        led:has_medium         led:Medium.Playback;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "141";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/191u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-25T18:58:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-15T13:49:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Oh,+Daddy/1429105736496/1429105736501> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Down+Home+Blues/1429105675351/1429105675358> .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/dancer>
+        rdfs:label  "dancer"@en .
+
+<http://dbpedia.org/resource/Da_Capo_Press>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Da Capo Press"@en .
+
+<http://data.open.ac.uk/led/source/His+Eye+Is+On+the+Sparrow/1427371358130>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "His Eye Is On the Sparrow"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1950-uu-uu> , <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/Da_Capo_Press>;
+        <http://purl.org/dc/terms/title>
+                "His Eye Is On the Sparrow";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Charles+Samuels/1427371358141> , <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Down+Home+Blues/1429105675351/1429105675358>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Down Home Blues'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Down+Home+Blues/1429105675351>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ab55e9c9-d475-4fa5-a903-06ff270b1e75#_> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-03-26"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-27"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-28"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-03-31"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-05"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-06"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-15"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-16"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-23"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-29"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-04-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "African American Music Reference"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://aamr.alexanderstreet.com.libezproxy.open.ac.uk/View/497851"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/191u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1910's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.1u> .

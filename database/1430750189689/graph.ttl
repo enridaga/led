@@ -1,0 +1,256 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Thunder's Mouth Press"@en .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://musicbrainz.org/artist/38e82a3d-4e11-4e0b-92d5-6b3a3f93f276#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mike Stern"@en .
+
+<http://dbpedia.org/resource/Miles_Davis>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Miles Davis"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/DavisMiles> , <http://musicbrainz.org/artist/8e51f2f4-4541-4526-8a2d-c65ecc9c0ee4#_> , <http://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a#_> .
+
+<http://dbpedia.org/resource/Cleveland>
+        rdfs:label  "Cleveland"@en .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://reference.data.gov.uk/id/year/1940>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1940-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1940>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.82>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  82 .
+
+<http://dbpedia.org/resource/Guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Guitar"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>;
+        <http://purl.org/dc/terms/title>
+                "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_> .
+
+<http://data.open.ac.uk/led/musicgenre/bluesy_jazz>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "Bluesy jazz"@en , "bluesy jazz"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+guitar+music/1430313773226/1430750135760>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz guitar music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cleveland>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/bluesy_jazz> , <http://dbpedia.org/resource/Rock_music> , <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Guitar>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz+guitar+music/1430313773226>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2#_> , <http://musicbrainz.org/artist/38e82a3d-4e11-4e0b-92d5-6b3a3f93f276#_> .
+
+<http://data.open.ac.uk/led/music+technician>
+        rdfs:label  "music technician"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://musicbrainz.org/artist/cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Scofield"@en .
+
+<http://data.open.ac.uk/time/edtf/1982-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1982"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1982;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1982>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/personal+assisstant>
+        rdfs:label  "personal assisstant"@en .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/road+manager>
+        rdfs:label  "road manager"@en .
+
+<http://dbpedia.org/resource/Guitarist>
+        rdfs:label  "Guitarist"@en .
+
+<http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Chris Murphy"@en .
+
+<http://reference.data.gov.uk/id/year/1982>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Chris Murphy"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/road+manager> , <http://data.open.ac.uk/led/personal+assisstant> , <http://data.open.ac.uk/led/music+technician> , <http://dbpedia.org/resource/Guitarist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/194u-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Murphy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Chris" .
+
+<http://dbpedia.org/resource/Rock_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Rock music"@en .
+
+<http://data.open.ac.uk/time/edtf/194u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1940's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1940-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/led/lexp/1430750189689>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "John Scofield was brought in for three reasons, I believe. First, he came highly recommended, and his jazzy style fit the more pop-like direction that Miles was pursuing. Second, his style would complement Mike Stern's rock-blues sound. Of course, Mike could be-bop with the best of them, but Miles used him for that Strat sound, and Scofield's hollow-body guitar sound would balance it out. Finally adding a new guitar player would motivate Mike to push harder…\r\n\r\nHe joined us backstage before the show, looking a little seasick. The idea of going onstage with no rehearsal and very little familiarity with the material did not sit easily with him. The band members, including Mike Stern, did their best to prepare him for the show. Miles, despite the increasing normalcy of his approach to music, evidently still believed in his old \"sink or swim\" method of trying out new musicians. Despite being a nervous wreck, Scofield swam very well. In hardly any time at all he was fitting in fine, and he and Mike soon were trading solos back and forth, John's tasteful jazz style contrasting nicely with Mike's more bluesy licks.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages              "208-209";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cleveland>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1982-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-01T12:33:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-04T14:36:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+guitar+music/1430313773226/1430750135760> .
+
+<http://data.open.ac.uk/led/music/jazz+guitar+music/1430313773226>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz guitar music"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Miles_Davis>;
+        <http://purl.org/dc/terms/title>
+                "jazz guitar music";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Miles_Davis> .

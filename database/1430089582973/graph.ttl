@@ -1,0 +1,152 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://musicbrainz.org/artist/8f92558c-2baa-4758-8c38-615519e9deda#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "The Clash"@en .
+
+<http://bnb.data.bl.uk/id/person/StrummerJoe>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Joe Strummer"@en .
+
+<http://data.open.ac.uk/led/music/Punk+Rock/1430089517648>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Punk Rock"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Paul+Simenon/1430089517660> , <http://bnb.data.bl.uk/id/person/StrummerJoe> , <http://bnb.data.bl.uk/id/person/JonesMick>;
+        <http://purl.org/dc/terms/title>
+                "Punk Rock";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Paul+Simenon/1430089517660> , <http://bnb.data.bl.uk/id/person/StrummerJoe> , <http://bnb.data.bl.uk/id/person/JonesMick> .
+
+<http://data.open.ac.uk/led/source/Trouser+Press>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Trouser Press"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1978-02-uu>;
+        <http://purl.org/dc/terms/title>
+                "Trouser Press" .
+
+<http://reference.data.gov.uk/id/year/1977>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/year/1978>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://www.rocksbackpages.com/Library/Article/the-clash-greatness-from-garageland>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-07"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "rocksbackpages.com"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.rocksbackpages.com/Library/Article/the-clash-greatness-from-garageland"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Punk_rock>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Punk rock"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/person/Paul+Simenon/1430089517660>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Paul Simenon" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Punk+Rock/1430089517648/1430089517663>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Punk Rock'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rainbow_Theatre>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Punk_rock>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Peter+Silverton/1430089339891>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Punk+Rock/1430089517648>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/8f92558c-2baa-4758-8c38-615519e9deda#_> .
+
+<http://data.open.ac.uk/led/lexp/1430089582973>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "UNANNOUNCED, TO SAY the least, a kid in boots, suspenders and short-cropped hair clambers through the photographers' pit and up onto the stage of London's Rainbow Theatre. Benignly ignored by band, stage crew and security alike, he wanders around the stage a little drunkenly, uncertain quite what to do now that he's made it up onto the hallowed, sacrosanct boards and is not making quite the impression he thought. Decision flickers across his face, lit by the giant spots, and he grabs hold of the singer's mike and prepares to join in on the harmonies. When the singer wants his mike back, the kid's frozen to the stand in fear-drenched exhilaration so the singer has to shout the lines over the kid's shoulder while the kid pumps in the response lines on perfect cue.\r\n\r\n\r\nThe encore over, the band leaves the stage and the kid's stuck there in front of two and a half thousand people and unsure what to do next. With the merest jerk of his head the bass player motions the kid to join the band backstage and everyone goes home happy.\r\n\r\nSounds like some fantasy of what rock 'n' roll should be about or at least a case of a cunning audience plant, doesn't it? It wasn't. It was the Clash. And it happened just that way at the first of their three nights at the Rainbow in December"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Peter+Silverton,+Trouser+Press,+February+1978/1430089339889>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/cochranespeedy/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Peter+Silverton/1430089339891>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rainbow_Theatre>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1977-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-04-26T23:06:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Punk+Rock/1430089517648/1430089517663> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://bnb.data.bl.uk/id/person/JonesMick>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mick Jones"@en .
+
+<http://dbpedia.org/resource/Rainbow_Theatre>
+        rdfs:label  "Rainbow Theatre"@en .
+
+<http://data.open.ac.uk/time/edtf/1978-02-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "February, 1978"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1978> .
+
+<http://data.open.ac.uk/time/edtf/1977-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1977"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1977;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1977>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://data.open.ac.uk/led/person/Peter+Silverton/1430089339891>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Peter Silverton"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Silverton";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Peter" .
+
+<http://data.open.ac.uk/led/source/Peter+Silverton,+Trouser+Press,+February+1978/1430089339889>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Clash: Greatness from Garageland"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/journalism>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Trouser+Press>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.rocksbackpages.com/Library/Article/the-clash-greatness-from-garageland>;
+        <http://purl.org/dc/terms/title>
+                "The Clash: Greatness from Garageland";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Peter+Silverton/1430089339891> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .

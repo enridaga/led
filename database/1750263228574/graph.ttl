@@ -1,0 +1,290 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/led/performance/f0beecd3d08375638c1855176957e30c/1750262927612>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Unspecified dining music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Palace_of_Versailles>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Instrumental_idiom>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/King+Louis+XIV/1750263103777> , <http://data.open.ac.uk/led/agent/Hamon+Le+Strange/1750261966015>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+dining+music/1750262927588> .
+
+<http://reference.data.gov.uk/id/day/1715-08-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 August, 1715"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/led/monarch>
+        rdfs:label  "monarch"@en , "Monarch"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://dbpedia.org/resource/Instrumental_idiom>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Instrumental idiom"@en .
+
+<http://reference.data.gov.uk/id/day/1638-09-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 September, 1638"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.38> .
+
+<http://data.open.ac.uk/led/place/f392581df0a98a59cc28f5c490354941>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Palace of Versailles, France"@en;
+        <http://purl.org/dc/terms/description>
+                "Palace of Versailles, France"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Palace_of_Versailles> , <http://dbpedia.org/resource/France> .
+
+<http://dbpedia.org/resource/Palace_of_Versailles>
+        rdfs:label  "Palace of Versailles"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/agent/King+Louis+XIV/1750263103777>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "King Louis XIV"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/monarch>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1638-09-05>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1715-09-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Palace_of_Versailles>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "XIV";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "King Louis" .
+
+<http://reference.data.gov.uk/id/day/1714-01-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 January, 1714"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Kingdom_of_France>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of France"@en .
+
+<http://data.open.ac.uk/time/duration/PT1H>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT1H"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "1 hours"@en;
+        <http://www.w3.org/2006/time#hours>
+                "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<https://nrocatalogue.norfolk.gov.uk/index.php/diary-of-probably-hamon-le-strange-eldest-son-of-sir-nicholas-4th-bt-in-france-italy-and-england>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2025-07-15"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Norfolk Record Office"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://nrocatalogue.norfolk.gov.uk/index.php/diary-of-probably-hamon-le-strange-eldest-son-of-sir-nicholas-4th-bt-in-france-italy-and-england"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Kingdom_of_England>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of England"@en .
+
+<http://data.open.ac.uk/time/edtf/1687-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1687"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/led/music/Unspecified+dining+music/1750262927588>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified dining music"@en;
+        <http://purl.org/dc/terms/title>
+                "Unspecified dining music" .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/source/Diary+of+Hamon+Le+Strange+(1709-1714)/1750261831167>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of (probably) Hamon Le Strange, eldest son of Sir Nicholas (4th Bt), in France, Italy and England"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "Norfolk Record Office, Norwich";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Original document LEST/NF 2 published with the kind permission of Norfolk Record office, where it is held."@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://nrocatalogue.norfolk.gov.uk/index.php/diary-of-probably-hamon-le-strange-eldest-son-of-sir-nicholas-4th-bt-in-france-italy-and-england>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of (probably) Hamon Le Strange, eldest son of Sir Nicholas (4th Bt), in France, Italy and England";
+        <http://purl.org/ontology/bibo/number>
+                "LEST/NF 2";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Hamon+Le+Strange/1750261831200> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/lexp/1750263228574>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Solitary;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/c39290652aaa580fcc1cee4444c358d2/excerpt/1610d05db903407d7885ae746869cc35>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "26f.";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/King+Louis+XIV/1750263103777> , <http://data.open.ac.uk/led/agent/Hamon+Le+Strange/1750261966015>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/f392581df0a98a59cc28f5c490354941>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1714-01-01>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2025-07-15T12:24:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2025-07-15T12:31:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2025-06-18T16:13:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/f0beecd3d08375638c1855176957e30c/1750262927612>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT1H>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c39290652aaa580fcc1cee4444c358d2/excerpt/1610d05db903407d7885ae746869cc35> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/agent/Hamon+Le+Strange/1750261831200>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Hamon Le Strange"@en .
+
+<http://reference.data.gov.uk/id/day/1715-09-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 September, 1715"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.15> .
+
+<http://data.open.ac.uk/led/agent/Hamon+Le+Strange/1750261966015>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Hamon Le Strange"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1687-uu-uu>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1715-08-13>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Strange";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hamon Le" .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/led/source/c39290652aaa580fcc1cee4444c358d2/excerpt/1610d05db903407d7885ae746869cc35>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p style=\"margin: 0cm 0cm 7.5pt; font-size: medium; font-family: 'Times New Roman', serif; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; vertical-align: baseline;\"><strong><span style=\"color: #181818;\">Diary entry about 1 January 1714 (2)</span></strong></p>\n<p style=\"margin: 6pt 0cm 0cm; font-size: medium; font-family: 'Times New Roman', serif; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; vertical-align: baseline;\">about one, y<sup>e</sup>&nbsp;King went to dinner, he dines privately in his bedchamber constantly, by y<sup>e</sup>&nbsp;D: D&rsquo;Aumonts order, I &amp; my freinds were left in, but after y<sup>t</sup>&nbsp;y<sup>e</sup>&nbsp;K: was seat&rsquo;d he order&rsquo;d y<sup>e</sup>&nbsp;door to be open&rsquo;d, beleiving y<sup>t</sup>&nbsp;there were a great many strangers att Court y<sup>t</sup>&nbsp;day, he did not eat much att dinner ( y<sup>t</sup>&nbsp;is more y<sup>t</sup>&nbsp;another man w<sup>th</sup>&nbsp;a good Stomach,) he sat att Table near an hour, there was musick in y<sup>e</sup>&nbsp;next room, &amp; I could perceive y<sup>t</sup>&nbsp;y<sup>e</sup>&nbsp;King had an Ear for it yet, he beat my time w<sup>th</sup>&nbsp;is foot all dinner.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diary of (probably) Hamon Le Strange, eldest son of Sir Nicholas (4th Bt), in France, Italy and England' pp. 26f. (111 words)"@en , "excerpt from 'Diary of Hamon Le Strange (1709-1714)' pp. 26f. (111 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+Hamon+Le+Strange+(1709-1714)/1750261831167>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "26f." .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.38>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  38 .

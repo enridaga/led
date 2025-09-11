@@ -1,0 +1,249 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/performance/642baa52d23192fd35402bc0e2b03c23/1532084113468>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Rule Britannia''"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Patriotic_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mouth_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+Ellisdon+family/1532083906038>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Rule+Britannia'/1532084113461>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532084113470> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/office+boy>
+        rdfs:label  "office boy"@en .
+
+<http://data.open.ac.uk/led/place/48bb70d0ac20976d454b01add9db9f08>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Stockwell, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Stockwell, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/led/music/'Heart+of+Oak'/1532083999982>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Heart of Oak'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_>;
+        <http://purl.org/dc/terms/title>
+                "'Heart of Oak'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_> .
+
+<http://data.open.ac.uk/led/compositor>
+        rdfs:label  "compositor"@en .
+
+<http://data.open.ac.uk/led/source/Starting+from+Victoria/1532082629179>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Leonard W. Ellisdon's (b. 1885) memoir is organised as a series of amusing anecdotes about his working and singing life in London. The unpublished work is held in The Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three volumes annotated bibliography, \"The Autobiography of the Working Class\" (Harvester Press, 1984-1989). "@en;
+        rdfs:label                  "Starting from Victoria"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University The Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9524>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Starting from Victoria";
+        <http://purl.org/ontology/bibo/number>
+                "1:229";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532082629377> .
+
+<http://dbpedia.org/resource/Mouth_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Mouth organ"@en .
+
+<http://dbpedia.org/resource/Patriotic_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Patriotic song"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://dbpedia.org/resource/Military_march>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Military march"@en .
+
+<http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "William Boyce"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532084113470>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Leonard W. Ellisdon"@en .
+
+<http://data.open.ac.uk/led/lexp/1532084273800>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/99a985833b24abee6e4f6f883d58dca2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "34";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/the+Ellisdon+family/1532083906038>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/48bb70d0ac20976d454b01add9db9f08>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-29T17:03:14.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-20T10:57:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/642baa52d23192fd35402bc0e2b03c23/1532084113468> , <http://data.open.ac.uk/led/performance/bb6e4d9855e323f8cafb13f1d0b27780/1532083999988> , <http://data.open.ac.uk/led/performance/daf875d85da4c83c4f4596590edc201e/1532084178304>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/99a985833b24abee6e4f6f883d58dca2> .
+
+<http://data.open.ac.uk/led/source/00aafb62f44236d9e70e36d409883ff2/excerpt/99a985833b24abee6e4f6f883d58dca2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Leonard Ellisdon got his &lsquo;first job in Fleet Street&rsquo; as an office boy, aged 14, where he briefly worked until the business went bankrupt. His father, Fred Ellisdon, was a compositor on Fleet Street]</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">And so I went home, feeling very unhappy and that my business career was finished as far as the city was concerned. However, my father gave me 4d and I bought a mouth organ and for the remainder of the afternoon, drove my family up the wall with my rendering of &ldquo;Hearts of Oak&rdquo; <em>[sic],</em> &ldquo;Rule Britannia&rdquo; and &ldquo;God Save the Queen&rdquo;.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Starting from Victoria' pp. 34 (103 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Starting+from+Victoria/1532082629179>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "34" .
+
+<http://data.open.ac.uk/led/music/'God+Save+the+Queen'/1532084178297>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'God Save the Queen'"@en;
+        <http://purl.org/dc/terms/title>
+                "'God Save the Queen'" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/shop+keeper>
+        rdfs:label  "shop keeper"@en .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532083999991>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Leonard W. Ellisdon"@en .
+
+<http://data.open.ac.uk/led/performance/bb6e4d9855e323f8cafb13f1d0b27780/1532083999988>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Heart of Oak''"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Military_march>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mouth_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+Ellisdon+family/1532083906038>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Heart+of+Oak'/1532083999982>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532083999991> .
+
+<http://dbpedia.org/resource/National_anthem>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "National anthem"@en .
+
+<http://data.open.ac.uk/led/agent/the+Ellisdon+family/1532083906038>
+        rdf:type               <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "the Ellisdon family"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/shop+keeper> , <http://data.open.ac.uk/led/office+boy> , <http://data.open.ac.uk/led/compositor>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "family";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "the Ellisdon" .
+
+<http://data.open.ac.uk/led/music/'Rule+Britannia'/1532084113461>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Rule Britannia'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/4e7f1926-8704-4545-a1a1-ded91651c884#_>;
+        <http://purl.org/dc/terms/title>
+                "'Rule Britannia'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/4e7f1926-8704-4545-a1a1-ded91651c884#_> .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532084178306>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Leonard W. Ellisdon"@en .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/performance/daf875d85da4c83c4f4596590edc201e/1532084178304>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''God Save the Queen''"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/National_anthem>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mouth_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+Ellisdon+family/1532083906038>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'God+Save+the+Queen'/1532084178297>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532084178306> .
+
+<http://data.open.ac.uk/led/agent/Leonard+W.+Ellisdon/1532082629377>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Leonard W. Ellisdon"@en .
+
+<http://bura.brunel.ac.uk/handle/2438/9524>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9524"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/4e7f1926-8704-4545-a1a1-ded91651c884#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Thomas Arne"@en .

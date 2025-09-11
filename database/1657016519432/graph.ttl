@@ -1,0 +1,335 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://data.open.ac.uk/led/millworker>
+        rdfs:label  "millworker"@en .
+
+<http://reference.data.gov.uk/id/day/1913-04-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 April, 1913"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/led/agent/Robert+Ashworth/1657016297661>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Ashworth"@en .
+
+<http://data.open.ac.uk/led/source/My+Life+and+Times,+or+An+Old+Man's+Memories/1656927445099>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The web resource is a typed copy (made in 1961) of the original black bound note book.  The manuscript volume is dated 'Yours faithfully, Moses Heap. 1904'. It had been copied out by a relative - possibly his daughter Mary - some time after the family had moved to Southport in 1909.  All page numbers in this database pertain to the 1961 typed copy."@en;
+        rdfs:label                  "My Life and Times, or An Old Man's Memories"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Rossendale Collection, Rawtenstall Public Libraries, 1961";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "My Life and Times, or An Old Man's Memories";
+        <http://purl.org/ontology/bibo/number>
+                "RC 942 ROS";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Moses+Heap/1656927445136> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/performance/3616e44e38547a7e9c57ed9b185d88d1/1657016297638>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Huntsman's Chorus'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rossendale>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/traditional+song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/a+member+of+the+congregation/1657015894520> , <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Huntsman's+Chorus/1657016297623>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Robert+Ashworth/1657016297661> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/place/f6e01a8a39208344adf1b4d4bc7c5c22>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Waterbarn Baptist Church and Carr, Rossendale, Lancashire"@en;
+        <http://purl.org/dc/terms/description>
+                "Waterbarn Baptist Church and Carr, Rossendale, Lancashire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Rossendale> , <http://dbpedia.org/resource/Lancashire> .
+
+<http://data.open.ac.uk/led/yeast+dealer>
+        rdfs:label  "yeast dealer"@en .
+
+<http://dbpedia.org/resource/Dance_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Dance music"@en .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/performance/170a71cd64676c002cc79b00d626baca/1657016348587>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'MacGregor's Farewell'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rossendale>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/traditional+song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/a+member+of+the+congregation/1657015894520> , <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/MacGregor's+Farewell/1657016348563>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Robert+Ashworth/1657016348602> .
+
+<http://data.open.ac.uk/led/lexp/1657016519432>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/295c8380843ea462913025926a80a3e1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "39–40";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/a+member+of+the+congregation/1657015894520> , <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/f6e01a8a39208344adf1b4d4bc7c5c22>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1840-uu-uu/to/1860-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-07-21T10:22:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2022-07-05T10:21:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/170a71cd64676c002cc79b00d626baca/1657016348587> , <http://data.open.ac.uk/led/performance/7533a39e525cbff0a63088560ed257e5/1657015968112> , <http://data.open.ac.uk/led/performance/3616e44e38547a7e9c57ed9b185d88d1/1657016297638>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/295c8380843ea462913025926a80a3e1> .
+
+<http://data.open.ac.uk/led/agent/Robert+Ashworth/1657015968126>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Ashworth"@en .
+
+<http://reference.data.gov.uk/def/intervals/May>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://dbpedia.org/resource/Baptist_beliefs>
+        rdf:type    led:Belief;
+        rdfs:label  "Baptist beliefs"@en .
+
+<http://data.open.ac.uk/led/agent/Moses+Heap/1656927445136>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Moses Heap"@en .
+
+<http://data.open.ac.uk/led/musicgenre/traditional+song>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "traditional song"@en .
+
+<http://data.open.ac.uk/led/agent/a+member+of+the+congregation/1657015894520>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "a member of the congregation"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Baptist_beliefs> , <http://dbpedia.org/resource/Christian>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "congregation";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "a member of the" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/music/MacGregor's+Farewell/1657016348563>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "MacGregor's Farewell"@en;
+        <http://purl.org/dc/terms/title>
+                "MacGregor's Farewell" .
+
+<http://dbpedia.org/resource/Bacup>
+        rdfs:label  "Bacup"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2022-07-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Available at Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/MyLifeAndTimesByMosesHeapOfRossendale18241913/%2520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/music/a+hornpipe/1657015968085>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "a hornpipe"@en;
+        <http://purl.org/dc/terms/title>
+                "a hornpipe" .
+
+<http://data.open.ac.uk/time/interval/1840-uu-uu/to/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1840 and 1860"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/led/music/Huntsman's+Chorus/1657016297623>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Huntsman's Chorus"@en;
+        <http://purl.org/dc/terms/title>
+                "Huntsman's Chorus" .
+
+<http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Moses Heap"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/yeast+dealer> , <http://data.open.ac.uk/led/millworker>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1824-05-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Bacup>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1913-04-24>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Southport>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Heap";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Moses" .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://data.open.ac.uk/led/performance/7533a39e525cbff0a63088560ed257e5/1657015968112>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'a hornpipe'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rossendale>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Dance_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/a+member+of+the+congregation/1657015894520> , <http://data.open.ac.uk/led/agent/Moses+Heap/1656927596310>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/a+hornpipe/1657015968085>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Robert+Ashworth/1657015968126> .
+
+<http://data.open.ac.uk/led/source/8b2522c27f03431bc1c7e88cfa6835b5/excerpt/295c8380843ea462913025926a80a3e1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\"><span style=\"mso-ascii-font-family: Calibri; mso-fareast-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: 'Times New Roman';\">Mr. Ashworth, the elder, was [&hellip;] one of the four men who founded a Baptist Church at Deerplay, about 1840, and which later was removed a mile down the road to Weir. Robert Ashworth also acted as supply to Waterbarn Baptist Church, when that place was in its infancy. After doing duty in the pulpit he used to go down into the singing pew to accompany the singing with his &ldquo;Cello.&rdquo; On one occasion he struck up a hornpipe, at the sound of which a member came in, and said, &ldquo;Hush, Robert, does ta know thea'rt playing a &ldquo;Idle tune.&rdquo; Robert replied, There were no &ldquo;idle&rdquo; tunes, it were all in the rendering, and he did not think it fair for the devil to have all the best tunes. I went with a friend one Sunday morning to see Robert Ashworth at Carr. Whilst we were chatting he brought out his &ldquo;Cello&rdquo; and played us two solos, with variations, viz, &ldquo;Huntsman's Chorus&rdquo; and &ldquo;Mac Gregor's Farewell.&rdquo; He was the composer of 20 overtures, about 50 psalm tunes, and a good many hornpipes, quadrilles and waltzes. He died on January 26, 1881, after a long and useful life. Aged 83 years.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'My Life and Times, or An Old Man's Memories' pp. 39–40 (193 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/My+Life+and+Times,+or+An+Old+Man's+Memories/1656927445099>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "39–40" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/led/agent/Robert+Ashworth/1657016348602>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Ashworth"@en .
+
+<http://reference.data.gov.uk/id/day/1824-05-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 May, 1824"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://dbpedia.org/resource/Rossendale>
+        rdfs:label  "Rossendale"@en .
+
+<http://dbpedia.org/resource/Lancashire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lancashire"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

@@ -1,0 +1,199 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1976-12-04>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976 .
+
+<http://dbpedia.org/resource/Lowestoft>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lowestoft"@en .
+
+<http://bnb.data.bl.uk/id/place/London>
+        rdfs:label  ":London"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Kensington>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Kensington"@en .
+
+<http://reference.data.gov.uk/id/day/1913-11-22>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1913 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.4>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/agent/FaberandFaber>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Faber & Faber"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://bnb.data.bl.uk/id/person/EvansJohn1953->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Evans"@en .
+
+<http://data.open.ac.uk/led/music/The+Bonny+Lighter+Boy/1396016618324>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Bonny Lighter Boy"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Cecil+Sharp+(ed.)/1396016618332>;
+        <http://purl.org/dc/terms/title>
+                "The Bonny Lighter Boy" .
+
+<http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976> , <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/performance/The+Bonny+Lighter+Boy+(,+performance+of)/1396016618337>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Bonny Lighter Boy'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Kensington>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Folk_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Bonny+Lighter+Boy/1396016618324>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mrs+Britten/1396016618342> .
+
+<http://dbpedia.org/resource/Folk_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Folk music"@en .
+
+<http://data.open.ac.uk/led/lexp/1396016646524>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "*An amateur vocal and choral festival, supported by Vaughan Williams."@en;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I go to College at 10.0 & have v. nice lesson with Ireland - he is quite pleased with my Credo. I practise 2.15-3.30 then go to College to get ticket written for concert tomorrow - as Ireland said I must go, although all the tickets were gone! I go to the combined concert of the Kensington Festival.* Quite well attended, & not at all bad of it's sort. R.V.W conducts. The best of the evening was Mothers singing of Bonny Lighter boy - marvellous rhythm, words & everything. R.V.W. Xmas Fantasia thrilling to sing & I should think to listen to. V. Beautiful. Back 11.0\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+Benjamin+Britten,+Dec+4+1930/1396016480039>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Simon+Brown/claims>;
+        led:pages              "58";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Benjamin_Britten>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Kensington>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1930-12-04>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-28T14:24:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/The+Bonny+Lighter+Boy+(,+performance+of)/1396016618337> .
+
+<http://data.open.ac.uk/led/agent/Mrs+Britten/1396016618342>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Britten"@en .
+
+<http://bnb.data.bl.uk/id/resource/015489454>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Journeying boy : the diaries of the young Benjamin Britten 1928-1938"@en , "Journeying boy"@en;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/FaberandFaber>;
+        <http://purl.org/dc/terms/title>
+                "Journeying boy : the diaries of the young Benjamin Britten 1928-1938";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/EvansJohn1953->;
+        <http://purl.org/ontology/bibo/isbn>
+                "057123884X"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/London> .
+
+<http://bnb.data.bl.uk/id/person/BrittenBenjamin1913-1976>
+        rdfs:label  "Benjamin Britten"@en .
+
+<http://dbpedia.org/resource/Benjamin_Britten>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Benjamin Britten"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1913-11-22>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lowestoft>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1976-12-04>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Aldeburgh>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        owl:sameAs                      <http://musicbrainz.org/artist/49ae5227-605a-47a8-9b8e-cd89bf01a97c#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Britten";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Benjamin";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Benjamin Britten"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+Benjamin+Britten,+Dec+4+1930/1396016480039>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of Benjamin Britten, Dec 4 1930"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/015489454>;
+        <http://purl.org/dc/terms/title>
+                "Diary of Benjamin Britten, Dec 4 1930";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Benjamin_Britten> .
+
+<http://reference.data.gov.uk/id/day/1930-12-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 December, 1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/led/person/Cecil+Sharp+(ed.)/1396016618332>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Cecil Sharp (ed.)"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .

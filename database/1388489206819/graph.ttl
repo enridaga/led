@@ -1,0 +1,244 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/thing/editor>
+        rdfs:label  "editor"@en .
+
+<http://reference.data.gov.uk/id/day/1911-05-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 May, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://dbpedia.org/resource/Gustav_Mahler>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Gustav Mahler"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1860-07-07>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1911-05-18>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mahler";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gustav" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/person/Leonard+Marcus/1388488846542>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Leonard Marcus"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/editor>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Marcus";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Leonard" .
+
+<http://data.open.ac.uk/time/edtf/2013-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2013"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2013;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2013>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.13> .
+
+<http://data.open.ac.uk/led/performance/Symphony+no+2+(,+performance+of)/1388489076578>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Symphony no 2'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Leonard+Marcus/1388488846542>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony+no+2/1388489076570>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/New_York_Philharmonic> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://reference.data.gov.uk/id/day/1987-09-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 September, 1987"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1987;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://dbpedia.org/resource/Lenox,_Massachusetts>
+        rdfs:label  "Lenox, Massachusetts"@en .
+
+<http://data.open.ac.uk/led/lexp/1388489206819>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The listening experience took place in a car on a journey from Lenox MA to New York City.  Leonard Marcus, a Harvard music graduate (like Bernstein), was appointed editor-in-chief of High Fidelity and Musical America, a post he held from 1968 to 1980.  He later worked at Columbia Records and as editor of Carnegia Hall’s programmes."@en;
+        led:has_environment    led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_evidence_text  "Dear Lenny\r\nMerely a line to tell you that 1) you nearly caused me to have an accident and 2) I heard a performance of Mahler Second that was more overwhelming that anything I remembered even you ever having done -  and that goes back to my unforgettable first encounter with the work, singing it as a teenager under you at Tanglewood.\r\nEarlier today I drove down to NYC from Lenox.  When I got close enough to catch a City station worth fielding, the radio was in the middle of the Mahler.  Almost immediately, even with the lo fi of the car radio, I realized I was surrounded by an extraordinary performance.  By the middle of the last movement, I concluded that a new champion of the work had succeeded in snatching  from you the belt reading “Most in Tune with Mahler’s Soul.”\r\nI anticipated the penultimate choral chord – and what genius did it take to bring this epic to its perfect climax simply by expanding a dominant from closed to open position? – but what I heard so overpowered my expectations that I did something I haven’t done in a couple of years.\r\nI cried.\r\nIt only lasted a moment, but in that moment, I nearly swerved into another  car as we came to the 59th Street exit of the West Side Highway.\r\nYou needn’t worry.  By 42nd Street I had already forgiven you.  During the interim, Marty Bookspan had announced which Philharmonic concert had just been rebroadcast.\r\nDoes anyone realize how great music dangerous can be?  I mean, Plato’s dead and all that, but even he could only have had a more formal, Dionysian version of Rock in mind, and everybody knows how to complain about that.  No, I’m referring to the perils of the classics.  I hope Surgeon General Koop doesn’t find out.  As always with love, Lenny.\r\n"@en;
+        led:has_medium         led:Medium.Broadcast;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/letter+from+Leonard+Marcus+to+Leonard+Bernstein+20+Sept+1987/1388488800927>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        led:pages              "558";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Leonard+Marcus/1388488846542>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lenox,_Massachusetts>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1987-09-20>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-31T11:26:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Symphony+no+2+(,+performance+of)/1388489076578> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://data.open.ac.uk/led/source/The+Letters+of+Leonard+Bernstein>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Letters of Leonard Bernstein"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2013-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/YaleUP>;
+        <http://purl.org/dc/terms/title>
+                "The Letters of Leonard Bernstein";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/SimeoneNigel1956->;
+        <http://purl.org/ontology/bibo/isbn>
+                "9780300179095"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_Haven,_Connecticut> .
+
+<http://data.open.ac.uk/led/source/letter+from+Leonard+Marcus+to+Leonard+Bernstein+20+Sept+1987/1388488800927>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Leonard Marcus to Leonard Bernstein, 20 Sept 1987"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Letters+of+Leonard+Bernstein>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Leonard Marcus to Leonard Bernstein, 20 Sept 1987";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Leonard+Marcus/1388488846542> .
+
+<http://reference.data.gov.uk/id/day/1860-07-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 July, 1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/music/Symphony+no+2/1388489076570>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony no 2"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gustav_Mahler>;
+        <http://purl.org/dc/terms/title>
+                "Symphony no 2" .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://dbpedia.org/resource/New_York_Philharmonic>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "New York Philharmonic"@en .
+
+<http://dbpedia.org/resource/New_Haven,_Connecticut>
+        rdfs:label  "New Haven, Connecticut"@en .
+
+<http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gustav Mahler"@en .
+
+<http://bnb.data.bl.uk/id/agent/YaleUP>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Yale University Press"@en .
+
+<http://reference.data.gov.uk/id/year/2013>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://bnb.data.bl.uk/id/person/SimeoneNigel1956->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nigel Simeone"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .

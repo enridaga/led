@@ -1,0 +1,315 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+fusion/1430313583559/1430582610122>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz fusion'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz_fusion>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Keyboard_instrument> , <http://dbpedia.org/resource/Saxophone>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz+fusion/1430313583559>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/dfe8c9e1-10c0-49ab-a07a-5b4c60179611#_> , <http://musicbrainz.org/artist/2379937f-6e0d-46a2-b8ff-633fafd72002#_> , <http://musicbrainz.org/artist/0f9997bd-e079-429e-8ccd-9378c9b0c746#_> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Thunder's Mouth Press"@en .
+
+<http://reference.data.gov.uk/id/year/1949>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Acoustic_guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Acoustic guitar"@en .
+
+<http://dbpedia.org/resource/Miles_Davis>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Miles Davis"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/DavisMiles> , <http://musicbrainz.org/artist/8e51f2f4-4541-4526-8a2d-c65ecc9c0ee4#_> , <http://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a#_> .
+
+<http://dbpedia.org/resource/Jug>
+        rdfs:label  "Jug"@en .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://reference.data.gov.uk/id/year/1940>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1940-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1940>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://musicbrainz.org/artist/0f9997bd-e079-429e-8ccd-9378c9b0c746#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Weather Report"@en .
+
+<http://dbpedia.org/resource/Tabla>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Tabla"@en .
+
+<http://musicbrainz.org/artist/e0ee1455-5fa8-46fd-9f2e-b837315c2aae#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John McLaughlin"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/lexp/1430583250940>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/6ceab9390110396cee30069250fcf853>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "114-117";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1976-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-10-20T09:56:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-02T16:14:11.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz+fusion/1430313583559/1430582610122> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/East/West+fusion/1430583216049/1430583216061>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/6ceab9390110396cee30069250fcf853> .
+
+<http://dbpedia.org/resource/Jazz_fusion>
+        rdfs:label  "Jazz fusion"@en .
+
+<http://dbpedia.org/resource/Keyboard_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Keyboard instrument"@en .
+
+<http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2002-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Thunder's+Mouth+Press/1430299511689>;
+        <http://purl.org/dc/terms/title>
+                "Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.76>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  76 .
+
+<http://data.open.ac.uk/led/music/East/West+fusion/1430583216049>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "East/West fusion"@en;
+        <http://purl.org/dc/terms/title>
+                "East/West fusion" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/East/West+fusion/1430583216049/1430583216061>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'East/West fusion'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Fusion_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Tabla> , <http://dbpedia.org/resource/Acoustic_guitar> , <http://dbpedia.org/resource/Jug>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/East/West+fusion/1430583216049>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/e0ee1455-5fa8-46fd-9f2e-b837315c2aae#_> , <http://data.open.ac.uk/led/agent/Zakir+Hussein/1430583216065> , <http://musicbrainz.org/artist/1eb30e7e-e374-4de7-8d13-ae5855ae6df8#_> , <http://musicbrainz.org/artist/64c98753-d570-47ec-b5f6-0c0ac0f23811#_> .
+
+<http://data.open.ac.uk/led/music+technician>
+        rdfs:label  "music technician"@en .
+
+<http://data.open.ac.uk/time/edtf/2002-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2002"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2002;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2002>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/time/edtf/1976-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1976"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1976;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1976>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.76> .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://reference.data.gov.uk/id/year/1976>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/personal+assisstant>
+        rdfs:label  "personal assisstant"@en .
+
+<http://dbpedia.org/resource/Fusion_(music)>
+        rdfs:label  "Fusion (music)"@en .
+
+<http://data.open.ac.uk/time/edtf/1949-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1949"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1949;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1949>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/road+manager>
+        rdfs:label  "road manager"@en .
+
+<http://dbpedia.org/resource/Guitarist>
+        rdfs:label  "Guitarist"@en .
+
+<http://musicbrainz.org/artist/2379937f-6e0d-46a2-b8ff-633fafd72002#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Wayne Shorter"@en .
+
+<http://musicbrainz.org/artist/87283514-342d-4007-ab43-aa11ba79d92a#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Chris Murphy"@en .
+
+<http://data.open.ac.uk/led/agent/Zakir+Hussein/1430583216065>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Zakir Hussein"@en .
+
+<http://data.open.ac.uk/led/source/dd4bfccf456eb27cfd80ee2896817b5d/excerpt/6ceab9390110396cee30069250fcf853>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>[In the spring/summer of 1976 Chris Murphy was a roadie on tour with the band &lsquo;Weather Report&rsquo;]. &lsquo;Weather Report&rsquo; was headed up by two Miles Davis alumni, keyboardist Joe Zawinul and saxophonist Wayne Shorter. They were a top-level fusion band, creative, slick, and endlessly talented. Joe Zawinul had a rather unusual beginning for a jazz player, coming from the Austrian Conservatory. He grew up playing classical music and wound up in Cannonball Adderly's band. Joe was a gifted writer of funk, penning such classics as \"Wadin' in the Water\" and \"Mercy, Mercy, Mercy,\" and his keyboard playing was rather schizoid, his left hand vamping out funk chords while his right hand etched alpine lieder melodies in the air.</p>\r\n<p>Wayne Shorter is, as I mentioned before, a highly evolved human being. He played beautiful, jungle-like tunes on the sax, his tone rich and sensual. His playing always put me in mind of thick green leaves dripping with clear water[. &hellip;]</p>\r\n<p>[...]</p>\r\n<p>Partway through the [Weather Report] tour, we started doing gigs with Shakti opening for us. This was John McLaughlin's latest musical group, and it was a bit unusual: John was playing an acoustic guitar with a scalloped fretboard and sympathetic strings strung under the regular six strings at an angle over the sound hole. The other players, Zakir Hussein on tablas, and L. Shankar on violin, were both as much virtuosi as John was. They also had a little man whose name I couldn't pronounce, playing a large clay jug as a drum. It was a strange mix of instruments and music, part Indian and part Western, but the call and response sessions were energetic and captivating, and drew in the crowd. I liked the band, but boy, would I have loved to see John McLaughlin pick up a Strat and wail.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Miles To Go: The Lost Years: An Intimate Memoir of Life on the Road with Miles Davis' pp. 114-117 (305 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Miles+To+Go:+The+Lost+Years:+An+Intimate+Memoir+of+Life+on+the+Road+with+Miles+Davis/1430299511682>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "114-117" .
+
+<http://musicbrainz.org/artist/64c98753-d570-47ec-b5f6-0c0ac0f23811#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Shankar"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://reference.data.gov.uk/id/year/2002>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://musicbrainz.org/artist/dfe8c9e1-10c0-49ab-a07a-5b4c60179611#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Joe Zawinul"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/music/jazz+fusion/1430313583559>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz fusion"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Miles_Davis>;
+        <http://purl.org/dc/terms/title>
+                "jazz fusion";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Miles_Davis> .
+
+<http://musicbrainz.org/artist/1eb30e7e-e374-4de7-8d13-ae5855ae6df8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Shakti"@en .
+
+<http://data.open.ac.uk/led/person/Chris+Murphy/1430299643000>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Chris Murphy"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/road+manager> , <http://data.open.ac.uk/led/personal+assisstant> , <http://data.open.ac.uk/led/music+technician> , <http://dbpedia.org/resource/Guitarist> , <http://dbpedia.org/resource/Writer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/194u-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Murphy";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Chris" .
+
+<http://data.open.ac.uk/time/edtf/194u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1940's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1940-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1949-uu-uu> .
+
+<http://dbpedia.org/resource/Saxophone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Saxophone"@en .

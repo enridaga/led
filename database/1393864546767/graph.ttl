@@ -1,0 +1,118 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/source/The+Last+Crusade/1393864377913>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Last Crusade"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1920-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/The_Bodley_Head> , <http://dbpedia.org/resource/John_Lane_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "The Last Crusade";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/MaxwellDonald> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/John_Lane_(publisher)>
+        rdfs:label  "John Lane (publisher)"@en .
+
+<http://data.open.ac.uk/time/edtf/1918-Ll-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "at the end of 1918"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1918;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Music_hall>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music hall"@en .
+
+<http://data.open.ac.uk/led/performance/Watching+the+trains+come+in+(,+performance+of)/1393864487399>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Watching the trains come in'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Palestine>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_hall>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/MaxwellDonald>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Watching+the+trains+come+in/1393864487391> .
+
+<http://dbpedia.org/resource/The_Bodley_Head>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "The Bodley Head"@en , "John Lane and Elkin Mathews — The Bodley Head"@en .
+
+<http://data.open.ac.uk/led/music/Watching+the+trains+come+in/1393864487391>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Watching the trains come in"@en;
+        <http://purl.org/dc/terms/title>
+                "Watching the trains come in" .
+
+<http://data.open.ac.uk/time/edtf/1920-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1920"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1920> .
+
+<http://data.open.ac.uk/led/lexp/1393864546767>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "At Tul Keram the train decided it would not go any further that day. We took things quite philosophically, however, and found a tent in a rest camp hard by and made ourselves tolerably comfortable. A group of Tommies sitting by the railway line and full of railway optimisim were singing a music-hall ditty, something about \"Watching the trains come in.\" They were led by a humorist, mimicking the conductor of an orchestra, in pukka low comedian style. He sang solo parts and raised his baton dramatically to bring in a chorus. And a right noisy chorus it was too. It went something like this: -\r\n\r\nSolo: Watching the trains come in,\r\nWatching the train come in,\r\nThere we were sitting hand-in-hand,\r\nAs only lovers can understand!\r\n(pp.) Watching the trains come in,\r\n(Cres.) We could hear the porter shout,\r\nFull Chorus: And when we had watched all the trains come in\r\n(fff) We watched all the trains go out!\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Last+Crusade/1393864377913>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "59-60";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/MaxwellDonald>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Palestine>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1918-Ll-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-03T16:35:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Watching+the+trains+come+in+(,+performance+of)/1393864487399> .
+
+<http://dbpedia.org/resource/Palestine>
+        rdfs:label  "Palestine"@en .
+
+<http://reference.data.gov.uk/id/year/1920>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1920"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://bnb.data.bl.uk/id/person/MaxwellDonald>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Donald Maxwell"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Maxwell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Donald" .

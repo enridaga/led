@@ -1,0 +1,141 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://data.open.ac.uk/led/lexp/1446651984333>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/f9f932ac92e3974f000d3978facd9656/excerpt/3840906517278a0a6777ef1c471d5bfa>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "3";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1899-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-04-07T13:27:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-04T15:46:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/b86ef66f2c346e066b3979c673965d8f/1446651900980>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f9f932ac92e3974f000d3978facd9656/excerpt/3840906517278a0a6777ef1c471d5bfa> .
+
+<http://data.open.ac.uk/led/music/Y+Deryn+Pur/1446651900966>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Y Deryn Pur"@en;
+        <http://purl.org/dc/terms/title>
+                "Y Deryn Pur" .
+
+<http://data.open.ac.uk/time/edtf/1899-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/source/The+Irish+Eisteddfod/1446651776324>
+        rdf:type           <http://purl.org/ontology/bibo/Article> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Irish Eisteddfod"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/journalism>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/north+wales+observer+and+express/vol/22/issue/1162>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://welshnewspapers.llgc.org.uk/en/page/view/3567519/ART10>;
+        <http://purl.org/dc/terms/title>
+                "The Irish Eisteddfod";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/led/source/north+wales+observer+and+express/vol/22/issue/1162>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "North Wales Observer and Express"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://reference.data.gov.uk/id/day/1899-06-07>;
+        <http://purl.org/dc/terms/title>
+                "North Wales Observer and Express";
+        <http://purl.org/ontology/bibo/issue>
+                "1162";
+        <http://purl.org/ontology/bibo/volume>
+                "22" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/performance/b86ef66f2c346e066b3979c673965d8f/1446651900980>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Y Deryn Pur'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Y+Deryn+Pur/1446651900966>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Bronwen+Jones/1446651900984> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://welshnewspapers.llgc.org.uk/en/page/view/3567519/ART10>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-11-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Welsh Newspapers Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://welshnewspapers.llgc.org.uk/en/page/view/3567519/ART10"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://reference.data.gov.uk/id/day/1899-06-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 June, 1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899> .
+
+<http://data.open.ac.uk/led/agent/Bronwen+Jones/1446651900984>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Bronwen Jones"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/source/f9f932ac92e3974f000d3978facd9656/excerpt/3840906517278a0a6777ef1c471d5bfa>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>At the Oireachtas meeting at Dublin, last week, the singing of \"Y Deryn Pur\" by Miss Bronwen Jones elicited loud and long-continued applause. There was a large sprinkling of Welshmen in the audience, \"Cymru am byth\" being shouted and \"Hen wlad fy nhadau\" demanded and refused with difficulty, through the lateness.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Irish Eisteddfod' pp. 3 (51 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Irish+Eisteddfod/1446651776324>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "3" .

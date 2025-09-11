@@ -1,0 +1,238 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Dennis+Brain+and+colleagues/1477168027907>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Dennis Brain and colleagues"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Denis Matthews"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/broadcaster> , <http://data.open.ac.uk/led/musicologist> , <http://data.open.ac.uk/led/pianist>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1919-02-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Coventry>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1988-12-24>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Birmingham>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> .
+
+<http://dbpedia.org/resource/Wind_quintet>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Wind quintet"@en .
+
+<http://dbpedia.org/resource/Wind_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Wind instrument"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.66>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  66 .
+
+<http://data.open.ac.uk/led/broadcaster>
+        rdfs:label  "Broadcaster"@en , "broadcaster"@en .
+
+<http://data.open.ac.uk/led/musicologist>
+        rdfs:label  "Musicologist"@en , "musicologist"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/bfd8d685c5053094130deaa611f7e5c4/excerpt/2d74a15ec29e12989289c173550153e1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p></p>\r\n<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: Calibri; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">I wrote, at the Academy, a <em>Partita</em> for wind-quintet, having been pressed to do something in this genre by Dennis Brain and his colleagues.<span style=\"mso-spacerun: yes;\">&nbsp; </span>But the war intervened, I never heard it played, and Dennis kept the score.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Then, in 1947, they performed it for the City Music Society and invited me along.<span style=\"mso-spacerun: yes;\">&nbsp; </span>It was a strange sensation hearing a work of one&rsquo;s own that one had practically forgotten, and they did it so well that I thought they must have rewritten it.<span style=\"mso-spacerun: yes;\">&nbsp; </span>They assured me they hadn&rsquo;t.<span style=\"mso-spacerun: yes;\">&nbsp;&nbsp; </span></span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'In Pursuit of Music' pp. 46 (91 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/In+Pursuit+of+Music/1476994362789>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "46" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Coventry>
+        rdfs:label  "Coventry"@en .
+
+<http://data.open.ac.uk/led/performance/8f31ba2d8f9c1cb23158b868dcc78387/1477168027905>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Partita for wind quintet'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Wind_quintet>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/French_horn> , <http://dbpedia.org/resource/Wind_instrument>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Partita+for+wind+quintet/1477168027898>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Dennis+Brain+and+colleagues/1477168027907> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/music/Partita+for+wind+quintet/1477168027898>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Partita for wind quintet"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_>;
+        <http://purl.org/dc/terms/title>
+                "Partita for wind quintet";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_> .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Birmingham>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Birmingham"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.47>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  47 .
+
+<http://data.open.ac.uk/time/edtf/1966-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1966"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1966;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1966>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.66> .
+
+<http://bnb.data.bl.uk/id/organization/VictorGollanczLtd>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Victor Gollancz Ltd."@en .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.88>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  88 .
+
+<http://data.open.ac.uk/led/lexp/1477168098207>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/bfd8d685c5053094130deaa611f7e5c4/excerpt/2d74a15ec29e12989289c173550153e1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "46";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1947-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2017-05-16T12:51:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2016-10-22T20:28:18.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8f31ba2d8f9c1cb23158b868dcc78387/1477168027905>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/bfd8d685c5053094130deaa611f7e5c4/excerpt/2d74a15ec29e12989289c173550153e1> .
+
+<http://data.open.ac.uk/led/source/In+Pursuit+of+Music/1476994362789>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "In Pursuit of Music"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1966-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/VictorGollanczLtd>;
+        <http://purl.org/dc/terms/title>
+                "In Pursuit of Music";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/b8228342-c1f2-4cd8-a4bc-1264cd7a992f#_> .
+
+<http://data.open.ac.uk/led/pianist>
+        rdfs:label  "pianist"@en , "Pianist"@en .
+
+<http://reference.data.gov.uk/id/day/1919-02-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 February, 1919"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1919;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://reference.data.gov.uk/id/day/1988-12-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 December, 1988"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1988;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.88> .
+
+<http://data.open.ac.uk/time/edtf/1947-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1947"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1947;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.47> .
+
+<http://reference.data.gov.uk/id/year/1966>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .
+
+<http://dbpedia.org/resource/French_horn>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "French horn"@en .

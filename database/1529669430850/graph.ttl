@@ -1,0 +1,142 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/place/7ac444408c589793e31b0f1e3e3321a5>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Croydon Town Hall, Croydon"@en;
+        <http://purl.org/dc/terms/description>
+                "Croydon Town Hall, Croydon"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Croydon> .
+
+<http://data.open.ac.uk/led/performance/e16caf41f8503ed4a2f33a189e661335/1529669333944>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Unspecified piano music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Croydon>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+piano+music/1534416212739>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/13941d9d-1a17-4c31-bd35-ef42cf7aa57b#_> .
+
+<http://data.open.ac.uk/led/source/Memoirs+of+Henrietta+Burkin/1529661763619>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                " The unpublished memoir of Henrietta Burkin is a single document written in five sections, each section numbered from page 1. Page numbers for listening experiences correspond with pdf formatting (pp. 1 – 87).  The memoir, written between 1975 – 1982 when the author was approaching eighty years old, is held in The Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three-volume annotated bibliography, ‘The Autobiography of the Working Class’ (Harvester Press, 1984-1989). "@en;
+        rdfs:label                  "Memoirs of Henrietta Burkin"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9424>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Memoirs of Henrietta Burkin";
+        <http://purl.org/ontology/bibo/number>
+                "2:118";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529661763850> .
+
+<http://bura.brunel.ac.uk/handle/2438/9424>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-06-22"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9424"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529669389394>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://data.open.ac.uk/led/music/Unspecified+piano+music/1534416212739>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified piano music"@en;
+        <http://purl.org/dc/terms/title>
+                "Unspecified piano music" .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529661763850>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Croydon>
+        rdfs:label  "Croydon"@en .
+
+<http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/ffd69f3fc82c3c7836d583fc3538d6f7>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11pt; font-family: Cambria;\">At one time when I went to the Sunday Evening service at St Mary&rsquo;s le Strand, a few of us used to meet in a room afterwards for coffee and a chat, and someone had the bright idea of forming a Concert party. We went every Sunday for rehearsals; we thought up a few sketches, had a &ldquo;comic&rdquo;, a pianist, and me singing. Oh the confidence of youth! We decided, would you believe, to hire the Croydon Town hall no less, for a show. We could only hope to sell tickets to friends or colleagues at the office. When I think of that night, I squirm. There was this huge hall, with not more than twenty people in the audience, one &ldquo;old dear&rdquo; in the front row knitting throughout, and we all giving of our best, which was truly terrible. Never again! One of the boys, who had some of his office pals there, asked them next day what they thought of it, and they said diabolical, except for the girl who played piano (the Boy&rsquo;s girl friend) and the girl who sang!</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Memoirs of Henrietta Burkin' pp. 37 (191 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Memoirs+of+Henrietta+Burkin/1529661763619>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "37" .
+
+<http://musicbrainz.org/artist/13941d9d-1a17-4c31-bd35-ef42cf7aa57b#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Woman"@en .
+
+<http://data.open.ac.uk/led/performance/23e0fe1380b363c1b606ed929b3de1f3/1529669389390>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Unspecified songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Croydon>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+songs/1534416243487>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529669389394> .
+
+<http://data.open.ac.uk/led/lexp/1529669430850>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/ffd69f3fc82c3c7836d583fc3538d6f7>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "37";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/7ac444408c589793e31b0f1e3e3321a5>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-16T10:44:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-22T12:10:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/e16caf41f8503ed4a2f33a189e661335/1529669333944> , <http://data.open.ac.uk/led/performance/23e0fe1380b363c1b606ed929b3de1f3/1529669389390>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/ffd69f3fc82c3c7836d583fc3538d6f7> .
+
+<http://data.open.ac.uk/led/music/Unspecified+songs/1534416243487>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified songs"@en;
+        <http://purl.org/dc/terms/title>
+                "Unspecified songs" .

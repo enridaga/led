@@ -1,0 +1,582 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://reference.data.gov.uk/id/day/1786-12-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 December, 1786"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1786;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/music/Piano+Concerto/1534256073321>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Friedrich+Kalkbrenner/1426504973899>;
+        <http://purl.org/dc/terms/title>
+                "Piano Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Friedrich+Kalkbrenner/1426504973899> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/agent/Peter+Hawker/1533889908223>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Peter Hawker"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/writer> , <http://data.open.ac.uk/led/amateur+musician> , <http://data.open.ac.uk/led/army+officer> , <http://data.open.ac.uk/led/sportsman>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1786-12-24>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1853-08-07>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hawker";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Peter" .
+
+<http://data.open.ac.uk/led/piano+teacher>
+        rdfs:label  "piano teacher"@en .
+
+<http://data.open.ac.uk/led/teacher>
+        rdfs:label  "teacher"@en , "Teacher"@en .
+
+<http://data.open.ac.uk/led/writer>
+        rdfs:label  "writer"@en , "Writer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.58>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  58 .
+
+<http://dbpedia.org/resource/Conservatoire_de_Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Conservatoire de Paris"@en .
+
+<http://data.open.ac.uk/led/lexp/1534256162269>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/a45b362d25338672a986c8528d4c39bc/excerpt/92cd05b21ca59e76561c164d346e2676>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "334–335";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Louis+Adam/1534255773193> , <http://data.open.ac.uk/led/agent/A+jury/1534255537117> , <http://data.open.ac.uk/led/person/Luigi+Cherubini/1427226426732> , <http://data.open.ac.uk/led/agent/Peter+Hawker/1533889908223>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/131d152604da0049bb588678e2959834>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1828-08-12TEe:ee:ee>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-21T17:12:08.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-08-14T14:16:03.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/d01cc48acd37c37366b444c9f97a90a5/1534255977174> , <http://data.open.ac.uk/led/performance/f7332d848d4f12967247b0ef61f3fcc7/1534256073328>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a45b362d25338672a986c8528d4c39bc/excerpt/92cd05b21ca59e76561c164d346e2676> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://dbpedia.org/resource/Paris>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Paris"@en .
+
+<http://data.open.ac.uk/led/agent/Female+students+of+the+Paris+Conservatoire/1534255977176>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Female students of the Paris Conservatoire"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.86>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  86 .
+
+<http://reference.data.gov.uk/id/day/1842-03-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 March, 1842"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1842;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://data.open.ac.uk/led/source/a45b362d25338672a986c8528d4c39bc/excerpt/92cd05b21ca59e76561c164d346e2676>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">Mr. Kalkbrenner gave me a seat in his box this morning, to hear the pianoforte pupils of the Conservatoire play for the prizes before a full audience in the theatre of that establishment, which is called the Ecole de Musique. The performance began at nine o&rsquo;clock, and the great Cherubini sat in state as the harmonic judge, surrounded by a kind of jury of other mighty dons. The first batch of pupils were seven girls, who each played the same piece, and then read an MS. at sight. The piece was Kalkbrenner&rsquo;s, and the MS. was Cherubini&rsquo;s. Monsieur Adam, the old man who for many years has been pianoforte master to the Conservatoire, and who was Kalkbrenner&rsquo;s master, sat by the side of the pupils. It became tedious and monotonous to hear the same thing played over so many times, and, as a&nbsp;</span><span style=\"font-family: Calibri, sans-serif; font-size: 11pt;\">matter of etiquette, all applause was withheld. At last the first act of this exhibition came to a close by a vase being handed round among the judges, and their placing therein little things similar to our balls in &lsquo;blackballing&rsquo; at clubhouses, when three of the young ladies were called on, and severally addressed as best, second best, and so on for the prizes; and on Cherubini finishing his short oration to them from the grand box, there was a great burst of applause. The next part of the exhibition was to be young men playing a concerto of Kalkbrenner&rsquo;s; sat out three of them, but when I heard there were to be five or six more, I could weather it no longer, so took the liberty to &lsquo;bolt.&rsquo;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Journal entry, 12 August 1828' pp. 334–335 (286 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Journal+entry,+12+August+1828/1534255355324>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "334–335" .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/led/army+officer>
+        rdfs:label  "Army officer"@en , "army officer"@en .
+
+<http://reference.data.gov.uk/id/day/1848-04-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 April, 1848"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1848;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.48> .
+
+<http://reference.data.gov.uk/id/day/1760-09-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 September, 1760"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1760;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/performance/d01cc48acd37c37366b444c9f97a90a5/1534255977174>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Unspecified solo piano music'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Conservatoire_de_Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_solo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Peter+Hawker/1533889908223> , <http://data.open.ac.uk/led/agent/Louis+Adam/1534255773193> , <http://data.open.ac.uk/led/agent/A+jury/1534255537117> , <http://data.open.ac.uk/led/person/Luigi+Cherubini/1427226426732>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+solo+piano+music/1534255977167>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Female+students+of+the+Paris+Conservatoire/1534255977176> .
+
+<http://data.open.ac.uk/led/source/Journal+entry,+12+August+1828/1534255355324>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Journal entry, 12 August 1828"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+diary+of+colonel+peter+hawker,+1802-1853/vol/1>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/diaryofcolonelpe01hawk>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Journal entry, 12 August 1828";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/HawkerPeter> .
+
+<http://data.open.ac.uk/led/sportsman>
+        rdfs:label  "sportsman"@en , "Sportsman"@en .
+
+<https://archive.org/details/diaryofcolonelpe01hawk>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-03-21"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/diaryofcolonelpe01hawk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/375d52ad-5b7a-4f96-80e2-6d9ad13f5160#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Luigi Cherubini"@en .
+
+<http://data.open.ac.uk/time/edtf/1842-03-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "March, 1842"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1842;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.42> .
+
+<http://data.open.ac.uk/led/conductor>
+        rdfs:label  "conductor"@en , "Conductor"@en .
+
+<http://data.open.ac.uk/led/piano+virtuoso>
+        rdfs:label  "Piano virtuoso"@en .
+
+<http://data.open.ac.uk/led/person/Friedrich+Kalkbrenner/1426504973899>
+        rdf:type                       <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                     "Friedrich Kalkbrenner" , "Kalkbrenner" , "Friedrich Kalkbrenner"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://data.open.ac.uk/led/piano+teacher> , <http://data.open.ac.uk/led/piano+manufacturer>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1785-11-uu>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1849-06-10>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Kalkbrenner";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Friedrich" .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://data.open.ac.uk/time/edtf/1828-08-12TEe:ee:ee>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 August, 1828, in the morning"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1828;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.28> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/performance/f7332d848d4f12967247b0ef61f3fcc7/1534256073328>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Piano Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Conservatoire_de_Paris>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Peter+Hawker/1533889908223> , <http://data.open.ac.uk/led/agent/Louis+Adam/1534255773193> , <http://data.open.ac.uk/led/agent/A+jury/1534255537117> , <http://data.open.ac.uk/led/person/Luigi+Cherubini/1427226426732>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+Concerto/1534256073321>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Male+students+of+the+Paris+Conservatoire/1534256073331> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/A+jury/1534255537117>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "A jury"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "jury";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "A" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Florence>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Florence"@en .
+
+<http://data.open.ac.uk/time/edtf/1893-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1893>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://bnb.data.bl.uk/id/organization/LongmansGreenandCo>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Longmans, Green, and Co."@en .
+
+<http://bnb.data.bl.uk/id/person/HawkerPeter>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Peter Hawker"@en .
+
+<http://data.open.ac.uk/led/theorist>
+        rdfs:label  "Theorist"@en .
+
+<http://data.open.ac.uk/led/agent/Male+students+of+the+Paris+Conservatoire/1534256073331>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Male students of the Paris Conservatoire"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/led/piano+manufacturer>
+        rdfs:label  "piano manufacturer"@en .
+
+<http://reference.data.gov.uk/id/day/1853-08-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 August, 1853"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1853;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/person/Luigi+Cherubini/1427226426732>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Cherubini"@en , "Luigi Cherubini"@en , "Cherubini";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/theorist> , <http://data.open.ac.uk/led/director+of+the+paris+conservatoire+(1822-42)> , <http://data.open.ac.uk/led/music+publisher> , <http://data.open.ac.uk/led/teacher> , <http://data.open.ac.uk/led/conductor> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1760-09-14> , <http://data.open.ac.uk/time/edtf/1760-09-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Florence>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1842-03-15> , <http://data.open.ac.uk/time/edtf/1842-03-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Cherubini";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Luigi" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Piano_solo>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano solo"@en .
+
+<http://reference.data.gov.uk/id/day/1849-06-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 June, 1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.28>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  28 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.3>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/music/Unspecified+solo+piano+music/1534255977167>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Unspecified solo piano music"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/375d52ad-5b7a-4f96-80e2-6d9ad13f5160#_> , <http://data.open.ac.uk/led/person/Friedrich+Kalkbrenner/1426504973899>;
+        <http://purl.org/dc/terms/title>
+                "Unspecified solo piano music";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/375d52ad-5b7a-4f96-80e2-6d9ad13f5160#_> , <http://data.open.ac.uk/led/person/Friedrich+Kalkbrenner/1426504973899> .
+
+<http://dbpedia.org/resource/Piano_concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano concerto"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://reference.data.gov.uk/id/day/1758-12-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 December, 1758"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1758;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.58> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/place/131d152604da0049bb588678e2959834>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "École de Musique, Paris Conservatoire"@en;
+        <http://purl.org/dc/terms/description>
+                "École de Musique, Paris Conservatoire"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Paris> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.48>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  48 .
+
+<http://data.open.ac.uk/time/edtf/1760-09-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "September, 1760"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1760;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.42>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  42 .
+
+<http://data.open.ac.uk/time/edtf/1785-11-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "November, 1785"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1785;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/led/amateur+musician>
+        rdfs:label  "amateur musician"@en , "Amateur musician"@en , "Amateur Musician"@en .
+
+<http://data.open.ac.uk/led/agent/Louis+Adam/1534255773193>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Louis Adam"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/piano+virtuoso> , <http://data.open.ac.uk/led/teacher> , <http://data.open.ac.uk/led/composer>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1758-12-03>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Alsace>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1848-04-08>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Paris>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Adam";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Louis" .
+
+<http://data.open.ac.uk/led/music+publisher>
+        rdfs:label  "Music publisher"@en , "music publisher"@en .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/source/the+diary+of+colonel+peter+hawker,+1802-1853/vol/1>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Diary of Colonel Peter Hawker, 1802-1853"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1893-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/organization/LongmansGreenandCo>;
+        <http://purl.org/dc/terms/title>
+                "The Diary of Colonel Peter Hawker, 1802-1853";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/volume>
+                "1" .
+
+<http://data.open.ac.uk/led/director+of+the+paris+conservatoire+(1822-42)>
+        rdfs:label  "Director of the Paris Conservatoire (1822-42)"@en .

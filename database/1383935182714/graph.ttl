@@ -1,0 +1,100 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/YearRange.5u>
+        rdf:value   "5u";
+        rdfs:label  "50s"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://musicbrainz.org/artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd#_>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                     "Herbie Hancock"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1940-04-12>;
+        owl:sameAs                     <http://bnb.data.bl.uk/id/person/HancockHerbie1940-> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FHamilton%2BCollege%2F1383934607803>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Hamilton College "@en;
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Jazz Archive, Hamilton College, 198 College\nHill Road, Clinton, NY 13323."@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Hamilton+College/1383934607803> .
+
+<http://dbpedia.org/resource/Chicago>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Chicago"@en .
+
+<http://reference.data.gov.uk/id/day/1940-04-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 April, 1940"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1940;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://bnb.data.bl.uk/id/person/HancockHerbie1940->
+        rdfs:label  "Herbie Hancock"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/195u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1950's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.5u> .
+
+<http://data.open.ac.uk/led/source/Hamilton+College/1383934607803>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "interview given by Herbie Hancock, well-known jazz keyboardist and composer to Michael Woods on November 18 1995"@en;
+        rdfs:label                  "Hamilton College"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/oral>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd#_> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://data.open.ac.uk/led/lexp/1383935182714>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "...Anyway my mother was a very important, the most important influence on me as far as not only support but being able to push me, move me forward. Because I had a tendency to kind of lay back and be a little shy you know. And she would just push me on out there. And I’m glad she did you know. Anyway, I noticed in high school that the kids that were the most mature acting and the coolest and the most mysterious were the ones that listened to jazz.  \r\nMW: Aha.\r\nHH: And I said I want to be like that. So I started hanging out with them. And you hang out with them, they’re listening to jazz. So that was one of the things. That was one of the things. There was another very important thing too. There was a pianist named Don Goldberg who performed at the variety show that my school used to give every semester.  And he had a jazz trio. And he was my age, he was in my class, and I heard him improvising and I was shocked first of all. It sounded, I didn’t know what he was doing.  Because I always used to turn jazz off whenever it was on the radio, because I didn’t understand it and I didn’t want to know anything about it, I didn’t care about it, I didn’t like it. But when I saw this guy improvising and it sounded organized to me. I didn’t know what he was doing but it sounded like he knew what he was doing. Then I became fascinated. ‘Cause he was doing it on my instrument and he was my age. I thought you had to be much older to play jazz you know, like nineteen or something. But he was doing it. And so I started hanging out with this guy and asking him what is he listening to, how does he learn that, how do you do these things..."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source-ref/http%3A%2F%2Fled.kmi.open.ac.uk%2Fitem%2Fsource%2FHamilton%2BCollege%2F1383934607803>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Ivan+Hewett/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chicago>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/195u-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-11-08T18:26:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

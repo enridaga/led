@@ -1,0 +1,464 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs/1419005663183/1419005663192>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Songs'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chelsea,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Songs/1419005663183>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Lisa+Perli/1419005663195> , <http://data.open.ac.uk/led/agent/Kendall+Taylor/1419005663198> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://reference.data.gov.uk/id/day/1897-04-03>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "3 April, 1897"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.3>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1897;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.97> .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+24+Jan+1939/1419005392469>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Lionel Bradley Bulletin, 24 Jan 1939"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "Special Collections, Royal College of Music Library";
+        <http://purl.org/dc/terms/title>
+                "Lionel Bradley Bulletin, 24 Jan 1939";
+        <http://purl.org/ontology/bibo/number>
+                "LJHB-02/034";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319> .
+
+<http://reference.data.gov.uk/id/year/1898>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1898"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/thing/Librarian>
+        rdfs:label  "Librarian"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://reference.data.gov.uk/id/day/1953-12-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 December, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://dbpedia.org/resource/Johannes_Brahms>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Johannes Brahms" , "Brahms" , "Johannes Brahms"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1833-05-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Hamburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1897-04-03>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/BrahmsJohannes1833-1897>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Brahms";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/agent/Lisa+Perli/1419005663195>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lisa Perli"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://musicbrainz.org/artist/2a006dfe-a7af-46d1-b38f-8c1d90dd230d#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Frederick Delius"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trio+in+A+minor/1419005532449/1419005532455>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Trio in A minor'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chelsea,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_trio> , <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+Trio/1402250954828>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Grinke+Trio/1419005468465> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://reference.data.gov.uk/id/day/1833-05-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 May, 1833"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1833;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://dbpedia.org/resource/Frederick_Delius>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Frederick Delius"@en , "Frederick Delius" , "Frederik Delius"@en , "Delius";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer> , <http://data.open.ac.uk/led/composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1862-01-29>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Bradford>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1934-06-10>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Grez-sur-Loing>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://musicbrainz.org/artist/2a006dfe-a7af-46d1-b38f-8c1d90dd230d#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Delius";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frederik" .
+
+<http://data.open.ac.uk/time/edtf/1898-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1898"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1898;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1898>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://dbpedia.org/resource/Grez-sur-Loing>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Grez-sur-Loing"@en .
+
+<http://data.open.ac.uk/led/lexp/1419005724052>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/abc6a281a17fe4139cecb563599279ac/excerpt/e2b907a7adeea3abeefa6cdc12483c56>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/kerriedinburgh/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chelsea,_London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1939-01-24>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-07T14:32:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-12-19T16:15:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Phidyle/1419005585065/1419005585078> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs/1419005663183/1419005663192> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trio+in+A+minor/1419005532449/1419005532455> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trio+in+C+op.87/1419005468456/1419005468462>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/abc6a281a17fe4139cecb563599279ac/excerpt/e2b907a7adeea3abeefa6cdc12483c56> .
+
+<http://data.open.ac.uk/led/agent/Lisa+Perli/1419005610369>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lisa Perli"@en .
+
+<http://data.open.ac.uk/led/music/Phidyle/1419005585065>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Phidyle"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Duparc/1419005585074>;
+        <http://purl.org/dc/terms/title>
+                "Phidyle";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Duparc/1419005585074> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Trio+in+C+op.87/1419005468456/1419005468462>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Trio in C op.87'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chelsea,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_trio> , <http://dbpedia.org/resource/Chamber_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Cello>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Trio+in+C+op.87/1419005468456>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Grinke+Trio/1419005468465> .
+
+<http://bnb.data.bl.uk/id/person/BrahmsJohannes1833-1897>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johannes Brahms"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Phidyle/1419005585065/1419005585078>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Phidyle'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Chelsea,_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Phidyle/1419005585065>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Lisa+Perli/1419005610369> , <http://data.open.ac.uk/led/agent/Kendall+Taylor/1419005610372> .
+
+<http://data.open.ac.uk/led/music/Songs/1419005663183>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Songs"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gabriel_Faur%C3%A9> , <http://dbpedia.org/resource/Frederick_Delius>;
+        <http://purl.org/dc/terms/title>
+                "Songs";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gabriel_Faur%C3%A9> , <http://dbpedia.org/resource/Frederick_Delius> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Chelsea,_London>
+        rdfs:label  "Chelsea, London"@en .
+
+<http://data.open.ac.uk/led/source/abc6a281a17fe4139cecb563599279ac/excerpt/e2b907a7adeea3abeefa6cdc12483c56>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Jan. 24, Chelsea Music Club, Grinke Trio, Lisa Perli</p>\r\n<p>The Grinke Trio though competent enough hasn't any particularly outstanding qualities and I am inclined to think that the violinist (F[rederick] Grinke) is a little inferior to his cellist (Florence Hooton) and his pianist (Kendall Taylor). Certainly his tone was a little rough at times while Miss Hooton&rsquo;s was generally smooth &amp; rich. The Brahms <span style=\"text-decoration: underline;\">Trio in C. op. 87</span> never seemed to come properly to life and the andante con moto might almost be said to have dragged its slow length along. The other work they played was Ravel&rsquo;s <span style=\"text-decoration: underline;\">Trio in A minor</span> which I have never got hold of properly or found specially attractive. I don&rsquo;t think it was a bad performance but it did not strike me as being particularly good.</p>\r\n<p>After each trio Lisa Perli (who took, at short notice, the place of Dino Borgioli, indisposed, himself a substitute for Bruce Boyce) sang a group of songs. It is a long time since I heard or saw Dora Labbette but I think her hair has changed its colour with her name. The hair is now a light auburn or dark-gold. I doubt whether opera singing has been good for her singing of songs tho&rsquo; it may have improved her voice production. It is not a very full voice tho&rsquo; it can ring out. I thought I detected a trace of unsteadiness now and then. She began with Duparc&rsquo;s lovely <span style=\"text-decoration: underline;\">Phidyl&eacute;</span> followed by four of Faur&eacute;&rsquo;s of which the best (or best sung) was <span style=\"text-decoration: underline;\">Apr&egrave;s un R&ecirc;ve</span>. Her second group consisted of 7 songs by Delius which do not call for comment.</p>\r\n<p>On the whole it wasn&rsquo;t quite so good an evening as one usually gets at these concerts &amp; the audience, notably smaller than usual, visibly diminished before and during the last group of songs</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Lionel Bradley Bulletin, 24 Jan 1939' (320 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+24+Jan+1939/1419005392469>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/person/Duparc/1419005585074>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Duparc" .
+
+<http://data.open.ac.uk/led/music/Piano+Trio/1402250954828>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano Trio in A minor"@en , "Piano Trio"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Maurice_Ravel>;
+        <http://purl.org/dc/terms/title>
+                "Piano Trio";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Maurice_Ravel> .
+
+<http://data.open.ac.uk/led/music/Trio+in+C+op.87/1419005468456>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Trio in C op.87"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Johannes_Brahms>;
+        <http://purl.org/dc/terms/title>
+                "Trio in C op.87";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Johannes_Brahms> .
+
+<http://dbpedia.org/resource/Chamber_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Chamber music"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://dbpedia.org/resource/Gabriel_Faur%C3%A9>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gabriel Fauré"@en , "Fauré, Gabriel, 1845-1924"@en , "Fauré";
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/Faur%C3%A9Gabriel1845-1924> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://dbpedia.org/resource/Piano_trio>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano trio"@en .
+
+<http://dbpedia.org/resource/Bradford>
+        rdfs:label  "Bradford"@en .
+
+<http://reference.data.gov.uk/id/day/1939-01-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 January, 1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/led/agent/Grinke+Trio/1419005468465>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Grinke Trio"@en .
+
+<http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Lionel Bradley"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Librarian>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1898-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-12-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bradley";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Lionel" .
+
+<http://reference.data.gov.uk/id/day/1862-01-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 January, 1862"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1862;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.62> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://dbpedia.org/resource/Hamburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hamburg"@en .
+
+<http://data.open.ac.uk/led/agent/Kendall+Taylor/1419005610372>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Kendall Taylor"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/led/agent/Kendall+Taylor/1419005663198>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Kendall Taylor"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://reference.data.gov.uk/id/day/1934-06-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 June, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .

@@ -1,0 +1,178 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/1684-uu-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1684, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.84> .
+
+<http://data.open.ac.uk/led/music/unspecified+Ballad+singing/1549633517885>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified Ballad singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified Ballad singing" .
+
+<http://data.open.ac.uk/led/performance/8ba1c1541753f40cdb26925650a63a53/1549633517911>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified Ballad singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Outdoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song> , <http://dbpedia.org/resource/Ballad>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Richard+Bycott/1549633284556> , <http://data.open.ac.uk/led/agent/Mrs.+Bycott/1549633294999> , <http://data.open.ac.uk/led/agent/Mr.+Combes/1549633313880> , <http://data.open.ac.uk/led/agent/William+Linch/1549633396067>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+Ballad+singing/1549633517885>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/unnamed+thief/1549633517929> .
+
+<http://data.open.ac.uk/led/agent/William+Linch/1549633396067>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "William Linch"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Ireland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Linch";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "William" .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/agent/Mr.+Combes/1549633313880>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. Combes"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Combes";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr." .
+
+<http://data.open.ac.uk/led/source/d0cd1eae24c774eb1dc9255ad626896e/excerpt/bba8f9ffd19eda791f47a3b6051093ab>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[William Linch was sentenced to branding on 8 October 1684]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">William Linch an Irish-man, Indicted, for that he, together with three others not yet taken, stole one silver Tankard, value 10 l. and one silver Tobacco-box, value 30 s. being the Goods of Richard Bycott of&nbsp;Sohoe-fields. Upon the Tryal, it appeared they came into Bycott's House to drink, whose Wife, but two Hours before, had lock'd up the said Plate in two several Trunks that stood in the Chamber where they first drank, from whence they sent first one and then another of their Companions, down to the Street-door to sing&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">a Ballad; that by the help of that Noise it might not be heard when they pick'd the Locks of the said Trunk. It was proved this Linch confess'd, that Combes, one of his said Company, was more ingenuous than he in picking of Locks, and therefore was put upon it: but it being apparent they were all concerned, Linch was found Guilty.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), October 1684, trial of William Linch (t16841008-9)' (161 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+October+1684,+trial+of+William+Linch+(t16841008-9)/1549633261483>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/agent/Mrs.+Bycott/1549633294999>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs. Bycott"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bycott";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs." .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Ireland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.84>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  84 .
+
+<http://dbpedia.org/resource/Ballad>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Ballad"@en .
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+October+1684,+trial+of+William+Linch+(t16841008-9)/1549633261483>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), October 1684, trial of William Linch (t16841008-9)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org%2520>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), October 1684, trial of William Linch (t16841008-9)";
+        <http://purl.org/ontology/bibo/number>
+                "t16841008-9";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Richard+Bycott/1549633284556>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Richard Bycott"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bycott";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard" .
+
+<http://data.open.ac.uk/led/agent/unnamed+thief/1549633517929>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "unnamed thief"@en .
+
+<http://data.open.ac.uk/led/lexp/1549633609775>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey, 1674-1913’, a fully searchable database detailing the lives of non-elite people, containing 197,745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/d0cd1eae24c774eb1dc9255ad626896e/excerpt/bba8f9ffd19eda791f47a3b6051093ab>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Richard+Bycott/1549633284556> , <http://data.open.ac.uk/led/agent/Mrs.+Bycott/1549633294999> , <http://data.open.ac.uk/led/agent/Mr.+Combes/1549633313880> , <http://data.open.ac.uk/led/agent/William+Linch/1549633396067>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0385b62207e8407415987c9c7e1920db>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1684-uu-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-03-28T15:01:42.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-08T13:46:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8ba1c1541753f40cdb26925650a63a53/1549633517911>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d0cd1eae24c774eb1dc9255ad626896e/excerpt/bba8f9ffd19eda791f47a3b6051093ab> .
+
+<http://data.open.ac.uk/led/place/0385b62207e8407415987c9c7e1920db>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Soho Fields, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Soho Fields, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .

@@ -1,0 +1,279 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/St+George's+Chapel+Choir/1524222592881>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "St George's Chapel Choir"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://www.jimandhelen.com/James_Douglas.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-04-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "http://www.jimandhelen.com"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.jimandhelen.com/James_Douglas.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1524222644161>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/9e8f61ae431037d1f5a0c57e5ae072e7>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "8";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/b44af9d64065e47f7a402323516a522e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-06-21T14:27:55.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-04-20T11:10:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/1d8e96a75590c60ce3b5d9227dcfde1f/1524222592879> , <http://data.open.ac.uk/led/performance/f6a2ebc3ab2cc6cebe69678096746992/1524222333265>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/9e8f61ae431037d1f5a0c57e5ae072e7> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "James Douglas"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/chemist> , <http://data.open.ac.uk/led/clerk+and+manager+railways> , <http://data.open.ac.uk/led/tobacco+importer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1837-12-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/England>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1920-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/England>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Douglas";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "James" .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/1920-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1920"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1920> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/tobacco+importer>
+        rdfs:label  "tobacco importer"@en .
+
+<http://data.open.ac.uk/led/place/b44af9d64065e47f7a402323516a522e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "near Slough, England"@en;
+        <http://purl.org/dc/terms/description>
+                "near Slough, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Slough> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/music/unspecified+singing+for+sacred+play/1524222592869>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing for sacred play"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing for sacred play" .
+
+<http://data.open.ac.uk/led/source/033a9eb4b3a079ef12c578e7725822cb/excerpt/9e8f61ae431037d1f5a0c57e5ae072e7>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"mso-para-margin-top: .01gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0cm; margin: .1pt 0cm .1pt 0cm;\"><span style=\"font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;\">We always took part in the concerts given by the Windsor &amp; Eton Choral Society of which Sir George [Elvey] was the Conductor. He taught playing &amp; singing at several Ladies&rsquo; Schools &amp; at one near Slough they occasionally performed sacred plays at which we sang. One I remember especially when we were all dressed as girls in white muslin singing in the choruses. Every time I had the chance I made some excuse to go to &ldquo;Queen Esther&rdquo; for a kiss &amp; once narrowly escaped setting my muslin dress on fire. The girl who took the part of the Queen was very dark &amp; was one of the prettiest girls I have ever seen. The drums used at the Choral Society&rsquo;s Concerts were very loud &amp; Sir George used to say that &ldquo;they covered a multitude of sins.&rdquo; </span></p>"^^rdf:HTML , "<p>   </p>\r\n<p class=\"MsoNormal\" style=\"mso-para-margin-top: .01gd; mso-para-margin-right: 0cm; mso-para-margin-bottom: .01gd; mso-para-margin-left: 0cm; margin: .1pt 0cm .1pt 0cm;\"><span style=\"font-family: Cambria; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Cambria; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;\">We always took part in the concerts given by the Windsor &amp; Eton Choral Society of which Sir George [Elvey] was the Conductor. He taught playing &amp; singing at several Ladies&rsquo; Schools &amp; at one near Slough they occasionally performed sacred plays at which we sang. One I remember especially when we were all dressed as girls in white muslin singing in the choruses. Every time I had the chance I made some excuse to go to &ldquo;Queen Esther&rdquo; for a kiss &amp; once narrowly escaped setting my muslin dress on fire. The girl who took the part of the Queen was very dark &amp; was one of the prettiest girls I have ever seen. The drums used at the Choral Society&rsquo;s Concerts were very loud &amp; Sir George used to say that &ldquo;they covered a multitude of sins.&rdquo; </span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Account of life as a chorister in the nineteenth century' pp. 8 (140 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Account+of+life+as+a+chorister+in+the+nineteenth+century/1524211623264>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "8" .
+
+<http://reference.data.gov.uk/id/day/1837-12-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 December, 1837"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1837;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/led/performance/f6a2ebc3ab2cc6cebe69678096746992/1524222333265>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Drums-- choral concert'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Drum> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Drums--+choral+concert/1524222333259>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Windsor+and+Eton+Choral+Society/1524222333267> .
+
+<http://reference.data.gov.uk/id/year/1920>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1920"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Account+of+life+as+a+chorister+in+the+nineteenth+century/1524211623264>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The hand-written memoir of James Douglas's early life as a chorister at St George's  Chapel was transcribed by his great granddaughter Jean Harding in 2006. "@en;
+        rdfs:label                  "Account of life as a chorister in the nineteenth century"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Choir Archives, St George's Chapel, Windsor, England";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "All extracts from the memoir are by kind permission of the writer's descendant Prof. James Wilkinson. "@en;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.jimandhelen.com/James_Douglas.pdf>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Account of life as a chorister in the nineteenth century";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242> .
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/music/Drums--+choral+concert/1524222333259>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Drums-- choral concert"@en;
+        <http://purl.org/dc/terms/title>
+                "Drums-- choral concert" .
+
+<http://data.open.ac.uk/led/agent/Windsor+and+Eton+Choral+Society/1524222333267>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Windsor and Eton Choral Society"@en .
+
+<http://data.open.ac.uk/led/clerk+and+manager+railways>
+        rdfs:label  "Clerk and manager railways"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/musicgenre/sacred+vocal>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "sacred vocal"@en .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Slough>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Slough"@en .
+
+<http://data.open.ac.uk/led/performance/1d8e96a75590c60ce3b5d9227dcfde1f/1524222592879>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing for sacred play'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Slough>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/sacred+vocal>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/James+Douglas/1524211962242>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing+for+sacred+play/1524222592869>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/St+George's+Chapel+Choir/1524222592881> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/chemist>
+        rdfs:label  "chemist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.37>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  37 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

@@ -1,0 +1,274 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/university+lecturer>
+        rdfs:label  "university lecturer"@en .
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/Bath,_Somerset>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Bath, Somerset"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://data.open.ac.uk/led/botanist>
+        rdfs:label  "botanist"@en .
+
+<http://data.open.ac.uk/led/agent/old+lady/1432983077735>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "old lady"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/led/Botanist>
+        rdfs:label  "Botanist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/time/edtf/1945-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Llanrwst>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Llanrwst"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Music_of_Wales>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music of Wales"@en .
+
+<http://data.open.ac.uk/led/examiner>
+        rdfs:label  "examiner"@en .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.22:30:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "22:30:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Aberystwyth/1432983077719/1432983077731>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Aberystwyth'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Swansea>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_of_Wales> , <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Aberystwyth/1432983077719>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/old+lady/1432983077735> .
+
+<http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries/1432978471654>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "John Lloyd Williams Diaries"@en , "J. Lloyd Williams Diaries"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "National Library of Wales";
+        <http://purl.org/dc/terms/title>
+                "J. Lloyd Williams Diaries";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW MB1/1-42";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945> .
+
+<http://data.open.ac.uk/led/professor>
+        rdfs:label  "professor"@en .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1910-02-02T22:30:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 February, 1910, 10:30 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.22:30:00>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1910;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://musicbrainz.org/artist/0013da97-3fa2-43b6-846b-953ca8b35a13#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Joseph Parry"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://data.open.ac.uk/led/source/4aba075e4e26a9a663e969e0a4ff53f1/excerpt/373d39d83c26abc9462fe41ec6f7b7b8>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The Grosvenor where I stay full of eaters until 10.30. While at supper heard an old lady sing something minor in the street - went out but lost her - met one of our former students who gave me information about Swansea Chap[el]s and singing - the singer comes past again but it is Aberystwyth she sings - with top notes in completely diff[eren]t &amp; weak register so that from the hotel I only hear snatches of the lower region of the tune.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'John Lloyd Williams Diaries' (85 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries/1432978471654>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/lexp/1432983196353>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/4aba075e4e26a9a663e969e0a4ff53f1/excerpt/373d39d83c26abc9462fe41ec6f7b7b8>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/mallen/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Swansea>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1910-02-02T19:00:00/to/1910-02-02T22:30:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-09T09:37:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-30T10:53:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Aberystwyth/1432983077719/1432983077731>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/4aba075e4e26a9a663e969e0a4ff53f1/excerpt/373d39d83c26abc9462fe41ec6f7b7b8> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://reference.data.gov.uk/id/year/1854>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1854"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1910-02-02T19:00:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 February, 1910, 07:00 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1910;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "John Lloyd Williams"@en , "J. Lloyd Williams"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/lecturer> , <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/editor> , <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer> , <http://data.open.ac.uk/led/university+lecturer> , <http://data.open.ac.uk/led/professor> , <http://data.open.ac.uk/led/examiner> , <http://data.open.ac.uk/led/Botanist> , <http://data.open.ac.uk/led/botanist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian> , <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Llanrwst>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1945-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Bath,_Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Williams";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John Lloyd";
+        <http://xmlns.com/foaf/0.1/nick>
+                "J. Lloyd Williams"@en .
+
+<http://dbpedia.org/resource/Swansea>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Swansea"@en .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.19:00:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "19:00:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/led/music/Aberystwyth/1432983077719>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Aberystwyth"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0013da97-3fa2-43b6-846b-953ca8b35a13#_>;
+        <http://purl.org/dc/terms/title>
+                "Aberystwyth";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0013da97-3fa2-43b6-846b-953ca8b35a13#_> .
+
+<http://data.open.ac.uk/led/editor>
+        rdfs:label  "editor"@en .
+
+<http://data.open.ac.uk/time/interval/1910-02-02T19:00:00/to/1910-02-02T22:30:00>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 2 February, 1910, 07:00 PM and 2 February, 1910, 10:30 PM"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://reference.data.gov.uk/id/gregorian-instant/1910-02-02T19:00:00>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://reference.data.gov.uk/id/gregorian-instant/1910-02-02T22:30:00> .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .

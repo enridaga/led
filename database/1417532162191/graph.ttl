@@ -1,0 +1,263 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/Sonata+in+B+flat/1417532054542>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sonata in B flat"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Schubert>;
+        <http://purl.org/dc/terms/title>
+                "Sonata in B flat";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Schubert> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://reference.data.gov.uk/id/year/1898>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1898"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/Librarian>
+        rdfs:label  "Librarian"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+B+flat/1417532054542/1417532054551>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Sonata in B flat'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Sonata+in+B+flat/1417532054542>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Artur+Schnabel/1425514515372> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/lexp/1417532162191>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/2296025f501ea5122540f9c47a307c7c/excerpt/85afa3e70bbe5cb20f61729b89b0d9f7>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/kerriedinburgh/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/348c6348793367d68a85ea0500283c4a>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1939-01-15>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-07T11:34:19.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-12-02T14:56:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Drei+Klavierst%25C3%25BCcke/1417532097724/1417532097734> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+B+flat/1417532054542/1417532054551> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+D/1417532139767/1417532139773>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/2296025f501ea5122540f9c47a307c7c/excerpt/85afa3e70bbe5cb20f61729b89b0d9f7> .
+
+<http://reference.data.gov.uk/id/day/1953-12-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 December, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Franz_Schubert>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Schubert"@en , "Schubert" , "Franz Schubert" , "Franz Schubert"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Sonata+in+D/1417532139767/1417532139773>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Sonata in D'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Sonata+in+D/1417532139767>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Artur+Schnabel/1425514515372> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/place/348c6348793367d68a85ea0500283c4a>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Cambridge Theatre, Seven Dials, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Cambridge Theatre, Seven Dials, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Seven_Dials> , <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Seven_Dials>
+        rdfs:label  "Seven Dials"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Drei+Klavierst%25C3%25BCcke/1417532097724/1417532097734>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Drei Klavierstücke'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Drei+Klavierst%C3%BCcke/1417532097724>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Artur+Schnabel/1425514515372> .
+
+<http://data.open.ac.uk/time/edtf/1898-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1898"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1898;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1898>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://data.open.ac.uk/led/music/Drei+Klavierst%C3%BCcke/1417532097724>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Drei Klavierstücke"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Schubert>;
+        <http://purl.org/dc/terms/title>
+                "Drei Klavierstücke";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Schubert> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/Sonata+in+D/1417532139767>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Sonata in D"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Franz_Schubert>;
+        <http://purl.org/dc/terms/title>
+                "Sonata in D";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Franz_Schubert> .
+
+<http://data.open.ac.uk/led/agent/Artur+Schnabel/1425514515372>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Artur Schnabel"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Lionel Bradley"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Librarian>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1898-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-12-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bradley";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Lionel" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+15+Jan+1939/1417531907473>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Lionel Bradley Bulletin, 15 Jan 1939"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "Bradley archive, Special Collections, Royal College of Music";
+        <http://purl.org/dc/terms/title>
+                "Lionel Bradley Bulletin, 15 Jan 1939";
+        <http://purl.org/ontology/bibo/number>
+                "LJHB-02/033";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319> .
+
+<http://data.open.ac.uk/led/source/2296025f501ea5122540f9c47a307c7c/excerpt/85afa3e70bbe5cb20f61729b89b0d9f7>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Jan. 15, Cambridge Theatre, London Theatre Concerts, Schnabel Recital</p>\r\n<p>The programme was devoted to Schubert (Sonata B flat [op posth.], Drei Klavierst&uuml;cke [op posth.] Sonata D [op. 53]) and was a sufficient refutation of anyone who thinks that Schubert can create nothing but picturesque tunefulness. Indeed Schnabel&rsquo;s masterly playing seemed almost brutal at times so that one felt that his Bechstein must be shaking, as indeed it appeared once or twice to rattle, under the strain. But in this performance I felt it would be true to say not only of the playing but of the composing that <span style=\"text-decoration: underline;\">mens agitat molem</span> unless we are to suppose that Schubert composed merely by instinct &ndash; a supposition which is demonstrably false since the very full programme notes by William Glock told us that for the 1828 sonatas &ldquo;he made sketches&hellip; on a scale that was unique for him&rdquo;. It is not for me to analyse the music that was played. Both sonatas are substantial works in 4 movements lasting well over half an hour (and not by mere repetition) and the 3 pieces were much more than mere trifles. If there was a deficiency in the playing, it was that the music didn&rsquo;t &ldquo;sing&rdquo; sufficiently. (There is, it seems a letter from S. to his father expressing pleasure because he was told after he had played the variations in his A minor Sonata &ndash; op. 42 &ndash; that under his fingers the keys &ldquo;were transformed into singing voices&rdquo;.)</p>\r\n<p>Tonight&rsquo;s audience was one of the most bronchial I have ever encountered so that not only were there occasional coughs throughout but there was a positive spasm of it after each movement. This was not only irritating to the listener but distracting also to the pianist who was moved to protest after the second movement of the last sonata &ldquo;You expect me to do my best and I try but I expect <span style=\"text-decoration: underline;\">you</span> also to do <span style=\"text-decoration: underline;\">your</span> best and stop coughing&rdquo;[.]</p>\r\n<p>The concert ended in a beautiful peacefulness &amp; whether for that reason or not, the last two movements seemed the most lyrical and easeful of the evening.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Lionel Bradley Bulletin, 15 Jan 1939' (363 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+15+Jan+1939/1417531907473>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://bnb.data.bl.uk/id/person/SchubertFranz1797-1828>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Franz Schubert"@en .
+
+<http://reference.data.gov.uk/id/day/1939-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .

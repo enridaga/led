@@ -1,0 +1,315 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/George_Frideric_Handel>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Handel" , "George Frideric Handel"@en , "Handel"@en , "George Friderich Handel"@en , "Georg Friedrich Haendel"@en , "George Frideric Handel";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1685-02-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Halle>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1759-03-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Handel";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George Frideric";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Georg Friedrich Haendel"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/performance/7bae82216f9f3a177e05746416693161/1444819343374>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Organ Concerto'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cairo>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Evans-Pughe/1442251755935>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Organ+Concerto/1444819343362> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/c79589c34e327c3ef173f95f20b4a1d4/excerpt/224559cd3e703d3db6354d57771b08b2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>TO: The Rev. J and Mrs. Evans-Pughe, Tovil Vicarage, Maidstone, Kent</p>\r\n<p>FROM: John Evans-Pughe, M.E.L.F. Cairo, Egypt</p>\r\n<p>DATE: 31st December 1946</p>\r\n<p>&hellip;.I can&rsquo;t remember whether I sent you the other programme of the concert we did at Music for all on a Sunday evening.&nbsp; The last programme of &ldquo;Ancient Music&rdquo; that we did last Friday was much too ancient and we had 35 players on the stage and 35 listeners in the audience.&nbsp; But we gave almost the same programme at a Methodist Church on Sunday 29th and it was enjoyed very much.&nbsp; Handel&rsquo;s Organ Concerto is great fun, especially the last movement &ndash; the Bourr&eacute;e. I took an A.T.S. girl with me to the Thursday night P.O.W Symphony Concert. We got there in time for the first performance of the Dvorak, but we liked it so much that we stayed to the end of the second half and heard it all over again&hellip;.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letters of the Evans-Pughe Family' (167 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letters+of+the+Evans-Pughe+Family/1442250818151>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Nelahozeves>
+        rdfs:label  "Nelahozeves"@en .
+
+<http://reference.data.gov.uk/id/day/1685-02-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 February, 1685"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1685;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/electronics+engineer>
+        rdfs:label  "electronics engineer"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Bohemia>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Bohemia"@en .
+
+<http://dbpedia.org/resource/Anton%C3%ADn_Dvo%C5%99%C3%A1k>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Antonín Dvořák"@en , "Antonín Dvorák"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1841-09-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Nelahozeves>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1904-05-01>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Prague>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Bohemia>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/Dvo%C5%99%C3%A1kAnton%C3%ADn1841-1904> , <http://musicbrainz.org/artist/819eaeb2-8dd8-48a5-ad07-0bcd137985ef#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Dvorák";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Antonín" .
+
+<http://data.open.ac.uk/led/source/Letters+of+the+Evans-Pughe+Family/1442250818151>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letters of the Evans-Pughe Family"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection           "Private papers of the Evans-Pughe family";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "Contributed by Christine Evans-Pughe"@en;
+        <http://purl.org/dc/terms/title>
+                "Letters of the Evans-Pughe Family";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/John+Evans-Pughe/1442251755935> .
+
+<http://data.open.ac.uk/time/edtf/1946-12-Ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late December, 1946"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1946;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.46> .
+
+<http://data.open.ac.uk/led/agent/John+Evans-Pughe/1442251755935>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "John Evans-Pughe"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/national+service> , <http://data.open.ac.uk/led/electronics+engineer> , <http://data.open.ac.uk/led/chorister>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Anglicanism>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1925-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1996-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Evans-Pughe";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/chorister>
+        rdfs:label  "chorister"@en , "Chorister"@en .
+
+<http://dbpedia.org/resource/Halle>
+        rdfs:label  "Halle"@en .
+
+<http://data.open.ac.uk/led/music/Symphony/1444819402700>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Symphony"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Anton%C3%ADn_Dvo%C5%99%C3%A1k>;
+        <http://purl.org/dc/terms/title>
+                "Symphony";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Anton%C3%ADn_Dvo%C5%99%C3%A1k> .
+
+<http://data.open.ac.uk/led/lexp/1444819454027>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "John Evans-Pughe (1925 to 1996) was a chorister (with his younger brother Tom) at the choir of the College of St Nicholas, Chislehurst, under Sir Sydney Nicholson and later a music scholar at Kings School Canterbury, Kent. The St Nicholas choir was recorded for many BBC broadcasts and for Columbia Records. A Columbia recording in 1939 featuring John Evans-Pughe and Michael Lumb as treble soloists singing O Lovely Peace (Handel) and Brother James’ Air (arr. Jacob) was a best seller. \r\nJohn did National Service in Egypt and Greece, and then studied science at Trinity College, Dublin. He went on to became an electronics engineer for Marconi Space and Defence Systems, continuing with music in his spare time. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/c79589c34e327c3ef173f95f20b4a1d4/excerpt/224559cd3e703d3db6354d57771b08b2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Evans-Pughe/1442251755935>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cairo>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1946-12-Ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-10-14T10:55:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-14T10:52:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-14T10:49:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-14T10:44:36.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-14T11:38:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2015-10-14T11:33:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-10-14T10:44:14.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/87df7ac88400cda993fc06e6be59d535/1444819402724> , <http://data.open.ac.uk/led/performance/7bae82216f9f3a177e05746416693161/1444819343374>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/c79589c34e327c3ef173f95f20b4a1d4/excerpt/224559cd3e703d3db6354d57771b08b2> .
+
+<http://data.open.ac.uk/time/edtf/1925-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1925"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1925;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://reference.data.gov.uk/id/day/1904-05-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 May, 1904"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1904;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Prague>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Prague"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://data.open.ac.uk/led/national+service>
+        rdfs:label  "National Service"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/led/music/Organ+Concerto/1444819343362>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Organ Concerto"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/George_Frideric_Handel> , <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>;
+        <http://purl.org/dc/terms/title>
+                "Organ Concerto";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/George_Frideric_Handel> , <http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759> .
+
+<http://dbpedia.org/resource/Romantic_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Romantic music"@en .
+
+<http://dbpedia.org/resource/Cairo>
+        rdfs:label  "Cairo"@en .
+
+<http://reference.data.gov.uk/id/day/1841-09-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 September, 1841"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1841;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://reference.data.gov.uk/id/day/1759-03-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 March, 1759"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1759;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://bnb.data.bl.uk/id/person/HandelGeorgeFrideric1685-1759>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "George Frideric Handel"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.46>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  46 .
+
+<http://data.open.ac.uk/led/performance/87df7ac88400cda993fc06e6be59d535/1444819402724>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Symphony'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cairo>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Romantic_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Evans-Pughe/1442251755935>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Symphony/1444819402700> .

@@ -1,0 +1,461 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Italy>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Italy"@en .
+
+<http://dbpedia.org/resource/Dublin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Dublin"@en .
+
+<http://data.open.ac.uk/time/edtf/179u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1790's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1790-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1799-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/1725-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1725"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1725;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.25> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/17uu-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/170u-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/179u-uu-uu> .
+
+<http://data.open.ac.uk/led/agent/Joanna+Maria+Lindehleim/1713991810860>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Joanna Maria Lindehleim"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.0u>
+        rdf:value   "0u";
+        rdfs:label  "00s"@en .
+
+<https://archive.org/details/reportonmanuscri0002unse_g5p5/mode/2up>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2024-12-04"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/reportonmanuscri0002unse_g5p5/mode/2up"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/performance/6abf9fd5ad10b96d099b989a006b947a/1713992012153>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Clotilda'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Castrato> , <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dering/1713991074644>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Clotilda/1713992012105>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mary+Lindsey/1713992012214> , <http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramondon/1713992012179> , <http://data.open.ac.uk/led/agent/Lawrence/1713992012202> , <http://dbpedia.org/resource/Margherita_de_L'Epine> , <http://data.open.ac.uk/led/agent/Valentino+Urbani/1713992012166> .
+
+<http://data.open.ac.uk/led/music/Pyrrhus+and+Demetrius/1713991531527>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Pyrrhus and Demetrius"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/ScarlattiAlessandro1660-1725>;
+        <http://purl.org/dc/terms/title>
+                "Pyrrhus and Demetrius";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/ScarlattiAlessandro1660-1725> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Catherine+Tofts/1713991810835>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Catherine Tofts"@en .
+
+<http://data.open.ac.uk/time/edtf/1660-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1660"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1660;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/music/Il+Trionfo+di+Camilla,+Regina+de'+Volsci/1713989188285>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Il Trionfo di Camilla, Regina de' Volsci"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Giovanni_Bononcini>;
+        <http://purl.org/dc/terms/title>
+                "Il Trionfo di Camilla, Regina de' Volsci";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Giovanni_Bononcini> .
+
+<http://data.open.ac.uk/led/agent/Dering/1713991074644>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Dering"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian>;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/16uu-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/17uu-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Dering";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male" .
+
+<http://data.open.ac.uk/led/organization/John+Falconer/1713988954031>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Falconer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://dbpedia.org/resource/Soprano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Soprano"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Valentino_Urbani>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Valentino Urbani"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.09>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/led/agent/Valentino+Urbani/1713991531565>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Valentino Urbani"@en .
+
+<http://data.open.ac.uk/led/agent/Francesco+Conti+and+others/1713992012129>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Francesco Conti and others"@en .
+
+<http://data.open.ac.uk/led/agent/W.+Page/1713988954004>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W. Page"@en .
+
+<http://dbpedia.org/resource/Giovanni_Bononcini>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Giovanni Bononcini"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Historical+Manuscripts+Commission/1713988954017>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Historical Manuscripts Commission"@en .
+
+<http://data.open.ac.uk/time/edtf/170u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1700's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.0u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1700-uu-uu> .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/2705f2b1fda2c4318e46e4c8f3c67227/excerpt/9603efee29222c4b83c6ebebd9e3adbe>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><span lang=\"EN-US\" style=\"font-size: 12.0pt; mso-bidi-font-size: 11.0pt; line-height: 150%; font-family: 'Times New Roman',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\"><strong><span style=\"font-size: 14pt; line-height: 150%; color: #181818;\">Letter from Dering to Sir John Perceval, 17<sup>th</sup> March 1709</span></strong></span></p>\n<p><span lang=\"EN-US\" style=\"font-size: 12.0pt; mso-bidi-font-size: 11.0pt; line-height: 150%; font-family: 'Times New Roman',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">I am growing in love very fast with operas, which I own I did not relish at first, and we have now three &ndash; namely, Pyrrhus and Demetrius, Camilla, and now Clotilda &ndash; and this very day Camilla is acted expressly for Lord Marlborough. Our famous Nicolini got 800 guineas for this day, and it is thought Mrs. Tofts, whose turn it is on Tuesday next, will get a vast deal. She was on Sunday last at the Duke of Somerset&rsquo;s, where there was about thirty gentlemen, and every kiss was a guinea. Somme took three, others four, others five kisses at that rate, but none less than one. A pretty trade if it would only last all the year. How many would Sir John Perceval have taken had he been there?</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Report of the Manuscripts of the Earl of Egmont' pp. 236 (139 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Report+of+the+Manuscripts+of+the+Earl+of+Egmont/1713988953977>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "236" .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Castrato>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Castrato"@en .
+
+<http://data.open.ac.uk/led/agent/Lawrence/1713992012202>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lawrence"@en .
+
+<http://data.open.ac.uk/led/place/7fd41a93eac0a7e6231d2fede0e83cec>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Queen's Theatre, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Queen's Theatre, London"@en .
+
+<http://data.open.ac.uk/time/edtf/1909-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1909"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1909;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1909>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://reference.data.gov.uk/id/year/1909>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1909"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Richard+Leveridge/1713991810884>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Richard Leveridge"@en .
+
+<http://data.open.ac.uk/led/performance/93e6cbd016fec9f974d525a460f7d1ab/1713991810809>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Il Trionfo di Camilla, Regina de' Volsci'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Castrato>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dering/1713991074644>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Il+Trionfo+di+Camilla,+Regina+de'+Volsci/1713989188285>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramonden/1713991810822> , <http://data.open.ac.uk/led/agent/Joanna+Maria+Lindehleim/1713991810860> , <http://data.open.ac.uk/led/agent/Catherine+Tofts/1713991810835> , <http://dbpedia.org/resource/Nicolo_Grimaldi> , <http://dbpedia.org/resource/Valentino_Urbani> , <http://data.open.ac.uk/led/agent/Richard+Leveridge/1713991810884> .
+
+<http://dbpedia.org/resource/Margherita_de_L'Epine>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Margherita de L'Epine"@en .
+
+<http://data.open.ac.uk/led/agent/Valentino+Urbani/1713992012166>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Valentino Urbani"@en .
+
+<http://data.open.ac.uk/led/performance/b1e7dd61d04ea6a508c86912a03692ea/1713991531541>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Pyrrhus and Demetrius'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Castrato> , <http://dbpedia.org/resource/Bass_(voice_type)> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Soprano> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dering/1713991074644>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Pyrrhus+and+Demetrius/1713991531527>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Valentino+Urbani/1713991531565> , <http://data.open.ac.uk/led/agent/Purbeck+Turner/1713991531591> , <http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramonden/1713991531578> , <http://data.open.ac.uk/led/agent/Joanna+Maria+Lindelheim/1713991531616> , <http://data.open.ac.uk/led/agent/Catherine+Tofts/1713991531603> , <http://dbpedia.org/resource/Nicolo_Grimaldi> , <http://dbpedia.org/resource/Margherita_de_L'Epine> .
+
+<http://data.open.ac.uk/time/edtf/1709-Ee-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of 1709"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.09> .
+
+<http://bnb.data.bl.uk/id/person/ScarlattiAlessandro1660-1725>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                     "Alessandro Scarlatti"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1660-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1725-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Italy> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Purbeck+Turner/1713991531591>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Purbeck Turner"@en .
+
+<http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramondon/1713992012179>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Littleton (Lewis) Ramondon"@en .
+
+<http://dbpedia.org/resource/Nicolo_Grimaldi>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Nicolo Grimaldi"@en .
+
+<http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramonden/1713991810822>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Littleton (Lewis) Ramonden"@en .
+
+<http://dbpedia.org/resource/Bass_(voice_type)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Bass (voice type)"@en .
+
+<http://data.open.ac.uk/time/edtf/16uu-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16> .
+
+<http://data.open.ac.uk/led/source/Report+of+the+Manuscripts+of+the+Earl+of+Egmont/1713988953977>
+        rdf:type           <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Report of the Manuscripts of the Earl of Egmont"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/reportonmanuscri0002unse_g5p5/mode/2up>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1909-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/John+Falconer/1713988954031>;
+        <http://purl.org/dc/terms/title>
+                "Report of the Manuscripts of the Earl of Egmont";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/W.+Page/1713988954004> , <http://data.open.ac.uk/led/agent/Historical+Manuscripts+Commission/1713988954017>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Dublin>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2" .
+
+<http://data.open.ac.uk/time/edtf/1799-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1799"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1799;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/agent/Joanna+Maria+Lindelheim/1713991531616>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Joanna Maria Lindelheim"@en .
+
+<http://data.open.ac.uk/led/agent/Mary+Lindsey/1713992012214>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mary Lindsey"@en .
+
+<http://data.open.ac.uk/led/agent/Littleton+(Lewis)+Ramonden/1713991531578>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Littleton (Lewis) Ramonden"@en .
+
+<http://data.open.ac.uk/led/lexp/1713992063452>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "'Dering' was one of the sons of Sir Edward Dering, 2nd Baronet, and his wife Lady Mary Dering (née Harvey)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/2705f2b1fda2c4318e46e4c8f3c67227/excerpt/9603efee29222c4b83c6ebebd9e3adbe>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "236";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Dering/1713991074644>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/7fd41a93eac0a7e6231d2fede0e83cec>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1709-Ee-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2024-06-06T10:02:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2024-04-24T20:54:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/b1e7dd61d04ea6a508c86912a03692ea/1713991531541> , <http://data.open.ac.uk/led/performance/93e6cbd016fec9f974d525a460f7d1ab/1713991810809> , <http://data.open.ac.uk/led/performance/6abf9fd5ad10b96d099b989a006b947a/1713992012153>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/2705f2b1fda2c4318e46e4c8f3c67227/excerpt/9603efee29222c4b83c6ebebd9e3adbe> .
+
+<http://data.open.ac.uk/led/agent/Catherine+Tofts/1713991531603>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Catherine Tofts"@en .
+
+<http://data.open.ac.uk/led/music/Clotilda/1713992012105>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Clotilda"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/Francesco+Conti+and+others/1713992012129>;
+        <http://purl.org/dc/terms/title>
+                "Clotilda";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/Francesco+Conti+and+others/1713992012129> .
+
+<http://data.open.ac.uk/time/edtf/1700-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1700"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1700;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/1790-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1790"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1790;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .

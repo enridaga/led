@@ -1,0 +1,162 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1860-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1860>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/18Mm-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1860-uu-uu> .
+
+<http://data.open.ac.uk/led/music/hymns/1675345365392>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "hymns";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/school+children/1675345291366> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/William+Edward+Hickson/1675345252361>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "William Edward Hickson"@en .
+
+<http://reference.data.gov.uk/id/year/1860>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1860"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1675345376382>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/682627d98ffd458a3ecc614352550fa8/excerpt/b3fc3a73a42413daff2811d7678ca5b4>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages            "i";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/school+children/1675345291366>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Mm-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2023-02-02T13:43:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2023-02-02T13:42:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/hymns/1675345365392> , <http://data.open.ac.uk/led/music/songs/1675345359140>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/682627d98ffd458a3ecc614352550fa8/excerpt/b3fc3a73a42413daff2811d7678ca5b4> .
+
+<http://data.open.ac.uk/led/organization/Taylor+%26+Walton/1675345252385>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Taylor & Walton"@en .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/music/songs/1675345359140>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "songs"@en;
+        <http://purl.org/dc/terms/title>
+                "songs";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/school+children/1675345291366> .
+
+<http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "United Kingdom of Great Britain and Ireland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/agent/school+children/1675345291366>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "school children"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/pupils>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "children";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "school" .
+
+<http://data.open.ac.uk/led/source/682627d98ffd458a3ecc614352550fa8/excerpt/b3fc3a73a42413daff2811d7678ca5b4>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp; &nbsp; &nbsp;In this country singing has been introduced with great success in infant-schools. It has been shown to be a means of varying, in the most pleasing manner, the usual lessons, and calculated, therefore, not only to relieve the attention when too much fatigued by study, but to create a conviction in the minds of children (which it is not always easy to produce in any other way), that they are sent to school to be made happier as well as wiser. It has also been found a means of impressing the mind with kindly feelings, and of kindling or strengthening just and generous emotions, much more effectual than any mode of persuasion or reproof.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Singing Master' pp. i (114 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Singing+Master/1675345252333>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "i" .
+
+<http://data.open.ac.uk/led/pupils>
+        rdfs:label  "pupils"@en .
+
+<http://data.open.ac.uk/led/source/The+Singing+Master/1675345252333>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Singing Master"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Taylor+%26+Walton/1675345252385>;
+        <http://purl.org/dc/terms/title>
+                "The Singing Master";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/William+Edward+Hickson/1675345252361> .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

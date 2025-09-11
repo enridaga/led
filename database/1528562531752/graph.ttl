@@ -1,0 +1,171 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Surrey>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Surrey"@en .
+
+<http://bura.brunel.ac.uk/handle/2438/9516>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-06-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9516"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/a3be126119feab903fa514bbcd825692/excerpt/551bc526118d15475f905ad91f4a7350>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">I am now nearly 88 years old and have lost my husband after 64 years of happy marriage. I am now living with my son in Surrey [&hellip;]&nbsp;&nbsp;I have just had the pleasure of hearing my Granddaughter&rsquo;s husband on T.V., recording a Cantata that he has composed and conducted. Called &ldquo;The New Creation&rdquo;, it is a mixture of classic and modern music. This was a great success at the Dome&nbsp;at Brighton and two major publishers have started to take an interest in David Fellingham, and his remarkable music.&nbsp;&nbsp;He has succeeded where more illustrious names have failed.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'A Bygone Age' pp. 30 (102 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+Bygone+Age/1528561808724>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "30" .
+
+<http://data.open.ac.uk/led/performance/432df80724a673e75cbca5bcf82906a0/1528562423673>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''The New Creation''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Cantata>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mrs.+R.+Downer/1528561887094>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'The+New+Creation'/1528562423664> .
+
+<http://data.open.ac.uk/time/edtf/1884-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1884"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1884;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.84> .
+
+<http://dbpedia.org/resource/Cantata>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Cantata"@en .
+
+<http://reference.data.gov.uk/id/year/1972>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Mrs.+R.+Downer/1528561809055>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs. R. Downer"@en .
+
+<http://data.open.ac.uk/led/source/A+Bygone+Age/1528561808724>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Memories of Mrs R Downer, born 1884 in Horsham and schooled in Chichester. She describes her time as a dressmaker to famous, but un-named, employers. She was 88 years old in 1972 and living in Surrey when she wrote the end of the memoir."@en;
+        rdfs:label                  "A Bygone Age"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9516>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "A Bygone Age";
+        <http://purl.org/ontology/bibo/number>
+                "1:211";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Mrs.+R.+Downer/1528561809055> .
+
+<http://data.open.ac.uk/led/dressmaker>
+        rdfs:label  "dressmaker"@en .
+
+<http://data.open.ac.uk/led/agent/Mrs.+R.+Downer/1528561887094>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Mrs. R. Downer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/dressmaker>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1884-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Horsham>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Downer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs. R." .
+
+<http://data.open.ac.uk/led/lexp/1528562531752>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_medium        led:Medium.Broadcast;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/a3be126119feab903fa514bbcd825692/excerpt/551bc526118d15475f905ad91f4a7350>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "30";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Mrs.+R.+Downer/1528561887094>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Surrey>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1972-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-07-16T16:50:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-09T16:42:12.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/432df80724a673e75cbca5bcf82906a0/1528562423673>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/a3be126119feab903fa514bbcd825692/excerpt/551bc526118d15475f905ad91f4a7350> .
+
+<http://data.open.ac.uk/time/edtf/1972-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1972"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1972;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1972>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.72> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.84>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  84 .
+
+<http://dbpedia.org/resource/Horsham>
+        rdfs:label  "Horsham"@en .
+
+<http://data.open.ac.uk/led/music/'The+New+Creation'/1528562423664>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'The New Creation'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/FellinghamDavid>;
+        <http://purl.org/dc/terms/title>
+                "'The New Creation'";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/FellinghamDavid> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.72>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  72 .
+
+<http://bnb.data.bl.uk/id/person/FellinghamDavid>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "David Fellingham"@en .

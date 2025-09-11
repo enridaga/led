@@ -1,0 +1,276 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/music/hymns/1435062524176>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "hymns" .
+
+<http://data.open.ac.uk/led/agent/Alice+Miller/1435062524204>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Alice Miller"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/others/1435062524208>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "others"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/1951-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1951>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.59>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  59 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.51>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  51 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/hymns/1435062524176/1435062524190>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'hymns'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/John+Wesley/1430492441398>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/hymns/1435062524176>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/others/1435062524208> , <http://data.open.ac.uk/led/agent/Ann+Thorn/1435062524200> , <http://data.open.ac.uk/led/agent/Alice+Miller/1435062524204> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/person/John+Wesley/1430492441398>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "John Wesley"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Theologian> , <http://data.open.ac.uk/led/cleric>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity> , <http://dbpedia.org/resource/Anglicanism> , <http://dbpedia.org/resource/Methodism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1703-06-17>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Epworth,_Lincolnshire>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-03-02>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Wesley";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://www.ccel.org/ccel/wesley/journal.html>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "The Journal of John Wesley"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.ccel.org/ccel/wesley/journal.html"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/source/At+an+Irish+funeral/1430492441374>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Journal of John Wesley"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.ccel.org/ccel/wesley/journal.html>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1951-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Moody+Press/1430492441408>;
+        <http://purl.org/dc/terms/title>
+                "The Journal of John Wesley";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Percy+Livingstone+Parker/1430492441405>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Wesley/1430492441398> .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://reference.data.gov.uk/id/day/1791-03-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 March, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://dbpedia.org/resource/Category:Christian_movements>
+        rdfs:label  "Christian movements"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Ann+Thorn/1435062524200>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ann Thorn"@en .
+
+<http://dbpedia.org/resource/Epworth,_Lincolnshire>
+        rdfs:label  "Epworth, Lincolnshire"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.2>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://dbpedia.org/resource/Anglicanism>
+        rdf:type    led:Belief;
+        rdfs:label  "Anglicanism"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.91>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  91 .
+
+<http://data.open.ac.uk/led/cleric>
+        rdfs:label  "Cleric"@en , "cleric"@en .
+
+<http://reference.data.gov.uk/id/day/1703-06-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 June, 1703"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1703;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/led/organization/Moody+Press/1430492441408>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Moody Press"@en .
+
+<http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/de7ba28749c0f5825fb82a6d76788ffe>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">Monday, 6 (Everton).--I talked largely with Ann Thorn and two others, who had been several times in trances. What they all agreed in was 1) that when they went away, as they termed it, it was always at the time they were fullest of the love of God; 2) that it came upon them in a moment, without any previous notice and took away all their senses and strength; 3) that there were some exceptions, but in general, from that moment, they were in another world, knowing nothing of what was done or said by all that were round about them.</p>\r\n<p class=\"MsoNormal\">About five in the afternoon I heard them singing hymns. Soon after, Mr. B. came up and told me Alice Miller (fifteen years old) had fallen into a trance. I went down immediately and found her sitting on a stool and leaning against the wall, with her eyes open and fixed upward. I made a motion as if going to strike, but they continued immovable. Her face showed an unspeakable mixture of reverence and love, while silent tears stole down her cheeks. Her lips were a little open, and sometimes moved; but not enough to cause any sound.</p>\r\n<p class=\"MsoNormal\">I do not know whether I ever saw a human face look so beautiful; sometimes it was covered with a smile, as from joy, mixing with love and reverence; but the tears fell still though not so fast. Her pulse was quite regular. In about half an hour I observed her countenance change into the form of fear, pity, and distress; then she burst into a flood of tears and cried out, \"Dear Lord; they will be damned! They will all be damned!\" But in about five minutes her smiles returned, and only love and joy appeared in her face.</p>\r\n<p class=\"MsoNormal\">About half an hour after six, I observed distress take place again; and soon after she wept bitterly and cried out, \"Dear Lord, they will go to hell! The world will go to hell!\" Soon after, she said, \"Cry aloud! Spare not!\" And in a few moments her look was composed again and spoke a mixture of reverence, joy, and love. Then she said aloud, \"Give God the glory.\" About seven her senses returned. I asked, \"Where have you been?\"--\"I have been with my Saviour.\" \"In heaven, or on earth?\"--\"I cannot tell; but I was in glory.\" \"Why then did you cry?\"--\"Not for myself, but for the world; for I saw they were on the brink of hell.\" \"Whom did you desire to give the glory to God?\"--\"Ministers that cry aloud to the world; else they will be proud; and then God will leave them, and they will lose their own souls.\"</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Journal of John Wesley' pp. 251 (456 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/At+an+Irish+funeral/1430492441374>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "251" .
+
+<http://data.open.ac.uk/led/agent/Percy+Livingstone+Parker/1430492441405>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Percy Livingstone Parker"@en .
+
+<http://reference.data.gov.uk/id/year/1951>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1435062617921>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Description of hearing hymns from a group of worshippers accustomed to falling into trances. Description of the trances and that one of them fell into one whilst singing hymns."@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/de7ba28749c0f5825fb82a6d76788ffe>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages            "251";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/John+Wesley/1430492441398>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1759-08-06>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-13T21:14:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-23T12:30:18.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/hymns/1435062524176/1435062524190>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/72e217900e978bfef025a7e673f5dbc2/excerpt/de7ba28749c0f5825fb82a6d76788ffe> .
+
+<http://dbpedia.org/resource/Theologian>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Theologian"@en .
+
+<http://dbpedia.org/resource/Methodism>
+        rdf:type    <http://dbpedia.org/resource/Category:Christian_movements> , led:Belief;
+        rdfs:label  "Methodists"@en , "Methodism"@en .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://reference.data.gov.uk/id/day/1759-08-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 August, 1759"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1759;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .

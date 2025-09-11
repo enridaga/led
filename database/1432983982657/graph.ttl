@@ -1,0 +1,190 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "NOVELLO AND COMPANY Limited"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.5>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  5 .
+
+<http://data.open.ac.uk/led/music/Church+music+of+Samuel+Sebastian+Wesley/1432983859844>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Church music of Samuel Sebastian Wesley"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/74878b6f-49ac-48a5-aaf4-f6c0711959e1#_>;
+        <http://purl.org/dc/terms/title>
+                "Church music of Samuel Sebastian Wesley";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/74878b6f-49ac-48a5-aaf4-f6c0711959e1#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://archive.org/details/westminsterpilgr00briduoft>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/NOVELLO+AND+COMPANY+Limited/1385393354602>;
+        <http://purl.org/dc/terms/title>
+                "Westminster Pilgrim; Being a Record of Service in Church, Cathedral and Abbey, College University and Concert Room, with a Few Notes on Sport";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_> .
+
+<http://data.open.ac.uk/led/person/Dr+Charles+Maclean/1432984151589>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Dr Charles Maclean"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Maclean";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dr Charles" .
+
+<http://data.open.ac.uk/led/role/organist>
+        rdfs:label  "Organist"@en , "organist"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<https://archive.org/details/westminsterpilgr00briduoft>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://archive.org/details/westminsterpilgr00briduoft"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://musicbrainz.org/artist/74878b6f-49ac-48a5-aaf4-f6c0711959e1#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Samuel Wesley"@en , "Samuel Sebastian Wesley"@en , "Wesley" .
+
+<http://musicbrainz.org/artist/18a4bbe5-c72c-4eaf-9bcc-217b4676982b#_>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Frederick Bridge"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/role/organist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status          <urn:x-isco08:2>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1844-12-05>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1924-03-18>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bridge";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Frederick" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.44>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  44 .
+
+<http://reference.data.gov.uk/id/day/1844-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1844"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1844;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.44> .
+
+<http://data.open.ac.uk/led/lexp/1432983982657>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "From article on the church music of S.S. Wesley in monthly journal of the International Music Society"@en;
+        led:has_environment    led:ListeningEnvironment.Solitary;
+        led:has_evidence_text  "The late Dr. Charles Maclean, writing in the July-August, 1910, issue of the monthly journal of the International Musical Society, upon the Wesley\r\nCommemoration, let fall some characteristically pungent and succinct remarks. He said:\r\n\r\n\"As composer, and in the domain of Church music, S. S. Wesley eclipsed his father and towered above all his contemporaries. He did this because\r\nalone of all of them he could write a tune . . . His fame rests chiefly on his two dozen anthems. Each of the large anthems is a symphony of several vocal numbers, and each number will be found to be based on a single melodious theme.He inherited his father's aptitude for counterpoint, which in turn was founded largely on the Bach model.\" \r\n\r\nAnd he went on :\r\n\r\n\"If in forty years of anthem writing he never surpassed his early ' Wilderness '\r\nin romantic beauty, and subtle polish, his eight-part ' O Lord,Thou art my God,' for his doctor's degree seven years later, is one of the noblest monuments of\r\nsolid and powerful English music.\""@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Westminster+Pilgrim;+Being+a+Record+of+Service+in+Church,+Cathedral+and+Abbey,+College+University+and+Concer+Room,+with+a+Few+Notes+on+Sport/1430808941008>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages              "227";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Dr+Charles+Maclean/1432984151589>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1910-08-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-11-16T11:52:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-30T11:06:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Church+music+of+Samuel+Sebastian+Wesley/1432983859844> .
+
+<http://reference.data.gov.uk/id/day/1924-03-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 March, 1924"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1924;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://data.open.ac.uk/time/edtf/1910-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1910"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1910;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

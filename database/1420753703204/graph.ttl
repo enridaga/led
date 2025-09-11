@@ -1,0 +1,784 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.60>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  60 .
+
+<http://dbpedia.org/resource/Russian_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Russian Empire"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://reference.data.gov.uk/id/day/1990-12-02>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2 December, 1990"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.2>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1990;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Mavra'/1420754296181/1420754296189>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Mavra''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Opera>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Mavra'/1420754296181>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://reference.data.gov.uk/id/day/1911-05-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 May, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1911;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://musicbrainz.org/artist/d2110a4f-20c0-4ae3-ab05-1f195b62ae22#_>
+        rdfs:label  "Ned Rorem"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'In+the+Beginning'/1420754700860/1420754700870>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''In the Beginning''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'In+the+Beginning'/1420754700860>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://dbpedia.org/resource/Gustav_Mahler>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Gustav Mahler"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1860-07-07>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1911-05-18>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Germany>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mahler";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Gustav" .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Mahler/1420754583675/1420754583685>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified music by Mahler'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+music+by+Mahler/1420754583675>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://data.open.ac.uk/led/thing/essayist>
+        rdfs:label  "essayist"@en .
+
+<http://data.open.ac.uk/led/music/Oedipus+Rex/1435268502340>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Oedipus Rex"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "Oedipus Rex";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/1960-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1960"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1960;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1960>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://dbpedia.org/resource/Soprano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Soprano"@en .
+
+<http://dbpedia.org/resource/Geneva>
+        rdfs:label  "Geneva"@en .
+
+<http://data.open.ac.uk/led/music/'Chants+de+terre+et+ciel'/1420754834965>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Chants de terre et ciel'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Olivier_Messiaen>;
+        <http://purl.org/dc/terms/title>
+                "'Chants de terre et ciel'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Olivier_Messiaen> .
+
+<http://dbpedia.org/resource/Judaism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Judaism"@en , "Jewish religion"@en , "Jewish faith"@en .
+
+<http://data.open.ac.uk/led/music/'Mavra'/1420754296181>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Mavra'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Igor_Stravinsky>;
+        <http://purl.org/dc/terms/title>
+                "'Mavra'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Igor_Stravinsky> .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://reference.data.gov.uk/id/day/1882-06-17>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "17 June, 1882"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1882;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://data.open.ac.uk/led/music/unspecified+music+by+Chanler/1420754542789>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified music by Chanler"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Theodore+Chanler/1420754542798>;
+        <http://purl.org/dc/terms/title>
+                "unspecified music by Chanler";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Theodore+Chanler/1420754542798> .
+
+<http://data.open.ac.uk/led/agent/Janet+Fairbank/1420754834978>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Janet Fairbank"@en .
+
+<http://data.open.ac.uk/time/edtf/1983-uu-uu>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1983 .
+
+<http://reference.data.gov.uk/id/day/1892-09-04>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "4 September, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.4>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Chants+de+terre+et+ciel'/1420754834965/1420754834974>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Chants de terre et ciel''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Art_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Chants+de+terre+et+ciel'/1420754834965>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Janet+Fairbank/1420754834978> .
+
+<http://dbpedia.org/resource/Aix-en-Provence>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Aix-en-Provence"@en , "Aix en Provence"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Provence> .
+
+<http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://dbpedia.org/resource/Los_Angeles>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Los Angeles"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Gurrelieder'/1420754200527/1420754200533>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Gurrelieder''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Gurrelieder/1448989877349>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Oedipus+Rex+'/1420754237082/1420754237090>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Oedipus Rex ''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Oedipus+Rex/1435268502340>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://dbpedia.org/resource/Ned_Rorem>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Ned Rorem"@en , "Ned Rorem";
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/critic> , <http://data.open.ac.uk/led/thing/essayist> , <http://dbpedia.org/resource/Diarist> , <http://dbpedia.org/resource/Composer> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Writer> , <http://dbpedia.org/resource/Teacher>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1923-10-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Richmond,_Indiana>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        owl:sameAs                      <http://musicbrainz.org/artist/d2110a4f-20c0-4ae3-ab05-1f195b62ae22#_> , <http://bnb.data.bl.uk/id/person/RoremNed1923->;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rorem";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Ned" .
+
+<http://data.open.ac.uk/led/person/Theodore+Chanler/1420754542798>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Theodore Chanler" .
+
+<http://reference.data.gov.uk/id/day/1951-07-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 July, 1951"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1951;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.51> .
+
+<http://dbpedia.org/resource/Art_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Art song"@en .
+
+<http://dbpedia.org/resource/Gabriel_Faur%C3%A9>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gabriel Fauré"@en , "Fauré, Gabriel, 1845-1924"@en , "Fauré";
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/Faur%C3%A9Gabriel1845-1924> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Faur%25C3%25A9/1420754642532/1420754642538>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified music by Fauré'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+music+by+Faur%C3%A9/1420754642532>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://data.open.ac.uk/led/lexp/1420753703204>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Solitary;
+        led:has_evidence_text  "My frequent thoughts of Nell are more pleasant than sad, doubtless because I saw so little of her during the last three years of her life. What is revived is the happy début. To recall her is to recall her repertory, those many works we all heard first through her: Schoenberg's Gurrelieder, Stravinsky's Oedipus Rex and Mavra, Milhaud's Chansons hébraïques, Chanler, Mahler, Fauré, Copland's In the Beginning, Messiaen's Poèmes pour Mi. Reading through the Messiaen again took me to his other cycle, Chants de terre et ciel, which in turn, like Proust's bit into the madeleine, brought back rehearsals in 1946 with Janet Fairbank on the banks of Wisconsin's Lake Geneva. In those postwar years Messiaen already was what he remains, the most interesting composer in France today."@en;
+        led:has_medium         led:Medium.Broadcast , led:Medium.Playback , led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/1965/1420753604518>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/iepearson/temp>;
+        led:pages              "136";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1930-uu-uu/to/1960-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-12-20T11:30:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-01-08T21:48:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Mavra'/1420754296181/1420754296189> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Oedipus+Rex+'/1420754237082/1420754237090> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Po%25C3%25A8mes+pour+Mi'/1420754741070/1420754741077> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/6+chants+populaires+h%25C3%25A9bra%25C3%25AFques+op.+86/1420754485399/1420754485405> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Chanler/1420754542789/1420754542801> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Faur%25C3%25A9/1420754642532/1420754642538> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Mahler/1420754583675/1420754583685> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'In+the+Beginning'/1420754700860/1420754700870> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Gurrelieder'/1420754200527/1420754200533> , <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Chants+de+terre+et+ciel'/1420754834965/1420754834974> .
+
+<http://bnb.data.bl.uk/id/person/SchoenbergArnold1874-1951>
+        rdfs:label  "Arnold Schoenberg"@en .
+
+<http://data.open.ac.uk/time/interval/1930-uu-uu/to/1960-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1930 and 1960"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1960-uu-uu> .
+
+<http://data.open.ac.uk/led/music/'In+the+Beginning'/1420754700860>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'In the Beginning'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Aaron_Copland>;
+        <http://purl.org/dc/terms/title>
+                "'In the Beginning'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Aaron_Copland> .
+
+<http://reference.data.gov.uk/id/day/1860-07-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 July, 1860"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1860;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.60> .
+
+<http://data.open.ac.uk/led/source/1965/1420753604518>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "1965"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Later+Diaries+of+Ned+Rorem+1961-1972>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "1965";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://dbpedia.org/resource/Ned_Rorem> .
+
+<http://dbpedia.org/resource/Igor_Stravinsky>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Igor Stravinsky"@en , "Igor Stravinksy" , "Igor Stravinksy"@en , "Igor Stravisnky" , "Igor Stravinsky";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Conducting> , <http://dbpedia.org/resource/Pianist> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer>;
+        led:has_social_status           <urn:x-nrsuk:social:A>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1882-06-17>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Lomonosov,_Russia>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1971-04-06>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York_City>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France> , <http://dbpedia.org/resource/United_States> , <http://dbpedia.org/resource/Russian_Empire> , <http://dbpedia.org/resource/Russia>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stravinsky";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Igor Fjodorowitsch";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Igor Stravinsky"@en .
+
+<http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Darius Milhaud"@en .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://bnb.data.bl.uk/id/person/RoremNed1923->
+        rdfs:label  "Ned Rorem"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/led/music/'Po%C3%A8mes+pour+Mi'/1420754741070>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Poèmes pour Mi'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Olivier_Messiaen>;
+        <http://purl.org/dc/terms/title>
+                "'Poèmes pour Mi'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Olivier_Messiaen> .
+
+<http://reference.data.gov.uk/id/day/1874-09-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 September, 1874"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1874;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/unspecified+music+by+Faur%C3%A9/1420754642532>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified music by Fauré"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gabriel_Faur%C3%A9>;
+        <http://purl.org/dc/terms/title>
+                "unspecified music by Fauré";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gabriel_Faur%C3%A9> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://reference.data.gov.uk/id/day/1900-11-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 November, 1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Aaron_Copland>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Aaron Copland"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Agnosticism>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1900-11-14>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1990-12-02>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/CoplandAaron1900-1990> , <http://musicbrainz.org/artist/aad3af83-5b59-4b86-a569-1a8409149b09#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Copland";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Aaron" .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://dbpedia.org/resource/Diarist>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Diarist"@en .
+
+<http://dbpedia.org/resource/Mezzo-soprano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Mezzo-soprano"@en .
+
+<http://data.open.ac.uk/led/music/Gurrelieder/1448989877349>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Gurrelieder"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Arnold_Schoenberg>;
+        <http://purl.org/dc/terms/title>
+                "Gurrelieder";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Arnold_Schoenberg> .
+
+<http://dbpedia.org/resource/Olivier_Messiaen>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Olivier Messiaen"@en .
+
+<http://dbpedia.org/resource/Russia>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Russia"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/'Po%25C3%25A8mes+pour+Mi'/1420754741070/1420754741077>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of ''Poèmes pour Mi''"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Art_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Po%C3%A8mes+pour+Mi'/1420754741070>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://data.open.ac.uk/led/music/6+chants+populaires+h%C3%A9bra%C3%AFques+op.+86/1420754485399>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "6 chants populaires hébraïques op. 86"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Darius_Milhaud>;
+        <http://purl.org/dc/terms/title>
+                "6 chants populaires hébraïques op. 86";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Darius_Milhaud> .
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://dbpedia.org/resource/Opera>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Operatic"@en , "Opera"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/6+chants+populaires+h%25C3%25A9bra%25C3%25AFques+op.+86/1420754485399/1420754485405>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of '6 chants populaires hébraïques op. 86'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Art_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/6+chants+populaires+h%C3%A9bra%C3%AFques+op.+86/1420754485399>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://data.open.ac.uk/led/music/unspecified+music+by+Mahler/1420754583675>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified music by Mahler"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Gustav_Mahler>;
+        <http://purl.org/dc/terms/title>
+                "unspecified music by Mahler";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Gustav_Mahler> .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://dbpedia.org/resource/San_Francisco>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "San Francisco"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/unspecified+music+by+Chanler/1420754542789/1420754542801>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified music by Chanler'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://dbpedia.org/resource/Ned_Rorem>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+music+by+Chanler/1420754542789>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536> .
+
+<http://dbpedia.org/resource/Lomonosov,_Russia>
+        rdfs:label  "Lomonosov, Russia"@en .
+
+<http://bnb.data.bl.uk/id/agent/NorthPoint>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "North Point Press"@en , "North Point"@en .
+
+<http://dbpedia.org/resource/Agnosticism>
+        rdf:type    led:Belief;
+        rdfs:label  "Agnosticism"@en .
+
+<http://data.open.ac.uk/led/critic>
+        rdfs:label  "Critic"@en , "critic"@en .
+
+<http://dbpedia.org/resource/Conducting>
+        rdfs:label  "Conducting"@en .
+
+<http://dbpedia.org/resource/Darius_Milhaud>
+        rdf:type                        <http://purl.org/ontology/mo/MusicArtist> , <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Darius Milhaud"@en , "Milhaud"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Judaism>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-09-04>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Aix-en-Provence>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1974-06-22>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Geneva>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/France>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/MilhaudDarius1892-1974> , <http://musicbrainz.org/artist/a7ef6698-3056-4e80-880d-0f9d106cc8e2#_>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Milhaud";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Darius" .
+
+<http://dbpedia.org/resource/Richmond,_Indiana>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Richmond, Indiana"@en .
+
+<http://reference.data.gov.uk/id/day/1974-06-22>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "22 June, 1974"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.22>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1974;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://bnb.data.bl.uk/id/person/MahlerGustav1860-1911>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gustav Mahler"@en .
+
+<http://reference.data.gov.uk/id/day/1971-04-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 April, 1971"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1971;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://dbpedia.org/resource/France>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "France"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/led/agent/Nell+Tangeman/1420754200536>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Nell Tangeman"@en .
+
+<http://reference.data.gov.uk/id/day/1923-10-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 October, 1923"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1923;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.23> .
+
+<http://dbpedia.org/resource/Arnold_Schoenberg>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Arnold Schönberg"@en , "Arnold Schoenberg"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1874-09-13>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1951-07-13>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Los_Angeles>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        owl:sameAs                      <http://musicbrainz.org/artist/9b490b96-ad82-4d7b-9055-f0a196ad64cc#_> , <http://bnb.data.bl.uk/id/person/SchoenbergArnold1874-1951> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://data.open.ac.uk/led/source/The+Later+Diaries+of+Ned+Rorem+1961-1972>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "The Later Diaries of Ned Rorem 1961-1972"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1983-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/NorthPoint>;
+        <http://purl.org/dc/terms/title>
+                "The Later Diaries of Ned Rorem 1961-1972";
+        <http://purl.org/ontology/bibo/isbn>
+                "0865471177"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/San_Francisco>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://reference.data.gov.uk/id/year/1960>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> .

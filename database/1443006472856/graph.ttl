@@ -1,0 +1,99 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/time/edtf/2014-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 2014"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2014;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/led/music/Here+Trilogy/1442921765201>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Here Trilogy"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/0292081b-54df-4110-b950-a94af14648a3#_>;
+        <http://purl.org/dc/terms/title>
+                "Here Trilogy";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/0292081b-54df-4110-b950-a94af14648a3#_> .
+
+<http://data.open.ac.uk/led/source/London+Sinfonietta+Audience+Tweets/1443007315935>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "London Sinfonietta Audience Tweets"@en;
+        rdfs:label         "London Sinfonietta Audience Tweets"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/social>;
+        <http://purl.org/dc/terms/title>
+                "London Sinfonietta Audience Tweets";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/source/dc75be2b7a94750cdb3a6056a59ba885/excerpt/e09f68f816933c215bcc81462c882e34>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p></p>\r\n<p><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'HelveticaNeueLT Com 57 Cn',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA;\">great first day of \"Here Trilogy\" rehearsals with @Ldn_Sinfonietta. Tomorrow we start with the clarinet concerto \"Hysteresis\", can't wait!</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'London Sinfonietta' (20 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/London+Sinfonietta+Audience+Tweets/1443007315935>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://musicbrainz.org/artist/c0aaded1-1c53-43c1-8176-dc0399ee55fc#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "London Sinfonietta"@en .
+
+<http://musicbrainz.org/artist/0292081b-54df-4110-b950-a94af14648a3#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Michel van der Aa"@en , "@vanderaanet"@en;
+        <http://xmlns.com/foaf/0.1/nick>
+                "@vanderaanet"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://data.open.ac.uk/led/lexp/1443006472856>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/dc75be2b7a94750cdb3a6056a59ba885/excerpt/e09f68f816933c215bcc81462c882e34>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gorwel+Owen/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/0292081b-54df-4110-b950-a94af14648a3#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/2014-04-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-02-04T11:01:07.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-09-23T11:07:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/0b5363ace0c7c57886fc5092a52db5d7/1443006399897>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/dc75be2b7a94750cdb3a6056a59ba885/excerpt/e09f68f816933c215bcc81462c882e34> .
+
+<http://data.open.ac.uk/led/performance/0b5363ace0c7c57886fc5092a52db5d7/1443006399897>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Here Trilogy'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/0292081b-54df-4110-b950-a94af14648a3#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Here+Trilogy/1442921765201>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/c0aaded1-1c53-43c1-8176-dc0399ee55fc#_> .

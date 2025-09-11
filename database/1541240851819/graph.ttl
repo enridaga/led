@@ -1,0 +1,185 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1541240851819>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/19fd0acc755ea89adbf2c835dd867d90>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "3";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544785597529>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/d3fbfabda1104f9cb3248bdeb2bd9be0>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1902-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-12-14T11:07:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-11-03T10:27:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/3db33198d9395eb8a88a73cddc82684a/1541240803071>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/19fd0acc755ea89adbf2c835dd867d90> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/source/Untitled:+Thomas+Jordan+memoir/1541238973348>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Thomas Jordan’s (b. 1892) memoir is in the form of a transcribed oral narrative, following an interview with John Burnett in November 1976. Jordan focuses on his childhood, his father’s work as a miner, and on his own working life as a pit boy and then service in the army. He was a committed Christian Scientist. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "Untitled: Thomas Jordan memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University library Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Brunel University Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Untitled: Thomas Jordan memoir";
+        <http://purl.org/ontology/bibo/number>
+                "1:405";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1541238973414> .
+
+<http://data.open.ac.uk/led/music/unspecified+hymns/1529663702243>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified hymns"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified hymns" .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://data.open.ac.uk/led/pit+boy>
+        rdfs:label  "pit boy"@en .
+
+<http://data.open.ac.uk/led/performance/3db33198d9395eb8a88a73cddc82684a/1541240803071>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified hymns'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/County_Durham>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544785597529>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+hymns/1529663702243> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/1892-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1541238973414>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mr. Thomas Jordan"@en .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/time/edtf/1902-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1902"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1902;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/led/place/d3fbfabda1104f9cb3248bdeb2bd9be0>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Waterloo hamlet, County Durham"@en;
+        <http://purl.org/dc/terms/description>
+                "Waterloo hamlet, County Durham"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/County_Durham> .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://data.open.ac.uk/led/source/01f4e6b95c12eb035fa15daed8719867/excerpt/19fd0acc755ea89adbf2c835dd867d90>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">When I was ten years old I got a job with Mr. Scott the village newsagent. The papers I delivered took me intomany houses - many a home in Usworth, and into the homes of a little hamlet called Waterloo. Waterloo is reputed to be a very drunken spot&mdash;relayes <em>[sic]</em> of beer-carrying men carried their large pails of beer from the outdoor beer place, Longpull, at New Washington [&hellip;] In this hamlet there were one or two chapel people and I soon noticed that their homes were nicer than my drunken customers&rsquo;. One of them had a large ornamental oil lamp hanging over his table: he and his brother used to bring me in and I listened to him playing the piano, inspired with the brightness of the home and his music but from mainly hymns. Despite the vice of drink the other inhabitants of Waterloo made me very welcome and showed kindness to me.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Untitled: Thomas Jordan memoir' pp. 3 (155 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Untitled:+Thomas+Jordan+memoir/1541238973348>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "3" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/coal+miner>
+        rdfs:label  "coal miner"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/County_Durham>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "County Durham"@en .
+
+<http://data.open.ac.uk/led/agent/Mr.+Thomas+Jordan/1544785597529>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Mr. Thomas Jordan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/coal+miner> , <http://data.open.ac.uk/led/pit+boy> , <http://data.open.ac.uk/led/soldier>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian_Science> , <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1892-01-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Birtley,_Tyne_and_Wear>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jordan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr. Thomas" .
+
+<http://dbpedia.org/resource/Christian_Science>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian Science"@en .

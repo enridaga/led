@@ -1,0 +1,191 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://musicbrainz.org/artist/afa18c9c-85f7-4ecf-a262-c7ce17556212#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Bruno Walter"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://bnb.data.bl.uk/id/resource/005633761>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Includes index."@en;
+        rdfs:label                  "The diary of Virginia Woolf. Vol.4, 1931-35"@en , "The diary of Virginia Woolf"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1983-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Penguin>;
+        <http://purl.org/dc/terms/title>
+                "The diary of Virginia Woolf. Vol.4, 1931-35" , "The diary of Virginia Woolf";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/BellAnneOlivier1916-> , <http://bnb.data.bl.uk/id/person/McNeillieAndrew1946->;
+        <http://purl.org/ontology/bibo/isbn>
+                "0140052852"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://bnb.data.bl.uk/id/place/Harmondsworth>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> , <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://purl.org/ontology/bibo/volume>
+                "4";
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/WoolfVirginia1882-1941> .
+
+<http://bnb.data.bl.uk/id/place/Harmondsworth>
+        rdfs:label  "Harmondsworth"@en .
+
+<http://bnb.data.bl.uk/id/person/BellAnnOlivier1916->
+        rdfs:label  "Ann Olivier Bell"@en .
+
+<http://data.open.ac.uk/led/music/Military+music/1435574343912>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Military music"@en;
+        <http://purl.org/dc/terms/title>
+                "Military music";
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/afa18c9c-85f7-4ecf-a262-c7ce17556212#_> .
+
+<http://bnb.data.bl.uk/id/person/BellAnneOlivier1916->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anne Olivier Bell"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/BellAnnOlivier1916-> , <http://bnb.data.bl.uk/id/person/BellAnneOlivier> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1882-01-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 January, 1882"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1882;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.82> .
+
+<http://bnb.data.bl.uk/id/person/WoolfVirginia1882-1941>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Virginia Woolf"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1882-01-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1941-03-28>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Sussex>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Woolf";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Virginia" .
+
+<http://data.open.ac.uk/led/source/8ca7a977c3c88b5bd8c933fc418d445c/excerpt/56f64c8b34579619135ff7a07b419e4e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Last night - to relieve myself from correcting that silly book Flush, - oh what a waste of time - I will record Bruno Walter. [...] \"Our Germany - which I loved - with our tradition - our culture - We are now a disgrace.\" [...] Then he told us how you can't talk above a whisper. There are spies everywhere. He had to sit in the window of his hotel in Leipzig? a whole day, telephoning. And on the wireless, between turns, they play military music. Horrible horrible!</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The diary of Virginia Woolf' pp. 153 (87 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://bnb.data.bl.uk/id/resource/005633761>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "153" .
+
+<http://bnb.data.bl.uk/id/person/McNeillieAndrew1946->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Andrew McNeillie"@en;
+        owl:sameAs  <http://bnb.data.bl.uk/id/person/McNellieAndrew1946-> .
+
+<http://data.open.ac.uk/led/lexp/1446306537300>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor;
+        led:has_medium       led:Medium.Broadcast;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/8ca7a977c3c88b5bd8c933fc418d445c/excerpt/56f64c8b34579619135ff7a07b419e4e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Jo+Reardon/temp>;
+        led:pages            "153";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/afa18c9c-85f7-4ecf-a262-c7ce17556212#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Germany>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1933-04-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-12-20T08:30:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-10-31T15:48:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Military+music/1435574343912>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8ca7a977c3c88b5bd8c933fc418d445c/excerpt/56f64c8b34579619135ff7a07b419e4e> .
+
+<http://dbpedia.org/resource/Sussex>
+        rdfs:label  "Sussex"@en .
+
+<http://data.open.ac.uk/time/edtf/1933-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1933"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1933;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://bnb.data.bl.uk/id/person/McNellieAndrew1946->
+        rdfs:label  "Andrew McNellie"@en .
+
+<http://reference.data.gov.uk/id/day/1941-03-28>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "28 March, 1941"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.28>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1941;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.41> .
+
+<http://data.open.ac.uk/time/edtf/1983-uu-uu>
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1983 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .
+
+<http://dbpedia.org/resource/Germany>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Germany"@en .
+
+<http://bnb.data.bl.uk/id/person/BellAnneOlivier>
+        rdfs:label  "Anne Olivier Bell"@en .
+
+<http://bnb.data.bl.uk/id/agent/Penguin>
+        rdfs:label  "Penguin"@en .

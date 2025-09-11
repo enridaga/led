@@ -1,0 +1,121 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1618>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1618"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/1618-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1618"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1618;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1618>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.18> .
+
+<http://dbpedia.org/resource/Shawm>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Shawm"@en .
+
+<http://data.open.ac.uk/led/source/Account+of+a+mummery+exhibition+for+the+entertainment+of+Prince+Richard/1392910890024>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Account of a mummery exhibition for the entertainment of Prince Richard"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/scholarly>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+Survey+of+London>;
+        <http://purl.org/dc/terms/title>
+                "Account of a mummery exhibition for the entertainment of Prince Richard";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Stowe/1392910890033> .
+
+<http://data.open.ac.uk/led/lexp/1392911117768>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "The event is said to have taken place on the Sunday before Candlemas. The account cannot be taken as an accurate one of 1377.The instruments Stowe mentions would have been familiar to him in the early seventeenth century. The book of Daniel (5) mentions cornett and sackbut which may have led him to believe that the sackbut existed in the fourteenth century.\r\n"@en;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "In the night one hundred and thirty citizens, disguised and well horsed, in a mummery, with sound of sackbuts, Cornets, Shalmes and other minstrels, and innumerable travel lights of ware, rode from Newgate through Cheape over the Bridge through Southwarke, and so to Kensington beside Lambeth.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Account+of+a+mummery+exhibition+for+the+entertainment+of+Prince+Richard/1392910890024>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/th4/claims>;
+        led:pages              "148";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1377-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-20T15:45:17.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Mummery+exhibition+(,+performance+of)/1392910947082> .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/led/person/John+Stowe/1392910890033>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Stowe"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/Mummery+exhibition/1392910947074>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Mummery exhibition"@en;
+        <http://purl.org/dc/terms/title>
+                "Mummery exhibition" .
+
+<http://data.open.ac.uk/led/source/A+Survey+of+London>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "A Survey of London"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1618-uu-uu>;
+        <http://purl.org/dc/terms/title>
+                "A Survey of London";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Cornet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cornet"@en .
+
+<http://data.open.ac.uk/led/performance/Mummery+exhibition+(,+performance+of)/1392910947082>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mummery exhibition'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Shawm> , <http://dbpedia.org/resource/Trombone> , <http://dbpedia.org/resource/Cornet>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Mummery+exhibition/1392910947074> .
+
+<http://dbpedia.org/resource/Trombone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trombone"@en .
+
+<http://data.open.ac.uk/time/edtf/1377-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1377"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.13>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1377;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.77> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.77>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  77 .

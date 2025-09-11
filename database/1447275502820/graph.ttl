@@ -1,0 +1,62 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "J. Lloyd Evans"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Evans";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "J. Lloyd" .
+
+<http://data.open.ac.uk/led/music/military+band+music/1373905032347>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "military band music"@en;
+        <http://purl.org/dc/terms/title>
+                "military band music";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345> .
+
+<http://data.open.ac.uk/led/source/Letter,+J.+Lloyd+Evans+to+Mary+Davies/1447275346404>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter, J. Lloyd Evans to Mary Davies"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "Letter, J. Lloyd Evans to Mary Davies";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW AL1/5/26a";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345> .
+
+<http://data.open.ac.uk/led/source/90aa3a1399e54a1501c25b71fd6afc8b/excerpt/9dd0a8337067f852f06373fa4c4ee1be>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p style=\"margin: 0px;\">&nbsp;</p>\r\n<p style=\"margin: 0px;\">The &ldquo;air&rdquo; of my midnight melody - as played (slowly &amp; solemnly) by massed bands millions of miles away, although the old British Encampment was only just above us, a road, a wall, and a few trees in between - wonder if your friend will know it?</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter, J. Lloyd Evans to Mary Davies' (48 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter,+J.+Lloyd+Evans+to+Mary+Davies/1447275346404>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/lexp/1447275502820>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "J. Lloyd Evans sends a melody he heard played by a distant military band to Mary Davies enquiring whether John Lloyd Williams might be able to identify it."@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/90aa3a1399e54a1501c25b71fd6afc8b/excerpt/9dd0a8337067f852f06373fa4c4ee1be>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/J.+Lloyd+Evans/1447275382345>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-09T09:54:56.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-11T20:58:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/military+band+music/1373905032347>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/90aa3a1399e54a1501c25b71fd6afc8b/excerpt/9dd0a8337067f852f06373fa4c4ee1be> .

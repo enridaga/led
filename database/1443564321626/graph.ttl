@@ -1,0 +1,271 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Incidental_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Incidental music"@en .
+
+<http://reference.data.gov.uk/id/year/1939>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1939"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/actress>
+        rdfs:label  "actress"@en .
+
+<http://data.open.ac.uk/led/organization/Frederick+Muller+Ltd./1443561807321>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Frederick Muller Ltd."@en .
+
+<http://data.open.ac.uk/led/agent/Eleanor+Elder/1443561968211>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Eleanor Elder"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/actress+theatrical+producer> , <http://data.open.ac.uk/led/actress> , <http://data.open.ac.uk/led/theatrical+producer>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Elder";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Eleanor" .
+
+<http://data.open.ac.uk/led/agent/Members+of+the+Arts+League+of+Service+Travelling+Players/1443563596221>
+        rdf:type               <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Members of the Arts League of Service Travelling Players"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/actors+dancers>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Players";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Members of the Arts League of Service Travelling" .
+
+<http://data.open.ac.uk/led/music/Incidental+music+to+Hagoromo/1443564164732>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Incidental music to Hagoromo"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Edmund_Rubbra>;
+        <http://purl.org/dc/terms/title>
+                "Incidental music to Hagoromo";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Edmund_Rubbra> .
+
+<http://dbpedia.org/resource/Gerrards_Cross>
+        rdfs:label  "Gerrards Cross"@en .
+
+<http://data.open.ac.uk/led/actors+dancers>
+        rdfs:label  "Actors dancers"@en .
+
+<http://data.open.ac.uk/time/edtf/1939-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1939>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/id/day/1986-02-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 February, 1986"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1986;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://data.open.ac.uk/led/lexp/1443564321626>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Incidental music composed for a production of Ezra Pound’s translation of Hagoromo, a Japanese Noh play, 1929.\r\n\r\n\r\n"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/4f0ee0fa46a9c5c3f113c8a27889a05d/excerpt/ad5e4045570b8e05ef5b682a0feb4286>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "164–65";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Eleanor+Elder/1443561968211>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/06526aa7a00ac369b555a8f487ecea9c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1929-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-03-03T12:28:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-09-29T22:05:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/37ea99c4f26859c3926344468cfd0253/1443564164739>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/4f0ee0fa46a9c5c3f113c8a27889a05d/excerpt/ad5e4045570b8e05ef5b682a0feb4286> .
+
+<http://data.open.ac.uk/led/actress+theatrical+producer>
+        rdfs:label  "Actress theatrical producer"@en .
+
+<http://data.open.ac.uk/led/theatrical+producer>
+        rdfs:label  "theatrical producer"@en .
+
+<http://data.open.ac.uk/led/indian+drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Indian drum"@en .
+
+<http://data.open.ac.uk/led/indian+pipe>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Indian pipe"@en .
+
+<http://data.open.ac.uk/led/performance/37ea99c4f26859c3926344468cfd0253/1443564164739>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Incidental music to Hagoromo'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/England>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Incidental_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Cowbell_(instrument)> , <http://dbpedia.org/resource/Triangle_(instrument)> , <http://dbpedia.org/resource/Xylophone> , <http://data.open.ac.uk/led/indian+drum> , <http://data.open.ac.uk/led/indian+pipe> , <http://dbpedia.org/resource/Ocarina>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Eleanor+Elder/1443561968211>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Incidental+music+to+Hagoromo/1443564164732>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Members+of+the+Arts+League+of+Service+Travelling+Players/1443563596221> .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://dbpedia.org/resource/Triangle_(instrument)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Triangle (instrument)"@en .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/source/travelling+players:+the+story+of+the+arts+league+of+service>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Travelling Players: The Story of the Arts League of Service"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1939-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Frederick+Muller+Ltd./1443562656945> , <http://data.open.ac.uk/led/organization/Frederick+Muller+Ltd./1443561807321>;
+        <http://purl.org/dc/terms/title>
+                "Travelling Players: The Story of the Arts League of Service";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Eleanor+Elder/1443561968211> .
+
+<http://data.open.ac.uk/led/thing/Composer+pianist+and+university+lecturer>
+        rdfs:label  "Composer pianist and university lecturer"@en .
+
+<http://dbpedia.org/resource/Xylophone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Xylophone"@en .
+
+<http://dbpedia.org/resource/Cowbell_(instrument)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cowbell (instrument)"@en .
+
+<http://dbpedia.org/resource/Pianist>
+        rdfs:label  "Pianist"@en .
+
+<http://reference.data.gov.uk/id/day/1901-05-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 May, 1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/May>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1901;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://dbpedia.org/resource/Ocarina>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Ocarina"@en .
+
+<http://data.open.ac.uk/led/place/06526aa7a00ac369b555a8f487ecea9c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "On tour in England and Scotland"@en;
+        <http://purl.org/dc/terms/description>
+                "On tour in England and Scotland"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Scotland> , <http://dbpedia.org/resource/England> .
+
+<http://dbpedia.org/resource/Northampton>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Northampton"@en .
+
+<http://dbpedia.org/resource/Edmund_Rubbra>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Edmund Rubbra"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Pianist> , <http://data.open.ac.uk/led/composer> , <http://data.open.ac.uk/led/lecturer> , <http://data.open.ac.uk/led/thing/Composer+pianist+and+university+lecturer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1901-05-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Northampton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1986-02-14>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Gerrards_Cross>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Rubbra";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edmund" .
+
+<http://data.open.ac.uk/led/source/4f0ee0fa46a9c5c3f113c8a27889a05d/excerpt/ad5e4045570b8e05ef5b682a0feb4286>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>The music was the problem, as a piano was unthinkable &hellip; I sent for Edmund [Rubbra], who immediately suggested an orchestra of members of the company. &nbsp;&ldquo;Impossible!&rdquo; I cried. &nbsp;&ldquo;I can only spare four, and only two of them have ever played any instrument in their lives!&rdquo; &nbsp;&ldquo;That will be all right,&rdquo; said he. &nbsp;&ldquo;We&rsquo;ll have very simple instruments. &nbsp;What have you got?&rdquo; &nbsp;A search among our instruments brought to light a varied collection. &nbsp;He chose an Indian drum and cymbals, a wooden pipe with four notes, a triangle, and a cowbell. &nbsp;Stephen Jack produced an ocarina, which he played with skill. &nbsp;&ldquo;Good,&rdquo; said Edmund. &nbsp;&ldquo;All we require now is a xylophone.&rdquo; &nbsp;And he departed with the gramophone records, to turn up a week later with a score. &nbsp;He had, he said, caused a domestic upheaval by playing the records for a whole week-end, after which, having saturated his mind with Eastern modes and rhythms, he had composed something on the same lines.</p>\r\n<p>Edmund allotted to the startled actors their various instruments, and, true to Arts League traditions, they tackled their parts with a will. &nbsp;The result was pandemonium, but after some rehearsals the final effect was very charming. &nbsp;True, the orchestra was not always perfect, but neither were the conditions under which they had to play, and once or twice hysteria nearly got the better of them. &nbsp;I can still see them, Stephen, with his ocarina, dressed for the sea chanties; Hugh Mackay, in his black cloak, with the Indian pipe; Sidney Young, in charge of both the xylophone and drum; Elizabeth Dore, Victorian in checks and pantalettes, with the cowbell; all crouched behind the curtains in a wing space two feet wide with only a flickering candle by which to see their instruments.</p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Travelling Players: The Story of the Arts League of Service' pp. 164–65 (309 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/travelling+players:+the+story+of+the+arts+league+of+service>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "164–65" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .
+
+<http://data.open.ac.uk/led/organization/Frederick+Muller+Ltd./1443562656945>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Frederick Muller Ltd."@en .

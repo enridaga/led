@@ -1,0 +1,305 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Incidental_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Incidental music"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+John+Yeoman,+8-9+April+1774/1543492418155>
+        rdf:type                    <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of John Yeoman, 8-9 April 1774"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/the+diary+of+the+visits+of+john+yeoman+to+london+in+the+years+1774+and+1777>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diary of John Yeoman, 8-9 April 1774";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/John+Yeoman/1543489685888> .
+
+<http://dbpedia.org/resource/Theatre_Royal,_Drury_Lane>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Theatre Royal, Drury Lane"@en .
+
+<http://dbpedia.org/resource/Violin>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Violin"@en .
+
+<http://data.open.ac.uk/led/place/f4b46605d0ddc0e21e67d3ebcad29ea0>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Theatre Royal, Drury Lane, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Theatre Royal, Drury Lane, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Theatre_Royal,_Drury_Lane> , <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/potter>
+        rdfs:label  "potter"@en .
+
+<http://data.open.ac.uk/time/edtf/1934-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1934> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/the+diary+of+the+visits+of+john+yeoman+to+london+in+the+years+1774+and+1777>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "The Diary of the Visits of John Yeoman to London in the Years 1774 and 1777"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1934-12-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Watts+%26+Co./1543489685924>;
+        <http://purl.org/dc/terms/title>
+                "The Diary of the Visits of John Yeoman to London in the Years 1774 and 1777";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Macleod+Yearsley/1543489685905>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/led/performance/012ae0d7d87a7be802b75ede2d3b4909/1543492855192>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Incidental music to 'The Rehearsal' by George Villiers, Duke of Buckingham'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Theatre_Royal,_Drury_Lane>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Incidental_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Bassoon> , <http://dbpedia.org/resource/Cello> , <http://dbpedia.org/resource/Double_bass> , <http://dbpedia.org/resource/Drum> , <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Violin> , <http://dbpedia.org/resource/French_horn>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Incidental+music+to+'The+Rehearsal'+by+George+Villiers,+Duke+of+Buckingham/1543492855161> .
+
+<http://data.open.ac.uk/led/source/1eea6a39ac4cf7c47af653b1795b126a/excerpt/2f35376420494bc5b0f082b66d74db25>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p><em><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">8<sup>th</sup>.&nbsp; Friday</span></em><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">&nbsp; We Set out for London about 5 o Clock in a Stage Coach, I got&nbsp;out in Piccadily, [...]&nbsp;&nbsp;</span>Dined. Went back to Market Lane to Mr. Forrestor, where I found my Couson Betsy I Stay&rsquo;d there till the Company was come to go to the Play, there was Six onus Set out att [<em>corner of MS. torn</em>] o Clock for the play.&nbsp; got there before the doors was Open&rsquo;d, but Soon as ye Door was opend what a drunge (?) there was, yet we got a Second Seat in the two Shilling Gallery.&nbsp; We waited Some time before there was any thing to Entertain us with but the Looking at the House which is fifty times as Large as our Church, but Ive forgot to Mention that we was at Drury Lane.&nbsp; the Musick begun to play the first Thing, it consisted of&nbsp;</p>\n<p>&nbsp;</p>\n<p class=\"MsoNormal\" style=\"line-height: 107%;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 Violens</p>\n<p>&nbsp;</p>\n<p class=\"MsoNormal\" style=\"line-height: 107%;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 French horns</p>\n<p>&nbsp;</p>\n<p class=\"MsoNormal\" style=\"line-height: 107%;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 basesoons</p>\n<p>&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin-bottom: 6.0pt; line-height: 107%;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 Base files</p>\n<p class=\"MsoNormal\" style=\"margin-bottom: 6.0pt; line-height: 107%;\">&nbsp;</p>\n<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">and another Great (file?) in the Shape of a Basefile But So Large as Six common ones, it was 2 Foot above the Mans head that Play&rsquo;d him and I could Hear him Like Thunder att a distance, or like Something a Jowling in the Bowels of the earth.&nbsp; the Curten was then drawn up and the Play begun, but I cannot mind much of it.&nbsp; I can Remember they cauld the Rehersal, it was a composition of Blunders.&nbsp; there was a Variaty of Very Butifull Scens, one I can very well Recolect.&nbsp; att the further end of the feild as it apeard [the]re was a Large Bridge and we could here the Sound of Drums, kettle Drums, then we Saw an Army of Horsemen comeing over that Bridge and an Army of Foot seemd to Draw up to Battle before us with all the Appearance of War.&nbsp; In an instant the Battle was begun &amp; they Fought till there was not a live man left.&nbsp; the entertainment was Harlequins Invation which was very prety.&nbsp; [...]&nbsp;&nbsp;</span>they conclude the Play with a Chorus Song about 20 Musitioners and about 30/50 Commeadons which made a Pretty Harmony [&hellip;]</p>\n<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">Saterday 9<sup>th</sup>&nbsp; [&hellip;] &nbsp;There was two or three things in ye play I&rsquo;d forgot to mention;&nbsp; [...]&nbsp;&nbsp;</span><span style=\"font-family: Calibri, sans-serif; font-size: 11pt;\">The Curtun was drawn once and there was neer to twenty boys &amp; girls Danceing, the oldest did not appear above 10 yr. Old.</span><span style=\"font-family: Calibri, sans-serif; font-size: 11pt;\">&nbsp; </span><span style=\"font-family: Calibri, sans-serif; font-size: 11pt;\">I took that to be a prety Sight; Theres Not That Man Liveing who can form any Idea of unless they See it.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diary of John Yeoman, 8-9 April 1774' pp. 25–26, 28, 30 (405 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diary+of+John+Yeoman,+8-9+April+1774/1543492418155>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "25–26, 28, 30" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/music/Incidental+music+to+'Harlequin's+Invasion'+by+David+Garrick/1543492971209>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Incidental music to 'Harlequin's Invasion' by David Garrick"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_>;
+        <http://purl.org/dc/terms/title>
+                "Incidental music to 'Harlequin's Invasion' by David Garrick";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_> .
+
+<http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "John Yeoman"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/leader+of+the+church+choir> , <http://data.open.ac.uk/led/potter> , <http://data.open.ac.uk/led/tenant+farmer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/174u-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1824-10-09>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_Great_Britain>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Yeoman";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/music/Incidental+music+to+'The+Rehearsal'+by+George+Villiers,+Duke+of+Buckingham/1543492855161>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Incidental music to 'The Rehearsal' by George Villiers, Duke of Buckingham"@en;
+        <http://purl.org/dc/terms/title>
+                "Incidental music to 'The Rehearsal' by George Villiers, Duke of Buckingham" .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/time/edtf/174u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1740's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://musicbrainz.org/artist/031af119-8cdf-4745-95fe-2a9aa6adbd75#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "William Boyce"@en .
+
+<http://dbpedia.org/resource/Double_bass>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Double bass"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Macleod+Yearsley/1543489685905>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Macleod Yearsley"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/organization/Watts+%26+Co./1543489685924>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Watts & Co."@en .
+
+<http://reference.data.gov.uk/id/day/1824-10-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 October, 1824"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1824;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.24> .
+
+<http://data.open.ac.uk/led/lexp/1543493283295>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "Yeoman's account of his visit to the theatre is lengthy and detailed, extending to over 1,000 words.  This extract includes all of his allusions to the music heard.\nAll spelling and punctuation copied from the original."@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/1eea6a39ac4cf7c47af653b1795b126a/excerpt/2f35376420494bc5b0f082b66d74db25>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "25–26, 28, 30";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/f4b46605d0ddc0e21e67d3ebcad29ea0>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1774-04-08TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-11-30T15:10:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-11-29T12:08:04.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/012ae0d7d87a7be802b75ede2d3b4909/1543492855192> , <http://data.open.ac.uk/led/performance/c7705d59cf89fbc9fa682adc1ee5a01c/1543492971231>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/1eea6a39ac4cf7c47af653b1795b126a/excerpt/2f35376420494bc5b0f082b66d74db25> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://data.open.ac.uk/led/agent/John+Yeoman/1543489685888>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Yeoman"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/led/leader+of+the+church+choir>
+        rdfs:label  "leader of the church choir"@en .
+
+<http://data.open.ac.uk/led/performance/c7705d59cf89fbc9fa682adc1ee5a01c/1543492971231>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Incidental music to 'Harlequin's Invasion' by David Garrick'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Theatre_Royal,_Drury_Lane>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Incidental_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/John+Yeoman/1543489921777>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Incidental+music+to+'Harlequin's+Invasion'+by+David+Garrick/1543492971209> .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://dbpedia.org/resource/Kingdom_of_Great_Britain>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of Great Britain"@en .
+
+<http://data.open.ac.uk/time/edtf/1774-04-08TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 April, 1774, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1774;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://data.open.ac.uk/led/tenant+farmer>
+        rdfs:label  "tenant farmer"@en .
+
+<http://dbpedia.org/resource/Bassoon>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Bassoon"@en .
+
+<http://dbpedia.org/resource/Somerset>
+        rdfs:label  "Somerset"@en .
+
+<http://dbpedia.org/resource/French_horn>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "French horn"@en .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

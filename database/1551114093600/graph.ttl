@@ -1,0 +1,392 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551112984955>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mark's Church Goodman's Fields"@en .
+
+<http://data.open.ac.uk/led/agent/Fran%C3%A7ois+de+la+Feill%C3%A9e/1551113566535>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "François de la Feillée"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/thing/church+choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "church choir"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/'Oh,+what+the+joy+and+the+glory+must+be'/1551113566511>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Oh, what the joy and the glory must be'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/Fran%C3%A7ois+de+la+Feill%C3%A9e/1551113566535>;
+        <http://purl.org/dc/terms/title>
+                "'Oh, what the joy and the glory must be'";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/Fran%C3%A7ois+de+la+Feill%C3%A9e/1551113566535> .
+
+<http://data.open.ac.uk/led/performance/253899684de8bff79b81076badbbbf85/1551113755181>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''For ever with the Lord''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Whitechapel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'For+ever+with+the+Lord'/1551113755120>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113755209> .
+
+<http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "It is not known who transcribed Croswell’s diaries, or when.  The British Library record was created in 1960.  The pages are unnumbered, but most records are individually numbered.  Record numbers have therefore been used in place of page numbers, where available.  A further transcript of the diaries is held at the Bodleian Library."@en;
+        rdfs:label                  "Transcript of the diaries of Henry Croswell"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "British Library";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of the British Library."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Transcript of the diaries of Henry Croswell";
+        <http://purl.org/ontology/bibo/number>
+                "000826807, C.194.c.113 ";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/led/music/harvest+hymns+selected+from+'Church+Hymns'/1551113918884>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "harvest hymns selected from 'Church Hymns'"@en;
+        <http://purl.org/dc/terms/title>
+                "harvest hymns selected from 'Church Hymns'" .
+
+<http://data.open.ac.uk/led/agent/J.+Woodbury/1551113755153>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "J. Woodbury"@en .
+
+<http://data.open.ac.uk/time/edtf/TimeOfDay.18:30:00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "18:30:00.000Z"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113566573>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mark's Church Goodman's Fields"@en .
+
+<http://reference.data.gov.uk/id/gregorian-instant/1880-10-10T18:30:00>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 October, 1880, 06:30 PM"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/edtf/TimeOfDay.18:30:00>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henry Croswell"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/assurance+clerk> , <http://data.open.ac.uk/led/sunday+school+teacher>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1840-10-06>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/West_Drayton>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1893-01-15>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Croswell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henry" .
+
+<http://data.open.ac.uk/led/performance/1cad4f08cec498837605965deed45967/1551113848181>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Psalm 75'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Whitechapel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Anthem>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Psalm+75/1551113848144>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113848210> .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2d2627463186d4de38728fd51c2fd254>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">O[rgan]. &ndash;&nbsp;Pretty, and, I thought, small.&nbsp; It looks modern.</p>\n<p class=\"MsoNormal\">H[ymns]. &ndash;&nbsp;Church Hymns, a Harvest selection.&nbsp; \"Oh what the joy &hellip;\"&nbsp; \"For ever with the Lord &hellip;\"&nbsp; The Anthem was Ps. 75, verses 12, 13 and 14.</p>\n<p class=\"MsoNormal\">C[hoir]. &ndash;&nbsp;Ten boys and six men, the singing only very moderate.</p>\n<p class=\"MsoNormal\">[The congregation numbered] 500 &ndash;&nbsp;A fine representative collection of parishioners.&nbsp; There were many poor women and lots of lads in the West galleries.</p>\n<p class=\"MsoNormal\">[&hellip;]&nbsp;</p>\n<p class=\"MsoNormal\">M[iscellaneous]. &ndash; I thought it very Broad Church.</p>\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Transcript of the diaries of Henry Croswell' pp. 222 (74 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Transcript+of+the+diaries+of+Henry+Croswell/1546945031876>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "222" .
+
+<http://dbpedia.org/resource/Anthem>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anthem"@en .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113755209>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mark's Church Goodman's Fields"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/Church_of_England>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of England"@en .
+
+<http://data.open.ac.uk/led/performance/9ea9065b52482079350850d694d753d3/1551113918910>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'harvest hymns selected from 'Church Hymns''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Whitechapel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/harvest+hymns+selected+from+'Church+Hymns'/1551113918884>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113918929> .
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/duration/PT1H45M>
+        rdf:type    <http://www.w3.org/2006/time#DurationDescription>;
+        rdf:value   "PT1H45M"^^<http://www.w3.org/2001/XMLSchema#duration>;
+        rdfs:label  "1 hours 45 minutes"@en;
+        <http://www.w3.org/2006/time#hours>
+                "1"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+        <http://www.w3.org/2006/time#minutes>
+                "45"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://data.open.ac.uk/led/music/'For+ever+with+the+Lord'/1551113755120>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'For ever with the Lord'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/J.+Woodbury/1551113755153>;
+        <http://purl.org/dc/terms/title>
+                "'For ever with the Lord'";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/J.+Woodbury/1551113755153> .
+
+<http://dbpedia.org/resource/Anglican_church_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Anglican church music"@en .
+
+<http://data.open.ac.uk/led/lexp/1551114093600>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Henry Croswell (1840–93) kept a record of his visits to churches in London over a period of more than twelve years (1872–85).  He made methodical notes about the number of clergy, the churchmanship, the congregation, the sermon and the church architecture, as well as commenting on the music that he heard (the organ, the hymns and the choir).  The above listening experience has been extracted from one of these records.\n‘Church Hymns’ (1871) and ‘Church Hymns with Tunes’ (1874) were publications of the Society for Promoting Christian Knowledge (S.P.C.K.), under the musical editorship of Arthur Sullivan (1842–1900).  This collection was the most successful of the competitors to ‘Hymns Ancient and Modern’ in the late nineteenth century, containing a larger number of hymns overall, and more hymns specifically intended for children and young people."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2d2627463186d4de38728fd51c2fd254>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages_manuscript  "222";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/75565bf8750475f8d758573734b2c98d>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/gregorian-instant/1880-10-10T18:30:00>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-07-09T17:33:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-25T17:01:34.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/253899684de8bff79b81076badbbbf85/1551113755181> , <http://data.open.ac.uk/led/performance/03bff769f376b5bfc82d28b9837c2fed/1551113566554> , <http://data.open.ac.uk/led/performance/8f9e59e0cd5fc83dc7ce16943413c630/1551112984936> , <http://data.open.ac.uk/led/performance/9ea9065b52482079350850d694d753d3/1551113918910> , <http://data.open.ac.uk/led/performance/1cad4f08cec498837605965deed45967/1551113848181>;
+        <http://www.w3.org/2006/time#hasDurationDescription>
+                <http://data.open.ac.uk/time/duration/PT1H45M>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/f8f24b03a809dc923ebae12eb1ef97c3/excerpt/2d2627463186d4de38728fd51c2fd254> .
+
+<http://dbpedia.org/resource/Church_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Church organ"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.6>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/sunday+school+teacher>
+        rdfs:label  "sunday school teacher"@en , "Sunday School teacher"@en .
+
+<http://data.open.ac.uk/led/music/Anglican+church+music/1547720691065>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Anglican church music"@en;
+        <http://purl.org/dc/terms/title>
+                "Anglican church music" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113918929>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mark's Church Goodman's Fields"@en .
+
+<http://data.open.ac.uk/led/assurance+clerk>
+        rdfs:label  "assurance clerk"@en .
+
+<http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113848210>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "the choir and organist of St Mark's Church Goodman's Fields"@en .
+
+<http://data.open.ac.uk/led/place/75565bf8750475f8d758573734b2c98d>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "St Mark's Church, Goodman's Fields, Whitechapel, East End of London"@en;
+        <http://purl.org/dc/terms/description>
+                "St Mark's Church, Goodman's Fields, Whitechapel, East End of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/East_End_of_London> , <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/performance/8f9e59e0cd5fc83dc7ce16943413c630/1551112984936>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Anglican church music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Whitechapel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Anglican_church_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Anglican+church+music/1547720691065>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551112984955> .
+
+<http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "the congregation of St Mark's Church, Goodman's Fields"@en;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Fields";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "the congregation of St Mark's Church, Goodman's" .
+
+<http://data.open.ac.uk/led/music/Psalm+75/1551113848144>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Psalm 75"@en;
+        <http://purl.org/dc/terms/title>
+                "Psalm 75" .
+
+<http://dbpedia.org/resource/Whitechapel>
+        rdfs:label  "Whitechapel"@en .
+
+<http://data.open.ac.uk/led/performance/03bff769f376b5bfc82d28b9837c2fed/1551113566554>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Oh, what the joy and the glory must be''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Whitechapel>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://data.open.ac.uk/led/thing/church+choir> , <http://dbpedia.org/resource/Church_organ> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/the+congregation+of+St+Mark's+Church,+Goodman's+Fields/1551112900047> , <http://data.open.ac.uk/led/agent/Henry+Croswell/1546945388029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Oh,+what+the+joy+and+the+glory+must+be'/1551113566511>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/the+choir+and+organist+of+St+Mark's+Church+Goodman's+Fields/1551113566573> .
+
+<http://reference.data.gov.uk/id/day/1840-10-06>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "6 October, 1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.6>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://reference.data.gov.uk/id/day/1893-01-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 January, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .

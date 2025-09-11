@@ -1,0 +1,284 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/person/Hermann+Klein/1438157240872>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "Hermann Klein"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Writer> , <http://data.open.ac.uk/led/music+critic> , <http://data.open.ac.uk/led/singing+teacher>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1856-07-23>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Norwich>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1934-03-10>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England> , <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Klein";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hermann" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<https://ia700402.us.archive.org/31/items/thirtyyearsofmus00klei/thirtyyearsofmus00klei.pdf>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-07-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Internet Archive"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia700402.us.archive.org/31/items/thirtyyearsofmus00klei/thirtyyearsofmus00klei.pdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/315f483a88b3b746430885fae95894c4/1438523783692>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Piano concerto in A Minor'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Concerto>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/344d0eae-3b48-4da7-8c56-af771c4f6c1e#_> , <http://data.open.ac.uk/led/person/Hermann+Klein/1438157240872>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Piano+concerto+in+A+Minor/1438523783678>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski> .
+
+<http://dbpedia.org/resource/New_York_City>
+        rdfs:label  "New York City"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.56>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  56 .
+
+<http://data.open.ac.uk/led/source/Thirty+Years+of+Musical+Life+in+London,+1870-1900/1438157240868>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Thirty Years of Musical Life in London, 1870-1900"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia700402.us.archive.org/31/items/thirtyyearsofmus00klei/thirtyyearsofmus00klei.pdf>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1903-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/The_Century_Company>;
+        <http://purl.org/dc/terms/title>
+                "Thirty Years of Musical Life in London, 1870-1900";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/New_York_City>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Hermann+Klein/1438157240872> .
+
+<http://data.open.ac.uk/led/lexp/1438523818618>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/2aaf6962c5de1659c757f7746face493/excerpt/b872a4f67163e2dbaeeaa49457272788>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/claims>;
+        led:pages            "349";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Hermann+Klein/1438157240872> , <http://musicbrainz.org/artist/344d0eae-3b48-4da7-8c56-af771c4f6c1e#_>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1893-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-25T09:18:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-08-02T13:56:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/315f483a88b3b746430885fae95894c4/1438523783692> , <http://data.open.ac.uk/led/performance/9fcdcecbf77f7560e5661fdbc0a53a68/1438523710910>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/2aaf6962c5de1659c757f7746face493/excerpt/b872a4f67163e2dbaeeaa49457272788> .
+
+<http://reference.data.gov.uk/id/day/1856-07-23>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "23 July, 1856"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.23>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1856;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://data.open.ac.uk/time/edtf/1903-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1903"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1903;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1903>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.03> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.03>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/1893-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1893"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1893;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.93> .
+
+<http://data.open.ac.uk/led/music+critic>
+        rdfs:label  "Music Critic"@en , "music critic"@en , "Music critic"@en .
+
+<http://musicbrainz.org/artist/344d0eae-3b48-4da7-8c56-af771c4f6c1e#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Arrigo Boito"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/performance/9fcdcecbf77f7560e5661fdbc0a53a68/1438523710910>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'unspecified'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/344d0eae-3b48-4da7-8c56-af771c4f6c1e#_> , <http://data.open.ac.uk/led/person/Hermann+Klein/1438157240872>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified/1402321338322>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Max_Bruch> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/music/unspecified/1402321338322>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Max_Bruch>;
+        <http://purl.org/dc/terms/title>
+                "unspecified";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Max_Bruch> .
+
+<http://dbpedia.org/resource/Concerto>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Concerto"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/singing+teacher>
+        rdfs:label  "Singing Teacher"@en , "Singing teacher"@en , "singing teacher"@en .
+
+<http://data.open.ac.uk/led/source/2aaf6962c5de1659c757f7746face493/excerpt/b872a4f67163e2dbaeeaa49457272788>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p></p>\r\n<p></p>\r\n<p class=\"MsoNormal\"></p>\r\n<p class=\"MsoNormal\"></p>\r\n<p class=\"MsoNormal\"><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Courier New';\">A night or <span style=\"mso-spacerun: yes;\">&nbsp;</span>two later I met Boito at a reception given in his <span style=\"mso-spacerun: yes;\">&nbsp;</span>honor by my friend Albert Visetti, and the renowned librettist-composer did me the pleasure of <span style=\"mso-spacerun: yes;\">&nbsp;</span>accompanying me to the last Philharmonic concert of the season, at which Max Bruch conducted<span style=\"mso-spacerun: yes;\">&nbsp;</span>a couple of works and Paderewski played his<span style=\"mso-spacerun: yes;\">&nbsp;</span>concerto in A minor. <span style=\"mso-spacerun: yes;\">&nbsp;</span><span style=\"mso-spacerun: yes;\">&nbsp;</span><span style=\"mso-spacerun: yes;\">&nbsp;</span></span></p>\r\n<p class=\"MsoNormal\"><br />&nbsp;<span style=\"mso-spacerun: yes;\">&nbsp;</span><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Courier New';\"><span style=\"mso-spacerun: yes;\">&nbsp;</span><span style=\"mso-spacerun: yes;\"> <br /></span></span></p>\r\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Thirty Years of Musical Life in London, 1870-1900' pp. 349 (56 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Thirty+Years+of+Musical+Life+in+London,+1870-1900/1438157240868>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "349" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.93>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  93 .
+
+<http://reference.data.gov.uk/id/year/1903>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Max_Bruch>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Max Bruch"@en .
+
+<http://dbpedia.org/resource/Ignacy_Jan_Paderewski>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ignacy Jan Paderewski"@en , "Ignace Jan Paderewski"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/4a2b8def-5a86-45fd-9c21-31c3356a3774#_> , <http://bnb.data.bl.uk/id/person/PaderewskiIgnaceJan1860-1941> .
+
+<http://data.open.ac.uk/led/music/Piano+concerto+in+A+Minor/1438523783678>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Piano concerto in A Minor"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski>;
+        <http://purl.org/dc/terms/title>
+                "Piano concerto in A Minor";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski> .
+
+<http://dbpedia.org/resource/The_Century_Company>
+        rdfs:label  "The Century Company"@en .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://reference.data.gov.uk/id/day/1934-03-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 March, 1934"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1934;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.34> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Norwich>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Norwich"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.23>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  23 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.34>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  34 .

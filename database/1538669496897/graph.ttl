@@ -1,0 +1,227 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/clerk>
+        rdfs:label  "clerk"@en , "Clerk"@en .
+
+<http://dbpedia.org/resource/Pump_organ>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Pump organ"@en .
+
+<http://data.open.ac.uk/led/agent/Mr.+West/1538669320931>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Mr. West"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/clerk>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "West";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mr." .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Harry Alfred West (b. 1880) sketches his early life in and near Bristol, England. His memoir details his love of playing and listening to the church organ. The unpublished memoir is held in the Burnett Archive of Working Class Autobiography, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "The Autobiography of Harry Alfred West"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Burnett Archive of Working Class Autobiography, University of Brunel Library Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By Permission of University of Brunel Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Autobiography of Harry Alfred West";
+        <http://purl.org/ontology/bibo/number>
+                "1.745";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Hymn>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Hymn"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://data.open.ac.uk/led/managerial+roles>
+        rdfs:label  "managerial roles"@en .
+
+<http://data.open.ac.uk/led/porter>
+        rdfs:label  "Porter"@en , "porter"@en .
+
+<http://data.open.ac.uk/led/lexp/1538669496897>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/dd7db5ddafb21f32c31e93c34e7c2463>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "33-34";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497> , <http://data.open.ac.uk/led/agent/Mr.+West/1538669320931>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Bristol>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/189u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-29T12:18:31.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-04T16:11:37.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/ec56d18060ecd83195b6783194a504e7/1538669436689>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/dd7db5ddafb21f32c31e93c34e7c2463> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.8>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Bristol>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Bristol"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+hymns+with+harmonium/1532517804511>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified hymns with harmonium"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified hymns with harmonium" .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Harry Alfred West"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/porter> , <http://data.open.ac.uk/led/managerial+roles>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status           <urn:x-nrsuk:social:C1>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1880-10-08>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "West";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Harry Alfred" .
+
+<http://data.open.ac.uk/led/performance/ec56d18060ecd83195b6783194a504e7/1538669436689>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified hymns with harmonium'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Bristol>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Hymn>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Pump_organ>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Mr.+West/1538669320931> , <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665277497>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+hymns+with+harmonium/1532517804511>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Mr.+West/1538669436746> , <http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538669436718> .
+
+<http://data.open.ac.uk/led/agent/Mr.+West/1538669436746>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Mr. West"@en .
+
+<http://data.open.ac.uk/led/source/892fe02ba37f199941dadd3b7f3f6bf1/excerpt/dd7db5ddafb21f32c31e93c34e7c2463>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Harry West details his love of organ music and learning to play, largely self-taught, in pages 28; 32 &ndash; 35 of his memoir, where Colston Hall is mentioned as a setting for listening to organ music at a Methodist service. He longed to play the organ from the age of six but his parents could not afford lessons. Listening experiences relating West&rsquo;s &lsquo;musical knowledge&rsquo; are included in the Listening Experience Database as separate items].&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">I must now once again return to an earlier date to pick up the line which led to my musical knowledge, such as it is. Somewhere around 1890 when I was 10 years of age, the [Old Market Street Methodist Men&rsquo;s Bible Class], of which my father was a member, built the Mission Hall in Barrow Road, Newtown, Bristol. They used there a very small harmonium without stops. (They later obtained a very good American organ). My father who was in the choir, purchased this small instrument for twenty-five shillings, and tried to learn to play it. Unfortunately he failed after a pretty persistent effort [due to poor eye sight].&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">One evening he realised that his efforts would be unavailing. He got off the stool, turned to me, a mere boy, and said &ldquo;Harry boy, it is no good, I shall never &lsquo;bust&rsquo; [organist] George Riseley&rsquo;s contract at Colston Hall. I will tell you all about the notes, their values etc., you see what you can do&rdquo;. I was delighted. We had no books of musical instruction, I could only do what my father had tried to do, that was to play tunes, or try to, from the &ldquo;Bristol Tune Book&rdquo;, &ldquo;Wesley&rsquo;s Tune Book&rdquo; and Sankey&rsquo;s &ldquo;Sacred Songs and Solos&rdquo;. I thought that if I could master that lot, I should be a competent musician. I did eventually master all of them, but in the course of it, failing professional instruction, I acquired some awkward habits of technique, which hampered me in more pretentious compositions. If I had waited until I could get professional instruction, however, I should never have learnt.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Autobiography of Harry Alfred West' pp. 33-34 (344 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Autobiography+of+Harry+Alfred+West/1538665055069>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "33-34" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538665055107>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Harry Alfred West"@en .
+
+<http://data.open.ac.uk/time/edtf/189u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1890's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1890-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/agent/Harry+Alfred+West/1538669436718>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Harry Alfred West"@en .
+
+<http://reference.data.gov.uk/id/day/1880-10-08>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "8 October, 1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.8>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://dbpedia.org/resource/Somerset>
+        rdfs:label  "Somerset"@en .

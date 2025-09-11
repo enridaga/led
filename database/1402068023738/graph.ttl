@@ -1,0 +1,195 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Fife_(instrument)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fife (instrument)"@en .
+
+<http://data.open.ac.uk/led/performance/You+ought+to+join+Kitchener's+Army+(,+performance+of)/1402067983334>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'You ought to join Kitchener's Army'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Fife_(instrument)> , <http://dbpedia.org/resource/Musical_ensemble> , <http://dbpedia.org/resource/Drum>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Len+Whitehead/1402067831267> , <http://data.open.ac.uk/led/person/George+Whitehead/1402067912160>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/You+ought+to+join+Kitchener's+Army/1402067983325> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Musical_ensemble>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Musical ensemble"@en .
+
+<http://data.open.ac.uk/led/person/George+Whitehead/1402067912160>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "George Whitehead"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/farm+worker>;
+        led:has_social_status  <urn:x-isco08:6>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Whitehead";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "George" .
+
+<http://reference.data.gov.uk/id/year/1907>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1907"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://bnb.data.bl.uk/id/person/VanEmdenRichard>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Richard Van Emden"@en .
+
+<http://data.open.ac.uk/led/organization/Headline/1402067771671>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Headline"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://bnb.data.bl.uk/id/person/HumphriesSteve>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Steve Humphries"@en .
+
+<http://data.open.ac.uk/time/edtf/1914-08-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "August, 1914"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1914;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.14> .
+
+<http://data.open.ac.uk/led/person/Len+Whitehead/1402067831267>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Len Whitehead"@en;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1907-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Whitehead";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Len" .
+
+<http://data.open.ac.uk/led/source/All+Quiet+on+the+Home+Front/1402067771661>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "All Quiet on the Home Front"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/oral>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2004-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Headline/1402067771671>;
+        <http://purl.org/dc/terms/title>
+                "All Quiet on the Home Front";
+        <http://purl.org/ontology/bibo/editor>
+                <http://bnb.data.bl.uk/id/person/VanEmdenRichard> , <http://bnb.data.bl.uk/id/person/HumphriesSteve>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0755311892"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.07>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/thing/farm+worker>
+        rdfs:label  "farm worker"@en .
+
+<http://data.open.ac.uk/led/music/You+ought+to+join+Kitchener's+Army/1402067983325>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "You ought to join Kitchener's Army"@en;
+        <http://purl.org/dc/terms/title>
+                "You ought to join Kitchener's Army" .
+
+<http://data.open.ac.uk/time/edtf/2004-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2004"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2004;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2004>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://reference.data.gov.uk/id/year/2004>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1402068023738>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "Everybody was terribly excited, and there was nobody more excited than my elder brother George. He was going, he said, “first thing tomorrow morning”. We were having a bit of leg pulling and we sang him the song:\r\n\r\nNo more will I work in the harvest to reap the golden corn \r\nBut I’m going to join the army and I’m off tomorrow morn.\r\nHurrah for the scarlet and blue \r\nSee the helmets glitter in the sun \r\nSee the bayonets flash like lightning \r\nTo the beating of the old militia drum.\r\n\r\n     Dad didn’t want him to enlist, he tried to persuade him against going so soon — stop to see the harvest in. But George was keen to go and here was his chance, and he went into my mother’s bedroom — she was not very well at the time - and he picked up a stick which she used to rap on the floor if she wanted anything. “This is how I shall strut about the London parks,” he said, jokingly of course. It was the glamour of it all, nobody sort of gave it a second thought that they might never come back.\r\n     In the early part of the war, small squads of soldiers used to march through the villages — it was part of the recruiting drive, you see, and they sang a song, “You ought to join Kitchener’s Army. Seven bob a week, plenty of grub to eat, great big boots make blisters on your feet, you ought to join.” Of course we used to run alongside these soldiers; they had a drum and a fife band, or a bugle.\r\n     I think we used to poke fun at them. It wasn’t military music but enough perhaps to stir some young men to want to join up.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/All+Quiet+on+the+Home+Front/1402067771661>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "9-10";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Len+Whitehead/1402067831267> , <http://data.open.ac.uk/led/person/George+Whitehead/1402067912160>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1914-08-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-06-06T15:20:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/You+ought+to+join+Kitchener's+Army+(,+performance+of)/1402067983334> , <http://data.open.ac.uk/led/music/No+more+will+I+work+in+the+harvest/1402067948729> .
+
+<http://data.open.ac.uk/led/music/No+more+will+I+work+in+the+harvest/1402067948729>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "No more will I work in the harvest"@en;
+        <http://purl.org/dc/terms/title>
+                "No more will I work in the harvest " .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://data.open.ac.uk/time/edtf/1907-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1907"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1907;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1907>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.07> .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

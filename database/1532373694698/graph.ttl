@@ -1,0 +1,222 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Piano_solo>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano solo"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/performance/33c02f4110a332a53e545ad083583d45/1603108468328>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified music'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Vocal_music> , <http://dbpedia.org/resource/Piano_solo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/GoghVincentvan1853-1890>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+music/1603108468305>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/three+Germans/1603108468346> .
+
+<http://data.open.ac.uk/led/music/unspecified+music/1603108468305>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified music"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified music" .
+
+<http://reference.data.gov.uk/id/day/1890-07-29>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "29 July, 1890"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.29>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/July>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1890;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.90> .
+
+<http://data.open.ac.uk/led/place/5d16d4cc7f9c8018718ed8eec512ab8c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Boarding House in London"@en;
+        <http://purl.org/dc/terms/description>
+                "Boarding House in London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.90>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  90 .
+
+<http://dbpedia.org/resource/Vocal_music>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Vocal music"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/artist>
+        rdfs:label  "artist"@en , "Artist"@en .
+
+<http://bnb.data.bl.uk/id/person/GoghVincentvan1853-1890>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Vincent van Gogh"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/artist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Protestant_Church_in_the_Netherlands>;
+        <http://schema.org/birthDate>  <http://reference.data.gov.uk/id/day/1853-03-30>;
+        <http://schema.org/deathDate>  <http://reference.data.gov.uk/id/day/1890-07-29>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Netherlands>;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Vincent van Gogh"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://data.open.ac.uk/led/lexp/1532373694698>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/780006d4aa66a20c83cb44b5c821f0d9/excerpt/e59f329cf54ee7f6f89d610a5db2f60a>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/cochranespeedy/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/GoghVincentvan1853-1890>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/5d16d4cc7f9c8018718ed8eec512ab8c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1873-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-10-19T11:56:41.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-23T19:21:36.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/33c02f4110a332a53e545ad083583d45/1603108468328>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/780006d4aa66a20c83cb44b5c821f0d9/excerpt/e59f329cf54ee7f6f89d610a5db2f60a> .
+
+<http://data.open.ac.uk/led/source/780006d4aa66a20c83cb44b5c821f0d9/excerpt/e59f329cf54ee7f6f89d610a5db2f60a>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>I&rsquo;ve come by a boarding-house that suits me very well for the present.There are also three Germans in the house who really love <span class=\"highlight\">music</span> and play piano and sing themselves, which makes the evenings&nbsp;&nbsp; very pleasant indeed.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'letter from Vincent van Gogh to Theo van Gogh, 13 June 1873' (39 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Van+Gogh's+Letters/1532373397389>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/Netherlands>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Netherlands"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://reference.data.gov.uk/def/intervals/July>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://vangoghletters.org/vg/letters/let009/letter.html>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2020-10-19"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Vincent van Gogh: The Letters"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://vangoghletters.org/vg/letters/let009/letter.html"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/agent/The+Van+Gogh+Museum/1603108257628>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "The Van Gogh Museum"@en .
+
+<http://data.open.ac.uk/time/edtf/1873-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 1873"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1873;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.73> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Protestant_Church_in_the_Netherlands>
+        rdf:type    led:Belief;
+        rdfs:label  "Protestant Church in the Netherlands"@en .
+
+<http://data.open.ac.uk/led/source/Van+Gogh's+Letters/1532373397389>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "letter from Vincent van Gogh to Theo van Gogh, 13 June 1873"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "http://vangoghletters.org/vg/letters/let009/letter.html";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://vangoghletters.org/vg/letters/let009/letter.html>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:dut>;
+        <http://purl.org/dc/terms/title>
+                "letter from Vincent van Gogh to Theo van Gogh, 13 June 1873";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/translator>
+                <http://data.open.ac.uk/led/agent/The+Van+Gogh+Museum/1603108257628>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/GoghVincentvan1853-1890> .
+
+<http://reference.data.gov.uk/id/day/1853-03-30>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "30 March, 1853"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.30>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1853;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.73>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  73 .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/led/agent/three+Germans/1603108468346>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "three Germans"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .

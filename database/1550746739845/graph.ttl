@@ -1,0 +1,198 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/scholar>
+        rdfs:label  "Scholar"@en , "scholar"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/source/Diaries+of+Thomas+Cairns+Livingston+vol.+17/1550739197371>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diaries of Thomas Cairns Livingston vol. 17"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection           "Glasgow City Archives";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Glasgow City Archives"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Diaries of Thomas Cairns Livingston vol. 17";
+        <http://purl.org/ontology/bibo/number>
+                "TD1969/17";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston/1550739197428> .
+
+<http://reference.data.gov.uk/id/day/1911-08-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 August, 1911"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://data.open.ac.uk/led/performance/e51679b1f7ddf5c666db0b5e7d105533/1550746676257>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Glasgow Cathedral organ recital'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glasgow_Cathedral>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Organ_repertoire>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Organ_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston+Jnr./1550333776969>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Glasgow+Cathedral+organ+recital/1550746676234> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Organ_repertoire>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Organ repertoire"@en .
+
+<http://reference.data.gov.uk/id/day/1930-08-12>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "12 August, 1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.12>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://dbpedia.org/resource/Organ_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Organ (music)"@en .
+
+<http://data.open.ac.uk/led/lexp/1550746739845>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/8231c000c9ba03b419c109236c4e2b0a/excerpt/cfc4472002521426d68782fad357ae30>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston+Jnr./1550333776969>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Glasgow_Cathedral>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1930-08-12>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2020-06-23T10:20:54.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-21T10:59:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/e51679b1f7ddf5c666db0b5e7d105533/1550746676257>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8231c000c9ba03b419c109236c4e2b0a/excerpt/cfc4472002521426d68782fad357ae30> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Church_of_Scotland>
+        rdf:type    led:Belief;
+        rdfs:label  "Church of Scotland"@en .
+
+<http://dbpedia.org/resource/Glasgow_Cathedral>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Glasgow Cathedral"@en .
+
+<http://data.open.ac.uk/led/source/8231c000c9ba03b419c109236c4e2b0a/excerpt/cfc4472002521426d68782fad357ae30>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt;\">Tuesday 12 August &hellip; Tommy at Organ recital in Cathedral.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Diaries of Thomas Cairns Livingston vol. 17' (8 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Diaries+of+Thomas+Cairns+Livingston+vol.+17/1550739197371>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.95>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  95 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.11>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston+Jnr./1550333776969>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Thomas Cairns Livingston Jnr."@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/lecturer+english+literature> , <http://data.open.ac.uk/led/scholar>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Church_of_Scotland>;
+        led:has_social_status           <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1911-08-09>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Scotland>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1995-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Morpeth,_Northumberland>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jnr.";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Thomas Cairns Livingston" .
+
+<http://data.open.ac.uk/time/edtf/1995-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1995"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1995;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1995>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.95> .
+
+<http://data.open.ac.uk/led/music/Glasgow+Cathedral+organ+recital/1550746676234>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Glasgow Cathedral organ recital"@en;
+        <http://purl.org/dc/terms/title>
+                "Glasgow Cathedral organ recital" .
+
+<http://reference.data.gov.uk/id/year/1995>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lecturer+english+literature>
+        rdfs:label  "Lecturer English Literature"@en , "lecturer English Literature"@en .
+
+<http://dbpedia.org/resource/Scotland>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Scotland"@en .
+
+<http://data.open.ac.uk/led/agent/Thomas+Cairns+Livingston/1550739197428>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Thomas Cairns Livingston"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

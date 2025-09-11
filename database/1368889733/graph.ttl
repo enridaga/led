@@ -1,0 +1,48 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/person/Papuch/1385488095553>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Papuch"@en .
+
+<http://data.open.ac.uk/led/person/Caroline+Moberly/1368889658943>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Caroline Moberly"@en;
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Caroline Moberly";
+        <http://xmlns.com/foaf/0.1/name>
+                "Caroline Moberly" .
+
+<http://dbpedia.org/resource/Memoirs_Illustrating_the_History_of_Jacobinism>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Memoir"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/title>
+                "Dulce Domum" .
+
+<http://data.open.ac.uk/led/lexp/1368889733>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Caroline Moberly was he daughter of George Moberly, Headmaster of Winchester College. Wesley was organist both at Winchester Cathedral and at the college. She is describing his regular visits for the purpose of making music with the family."@en;
+        led:has_evidence_text  "Open-air singing was a very special characteristic of those days. Dr Samuel Sebastian Weskey for ten years came regularly twice a week and taught each one of us who were old enought to join the singing class. We were all musical and had good voices and were so many that we possess'd not only a first and second quartet, but a chorus as well, and reading music became no diffciulty to any of us. Dr Wesley could be fierce occasionally, and charming at other times, and would come of an evening to accompnay our home singing. He once made us sing all through Rossini's opera of the 'Cenerentola' at sight, and sometimes brought his own compositions to try over."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://dbpedia.org/resource/Memoirs_Illustrating_the_History_of_Jacobinism>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Caroline+Moberly/1368889658943>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-05-18T15:08:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/opera/1368889541812> .
+
+<http://data.open.ac.uk/led/music/opera/1368889541812>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "opera"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Papuch/1385488095553>;
+        <http://purl.org/dc/terms/title>
+                "Cenerentola" , "opera" .

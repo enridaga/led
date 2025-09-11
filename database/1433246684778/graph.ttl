@@ -1,0 +1,163 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Orchestra>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Orchestra"@en .
+
+<http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lady Mary Elvey"@en .
+
+<http://dbpedia.org/resource/Symphony>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Symphony"@en .
+
+<http://reference.data.gov.uk/id/year/1894>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1894"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1433246684778>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "A much less imposing concert was given shortly after at Datchet under Sir George's conductorship, one piece in the programme being Haydn's \"Surprise Symphony.\" Just before this commenced, Mr. Blair Oliphant, seeing many friends among the performers, said to Sir George, \" Cannot you give me something to do ? \" At this Sir George took up a handful of fire irons, handing them to him, saying, \"You can clash these when I give you a signal.\" A few bars before the appointed place for the discharge, he looked round to see whether his friend was in readiness. This movement was, however, mistaken for the signal, and the \" surprise\" being promptly given, effectually startled both orchestra and audience.\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "224-225";
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Datchet>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1874-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-22T11:29:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-06-02T12:04:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Surprise+Symphony/1433246663427/1433246663439> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-03"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-02"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/Blair+Oliphant/1433246663443>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Blair Oliphant"@en .
+
+<http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Joseph Haydn"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://dbpedia.org/resource/Classical_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Classical music"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Surprise+Symphony/1433246663427/1433246663439>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Surprise Symphony'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Datchet>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Symphony> , <http://dbpedia.org/resource/Classical_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Orchestra>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Surprise+Symphony/1433246663427>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Blair+Oliphant/1433246663443> .
+
+<http://data.open.ac.uk/led/music/Surprise+Symphony/1433246663427>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Surprise Symphony"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_>;
+        <http://purl.org/dc/terms/title>
+                "Surprise Symphony";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c130b0fb-5dce-449d-9f40-1437f889f7fe#_> .
+
+<http://dbpedia.org/resource/Datchet>
+        rdfs:label  "Datchet"@en .
+
+<http://data.open.ac.uk/time/edtf/1874-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1874"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1874;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1874>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.74> .
+
+<http://data.open.ac.uk/time/edtf/1894-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1894"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1894;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1894>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://reference.data.gov.uk/id/year/1874>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1874"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Life and Reminiscences of Sir George J. Elvey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/biographical>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520> , <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1894-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>;
+        <http://purl.org/dc/terms/title>
+                "Life and Reminiscences of Sir George J. Elvey";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.74>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  74 .
+
+<http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Sampson Low Marston & Company, Limited"@en .

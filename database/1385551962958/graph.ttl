@@ -1,0 +1,160 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/James+Raine/1385551744336>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "James Raine"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.61>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  61 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/person/Mrs+Jackson/1385551806959>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mrs Jackson"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jackson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Mrs" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.16>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  16 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.56>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  56 .
+
+<http://data.open.ac.uk/led/person/Richard+Jackson/1385551783706>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Richard Jackson"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jackson";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Richard" .
+
+<http://reference.data.gov.uk/id/year/1861>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1861"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://witching.org/throwing-bones%23events-1354>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-11-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Uszkalo, Kirsten C. \"Richard Jackson claims he heard strange noises like music,\" The Witches in Early Modern England Project. 2011"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://witching.org/throwing-bones%23events-1354"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1385551962958>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "Richard Jackson claims he heard strange noises like music, groans, and the ringing of small bells when his fits commenced, noises his wife also hears and which cause dogs to howl.\r\n"@en;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "And, in the begininge of these fits, the first night, he heard a greate noyse of musicke and dancinge about him. The next night, about twelve of the clocke, he was taken with another fitt, and, in the midle of it, he conccved there was a noyse like ringinge of small bells, with singinge and dancinge, and sometimes both nights a noise of deepe groneing; upon which he called of his wife and asked her if she heard it not, and soe of his man, who answered they did not. He asked them againe and againe if they heard it not; at last lie, his wife, and servant, all heard it give three hevie groones ; at that instant doggs did howle and yell at the windows, as though they would have puld them in peeces."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Depositions+from+the+Castle+of+York,+7+June+1656/1385551744307>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/th4/claims>;
+        led:pages              "74-75";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Richard+Jackson/1385551783706> , <http://data.open.ac.uk/led/person/Mrs+Jackson/1385551806959>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1656-06-07>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-11-27T11:32:43.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/music+and+witchcraft+(,+performance+of)/1385551883280> .
+
+<http://data.open.ac.uk/time/edtf/1861-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1861"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1861;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1861>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.61> .
+
+<http://reference.data.gov.uk/id/day/1656-06-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 June, 1656"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.16>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1656;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/led/source/Depositions+from+the+Castle+of+York,+7+June+1656/1385551744307>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Depositions from the Castle of York, 7 June 1656"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Depositions+from+the+Castle+of+York,+relating+to+offenses+committed+in+the+northern+counties+in+the+seventeenth+century>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://witching.org/throwing-bones%23events-1354>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Depositions from the Castle of York, 7 June 1656";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published> .
+
+<http://data.open.ac.uk/led/music/music+and+witchcraft/1385551883276>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "music and witchcraft"@en;
+        <http://purl.org/dc/terms/title>
+                "music and witchcraft" .
+
+<http://data.open.ac.uk/led/performance/music+and+witchcraft+(,+performance+of)/1385551883280>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'music and witchcraft'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Richard+Jackson/1385551783706> , <http://data.open.ac.uk/led/person/Mrs+Jackson/1385551806959>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/music+and+witchcraft/1385551883276> .
+
+<http://data.open.ac.uk/led/source/Depositions+from+the+Castle+of+York,+relating+to+offenses+committed+in+the+northern+counties+in+the+seventeenth+century>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Depositions from the Castle of York, relating to offenses committed in the northern counties in the seventeenth century"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1861-uu-uu>;
+        <http://purl.org/dc/terms/title>
+                "Depositions from the Castle of York, relating to offenses committed in the northern counties in the seventeenth century";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/James+Raine/1385551744336> .

@@ -1,0 +1,213 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1887-11-24>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "24 November, 1887"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.24>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1887;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://data.open.ac.uk/led/music/Hustings+song+for+Peter+Laycock/1540299050070>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Hustings song for Peter Laycock"@en;
+        <http://purl.org/dc/terms/title>
+                "Hustings song for Peter Laycock" .
+
+<http://data.open.ac.uk/led/performance/49f8f27968f36fee4676ee39e89f9272/1540299050095>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Hustings song for Peter Laycock'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/City_of_Leeds>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Novelty_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Arthur+Gill/1544023770013>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Hustings+song+for+Peter+Laycock/1540299050070>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Leeds+boys/1540299050113> .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.1>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Leeds>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Leeds"@en .
+
+<http://dbpedia.org/resource/City_of_Leeds>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "city of Leeds"@en , "City of Leeds"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/agent/Arthur+Gill/1544023446923>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Arthur Gill"@en .
+
+<http://data.open.ac.uk/led/source/I+remember!+Reminiscences+of+a+Cobbler's+Son/1544023446865>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Arthur Gill (b. 1887, Leeds) wrote his memoir in 1969. It treats his Victorian childhood, working life including his profession as a cardwriter (graphic artist), his married life and strong commitment to his Methodist church. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections."@en;
+        rdfs:label                  "I remember! Reminiscences of a Cobbler's Son"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Library, Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "All extracts used by permission of Brunel University Library"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "I remember! Reminiscences of a Cobbler's Son";
+        <http://purl.org/ontology/bibo/number>
+                "1:268";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Arthur+Gill/1544023446923> .
+
+<http://data.open.ac.uk/led/card+writer+%5Bgraphic+artist%5D>
+        rdfs:label  "card writer [graphic artist]"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/led/agent/Arthur+Gill/1544023770013>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Arthur Gill"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/card+writer+%5Bgraphic+artist%5D>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status           <urn:x-nrsuk:social:C2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1887-11-24>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Leeds>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Gill";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Arthur" .
+
+<http://data.open.ac.uk/time/edtf/YearRange.9u>
+        rdf:value   "9u";
+        rdfs:label  "90s"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Novelty_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Novelty song"@en .
+
+<http://data.open.ac.uk/time/edtf/189u-11-01>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1 November, the 1890's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.1>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.9u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1890-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/agent/Leeds+boys/1540299050113>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Leeds boys"@en .
+
+<http://data.open.ac.uk/led/lexp/1540299104360>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/edadb8d38bf4f780dc8ad97644193414>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "30-31";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Arthur+Gill/1544023770013>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/City_of_Leeds>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/189u-11-01>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-12-05T16:51:38.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2018-12-05T17:22:59.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-23T12:51:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/49f8f27968f36fee4676ee39e89f9272/1540299050095>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/edadb8d38bf4f780dc8ad97644193414> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.24>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  24 .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/edadb8d38bf4f780dc8ad97644193414>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Ellen Calvert (1888-1988?) married Arthur Gill&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">11 March 1914. The Listening Experience Database includes items from her memoir, &lsquo;The Diary of Ellen Gill&rsquo;]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">&nbsp;&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">Langsett Terrace, where we lived for a [few months in 1895] wasn&rsquo;t far away from Peter Laycock&rsquo;s Cloth Mill, where my wife Ellen worked as a girl. Peter Laycock was very well known in the district of Woodhouse.</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">My wife Ellen thinks he was the first inventor of &ldquo;SHODDY&rdquo;&mdash;a very famous blend of cheap cloth, which many of the poorer folk were glad to wear. In politics Peter Laycock was a Liberal [&hellip;] [and] on this particular election day [&hellip;] his name was at the top of the poll when the results were declared. Election Days (which were always on NOV. 1<sup>st&nbsp;</sup>in those days) were exciting times, especially for boys [&hellip;] They were great times! We young boys always had to stay up late on &ldquo;Election&rdquo; night till the &ldquo;paper lads&rdquo; came round the streets shouting &ldquo;special! all the election results&rdquo;. Someone made up a verse for Peter Laycock, which we all sang on election day:--</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\">&nbsp;</p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&ldquo;VOTES, VOTE, VOTE FOR PETER LAYCOCK, YOU CAN&rsquo;T VOTE FOR A&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">BETTER MAN, PETER LAYCOCK IS THE MAN, AND WE&rsquo;LL HAVE HIM</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">IF WE CAN, AND WE&rsquo;LL STICK OLD (SO &amp; SO) UP THE FLUE&rdquo;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'I remember! Reminiscences of a Cobbler's Son' pp. 30-31 (215 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/I+remember!+Reminiscences+of+a+Cobbler's+Son/1544023446865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "30-31" .

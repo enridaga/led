@@ -1,0 +1,226 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://bnb.data.bl.uk/id/agent/Xlibris>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Xlibris"@en .
+
+<http://data.open.ac.uk/led/labourer>
+        rdfs:label  "labourer"@en .
+
+<http://reference.data.gov.uk/id/year/1930>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://dbpedia.org/class/yago/LivingPeople>;
+        rdfs:label                      "Felix Mayerhofer"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/trombonist> , <http://dbpedia.org/resource/Bandmaster> , <http://dbpedia.org/resource/Writer>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1930-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Port_Chester,_New_York>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mayerhofer";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Felix" .
+
+<http://data.open.ac.uk/time/edtf/2006-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2006"@en;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2006> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Hull,_Quebec>
+        rdfs:label  "Hull, Quebec"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.59>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  59 .
+
+<http://data.open.ac.uk/led/jazz+singer>
+        rdfs:label  "jazz singer"@en .
+
+<http://data.open.ac.uk/led/person/Allen+Keller/1423580836281>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Allen Keller"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+pianist>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Keller";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Allen" .
+
+<http://dbpedia.org/resource/Bandmaster>
+        rdfs:label  "Bandmaster"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz/1423582084422/1423582084428>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'jazz'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hull,_Quebec>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Jazz>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trombone> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Rhythm_guitar>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Hungarian+labourers/1423581968478>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/jazz/1423582084422>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> , <http://data.open.ac.uk/led/person/Allen+Keller/1423580836281> , <http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115> .
+
+<http://data.open.ac.uk/led/person/Hungarian+labourers/1423581968478>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Hungarian labourers"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/labourer>;
+        led:has_social_status  <urn:x-isco08:9>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Hungary>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "labourers";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hungarian" .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Trombone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trombone"@en .
+
+<http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Diary of a Young Musician: Final Days of the Big Band Era"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2006-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Xlibris>;
+        <http://purl.org/dc/terms/title>
+                "Diary of a Young Musician: Final Days of the Big Band Era";
+        <http://purl.org/ontology/bibo/isbn>
+                "1413477291"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090> .
+
+<http://data.open.ac.uk/led/person/Jeannie+Parker/1423580876115>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Jeannie Parker"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/jazz+singer>;
+        led:has_social_status  <urn:x-isco08:2>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Parker";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Jeannie" .
+
+<http://data.open.ac.uk/led/music/jazz/1423582084422>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "jazz"@en;
+        <http://purl.org/dc/terms/title>
+                "jazz" .
+
+<http://dbpedia.org/resource/Hungary>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Hungary"@en .
+
+<http://data.open.ac.uk/time/edtf/1930-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1930"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1930;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1930>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.30> .
+
+<http://data.open.ac.uk/time/edtf/1959-01-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "January, 1959"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1959;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.59> .
+
+<http://data.open.ac.uk/led/trombonist>
+        rdfs:label  "trombonist"@en .
+
+<http://data.open.ac.uk/led/lexp/1423582150172>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "     One of the worst jobs we played was in Hull, Canada, across the bridge from Ottawa, and it was Allen’s fault. He once more became self-destructive. Allen made the sudden decision to play rhythm guitar rather than piano. It was disastrous right from the start but he wouldn’t give up. He wanted the three of us to stand abreast of each other, swaying back and forth like rock bands did at the time. A vocal group is backed by full piano chords and without that you sound weak. And that’s exactly what happened! Allen chunked, chunked, monotonously on the guitar without sustained chords or solo ability to support us.\r\n     Most of the patrons were Hungarian laborers. The longer they heard us play our “cutesy” music the drunker they got, and they were mean when they got drunk. The owner who kept us there for only two weeks never talked to us.\r\n\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Diary+of+a+Young+Musician:+Final+Days+of+the+Big+Band+Era/1417776865086>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "310-311";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Hungarian+labourers/1423581968478> , <http://data.open.ac.uk/led/person/Felix+Mayerhofer/1417776865090>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hull,_Quebec>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1959-01-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-02-10T15:29:10.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/jazz/1423582084422/1423582084428> .
+
+<http://dbpedia.org/resource/Port_Chester,_New_York>
+        rdfs:label  "Port Chester, New York"@en .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://reference.data.gov.uk/id/year/2006>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Rhythm_guitar>
+        rdfs:label  "Rhythm guitar"@en .
+
+<http://dbpedia.org/resource/Jazz>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Jazz"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.30>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  30 .

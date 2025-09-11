@@ -1,0 +1,181 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Stewart+Headlam+Primary+School+pupils/1635847748298>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Stewart Headlam Primary School pupils"@en .
+
+<http://bnb.data.bl.uk/id/person/DoveJonathan1959->
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Jonathan Dove"@en .
+
+<http://data.open.ac.uk/led/source/db39c6a23f5e723de5a9b3bb8370c498/excerpt/7a988993a3e5f0b4749e84d8c98922c1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">Delightful! Energetic, colourful and thoroughly enjoyable. I wanted to join in!&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival 2003 – 2004 Education and Community Project' pp. 8 (11 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+2003+%E2%80%93+2004+Education+and+Community+Project/1635847349740>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "8" .
+
+<http://dbpedia.org/resource/Children's_song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Children's song"@en .
+
+<http://data.open.ac.uk/led/music/performance+of+'Khel:+toy+stories'/1635847748204>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Khel: toy stories'"@en;
+        <http://purl.org/dc/terms/title>
+                "'Khel: toy stories'" .
+
+<http://dbpedia.org/resource/Metropolitan_Borough_of_Bethnal_Green>
+        rdfs:label  "Metropolitan Borough of Bethnal Green"@en .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+2003+%E2%80%93+2004+Education+and+Community+Project/1635847349740>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. It devises education projects with schools and community groups that reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists, and the Spitalfields Festival, with East End of London children, adults and elderly people."@en;
+        rdfs:label                  "Spitalfields Festival 2003 – 2004 Education and Community Project"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival 2003 – 2004 Education and Community Project";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Phillip+Flood/1635847349772> , <http://bnb.data.bl.uk/id/person/DoveJonathan1959-> .
+
+<http://data.open.ac.uk/led/agent/Kutub+Uddin/1644754739230>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Kutub Uddin"@en .
+
+<http://data.open.ac.uk/led/performance/d21c246a2f56fa99242cf452e48bdf4f/1635847748228>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Khel: toy stories''"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Metropolitan_Borough_of_Bethnal_Green>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Instrumental> , <http://dbpedia.org/resource/Folk_music> , <http://dbpedia.org/resource/Children's_song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Percussion_instrument> , <http://dbpedia.org/resource/Female_vocals> , <http://dbpedia.org/resource/Tabla>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/audience+member/1635847404994>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/performance+of+'Khel:+toy+stories'/1635847748204>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Virginia+Primary+School+pupils/1635847748323> , <http://data.open.ac.uk/led/agent/Stewart+Headlam+Primary+School+pupils/1635847748298> , <http://data.open.ac.uk/led/agent/Lucy+Rahman/1635847748272> , <http://data.open.ac.uk/led/agent/Kutub+Uddin/1644754739230> , <http://data.open.ac.uk/led/agent/Yousuf+Ali+Khan/1635847748245> .
+
+<http://reference.data.gov.uk/id/day/2004-06-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 June, 2004"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/led/agent/Lucy+Rahman/1635847748272>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lucy Rahman"@en .
+
+<http://data.open.ac.uk/led/lexp/1635847909620>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "The listening experience is in response to the concert ‘Khel: toy stories’: ‘After visiting the Museum of Childhood at Bethnal Green’s exhibition Khel: Toys from India, [primary school] pupils [worked] with professional Bengali musicians Yousuf Ali Khan, Lucy Rahman and Kutub Uddin. Over five weeks, participants explored both children’s and folk songs from Bangladesh and took part in vocal and percussion performance at the Museum […] which included performances from the musicians’ (p. 7). "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/db39c6a23f5e723de5a9b3bb8370c498/excerpt/7a988993a3e5f0b4749e84d8c98922c1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "8";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/audience+member/1635847404994>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/cb91eb58e497058cbe35ba38f6919a25>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/2004-06-25>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-13T12:22:49.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-02T10:11:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/d21c246a2f56fa99242cf452e48bdf4f/1635847748228>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/db39c6a23f5e723de5a9b3bb8370c498/excerpt/7a988993a3e5f0b4749e84d8c98922c1> .
+
+<http://dbpedia.org/resource/Instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Instrumental"@en .
+
+<http://data.open.ac.uk/led/place/cb91eb58e497058cbe35ba38f6919a25>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Main Hall, Museum of Childhood, Bethnal Green, London"@en;
+        <http://purl.org/dc/terms/description>
+                "Main Hall, Museum of Childhood, Bethnal Green, London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/agent/Virginia+Primary+School+pupils/1635847748323>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Virginia Primary School pupils"@en .
+
+<http://dbpedia.org/resource/Folk_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Folk music"@en .
+
+<http://data.open.ac.uk/led/agent/Phillip+Flood/1635847349772>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Phillip Flood"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://dbpedia.org/resource/Tabla>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Tabla"@en .
+
+<http://data.open.ac.uk/led/agent/audience+member/1635847404994>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "audience member"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "member";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "audience" .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .
+
+<http://dbpedia.org/resource/Percussion_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Percussion instrument"@en .
+
+<http://data.open.ac.uk/led/agent/Yousuf+Ali+Khan/1635847748245>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Yousuf Ali Khan"@en .

@@ -1,0 +1,175 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://data.open.ac.uk/led/schoolgirl>
+        rdfs:label  "schoolgirl"@en .
+
+<http://data.open.ac.uk/led/place/b487fc5b08417183fffb65575c7500f0>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Christ Church, Spitalfields, East End of London"@en;
+        <http://purl.org/dc/terms/description>
+                "Christ Church, Spitalfields, East End of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Christ_Church,_Spitalfields> , <http://dbpedia.org/resource/East_End_of_London> .
+
+<http://dbpedia.org/resource/Brass_instrument>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Brass instrument"@en .
+
+<http://data.open.ac.uk/led/lexp/1635843267345>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "Composer Glyn Evans and trombone player Simon Gunton ran five workshops with school children aiming to create a programme of original music for performance. Brass students from the Royal Academy of Music worked with pupils on the final sessions. There was an audience of 185 people for the performance. "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/022f1f82adf0ba11c68919debf519330/excerpt/cf6606b7a546d463d6cfadb7da88d933>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "8";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/audience/1635843033296> , <http://data.open.ac.uk/led/agent/Rachel/1644754380827>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/b487fc5b08417183fffb65575c7500f0>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/2000-06-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-13T12:13:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-02T08:54:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/cb4da304933a96b954ce27cd60018bdc/1635843237194>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/022f1f82adf0ba11c68919debf519330/excerpt/cf6606b7a546d463d6cfadb7da88d933> .
+
+<http://data.open.ac.uk/led/year+3+pupil>
+        rdfs:label  "Year 3 pupil"@en .
+
+<http://data.open.ac.uk/led/music/school+concert+with+brass+instruments+and+an+egg+shaker/1635843237179>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "school concert with brass instruments and an eggshaker"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/EvansGlyn>;
+        <http://purl.org/dc/terms/title>
+                "school concert with brass instruments and an eggshaker";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/EvansGlyn> .
+
+<http://data.open.ac.uk/led/agent/St+Paul's+Primary+School+children/1635843237219>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "St Paul's Primary School children"@en .
+
+<http://data.open.ac.uk/led/agent/Simon+Gunton/1635843237244>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Simon Gunton"@en .
+
+<http://data.open.ac.uk/led/agent/Royal+Academy+of+Music+brass+students/1635843237270>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Royal Academy of Music brass students"@en .
+
+<http://data.open.ac.uk/led/agent/Rachel/1644754380827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Rachel"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/schoolgirl> , <http://data.open.ac.uk/led/year+3+pupil>;
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Rachel" .
+
+<http://dbpedia.org/resource/Instrumental>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Instrumental"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/performance/cb4da304933a96b954ce27cd60018bdc/1635843237194>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'school concert with brass instruments and an eggshaker'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Christ_Church,_Spitalfields>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Instrumental>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trombone> , <http://dbpedia.org/resource/Brass_instrument> , <http://dbpedia.org/resource/Shaker_(instrument)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/audience/1635843033296> , <http://data.open.ac.uk/led/agent/Rachel/1644754380827>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/school+concert+with+brass+instruments+and+an+egg+shaker/1635843237179>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Royal+Academy+of+Music+brass+students/1635843237270> , <http://data.open.ac.uk/led/agent/Simon+Gunton/1635843237244> , <http://data.open.ac.uk/led/agent/St+Paul's+Primary+School+children/1635843237219> .
+
+<http://bnb.data.bl.uk/id/person/EvansGlyn>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Glyn Evans"@en .
+
+<http://data.open.ac.uk/led/source/022f1f82adf0ba11c68919debf519330/excerpt/cf6606b7a546d463d6cfadb7da88d933>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">On Tuesday we performed at Spitalfields Christ Church. I played the eggshaker. We worked really hard with Glyn and Simon. The thing I enjoyed was sounds and when we all made statues into a countryside, star, mountain and boat. I like that because we all got a chance to perform, it was really fun working with Glyn and Simon.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival June 2000: Festival Report' pp. 8 (59 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+June+2000:+Festival+Report/1635842585628>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "8" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/led/agent/audience/1635843033296>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "audience"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "audience";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed" .
+
+<http://reference.data.gov.uk/def/intervals/June>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  6 .
+
+<http://dbpedia.org/resource/Trombone>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trombone"@en .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+June+2000:+Festival+Report/1635842585628>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. It devises education projects with schools and community groups that reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists, and the Spitalfields Festival, with East End of London children, adults and elderly people. "@en;
+        rdfs:label         "Spitalfields Festival June 2000: Festival Report"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival June 2000: Festival Report";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/time/edtf/2000-06-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "June, 2000"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/June>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2000;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Christ_Church,_Spitalfields>
+        rdfs:label  "Christ Church, Spitalfields"@en .
+
+<http://dbpedia.org/resource/Shaker_(instrument)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Shaker (instrument)"@en .

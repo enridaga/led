@@ -1,0 +1,201 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/university+lecturer>
+        rdfs:label  "university lecturer"@en .
+
+<http://data.open.ac.uk/led/musician>
+        rdfs:label  "musician"@en , "Musician"@en .
+
+<http://dbpedia.org/resource/Bath,_Somerset>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Bath, Somerset"@en .
+
+<http://dbpedia.org/resource/Musician>
+        rdfs:label  "Musician"@en .
+
+<http://reference.data.gov.uk/id/day/1881-04-18>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "18 April, 1881"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1881;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.81> .
+
+<http://data.open.ac.uk/led/botanist>
+        rdfs:label  "botanist"@en .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/lexp/1447407924596>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/6a746ad4e5ccf3df8b776bca1a56be9a/excerpt/09715edf1309958222951cfa5b3c9893>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/temp>;
+        led:pages_manuscript  "i";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/8d4cae59be3044d648c845f811052bc6>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1881-04-18>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-09T10:08:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-13T09:45:24.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/6a746ad4e5ccf3df8b776bca1a56be9a/excerpt/09715edf1309958222951cfa5b3c9893> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/id/year/1854>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1854"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Agent> , <http://xmlns.com/foaf/0.1/Person>;
+        rdfs:label                      "John Lloyd Williams"@en , "J. Lloyd Williams"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/lecturer> , <http://dbpedia.org/resource/Teacher> , <http://data.open.ac.uk/led/editor> , <http://data.open.ac.uk/led/musician> , <http://dbpedia.org/resource/Musician> , <http://dbpedia.org/resource/Composer> , <http://data.open.ac.uk/led/university+lecturer> , <http://data.open.ac.uk/led/professor> , <http://data.open.ac.uk/led/examiner> , <http://data.open.ac.uk/led/Botanist> , <http://data.open.ac.uk/led/botanist>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christian> , <http://dbpedia.org/resource/Christianity>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1854-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Llanrwst>;
+        <http://schema.org/deathDate>   <http://data.open.ac.uk/time/edtf/1945-uu-uu>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Bath,_Somerset>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom> , <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Williams";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John Lloyd";
+        <http://xmlns.com/foaf/0.1/nick>
+                "J. Lloyd Williams"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/editor>
+        rdfs:label  "editor"@en .
+
+<http://data.open.ac.uk/led/Botanist>
+        rdfs:label  "Botanist"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.54>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  54 .
+
+<http://data.open.ac.uk/time/edtf/1945-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1945"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1945;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.45> .
+
+<http://dbpedia.org/resource/Llanrwst>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Llanrwst"@en .
+
+<http://dbpedia.org/resource/Christian>
+        rdf:type    led:Belief;
+        rdfs:label  "Christian"@en .
+
+<http://data.open.ac.uk/led/source/6a746ad4e5ccf3df8b776bca1a56be9a/excerpt/09715edf1309958222951cfa5b3c9893>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\n<p style=\"margin: 0px;\">After meeting had co[mpany] of B. B., W H B &amp; B till 12 - jollification at C&rsquo;s House then &lsquo;Awful&rsquo; meal &amp; Miss W[illiam]s cramp. - The solo sing. in the waiting room very good.&nbsp;</p>"^^rdf:HTML , "<p>&nbsp;</p>\r\n<p style=\"margin: 0px;\">After meeting had co[mpany] of B. B., W H B &amp; B till 12 - jollification at C&rsquo;s House then &lsquo;Awful&rsquo; meal &amp; Miss W[illiam]s cramp. - The solo sing. in the waiting room very good.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'J. Lloyd Williams Diaries 1880-1' pp. i (40 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries+1880-1/1447403976671>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "i" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.81>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  81 .
+
+<http://data.open.ac.uk/led/place/8d4cae59be3044d648c845f811052bc6>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Caernarvonshire, Wales"@en;
+        <http://purl.org/dc/terms/description>
+                "Caernarvonshire, Wales"@en .
+
+<http://data.open.ac.uk/led/examiner>
+        rdfs:label  "examiner"@en .
+
+<http://data.open.ac.uk/time/edtf/1854-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1854"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1854;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1854>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.54> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.45>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  45 .
+
+<http://data.open.ac.uk/led/professor>
+        rdfs:label  "professor"@en .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Teacher>
+        rdfs:label  "Teacher"@en .
+
+<http://data.open.ac.uk/led/lecturer>
+        rdfs:label  "lecturer"@en .
+
+<http://data.open.ac.uk/led/source/J.+Lloyd+Williams+Diaries+1880-1/1447403976671>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "J. Lloyd Williams Diaries 1880-1"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/chronicle>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "J. Lloyd Williams Diaries 1880-1";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW MB1/1";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://bnb.data.bl.uk/id/person/WilliamsJohnLloyd1854-1945> .

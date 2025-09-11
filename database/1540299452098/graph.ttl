@@ -1,0 +1,135 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1901-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1901"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1901;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.01> .
+
+<http://dbpedia.org/resource/City_of_Leeds>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "city of Leeds"@en , "City of Leeds"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/agent/Arthur+Gill/1544023446923>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Arthur Gill"@en .
+
+<http://data.open.ac.uk/led/source/I+remember!+Reminiscences+of+a+Cobbler's+Son/1544023446865>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Arthur Gill (b. 1887, Leeds) wrote his memoir in 1969. It treats his Victorian childhood, working life including his profession as a cardwriter (graphic artist), his married life and strong commitment to his Methodist church. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections."@en;
+        rdfs:label                  "I remember! Reminiscences of a Cobbler's Son"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Library, Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "All extracts used by permission of Brunel University Library"@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "I remember! Reminiscences of a Cobbler's Son";
+        <http://purl.org/ontology/bibo/number>
+                "1:268";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Arthur+Gill/1544023446923> .
+
+<http://data.open.ac.uk/led/agent/A+Leeds+painter/decorator/1540299322854>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "A Leeds painter/decorator"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/painter+decorator>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "painter/decorator";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "A Leeds" .
+
+<http://data.open.ac.uk/led/lexp/1540299452098>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/c88b2f1fd37157c9d40400cdbefdbce2>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "47-48";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/A+Leeds+painter/decorator/1540299322854>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/City_of_Leeds>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1901-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-12-05T17:00:27.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-10-23T12:57:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c65c864f1ad229e13065e9175211bad3/1540299408499>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/c88b2f1fd37157c9d40400cdbefdbce2> .
+
+<http://data.open.ac.uk/led/agent/Arthur+Gill/1540299408519>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Arthur Gill"@en .
+
+<http://data.open.ac.uk/led/music/whistling,+unspecified+tune/1532523192568>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "whistling, unspecified tune"@en;
+        <http://purl.org/dc/terms/title>
+                "whistling, unspecified tune" .
+
+<http://data.open.ac.uk/led/performance/c65c864f1ad229e13065e9175211bad3/1540299408499>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'whistling, unspecified tune'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/City_of_Leeds>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Whistling>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/A+Leeds+painter/decorator/1540299322854>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/whistling,+unspecified+tune/1532523192568>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Arthur+Gill/1540299408519> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.01>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://dbpedia.org/resource/Whistling>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Whistling"@en .
+
+<http://data.open.ac.uk/led/source/d059bf6a149aff701a31eaac740565a5/excerpt/c88b2f1fd37157c9d40400cdbefdbce2>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Arthur Gill left school aged 13 and started his working life]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">My next job was at a Painters and Decorators in Sunny Bank Street, Leeds. [&hellip;] I remember being sent out with one of the painters on a house decorating job in Blackman Lane. One day when he was inside the house whitewashing the ceiling of the Sitting Room from a pair of steps I started gaily whistling to pass time on&mdash;he said to me &ldquo;Stop that B----y row you young B----r&rdquo;. Not being very obliging and thinking I had a right to whistle if I wanted to, I persisted&mdash;without any warning he threw the whitewash brush at me with all his might. Fortunately for me, I was a very nimble kid and dodged the brush [.]</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'I remember! Reminiscences of a Cobbler's Son' pp. 47-48 (126 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/I+remember!+Reminiscences+of+a+Cobbler's+Son/1544023446865>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "47-48" .
+
+<http://data.open.ac.uk/led/painter+decorator>
+        rdfs:label  "painter decorator"@en .

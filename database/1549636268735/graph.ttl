@@ -1,0 +1,234 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+September+1719,+trial+of+William+Ursley+(t17190903-34)/1549635681772>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), September 1719, trial of William Ursley (t17190903-34)"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/official>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://localhost:5001/blazegraph/www.oldbaileyonline.org%20>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), September 1719, trial of William Ursley (t17190903-34)";
+        <http://purl.org/ontology/bibo/number>
+                "t17190903-34";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://data.open.ac.uk/led/agent/Julia+Pound/1549635828232>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Julia Pound"@en;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pound";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Julia" .
+
+<http://data.open.ac.uk/led/music/unspecified+singing/1549636048556>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified singing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified singing" .
+
+<http://data.open.ac.uk/led/place/ebbc40a0503ef64296e626b7b4668dbb>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Sourhampton[Southampton?] Row, London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "Sourhampton[Southampton?] Row, London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/performance/c992565f6ce4a51c9e7f5fa07c05381f/1549636048593>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified singing'"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Female_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Julia+Pound/1549635828232> , <http://data.open.ac.uk/led/agent/Robert+Pound/1549635801627> , <http://data.open.ac.uk/led/agent/William+Mosely/1549635943852> , <http://data.open.ac.uk/led/agent/Hester+Pendrick/1549635896374>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+singing/1549636048556>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Hester+Pendrick/1549636048658> , <http://data.open.ac.uk/led/agent/Julia+Pound/1549636048639> , <http://data.open.ac.uk/led/agent/Robert+Pound/1549636048611> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.0u>
+        rdf:value   "0u";
+        rdfs:label  "00s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/agent/William+Mosely/1549635943852>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "William Mosely"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/coachman>;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mosely";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "William" .
+
+<http://data.open.ac.uk/led/lexp/1549636268735>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "The listening experience was identified in ‘The Proceedings of the Old Bailey’, a fully searchable database detailing the lives of non-elite people, containing 197, 745 criminal trials held at London’s central criminal court. Tim Hitchcock, Robert Shoemaker, Clive Emsley, Sharon Howard and Jamie McLaughlin, et al., The Old Bailey Proceedings Online, 1674-1913 (www.oldbaileyonline.org, version 8.0 February 2019)"@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/181a0f878dab5e14279d2ba545c00665/excerpt/7ad06940d510f21ba39d163da0fa0bb9>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Robert+Pound/1549635801627> , <http://data.open.ac.uk/led/agent/Julia+Pound/1549635828232> , <http://data.open.ac.uk/led/agent/Hester+Pendrick/1549635896374> , <http://data.open.ac.uk/led/agent/William+Mosely/1549635943852>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/ebbc40a0503ef64296e626b7b4668dbb>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1719-08-20TLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-03-28T15:15:02.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-02-08T14:31:09.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c992565f6ce4a51c9e7f5fa07c05381f/1549636048593>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/181a0f878dab5e14279d2ba545c00665/excerpt/7ad06940d510f21ba39d163da0fa0bb9> .
+
+<http://data.open.ac.uk/led/agent/Julia+Pound/1549636048639>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Julia Pound"@en .
+
+<http://data.open.ac.uk/led/agent/Robert+Pound/1549635801627>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Robert Pound"@en;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/170u-Ee-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1719-08-20>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pound";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Robert" .
+
+<http://localhost:5001/blazegraph/www.oldbaileyonline.org%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/title>
+                "Old Bailey Proceedings Online version 8.0 February 20019"@en , "Old bailey proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 2019"@en , "Old Bailey proceedings Online version 8.0 February 2019"@en , "Old bailey Proceedings Online version 8.0 February 2019"@en , "Old Bailey Proceedings Online version 8.0 February 2019"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "www.oldbaileyonline.org%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/time/edtf/1719-08-20TLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 August, 1719, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Hester+Pendrick/1549636048658>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Hester Pendrick"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/source/181a0f878dab5e14279d2ba545c00665/excerpt/7ad06940d510f21ba39d163da0fa0bb9>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">[Individuals found guilty of manslaughter instead of murder were branded on the thumb so that, easily identifiable, they would be unable to receive this benefit again]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman', serif;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">William Ursley of&nbsp;St. Giles in the Fields was indicted for the Murther of&nbsp;Robert Pound, by giving him a Mortal Bruise with the near Wheel of his Coach on the Left part of his head on the 20th of August last, of which he instantly dyed [...] &nbsp;Julia Pound deposed that the Deceased (her Brother)&nbsp;Hester Pendrick , and herself coming out of&nbsp;Sourhampton-Row <em>[sic]</em>&nbsp;by my Lady Russel's Wall with Goods on their Heads, singing,&nbsp;</span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">as they went to cross the Road the Prisoner drove his [Coach] without being call'd by any body, or having any Fare in it, whereupon she called to him. paying him to stop, and not run over her Brother; that he replyed he would not, and whipt his Horses, and the Poll of the Coach struck the Basket off her Brothers Head, and he fell down and was kill'd [&hellip;] Hester Pendrik (the other Girl that was in Company) confirmed the same.&nbsp;&nbsp;William Mosely deposed, that he was standing second Coach, and saw the Boy and heard him sing, </span><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">and believes the Prisoner might have stopt [...] when he came half an Hour after Eight at Night, and was sure the Prisoner was same Person. [&hellip;] The Prisoner called a great many to his Reputation who gave him the Character of a Sober, Civil, good temper'd Lad from his Youth, and that he ever respected Children. The Jury considering the whole matter, brought him in Guilty of Manslaughter.&nbsp;Burnt&nbsp;&nbsp;[branded] in the Hand. &nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Old Bailey Proceedings Online (www.oldbaileyonline.org, version 8.0, 31 January 2019), September 1719, trial of William Ursley (t17190903-34)' (271 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Old+Bailey+Proceedings+Online+(www.oldbaileyonline.org,+version+8.0,+31+January+2019),+September+1719,+trial+of+William+Ursley+(t17190903-34)/1549635681772>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/170u-Ee-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the beginning of the 1700's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.0u> .
+
+<http://data.open.ac.uk/led/agent/Robert+Pound/1549636048611>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Pound"@en .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Female_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Female vocals"@en .
+
+<http://data.open.ac.uk/led/agent/Hester+Pendrick/1549635896374>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "Hester Pendrick"@en;
+        led:has_social_status  <urn:x-nrsuk:social:D>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pendrick";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Hester" .
+
+<http://data.open.ac.uk/led/coachman>
+        rdfs:label  "coachman"@en , "Coachman"@en .
+
+<http://reference.data.gov.uk/id/day/1719-08-20>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "20 August, 1719"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.20>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.19> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .

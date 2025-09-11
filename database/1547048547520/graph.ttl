@@ -1,0 +1,156 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Kingdom_of_England>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Kingdom of England"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://data.open.ac.uk/led/agent/Province+of+New+York+settlers/1547048069799>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Province of New York settlers"@en;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Kingdom_of_England>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "settlers";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Province of New York" .
+
+<http://data.open.ac.uk/time/edtf/1700-03-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "March, 1700, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/music/trumpeting+and+drumming+at+an+exhumation/1547048214623>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "trumpeting and drumming at an exhumation"@en;
+        <http://purl.org/dc/terms/title>
+                "trumpeting and drumming at an exhumation" .
+
+<http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol18/pp115-130>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2019-01-09"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British History Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol18/pp115-130"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1547048547520>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "British History Online, a digital library created by the Institute of Historical Research and the History of Parliament Trust, includes calendars of state papers in which the listening experience was identified. Calendars are very detailed summaries of documents arranged chronologically, intended as a finding aid. Original documents are often held at the National Archives at Kew. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/808baa17e8df4b095867af224aae2e7e/excerpt/4c479b09235a538e81768d1c1f0aad1e>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "115-130";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Province+of+New+York+settlers/1547048069799>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Province_of_New_York>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1700-03-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-02-06T15:30:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-09T15:42:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/14fd54800b54bbfb2ac3a3f35ab3bc03/1547048214720>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/808baa17e8df4b095867af224aae2e7e/excerpt/4c479b09235a538e81768d1c1f0aad1e> .
+
+<http://data.open.ac.uk/led/source/'America+and+West+Indies:+March+1700,+11-20',+in++Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+18,+1700/1547047980842>
+        rdf:type           <http://purl.org/ontology/bibo/ReferenceSource> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "'America and West Indies: March 1700, 11-20', in  Calendar of State Papers Colonial, America and West Indies: Volume 18, 1700"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/reference_work>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol18/pp115-130>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/H.M.S.O./1546622826120>;
+        <http://purl.org/dc/terms/title>
+                "'America and West Indies: March 1700, 11-20', in  Calendar of State Papers Colonial, America and West Indies: Volume 18, 1700";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Cecil+Headlam/1547047980878>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "18" .
+
+<http://dbpedia.org/resource/New_England>
+        rdfs:label  "New England"@en .
+
+<http://data.open.ac.uk/led/source/808baa17e8df4b095867af224aae2e7e/excerpt/4c479b09235a538e81768d1c1f0aad1e>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[The listening experience informs a list of thirty-two&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">complaints against the governor of New York Richard Coote, 1st Earl of Bellomont. Leisler&rsquo;s Rebellion (1689-1691),&nbsp;</span><span style=\"font-size: 11pt; color: #222222;\">stirred by settlers&rsquo; resentment against English policies, left the colony polarized. Leaders of the rebellion&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">Leisler and his son-in-law Milborne were executed on 16 May 1691]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">(1) Upon his first arrival [April 1698] he gave encouragement to the Leislerian party, thus reviving the animosities which several Acts of Assembly and a prudent Magistracy had almost extinguished. (2) Soon after his entry upon the Government, he called a General Assembly, whom he frequently sent for and treated with great scurrility. [&hellip;]&nbsp;</span><span style=\"font-size: 11pt;\">&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">(5) He next permitted, if not directed, the taking up at midnight with sound of</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;trumpet&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">and drums the bones of Leisler and Milbourn[e] who had lain buried near nine years, and to lie in state some weeks, and afterwards to be publicly buried in the Dutch Church against the consent of the officers thereof, attended by 100 men in arms and a mob of 1,500 men, chiefly Dutch, the scum of that and the neighbouring Provinces[.]</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from ''America and West Indies: March 1700, 11-20', in  Calendar of State Papers Colonial, America and West Indies: Volume 18, 1700' pp. 115-130 (174 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/'America+and+West+Indies:+March+1700,+11-20',+in++Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+18,+1700/1547047980842>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "115-130" .
+
+<http://dbpedia.org/resource/Province_of_New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Province of New York"@en .
+
+<http://data.open.ac.uk/led/organization/H.M.S.O./1546622826120>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "H.M.S.O."@en .
+
+<http://data.open.ac.uk/led/performance/14fd54800b54bbfb2ac3a3f35ab3bc03/1547048214720>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'trumpeting and drumming at an exhumation'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_England>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet> , <http://dbpedia.org/resource/Drum>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Province+of+New+York+settlers/1547048069799>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/trumpeting+and+drumming+at+an+exhumation/1547048214623> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/led/agent/Cecil+Headlam/1547047980878>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Cecil Headlam"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

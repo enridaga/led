@@ -1,0 +1,168 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Fiddle>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fiddle"@en .
+
+<http://data.open.ac.uk/time/edtf/1933-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1933"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1933;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1933>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.33> .
+
+<http://data.open.ac.uk/led/music/unspecified+fiddle+playing/1547559534439>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified fiddle playing"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified fiddle playing" .
+
+<http://data.open.ac.uk/time/edtf/17Ee-uu-uuTLl:ll:ll>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early 18th Century, at night"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/timeOfDay>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.EARLY> .
+
+<http://reference.data.gov.uk/id/year/1933>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1933"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/St.+Michaels+Town,+Barbados+inhabitants/1547559253635>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "St. Michaels Town, Barbados inhabitants"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "inhabitants";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "St. Michaels Town, Barbados" .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/led/place/b6d089ddf5f2881ebd1f4361640b0d0e>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Barbados, St Michaels Town"@en;
+        <http://purl.org/dc/terms/description>
+                "Barbados, St Michaels Town"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Barbados> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol31/pp185-205>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2019-01-15"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British History Online"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol31/pp185-205"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/organization/H.M.S.O./1546622826120>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "H.M.S.O."@en .
+
+<http://data.open.ac.uk/led/performance/f5e0dcb724012e25d45bcf64deca171f/1547559534473>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified fiddle playing'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Saint_Michael,_Barbados>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Fiddle>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/St.+Michaels+Town,+Barbados+inhabitants/1547559253635>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+fiddle+playing/1547559534439> .
+
+<http://data.open.ac.uk/led/source/9d667cb71f44a65cefb8ea1f45ef1551/excerpt/d19c1bb950fafd5d354d9c89c692efd9>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[The listening experience forms part of Governor Robert Lowther&rsquo;s reply to several charges brought against him by, among others, the Reverend William Gordon. Gordon gave a weak defence of his own behaviour but was not prosecuted.]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt; color: #333333;\">Address of the Assembly of Barbados to Governor Lowther. 28th June, 1715. [&hellip;] Agree with Grand Jury as to evil example of some of the Clergy. Mr. Gordon leaves his benefice several weekes together, and from time to time goes to Martinique, a popish country and there trades, and brings from thence great quantities of contraband goods, such as brandy and French wines, and in a publick store in St. Michaels town sells the same, this with his playing at dice in publick tavrons, and in publick company till midnight, and seranading with</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;fiddle</span><span style=\"font-size: 11pt; color: #333333;\">s from house to house the greatest part of a night together, with his being a principal promoter of our late unhappy differences and divisions, we think no small scandal to the Church and Religion we profess.</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;<em>Pray</em>&nbsp;</span><span style=\"font-size: 11pt; color: #333333;\">H.E. to take such measures as may prevent the Ministers of the Island from meddleing with matters of politicks</span><span style=\"font-size: 11pt; color: #333333;\">&nbsp;<em>etc</em></span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from ''America and West Indies: August 1719, 1-7' in Calendar of State Papers Colonial, America and West Indies: Volume 31, 1719-1720' pp. 185-205 (187 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/'America+and+West+Indies:+August+1719,+1-7'+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+31,+1719-1720/1547559203674>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "185-205" .
+
+<http://data.open.ac.uk/led/agent/Cecil+Headlam/1547559203715>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Cecil Headlam"@en .
+
+<http://data.open.ac.uk/led/lexp/1547559632017>
+        rdf:type             led:ListeningExperience;
+        rdfs:comment         "British History Online, a digital library created by the Institute of Historical Research and the History of Parliament Trust, includes calendars of state papers in which the listening experience was identified. Calendars are very detailed summaries of documents arranged chronologically, intended as a finding aid. Original documents are often held at the National Archives at Kew. "@en;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/9d667cb71f44a65cefb8ea1f45ef1551/excerpt/d19c1bb950fafd5d354d9c89c692efd9>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "185-205";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/St.+Michaels+Town,+Barbados+inhabitants/1547559253635>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/b6d089ddf5f2881ebd1f4361640b0d0e>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/17Ee-uu-uuTLl:ll:ll>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-02-06T16:39:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2019-01-15T13:40:32.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/f5e0dcb724012e25d45bcf64deca171f/1547559534473>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/9d667cb71f44a65cefb8ea1f45ef1551/excerpt/d19c1bb950fafd5d354d9c89c692efd9> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.33>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  33 .
+
+<http://data.open.ac.uk/led/source/'America+and+West+Indies:+August+1719,+1-7'+in+Calendar+of+State+Papers+Colonial,+America+and+West+Indies:+Volume+31,+1719-1720/1547559203674>
+        rdf:type           <http://purl.org/ontology/bibo/ReferenceSource> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "'America and West Indies: August 1719, 1-7' in Calendar of State Papers Colonial, America and West Indies: Volume 31, 1719-1720"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/reference_work>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol31/pp185-205>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1933-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/H.M.S.O./1546622826120>;
+        <http://purl.org/dc/terms/title>
+                "'America and West Indies: August 1719, 1-7' in Calendar of State Papers Colonial, America and West Indies: Volume 31, 1719-1720";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Cecil+Headlam/1547559203715>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "31" .
+
+<http://dbpedia.org/resource/Saint_Michael,_Barbados>
+        rdfs:label  "Saint Michael, Barbados"@en .
+
+<http://dbpedia.org/resource/Barbados>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Barbados"@en .

@@ -1,0 +1,179 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Arizona>
+        rdfs:label  "Arizona"@en .
+
+<http://newarkwww.rutgers.edu/IJS/interviews.html>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2013-11-28"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Jazz Oral History Project (listing)"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://newarkwww.rutgers.edu/IJS/interviews.html"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/United_States>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "USA"@en , "United_States"@en , "United States of America"@en , "United States"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.13>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  13 .
+
+<http://reference.data.gov.uk/id/day/1983-12-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 December, 1983"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1983;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.83> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/person/Russell+%27Big+Chief%27+Moore/1368805309549>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Russell Moore"@en , "Russell \"Big Chief\" Moore"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/jazz+trombonist>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1912-08-13>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/United_States>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1983-12-15>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_States>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moore";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Russell";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Russell \"Big Chief\" Moore"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1368805486>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "[W]hen I was about six years old...I used to go to an old man by the name of Skolmuck on the reservation. He was in his nineties, and a bunch of us kids would bring different gifts like maybe a sack of beans, corn, tobacco, and we'd go over and listen to him sing the chants of the Pimas. And we would listen to the stories of the early days of Pima land when...the tribe used to fight with the Apaches.... And where the music part comes in is...the Indians have...battle songs...and I think everybody...in the early years...have some connection with rhythm, melody.... And I can vouch for my tribe. We had rhythm and song too.  And when we visited old  Skolmuck, we would just, out of respect for an old man who...still followed the tribal chants...we would sit around close to him, and he would sing to us."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Interview+with+Russell+%27Big+Chief%27+Moore/1368805240575>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Russell+%27Big+Chief%27+Moore/1368805309549>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Arizona>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/191u-uu-Ee>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-11-28T14:45:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Pima+tribal+chants+(,+performance+of)/1385649911102> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.12>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/led/thing/jazz+trombonist>
+        rdfs:label  "jazz trombonist"@en .
+
+<http://data.open.ac.uk/led/performance/Pima+tribal+chants+(,+performance+of)/1385649911102>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Pima tribal chants'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Arizona>;
+        <http://purl.org/ontology/mo/genre>
+                <http://data.open.ac.uk/led/musicgenre/tribal>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Russell+%27Big+Chief%27+Moore/1368805309549>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Pima+tribal+chants/1368805377428> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.1u>
+        rdf:value   "1u";
+        rdfs:label  "10s"@en .
+
+<http://data.open.ac.uk/led/source/Interview+with+Russell+%27Big+Chief%27+Moore/1368805240575>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Interview undated but conducted some time between 1972 and 1983, the lifespan of the JOHP."@en;
+        rdfs:label                  "Interview with Russell 'Big Chief' Moore"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/oral>;
+        led:in_collection           "Institute of Jazz Studies, Rutgers University";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://newarkwww.rutgers.edu/IJS/interviews.html>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Interview with Russell 'Big Chief' Moore";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Ron+Welburn/1385649432070> .
+
+<http://data.open.ac.uk/led/person/Ron+Welburn/1385649432070>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Ron Welburn"@en .
+
+<http://data.open.ac.uk/time/edtf/191u-uu-Ee>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "early , month unknown, the 1910's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.EARLY>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.1u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.83>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  83 .
+
+<http://data.open.ac.uk/led/music/Pima+tribal+chants/1368805377428>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Pima tribal chants"@en;
+        <http://purl.org/dc/terms/title>
+                "Pima tribal chants" .
+
+<http://reference.data.gov.uk/id/day/1912-08-13>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "13 August, 1912"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.13>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/August>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1912;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.12> .
+
+<http://data.open.ac.uk/led/musicgenre/tribal>
+        rdf:type    <http://purl.org/ontology/mo/Genre> , <http://dbpedia.org/ontology/MusicGenre>;
+        rdfs:label  "tribal"@en .
+
+<http://reference.data.gov.uk/def/intervals/August>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  8 .

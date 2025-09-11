@@ -1,0 +1,183 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Lady Mary Elvey"@en .
+
+<http://dbpedia.org/resource/Windsor,_Berkshire>
+        rdfs:label  "Windsor, Berkshire"@en .
+
+<http://reference.data.gov.uk/id/year/1894>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1894"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mount+Carmel/1432903322268/1432903322280>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Mount Carmel'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Windsor,_Berkshire>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Choir>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Public+of+Windsor/1432903227385>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Mount+Carmel/1432903322268> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-06-03"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-02"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-06-01"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-30"^^<http://www.w3.org/2001/XMLSchema#date> , "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearRange.4u>
+        rdf:value   "4u";
+        rdfs:label  "40s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Choir>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Choir"@en .
+
+<http://data.open.ac.uk/led/lexp/1432903341039>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "\" We have great pleasure in the concerts which our zealous and talented Dr. Elvey has instituted for the relief of the monotony of life in Windsor, and we have moreover much satisfaction in assuring him that the entertainment he offered on Wednesday night was very much admired by the crowded assembly which filled the Town Hall. \r\n\"His ' Mount Carmel ' was greatly appreciated. He has, indeed, done much to entitle him to the grateful consideration of Windsor and Eton, by introducing a taste for the humanizing pleasure of his art, at the cost to himself of a great deal of time and labour. "@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Gill/claims>;
+        led:pages              "59-60";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Public+of+Windsor/1432903227385>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Windsor,_Berkshire>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/184u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-09-22T08:28:53.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-29T12:42:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Mount+Carmel/1432903322268/1432903322280> .
+
+<http://data.open.ac.uk/time/edtf/184u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1840's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.4u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1840-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1849-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.94>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  94 .
+
+<http://data.open.ac.uk/time/edtf/1840-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1840"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1840;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1840>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.40> .
+
+<http://data.open.ac.uk/led/person/Public+of+Windsor/1432903227385>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Public of Windsor"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Windsor";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Public of" .
+
+<http://data.open.ac.uk/led/music/Mount+Carmel/1432903322268>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Mount Carmel"@en;
+        <http://purl.org/dc/terms/title>
+                "Mount Carmel" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/time/edtf/1894-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1894"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1894;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1894>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.94> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.40>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  40 .
+
+<http://data.open.ac.uk/led/source/Life+and+Reminiscences+of+Sir+George+J.+Elvey/1432886939122>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Life and Reminiscences of Sir George J. Elvey"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/biographical>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520> , <https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%252520>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1894-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>;
+        <http://purl.org/dc/terms/title>
+                "Life and Reminiscences of Sir George J. Elvey";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lady+Mary+Elvey/1432886939168> .
+
+<http://data.open.ac.uk/time/edtf/1849-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2015-05-29"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "https://ia801409.us.archive.org/20/items/lifereminiscence00elveuoft/lifereminiscence00elveuoft.pdf%25252520"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/organization/Sampson+Low+Marston+%26+Company,+Limited/1432886939181>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Sampson Low Marston & Company, Limited"@en .
+
+<http://reference.data.gov.uk/id/year/1840>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1840"^^<http://www.w3.org/2001/XMLSchema#gYear> .

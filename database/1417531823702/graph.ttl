@@ -1,0 +1,211 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.14>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  14 .
+
+<http://reference.data.gov.uk/id/year/1898>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1898"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/thing/Librarian>
+        rdfs:label  "Librarian"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs+(Spanisches+Liederbuch,+Italienisches+Liederbuch+and+others)/1417531787670/1417531787678>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Songs (Spanisches Liederbuch, Italienisches Liederbuch and others)'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wigmore_Hall>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Lied>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Mezzo-soprano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Songs+(Spanisches+Liederbuch,+Italienisches+Liederbuch+and+others)/1417531787670>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Elena+Gerhardt/1417531787681> , <http://musicbrainz.org/artist/5978ca05-f0dd-42ef-b716-4ec0cbf659f8#_> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Wigmore_Hall>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Wigmore Hall"@en .
+
+<http://reference.data.gov.uk/id/day/1953-12-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 December, 1953"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1953;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.53> .
+
+<http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+14+Jan+1939/1417531679255>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Lionel Bradley Bulletin, 14 Jan 1939"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        led:in_collection           "Bradley archive, Special Collections, Royal College of Music";
+        <http://purl.org/dc/terms/title>
+                "Lionel Bradley Bulletin, 14 Jan 1939";
+        <http://purl.org/ontology/bibo/number>
+                "LJHB-02/033";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/lexp/1417531823702>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/5c55d441c195bf93f24fb75ec103ad85/excerpt/2fc2b92396d17cb53ee8f8ab7398a1d5>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/kerriedinburgh/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Wigmore_Hall>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1939-01-14>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-02T10:09:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-12-02T14:50:23.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Songs+(Spanisches+Liederbuch,+Italienisches+Liederbuch+and+others)/1417531787670/1417531787678>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5c55d441c195bf93f24fb75ec103ad85/excerpt/2fc2b92396d17cb53ee8f8ab7398a1d5> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.53>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  53 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.98>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  98 .
+
+<http://data.open.ac.uk/led/music/Songs+(Spanisches+Liederbuch,+Italienisches+Liederbuch+and+others)/1417531787670>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Songs (Spanisches Liederbuch, Italienisches Liederbuch and others)"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://bnb.data.bl.uk/id/person/WolfHugo1860-1903>;
+        <http://purl.org/dc/terms/title>
+                "Songs (Spanisches Liederbuch, Italienisches Liederbuch and others)";
+        <http://purl.org/ontology/mo/composer>
+                <http://bnb.data.bl.uk/id/person/WolfHugo1860-1903> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://dbpedia.org/resource/Lied>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Lieder"@en , "Lied"@en .
+
+<http://dbpedia.org/resource/Mezzo-soprano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Mezzo-soprano"@en .
+
+<http://data.open.ac.uk/led/person/Lionel+Bradley/1393946065319>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Lionel Bradley"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/thing/Librarian>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1898-uu-uu>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1953-12-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/London>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Bradley";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Lionel" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://data.open.ac.uk/led/source/5c55d441c195bf93f24fb75ec103ad85/excerpt/2fc2b92396d17cb53ee8f8ab7398a1d5>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Jan. 14 afternoon, Wigmore Hall, Elena Gerhardt, Wolf Recital</p>\r\n<p>I went to this recital from a sense of piety and with some misgivings. And my heart did sink at first to see her looking so much older &amp; with hollow lines by the nose &amp; mouth. And yet she is not more than 55 (The three reference books which I have looked at vary between 1883 &amp; 1886 as to the date of her birth). One had heard that her voice is uncertain &amp; in the first few songs there seemed to be a danger that it would be so this afternoon &ndash; the long note, for instance on Ort in &ldquo;Nun wandre Maria&rdquo; was unsteady &amp; a little harsh each time. But that soon passed &amp; though the lovely quality of the voice is somewhat impaired and some subtleties may now be beyond her powers, still once she had gained command of herself (and for the first song or two, I notice that she had to apply her handkerchief to nose and eyes), the old mastery was apparent &amp; her voice could ring out clearly at need &amp; with hardly any perceptible trace of unsteadiness. Nor did she hesitate to repeat even the most exacting songs when she thought it was the pleasure of the audience to hear them again. Though the hall was not absolutely full, there was a better attendance than I had expected from reading the notices of the concerts she gave before Christmas, and there was great applause[,] tho&rsquo; it did not become tumultuous or excessive. The songs were given in 3 groups. In the first were 4 religious songs from the Spanisches Liederbuch (the 3 nativity poems &amp; &ldquo;Herr was tr&auml;gt&rdquo;) and two by Eichendorff &ndash; &ldquo;Das St&auml;ndchen&rdquo; &amp; &ldquo;Liebesgluck&rdquo;, of which the latter, a rapturous song unfamiliar to me, had to be repeated. The five which she recorded seven years ago were, perhaps not quite so good as they were then, but there was not much loss. With the second group (from the Italienisches Liederbuch) she game into a field where she has always been particularly successful: &ldquo;Mir ward gesagt&rdquo; went well, the calm &amp; lovely &ldquo;Der Mond hat eine schwere Klag&rsquo; erhoben&rdquo; even better and &ldquo;Auch kleine Dinge&rdquo; had to be repeated. There followed &ldquo;Und steht ihr Fr&uuml;h&rdquo;, the ironic &ldquo;Nein junger Herr&rdquo;, &ldquo;Mein Liebster singt am Haus&rdquo; and &ldquo;Wenn du mein Liebster steigst zum Himmel auf&rdquo;, of which the last didn&rsquo;t leave much impression on my but &ldquo;Mein Liebster singt&rdquo; was particularly fine. The last group (M&ouml;nke) was perhaps the best sung of all &ndash; the solemn &ldquo;Denk es, o seele&rdquo;, the impetuous &ldquo;Begegnung&rdquo; which had to be repeated, &ldquo;In der Fr&uuml;he[&rdquo;], the &ldquo;Rat einer Alten&rdquo;, also repeated, which now seemed pathetically appropriate, &ldquo;Das verlassene M&auml;gdelein&rdquo; always one of my favourites, and the ironically passionate &ldquo;Nimmersatte Liebe&rdquo;. For encores, she gave &ldquo;by request&rdquo;, three more songs &ldquo;Gesang Weyla&rsquo;s&rdquo; sung as well as ever, &ldquo;Fussreise&rdquo; which I thought suited her not quite so well and finally, very beautifully &amp; quietly &ldquo;Und willst du deinen Liebsten sterben sehen&rdquo; (much better than the Hasch record in volume 4). And after that whether because the audience thought she had sung enough or because they realised they could have nothing more perfect, the recital ended. The piano playing of Gerald Moore was very sympathetic to her &amp; contributed a great deal to the success of the programme</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Lionel Bradley Bulletin, 14 Jan 1939' (606 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Lionel+Bradley+Bulletin,+14+Jan+1939/1417531679255>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://musicbrainz.org/artist/5978ca05-f0dd-42ef-b716-4ec0cbf659f8#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Gerald Moore"@en .
+
+<http://reference.data.gov.uk/def/intervals/January>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  1 .
+
+<http://data.open.ac.uk/led/agent/Elena+Gerhardt/1417531787681>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Elena Gerhardt"@en .
+
+<http://reference.data.gov.uk/id/day/1939-01-14>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "14 January, 1939"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.14>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1939;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.39> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.39>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  39 .
+
+<http://data.open.ac.uk/time/edtf/1898-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1898"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1898;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1898>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.98> .
+
+<http://bnb.data.bl.uk/id/person/WolfHugo1860-1903>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Hugo Wolf"@en .

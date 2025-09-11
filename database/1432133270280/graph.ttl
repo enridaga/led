@@ -1,0 +1,221 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Surrey>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Surrey"@en .
+
+<http://data.open.ac.uk/time/edtf/1985-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1985"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1985;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1985>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.85> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.10>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.65>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  65 .
+
+<http://dbpedia.org/resource/New_York>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "New York"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bach+Chorale/1432133031788/1432133061606>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Chorale'"@en;
+        <http://purl.org/ontology/mo/listener>
+                <http://musicbrainz.org/artist/ba8d0d8b-abfc-45c5-8d50-8cb8be02484a#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Bach+Chorale/1432133031788>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/ba8d0d8b-abfc-45c5-8d50-8cb8be02484a#_> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>
+        rdf:type    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role>;
+        rdfs:label  "Cello player"@en , "Cellist"@en;
+        <http://purl.org/dc/terms/subject>
+                <http://dbpedia.org/resource/Cello> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearRange.1u>
+        rdf:value   "1u";
+        rdfs:label  "10s"@en .
+
+<http://data.open.ac.uk/led/lexp/1432133270280>
+        rdf:type               led:ListeningExperience;
+        rdfs:comment           "On the day of the concert Beatrice awakened with her face and body practically black. She probably caught a type of jaundice that was then raging in England. She had an exquisite dress, pearl-grey satin with a large collar, and  her face, neck, chest, arms, hands and fingers thickly coated with the liquid powder. "@en;
+        led:has_environment    led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_evidence_text  "The concert was in aid of the Red Cross and was packed. As I began the beautiful Bach Chorale with Anthony Bernard, whom I had met in England, had arranged for me, I felt as though I was in a dream and I could hardly see the audience. It was really quite a delicious sensation, for all pain had left me and I was as if dreaming. I was however brought back to earth somewhat when I noticed that the liquid powder was coming off and that I was half white, half-bruised-looking yellow!"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/The+Cello+and+the+Nightingales-+The+autobiography+of+Beatrice+Harrison/1431972541994>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/tlisboa/temp>;
+        led:pages              "105";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/ba8d0d8b-abfc-45c5-8d50-8cb8be02484a#_>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/New_York>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/191u-Mm-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-01-11T18:38:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-05-20T14:47:50.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://data.open.ac.uk/led/music/Bach+Chorale/1432133031788/1432133061606> .
+
+<http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach"@en .
+
+<http://data.open.ac.uk/led/source/The+Cello+and+the+Nightingales-+The+autobiography+of+Beatrice+Harrison/1431972541994>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "The Cello and the Nightingales- The autobiography of Beatrice Harrison"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1985-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://dbpedia.org/resource/John_Murray_(publisher)>;
+        <http://purl.org/dc/terms/title>
+                "The Cello and the Nightingales- The autobiography of Beatrice Harrison";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Patricia+Cleveland-Peck/1431972542013>;
+        <http://purl.org/ontology/bibo/isbn>
+                "0-7195-4208-"^^<http://www.w3.org/2001/XMLSchema#ID>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/ba8d0d8b-abfc-45c5-8d50-8cb8be02484a#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.85>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  85 .
+
+<http://reference.data.gov.uk/id/day/1892-12-09>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "9 December, 1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.9>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/agent/Patricia+Cleveland-Peck/1431972542013>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Patricia Cleveland-Peck"@en .
+
+<http://reference.data.gov.uk/def/intervals/March>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  3 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.9>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://reference.data.gov.uk/id/day/1965-03-10>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "10 March, 1965"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.10>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/March>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1965;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.65> .
+
+<http://musicbrainz.org/artist/ba8d0d8b-abfc-45c5-8d50-8cb8be02484a#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Beatrice Harrison"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/occupation/d05d110e4db7dfc3bef4825d9ace4406/role/playing>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1892-12-09>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Roorkee>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1965-03-10>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Surrey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Harrison";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Beatrice" .
+
+<http://data.open.ac.uk/led/music/Bach+Chorale/1432133031788>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Chorale"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_>;
+        <http://purl.org/dc/terms/title>
+                "Chorale";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c#_> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://dbpedia.org/resource/John_Murray_(publisher)>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "John Murray"@en .
+
+<http://dbpedia.org/resource/Cello>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Cello"@en .
+
+<http://reference.data.gov.uk/id/year/1985>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/191u-Mm-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "in the middle of the 1910's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.1u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1919-uu-uu> .
+
+<http://dbpedia.org/resource/Roorkee>
+        rdfs:label  "Roorkee"@en .

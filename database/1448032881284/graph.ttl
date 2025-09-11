@@ -1,0 +1,170 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/time/edtf/1875-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1875"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1875;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1875>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://reference.data.gov.uk/id/year/1899>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1899"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/music/Y+Betrisen/1448032672041>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Y Betrisen"@en;
+        <http://purl.org/dc/terms/title>
+                "Y Betrisen" .
+
+<http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/47d1bce1eac101c890c2191b7a2978f9>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p style=\"margin: 0px;\"><span style=\"text-decoration: underline;\">Y Betrisen</span></p>\r\n<p style=\"margin: 0px;\">&nbsp;</p>\r\n<p style=\"margin: 0px;\">Policeman, Owen Jones, [...]&nbsp;Bl[aenau] Fest[inio]g. First heard in the cell in Penrhyn - 15 yrs ago. Lad from Penmachno who had to be taken to the asylum. Policeman stayed with him during the night - lad sang Y Betrisen over and over. Policeman much struck - next day taken to Denbigh - made him repeat it. When in the Asylum waiting for the doctor - &lsquo;Yn yr Asylum yr ydan ni? [<em>We're in the Asylum</em>]' - then bursting out he said - ['Y]ma y buo fy mam farw [<em>My mother died here</em>'].</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection' pp. 1 (99 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Dr+J.+Lloyd+Williams+Music+MSS+and+Papers:+John+Morris+Collection/1448032589707>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "1" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://dbpedia.org/resource/Folk_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Folk music"@en .
+
+<http://data.open.ac.uk/led/agent/Owen+Jones/1448032616029>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Owen Jones"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/policeman>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Wales>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Jones";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Owen" .
+
+<http://data.open.ac.uk/time/edtf/18Ll-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late 19th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1875-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1899-uu-uu> .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/performance/257f208f20b5b2fee840ab2395e1f814/1448032672048>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Y Betrisen'"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/North_Wales>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Folk_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Owen+Jones/1448032616029>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Y+Betrisen/1448032672041> .
+
+<http://reference.data.gov.uk/id/year/1875>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1875"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1899-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1899"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1899;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1899>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://data.open.ac.uk/led/source/Dr+J.+Lloyd+Williams+Music+MSS+and+Papers:+John+Morris+Collection/1448032589707>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection           "NLW";
+        <http://purl.org/dc/terms/title>
+                "Dr J. Lloyd Williams Music MSS and Papers: John Morris Collection";
+        <http://purl.org/ontology/bibo/number>
+                "GB 0210 JLLW AH2/2";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Morris/1448032589710> .
+
+<http://dbpedia.org/resource/Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "Wales"@en .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://dbpedia.org/resource/North_Wales>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "North Wales"@en .
+
+<http://data.open.ac.uk/led/person/John+Morris/1448032589710>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "John Morris"@en .
+
+<http://data.open.ac.uk/led/lexp/1448032881284>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "John Morris recounts Owen Jones' story of how he first heard the folk song 'Y Betrisen'."@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/47d1bce1eac101c890c2191b7a2978f9>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/acusworth/claims>;
+        led:pages_manuscript  "1";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Owen+Jones/1448032616029>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/18Ll-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-11-15T12:35:46.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-11-20T15:21:21.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/257f208f20b5b2fee840ab2395e1f814/1448032672048>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/6934c261f3adad5511311aecbc1f7dfd/excerpt/47d1bce1eac101c890c2191b7a2978f9> .
+
+<http://data.open.ac.uk/led/policeman>
+        rdfs:label  "policeman"@en , "Policeman"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .

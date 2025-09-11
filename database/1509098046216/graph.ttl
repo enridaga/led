@@ -1,0 +1,270 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Rome>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Rome"@en .
+
+<http://dbpedia.org/resource/Surrey>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Surrey"@en .
+
+<http://data.open.ac.uk/led/source/A+View+of+Society+and+Manners+in+Italy.+Volume+2/1509097519682>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "A View of Society and Manners in Italy. Volume 2"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%3Fimageid%3D70443%26let%3DV%26prevpos%3D69571%26vpath%3Dcontents> , <http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%253Fimageid%253D70443%2526let%253DV%2526prevpos%253D69571%2526vpath%253Dcontents>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1796-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/A.+Strahan+and+T.+Cadell/1515424043429>;
+        <http://purl.org/dc/terms/title>
+                "A View of Society and Manners in Italy. Volume 2";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "2";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Dr+John+Moore/1509095795538> .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.17>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  17 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/day/1802-02-21>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "21 February, 1802"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.21>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/February>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1802;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/led/man+of+letters>
+        rdfs:label  "man of letters"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://reference.data.gov.uk/def/intervals/February>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%3Fimageid%3D70443%26let%3DV%26prevpos%3D69571%26vpath%3Dcontents>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2017-10-03"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Grand Tour database (Adam Matthew Digital)"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%3Fimageid%3D70443%26let%3DV%26prevpos%3D69571%26vpath%3Dcontents"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/lexp/1509098046216>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/db7c78c114e76f31d61fbc20dd737db5/excerpt/0d42b7e0596e660bdc0296d7b9d015c1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages            "40-41";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Dr+John+Moore/1509095795538>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/17Ll-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-01-08T15:12:28.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2017-10-27T09:54:06.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/8e62e7a7c1c1bd27f2fbe369abd96f3c/1509098019200>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/db7c78c114e76f31d61fbc20dd737db5/excerpt/0d42b7e0596e660bdc0296d7b9d015c1> .
+
+<http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "United Kingdom of Great Britain and Ireland"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/source/db7c78c114e76f31d61fbc20dd737db5/excerpt/0d42b7e0596e660bdc0296d7b9d015c1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"mso-pagination: none; mso-layout-grid-align: none; text-autospace: none;\"><span lang=\"EN-US\" style=\"font-family: Arial; mso-bidi-font-family: Arial; mso-ansi-language: EN-US;\">After mass, the Pope gave the benediction to the people assembled in the Grand Court before the church of St. Peter's. It was a remarkably fine day; an immense multitude filled that spacious and magnificent area [&hellip;] The silk hangings and gold trappings with which the chair was embellished, concealed the men who carried it, so that to those who viewed him from the area below, his Holiness seemed to sail forward from the window, self-balanced in the air, like a celestial being. The instant he appeared, the music struck up, the bells rung from every church, and the cannon thundered from the castle of St. Angelo, in repeated peals. During the intervals, the church of St. Peter's, the palace of the Vatican, and the banks of the Tiber, re-echoed the acclamations of the populace. At length his Holiness arose from his seat, and an immediate and awful silence ensued.</span></p>"^^rdf:HTML , "<p>   </p>\r\n<p class=\"MsoNormal\" style=\"mso-pagination: none; mso-layout-grid-align: none; text-autospace: none;\"><span lang=\"EN-US\" style=\"font-family: Arial; mso-bidi-font-family: Arial; mso-ansi-language: EN-US;\">After mass, the Pope gave the benediction to the people assembled in the Grand Court before the church of St. Peter's. It was a remarkably fine day; an immense multitude filled that spacious and magnificent area [&hellip;] The silk hangings and gold trappings with which the chair was embellished, concealed the men who carried it, so that to those who viewed him from the area below, his Holiness seemed to sail forward from the window, self-balanced in the air, like a celestial being. The instant he appeared, the music struck up, the bells rung from every church, and the cannon thundered from the castle of St. Angelo, in repeated peals. During the intervals, the church of St. Peter's, the palace of the Vatican, and the banks of the Tiber, re-echoed the acclamations of the populace. At length his Holiness arose from his seat, and an immediate and awful silence ensued.</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'A View of Society and Manners in Italy. Volume 2' pp. 40-41 (150 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/A+View+of+Society+and+Manners+in+Italy.+Volume+2/1509097519682>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "40-41" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.75>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  75 .
+
+<http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%253Fimageid%253D70443%2526let%253DV%2526prevpos%253D69571%2526vpath%253Dcontents>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2017-10-03"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Grand Tour database (Adam Matthew Digital)"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://www.grandtour.amdigital.co.uk.libezproxy.open.ac.uk/Contents/ImageViewerPage.aspx%253Fimageid%253D70443%2526let%253DV%2526prevpos%253D69571%2526vpath%253Dcontents"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/physician>
+        rdfs:label  "Physician"@en , "physician"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/performance/8e62e7a7c1c1bd27f2fbe369abd96f3c/1509098019200>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'music-- Catholic procession'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Rome>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Religious_music>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Dr+John+Moore/1509095795538>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/music--+Catholic+procession/1509098019192> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.29>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  29 .
+
+<http://data.open.ac.uk/led/organization/A.+Strahan+and+T.+Cadell/1515424043429>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "A. Strahan and T. Cadell"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.7>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  7 .
+
+<http://data.open.ac.uk/led/agent/Dr+John+Moore/1509095795538>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Dr John Moore"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/man+of+letters> , <http://data.open.ac.uk/led/physician>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1729-12-07>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Stirling>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1802-02-21>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Surrey>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom_of_Great_Britain_and_Ireland> , <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Moore";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Dr John" .
+
+<http://reference.data.gov.uk/id/day/1729-12-07>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "7 December, 1729"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.7>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1729;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.29> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.96>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  96 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.99>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  99 .
+
+<http://data.open.ac.uk/time/edtf/1775-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1775"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1775;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.75> .
+
+<http://data.open.ac.uk/led/music/music--+Catholic+procession/1509098019192>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "music-- Catholic procession"@en;
+        <http://purl.org/dc/terms/title>
+                "music-- Catholic procession" .
+
+<http://data.open.ac.uk/time/edtf/1799-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1799"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1799;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.99> .
+
+<http://reference.data.gov.uk/id/year/1796>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1796"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Religious_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Religious music"@en .
+
+<http://data.open.ac.uk/time/edtf/1796-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1796"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1796;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1796>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.96> .
+
+<http://data.open.ac.uk/time/edtf/17Ll-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "late 18th Century"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/Unspecified.LATE>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1775-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1799-uu-uu> .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.21>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  21 .

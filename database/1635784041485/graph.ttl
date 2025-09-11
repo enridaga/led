@@ -1,0 +1,174 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Simon+Foxley/1635783424763>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Simon Foxley"@en .
+
+<http://dbpedia.org/resource/East_End_of_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "East End of London"@en .
+
+<http://data.open.ac.uk/led/performers>
+        rdfs:label  "performers"@en .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://data.open.ac.uk/led/retired>
+        rdfs:label  "retired"@en .
+
+<http://data.open.ac.uk/led/music/songs+composed+by+retired+people/1635783883207>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "songs composed by retired people"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/Toynbee+Hall+retired+residents+and+day+visitors/1635783883224>;
+        <http://purl.org/dc/terms/title>
+                "songs composed by retired people";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/agent/Toynbee+Hall+retired+residents+and+day+visitors/1635783883224> .
+
+<http://bnb.data.bl.uk/id/person/HarrisMarkLintern>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Mark Lintern Harris"@en .
+
+<http://data.open.ac.uk/led/agent/Toynbee+Hall+retired+residents+and+day+visitors/1635783883256>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Toynbee Hall retired residents and day visitors"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/musicians>
+        rdfs:label  "musicians"@en .
+
+<http://data.open.ac.uk/led/lexp/1635784041485>
+        rdf:type              led:ListeningExperience;
+        rdfs:comment          "The listening experiences are responses of retired residents and day visitors at Toynbee Hall about their collaboration with the Green Light Theatre Company to create and perform a piece of music theatre over a two-day period. The end result was not a unified piece of music but a selection of songs written by participants guided by Green Light Theatre Company artists Mary King, Stephen Langridge, Timothy Yealland, Daryl Runswick and poet Jo Shapcott. Few of the participants had experience of vocal, dramatic and writing skills. An evaluation of the project comments that ‘the true value of this work is difficult to quantify but the songs […] speak for themselves. It is quite clear that the experience was memorable and for some participants deeply significant’. "@en;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/54215c7a9da03c52702bd095780cbe0e/excerpt/a58976f5b1dd3584766a38b69a077b50>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "13";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/retired+residents+and+day+visitors,+Toynbee+Hall/1635783560555> , <http://data.open.ac.uk/led/agent/Greenlight+Music+Theatre+Company/1635783719406>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/c38fcbd57ecf9572a1564f3470ca9f3f>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1992-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2022-02-07T20:42:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2021-11-01T16:27:22.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/03b3bf41040868665bf56e5a1f36af9f/1635783883240>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/54215c7a9da03c52702bd095780cbe0e/excerpt/a58976f5b1dd3584766a38b69a077b50> .
+
+<http://data.open.ac.uk/led/agent/retired+residents+and+day+visitors,+Toynbee+Hall/1635783560555>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "retired residents and day visitors, Toynbee Hall"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/retired>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Hall";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "retired residents and day visitors, Toynbee" .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/poet>
+        rdfs:label  "poet"@en , "Poet"@en .
+
+<http://reference.data.gov.uk/id/year/1992>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1992-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1992"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1992;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1992>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://data.open.ac.uk/led/place/c38fcbd57ecf9572a1564f3470ca9f3f>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Toynbee Hall, East End of London"@en;
+        <http://purl.org/dc/terms/description>
+                "Toynbee Hall, East End of London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/East_End_of_London> .
+
+<http://data.open.ac.uk/led/source/Spitalfields+Festival+1992+Evaluation:+Education+and+Community+Programme/1635783424734>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The Spitalfields Festival has been, since 1976, a major professional music event in the East End of London. Listening experiences relate to the Festival’s Education and Community Programme (ECP), launched in 1989. Education projects with schools and local community reflect these groups’ concepts and practices of the arts. The ECP is collaborative, linking musicians, writers and visual artists and the Spitalfields Festival with East End of London children, adults and elderly people. "@en;
+        rdfs:label                  "Spitalfields Festival 1992 Evaluation: Education and Community Programme"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/title>
+                "Spitalfields Festival 1992 Evaluation: Education and Community Programme";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Simon+Foxley/1635783424763> , <http://bnb.data.bl.uk/id/person/HarrisMarkLintern> .
+
+<http://data.open.ac.uk/led/performance/03b3bf41040868665bf56e5a1f36af9f/1635783883240>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'songs composed by retired people'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/East_End_of_London>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Greenlight+Music+Theatre+Company/1635783719406> , <http://data.open.ac.uk/led/agent/retired+residents+and+day+visitors,+Toynbee+Hall/1635783560555>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/songs+composed+by+retired+people/1635783883207>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Toynbee+Hall+retired+residents+and+day+visitors/1635783883256> .
+
+<http://data.open.ac.uk/led/agent/Greenlight+Music+Theatre+Company/1635783719406>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Greenlight Music Theatre Company"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/performers> , <http://data.open.ac.uk/led/musicians> , <http://data.open.ac.uk/led/director> , <http://data.open.ac.uk/led/poet>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Company";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Greenlight Music Theatre" .
+
+<http://data.open.ac.uk/led/source/54215c7a9da03c52702bd095780cbe0e/excerpt/a58976f5b1dd3584766a38b69a077b50>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">[the listening experiences collected in the evaluation report were anonymous]</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&lsquo;Everybody had a chance to contribute and get into the feel of what was going on [singing]&rsquo;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&lsquo;I loved the girl singer, [Mary King?] the way she had such a lovely vibrant voice. You were all smashing!&rsquo;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&lsquo;I found it all very stimulating and I was never bored. It made me&nbsp;<em>THINK</em>&rsquo;.</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><strong><span style=\"font-size: 11pt;\">&nbsp;</span></strong></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&lsquo;I found it very good that music can be made from all that we speak about and written into songs&rsquo;.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><strong><span style=\"font-size: 11pt;\">&nbsp;</span></strong></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: Calibri, sans-serif;\"><span style=\"font-size: 11pt;\">&lsquo;Meeting the experts [Green Light Music Theatre] who were so unassuming and genial brought on an inner glow&rsquo;.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Spitalfields Festival 1992 Evaluation: Education and Community Programme' pp. 13 (100 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Spitalfields+Festival+1992+Evaluation:+Education+and+Community+Programme/1635783424734>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "13" .
+
+<http://data.open.ac.uk/led/director>
+        rdfs:label  "director"@en .
+
+<http://data.open.ac.uk/led/agent/Toynbee+Hall+retired+residents+and+day+visitors/1635783883224>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Toynbee Hall retired residents and day visitors"@en .

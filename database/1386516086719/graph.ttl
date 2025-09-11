@@ -1,0 +1,118 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/source/Fifty+Years+of+Army+Music/1386515498509>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Fifty Years of Army Music"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1926-uu-uu>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Methuen+%26+Co.+Ltd/1386515498523>;
+        <http://purl.org/dc/terms/title>
+                "Fifty Years of Army Music";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/John+Mackenzie-Rogan/1386515498517> .
+
+<http://dbpedia.org/resource/Fife_(instrument)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Fife (instrument)"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.26>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  26 .
+
+<http://data.open.ac.uk/led/organization/Methuen+%26+Co.+Ltd/1386515498523>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Methuen & Co. Ltd"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://dbpedia.org/resource/Musical_ensemble>
+        rdf:type    <http://purl.org/ontology/mo/Instrument> , <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Musical ensemble"@en .
+
+<http://data.open.ac.uk/led/person/John+Mackenzie-Rogan/1386515498517>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "John Mackenzie-Rogan"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Bandmaster>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mackenzie-Rogan";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://data.open.ac.uk/led/lexp/1386516086719>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "A small drummer-boy steps out with a rope with a running noose to it, and places the noose around the man’s neck. The drums and fifes strike up that traditional tune, ‘The Rogue’s March’ and away goes the procession, the band boy first, and the rogue behind him, led by the drummer boy and his rope…the band, the escort, and the rogue step out, so that every one of his comrades may have close view of his wretched end as a soldier. The band makes for the barrack gate, and the rogue, as he reaches it, is given a vigorous farewell kick by the boy. The gate is [then] slammed on him."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Fifty+Years+of+Army+Music/1386515498509>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/th4/claims>;
+        led:pages              "16";
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2013-12-08T15:21:26.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/The+Rogue's+March+(,+performance+of)/1386516082044> .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/music/The+Rogue's+March/1386516082036>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Rogue's March"@en;
+        <http://purl.org/dc/terms/title>
+                "The Rogue's March" .
+
+<http://data.open.ac.uk/led/performance/The+Rogue's+March+(,+performance+of)/1386516082044>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'The Rogue's March'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Fife_(instrument)> , <http://dbpedia.org/resource/Musical_ensemble> , <http://dbpedia.org/resource/Drum>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/The+Rogue's+March/1386516082036> .
+
+<http://dbpedia.org/resource/Bandmaster>
+        rdfs:label  "Bandmaster"@en .
+
+<http://data.open.ac.uk/time/edtf/1926-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1926"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1926;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1926>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.26> .
+
+<http://reference.data.gov.uk/id/year/1926>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1926"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Drum>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum"@en .

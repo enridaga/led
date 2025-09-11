@@ -1,0 +1,150 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<https://books.google.co.uk/books%3Fid%3DCXs4AAAAIAAJ%26printsec%3Dfrontcover%26source%3Dgbs_ge_summary_r%26cad%3D0%23v%3Donepage%26q%26f%3Dfalse>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-05-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Google Books"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://books.google.co.uk/books%3Fid%3DCXs4AAAAIAAJ%26printsec%3Dfrontcover%26source%3Dgbs_ge_summary_r%26cad%3D0%23v%3Donepage%26q%26f%3Dfalse"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/music/'The+Bluebells+of+Scotland'+and+other+popular+songs/1535812174715>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'The Bluebells of Scotland' and other popular songs"@en;
+        <http://purl.org/dc/terms/title>
+                "'The Bluebells of Scotland' and other popular songs";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Listeners+to+music/1535812101076> .
+
+<http://data.open.ac.uk/led/agent/Anna+Seward/1535811847382>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anna Seward"@en .
+
+<http://data.open.ac.uk/time/edtf/1811-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1811"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1811;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1811>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.11> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/organization/Archibald+Constable+and+Company/1535642018229>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Archibald Constable and Company"@en .
+
+<http://dbpedia.org/resource/Archibald_Constable>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Archibald Constable"@en .
+
+<http://data.open.ac.uk/led/lexp/1535812240015>
+        rdf:type            led:ListeningExperience;
+        led:has_medium      led:Medium.Live;
+        led:is_reported_in  <http://data.open.ac.uk/led/source/1e96ed37c9981d4184b41d7ac6cc6c45/excerpt/08f7493b788bb60ba63d101728ebc6b1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages           "33";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Listeners+to+music/1535812101076>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1802-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-09-07T12:01:35.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-09-01T14:30:40.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/music/Art+music/1535812203514> , <http://data.open.ac.uk/led/music/'The+Bluebells+of+Scotland'+and+other+popular+songs/1535812174715>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/1e96ed37c9981d4184b41d7ac6cc6c45/excerpt/08f7493b788bb60ba63d101728ebc6b1> .
+
+<http://data.open.ac.uk/led/source/letters+of+anna+seward:+written+between+the+years+1784+and+1807/vol/6>
+        rdf:type    <http://purl.org/ontology/bibo/Document> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Letters of Anna Seward: Written Between the Years 1784 and 1807"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1811-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Archibald+Constable+and+Company/1535642018229>;
+        <http://purl.org/dc/terms/title>
+                "Letters of Anna Seward: Written Between the Years 1784 and 1807";
+        <http://purl.org/ontology/bibo/editor>
+                <http://dbpedia.org/resource/Archibald_Constable>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Edinburgh>;
+        <http://purl.org/ontology/bibo/volume>
+                "6" .
+
+<http://data.open.ac.uk/led/agent/Listeners+to+music/1535812101076>
+        rdf:type    <http://xmlns.com/foaf/0.1/Group> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Listeners to music"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "music";
+        <http://xmlns.com/foaf/0.1/gender>
+                "mixed";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Listeners to" .
+
+<http://dbpedia.org/resource/Edinburgh>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Edinburgh"@en .
+
+<http://data.open.ac.uk/led/music/Art+music/1535812203514>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Art music"@en;
+        <http://purl.org/dc/terms/title>
+                "Art music";
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Listeners+to+music/1535812101076> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.02>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  2 .
+
+<http://data.open.ac.uk/led/source/1e96ed37c9981d4184b41d7ac6cc6c45/excerpt/08f7493b788bb60ba63d101728ebc6b1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\">It is with poetry as with music. The sublime harmonies and the melodies of coyly elegant simplicity, please few in comparison with the numbers who are delighted with the Blue Bells of Scotland, and all such sort of airs.</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Letter from Anna Seward to Thomas Park, Esq., 14 June 1802' pp. 33 (39 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Letter+from+Anna+Seward+to+Thomas+Park,+Esq.,+14+June+1802/1535811847373>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "33" .
+
+<http://data.open.ac.uk/time/edtf/1802-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1802"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1802;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.02> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Anna+Seward+to+Thomas+Park,+Esq.,+14+June+1802/1535811847373>
+        rdf:type                    <http://purl.org/ontology/bibo/PersonalCommunicationDocument> , <http://purl.org/ontology/bibo/DocumentPart> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Anna Seward to Thomas Park, Esq., 14 June 1802"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/letters+of+anna+seward:+written+between+the+years+1784+and+1807/vol/6>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://books.google.co.uk/books%3Fid%3DCXs4AAAAIAAJ%26printsec%3Dfrontcover%26source%3Dgbs_ge_summary_r%26cad%3D0%23v%3Donepage%26q%26f%3Dfalse>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Anna Seward to Thomas Park, Esq., 14 June 1802";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Anna+Seward/1535811847382> .

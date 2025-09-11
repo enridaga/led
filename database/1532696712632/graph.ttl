@@ -1,0 +1,147 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<https://bura.brunel.ac.uk/handle/2438/9357>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "Burnett Archive of Working Class Autobiographies"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://bura.brunel.ac.uk/handle/2438/9357"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/place/7293fe0cf3bae7887f12abbb8627d54c>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lee, south-east London"@en;
+        <http://purl.org/dc/terms/description>
+                "Lee, south-east London"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> .
+
+<http://dbpedia.org/resource/Christianity>
+        rdf:type    led:Belief;
+        rdfs:label  "Christianity"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+zither+tunes/1532696627661>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified zither tunes"@en;
+        <http://purl.org/dc/terms/title>
+                "unspecified zither tunes" .
+
+<http://data.open.ac.uk/led/lexp/1532696712632>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/c53a85c790e95985207cebb73f767d40>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "20";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/7293fe0cf3bae7887f12abbb8627d54c>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/191u-uu-uu/to/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-10-04T16:37:00.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-27T13:05:13.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/bda55b86586bcc37f4ed84fba1542fc1/1532696627668>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/c53a85c790e95985207cebb73f767d40> .
+
+<http://data.open.ac.uk/led/source/8901dc6a317146c083c30fa5cc75d388/excerpt/c53a85c790e95985207cebb73f767d40>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Violet Austin was the youngest of four siblings]&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">The Aunt and Uncle who lived at Lee [near Lewisham] were the only relatives close to our family except for our grandfather, our mother&rsquo;s father. He was a darling, happy man, who spoiled us all.&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">We children would stay with our Aunt and Uncle, but only one at a time. They were not used to children. We loved them. Uncle would let us try to play his zither&nbsp;and we read Aunt&rsquo;s very uplifting books &ldquo;The Wide Wide World&rdquo;, &ldquo;Uncle Tom&rsquo;s Cabin&rdquo; etc.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Untitled: Mrs. Violet Austin memoir' pp. 20 (94 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "20" .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/office+worker>
+        rdfs:label  "office worker"@en .
+
+<http://dbpedia.org/resource/Zither>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Zither"@en .
+
+<http://dbpedia.org/resource/Slough>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Slough"@en .
+
+<http://data.open.ac.uk/led/performance/bda55b86586bcc37f4ed84fba1542fc1/1532696627668>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified zither tunes'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lewisham>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Zither>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+zither+tunes/1532696627661>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/a53d078c-791f-4a3e-ac25-a974575b525d#_> .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1538668460671>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Violet Austin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/office+worker>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Christianity>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1910-uu-uu>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Slough>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Austin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Violet" .
+
+<http://data.open.ac.uk/led/source/Untitled:+Mrs.+Violet+Austin+memoir/1532694106481>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Untitled: Mrs. Violet Austin memoir"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://bura.brunel.ac.uk/handle/2438/9357>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Untitled: Mrs. Violet Austin memoir";
+        <http://purl.org/ontology/bibo/number>
+                "2:22";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612> .
+
+<http://musicbrainz.org/artist/a53d078c-791f-4a3e-ac25-a974575b525d#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Children"@en .
+
+<http://data.open.ac.uk/led/agent/Violet+Austin/1532694106612>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Violet Austin"@en .
+
+<http://dbpedia.org/resource/Lewisham>
+        rdfs:label  "Lewisham"@en .

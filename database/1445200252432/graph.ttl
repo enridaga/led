@@ -1,0 +1,363 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Austria>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "Austria"@en .
+
+<http://data.open.ac.uk/time/interval/1870-uu-uu/to/1871-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#Interval>;
+        rdfs:label  "between 1870 and 1871"@en;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1870-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1871-uu-uu> .
+
+<http://dbpedia.org/resource/Composer>
+        rdfs:label  "Composer"@en .
+
+<http://data.open.ac.uk/time/edtf/1887-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1887"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1887;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1887>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.87> .
+
+<http://bnb.data.bl.uk/id/person/WeberCarlMariavon1786-1826>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Carl Maria von Weber"@en .
+
+<http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Amadeus Mozart"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Wolfgang Amadeus Mozart"@en , "Mozart" , "Wolfgang Amadeus Mozart";
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Catholic_Church>;
+        led:has_social_status           <urn:x-isco08:2>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1756-01-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Salzburg>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1791-12-05>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Vienna>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/Austria>;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Mozart";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Johannes Chrysostomus Wolfgangus Theophilus";
+        <http://xmlns.com/foaf/0.1/name>
+                "Wolfgang Amadeus Mozart";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Mozart" .
+
+<http://data.open.ac.uk/led/lexp/1445200252432>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/523ef7154014c3a1cd8dcaefe61332c8/excerpt/9c70111fc677c4af45bd828fcf8713c4>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Meg+Barclay/claims>;
+        led:pages            "67-68";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/interval/1870-uu-uu/to/1871-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2015-10-29T12:24:33.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-10-18T20:30:52.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/5d47a3e00aa57f008bbc7752bebb585c/1445200139149> , <http://data.open.ac.uk/led/performance/941bd1f321af502a1ce3342f3eea59d2/1445200219043> , <http://data.open.ac.uk/led/performance/d0676676547e12e8f19e08c6afa36312/1445200075575>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/523ef7154014c3a1cd8dcaefe61332c8/excerpt/9c70111fc677c4af45bd828fcf8713c4> .
+
+<http://data.open.ac.uk/led/performance/941bd1f321af502a1ce3342f3eea59d2/1445200219043>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Der Freischuetz'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://dbpedia.org/resource/Der_Freisch%C3%BCtz> .
+
+<http://data.open.ac.uk/time/edtf/1870-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1870"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1870;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1870>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://data.open.ac.uk/led/performance/d0676676547e12e8f19e08c6afa36312/1445200075575>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Bohemian Girl'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Bohemian+Girl/1445200075558> .
+
+<http://data.open.ac.uk/led/organization/London+Chapman+and+Hall,+limited/1444077559607>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "London Chapman and Hall, limited"@en .
+
+<http://reference.data.gov.uk/id/year/1870>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1870"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/journalist>
+        rdfs:label  "journalist"@en .
+
+<http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "William Beatty-Kingston"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Translation> , <http://data.open.ac.uk/led/memoirist> , <http://data.open.ac.uk/led/librettist> , <http://data.open.ac.uk/led/journalist>;
+        led:has_social_status          <urn:x-nrsuk:social:B>;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1837-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1900-10-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/British_Empire>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Beatty-Kingston";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "William" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.87>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  87 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.00>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  0 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.71>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  71 .
+
+<http://data.open.ac.uk/led/memoirist>
+        rdfs:label  "Memoirist"@en , "memoirist"@en .
+
+<http://dbpedia.org/resource/Vienna>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Vienna"@en .
+
+<http://reference.data.gov.uk/id/day/1756-01-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 January, 1756"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/January>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1756;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.56> .
+
+<http://dbpedia.org/resource/Der_Freisch%C3%BCtz>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Der Freischütz"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Carl_Maria_von_Weber>;
+        <http://purl.org/dc/terms/title>
+                "Der Freischütz";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Carl_Maria_von_Weber> .
+
+<http://reference.data.gov.uk/id/year/1887>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1887"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/1900-10-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "October, 1900"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1900;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.00> .
+
+<http://dbpedia.org/resource/Translation>
+        rdfs:label  "Translation"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/Catholic_Church>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Roman Catholic Church"@en , "Catholicism"@en , "Catholic Church"@en .
+
+<http://dbpedia.org/resource/Michael_William_Balfe>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Michael William Balfe"@en , "Michael Balfe" .
+
+<http://data.open.ac.uk/led/source/523ef7154014c3a1cd8dcaefe61332c8/excerpt/9c70111fc677c4af45bd828fcf8713c4>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>Angrily excited as was German popular&nbsp;feeling against France and Frenchmen during the terrible struggle of 1870-71, the chefs-d'oeuvres of Gounod, Auber, Halevy and Mehul were not even temporarily&nbsp;withdrawn from the repertoire of the Royal house, but&nbsp;appeared on the bills in their due turn (according to&nbsp;certain prescribed customs of the estabUshment) and&nbsp;drew, so the General-Intendant subsequently informed&nbsp;me, audiences quite as numerous and sympathetic as&nbsp;those which attended performances of Die Zauberflote or&nbsp;Der Freischuetz. In no European opera house &mdash; above&nbsp;all, not in that so long and conservatively directed by&nbsp;M. Halanzier &mdash; have Rubinstein's operas been so splendidly put upon the stage, so favourably received and so&nbsp;frequently given. I have even heard Michael Balfe's&nbsp;Bohemian Girl under the German title of Die Zigeunerin&nbsp;far better played and sung in the house on the Opern-&nbsp;platz than it had thitherto (within my personal experience) been rendered in London &mdash; in a word, as carefilly&nbsp;and intelligently as it has in later years been performed&nbsp;by the Carl Rosa Opera Company.&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Music and manners; personal reminiscences and sketches of character' pp. 67-68 (177 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Music+and+manners;+personal+reminiscences+and+sketches+of+character/1444077559572>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "67-68" .
+
+<http://musicbrainz.org/artist/c2d17829-1424-435b-9386-c77d3a920abe#_>
+        rdfs:label  "Carl Maria von Weber"@en .
+
+<http://dbpedia.org/resource/Salzburg>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Salzburg"@en .
+
+<http://data.open.ac.uk/led/source/Music+and+manners;+personal+reminiscences+and+sketches+of+character/1444077559572>
+        rdf:type                    <http://purl.org/ontology/bibo/Book> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Music and manners; personal reminiscences and sketches of character"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/published>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1887-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/London+Chapman+and+Hall,+limited/1444077559607>;
+        <http://purl.org/dc/terms/title>
+                "Music and manners; personal reminiscences and sketches of character";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://purl.org/ontology/bibo/volume>
+                "1";
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346> .
+
+<http://dbpedia.org/resource/British_Empire>
+        rdf:type    <http://schema.org/Country>;
+        rdfs:label  "British Empire"@en .
+
+<http://data.open.ac.uk/time/edtf/1837-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1837"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1837;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.37> .
+
+<http://reference.data.gov.uk/id/day/1791-12-05>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "5 December, 1791"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.17>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.5>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1791;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.91> .
+
+<http://data.open.ac.uk/led/performance/5d47a3e00aa57f008bbc7752bebb585c/1445200139149>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Die Zauberflote'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Berlin>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/William+Beatty-Kingston/1444079044346>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Die+Zauberfl%C3%B6te'+K620/1423077156061> .
+
+<http://data.open.ac.uk/led/librettist>
+        rdfs:label  "Librettist"@en , "librettist"@en .
+
+<http://data.open.ac.uk/time/edtf/1871-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1871"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1871;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.71> .
+
+<http://data.open.ac.uk/led/music/'Die+Zauberfl%C3%B6te'+K620/1423077156061>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "The Magic Flute"@en , "Die Zauberflöte"@en , "'Die Zauberflöte' K620"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>;
+        <http://purl.org/dc/terms/title>
+                "'Die Zauberflöte' K620";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/97140cf0-2449-42d5-91cd-453df980e1d6#_> , <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> .
+
+<http://dbpedia.org/resource/Berlin>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "berlin"@en , "Berlin"@en;
+        <http://purl.org/dc/terms/description>
+                "berlin"@en , "Berlin"@en .
+
+<http://data.open.ac.uk/led/music/Bohemian+Girl/1445200075558>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Bohemian Girl"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Michael_William_Balfe>;
+        <http://purl.org/dc/terms/title>
+                "Bohemian Girl";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Michael_William_Balfe> .
+
+<http://dbpedia.org/resource/Carl_Maria_von_Weber>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Carl Maria von Weber"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/c2d17829-1424-435b-9386-c77d3a920abe#_> , <http://bnb.data.bl.uk/id/person/WeberCarlMariavon1786-1826> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.37>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  37 .

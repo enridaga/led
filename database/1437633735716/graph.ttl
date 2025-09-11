@@ -1,0 +1,99 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/lexp/1437633735716>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "<p></p>\r\n<p><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Courier New'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA;\">The day, although rain had been falling in the morning, turned out fine, and long before the time fixed for the service &mdash; three o'clock &mdash; many were wending their way to the church to pay the last tribute of regard to him whose loss they mourned. There could not have been less than 500 people present. Mr. W. J. Lancaster, the organist of St. Michael's, played short solemn voluntaries at intervals before the service.</span></p>"^^rdf:HTML;
+        led:has_medium         led:Medium.Live;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/sp327/temp>;
+        led:pages              "12";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Funeral+congregation/1432976136228>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1889-04-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-04-27T11:03:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2015-07-23T06:42:16.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c3e56d95d030c95a1d4be42228652eae/1437633713420> .
+
+<http://data.open.ac.uk/time/edtf/1889-04-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "April, 1889"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/April>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1889;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://reference.data.gov.uk/def/intervals/April>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/organ+voluntary/1382369483698>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "organ voluntary"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/agent/John+Stanley/1443263441873>;
+        <http://purl.org/dc/terms/title>
+                "organ voluntary" .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/led/agent/John+Stanley/1443263441873>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "John Stanley"@en , "John Stanley";
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stanley";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "John" .
+
+<http://dbpedia.org/resource/Organ_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Organ (music)"@en .
+
+<http://data.open.ac.uk/led/person/Funeral+congregation/1432976136228>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Funeral congregation"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "congregation";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Funeral" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://dbpedia.org/resource/Voluntary_(music)>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Voluntary (music)"@en .
+
+<http://data.open.ac.uk/led/agent/W.J.+Lancaster/1437633713425>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "W.J. Lancaster"@en .
+
+<http://data.open.ac.uk/led/performance/c3e56d95d030c95a1d4be42228652eae/1437633713420>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'organ voluntary'"@en;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Voluntary_(music)>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Organ_(music)>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Funeral+congregation/1432976136228>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/organ+voluntary/1382369483698>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/W.J.+Lancaster/1437633713425> .

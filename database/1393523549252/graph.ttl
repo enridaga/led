@@ -1,0 +1,196 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/year/1892>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1892"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/lexp/1393523549252>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "I should not like to live in Lancashire, excepting for the musical talent which exists to a greater degree than in any other county. The Church service was performed in two different parishes better than you would hear it in many Cathedrals, and one night we had a concert at Heaton, led by Lady Wilton Cattie and Sim Egerton, which really did the greatest credit to them and their pupils. There has long been a large colony of Germans at Manchester, so I presume they have infused a taste for music, which is very marked in that town and country. \r\n\r\n"@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Letter+from+Susan+Liddell+Yorke,+Countess+of+Hardwicke,+to+Georgina+Bloomfield,+24+Oct.+1857/1393523316086>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/hgb3/claims>;
+        led:pages              "397-398";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/Susan+Liddell+Yorke/1393523316097>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lancashire>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1857-10-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-02-27T17:52:29.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/church+services+(,+performance+of)/1393523472101> .
+
+<http://data.open.ac.uk/led/performance/church+services+(,+performance+of)/1393523472101>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'church services'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Lancashire>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/Susan+Liddell+Yorke/1393523316097>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/church+services/1393523472092> .
+
+<http://data.open.ac.uk/time/edtf/1892-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1892>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://reference.data.gov.uk/id/year/1810>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1810"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://solomon.tinyurl.alexanderstreet.com/16NXT%20>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2014-02-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "British and Irish Women's Letters and Diaries"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "http://solomon.tinyurl.alexanderstreet.com/16NXT%20"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/person/Susan+Liddell+Yorke/1393523316097>
+        rdf:type                       <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                     "Susan Liddell Yorke"@en , "Countess of Hardwicke"@en;
+        led:has_social_status          led:SocioEconomicStatus.Officer;
+        <http://schema.org/birthDate>  <http://data.open.ac.uk/time/edtf/1810-uu-uu>;
+        <http://schema.org/deathDate>  <http://data.open.ac.uk/time/edtf/1886-uu-uu>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Yorke";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Susan Liddell";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Countess of Hardwicke"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/time/edtf/1886-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1886"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1886;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1886>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.86> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1857-10-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "October, 1857"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/October>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1857;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.57> .
+
+<http://reference.data.gov.uk/def/intervals/October>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  10 .
+
+<http://data.open.ac.uk/time/edtf/1810-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1810"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1810;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1810>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.10> .
+
+<http://data.open.ac.uk/led/source/Letter+from+Susan+Liddell+Yorke,+Countess+of+Hardwicke,+to+Georgina+Bloomfield,+24+Oct.+1857/1393523316086>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Letter from Susan Liddell Yorke, Countess of Hardwicke, to Georgina Bloomfield, 24 Oct. 1857"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/epistolary>;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Extracts+of+letters+from+Maria,+Marchioness+of+Normanby:+the+Hon.+Frances+Jane+Liddell,+%5B1799-1823%5D:+the+Hon.+Anne+Elizabeth+Liddell,+L:ady+Williamson+%5B1801-1878%5D:+Jane+Elizabeth+Liddell+Keppel,+Viscountess+Barrington+%5B1804-1883%5D:+the+Hon.+Elizabeth+Charlotte+Liddell+Villiers+%5B1807-1890%5D:+Susan+%5BLiddell+Yorke%5D,+Countess+of+Hardwicke+%5B1810-1886%5D:+the+Hon.+Charlotte+Amelia+Liddell+Trotter+%5B1819-1883%5D>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://solomon.tinyurl.alexanderstreet.com/16NXT%20>;
+        <http://purl.org/dc/terms/title>
+                "Letter from Susan Liddell Yorke, Countess of Hardwicke, to Georgina Bloomfield, 24 Oct. 1857";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/Susan+Liddell+Yorke/1393523316097> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.57>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  57 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.86>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  86 .
+
+<http://data.open.ac.uk/led/music/church+services/1393523472092>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "church services"@en;
+        <http://purl.org/dc/terms/title>
+                "church services" .
+
+<http://dbpedia.org/resource/Lancashire>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Lancashire"@en .
+
+<http://data.open.ac.uk/led/agent/Georgina+Liddell+Bloomfield/1393523316110>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Georgina Liddell Bloomfield"@en .
+
+<http://data.open.ac.uk/led/organization/Simson+%26+Co./1393523316116>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Simson & Co."@en .
+
+<http://data.open.ac.uk/led/source/Extracts+of+letters+from+Maria,+Marchioness+of+Normanby:+the+Hon.+Frances+Jane+Liddell,+%5B1799-1823%5D:+the+Hon.+Anne+Elizabeth+Liddell,+L:ady+Williamson+%5B1801-1878%5D:+Jane+Elizabeth+Liddell+Keppel,+Viscountess+Barrington+%5B1804-1883%5D:+the+Hon.+Elizabeth+Charlotte+Liddell+Villiers+%5B1807-1890%5D:+Susan+%5BLiddell+Yorke%5D,+Countess+of+Hardwicke+%5B1810-1886%5D:+the+Hon.+Charlotte+Amelia+Liddell+Trotter+%5B1819-1883%5D>
+        rdf:type    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label  "Extracts of letters from Maria, Marchioness of Normanby: the Hon. Frances Jane Liddell, [1799-1823]: the Hon. Anne Elizabeth Liddell, L:ady Williamson [1801-1878]: Jane Elizabeth Liddell Keppel, Viscountess Barrington [1804-1883]: the Hon. Elizabeth Charlotte Liddell Villiers [1807-1890]: Susan [Liddell Yorke], Countess of Hardwicke [1810-1886]: the Hon. Charlotte Amelia Liddell Trotter [1819-1883]"@en;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1892-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/Simson+%26+Co./1393523316116>;
+        <http://purl.org/dc/terms/title>
+                "Extracts of letters from Maria, Marchioness of Normanby: the Hon. Frances Jane Liddell, [1799-1823]: the Hon. Anne Elizabeth Liddell, L:ady Williamson [1801-1878]: Jane Elizabeth Liddell Keppel, Viscountess Barrington [1804-1883]: the Hon. Elizabeth Charlotte Liddell Villiers [1807-1890]: Susan [Liddell Yorke], Countess of Hardwicke [1810-1886]: the Hon. Charlotte Amelia Liddell Trotter [1819-1883]";
+        <http://purl.org/ontology/bibo/editor>
+                <http://data.open.ac.uk/led/agent/Georgina+Liddell+Bloomfield/1393523316110>;
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/Hertfordshire> .
+
+<http://reference.data.gov.uk/id/year/1886>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1886"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Hertfordshire>
+        rdfs:label  "Hertfordshire"@en .

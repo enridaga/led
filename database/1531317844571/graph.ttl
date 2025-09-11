@@ -1,0 +1,113 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Edna+Bold/1531053614415>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Edna Bold"@en .
+
+<http://data.open.ac.uk/led/music/unspecified+music/1535041640089>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "unspecified music"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51#_> , <http://dbpedia.org/resource/Johann_Sebastian_Bach> , <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>;
+        <http://purl.org/dc/terms/title>
+                "unspecified music";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51#_> , <http://dbpedia.org/resource/Johann_Sebastian_Bach> , <http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827> .
+
+<http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johannes Brahms"@en .
+
+<http://data.open.ac.uk/led/source/aea58f409f916700330734ba80680f4c/excerpt/41aea4c5b782320c2e80c14aaa6831ba>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">[Edna Bold qualified as a primary school teacher in the 1920s and then, driven by her love of dance, attended evening classes and qualified for the Imperial Society of Teacher&rsquo;s Certificate of Dancing&rsquo;, offering free &lsquo;Natural Movement&rsquo; classes to elementary school children].</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">&nbsp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">The children danced, I danced, some of the teachers danced. We gave no concerts, displays, demonstrations. There was never any audience, except one observer. J. W. R. would hear snatches of Bach, Beethoven, Brahms floating up to his room. Down he would come, take his stance at the side of the hall and watch. As suddenly and silently as he appeared, he as silently disappeared.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'The Long and short of it: being the recollections and reminiscences of Edna Bold' pp. 57-58 (112 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/The+Long+and+short+of+it:+being+the+recollections+and+reminiscences+of+Edna+Bold/1531053614143>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "57-58" .
+
+<http://bura.brunel.ac.uk/handle/2438/9420>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-07-08"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9420"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/led/performance/00664bc0e03767548efeb16a9e1c5dc0/1531317805018>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'unspecified music'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Manchester>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/J.W.R/1531317715603>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/unspecified+music/1535041640089> .
+
+<http://dbpedia.org/resource/Manchester>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Manchester"@en .
+
+<http://bnb.data.bl.uk/id/person/BeethovenLudwigvan1770-1827>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ludwig van Beethoven"@en .
+
+<http://data.open.ac.uk/led/source/The+Long+and+short+of+it:+being+the+recollections+and+reminiscences+of+Edna+Bold/1531053614143>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "The recollections of Edna Bold, born in Manchester (1904) are dated 1978. They are arranged thematically and were written for her grandnieces and nephews. The memoir is available at the Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three volumes annotated bibliography, \"The Autobiography of the Working Class\" (Harvester Press, 1984-1989)"@en;
+        rdfs:label                  "The Long and short of it: being the recollections and reminiscences of Edna Bold"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9420>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "The Long and short of it: being the recollections and reminiscences of Edna Bold";
+        <http://purl.org/ontology/bibo/number>
+                "2:85";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Edna+Bold/1531053614415> .
+
+<http://data.open.ac.uk/led/agent/J.W.R/1531317715603>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "J.W.R"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "J.W.R";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male" .
+
+<http://data.open.ac.uk/led/lexp/1531317844571>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/aea58f409f916700330734ba80680f4c/excerpt/41aea4c5b782320c2e80c14aaa6831ba>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "57-58";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/J.W.R/1531317715603>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Manchester>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-23T16:27:47.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-07-11T14:04:05.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/00664bc0e03767548efeb16a9e1c5dc0/1531317805018>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/aea58f409f916700330734ba80680f4c/excerpt/41aea4c5b782320c2e80c14aaa6831ba> .
+
+<http://dbpedia.org/resource/Johann_Sebastian_Bach>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Johann Sebastian Bach" , "Bach" , "Bach"@en , "Johann Sebastian Bach"@en .

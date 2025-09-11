@@ -1,0 +1,298 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://dbpedia.org/resource/Charing_Cross>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Charing Cross"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529669017595>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://musicbrainz.org/artist/730b16aa-772a-42ca-8b7e-1e1c0c2bf5fb#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Guy d'Hardelot"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/person/Edward+Teschemacher/1529668951282>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Edward Teschemacher"@en .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://dbpedia.org/resource/Protestantism>
+        rdf:type    <http://dbpedia.org/class/yago/MonotheisticReligions> , led:Belief;
+        rdfs:label  "Protestantism"@en , "Protestant Church"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://data.open.ac.uk/led/performance/c8e7f9fd2440498366cb1be5ecdeb875/1529668715643>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'band music in the park'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Hyde_Park,_London>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/band+music+in+the+park/1529668715637> .
+
+<http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "London, England"@en;
+        <http://purl.org/dc/terms/description>
+                "London, England"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/London> , <http://dbpedia.org/resource/England> .
+
+<http://data.open.ac.uk/led/person/Hermann+Lohr/1529668820216>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Hermann Lohr"@en .
+
+<http://data.open.ac.uk/time/edtf/1904-11-Mm>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "mid November, 1904"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/Unspecified.MID>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1904;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Henrietta Burkin"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/secretary>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Protestantism>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://data.open.ac.uk/time/edtf/1904-11-Mm>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Stepney>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Burkin";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Henrietta" .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529668820221>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://data.open.ac.uk/led/lexp/1529669084249>
+        rdf:type              led:ListeningExperience;
+        led:has_environment   led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Outdoor;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/29eaa790fecaf2505b3fdfdb6503b5f1>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "37-38";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/0bf1e31d83805b34b05736b3770e6afd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/192u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-08-16T10:37:48.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-06-22T12:04:44.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/c8e7f9fd2440498366cb1be5ecdeb875/1529668715643> , <http://data.open.ac.uk/led/performance/aeca2ddcaadd8c7807050ae556d3ac6c/1529669017592> , <http://data.open.ac.uk/led/performance/75ff248aaef8de6819b2553b20681cdb/1529668820219> , <http://data.open.ac.uk/led/performance/e19f57deb8d428943f7e3e9ca6de7b49/1529668951284>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/29eaa790fecaf2505b3fdfdb6503b5f1> .
+
+<http://data.open.ac.uk/led/music/'Because'/1529668951275>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Because'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/730b16aa-772a-42ca-8b7e-1e1c0c2bf5fb#_> , <http://data.open.ac.uk/led/person/Edward+Teschemacher/1529668951282>;
+        <http://purl.org/dc/terms/title>
+                "'Because'";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/730b16aa-772a-42ca-8b7e-1e1c0c2bf5fb#_> , <http://data.open.ac.uk/led/person/Edward+Teschemacher/1529668951282> .
+
+<http://data.open.ac.uk/led/performance/75ff248aaef8de6819b2553b20681cdb/1529668820219>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Where my caravan has rested''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Charing_Cross>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Where+my+caravan+has+rested'/1529668820211>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529668820221> .
+
+<http://dbpedia.org/resource/Song>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Song"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529668951287>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://data.open.ac.uk/led/source/5b0d431681aaf70997580ee310e92032/excerpt/29eaa790fecaf2505b3fdfdb6503b5f1>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">[The author's stepfather worked for&nbsp;the</span><span style=\"font-family: Cambria; font-size: 11pt;\">&nbsp;Charing Cross and City Electricity Supply Company 'which suppied electricity to all the theatres, shops, etc., in the West End', p. 27]</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\">&nbsp;</p>\r\n<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman'; line-height: 24px;\"><span style=\"font-size: 11pt; line-height: 22px;\">My friend May and I had some wonderful times; we went to theatres, for which we often had &ldquo;complimentary&rdquo; tickets, especially for the Adelphi or Vaudeville Theatres in the Strand, as these were owned by Dad&rsquo;s Company, [we went to the cinema, to dances and to the coast every Easter]. [&hellip;] We always went to the office together each morning, as May was a shorthand typist in an import and export business. We always had to be home by ten o&rsquo;clock, unless we were going somewhere special with a crowd, and sometimes, if we were short of cash mid-week,&nbsp;we just went to Hyde Park and listened to the band. [&hellip;] Sometimes, May would say, &ldquo;We won&rsquo;t be able to go out next Saturday, as Mother is having one of her family parties&rdquo;, which meant all the relatives being invited, and&nbsp;I was needed to accompany all the singing, (the usual three verses and six choruses). I can&rsquo;t tell you how many times I&rsquo;ve played &ldquo;Where my caravan has rested&rdquo;, &ldquo;Because&rdquo;, and &ldquo;Comrades&rdquo;<strong>.&nbsp;</strong>Sometime during the day, someone would have to go down to the Flat below to tell them we would be having a party, as otherwise there would be a complaint that the gas mantle was broken, due to all the movement overhead.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Memoirs of Henrietta Burkin' pp. 37-38 (262 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Memoirs+of+Henrietta+Burkin/1529661763619>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "37-38" .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://data.open.ac.uk/led/secretary>
+        rdfs:label  "secretary"@en , "Secretary"@en .
+
+<http://dbpedia.org/resource/Popular_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Popular music"@en .
+
+<http://data.open.ac.uk/led/performance/e19f57deb8d428943f7e3e9ca6de7b49/1529668951284>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Because''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Charing_Cross>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Because'/1529668951275>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529668951287> .
+
+<http://data.open.ac.uk/led/source/Memoirs+of+Henrietta+Burkin/1529661763619>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                " The unpublished memoir of Henrietta Burkin is a single document written in five sections, each section numbered from page 1. Page numbers for listening experiences correspond with pdf formatting (pp. 1 – 87).  The memoir, written between 1975 – 1982 when the author was approaching eighty years old, is held in The Burnett Archive of Working Class Autobiographies, gathered together by John Burnett, David Vincent and David Mayall whilst compiling their three-volume annotated bibliography, ‘The Autobiography of the Working Class’ (Harvester Press, 1984-1989). "@en;
+        rdfs:label                  "Memoirs of Henrietta Burkin"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Burnett Archive of Working Class Autobiographies";
+        <http://purl.org/dc/terms/isReferencedBy>
+                <http://bura.brunel.ac.uk/handle/2438/9424>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Memoirs of Henrietta Burkin";
+        <http://purl.org/ontology/bibo/number>
+                "2:118";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529661763850> .
+
+<http://bura.brunel.ac.uk/handle/2438/9424>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-06-22"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/ontology/bibo/uri>
+                "http://bura.brunel.ac.uk/handle/2438/9424"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://dbpedia.org/resource/Music_hall>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Music hall"@en .
+
+<http://data.open.ac.uk/led/music/'Comrades'/1529669017587>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Comrades'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Felix+McGlennon/1534415817788>;
+        <http://purl.org/dc/terms/title>
+                "'Comrades'";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Felix+McGlennon/1534415817788> .
+
+<http://data.open.ac.uk/led/performance/aeca2ddcaadd8c7807050ae556d3ac6c/1529669017592>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Comrades''"@en;
+        led:has_environment  led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Domestic , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Charing_Cross>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Music_hall> , <http://dbpedia.org/resource/Popular_music> , <http://dbpedia.org/resource/Song>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1534411383578>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Comrades'/1529669017587>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529669017595> .
+
+<http://dbpedia.org/resource/Hyde_Park,_London>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Hyde Park, London"@en .
+
+<http://data.open.ac.uk/led/agent/Henrietta+Burkin/1529661763850>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Henrietta Burkin"@en .
+
+<http://data.open.ac.uk/led/person/Felix+McGlennon/1534415817788>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Felix McGlennon"@en .
+
+<http://data.open.ac.uk/led/music/'Where+my+caravan+has+rested'/1529668820211>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Where my caravan has rested'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://data.open.ac.uk/led/person/Hermann+Lohr/1529668820216>;
+        <http://purl.org/dc/terms/title>
+                "'Where my caravan has rested'";
+        <http://purl.org/ontology/mo/composer>
+                <http://data.open.ac.uk/led/person/Hermann+Lohr/1529668820216> .
+
+<http://dbpedia.org/resource/Stepney>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Stepney"@en .
+
+<http://data.open.ac.uk/led/music/band+music+in+the+park/1529668715637>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "band music in the park"@en;
+        <http://purl.org/dc/terms/title>
+                "band music in the park" .

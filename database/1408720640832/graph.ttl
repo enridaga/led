@@ -1,0 +1,81 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Wragg's+duets/1408720501647/1408720501654>
+        rdf:type    <http://purl.org/ontology/mo/Performance>;
+        rdfs:label  "performance of 'Wragg's duets'"@en;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Flute>;
+        <http://purl.org/ontology/mo/listener>
+                <http://bnb.data.bl.uk/id/person/SnellEdward1820-1880>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Wragg's+duets/1408720501647> .
+
+<http://data.open.ac.uk/led/source/Snell,+Edward,+diary+on+Bolton,+London+for+Melbourne,+1849/1408720424179>
+        rdf:type           <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label         "Edward Snell, diary on board the Bolton, London for Melbourne, 1849"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/archival>;
+        led:in_collection  "La Trobe Collection, State Library of Victoria";
+        <http://purl.org/dc/terms/title>
+                "Edward Snell, diary on board the Bolton, London for Melbourne, 1849";
+        <http://purl.org/ontology/bibo/number>
+                "8970" .
+
+<http://dbpedia.org/resource/Flute>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Flute"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.49>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  49 .
+
+<http://data.open.ac.uk/led/music/Wragg's+duets/1408720501647>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Wragg's duets"@en;
+        <http://purl.org/dc/terms/title>
+                "Wragg's duets" .
+
+<http://bnb.data.bl.uk/id/person/SnellEdward1820-1880>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Edward Snell"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Snell";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/time/edtf/1849-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1849"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1849;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.49> .
+
+<http://data.open.ac.uk/led/lexp/1408720640832>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Public , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "One young man is employing himself and annoying others by attempting one of Wragg's duets played as a solo on the flute while another not far from [him] is exercising himself on the violin."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Snell,+Edward,+diary+on+Bolton,+London+for+Melbourne,+1849/1408720424179>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/Clare+Spencer/claims>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://bnb.data.bl.uk/id/person/SnellEdward1820-1880>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1849-uu-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-08-22T15:17:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/http://led.kmi.open.ac.uk/item/music/Wragg's+duets/1408720501647/1408720501654> .

@@ -1,0 +1,183 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/milkman>
+        rdfs:label  "milkman"@en .
+
+<http://dbpedia.org/resource/Trumpet>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Trumpet"@en .
+
+<http://reference.data.gov.uk/id/year/1892>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1892"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263409006>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Edward Stewart-Humphries"@en .
+
+<http://data.open.ac.uk/led/music/Unspecified+penny+trumpet+tune/1541263825412>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "sound of a penny trumpet"@en;
+        <http://purl.org/dc/terms/title>
+                "sound of a penny trumpet" .
+
+<http://data.open.ac.uk/time/edtf/1892-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1892"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1892;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1892>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.92> .
+
+<http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>
+        rdf:type    led:Belief;
+        rdfs:label  "Methodist Church of Great Britain"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263825496>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Edward Stewart-Humphries"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.92>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  92 .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://reference.data.gov.uk/id/day/1889-11-25>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "25 November, 1889"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.25>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/November>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1889;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/led/performance/0154abf54e53848116d2290a85e6afee/1541263825476>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'sound of a penny trumpet'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Exeter>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Trumpet>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263670194>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Unspecified+penny+trumpet+tune/1541263825412>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263825496> .
+
+<http://data.open.ac.uk/led/source/7d6027224fae4b4fc07c755c6be690a1/excerpt/99ff90fc29507df2c7228a0a6cec10f9>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin: 0cm 0cm 0.0001pt; font-size: medium; font-family: 'Times New Roman';\"><span style=\"font-size: 11pt;\">My earliest memory is the possession of a penny trumpet, a tin instrument with a white porcelain mouthpiece, painted red and blue, which smelled and tasted tinny, but made a splendid noise. The trumpet was probably my sole birthday or Christmas present, given to me by my foster parents [Mr. and Mrs. Williams] in 1892 when in my third year.&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Childhood: an autobiography of a boy from 1889-1906' pp. 1 (59 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Childhood:+an+autobiography+of+a+boy+from+1889-1906/1541263408941>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "1" .
+
+<http://data.open.ac.uk/led/lexp/1541263917414>
+        rdf:type              led:ListeningExperience;
+        led:has_medium        led:Medium.Live;
+        led:is_reported_in    <http://data.open.ac.uk/led/source/7d6027224fae4b4fc07c755c6be690a1/excerpt/99ff90fc29507df2c7228a0a6cec10f9>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/5011Henning/claims>;
+        led:pages_manuscript  "1";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263670194>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Exeter>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1892-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2019-01-01T11:30:20.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-11-03T16:51:58.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/0154abf54e53848116d2290a85e6afee/1541263825476>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/7d6027224fae4b4fc07c755c6be690a1/excerpt/99ff90fc29507df2c7228a0a6cec10f9> .
+
+<http://data.open.ac.uk/led/soldier>
+        rdfs:label  "soldier"@en , "Soldier"@en .
+
+<http://reference.data.gov.uk/def/intervals/November>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  11 .
+
+<http://dbpedia.org/resource/Exeter>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Exeter"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/led/odd+jobs+boy>
+        rdfs:label  "odd jobs boy"@en .
+
+<http://data.open.ac.uk/led/hotel+labour>
+        rdfs:label  "hotel labour"@en .
+
+<http://data.open.ac.uk/led/source/Childhood:+an+autobiography+of+a+boy+from+1889-1906/1541263408941>
+        rdf:type                    <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment                "Cared for initially by foster parents in Exeter, most of the childhood that Edward Stewart-Humphries (b. 1889) recalls is with his biological parents in Plymouth, and then London. The memoir ends in 1906 when he relocates to Scotland to start his army career with the Ist Battalion Royal Scots Regiment. The unpublished memoir is held in the Burnett Archive of Working Class Autobiographies, Brunel University Library, Special Collections. "@en;
+        rdfs:label                  "Childhood: an autobiography of a boy from 1889-1906"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        led:in_collection           "Brunel University Library, Special Collections";
+        <http://led.kmi.open.ac.uk/term/meta/acknowledgement>
+                "By permission of Brunel University Library, Special Collections."@en;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "Childhood: an autobiography of a boy from 1889-1906";
+        <http://purl.org/ontology/bibo/number>
+                "1:361";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263409006> .
+
+<http://data.open.ac.uk/led/agent/Edward+Stewart-Humphries/1541263670194>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label                      "Edward Stewart-Humphries"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/odd+jobs+boy> , <http://data.open.ac.uk/led/milkman> , <http://data.open.ac.uk/led/hotel+labour> , <http://data.open.ac.uk/led/soldier>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Methodist_Church_of_Great_Britain>;
+        led:has_social_status           <urn:x-nrsuk:social:D>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1889-11-25>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Totnes>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Stewart-Humphries";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Edward" .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.25>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  25 .

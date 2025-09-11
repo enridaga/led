@@ -1,0 +1,193 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://data.open.ac.uk/led/agent/Anonymous+listener/1541496035110>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Anonymous listener"@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "listener";
+        <http://xmlns.com/foaf/0.1/gender>
+                "female" , "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Anonymous" .
+
+<https://www.quora.com/What-was-it-like-to-see-The-Beatles-in-concert>
+        rdf:type  led:WebReference;
+        <http://purl.org/dc/terms/date>
+                "2018-09-24"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/title>
+                "What was it like to see The Beatles in concert?"@en;
+        <http://purl.org/ontology/bibo/uri>
+                "https://www.quora.com/What-was-it-like-to-see-The-Beatles-in-concert"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.64>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  64 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.15>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  15 .
+
+<http://data.open.ac.uk/led/music/Beatles'+Concert/1537814066976>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Beatles' Concert"@en;
+        <http://purl.org/dc/terms/title>
+                "Beatles' Concert" .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/9b03b0a46bbe0cebf6c35fe01438d0a0/1537814066999>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Beatles' Concert'"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cleveland>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Pop_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Electric_guitar> , <http://dbpedia.org/resource/Drum_kit> , <http://dbpedia.org/resource/Male_vocals>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Anonymous+listener/1541496035110>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Beatles'+Concert/1537814066976>;
+        <http://purl.org/ontology/mo/performer>
+                <http://data.open.ac.uk/led/agent/The+Beatles/1537814067017> .
+
+<http://data.open.ac.uk/led/agent/The+Beatles/1537814067017>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "The Beatles"@en .
+
+<http://dbpedia.org/resource/Cleveland>
+        rdfs:label  "Cleveland"@en .
+
+<http://data.open.ac.uk/led/source/7f5b8d3c43379df8ecff06353d14dc88/excerpt/e763530c525d561707e4fd4977269635>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p>&nbsp;</p>\n<p class=\"MsoNormal\"><span style=\"font-size: 12.0pt; font-family: Georgia; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; color: #333333;\">I will always have warm memories of it. Because I was 8 and asked my 55 year old father to take me, and my sister, which he did. I will always remember and be grateful, for what it must have been like for him, to stand there listening to all that noise.<br /> <br /> It was September 15, 1964 in Cleveland, Ohio. I remember a few things. First, the excitement in the air when you see your idols in person. I couldn't believe they were right in front of me! Second, I remember Paul and John joking with each other, and it getting extra screams. I also remember Paul saying \"we're going to now do a number from our new album. The song is called 'Things We Said Today'. What is nice is that I saw him about 10 years ago in Berkeley and he announced \"we're going to do an old number now called 'Things We Said Today'. So it was a nice circle.<br /> <br /> Finally, it was the only Beatles concert, I believe, that was stopped in the middle of the show. The police came on stage and said \"if everyone doesn't return to their seats, the show won't go on\". They all returned to their seats and then, as soon as the music started, they rushed the stage again. I later read that the Beatles were pissed that they stopped the show.</span></p>\n<p>&nbsp;</p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'What was it like to see The Beatles in concert?' (227 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/What+was+it+like+to+see+The+Beatles+in+concert%3F/1537813968755>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng> .
+
+<http://data.open.ac.uk/led/source/What+was+it+like+to+see+The+Beatles+in+concert%3F/1537813968755>
+        rdf:type           <http://purl.org/ontology/bibo/Manuscript> , <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:comment       "The author's name has been anonymised."@en;
+        rdfs:label         "What was it like to see The Beatles in concert?"@en;
+        led:hasSourceType  <http://led.kmi.open.ac.uk/term/source/type/other>;
+        <http://purl.org/dc/terms/isReferencedBy>
+                <https://www.quora.com/What-was-it-like-to-see-The-Beatles-in-concert>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/dc/terms/title>
+                "What was it like to see The Beatles in concert?";
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/unpublished> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://dbpedia.org/resource/Human_voice>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Human voice"@en .
+
+<http://data.open.ac.uk/led/place/3c8fd420032d9a13c53b8d701bdfd3dd>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Cleveland, Ohio"@en;
+        <http://purl.org/dc/terms/description>
+                "Cleveland, Ohio"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Cleveland> .
+
+<http://dbpedia.org/resource/Electric_guitar>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Electric guitar"@en .
+
+<http://data.open.ac.uk/led/music/'Things+we+said+today'/1541496461686>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "'Things we said today'"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Lennon–McCartney>;
+        <http://purl.org/dc/terms/title>
+                "'Things we said today'";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Lennon–McCartney> .
+
+<http://reference.data.gov.uk/id/day/1964-09-15>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "15 September, 1964"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.15>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1964;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.64> .
+
+<http://data.open.ac.uk/led/performance/484b6f3c3616c9cfabb06419c453b71b/1541496461744>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of ''Things we said today''"@en;
+        led:has_environment  led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Cleveland>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Pop_music>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Electric_guitar> , <http://dbpedia.org/resource/Drum_kit> , <http://dbpedia.org/resource/Male_vocals> , <http://dbpedia.org/resource/Human_voice>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Anonymous+listener/1541496035110>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/'Things+we+said+today'/1541496461686>;
+        <http://purl.org/ontology/mo/performer>
+                <http://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d#_> .
+
+<http://dbpedia.org/resource/Pop_music>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Pop music"@en .
+
+<http://data.open.ac.uk/led/lexp/1537814085268>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/7f5b8d3c43379df8ecff06353d14dc88/excerpt/e763530c525d561707e4fd4977269635>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/enrico.motta/temp>;
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/agent/Anonymous+listener/1541496035110>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/3c8fd420032d9a13c53b8d701bdfd3dd>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://reference.data.gov.uk/id/day/1964-09-15>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2018-11-06T09:29:01.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2018-11-06T09:31:25.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2018-09-24T18:34:45.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/9b03b0a46bbe0cebf6c35fe01438d0a0/1537814066999> , <http://data.open.ac.uk/led/performance/484b6f3c3616c9cfabb06419c453b71b/1541496461744>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/7f5b8d3c43379df8ecff06353d14dc88/excerpt/e763530c525d561707e4fd4977269635> .
+
+<http://dbpedia.org/resource/Male_vocals>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Male vocals"@en .
+
+<http://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "The Beatles"@en .
+
+<http://dbpedia.org/resource/Drum_kit>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Drum kit"@en .
+
+<http://dbpedia.org/resource/Lennon–McCartney>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Lennon-McCartney"@en .

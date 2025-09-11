@@ -1,0 +1,284 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://reference.data.gov.uk/id/day/1879-09-27>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "27 September, 1879"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.27>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1879;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.79> .
+
+<http://data.open.ac.uk/time/edtf/1880-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1880"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1880;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.80> .
+
+<http://dbpedia.org/resource/Piano>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Piano"@en .
+
+<http://data.open.ac.uk/led/place/628761390ce9fd7713804a76e377166b>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "(Old) Philharmonic Hall, Liverpool"@en;
+        <http://purl.org/dc/terms/description>
+                "(Old) Philharmonic Hall, Liverpool"@en;
+        <http://www.opengis.net/ont/geosparql#sfIntersects>
+                <http://dbpedia.org/resource/Philharmonic_Hall,_Liverpool> .
+
+<http://data.open.ac.uk/led/agent/Miss+B./1467028418453>
+        rdf:type    <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label  "Scott's piano teacher"@en , "Miss B."@en;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "B.";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "Miss";
+        <http://xmlns.com/foaf/0.1/nick>
+                "Scott's piano teacher"@en .
+
+<http://data.open.ac.uk/led/performance/111f70576fbc8a702139d53538db2c33/1467028522167>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Minuet in G'"@en;
+        led:has_environment  led:ListeningEnvironment.Solitary , led:ListeningEnvironment.Public , led:ListeningEnvironment.Indoor;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Philharmonic_Hall,_Liverpool>;
+        <http://purl.org/ontology/mo/genre>
+                <http://dbpedia.org/resource/Piano_solo>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Piano>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/agent/Miss+B./1467028418453> , <http://musicbrainz.org/artist/64be8ba0-828e-4cfe-b02f-c564da1c33fa#_>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Minuet+in+G/1438444845158>;
+        <http://purl.org/ontology/mo/performer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski> .
+
+<http://data.open.ac.uk/time/edtf/Century.18>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  18 .
+
+<http://data.open.ac.uk/led/writer>
+        rdfs:label  "writer"@en , "Writer"@en .
+
+<http://data.open.ac.uk/time/edtf/YearRange.8u>
+        rdf:value   "8u";
+        rdfs:label  "80s"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://dbpedia.org/resource/Eastbourne>
+        rdfs:label  "Eastbourne"@en .
+
+<http://musicbrainz.org/artist/64be8ba0-828e-4cfe-b02f-c564da1c33fa#_>
+        rdf:type                        <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label                      "Cyril Scott" , "Cyril Scott"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://data.open.ac.uk/led/writer> , <http://data.open.ac.uk/led/pianist> , <http://data.open.ac.uk/led/composer>;
+        <http://dbpedia.org/ontology/religion>
+                <http://dbpedia.org/resource/Theosophy>;
+        <http://schema.org/birthDate>   <http://reference.data.gov.uk/id/day/1879-09-27>;
+        <http://schema.org/birthPlace>  <http://dbpedia.org/resource/Oxton,_Merseyside>;
+        <http://schema.org/deathDate>   <http://reference.data.gov.uk/id/day/1970-12-31>;
+        <http://schema.org/deathPlace>  <http://dbpedia.org/resource/Eastbourne>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/England>;
+        owl:sameAs                      <http://bnb.data.bl.uk/id/person/ScottCyril1879-1970> .
+
+<http://reference.data.gov.uk/id/day/1970-12-31>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "31 December, 1970"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/dayOfMonth>
+                <http://data.open.ac.uk/time/edtf/DayOfMonth.31>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1970;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.70> .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.80>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  80 .
+
+<http://dbpedia.org/resource/Oxton,_Merseyside>
+        rdfs:label  "Oxton, Merseyside"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.89>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  89 .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.70>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  70 .
+
+<http://data.open.ac.uk/time/edtf/1969-09-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "September, 1969"@en;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/September>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1969> .
+
+<http://data.open.ac.uk/led/composer>
+        rdfs:label  "composer"@en , "Composer"@en .
+
+<http://reference.data.gov.uk/id/year/1889>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.79>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  79 .
+
+<http://dbpedia.org/resource/Piano_solo>
+        rdf:type    <http://purl.org/ontology/mo/Genre>;
+        rdfs:label  "Piano solo"@en .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://data.open.ac.uk/time/edtf/188u-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "the 1880's"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearRange.8u>;
+        <http://www.w3.org/2006/time#hasBeginning>
+                <http://data.open.ac.uk/time/edtf/1880-uu-uu>;
+        <http://www.w3.org/2006/time#hasEnd>
+                <http://data.open.ac.uk/time/edtf/1889-uu-uu> .
+
+<http://dbpedia.org/resource/England>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "England"@en .
+
+<http://dbpedia.org/resource/Philharmonic_Hall,_Liverpool>
+        rdfs:label  "Philharmonic Hall, Liverpool"@en .
+
+<http://data.open.ac.uk/led/source/94691d8b28b65f731a8c5ce0635c0ccc/excerpt/a5e33f8340c1b1acc21d3ff0e4a37a4d>
+        rdf:type    <http://purl.org/ontology/bibo/Excerpt>;
+        rdf:value   "<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">I remained unprogressively under [Miss B.&rsquo;s] musical care for some two years, during which time I had the first great pianistic experience of my life; she had persuaded my mother to let her take me over to Liverpool to hear Paderewski.</p>\r\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I remember that Saturday afternoon vividly.&nbsp; The (old) Liverpool Philharmonic Hall &ndash; since burnt down &ndash; was filled to capacity.&nbsp; It was also filled, I noticed, with a murky haze, which was not altogether pleasing to my nostrils but which was soon forgotten when Paderewski began to play.&nbsp; He was thirty-one at the time and, with his great mop of auburn hair, was at the height of his popularity.&nbsp; I cannot give an account of that recital for obvious reasons, I can only say that it clinched my resolve to become a musician &ndash; and a long-haired one at that!&nbsp; [&hellip;]</p>\r\n<p><span style=\"font-size: 11.0pt; line-height: 115%; font-family: 'Calibri','sans-serif'; mso-fareast-font-family: Calibri; mso-bidi-font-family: Calibri; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Strange to say it was through this recital that I indirectly made a discovery.&nbsp; Great artist though he was, Paderewski had a deplorable habit of preluding all his items with the dominant seventh chord of the key in which he was about to play.&nbsp; In the days when I first heard him in Liverpool, his <em>Minuet in G</em> had become a popular piece and he would often give it as an encore, in fact he did so at that very recital.&nbsp; On our way home I said to Miss B, &lsquo;I knew he was going to play his Minuet.&rsquo;&nbsp; &lsquo;How could you know?&rsquo; she asked.&nbsp; &lsquo;Because of those chords he played in the key of G beforehand.&rsquo;&nbsp; &lsquo;Good Gracious!&rsquo; she exclaimed, &lsquo;that means you&rsquo;ve got absolute pitch!&rsquo; &ndash; which was quite true, though its possession is a mixed blessing.&nbsp; &nbsp;&nbsp;</span></p>"^^rdf:HTML;
+        rdfs:label  "excerpt from 'Bone of Contention: Life Story and Confessions' pp. 31–32 (295 words)"@en;
+        <http://purl.org/dc/terms/isPartOf>
+                <http://data.open.ac.uk/led/source/Bone+of+Contention:+Life+Story+and+Confessions/1467027300269>;
+        <http://purl.org/dc/terms/language>
+                <urn:iso:std:iso:639:ed-3:eng>;
+        <http://purl.org/ontology/bibo/pages>
+                "31–32" .
+
+<http://data.open.ac.uk/led/organization/The+Aquarian+Press/1467027300348>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "The Aquarian Press"@en .
+
+<http://data.open.ac.uk/led/lexp/1467028612666>
+        rdf:type             led:ListeningExperience;
+        led:has_environment  led:ListeningEnvironment.Accompanied , led:ListeningEnvironment.Indoor , led:ListeningEnvironment.Public;
+        led:has_medium       led:Medium.Live;
+        led:is_reported_in   <http://data.open.ac.uk/led/source/94691d8b28b65f731a8c5ce0635c0ccc/excerpt/a5e33f8340c1b1acc21d3ff0e4a37a4d>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/lcc5/claims>;
+        led:pages            "31–32";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://musicbrainz.org/artist/64be8ba0-828e-4cfe-b02f-c564da1c33fa#_> , <http://data.open.ac.uk/led/agent/Miss+B./1467028418453>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://data.open.ac.uk/led/place/628761390ce9fd7713804a76e377166b>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/188u-uu-uu>;
+        <http://purl.org/dc/terms/dateApproved>
+                "2016-07-25T19:10:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2016-06-27T11:56:52.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/111f70576fbc8a702139d53538db2c33/1467028522167>;
+        <http://xmlns.com/foaf/0.1/page>
+                <http://data.open.ac.uk/led/source/94691d8b28b65f731a8c5ce0635c0ccc/excerpt/a5e33f8340c1b1acc21d3ff0e4a37a4d> .
+
+<http://data.open.ac.uk/led/source/Bone+of+Contention:+Life+Story+and+Confessions/1467027300269>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Bone of Contention: Life Story and Confessions"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/1969-09-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://data.open.ac.uk/led/organization/The+Aquarian+Press/1467027300348>;
+        <http://purl.org/dc/terms/title>
+                "Bone of Contention: Life Story and Confessions";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://musicbrainz.org/artist/64be8ba0-828e-4cfe-b02f-c564da1c33fa#_> .
+
+<http://dbpedia.org/resource/Ignacy_Jan_Paderewski>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Ignacy Jan Paderewski"@en , "Ignace Jan Paderewski"@en;
+        owl:sameAs  <http://musicbrainz.org/artist/4a2b8def-5a86-45fd-9c21-31c3356a3774#_> , <http://bnb.data.bl.uk/id/person/PaderewskiIgnaceJan1860-1941> .
+
+<http://reference.data.gov.uk/def/intervals/September>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  9 .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.31>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  31 .
+
+<http://data.open.ac.uk/time/edtf/1889-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "1889"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.18>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1889;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/1889>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.89> .
+
+<http://data.open.ac.uk/led/pianist>
+        rdfs:label  "pianist"@en , "Pianist"@en .
+
+<http://reference.data.gov.uk/id/year/1969>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://data.open.ac.uk/led/music/Minuet+in+G/1438444845158>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Minuet in G"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski>;
+        <http://purl.org/dc/terms/title>
+                "Minuet in G";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Ignacy_Jan_Paderewski> .
+
+<http://dbpedia.org/resource/Theosophy>
+        rdf:type    led:Belief;
+        rdfs:label  "Theosophy"@en .
+
+<http://data.open.ac.uk/time/edtf/DayOfMonth.27>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  27 .

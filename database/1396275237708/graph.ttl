@@ -1,0 +1,182 @@
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX led:  <http://led.kmi.open.ac.uk/term/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+<http://dbpedia.org/resource/Thomas_Arne>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Thomas Arne"@en .
+
+<http://bnb.data.bl.uk/id/agent/Phoenix>
+        rdf:type    <http://www.w3.org/ns/org#Organization>;
+        rdfs:label  "Phoenix Books"@en , "Phoenix"@en .
+
+<http://data.open.ac.uk/led/person/J+W+Pennington/1396275181370>
+        rdf:type               <http://xmlns.com/foaf/0.1/Person> , <http://xmlns.com/foaf/0.1/Agent>;
+        rdfs:label             "J W Pennington"@en;
+        <http://dbpedia.org/ontology/occupation>
+                <http://dbpedia.org/resource/Soldier>;
+        led:has_social_status  <urn:x-isco08:0>;
+        <http://schema.org/nationality>
+                <http://dbpedia.org/resource/United_Kingdom>;
+        <http://xmlns.com/foaf/0.1/familyName>
+                "Pennington";
+        <http://xmlns.com/foaf/0.1/gender>
+                "male";
+        <http://xmlns.com/foaf/0.1/givenName>
+                "J W" .
+
+<http://dbpedia.org/resource/London>
+        rdfs:label  "London"@en .
+
+<http://dbpedia.org/resource/United_Kingdom>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject> , <http://schema.org/Country>;
+        rdfs:label  "UK"@en , "United Kingdom"@en .
+
+<http://data.open.ac.uk/time/edtf/Century.19>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  19 .
+
+<http://data.open.ac.uk/led/performance/Rule+Britannia+(,+performance+of)/1396280069974>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Rule Britannia'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Liverpool>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Military_band>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/J+W+Pennington/1396275181370>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Rule+Britannia/1394293598457> .
+
+<http://data.open.ac.uk/led/lexp/1396275237708>
+        rdf:type               led:ListeningExperience;
+        led:has_environment    led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        led:has_evidence_text  "His Majesty’s bands were already present on the quay, resplendent in scarlet and gold-trimmed jackets and black trousers with the plume-tipped Busby helmets, in sharp contrast with the drab khaki uniforms of those of us who were about to board.  Playing martial tunes proclaiming the might and glory of the British Empire, with instruments gleaming in the now-risen sun, they marched the length of the quay adjacent to the troopship with all the pomp and circumstance that the British Army does so well.  It was a stirring spectacle…And as the hawsers were cast off, severing the ship from the dock, the hundreds who still lined the shore broke into rousing cheers to the sound of the band as it played ‘Rule Britannia’…with the band now playing ‘Auld Lang Syne’, those on the ship became more emotional."@en;
+        led:has_medium         led:Medium.Live;
+        led:is_reported_in     <http://data.open.ac.uk/led/source/Pick+up+your+Parrots+and+Monkeys/1396275049179>;
+        <http://led.kmi.open.ac.uk/term/meta/initial_graph>
+                <http://led.kmi.open.ac.uk/user/th4/claims>;
+        led:pages              "62-63";
+        led:pages_manuscript   "62-3";
+        <http://purl.org/NET/c4dm/event.owl#agent>
+                <http://data.open.ac.uk/led/person/J+W+Pennington/1396275181370>;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Liverpool>;
+        <http://purl.org/NET/c4dm/event.owl#time>
+                <http://data.open.ac.uk/time/edtf/1935-12-uu>;
+        <http://purl.org/dc/terms/dateSubmitted>
+                "2014-03-31T14:13:57.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+        <http://purl.org/dc/terms/subject>
+                <http://data.open.ac.uk/led/performance/Rule+Britannia+(,+performance+of)/1396280069974> , <http://data.open.ac.uk/led/performance/Auld+Lang+Syne+(,+performance+of)/1396279950043> .
+
+<http://data.open.ac.uk/led/performance/Auld+Lang+Syne+(,+performance+of)/1396279950043>
+        rdf:type             <http://purl.org/ontology/mo/Performance>;
+        rdfs:label           "performance of 'Auld Lang Syne'"@en;
+        led:has_environment  led:ListeningEnvironment.Outdoor , led:ListeningEnvironment.Accompanied;
+        <http://purl.org/NET/c4dm/event.owl#place>
+                <http://dbpedia.org/resource/Liverpool>;
+        <http://purl.org/ontology/mo/instrument>
+                <http://dbpedia.org/resource/Military_band>;
+        <http://purl.org/ontology/mo/listener>
+                <http://data.open.ac.uk/led/person/J+W+Pennington/1396275181370>;
+        <http://purl.org/ontology/mo/performance_of>
+                <http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034> .
+
+<http://dbpedia.org/resource/Military_band>
+        rdf:type    <http://purl.org/ontology/mo/Instrument>;
+        rdfs:label  "Military band"@en .
+
+<http://reference.data.gov.uk/def/intervals/December>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  12 .
+
+<http://data.open.ac.uk/time/edtf/Century.20>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  20 .
+
+<http://data.open.ac.uk/led/source/Pick+up+your+Parrots+and+Monkeys/1396275049179>
+        rdf:type                    <http://dbpedia.org/ontology/WrittenWork>;
+        rdfs:label                  "Pick up your Parrots and Monkeys"@en;
+        led:hasSourceType           <http://led.kmi.open.ac.uk/term/source/type/memoir>;
+        <http://purl.org/dc/terms/issued>
+                <http://data.open.ac.uk/time/edtf/2004-uu-uu>;
+        <http://purl.org/dc/terms/publisher>
+                <http://bnb.data.bl.uk/id/agent/Phoenix>;
+        <http://purl.org/dc/terms/title>
+                "Pick up your Parrots and Monkeys";
+        <http://purl.org/ontology/bibo/place>
+                <http://dbpedia.org/resource/London>;
+        <http://purl.org/ontology/bibo/status>
+                <http://purl.org/ontology/bibo/status/published>;
+        <http://schema.org/author>  <http://data.open.ac.uk/led/person/J+W+Pennington/1396275181370> .
+
+<http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>
+        rdf:type    <http://xmlns.com/foaf/0.1/Agent> , <http://purl.org/ontology/mo/MusicArtist>;
+        rdfs:label  "Robert Burns"@en .
+
+<http://dbpedia.org/resource/Soldier>
+        rdfs:label  "Soldier"@en .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.04>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  4 .
+
+<http://data.open.ac.uk/led/music/Auld+Lang+Syne/1396279950034>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Auld Lang Syne"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_>;
+        <http://purl.org/dc/terms/title>
+                "Auld Lang Syne";
+        <http://purl.org/ontology/mo/composer>
+                <http://musicbrainz.org/artist/56e7d9b7-174b-4e29-a50d-f164030d197f#_> .
+
+<http://data.open.ac.uk/time/edtf/2004-uu-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "2004"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.20>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                2004;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                <http://reference.data.gov.uk/id/year/2004>;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.04> .
+
+<http://data.open.ac.uk/led/music/Rule+Britannia/1394293598457>
+        rdf:type    <http://purl.org/ontology/mo/MusicalExpression>;
+        rdfs:label  "Rule Britannia"@en;
+        <http://dbpedia.org/ontology/writer>
+                <http://dbpedia.org/resource/Thomas_Arne>;
+        <http://purl.org/dc/terms/title>
+                "Rule Britannia";
+        <http://purl.org/ontology/mo/composer>
+                <http://dbpedia.org/resource/Thomas_Arne> .
+
+<http://reference.data.gov.uk/id/year/2004>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://dbpedia.org/resource/Liverpool>
+        rdf:type    <http://www.opengis.net/ont/geosparql#SpatialObject>;
+        rdfs:label  "Liverpool"@en .
+
+<http://data.open.ac.uk/time/edtf/1935-12-uu>
+        rdf:type    <http://www.w3.org/2006/time#TemporalEntity>;
+        rdfs:label  "December, 1935"@en;
+        <http://data.open.ac.uk/edtf/ontology/century>
+                <http://data.open.ac.uk/time/edtf/Century.19>;
+        <http://data.open.ac.uk/edtf/ontology/monthOfYear>
+                <http://reference.data.gov.uk/def/intervals/December>;
+        <http://data.open.ac.uk/edtf/ontology/year>
+                1935;
+        <http://data.open.ac.uk/edtf/ontology/yearOfCentury>
+                <http://data.open.ac.uk/time/edtf/YearInCentury.35> .
+
+<http://data.open.ac.uk/time/edtf/YearInCentury.35>
+        rdf:type   <http://www.w3.org/2006/time#TemporalEntity>;
+        rdf:value  35 .
