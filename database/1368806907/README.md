@@ -1,67 +1,925 @@
 # Listening Experience 1368806907
 
-### subject
+### has_evidence_text
 
 
-[performance of 'Gospel music'](#performance-of-'Gospel-music')
-
-### place
-
-
-[Chicago](#Chicago)
-
-### dateSubmitted
-
-
-2013-12-06T17:10:31+00:00
-
-### agent
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### initial_graph
-
-
-[claims](http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### is_reported_in
-
-
-[Interview with Jimmy McPartland, jazz cornetist](#Interview-with-Jimmy-McPartland-jazz-cornetist)
-
-### has_medium
-
-
-[Medium.Live](http://led.kmi.open.ac.uk/term/Medium.Live)
+Now one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
 
 ### pages_manuscript
 
 
 16-17
 
-### has_evidence_text
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### agent
 
 
-Now one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+[Jimmy McPartland](#Jimmy-McPartland)
 
 ### time
 
 
 [the 1910's](#the-1910's)
 
+### is_reported_in
+
+
+[Interview with Jimmy McPartland, jazz cornetist](#Interview-with-Jimmy-McPartland-jazz-cornetist)
+
+### subject
+
+
+[performance of 'Gospel music'](#performance-of-'Gospel-music')
+
+### dateSubmitted
+
+
+2013-12-06T17:10:31+00:00
+
+### has_medium
+
+
+*Medium.Live*
+
+### initial_graph
+
+
+*claims*
+
 ### type
 
 
-[ListeningExperience](http://led.kmi.open.ac.uk/term/ListeningExperience)
+*ListeningExperience*
+
+### place
+
+
+[Chicago](#Chicago)
+
+## YearInCentury.91
+
+### value
+
+
+91
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## the 1910's
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+the 1910's
+
+### yearOfCentury
+
+
+[10s](#10s)
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 15 March, 1907
+
+### label
+
+
+15 March, 1907
+
+### year
+
+
+1907
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
+
+### type
+
+
+*TemporalEntity*
+
+## the 1910's
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+the 1910's
+
+### yearOfCentury
+
+
+[10s](#10s)
+
+### type
+
+
+*TemporalEntity*
+
+## YearInCentury.07
+
+### value
+
+
+7
+
+### type
+
+
+*TemporalEntity*
+
+## the 1910's
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+the 1910's
+
+### yearOfCentury
+
+
+[10s](#10s)
+
+### type
+
+
+*TemporalEntity*
+
+## DayOfMonth.13
+
+### value
+
+
+13
+
+### type
+
+
+*TemporalEntity*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
+### performance_of
+
+
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
+### performance_of
+
+
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## DayOfMonth.15
+
+### value
+
+
+15
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## Chicago
+
+### label
+
+
+Chicago
+
+### type
+
+
+*SpatialObject*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
+### performance_of
+
+
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## USA
+
+### label
+
+ - United States of America
+
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## 15 March, 1907
+
+### label
+
+
+15 March, 1907
+
+### year
+
+
+1907
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 15 March, 1907
+
+### label
+
+
+15 March, 1907
+
+### year
+
+
+1907
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
+
+### type
+
+
+*TemporalEntity*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
+### performance_of
+
+
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## the 1910's
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+the 1910's
+
+### yearOfCentury
+
+
+[10s](#10s)
+
+### type
+
+
+*TemporalEntity*
+
+## Interview with Jimmy McPartland, jazz cornetist
+
+### in_collection
+
+
+Jazz Oral History Project, Rutgers University
+
+### title
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+70.4.1
+
+### type
+
+
+*WrittenWork*
+
+## Interview with Jimmy McPartland, jazz cornetist
+
+### in_collection
+
+
+Jazz Oral History Project, Rutgers University
+
+### title
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+70.4.1
+
+### type
+
+
+*WrittenWork*
+
+## Gospel music
+
+### label
+
+
+Gospel music
+
+### type
+
+
+*MusicalExpression*
+
+### title
+
+
+Gospel music
 
 ## 10s
 
@@ -75,342 +933,6 @@ Now one night, it was a mixed neighborhood as I say, on Lake and Polina Street o
 
 10s
 
-## Interview with Jimmy McPartland, jazz cornetist
-
-### label
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### in_collection
-
-
-Jazz Oral History Project, Rutgers University
-
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### title
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### language
-
-
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
-
-### number
-
-
-70.4.1
-
-### type
-
-
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### label
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### in_collection
-
-
-Jazz Oral History Project, Rutgers University
-
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### title
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### language
-
-
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
-
-### number
-
-
-70.4.1
-
-### type
-
-
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-15 March, 1907
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.15](#DayOfMonth.15)
-
-### year
-
-
-1907
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-15 March, 1907
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.15](#DayOfMonth.15)
-
-### year
-
-
-1907
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## cornetist
-
-### label
-
-
-cornetist
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
 ## YearInCentury.91
 
 ### value
@@ -421,103 +943,497 @@ Jimmy McPartland
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*TemporalEntity*
 
-## 15 March, 1907
+## Century.19
 
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
+### value
 
 
-[Century.19](#Century.19)
+19
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
 
 ### label
 
 
-15 March, 1907
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 13 March, 1991
+
+### label
+
+
+13 March, 1991
+
+### year
+
+
+1991
 
 ### monthOfYear
 
 
 [March](#March)
 
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
 ### dayOfMonth
 
 
-[DayOfMonth.15](#DayOfMonth.15)
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
+### performance_of
+
+
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## DayOfMonth.13
+
+### value
+
+
+13
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 15 March, 1907
+
+### label
+
+
+15 March, 1907
 
 ### year
 
 
 1907
 
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
+
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*TemporalEntity*
 
-## Interview with Jimmy McPartland, jazz cornetist
+## USA
+
+### label
+
+ - United States of America
+
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
 
 ### label
 
 
-Interview with Jimmy McPartland, jazz cornetist
+Jimmy McPartland
 
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### in_collection
+### gender
 
 
-Jazz Oral History Project, Rutgers University
+male
 
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### title
+### occupation
 
 
-Interview with Jimmy McPartland, jazz cornetist
+[cornetist](#cornetist)
 
-### language
-
-
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
-
-### number
+### givenName
 
 
-70.4.1
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## USA
+
+### label
+
+ - United States of America
+
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## DayOfMonth.15
+
+### value
+
+
+15
 
 ### type
 
 
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
+*TemporalEntity*
 
-## Gospel music
-
-### title
-
-
-Gospel music
+## 15 March, 1907
 
 ### label
 
 
-Gospel music
+15 March, 1907
+
+### year
+
+
+1907
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
 
 ### type
 
 
-[MusicalExpression](http://purl.org/ontology/mo/MusicalExpression)
+*TemporalEntity*
 
 ## Port Washington, New York
 
@@ -526,49 +1442,74 @@ Gospel music
 
 Port Washington, New York
 
-## DayOfMonth.15
+## March
 
 ### value
 
 
-15
+3
 
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*TemporalEntity*
 
-## Interview with Jimmy McPartland, jazz cornetist
+## cornetist
 
 ### label
 
 
-Interview with Jimmy McPartland, jazz cornetist
+cornetist
 
-### author
+## USA
 
+### label
 
-[Jimmy McPartland](#Jimmy-McPartland)
+ - United States of America
+
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## Interview with Jimmy McPartland, jazz cornetist
 
 ### in_collection
 
 
 Jazz Oral History Project, Rutgers University
 
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
 ### title
 
 
 Interview with Jimmy McPartland, jazz cornetist
 
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
 ### language
 
 
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
 
 ### number
 
@@ -578,124 +1519,7 @@ Interview with Jimmy McPartland, jazz cornetist
 ### type
 
 
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### label
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### in_collection
-
-
-Jazz Oral History Project, Rutgers University
-
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### title
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### language
-
-
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
-
-### number
-
-
-70.4.1
-
-### type
-
-
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
-
-## Gospel music
-
-### title
-
-
-Gospel music
-
-### label
-
-
-Gospel music
-
-### type
-
-
-[MusicalExpression](http://purl.org/ontology/mo/MusicalExpression)
-
-## the 1910's
-
-### yearOfCentury
-
-
-[10s](#10s)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-the 1910's
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
+*WrittenWork*
 
 ## March
 
@@ -707,99 +1531,59 @@ the 1910's
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
+*TemporalEntity*
 
 ## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
 
 ### familyName
 
 
 McPartland
 
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
 ### givenName
 
 
 Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
 
 ### name
 
@@ -808,1122 +1592,14 @@ Jimmy McPartland
 
 ### type
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Person*
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-15 March, 1907
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.15](#DayOfMonth.15)
-
-### year
-
-
-1907
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## YearInCentury.91
-
-### value
-
-
-91
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Century.19
-
-### value
-
-
-19
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## the 1910's
-
-### yearOfCentury
-
-
-[10s](#10s)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-the 1910's
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## YearInCentury.07
-
-### value
-
-
-7
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## the 1910's
-
-### yearOfCentury
-
-
-[10s](#10s)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-the 1910's
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## the 1910's
-
-### yearOfCentury
-
-
-[10s](#10s)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-the 1910's
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
+ - *Agent*
 
 ### has_social_status
 
 
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## Chicago
-
-### label
-
-
-Chicago
-
-### type
-
-
-[SpatialObject](http://www.opengis.net/ont/geosparql#SpatialObject)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-15 March, 1907
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.15](#DayOfMonth.15)
-
-### year
-
-
-1907
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## March
-
-### value
-
-
-3
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## DayOfMonth.13
-
-### value
-
-
-13
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Gospel music
-
-### title
-
-
-Gospel music
-
-### label
-
-
-Gospel music
-
-### type
-
-
-[MusicalExpression](http://purl.org/ontology/mo/MusicalExpression)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### label
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### in_collection
-
-
-Jazz Oral History Project, Rutgers University
-
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### title
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### language
-
-
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
-
-### number
-
-
-70.4.1
-
-### type
-
-
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
-
-## DayOfMonth.13
-
-### value
-
-
-13
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## Century.19
-
-### value
-
-
-19
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-15 March, 1907
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.15](#DayOfMonth.15)
-
-### year
-
-
-1907
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
-
-### label
-
-
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
-
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### listener
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
-
-### performance_of
-
-
-[Gospel music](#Gospel-music)
-
-### type
-
-
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## YearInCentury.07
-
-### value
-
-
-7
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*urn:x-isco08:2*
 
 ## 10s
 
@@ -1937,84 +1613,127 @@ performance of 'Gospel music'
 
 10s
 
-## performance of 'Gospel music'
+## USA
 
-### place
+### label
 
+ - United States of America
 
-[Chicago](#Chicago)
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## 13 March, 1991
 
 ### label
 
 
-performance of 'Gospel music'
+13 March, 1991
 
-### has_environment
+### year
 
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+1991
 
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
+### dayOfMonth
+
+
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
+
+## performance of 'Gospel music'
 
 ### listener
 
 
 [Jimmy McPartland](#Jimmy-McPartland)
 
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
 ### performance_of
 
 
 [Gospel music](#Gospel-music)
 
-### type
+### place
 
 
-[Performance](http://purl.org/ontology/mo/Performance)
-
-## DayOfMonth.15
-
-### value
-
-
-15
+[Chicago](#Chicago)
 
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*Performance*
 
 ## Interview with Jimmy McPartland, jazz cornetist
-
-### label
-
-
-Interview with Jimmy McPartland, jazz cornetist
-
-### author
-
-
-[Jimmy McPartland](#Jimmy-McPartland)
 
 ### in_collection
 
 
 Jazz Oral History Project, Rutgers University
 
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
 ### title
 
 
 Interview with Jimmy McPartland, jazz cornetist
 
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
 ### language
 
 
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
 
 ### number
 
@@ -2024,167 +1743,44 @@ Interview with Jimmy McPartland, jazz cornetist
 ### type
 
 
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
+*WrittenWork*
 
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
-### century
-
-
-[Century.19](#Century.19)
+## 15 March, 1907
 
 ### label
 
 
-13 March, 1991
+15 March, 1907
+
+### year
+
+
+1907
 
 ### monthOfYear
 
 
 [March](#March)
 
-### dayOfMonth
-
-
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
-
-### type
-
-
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
-
-## 13 March, 1991
-
-### yearOfCentury
-
-
-[YearInCentury.91](#YearInCentury.91)
-
 ### century
 
 
 [Century.19](#Century.19)
 
-### label
+### yearOfCentury
 
 
-13 March, 1991
-
-### monthOfYear
-
-
-[March](#March)
+[YearInCentury.07](#YearInCentury.07)
 
 ### dayOfMonth
 
 
-[DayOfMonth.13](#DayOfMonth.13)
-
-### year
-
-
-1991
+[DayOfMonth.15](#DayOfMonth.15)
 
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*TemporalEntity*
 
 ## Chicago
 
@@ -2196,64 +1792,96 @@ Chicago
 ### type
 
 
-[SpatialObject](http://www.opengis.net/ont/geosparql#SpatialObject)
+*SpatialObject*
 
-## Jimmy McPartland
+## 13 March, 1991
 
 ### label
 
 
-Jimmy McPartland
+13 March, 1991
 
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
+### year
 
 
-[Port Washington, New York](#Port-Washington-New-York)
+1991
 
-### gender
-
-
-male
-
-### nationality
+### monthOfYear
 
 
-[USA](#USA)
+[March](#March)
 
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
+### century
 
 
-[urn:x-isco08:2](urn:x-isco08:2)
+[Century.19](#Century.19)
 
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
+### yearOfCentury
 
 
-[cornetist](#cornetist)
+[YearInCentury.91](#YearInCentury.91)
+
+### dayOfMonth
+
+
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
 
 ### familyName
 
 
 McPartland
 
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
 ### givenName
 
 
 Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
 
 ### name
 
@@ -2262,41 +1890,258 @@ Jimmy McPartland
 
 ### type
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Person*
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Agent*
 
-## Interview with Jimmy McPartland, jazz cornetist
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## performance of 'Gospel music'
+
+### listener
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
 
 ### label
 
 
-Interview with Jimmy McPartland, jazz cornetist
+performance of 'Gospel music'
 
-### author
+### performance_of
 
 
-[Jimmy McPartland](#Jimmy-McPartland)
+[Gospel music](#Gospel-music)
+
+### place
+
+
+[Chicago](#Chicago)
+
+### type
+
+
+*Performance*
+
+## Jimmy McPartland
+
+### familyName
+
+
+McPartland
+
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
+### givenName
+
+
+Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
+
+### name
+
+
+Jimmy McPartland
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 13 March, 1991
+
+### label
+
+
+13 March, 1991
+
+### year
+
+
+1991
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
+### dayOfMonth
+
+
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
+
+## 15 March, 1907
+
+### label
+
+
+15 March, 1907
+
+### year
+
+
+1907
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.07](#YearInCentury.07)
+
+### dayOfMonth
+
+
+[DayOfMonth.15](#DayOfMonth.15)
+
+### type
+
+
+*TemporalEntity*
+
+## USA
+
+### label
+
+ - United States of America
+
+ - USA
+
+ - United_States
+
+ - United States
+
+### type
+
+ - *SpatialObject*
+
+ - *Country*
+
+## Gospel music
+
+### label
+
+
+Gospel music
+
+### type
+
+
+*MusicalExpression*
+
+### title
+
+
+Gospel music
+
+## Interview with Jimmy McPartland, jazz cornetist
 
 ### in_collection
 
 
 Jazz Oral History Project, Rutgers University
 
-### hasSourceType
-
-
-[oral](http://led.kmi.open.ac.uk/term/source/type/oral)
-
 ### title
 
 
 Interview with Jimmy McPartland, jazz cornetist
 
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
 ### language
 
 
-[urn:iso:std:iso:639:ed-3:eng](urn:iso:std:iso:639:ed-3:eng)
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
 
 ### number
 
@@ -2306,169 +2151,204 @@ Interview with Jimmy McPartland, jazz cornetist
 ### type
 
 
-[WrittenWork](http://dbpedia.org/ontology/WrittenWork)
+*WrittenWork*
 
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
-
-### familyName
-
-
-McPartland
-
-### givenName
-
-
-Jimmy
-
-### name
-
-
-Jimmy McPartland
-
-### type
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## 15 March, 1907
-
-### yearOfCentury
-
-
-[YearInCentury.07](#YearInCentury.07)
-
-### century
-
-
-[Century.19](#Century.19)
+## 13 March, 1991
 
 ### label
 
 
-15 March, 1907
+13 March, 1991
+
+### year
+
+
+1991
 
 ### monthOfYear
 
 
 [March](#March)
 
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
 ### dayOfMonth
 
 
-[DayOfMonth.15](#DayOfMonth.15)
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
+
+## Gospel music
+
+### label
+
+
+Gospel music
+
+### type
+
+
+*MusicalExpression*
+
+### title
+
+
+Gospel music
+
+## Interview with Jimmy McPartland, jazz cornetist
+
+### in_collection
+
+
+Jazz Oral History Project, Rutgers University
+
+### title
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+70.4.1
+
+### type
+
+
+*WrittenWork*
+
+## 13 March, 1991
+
+### label
+
+
+13 March, 1991
 
 ### year
 
 
-1907
+1991
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
+### dayOfMonth
+
+
+[DayOfMonth.13](#DayOfMonth.13)
 
 ### type
 
 
-[TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)
+*TemporalEntity*
+
+## Century.19
+
+### value
+
+
+19
+
+### type
+
+
+*TemporalEntity*
 
 ## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
-
-### has_social_status
-
-
-[urn:x-isco08:2](urn:x-isco08:2)
-
-### deathDate
-
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
-
-
-[cornetist](#cornetist)
 
 ### familyName
 
 
 McPartland
 
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
 ### givenName
 
 
 Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
 
 ### name
 
@@ -2477,84 +2357,162 @@ Jimmy McPartland
 
 ### type
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Person*
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
-
-## USA
-
-### label
-
- - United States
-
- - United States
-
- - United States
-
- - United States
-
-### type
-
- - [Country](http://schema.org/Country)
-
- - [Country](http://schema.org/Country)
-
-## Jimmy McPartland
-
-### label
-
-
-Jimmy McPartland
-
-### birthDate
-
-
-[15 March, 1907](#15-March-1907)
-
-### deathPlace
-
-
-[Port Washington, New York](#Port-Washington-New-York)
-
-### gender
-
-
-male
-
-### nationality
-
-
-[USA](#USA)
-
-### birthPlace
-
-
-[Chicago](#Chicago)
+ - *Agent*
 
 ### has_social_status
 
 
-[urn:x-isco08:2](urn:x-isco08:2)
+*urn:x-isco08:2*
 
-### deathDate
+## Interview with Jimmy McPartland, jazz cornetist
 
-
-[13 March, 1991](#13-March-1991)
-
-### occupation
+### in_collection
 
 
-[cornetist](#cornetist)
+Jazz Oral History Project, Rutgers University
+
+### title
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+70.4.1
+
+### type
+
+
+*WrittenWork*
+
+## Interview with Jimmy McPartland, jazz cornetist
+
+### in_collection
+
+
+Jazz Oral History Project, Rutgers University
+
+### title
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+*oral*
+
+### author
+
+
+[Jimmy McPartland](#Jimmy-McPartland)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### label
+
+
+Interview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+70.4.1
+
+### type
+
+
+*WrittenWork*
+
+## YearInCentury.07
+
+### value
+
+
+7
+
+### type
+
+
+*TemporalEntity*
+
+## Jimmy McPartland
 
 ### familyName
 
 
 McPartland
 
+### deathDate
+
+
+[13 March, 1991](#13-March-1991)
+
+### birthPlace
+
+
+[Chicago](#Chicago)
+
+### nationality
+
+
+[USA](#USA)
+
+### label
+
+
+Jimmy McPartland
+
+### gender
+
+
+male
+
+### occupation
+
+
+[cornetist](#cornetist)
+
 ### givenName
 
 
 Jimmy
+
+### deathPlace
+
+
+[Port Washington, New York](#Port-Washington-New-York)
+
+### birthDate
+
+
+[15 March, 1907](#15-March-1907)
 
 ### name
 
@@ -2563,41 +2521,83 @@ Jimmy McPartland
 
 ### type
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Person*
 
- - [Agent](http://xmlns.com/foaf/0.1/Agent)
+ - *Agent*
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+## 13 March, 1991
+
+### label
+
+
+13 March, 1991
+
+### year
+
+
+1991
+
+### monthOfYear
+
+
+[March](#March)
+
+### century
+
+
+[Century.19](#Century.19)
+
+### yearOfCentury
+
+
+[YearInCentury.91](#YearInCentury.91)
+
+### dayOfMonth
+
+
+[DayOfMonth.13](#DayOfMonth.13)
+
+### type
+
+
+*TemporalEntity*
 
 ## performance of 'Gospel music'
-
-### place
-
-
-[Chicago](#Chicago)
-
-### label
-
-
-performance of 'Gospel music'
-
-### has_environment
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
- - [ListeningEnvironment.Accompanied](http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
 ### listener
 
 
 [Jimmy McPartland](#Jimmy-McPartland)
 
+### has_environment
+
+ - *ListeningEnvironment.Outdoor*
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+### label
+
+
+performance of 'Gospel music'
+
 ### performance_of
 
 
 [Gospel music](#Gospel-music)
 
+### place
+
+
+[Chicago](#Chicago)
+
 ### type
 
 
-[Performance](http://purl.org/ontology/mo/Performance)
+*Performance*
