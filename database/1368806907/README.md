@@ -88,588 +88,7 @@
 
  sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
 
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## Gospel music
-
-### type
-
-
- sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
-
-### label
-
-
- sssGospel music
-
-### title
-
-
- sssGospel music
-
-## 15 March, 1907
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sss15 March, 1907
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
-
-
- sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1907
-
-### yearOfCentury
-
-
- sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
-
-## the 1910's
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sssthe 1910's
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### yearOfCentury
-
-
- sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## 15 March, 1907
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sss15 March, 1907
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
-
-
- sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1907
-
-### yearOfCentury
-
-
- sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## YearInCentury.91
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss91
-
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
 
 ### type
 
@@ -747,670 +166,7 @@
 
  sssJimmy McPartland
 
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## 13 March, 1991
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sss13 March, 1991
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
-
-
- sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1991
-
-### yearOfCentury
-
-
- sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
-
-## USA
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-## DayOfMonth.15
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss15
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## 13 March, 1991
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sss13 March, 1991
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
-
-
- sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1991
-
-### yearOfCentury
-
-
- sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
-
-## 13 March, 1991
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sss13 March, 1991
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
-
-
- sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1991
-
-### yearOfCentury
-
-
- sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
-
-## March
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss3
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## DayOfMonth.13
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss13
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## March
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss3
-
-## the 1910's
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### label
-
-
- sssthe 1910's
-
-### century
-
-
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### yearOfCentury
-
-
- sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
-
-## 10s
+## <a name="http://data.open.ac.uk/time/edtf/YearRange.1u"></a>10s
 
 ### value
 
@@ -1422,7 +178,334 @@
 
  sss10s
 
-## 1368806907
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss15 March, 1907
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1907
+
+### yearOfCentury
+
+
+ sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
+
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss13 March, 1991
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1991
+
+### yearOfCentury
+
+
+ sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss13 March, 1991
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1991
+
+### yearOfCentury
+
+
+ sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
 
 ### type
 
@@ -1512,103 +595,7 @@
 
  sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
 
-## Century.19
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss19
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## DayOfMonth.13
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss13
-
-## Century.19
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss19
-
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
 
 ### type
 
@@ -1686,7 +673,420 @@
 
  sssJimmy McPartland
 
-## the 1910's
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/led/music/Gospel+music/1368806736324"></a>Gospel music
+
+### type
+
+
+ sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
+
+### label
+
+
+ sssGospel music
+
+### title
+
+
+ sssGospel music
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/time/edtf/DayOfMonth.15"></a>DayOfMonth.15
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss15
+
+## <a name="http://data.open.ac.uk/led/music/Gospel+music/1368806736324"></a>Gospel music
+
+### type
+
+
+ sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
+
+### label
+
+
+ sssGospel music
+
+### title
+
+
+ sssGospel music
+
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss15 March, 1907
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1907
+
+### yearOfCentury
+
+
+ sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/time/edtf/191u-uu-uu"></a>the 1910's
 
 ### type
 
@@ -1708,67 +1108,7 @@
 
  sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
 
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
 
 ### type
 
@@ -1846,439 +1186,7 @@
 
  sssJimmy McPartland
 
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## Gospel music
-
-### type
-
-
- sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
-
-### label
-
-
- sssGospel music
-
-### title
-
-
- sssGospel music
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## USA
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-## Gospel music
-
-### type
-
-
- sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
-
-### label
-
-
- sssGospel music
-
-### title
-
-
- sssGospel music
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### label
-
-
- sssJimmy McPartland
-
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
-
-
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## 13 March, 1991
+## <a name="http://data.open.ac.uk/time/edtf/191u-uu-uu"></a>the 1910's
 
 ### type
 
@@ -2288,228 +1196,19 @@
 ### label
 
 
- sss13 March, 1991
+ sssthe 1910's
 
 ### century
 
 
  sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
 
-### dayOfMonth
-
-
- sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1991
-
 ### yearOfCentury
 
 
- sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+ sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
 
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## USA
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## 15 March, 1907
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
 
 ### type
 
@@ -2546,532 +1245,7 @@
 
  sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
 
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## USA
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
-
-### label
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
-
-
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
-
-
- sssJazz Oral History Project, Rutgers University
-
-### language
-
-
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## Port Washington, New York
-
-### label
-
-
- sssPort Washington, New York
-
-## YearInCentury.07
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss7
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
-
-### label
-
-
- sssperformance of 'Gospel music'
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## 15 March, 1907
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
 
 ### type
 
@@ -3108,634 +1282,155 @@
 
  sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
 
-## 15 March, 1907
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
 
 ### type
 
 
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
 
 ### label
 
 
- sss15 March, 1907
+ sssaaa - United States
 
-### century
 
+ sssaaa - United States
 
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
 
-### dayOfMonth
+ sssaaa - United States
 
 
- sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
-
-### monthOfYear
-
-
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1907
-
-### yearOfCentury
-
-
- sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## DayOfMonth.15
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss15
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+ sssaaa - United States
 
 ### label
 
 
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
+ sssaaa - United States
 
 
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
+ sssaaa - United States
 
 
- sssJazz Oral History Project, Rutgers University
-
-### language
+ sssaaa - United States
 
 
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
-
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## performance of 'Gospel music'
-
-### type
-
-
- sss[Performance](#http://purl.org/ontology/mo/Performance)
+ sssaaa - United States
 
 ### label
 
 
- sssperformance of 'Gospel music'
-
-### has_environment
+ sssaaa - United States
 
 
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+ sssaaa - United States
 
 
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+ sssaaa - United States
 
 
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### listener
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### performance_of
-
-
- sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sssaaa - United States
 
 ### label
 
 
- sssJimmy McPartland
-
-### occupation
+ sssaaa - United States
 
 
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
+ sssaaa - United States
 
 
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
+ sssaaa - United States
 
 
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+ sssaaa - United States
 
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## 15 March, 1907
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
 
 ### type
 
 
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
 
 ### label
 
 
- sss15 March, 1907
-
-### century
+ sssaaa - United States
 
 
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
+ sssaaa - United States
 
 
- sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
-
-### monthOfYear
+ sssaaa - United States
 
 
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1907
-
-### yearOfCentury
-
-
- sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
-
-## YearInCentury.91
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss91
-
-## Jimmy McPartland
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sssaaa - United States
 
 ### label
 
 
- sssJimmy McPartland
+ sssaaa - United States
 
-### occupation
 
+ sssaaa - United States
 
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
 
-### has_social_status
+ sssaaa - United States
 
 
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
-
-
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
-
-### birthPlace
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### deathDate
-
-
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
-
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
-
-
- sss[USA](#http://dbpedia.org/resource/United_States)
-
-### familyName
-
-
- sssMcPartland
-
-### gender
-
-
- sssmale
-
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## 13 March, 1991
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+ sssaaa - United States
 
 ### label
 
 
- sss13 March, 1991
-
-### century
+ sssaaa - United States
 
 
- sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
-
-### dayOfMonth
+ sssaaa - United States
 
 
- sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
-
-### monthOfYear
+ sssaaa - United States
 
 
- sss[March](#http://reference.data.gov.uk/def/intervals/March)
-
-### year
-
-
- sss1991
-
-### yearOfCentury
-
-
- sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
-
-## YearInCentury.07
-
-### type
-
-
- sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
-
-### value
-
-
- sss7
-
-## Interview with Jimmy McPartland, jazz cornetist
-
-### type
-
-
- sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+ sssaaa - United States
 
 ### label
 
 
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### hasSourceType
+ sssaaa - United States
 
 
- sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
-
-### in_collection
+ sssaaa - United States
 
 
- sssJazz Oral History Project, Rutgers University
-
-### language
+ sssaaa - United States
 
 
- sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+ sssaaa - United States
 
-### title
-
-
- sssInterview with Jimmy McPartland, jazz cornetist
-
-### number
-
-
- sss70.4.1
-
-### author
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-## Chicago
+## <a name="http://dbpedia.org/resource/Chicago"></a>Chicago
 
 ### type
 
@@ -3747,97 +1442,7 @@
 
  sssChicago
 
-## 1368806907
-
-### type
-
-
- sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_environment
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-
- sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
-
-### has_evidence_text
-
-
- sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
-
-### has_medium
-
-
- sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
-
-### is_reported_in
-
-
- sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
-
-### initial_graph
-
-
- sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
-
-### pages_manuscript
-
-
- sss16-17
-
-### agent
-
-
- sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
-
-### place
-
-
- sss[Chicago](#http://dbpedia.org/resource/Chicago)
-
-### time
-
-
- sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
-
-### dateSubmitted
-
-
- sss2013-12-06T17:10:31+00:00
-
-### subject
-
-
- sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
-
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
 
 ### type
 
@@ -3915,7 +1520,67 @@
 
  sssJimmy McPartland
 
-## 15 March, 1907
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
 
 ### type
 
@@ -3952,19 +1617,7 @@
 
  sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
 
-## Chicago
-
-### type
-
-
- sss[SpatialObject](#http://www.opengis.net/ont/geosparql#SpatialObject)
-
-### label
-
-
- sssChicago
-
-## 13 March, 1991
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
 
 ### type
 
@@ -4001,7 +1654,118 @@
 
  sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
 
-## 1368806907
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss13 March, 1991
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1991
+
+### yearOfCentury
+
+
+ sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
 
 ### type
 
@@ -4091,170 +1855,478 @@
 
  sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
 
-## cornetist
+## <a name="http://data.open.ac.uk/led/cornetist"></a>cornetist
 
 ### label
 
 
  ssscornetist
 
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
 
 ### type
 
 
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
 
 
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
 
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
 
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
-### label
-
-
- sssJimmy McPartland
-
-### occupation
+### has_environment
 
 
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
 
- sss[urn:x-isco08:2](#urn:x-isco08:2)
-
-### birthDate
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
 
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
-### birthPlace
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
 
 
  sss[Chicago](#http://dbpedia.org/resource/Chicago)
 
-### deathDate
+### time
 
 
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
 
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
+### dateSubmitted
 
 
- sss[USA](#http://dbpedia.org/resource/United_States)
+ sss2013-12-06T17:10:31+00:00
 
-### familyName
-
-
- sssMcPartland
-
-### gender
+### subject
 
 
- sssmale
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
 
-### givenName
-
-
- sssJimmy
-
-### name
-
-
- sssJimmy McPartland
-
-## Jimmy McPartland
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
 
 ### type
 
 
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-### type
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
-
-
- sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
 
 ### label
 
 
- sssJimmy McPartland
+ sssInterview with Jimmy McPartland, jazz cornetist
 
-### occupation
-
-
- sss[cornetist](#http://data.open.ac.uk/led/cornetist)
-
-### has_social_status
+### hasSourceType
 
 
- sss[urn:x-isco08:2](#urn:x-isco08:2)
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
 
-### birthDate
+### in_collection
 
 
- sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+ sssJazz Oral History Project, Rutgers University
 
-### birthPlace
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
 
 
  sss[Chicago](#http://dbpedia.org/resource/Chicago)
 
-### deathDate
+### time
 
 
- sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
 
-### deathPlace
-
-
- sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
-
-### nationality
+### dateSubmitted
 
 
- sss[USA](#http://dbpedia.org/resource/United_States)
+ sss2013-12-06T17:10:31+00:00
 
-### familyName
-
-
- sssMcPartland
-
-### gender
+### subject
 
 
- sssmale
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
 
-### givenName
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
 
-
- sssJimmy
-
-### name
+### type
 
 
- sssJimmy McPartland
+ sssaaa - [Country](#http://schema.org/Country)
 
-## 10s
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+## <a name="http://data.open.ac.uk/time/edtf/Century.19"></a>Century.19
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss19
+
+## <a name="http://data.open.ac.uk/time/edtf/YearInCentury.07"></a>YearInCentury.07
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss7
+
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/time/edtf/Century.19"></a>Century.19
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss19
+
+## <a name="http://data.open.ac.uk/time/edtf/YearRange.1u"></a>10s
 
 ### value
 
@@ -4266,155 +2338,127 @@
 
  sss10s
 
-## USA
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
 
 ### type
 
 
- sssaaa - [Country](#http://schema.org/Country)
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
 
 
- sssaaa - [Country](#http://schema.org/Country)
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
 
 ### type
 
 
- sssaaa - [Country](#http://schema.org/Country)
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
 
 
- sssaaa - [Country](#http://schema.org/Country)
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-### label
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-
- sssaaa - United States
-
-## USA
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
 
 ### type
 
 
- sssaaa - [Country](#http://schema.org/Country)
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
 
 
- sssaaa - [Country](#http://schema.org/Country)
-
-### type
-
-
- sssaaa - [Country](#http://schema.org/Country)
-
-
- sssaaa - [Country](#http://schema.org/Country)
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
 
 ### label
 
 
- sssaaa - United States
+ sssJimmy McPartland
+
+### occupation
 
 
- sssaaa - United States
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
 
 
- sssaaa - United States
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
 
 
- sssaaa - United States
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
 
-### label
-
-
- sssaaa - United States
+### birthPlace
 
 
- sssaaa - United States
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
 
 
- sssaaa - United States
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
 
 
- sssaaa - United States
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
 
-### label
-
-
- sssaaa - United States
+### nationality
 
 
- sssaaa - United States
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
 
 
- sssaaa - United States
+ sssMcPartland
+
+### gender
 
 
- sssaaa - United States
+ sssmale
 
-### label
-
-
- sssaaa - United States
+### givenName
 
 
- sssaaa - United States
+ sssJimmy
+
+### name
 
 
- sssaaa - United States
+ sssJimmy McPartland
 
-
- sssaaa - United States
-
-## 13 March, 1991
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
 
 ### type
 
@@ -4451,7 +2495,888 @@
 
  sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
 
-## the 1910's
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss15 March, 1907
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1907
+
+### yearOfCentury
+
+
+ sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
+
+## <a name="http://reference.data.gov.uk/def/intervals/March"></a>March
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss3
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/time/edtf/DayOfMonth.13"></a>DayOfMonth.13
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss13
+
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://dbpedia.org/resource/Port_Washington,_New_York"></a>Port Washington, New York
+
+### label
+
+
+ sssPort Washington, New York
+
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss13 March, 1991
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1991
+
+### yearOfCentury
+
+
+ sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/time/edtf/YearInCentury.07"></a>YearInCentury.07
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss7
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/time/edtf/191u-uu-uu"></a>the 1910's
 
 ### type
 
@@ -4472,3 +3397,1078 @@
 
 
  sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
+
+## <a name="http://dbpedia.org/resource/United_States"></a>USA
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### type
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+
+ sssaaa - [Country](#http://schema.org/Country)
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+### label
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+
+ sssaaa - United States
+
+## <a name="http://data.open.ac.uk/time/edtf/DayOfMonth.15"></a>DayOfMonth.15
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss15
+
+## <a name="http://reference.data.gov.uk/def/intervals/March"></a>March
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss3
+
+## <a name="http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053"></a>Interview with Jimmy McPartland, jazz cornetist
+
+### type
+
+
+ sss[WrittenWork](#http://dbpedia.org/ontology/WrittenWork)
+
+### label
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### hasSourceType
+
+
+ sss[oral](#http://led.kmi.open.ac.uk/term/source/type/oral)
+
+### in_collection
+
+
+ sssJazz Oral History Project, Rutgers University
+
+### language
+
+
+ sss[urn:iso:std:iso:639:ed-3:eng](#urn:iso:std:iso:639:ed-3:eng)
+
+### title
+
+
+ sssInterview with Jimmy McPartland, jazz cornetist
+
+### number
+
+
+ sss70.4.1
+
+### author
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280"></a>performance of 'Gospel music'
+
+### type
+
+
+ sss[Performance](#http://purl.org/ontology/mo/Performance)
+
+### label
+
+
+ sssperformance of 'Gospel music'
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### listener
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### performance_of
+
+
+ sss[Gospel music](#http://data.open.ac.uk/led/music/Gospel+music/1368806736324)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/time/edtf/YearInCentury.91"></a>YearInCentury.91
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss91
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/time/edtf/191u-uu-uu"></a>the 1910's
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sssthe 1910's
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### yearOfCentury
+
+
+ sss[10s](#http://data.open.ac.uk/time/edtf/YearRange.1u)
+
+## <a name="http://data.open.ac.uk/led/music/Gospel+music/1368806736324"></a>Gospel music
+
+### type
+
+
+ sss[MusicalExpression](#http://purl.org/ontology/mo/MusicalExpression)
+
+### label
+
+
+ sssGospel music
+
+### title
+
+
+ sssGospel music
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://data.open.ac.uk/led/lexp/1368806907"></a>1368806907
+
+### type
+
+
+ sss[ListeningExperience](#http://led.kmi.open.ac.uk/term/ListeningExperience)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_environment
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+
+ sssaaa - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+
+### has_evidence_text
+
+
+ sssNow one night, it was a mixed neighborhood as I say, on Lake and Polina Street on the West Side of Chicago. And there were eight colored men, blind colored men.... Two or three basses and banjos and a guitar, mandolin and guitar. And they were singing spirituals. Gospel music. And my brother and I were, let me preface this by saying this. We were tough little monkeys in those days. Rough kids, you know, that's a tough neighborhood. And we would steal everything we could lay our hands on. We were bad.... So we could hear this music and go over to see these eight guys...playing this music which was really something. They were playing spirituals and it's swinging. It's rocking, it's going. And my God, my brother and I just flipped man.... And my brother and I started passing the hat for them and the people started putting the money in the hat for them...and we gave them every penny.... They must have been good because we loved them and we didn't even steal one penny from them.
+
+### has_medium
+
+
+ sss[Medium.Live](#http://led.kmi.open.ac.uk/term/Medium.Live)
+
+### is_reported_in
+
+
+ sss[Interview with Jimmy McPartland, jazz cornetist](#http://data.open.ac.uk/led/source/Interview+with+Jimmy+McPartland,+jazz+cornetist/1386349785053)
+
+### initial_graph
+
+
+ sss[claims](#http://led.kmi.open.ac.uk/user/hgb3/claims)
+
+### pages_manuscript
+
+
+ sss16-17
+
+### agent
+
+
+ sss[Jimmy McPartland](#http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271)
+
+### place
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### time
+
+
+ sss[the 1910's](#http://data.open.ac.uk/time/edtf/191u-uu-uu)
+
+### dateSubmitted
+
+
+ sss2013-12-06T17:10:31+00:00
+
+### subject
+
+
+ sss[performance of 'Gospel music'](#http://data.open.ac.uk/led/performance/Gospel+music+(,+performance+of)/1386349811280)
+
+## <a name="http://reference.data.gov.uk/id/day/1991-03-13"></a>13 March, 1991
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss13 March, 1991
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.13](#http://data.open.ac.uk/time/edtf/DayOfMonth.13)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1991
+
+### yearOfCentury
+
+
+ sss[YearInCentury.91](#http://data.open.ac.uk/time/edtf/YearInCentury.91)
+
+## <a name="http://reference.data.gov.uk/id/day/1907-03-15"></a>15 March, 1907
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### label
+
+
+ sss15 March, 1907
+
+### century
+
+
+ sss[Century.19](#http://data.open.ac.uk/time/edtf/Century.19)
+
+### dayOfMonth
+
+
+ sss[DayOfMonth.15](#http://data.open.ac.uk/time/edtf/DayOfMonth.15)
+
+### monthOfYear
+
+
+ sss[March](#http://reference.data.gov.uk/def/intervals/March)
+
+### year
+
+
+ sss1907
+
+### yearOfCentury
+
+
+ sss[YearInCentury.07](#http://data.open.ac.uk/time/edtf/YearInCentury.07)
+
+## <a name="http://data.open.ac.uk/time/edtf/DayOfMonth.13"></a>DayOfMonth.13
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss13
+
+## <a name="http://dbpedia.org/resource/Chicago"></a>Chicago
+
+### type
+
+
+ sss[SpatialObject](#http://www.opengis.net/ont/geosparql#SpatialObject)
+
+### label
+
+
+ sssChicago
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
+
+## <a name="http://data.open.ac.uk/time/edtf/YearInCentury.91"></a>YearInCentury.91
+
+### type
+
+
+ sss[TemporalEntity](#http://www.w3.org/2006/time#TemporalEntity)
+
+### value
+
+
+ sss91
+
+## <a name="http://data.open.ac.uk/led/person/Jimmy+McPartland/1368806552271"></a>Jimmy McPartland
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### type
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+
+ sssaaa - [Agent](#http://xmlns.com/foaf/0.1/Agent)
+
+### label
+
+
+ sssJimmy McPartland
+
+### occupation
+
+
+ sss[cornetist](#http://data.open.ac.uk/led/cornetist)
+
+### has_social_status
+
+
+ sss[urn:x-isco08:2](#urn:x-isco08:2)
+
+### birthDate
+
+
+ sss[15 March, 1907](#http://reference.data.gov.uk/id/day/1907-03-15)
+
+### birthPlace
+
+
+ sss[Chicago](#http://dbpedia.org/resource/Chicago)
+
+### deathDate
+
+
+ sss[13 March, 1991](#http://reference.data.gov.uk/id/day/1991-03-13)
+
+### deathPlace
+
+
+ sss[Port Washington, New York](#http://dbpedia.org/resource/Port_Washington,_New_York)
+
+### nationality
+
+
+ sss[USA](#http://dbpedia.org/resource/United_States)
+
+### familyName
+
+
+ sssMcPartland
+
+### gender
+
+
+ sssmale
+
+### givenName
+
+
+ sssJimmy
+
+### name
+
+
+ sssJimmy McPartland
