@@ -7,7 +7,7 @@
 
 ### has_environment
 
- - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
+ - [ListeningEnvironment.Accompanied](#link)
 
  - [ListeningEnvironment.Accompanied](#http://led.kmi.open.ac.uk/term/ListeningEnvironment.Accompanied)
 
