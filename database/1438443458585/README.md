@@ -1,0 +1,1385 @@
+# Listening Experience 1438443458585
+
+### time
+
+
+[July, 1890](#July-1890)
+
+### has_environment
+
+ - *ListeningEnvironment.Public*
+
+ - *ListeningEnvironment.Accompanied*
+
+ - *ListeningEnvironment.Indoor*
+
+### is_reported_in
+
+
+[excerpt from 'Thirty Years of Musical Life in London, 1870-1900' pp. 287-8 (164 words)](#excerpt-from-'Thirty-Years-of-Musical-Life-in-London-1870-1900'-pp.-287-8-(164-words))
+
+### agent
+
+ - [Hermann Klein](#Hermann-Klein)
+
+ - [Sir Augustus Harris](#Sir-Augustus-Harris)
+
+### dateApproved
+
+
+2016-04-25T09:50:27+00:00
+
+### subject
+
+
+[performance of 'Carmen'](#performance-of-'Carmen')
+
+### has_medium
+
+
+*Medium.Live*
+
+### type
+
+
+*ListeningExperience*
+
+### dateSubmitted
+
+
+2015-08-01T15:37:39+00:00
+
+### pages
+
+
+287-8
+
+### initial_graph
+
+
+*claims*
+
+### page
+
+
+[excerpt from 'Thirty Years of Musical Life in London, 1870-1900' pp. 287-8 (164 words)](#excerpt-from-'Thirty-Years-of-Musical-Life-in-London-1870-1900'-pp.-287-8-(164-words))
+
+### place
+
+
+[Covent Garden](#Covent-Garden)
+
+## London
+
+### label
+
+
+London
+
+## Human voice
+
+### label
+
+
+Human voice
+
+### type
+
+
+*Instrument*
+
+## 1903
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+1903
+
+### type
+
+
+*TemporalEntity*
+
+### year
+
+ - [1903](#1903)
+
+ - 1903
+
+### yearOfCentury
+
+
+[YearInCentury.03](#YearInCentury.03)
+
+## DayOfMonth.10
+
+### value
+
+
+10
+
+### type
+
+
+*TemporalEntity*
+
+## Thirty Years of Musical Life in London, 1870-1900
+
+### title
+
+
+Thirty Years of Musical Life in London, 1870-1900
+
+### hasSourceType
+
+
+*published*
+
+### label
+
+
+Thirty Years of Musical Life in London, 1870-1900
+
+### type
+
+ - *Book*
+
+ - *WrittenWork*
+
+### author
+
+
+[Hermann Klein](#Hermann-Klein)
+
+### status
+
+
+*published*
+
+### issued
+
+
+[1903](#1903)
+
+### publisher
+
+
+[The Century Company](#The-Century-Company)
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+### place
+
+
+[New York City](#New-York-City)
+
+### isReferencedBy
+
+
+[thirtyyearsofmus00klei.pdf](#thirtyyearsofmus00klei.pdf)
+
+## Sir Augustus Harris
+
+### familyName
+
+
+Harris
+
+### label
+
+
+Sir Augustus Harris
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### givenName
+
+
+Sir Augustus
+
+## Lowestoft
+
+### label
+
+
+Lowestoft
+
+### type
+
+
+*SpatialObject*
+
+## Zélie de Lussan
+
+### label
+
+
+Zélie de Lussan
+
+### type
+
+
+*Agent*
+
+## Composer
+
+### label
+
+
+Composer
+
+## Enrico Bevignani
+
+### label
+
+
+Enrico Bevignani
+
+### type
+
+ - *Agent*
+
+ - *MusicArtist*
+
+## excerpt from 'Thirty Years of Musical Life in London, 1870-1900' pp. 287-8 (164 words)
+
+### isPartOf
+
+
+[Thirty Years of Musical Life in London, 1870-1900](#Thirty-Years-of-Musical-Life-in-London-1870-1900)
+
+### label
+
+
+excerpt from 'Thirty Years of Musical Life in London, 1870-1900' pp. 287-8 (164 words)
+
+### pages
+
+
+287-8
+
+### type
+
+
+*Excerpt*
+
+### value
+
+ - <p><!-- [if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--></p>
+<p><!-- [if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-GB</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!-- [if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!-- [if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Courier New'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">The result was that neither &ldquo;Carmen&rdquo; nor &ldquo;Esmeralda&rdquo; appeared in its Gallic guise until late in July. Indeed, &ldquo;Carmen&rdquo; was given only for Harris's &ldquo;benefit" on the very last night of the season, <span style="mso-spacerun: yes;">&nbsp;</span>when the demand for seats was so enormous that <span style="mso-spacerun: yes;">&nbsp;</span>stalls sold for &pound;4 ($20) apiece, and many hundreds of people were turned away from the doors. <span style="mso-spacerun: yes;">&nbsp;</span>The only disappointment was Melba's non-apppearance as Michaela, but this was almost <span style="mso-spacerun: yes;">&nbsp;</span>forgotten amid the triumphs of Jean de Reszke <span style="mso-spacerun: yes;">&nbsp;</span>and Lassalle, whose admirable impersonations <span style="mso-spacerun: yes;">&nbsp;</span>were well matched by the fascinating Carmen of Zelie de Lussan. Being a kind of gala night, Augustus Harris imagined it would be interesting to <span style="mso-spacerun: yes;">&nbsp;</span>have each of his three conductors engaged upon <span style="mso-spacerun: yes;">&nbsp;</span>the one opera. Accordingly Mancinelli directed the first act, Bevignani the second, Randegger the third, and Mancinelli again the fourth. The effect upon the ensemble of the performance was simply disastrous, and, needless to add, the childish experiment was never tried again.</span></p>
+
+ - <p></p>
+<p><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Courier New'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">The result was that neither &ldquo;Carmen&rdquo; nor &ldquo;Esmeralda&rdquo; appeared in its Gallic guise until late in July. Indeed, &ldquo;Carmen&rdquo; was given only for Harris's &ldquo;benefit" on the very last night of the season, <span style="mso-spacerun: yes;">&nbsp;</span>when the demand for seats was so enormous that <span style="mso-spacerun: yes;">&nbsp;</span>stalls sold for &pound;4 ($20) apiece, and many hundreds of people were turned away from the doors. <span style="mso-spacerun: yes;">&nbsp;</span>The only disappointment was Melba's non-apppearance as Michaela, but this was almost <span style="mso-spacerun: yes;">&nbsp;</span>forgotten amid the triumphs of Jean de Reszke <span style="mso-spacerun: yes;">&nbsp;</span>and Lassalle, whose admirable impersonations <span style="mso-spacerun: yes;">&nbsp;</span>were well matched by the fascinating Carmen of Zelie de Lussan. Being a kind of gala night, Augustus Harris imagined it would be interesting to <span style="mso-spacerun: yes;">&nbsp;</span>have each of his three conductors engaged upon <span style="mso-spacerun: yes;">&nbsp;</span>the one opera. Accordingly Mancinelli directed the first act, Bevignani the second, Randegger the third, and Mancinelli again the fourth. The effect upon the ensemble of the performance was simply disastrous, and, needless to add, the childish experiment was never tried again.</span></p>
+
+### language
+
+
+*urn:iso:std:iso:639:ed-3:eng*
+
+## 1913-11-22
+
+### year
+
+
+1913
+
+## 1903
+
+### value
+
+
+1903
+
+### type
+
+
+*TemporalEntity*
+
+## Orchestra
+
+### label
+
+
+Orchestra
+
+### type
+
+ - *Instrument*
+
+ - *Agent*
+
+ - *MusicArtist*
+
+## performance of 'Carmen'
+
+### instrument
+
+ - [Orchestra](#Orchestra)
+
+ - [Human voice](#Human-voice)
+
+### performer
+
+ - [Jean Lassalle](#Jean-Lassalle)
+
+ - [Jean de Reszke](#Jean-de-Reszke)
+
+ - [Alberto Randegger](#Alberto-Randegger)
+
+ - [Luigi Mancinelli](#Luigi-Mancinelli)
+
+ - [Zélie de Lussan](#Zélie-de-Lussan)
+
+ - [Enrico Bevignani](#Enrico-Bevignani)
+
+### label
+
+
+performance of 'Carmen'
+
+### listener
+
+ - [Hermann Klein](#Hermann-Klein)
+
+ - [Sir Augustus Harris](#Sir-Augustus-Harris)
+
+### type
+
+
+*Performance*
+
+### genre
+
+
+[Operatic](#Operatic)
+
+### performance_of
+
+
+[Carmen](#Carmen)
+
+## Hermann Klein
+
+### birthPlace
+
+
+[Norwich](#Norwich)
+
+### familyName
+
+
+Klein
+
+### deathDate
+
+
+[10 March, 1934](#10-March-1934)
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+### givenName
+
+
+Hermann
+
+### label
+
+
+Hermann Klein
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### occupation
+
+ - [Singing Teacher](#Singing-Teacher)
+
+ - [Music Critic](#Music-Critic)
+
+ - *Writer*
+
+### deathPlace
+
+
+[London](#London)
+
+### gender
+
+
+male
+
+### birthDate
+
+
+[23 July, 1856](#23-July-1856)
+
+### nationality
+
+ - [UK](#UK)
+
+ - [England](#England)
+
+## Singing Teacher
+
+### label
+
+ - Singing teacher
+
+ - Singing Teacher
+
+ - singing teacher
+
+## YearInCentury.34
+
+### value
+
+
+34
+
+### type
+
+
+*TemporalEntity*
+
+## The Century Company
+
+### label
+
+
+The Century Company
+
+## Operatic
+
+### label
+
+ - Operatic
+
+ - Opera
+
+### type
+
+
+*Genre*
+
+## YearInCentury.90
+
+### value
+
+
+90
+
+### type
+
+
+*TemporalEntity*
+
+## UK
+
+### label
+
+ - United Kingdom
+
+ - UK
+
+### type
+
+ - *Country*
+
+ - *SpatialObject*
+
+## Century.18
+
+### value
+
+
+18
+
+### type
+
+
+*TemporalEntity*
+
+## March
+
+### value
+
+
+3
+
+### type
+
+
+*TemporalEntity*
+
+## thirtyyearsofmus00klei.pdf
+
+### title
+
+
+Internet Archive
+
+### uri
+
+
+https://ia700402.us.archive.org/31/items/thirtyyearsofmus00klei/thirtyyearsofmus00klei.pdf
+
+### date
+
+
+2015-07-29
+
+### type
+
+
+*WebReference*
+
+## July, 1890
+
+### century
+
+
+[Century.18](#Century.18)
+
+### label
+
+
+July, 1890
+
+### type
+
+
+*TemporalEntity*
+
+### monthOfYear
+
+
+[July](#July)
+
+### year
+
+
+1890
+
+### yearOfCentury
+
+
+[YearInCentury.90](#YearInCentury.90)
+
+## Jean de Reszke
+
+### label
+
+
+Jean de Reszke
+
+### type
+
+
+*Agent*
+
+## Georges Bizet
+
+### sameAs
+
+ - [Georges Bizet](#Georges-Bizet)
+
+ - [Georges Bizet](#Georges-Bizet)
+
+### label
+
+ - Georges Bizet
+
+ - Georges Bizet
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+ - *MusicArtist*
+
+## July
+
+### value
+
+
+7
+
+### type
+
+
+*TemporalEntity*
+
+## Norwich
+
+### label
+
+
+Norwich
+
+### type
+
+
+*SpatialObject*
+
+## Luigi Mancinelli
+
+### label
+
+
+Luigi Mancinelli
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+## 1976-12-04
+
+### year
+
+
+1976
+
+## YearInCentury.56
+
+### value
+
+
+56
+
+### type
+
+
+*TemporalEntity*
+
+## Jean Lassalle
+
+### label
+
+
+Jean Lassalle
+
+### type
+
+
+*Agent*
+
+## Georges Bizet
+
+### label
+
+
+Georges Bizet
+
+### type
+
+
+*Agent*
+
+## New York City
+
+### label
+
+
+New York City
+
+## 23 July, 1856
+
+### century
+
+
+[Century.18](#Century.18)
+
+### label
+
+
+23 July, 1856
+
+### type
+
+
+*TemporalEntity*
+
+### monthOfYear
+
+
+[July](#July)
+
+### yearOfCentury
+
+
+[YearInCentury.56](#YearInCentury.56)
+
+### year
+
+
+1856
+
+### dayOfMonth
+
+
+[DayOfMonth.23](#DayOfMonth.23)
+
+## Century.19
+
+### value
+
+
+19
+
+### type
+
+
+*TemporalEntity*
+
+## Music Critic
+
+### label
+
+ - Music Critic
+
+ - Music critic
+
+ - music critic
+
+## Benjamin Britten
+
+### birthPlace
+
+
+[Lowestoft](#Lowestoft)
+
+### familyName
+
+
+Britten
+
+### deathDate
+
+
+[1976-12-04](#1976-12-04)
+
+### sameAs
+
+ - *BrittenBenjamin1913-1976*
+
+ - [Benjamin Britten](#Benjamin-Britten)
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+### givenName
+
+
+Benjamin
+
+### label
+
+
+Benjamin Britten
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+### occupation
+
+
+[Composer](#Composer)
+
+### deathPlace
+
+
+*Aldeburgh*
+
+### nick
+
+
+Benjamin Britten
+
+### gender
+
+
+male
+
+### birthDate
+
+
+[1913-11-22](#1913-11-22)
+
+### nationality
+
+
+[UK](#UK)
+
+## Georges Bizet
+
+### label
+
+
+Georges Bizet
+
+### type
+
+ - *Agent*
+
+ - *MusicArtist*
+
+## England
+
+### label
+
+
+England
+
+### type
+
+ - *Country*
+
+ - *SpatialObject*
+
+## Covent Garden
+
+### label
+
+
+Covent Garden
+
+### type
+
+
+*SpatialObject*
+
+## DayOfMonth.23
+
+### value
+
+
+23
+
+### type
+
+
+*TemporalEntity*
+
+## Alberto Randegger
+
+### label
+
+
+Alberto Randegger
+
+### type
+
+
+*Agent*
+
+## Benjamin Britten
+
+### birthPlace
+
+
+[Lowestoft](#Lowestoft)
+
+### familyName
+
+
+Britten
+
+### deathDate
+
+
+[1976-12-04](#1976-12-04)
+
+### sameAs
+
+
+[Benjamin Britten](#Benjamin-Britten)
+
+### has_social_status
+
+
+*urn:x-isco08:2*
+
+### givenName
+
+
+Benjamin
+
+### label
+
+
+Benjamin Britten
+
+### type
+
+ - *Person*
+
+ - *Agent*
+
+ - *MusicArtist*
+
+### occupation
+
+
+[Composer](#Composer)
+
+### deathPlace
+
+
+*Aldeburgh*
+
+### nick
+
+
+Benjamin Britten
+
+### gender
+
+
+male
+
+### birthDate
+
+
+[1913-11-22](#1913-11-22)
+
+### nationality
+
+
+[UK](#UK)
+
+## Carmen
+
+### title
+
+
+Carmen
+
+### label
+
+
+Carmen
+
+### writer
+
+
+[Georges Bizet](#Georges-Bizet)
+
+### type
+
+
+*MusicalExpression*
+
+### listener
+
+
+[Benjamin Britten](#Benjamin-Britten)
+
+### composer
+
+
+[Georges Bizet](#Georges-Bizet)
+
+## 10 March, 1934
+
+### century
+
+
+[Century.19](#Century.19)
+
+### label
+
+
+10 March, 1934
+
+### type
+
+
+*TemporalEntity*
+
+### monthOfYear
+
+
+[March](#March)
+
+### yearOfCentury
+
+
+[YearInCentury.34](#YearInCentury.34)
+
+### year
+
+
+1934
+
+### dayOfMonth
+
+
+[DayOfMonth.10](#DayOfMonth.10)
+
+## YearInCentury.03
+
+### value
+
+
+3
+
+### type
+
+
+*TemporalEntity*

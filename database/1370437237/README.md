@@ -1,0 +1,101 @@
+# Listening Experience 1370437237
+
+### initial_graph
+
+
+*claims*
+
+### type
+
+
+*ListeningExperience*
+
+### subject
+
+
+[work song](#work-song)
+
+### comment
+
+
+Nat Adderley is recounting a memory of his childhood, so details are necessarily vague
+
+### is_reported_in
+
+
+[interview given Nat Adderley](#interview-given-Nat-Adderley)
+
+### has_evidence_text
+
+
+I think that sometimes people, generally, even people who are fringe jazz people  — that is writers and critiques for wont(sic) of a better word — don’t really understand that we don’t  just put some notes on the paper as vehicles for improvisation. There has to be some kind of stimulus in order for you to write something. I know it does for me. Now I have done songs on the spur of the moment that are not particularly extraordinary one way or the other, that were done because we were on a record date or because we needed a certain 
+kind of song. But generally, like my most famous song, “The Work Song” is a song that was based on when I was a child, they were paving the street in front of my house in Tallahassee, Florida. There was, the penal system was the chain gang. And they had the chain gang people paving the street. I was not even in school yet, so I was sitting and watching them do it, and they fascinated me, these men. Because they sang these songs where there was one guy and then a row of maybe six abreast, two guys. And there was red clay, very hard. And they had to break this clay so that they could come along and pave the street. It was a major highway between Jacksonville, Florida and Pensacola. Tallahassee is right in the middle. Well, when these guys, the guy in front would hit - thumpf — and he’d drop his hammer, and he’d sing something [hums]. And then everybody else would hit — whoom — and they’d answer [hums]. And it kept repeating. And I was sitting there fascinated, just, I loved it. And I never forgot it.
+
+
+### dateSubmitted
+
+
+2013-06-05T13:00:37+00:00
+
+### has_medium
+
+
+*Medium.Live*
+
+### agent
+
+
+[Nat Adderley](#Nat-Adderley)
+
+## interview given Nat Adderley
+
+### author
+
+
+[Nat Adderley](#Nat-Adderley)
+
+### type
+
+
+*WrittenWork*
+
+### label
+
+
+interview given Nat Adderley
+
+### hasSourceType
+
+
+*oral*
+
+## work song
+
+### type
+
+
+*MusicalExpression*
+
+### label
+
+
+work song
+
+### title
+
+ - work song
+
+ - not known
+
+## Nat Adderley
+
+### type
+
+ - *Agent*
+
+ - *Person*
+
+### label
+
+
+Nat Adderley
